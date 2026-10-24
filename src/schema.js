@@ -14,7 +14,7 @@ export const ENUMS = Object.freeze({
   frameHanger: ['standard', 'udh', 'direct_mount'],
   fdMount: ['collier_28_6', 'collier_31_8', 'collier_34_9', 'braze_on', 'direct_mount', 'e_type', 'autre'],
   cassetteKind: ['cassette', 'roue_libre'],
-  freehub: ['hg_8_9_10', 'hg_11_route', 'hg_l2', 'microspline', 'xd', 'xdr', 'n3w', 'campagnolo', 'autre'],
+  freehub: ['hg_8_9_10', 'hg_11_route', 'hg_12_route', 'hg_l2', 'microspline', 'xd', 'xdr', 'n3w', 'campagnolo', 'autre'],
   chainConnection: ['maillon_rapide', 'goupille'],
   spindle: [
     'carre_jis', 'carre_iso', 'octalink_v1', 'octalink_v2', 'isis', 'shimano_24',
@@ -40,7 +40,11 @@ export const ENUMS = Object.freeze({
   confidence: ['haute', 'moyenne', 'basse'],
   // officiel : doc / tableau / fiche constructeur. physique : conséquence
   // directe d'un principe mécanique. communaute : retour terrain non officiel.
-  sourceKind: ['officiel', 'physique', 'communaute', 'a_sourcer'],
+  // officiel : site / doc / tableau constructeur. revendeur : fiche revendeur
+  // reprenant la fiche constructeur. presse : essai ou article technique.
+  // communaute : forum, retour terrain. physique : principe mécanique.
+  sourceKind: ['officiel', 'revendeur', 'presse', 'communaute', 'physique', 'a_sourcer'],
+  status: ['valide', 'a_valider'],
 });
 
 export const DISC_MOUNTS = Object.freeze(['flat_mount', 'post_mount', 'is']);
@@ -59,6 +63,7 @@ const BRAKE_ATTRS = {
   fluid: a('enum', 'Fluide (minéral / DOT)', { enum: 'fluid', requiredIf: (x) => x.brakeActuation === 'hydraulique' }),
   cablePull: a('enum', 'Tirage câble (court / long)', { enum: 'cablePull', requiredIf: (x) => x.brakeActuation === 'mecanique' }),
   hydraulicSystem: a('string', 'Système hydraulique (marque + famille de maître-cylindre)'),
+  fluidSpec: a('string', 'Fluide exact (ex. shimano_mineral, sram_maxima_mineral, magura_royal_blood, dot_5_1, dot_4)'),
 };
 
 const AXLE_ATTRS = {
@@ -73,8 +78,13 @@ export const PART_TYPES = Object.freeze({
     attrs: {
       speeds: a('int', 'Nombre de vitesses', { required: true }),
       ...SHIFT_ATTRS,
-      maxCog: a('int', 'Plus grand pignon max', { unit: 'dents', required: true }),
+      maxCog: a('int', 'Plus grand pignon max (meilleur cas, en général mono-plateau)', { unit: 'dents', required: true }),
+      maxCog2x: a('int', 'Plus grand pignon max en double plateau', { unit: 'dents' }),
+      maxCog3x: a('int', 'Plus grand pignon max en triple plateau', { unit: 'dents' }),
       minCog: a('int', 'Plus petit pignon min', { unit: 'dents' }),
+      minLowCog: a('int', 'Plus grand pignon minimum (chape prévue pour au moins…)', { unit: 'dents' }),
+      maxFrontDiff: a('int', 'Écart max entre plateaux', { unit: 'dents' }),
+      chainTypes: a('string', 'Types de chaîne acceptés, séparés par « | »'),
       totalCapacity: a('int', 'Capacité totale', { unit: 'dents', required: true }),
       cageLength: a('string', 'Longueur de chape (SS, GS, SGS…)'),
       mount: a('enum', 'Fixation', { enum: 'rdMount', required: true }),
@@ -148,6 +158,9 @@ export const PART_TYPES = Object.freeze({
       freehub: a('enum', 'Standard de corps de roue libre', { enum: 'freehub', requiredIf: (x) => x.kind === 'cassette' }),
       freewheelThread: a('string', 'Filetage (roue libre à visser)', { requiredIf: (x) => x.kind === 'roue_libre' }),
       cogs: a('string', 'Étagement (ex. 11-12-13-14-16-18-20-22-25-28-32)'),
+      pitch: a('string', 'Famille de pas des pignons (ex. hg-11, shimano-12, sram-eagle-12)'),
+      chainSpeeds: a('int', 'Largeur de chaîne requise si différente du nombre de vitesses (ex. CUES)'),
+      chainTypes: a('string', 'Types de chaîne acceptés, séparés par « | »'),
       cogPitch: a('number', 'Écartement des pignons', { unit: 'mm' }),
     },
   },
@@ -156,6 +169,7 @@ export const PART_TYPES = Object.freeze({
     attrs: {
       speeds: a('int', 'Nombre de vitesses', { required: true }),
       flattop: a('bool', 'Flattop'),
+      chainType: a('string', 'Type de chaîne (ex. hg-12, sram-eagle, sram-flattop, sram-t-type, campagnolo-12)'),
       connection: a('enum', "Type d'attache", { enum: 'chainConnection' }),
     },
   },
@@ -174,6 +188,7 @@ export const PART_TYPES = Object.freeze({
       chainline: a('number', 'Ligne de chaîne', { unit: 'mm' }),
       shellWidths: a('string', 'Largeurs de boîtier admises, séparées par « | » (ex. 68|73)', { unit: 'mm' }),
       requiresFlattop: a('bool', 'Exige une chaîne Flattop'),
+      chainTypes: a('string', 'Types de chaîne acceptés, séparés par « | »'),
     },
   },
   chainring: {
@@ -187,6 +202,7 @@ export const PART_TYPES = Object.freeze({
       speeds: a('int', 'Vitesses prévues'),
       requiresFlattop: a('bool', 'Exige une chaîne Flattop'),
       acceptsFlattop: a('bool', 'Accepte une chaîne Flattop'),
+      chainTypes: a('string', 'Types de chaîne acceptés, séparés par « | »'),
       position: a('string', 'Position (mono, grand, petit, milieu)'),
     },
   },
@@ -195,6 +211,7 @@ export const PART_TYPES = Object.freeze({
     attrs: {
       shell: a('enum', 'Standard de cadre (coque)', { enum: 'bbShell', required: true }),
       shellWidth: a('number', 'Largeur de coque', { unit: 'mm' }),
+      shellWidths: a('string', 'Largeurs de coque admises, séparées par « | » (ex. 68|73|83)', { unit: 'mm' }),
       spindle: a('enum', "Standard d'axe accepté", { enum: 'spindle', required: true }),
     },
   },
@@ -278,11 +295,17 @@ export function validatePart(part) {
     }
   }
   if (!Array.isArray(part.sources) || part.sources.length === 0) missing.push('sources');
+  for (const src of part.sources ?? []) {
+    if (!ENUMS.sourceKind.includes(src.kind)) errors.push(`Type de source inconnu : « ${src.kind} »`);
+  }
+  if (part.status && !ENUMS.status.includes(part.status)) errors.push(`Statut inconnu : « ${part.status} »`);
   if (part.confidence && !ENUMS.confidence.includes(part.confidence)) {
     errors.push(`Niveau de confiance inconnu : « ${part.confidence} »`);
   }
   return { valid: errors.length === 0, errors, missing };
 }
+
+export const needsValidation = (part) => part?.status === 'a_valider';
 
 export const hasOfficialSource = (part) =>
   Array.isArray(part?.sources) && part.sources.some((s) => s.kind === 'officiel');

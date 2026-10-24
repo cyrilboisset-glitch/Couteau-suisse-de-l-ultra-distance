@@ -75,6 +75,10 @@ Validées et codées :
 | `transmission.avant_pedalier` | Dérailleur avant ↔ plateaux | Double/triple croisés, capacité, taille du grand plateau → 🟠 |
 | `freins.systeme_hydraulique` | Maître-cylindre ↔ étrier, même fluide | Même système ✅ ; couple documenté → niveau de la base ; sinon 🟠 (course / puissance modifiées) ; toujours : purge + raccords |
 | `freins.compose` | Plaquettes métal sur disque « résine seulement » | 🟠 usure rapide du disque |
+| `transmission.pas_pignons` | Pas des pignons de la cassette ↔ indexation (manette mécanique, ou dérailleur électronique) | Même pas → ✅ ; croisement documenté → niveau de la base (ex. Shimano 12v ↔ SRAM Eagle 🟠) ; sinon 🟠 à valider |
+| `transmission.type_chaine` | Type de chaîne exigé (Flattop, Eagle, T-Type, HG+…) | Prévu → ✅ ; profil plat (Flattop / T-Type) non prévu → ❌ (SRAM) ; autre chaîne classique de même largeur → 🟠 |
+| `transmission.pignon_selon_plateaux` | Plus grand pignon admis en double / triple (vélo décrit) | Dépassé → ❌ |
+| `freins.fluide` (fluide exact) | Deux huiles minérales de marques différentes, ou DOT 4 / 5.1 | Huiles minérales différentes → ❌ (non absolu : chaque marque impose son huile) ; DOT 3 / 4 / 5.1 → 🟢 miscibles |
 | `pedalier.largeur_coque` | Longueur d'axe ↔ largeur de coque | Hors liste → ❌ |
 | `pedalier.ligne_chaine` | Ligne de chaîne du pédalier de remplacement | Écart ≥ 5 mm → 🟠 (seuil à valider), sinon simple note |
 

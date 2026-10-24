@@ -1,0 +1,790 @@
+{
+ "_meta": {
+  "description": "Marques asiatiques / génériques (microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC) et Campagnolo Ekar. Données surtout revendeurs : tout est à valider."
+ },
+ "sources": {
+  "99-advx": {
+   "kind": "revendeur",
+   "ref": "99 Bikes – microSHIFT Advent X 1x10 chape moyenne, clutch, 48T",
+   "url": "https://99bikes.com.au/products/microshift-advent-x-rear-derailleur-1x10-speed-medium-cage-w-clutch-48t-steel"
+  },
+  "mtbd-advx": {
+   "kind": "revendeur",
+   "ref": "MTB Direct – Advent X RD-M6205 : 11T mini, 48T maxi, capacité 37T",
+   "url": "https://www.mtbdirect.com.au/microshift-advent-x-oe-rd-m6205gm-10-speed-clutched-rear-derailleur"
+  },
+  "ms-faq": {
+   "kind": "revendeur",
+   "ref": "FAQ microSHIFT (Circles) : Advent X tirage propre, espacement cassette 10v standard, grand pignon 46-48T max ; Advent 9v tirage propre",
+   "url": "https://shop.circles-jp.com/en/pages/microshift"
+  },
+  "br-advx": {
+   "kind": "presse",
+   "ref": "BikeRadar – Advent X : cassette 11-48 sur corps HG, chaînes 10v",
+   "url": "https://www.bikeradar.com/reviews/components/microshift-advent-x-drivetrain-review"
+  },
+  "br-sword": {
+   "kind": "presse",
+   "ref": "BikeRadar – Sword : pédalier axe 24 mm, cassettes HG 11-48 (1x) et 11-38 (2x), chaîne 10v (KMC X10)",
+   "url": "https://bikeradar.com/news/microshift-sword"
+  },
+  "velomine-centos": {
+   "kind": "revendeur",
+   "ref": "Velomine – microSHIFT Centos 2x11 « Shimano compatible »",
+   "url": "https://velomine.com/products/microshift-centos-drop-bar-shift-lever-set-2-x-11-speed-shimano-compatible"
+  },
+  "pb-centos-rd": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – microSHIFT Centos RD-R58S chape courte : 30T maxi, 11T mini, capacité 35T, compatible Shimano 5800/6800/R7000/R8000/R9100",
+   "url": "https://www.performancebike.com/microshift-centos-road-rear-derailleur-black-11-speed-short-cage-rd-r58s/p1577491"
+  },
+  "99-ltwoo-r9": {
+   "kind": "revendeur",
+   "ref": "99 Bikes – LTWOO R9 2x11 : compatible LTWOO RD-R5011 et Shimano",
+   "url": "https://99bikes.com.au/products/l-twoo-r9-series-shift-brake-lever-set-2x11-speed"
+  },
+  "bikable-a12x": {
+   "kind": "revendeur",
+   "ref": "Bikable – LTWOO A12-X 1x12 : cassettes jusqu'à 52T, fixation M10x1",
+   "url": "https://bikable.com/parts/rear-derailleurs/rear-derailliur-for-mtb-commuter-and-urban/ltwoo-a12-x-rear-derailleur-1x12sp-al"
+  },
+  "vo-empire": {
+   "kind": "revendeur",
+   "ref": "Velo Orange – SENSAH Empire 2x11 : compatible dérailleurs Empire et SRAM Exact Actuation",
+   "url": "https://velo-orange.com/products/sensah-empire-integrated-2x11-shifter-brake-lever-set-11-speed"
+  },
+  "vo-srx": {
+   "kind": "revendeur",
+   "ref": "Velo Orange – SENSAH SRX 1x11",
+   "url": "https://velo-orange.com/products/sensah-srx-integrated-1x-shifterset"
+  },
+  "vo-srx-rd": {
+   "kind": "revendeur",
+   "ref": "Velo Orange – dérailleur SENSAH SRX : cassette max 52T",
+   "url": "https://velo-orange.com/products/sensah-crx-rear-derailleur"
+  },
+  "bc-csmz90": {
+   "kind": "revendeur",
+   "ref": "bike-components – SunRace CSMZ90 12v 11-50 : corps HG, compatible SRAM 12v, pas Shimano 12v",
+   "url": "https://www.bike-components.de/en/SunRace/CSMZ90-12-speed-Cassette-p70443/"
+  },
+  "b24-csmx8": {
+   "kind": "revendeur",
+   "ref": "Bike24 – SunRace CSMX8 11v 11-40 / 11-42 (étagements), Shimano HG",
+   "url": "https://www.bike24.com/p2213767.html"
+  },
+  "bc-csmx8": {
+   "kind": "revendeur",
+   "ref": "bike-components – SunRace CSMX8 11-46 : 11-13-15-18-21-24-28-32-36-40-46",
+   "url": "https://bike-components.de/en/SunRace/CSMX8-11-speed-Cassette-p70415/"
+  },
+  "b24-csms8": {
+   "kind": "revendeur",
+   "ref": "Bike24 – SunRace CSMS8 11v 11-36 / 11-40 / 11-42 / 11-46 (étagements), HG",
+   "url": "https://www.bike24.com/p2296811.html"
+  },
+  "box-prime9": {
+   "kind": "officiel",
+   "ref": "Box Components – Prime 9 : tirage propre, incompatible pattes Shimano direct mount, tout Prime 9 inter-compatible",
+   "url": "https://eu.boxcomponents.com/it/products/box-two-prime-9-shifters"
+  },
+  "mtbd-box3": {
+   "kind": "revendeur",
+   "ref": "MTB Direct – Box Three Prime 9 groupe multi-shift wide 11-46",
+   "url": "https://www.mtbdirect.com.au/products/box-three-prime-9-speed-groupset-multi-shift-wide-11-46t-9-speed"
+  },
+  "rose-ekar-rd": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – Campagnolo Ekar RD 13v : pignon 9T mini, 44T maxi, capacité 35T, cassettes 9-36 à 10-44",
+   "url": "https://www.rosebikes.com/p/campagnolo-ekartm-rear-derailleur-13-speed-2699901"
+  },
+  "roadcc-ekar": {
+   "kind": "presse",
+   "ref": "road.cc – Ekar 13v : cassettes 9-36, 9-42, 10-44 sur corps N3W ; chaîne 13v",
+   "url": "https://road.cc/content/tech-news/campagnolo-launch-ekar-13-speed-gravel-groupset-275995"
+  }
+ },
+ "parts": [
+  {
+   "id": "microshift-rd-advent-x",
+   "type": "rear_derailleur",
+   "brand": "microSHIFT",
+   "ref": "RD-M6205 (Advent X)",
+   "aliases": [
+    "advent x",
+    "m6205"
+   ],
+   "name": "Advent X 1x10 clutch",
+   "discipline": "vtt",
+   "generation": "Advent X (10v)",
+   "attrs": {
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "microshift-advent-x",
+    "maxCog": 48,
+    "minCog": 11,
+    "totalCapacity": 37,
+    "mount": "standard",
+    "clutch": true,
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "mtbd-advx",
+    "99-advx",
+    "ms-faq"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité 37T (41T sur une fiche minoritaire)."
+  },
+  {
+   "id": "microshift-sl-advent-x",
+   "type": "shifter",
+   "brand": "microSHIFT",
+   "ref": "Manette Advent X 10v",
+   "aliases": [
+    "advent x manette"
+   ],
+   "name": "Manette Advent X",
+   "discipline": "vtt",
+   "generation": "Advent X (10v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "microshift-advent-x",
+    "form": "gachette_vtt"
+   },
+   "src": "ms-faq",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "microshift-cs-advent-x-11-48",
+   "type": "cassette",
+   "brand": "microSHIFT",
+   "ref": "Cassette Advent X 11-48",
+   "aliases": [
+    "advent x cassette"
+   ],
+   "name": "Cassette Advent X 10v 11-48",
+   "discipline": "vtt",
+   "generation": "Advent X (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 48,
+    "freehub": "hg_8_9_10"
+   },
+   "src": [
+    "br-advx",
+    "ms-faq"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étagement intermédiaire non trouvé."
+  },
+  {
+   "id": "microshift-cs-sword-11-38",
+   "type": "cassette",
+   "brand": "microSHIFT",
+   "ref": "Cassette Sword 11-38",
+   "aliases": [
+    "sword cassette"
+   ],
+   "name": "Cassette Sword 2x10 11-38",
+   "discipline": "gravel",
+   "generation": "Sword (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 38,
+    "freehub": "hg_8_9_10"
+   },
+   "src": "br-sword",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étagement intermédiaire non trouvé."
+  },
+  {
+   "id": "microshift-st-centos-2x11",
+   "type": "shifter",
+   "brand": "microSHIFT",
+   "ref": "Leviers Centos 2x11",
+   "aliases": [
+    "centos",
+    "centos 11"
+   ],
+   "name": "Leviers route Centos 2x11",
+   "discipline": "route",
+   "generation": "Centos (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "src": [
+    "velomine-centos"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Famille Shimano route 11v selon le revendeur (« Shimano compatible »). Frein intégré non renseigné."
+  },
+  {
+   "id": "microshift-rd-centos-ss",
+   "type": "rear_derailleur",
+   "brand": "microSHIFT",
+   "ref": "RD-R58S (Centos)",
+   "aliases": [
+    "centos rd",
+    "r58s"
+   ],
+   "name": "Centos 11v chape courte",
+   "discipline": "route",
+   "generation": "Centos (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 30,
+    "minLowCog": 25,
+    "minCog": 11,
+    "totalCapacity": 35,
+    "cageLength": "SS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-centos-rd",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-st-r9-2x11",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers R9 2x11",
+   "aliases": [
+    "ltwoo r9",
+    "l-twoo r9"
+   ],
+   "name": "Leviers route LTWOO R9 2x11",
+   "discipline": "route",
+   "generation": "R9 (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "src": "99-ltwoo-r9",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Famille Shimano route 11v selon le revendeur. Frein intégré non renseigné."
+  },
+  {
+   "id": "ltwoo-rd-a12x",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD A12-X",
+   "aliases": [
+    "ltwoo a12",
+    "ax12",
+    "a12x"
+   ],
+   "name": "LTWOO A12-X 1x12",
+   "discipline": "vtt",
+   "generation": "A12 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "ltwoo-a12",
+    "maxCog": 52,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "bikable-a12x",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage non documenté : ne fonctionne qu'avec sa manette LTWOO A12 jusqu'à preuve du contraire."
+  },
+  {
+   "id": "sensah-st-empire-2x11",
+   "type": "shifter",
+   "brand": "SENSAH",
+   "ref": "Leviers Empire 2x11",
+   "aliases": [
+    "sensah empire",
+    "empire"
+   ],
+   "name": "Leviers route SENSAH Empire 2x11",
+   "discipline": "route",
+   "generation": "Empire (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "sensah-empire-11",
+    "form": "levier_route",
+    "brakeActuation": "mecanique"
+   },
+   "src": "vo-empire",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage câble de frein non renseigné."
+  },
+  {
+   "id": "sensah-st-srx-1x11",
+   "type": "shifter",
+   "brand": "SENSAH",
+   "ref": "Leviers SRX 1x11",
+   "aliases": [
+    "sensah srx",
+    "srx pro"
+   ],
+   "name": "Leviers SENSAH SRX 1x11",
+   "discipline": "gravel",
+   "generation": "SRX (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "sensah-srx-11",
+    "form": "levier_route"
+   },
+   "src": "vo-srx",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "sensah-rd-srx",
+   "type": "rear_derailleur",
+   "brand": "SENSAH",
+   "ref": "RD SRX",
+   "aliases": [
+    "srx rd"
+   ],
+   "name": "SENSAH SRX 1x11",
+   "discipline": "gravel",
+   "generation": "SRX (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "sensah-srx-11",
+    "maxCog": 52,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "vo-srx-rd",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "52T selon la fiche revendeur (un essai utilisateur cite 50T)."
+  },
+  {
+   "id": "sunrace-csmz90-11-50",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMZ90 11-50",
+   "aliases": [
+    "csmz90",
+    "mz90"
+   ],
+   "name": "SunRace CSMZ90 12v 11-50",
+   "discipline": "vtt",
+   "generation": "MZ90 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 50,
+    "freehub": "hg_8_9_10",
+    "pitch": "sram-eagle-12"
+   },
+   "src": "bc-csmz90",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pas des pignons rattaché à SRAM Eagle d'après « compatible SRAM 12v, pas Shimano 12v » : à valider."
+  },
+  {
+   "id": "sunrace-csmx8-11-40",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMX8 11-40",
+   "aliases": [
+    "csmx8 11-40"
+   ],
+   "name": "SunRace CSMX8 11v 11-40",
+   "discipline": "vtt",
+   "generation": "MX8 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 40,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11",
+    "cogs": "11-13-15-17-19-21-24-28-32-36-40"
+   },
+   "src": "b24-csmx8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sunrace-csmx8-11-42",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMX8 11-42",
+   "aliases": [
+    "csmx8 11-42"
+   ],
+   "name": "SunRace CSMX8 11v 11-42",
+   "discipline": "vtt",
+   "generation": "MX8 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 42,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11",
+    "cogs": "11-13-15-17-19-21-24-28-32-36-42"
+   },
+   "src": "b24-csmx8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sunrace-csmx8-11-46",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMX8 11-46",
+   "aliases": [
+    "csmx8 11-46",
+    "csmx8"
+   ],
+   "name": "SunRace CSMX8 11v 11-46",
+   "discipline": "vtt",
+   "generation": "MX8 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 46,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11",
+    "cogs": "11-13-15-18-21-24-28-32-36-40-46"
+   },
+   "src": "bc-csmx8",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Dérailleurs Shimano : vis B plus longue parfois nécessaire."
+  },
+  {
+   "id": "sunrace-csms8-11-36",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMS8 11-36",
+   "aliases": [
+    "csms8 11-36"
+   ],
+   "name": "SunRace CSMS8 11v 11-36",
+   "discipline": "vtt",
+   "generation": "MS8 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 36,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11",
+    "cogs": "11-12-13-15-17-19-21-24-28-32-36"
+   },
+   "src": "b24-csms8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sunrace-csms8-11-40",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMS8 11-40",
+   "aliases": [
+    "csms8 11-40"
+   ],
+   "name": "SunRace CSMS8 11v 11-40",
+   "discipline": "vtt",
+   "generation": "MS8 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 40,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11",
+    "cogs": "11-13-15-17-19-21-24-28-32-36-40"
+   },
+   "src": "b24-csms8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sunrace-csms8-11-42",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMS8 11-42",
+   "aliases": [
+    "csms8 11-42"
+   ],
+   "name": "SunRace CSMS8 11v 11-42",
+   "discipline": "vtt",
+   "generation": "MS8 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 42,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11",
+    "cogs": "11-13-15-17-19-21-24-28-32-36-42"
+   },
+   "src": "b24-csms8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sunrace-csms8-11-46",
+   "type": "cassette",
+   "brand": "SunRace",
+   "ref": "CSMS8 11-46",
+   "aliases": [
+    "csms8 11-46",
+    "csms8"
+   ],
+   "name": "SunRace CSMS8 11v 11-46",
+   "discipline": "vtt",
+   "generation": "MS8 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 46,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11",
+    "cogs": "11-13-15-18-21-24-28-32-36-40-46"
+   },
+   "src": "b24-csms8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "box-sl-two-prime9",
+   "type": "shifter",
+   "brand": "Box",
+   "ref": "Box Two Prime 9",
+   "aliases": [
+    "box two",
+    "prime 9"
+   ],
+   "name": "Manette Box Two Prime 9",
+   "discipline": "vtt",
+   "generation": "Prime 9 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "box-prime-9",
+    "form": "gachette_vtt"
+   },
+   "src": "box-prime9",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "box-rd-three-prime9",
+   "type": "rear_derailleur",
+   "brand": "Box",
+   "ref": "Box Three Prime 9 (wide)",
+   "aliases": [
+    "box three"
+   ],
+   "name": "Dérailleur Box Three Prime 9",
+   "discipline": "vtt",
+   "generation": "Prime 9 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "box-prime-9",
+    "maxCog": 46,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "box-prime9",
+    "mtbd-box3"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "46T déduit du groupe « wide 11-46 » vendu avec ce dérailleur. Incompatible avec les pattes Shimano direct mount."
+  },
+  {
+   "id": "campagnolo-rd-ekar",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Ekar 13v",
+   "aliases": [
+    "ekar",
+    "ekar rd"
+   ],
+   "name": "Campagnolo Ekar 13v",
+   "discipline": "gravel",
+   "generation": "Ekar (13v)",
+   "attrs": {
+    "speeds": 13,
+    "system": "mecanique",
+    "family": "campagnolo-ekar-13",
+    "maxCog": 44,
+    "minCog": 9,
+    "totalCapacity": 35,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "rose-ekar-rd",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-ekar-9-36",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Ekar 9-36",
+   "aliases": [
+    "ekar 9-36"
+   ],
+   "name": "Ekar 13v 9-36",
+   "discipline": "gravel",
+   "generation": "Ekar (13v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 13,
+    "minCog": 9,
+    "maxCog": 36,
+    "freehub": "n3w",
+    "pitch": "campagnolo-13"
+   },
+   "src": "roadcc-ekar",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-ekar-9-42",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Ekar 9-42",
+   "aliases": [
+    "ekar 9-42"
+   ],
+   "name": "Ekar 13v 9-42",
+   "discipline": "gravel",
+   "generation": "Ekar (13v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 13,
+    "minCog": 9,
+    "maxCog": 42,
+    "freehub": "n3w",
+    "pitch": "campagnolo-13"
+   },
+   "src": "roadcc-ekar",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-ekar-10-44",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Ekar 10-44",
+   "aliases": [
+    "ekar 10-44"
+   ],
+   "name": "Ekar 13v 10-44",
+   "discipline": "gravel",
+   "generation": "Ekar (13v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 13,
+    "minCog": 10,
+    "maxCog": 44,
+    "freehub": "n3w",
+    "pitch": "campagnolo-13"
+   },
+   "src": "roadcc-ekar",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cn-ekar",
+   "type": "chain",
+   "brand": "Campagnolo",
+   "ref": "Chaîne Ekar 13v",
+   "aliases": [
+    "chaine ekar"
+   ],
+   "name": "Chaîne Campagnolo Ekar 13v",
+   "discipline": "gravel",
+   "generation": "Ekar (13v)",
+   "attrs": {
+    "speeds": 13,
+    "chainType": "campagnolo-13"
+   },
+   "src": "roadcc-ekar",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "kmc-x10",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "X10",
+   "aliases": [
+    "kmc x10"
+   ],
+   "name": "Chaîne KMC X10",
+   "discipline": "autre",
+   "generation": "10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "kmc-10"
+   },
+   "src": "br-sword",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "microshift-fc-sword",
+   "type": "crankset",
+   "brand": "microSHIFT",
+   "ref": "Pédalier Sword (axe 24 mm)",
+   "aliases": [
+    "sword pedalier"
+   ],
+   "name": "Pédalier microSHIFT Sword",
+   "discipline": "gravel",
+   "generation": "Sword (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "chainrings": 2
+   },
+   "src": "br-sword",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Version 1x / 2x, dentures et BCD non renseignés."
+  }
+ ]
+}

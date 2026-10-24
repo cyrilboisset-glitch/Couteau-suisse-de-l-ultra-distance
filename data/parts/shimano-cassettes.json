@@ -1,0 +1,655 @@
+{
+ "_meta": {
+  "description": "Shimano – cassettes 11v / 12v, toutes plages trouvées. hg_8_9_10 = cannelures HG standard (corps 8/9/10v et VTT 11v) ; hg_11_route = corps route 11v ; hg_12_route = cassette route 12v (corps HG L et L2)."
+ },
+ "defaults": {
+  "brand": "Shimano",
+  "type": "cassette"
+ },
+ "sources": {
+  "pb-r8000": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – CS-R8000 : 11-25, 11-28, 11-30, 11-32, 12-25, 14-28 (étagements)",
+   "url": "https://www.performancebike.com/shimano-ultegra-csr8000-11speed-cassette-1125t-icsr800011125/p671919"
+  },
+  "lordgun-r7000": {
+   "kind": "revendeur",
+   "ref": "Lordgun – CS-R7000 : 11-28, 11-30, 11-32, 12-25 (étagements) ; 11-34 = 11-13-15-17-19-21-23-25-27-30-34",
+   "url": "https://www.lordgun.com/shimano-105-cs-r7000-11s-cassette-1"
+  },
+  "sh-hg800": {
+   "kind": "officiel",
+   "ref": "Shimano – CS-HG800-11 : compatible corps 10 et 11v, entretoise sur corps route, dérailleur GS",
+   "url": "https://bike.shimano.com/en-US/product/component/ultegra-r8000/CS-HG800-11.html"
+  },
+  "sh-freehub-guide": {
+   "kind": "officiel",
+   "ref": "Shimano – Guide des corps de roue libre 12v",
+   "url": "https://bike.shimano.com/stories/article/a-guide-to-shimanos-12-speed-freehubs-and-compatibility.html"
+  },
+  "excel-m8000": {
+   "kind": "revendeur",
+   "ref": "Excel Sports – CS-M8000 11-40 / 11-42 / 11-46 (étagements), corps HG",
+   "url": "https://www.excelsports.com/shimano-xt-cs-m8000-11-speed-cassette"
+  },
+  "cc-m5100": {
+   "kind": "revendeur",
+   "ref": "Competitive Cyclist – CS-M5100 11-51 (étagement)",
+   "url": "https://competitivecyclist.com/shimano-cs-m5100-cassette"
+  },
+  "dec-r9200": {
+   "kind": "revendeur",
+   "ref": "Decathlon – CS-R9200 11-30 / 11-34 (étagements)",
+   "url": "https://www.decathlon.co.uk/p/mp/shimano-dura-ace-cs-r9200-12v-cassette/15632cb5-0251-46f5-ac66-90575d502877/c3"
+  },
+  "rose-r8100": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – CS-R8100 11-30 / 11-34, corps HG L / HG L2",
+   "url": "https://www.rosebikes.it/shimano-ultegra-cs-r8100-12-speed-cassette-2700206"
+  },
+  "bc-r7100": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-R7100-12 11-34",
+   "url": "https://www.Bike-Components.de/en/Shimano/105-CS-R7100-12-12-speed-Cassette-p88621/"
+  },
+  "bc-m8100": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-M8100 10-45 / 10-51 et CS-M7100 10-51 (étagements), Micro Spline",
+   "url": "https://bike-components.de/en/Shimano/XT-CS-M8100-12-12-Speed-Cassette-p71483/"
+  },
+  "bc-m6100": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-M6100-12 10-51, Micro Spline",
+   "url": "https://www.bike-components.de/en/Shimano/Deore-CS-M6100-12-12-speed-Cassette-p77711"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-cs-r8000-11-25",
+   "ref": "CS-R8000 11-25",
+   "aliases": [
+    "r8000 11-25",
+    "cs r8000 11-25"
+   ],
+   "name": "Ultegra R8000 11v 11-25",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 25,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-16-17-19-21-23-25",
+    "pitch": "hg-11"
+   },
+   "src": "pb-r8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r8000-11-28",
+   "ref": "CS-R8000 11-28",
+   "aliases": [
+    "r8000 11-28",
+    "cs r8000 11-28"
+   ],
+   "name": "Ultegra R8000 11v 11-28",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 28,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-17-19-21-23-25-28",
+    "pitch": "hg-11"
+   },
+   "src": "pb-r8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r8000-11-30",
+   "ref": "CS-R8000 11-30",
+   "aliases": [
+    "r8000 11-30",
+    "cs r8000 11-30"
+   ],
+   "name": "Ultegra R8000 11v 11-30",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 30,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-17-19-21-24-27-30",
+    "pitch": "hg-11"
+   },
+   "src": "pb-r8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r8000-11-32",
+   "ref": "CS-R8000 11-32",
+   "aliases": [
+    "r8000 11-32",
+    "cs r8000 11-32"
+   ],
+   "name": "Ultegra R8000 11v 11-32",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 32,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-16-18-20-22-25-28-32",
+    "pitch": "hg-11"
+   },
+   "src": "pb-r8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r8000-12-25",
+   "ref": "CS-R8000 12-25",
+   "aliases": [
+    "r8000 12-25",
+    "cs r8000 12-25"
+   ],
+   "name": "Ultegra R8000 11v 12-25",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 12,
+    "maxCog": 25,
+    "freehub": "hg_11_route",
+    "cogs": "12-13-14-15-16-17-18-19-21-23-25",
+    "pitch": "hg-11"
+   },
+   "src": "pb-r8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r8000-14-28",
+   "ref": "CS-R8000 14-28",
+   "aliases": [
+    "r8000 14-28",
+    "cs r8000 14-28"
+   ],
+   "name": "Ultegra R8000 11v 14-28",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 14,
+    "maxCog": 28,
+    "freehub": "hg_11_route",
+    "cogs": "14-15-16-17-18-19-20-21-23-25-28",
+    "pitch": "hg-11"
+   },
+   "src": "pb-r8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r7000-11-28",
+   "ref": "CS-R7000 11-28",
+   "aliases": [
+    "r7000 11-28"
+   ],
+   "name": "105 R7000 11v 11-28",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 28,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-17-19-21-23-25-28",
+    "pitch": "hg-11"
+   },
+   "src": "lordgun-r7000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r7000-11-30",
+   "ref": "CS-R7000 11-30",
+   "aliases": [
+    "r7000 11-30"
+   ],
+   "name": "105 R7000 11v 11-30",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 30,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-17-19-21-24-27-30",
+    "pitch": "hg-11"
+   },
+   "src": "lordgun-r7000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r7000-11-32",
+   "ref": "CS-R7000 11-32",
+   "aliases": [
+    "r7000 11-32"
+   ],
+   "name": "105 R7000 11v 11-32",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 32,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-16-18-20-22-25-28-32",
+    "pitch": "hg-11"
+   },
+   "src": "lordgun-r7000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r7000-12-25",
+   "ref": "CS-R7000 12-25",
+   "aliases": [
+    "r7000 12-25"
+   ],
+   "name": "105 R7000 11v 12-25",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 12,
+    "maxCog": 25,
+    "freehub": "hg_11_route",
+    "cogs": "12-13-14-15-16-17-18-19-21-23-25",
+    "pitch": "hg-11"
+   },
+   "src": "lordgun-r7000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg800-11-34",
+   "ref": "CS-HG800-11 11-34",
+   "aliases": [
+    "hg800 11-34",
+    "hg800"
+   ],
+   "name": "Cassette HG800 11v 11-34",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 34,
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-23-25-27-30-34",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "sh-hg800",
+    "lordgun-r7000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étagement relevé sur une fiche HG700-11 11-34 ; à confirmer pour la HG800. Dérailleur GS requis (Shimano)."
+  },
+  {
+   "id": "shimano-cs-hg700-11-34",
+   "ref": "CS-HG700-11 11-34",
+   "aliases": [
+    "hg700 11-34",
+    "hg700"
+   ],
+   "name": "Cassette HG700 11v 11-34",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 34,
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-23-25-27-30-34",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "lordgun-r7000",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m8000-11-40",
+   "ref": "CS-M8000 11-40",
+   "aliases": [
+    "m8000 11-40"
+   ],
+   "name": "Deore XT M8000 11v 11-40",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 40,
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-24-27-31-35-40",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "excel-m8000",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m8000-11-42",
+   "ref": "CS-M8000 11-42",
+   "aliases": [
+    "m8000 11-42"
+   ],
+   "name": "Deore XT M8000 11v 11-42",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 42,
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-24-28-32-37-42",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "excel-m8000",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m8000-11-46",
+   "ref": "CS-M8000 11-46",
+   "aliases": [
+    "m8000 11-46"
+   ],
+   "name": "Deore XT M8000 11v 11-46",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 46,
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-24-28-32-37-46",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "excel-m8000",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Mono-plateau seulement ; vérifier le dégagement des rayons."
+  },
+  {
+   "id": "shimano-cs-m5100-11-51",
+   "ref": "CS-M5100 11-51",
+   "aliases": [
+    "m5100 11-51"
+   ],
+   "name": "Deore M5100 11v 11-51",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 51,
+    "cogs": "11-13-15-18-21-24-28-33-39-45-51",
+    "pitch": "hg-11"
+   },
+   "src": "cc-m5100",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Corps de roue libre non confirmé par une source : champ laissé vide."
+  },
+  {
+   "id": "shimano-cs-r9200-11-30",
+   "ref": "CS-R9200 11-30",
+   "aliases": [
+    "r9200 11-30"
+   ],
+   "name": "Dura-Ace R9200 12v 11-30",
+   "discipline": "route",
+   "generation": "Dura-Ace R9200 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 30,
+    "freehub": "hg_12_route",
+    "cogs": "11-12-13-14-15-16-17-19-21-24-27-30",
+    "pitch": "shimano-12"
+   },
+   "src": "dec-r9200",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r9200-11-34",
+   "ref": "CS-R9200 11-34",
+   "aliases": [
+    "r9200 11-34"
+   ],
+   "name": "Dura-Ace R9200 12v 11-34",
+   "discipline": "route",
+   "generation": "Dura-Ace R9200 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 34,
+    "freehub": "hg_12_route",
+    "cogs": "11-12-13-14-15-17-19-21-24-27-30-34",
+    "pitch": "shimano-12"
+   },
+   "src": "dec-r9200",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-r8100-11-30",
+   "ref": "CS-R8100 11-30",
+   "aliases": [
+    "r8100 11-30"
+   ],
+   "name": "Ultegra R8100 12v 11-30",
+   "discipline": "route",
+   "generation": "Ultegra R8100 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 30,
+    "freehub": "hg_12_route",
+    "pitch": "shimano-12"
+   },
+   "src": "rose-r8100",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étagement intermédiaire non trouvé."
+  },
+  {
+   "id": "shimano-cs-r8100-11-34",
+   "ref": "CS-R8100 11-34",
+   "aliases": [
+    "r8100 11-34"
+   ],
+   "name": "Ultegra R8100 12v 11-34",
+   "discipline": "route",
+   "generation": "Ultegra R8100 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 34,
+    "freehub": "hg_12_route",
+    "pitch": "shimano-12"
+   },
+   "src": "rose-r8100",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étagement intermédiaire non trouvé."
+  },
+  {
+   "id": "shimano-cs-r7100-11-34",
+   "ref": "CS-R7100 11-34",
+   "aliases": [
+    "r7100 11-34"
+   ],
+   "name": "105 R7100 12v 11-34",
+   "discipline": "route",
+   "generation": "105 R7100 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 34,
+    "freehub": "hg_12_route",
+    "pitch": "shimano-12"
+   },
+   "src": "bc-r7100",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étagement intermédiaire non trouvé."
+  },
+  {
+   "id": "shimano-cs-m8100-10-45",
+   "ref": "CS-M8100 10-45",
+   "aliases": [
+    "m8100 10-45"
+   ],
+   "name": "Deore XT M8100 12v 10-45",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 45,
+    "freehub": "microspline",
+    "cogs": "10-12-14-16-18-21-24-28-32-36-40-45",
+    "pitch": "shimano-12"
+   },
+   "src": [
+    "bc-m8100",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m8100-10-51",
+   "ref": "CS-M8100 10-51",
+   "aliases": [
+    "m8100 10-51"
+   ],
+   "name": "Deore XT M8100 12v 10-51",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "freehub": "microspline",
+    "cogs": "10-12-14-16-18-21-24-28-33-39-45-51",
+    "pitch": "shimano-12"
+   },
+   "src": [
+    "bc-m8100",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m7100-10-51",
+   "ref": "CS-M7100 10-51",
+   "aliases": [
+    "m7100 10-51"
+   ],
+   "name": "SLX M7100 12v 10-51",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "freehub": "microspline",
+    "cogs": "10-12-14-16-18-21-24-28-33-39-45-51",
+    "pitch": "shimano-12"
+   },
+   "src": [
+    "bc-m8100",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m6100-10-51",
+   "ref": "CS-M6100 10-51",
+   "aliases": [
+    "m6100 10-51"
+   ],
+   "name": "Deore M6100 12v 10-51",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "freehub": "microspline",
+    "cogs": "10-12-14-16-18-21-24-28-33-39-45-51",
+    "pitch": "shimano-12"
+   },
+   "src": [
+    "bc-m6100",
+    "sh-freehub-guide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ]
+}

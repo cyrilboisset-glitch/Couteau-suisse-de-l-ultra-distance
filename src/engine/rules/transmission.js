@@ -27,7 +27,8 @@ export const commandeSysteme = {
     const s = sh.attrs.system;
     const d = der.attrs.system;
     if (s !== d) {
-      return incompatible(this, `Commande ${s} et dérailleur ${d} : impossible de mélanger électronique et mécanique.`);
+      const lbl = { mecanique: 'mécanique', electronique: 'électronique' };
+      return incompatible(this, `Commande ${lbl[s] ?? s} et dérailleur ${lbl[d] ?? d} : impossible de mélanger électronique et mécanique.`);
     }
     if (s === 'electronique') {
       const g2 = guard(this, [[sh, ['protocol']], [der, ['protocol']]]);
@@ -237,8 +238,14 @@ export const largeurChaine = {
   evaluate(chain, cas) {
     const g = guard(this, [[chain, ['speeds']], [cas, ['speeds']]]);
     if (g) return g.finding;
-    const d = chain.attrs.speeds - cas.attrs.speeds;
-    if (d === 0) return ok(this, `Chaîne et cassette ${cas.attrs.speeds} vitesses.`);
+    // Certaines cassettes (ex. Shimano CUES) exigent une chaîne d'une autre largeur que leur nombre de pignons.
+    const need = cas.attrs.chainSpeeds ?? cas.attrs.speeds;
+    const d = chain.attrs.speeds - need;
+    if (d === 0) {
+      return ok(this, cas.attrs.chainSpeeds
+        ? `Chaîne ${need}v prévue pour cette cassette ${cas.attrs.speeds}v.`
+        : `Chaîne et cassette ${cas.attrs.speeds} vitesses.`);
+    }
     if (d === 1) {
       return known(this, `Chaîne ${chain.attrs.speeds}v (plus étroite) sur cassette ${cas.attrs.speeds}v.`, {
         limitation: 'Fonctionne en général ; chaîne plus fragile que nécessaire.',
@@ -274,6 +281,60 @@ export const flattop = {
       return incompatible(this, "Ces plateaux n'acceptent pas une chaîne Flattop.");
     }
     return null;
+  },
+};
+
+const FLAT_PROFILE = new Set(['sram-flattop', 'sram-t-type']);
+
+const listOf = (s) => String(s ?? '').split('|').map((x) => x.trim()).filter(Boolean);
+
+export const typeChaine = {
+  id: 'transmission.type_chaine',
+  label: 'Type de chaîne exigé (Eagle, Flattop, T-Type, HG+…)',
+  between: [['chain', 'rear_derailleur'], ['chain', 'cassette'], ['chain', 'chainring'], ['chain', 'crankset']],
+  confidence: 'moyenne',
+  source: { kind: 'officiel', ref: 'Type de chaîne exigé par le constructeur du dérailleur / de la cassette' },
+  evaluate(chain, other) {
+    const accepted = listOf(other.attrs?.chainTypes);
+    if (!accepted.length || !chain.attrs?.chainType) return null;
+    const t = chain.attrs.chainType;
+    if (accepted.includes(t)) return ok(this, `Chaîne ${t} prévue.`);
+    // Profils « plats » (Flattop, T-Type) : non interchangeables entre eux ni avec les chaînes classiques (SRAM).
+    if (FLAT_PROFILE.has(t) || accepted.some((x) => FLAT_PROFILE.has(x))) {
+      return incompatible(this, `Chaîne ${t} non prévue (attendu : ${accepted.join(' ou ')}) : profil de plaques différent, risque de déraillement en charge.`, {
+        source: { kind: 'officiel', ref: 'SRAM – chaînes Flattop route, Eagle et T-Type non interchangeables', url: 'https://support.sram.com/hc/en-us/articles/6526784724379-Will-a-road-Flattop-chain-work-on-a-SRAM-Eagle-drivetrain-and-vise-versa' },
+      });
+    }
+    return degraded(this, `Chaîne ${t} à la place de ${accepted.join(' ou ')} (même largeur).`, {
+      limitation: 'Hors préconisation constructeur : passages un peu moins nets, usure à surveiller.',
+      source: aSourcer('Croisement de chaînes classiques de même largeur, à valider'),
+    });
+  },
+};
+
+export const pasPignons = {
+  id: 'transmission.pas_pignons',
+  label: 'Pas des pignons ↔ indexation du dérailleur',
+  // Mécanique : la manette (son tirage par cran) fixe le pas indexé. Électronique : le dérailleur.
+  between: [['shifter', 'cassette'], ['rear_derailleur', 'cassette']],
+  confidence: 'moyenne',
+  source: physique("L'indexation (tirage × ratio du dérailleur) est calculée pour l'écartement des pignons d'un standard donné."),
+  evaluate(rd, cas, kb) {
+    if (rd.type === 'shifter' && (rd.attrs?.system === 'electronique' || rd.attrs?.side === 'avant')) return null;
+    if (rd.type === 'rear_derailleur' && rd.attrs?.system !== 'electronique' && !rd.attrs?.pitch) return null;
+    const pitches = rd.attrs?.pitch ? listOf(rd.attrs.pitch) : (kb.family(rd.attrs?.family)?.pitch ?? []);
+    const cp = cas.attrs?.pitch;
+    if (!pitches.length || !cp) return null;
+    if (pitches.includes(cp)) return ok(this, `Pas de pignons ${cp} prévu pour ce dérailleur.`);
+    for (const p of pitches) {
+      const entry = kb.pitchFit(cp, p);
+      if (entry) return fromEntry(this, entry);
+    }
+    return degraded(this, `Cassette au pas ${cp}, dérailleur indexé pour ${pitches.join(' / ')}.`, {
+      limitation: "Écartement des pignons différent : l'indexation dérive, certaines vitesses passent mal.",
+      adjustments: ['Régler la tension de câble au milieu de la cassette'],
+      source: aSourcer('Croisement de standards de pignons non documenté'),
+    });
   },
 };
 
@@ -377,6 +438,6 @@ export const derailleurAvantPedalier = {
 
 export const TRANSMISSION_RULES = [
   commandeSysteme, familleActionnement, vitessesManetteCassette, vitessesElectronique,
-  plusGrandPignon, patteDerailleur, roueLibre, largeurChaine, flattop, maillonRapide,
+  plusGrandPignon, patteDerailleur, roueLibre, largeurChaine, flattop, maillonRapide, typeChaine, pasPignons,
   fixationDerailleurAvant, derailleurAvantPedalier,
 ];

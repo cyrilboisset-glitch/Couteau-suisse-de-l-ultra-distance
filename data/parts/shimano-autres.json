@@ -1,0 +1,840 @@
+{
+ "_meta": {
+  "description": "Shimano – manettes, chaînes, pédaliers, boîtiers, freins."
+ },
+ "sources": {
+  "sjs-rx812": {
+   "kind": "revendeur",
+   "ref": "SJS Cycles – RD-RX812 fonctionne avec les leviers 105 ST-R7000 11v",
+   "url": "https://sjscycles.co.uk/derailleurs-rear/shimano-grx-rdrx812-11-speed-rear-derailleur-shadowplus-for-single"
+  },
+  "condor-r8020": {
+   "kind": "revendeur",
+   "ref": "Condor – kit ST-R8020 + étrier BR-R8070 flat mount, durites et huile minérale",
+   "url": "https://www.condorcycles.com/en-de/products/shimano-ultegra-r8000-sti-lever-and-hydraulic-disc-caliper"
+  },
+  "rose-r8070": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – ST-R8020 + BR-R8070 flat mount 2 pistons",
+   "url": "https://www.rosebikes.it/shimano-ultegra-st-r8020-double-brakeshift-lever-combination-with-br-r8070-disc-brake-front-wheel-2658927?sf=1"
+  },
+  "bike24-r7100": {
+   "kind": "revendeur",
+   "ref": "Bike24 – RD-R7100 : manettes ST-R7120, ST-RX820, ST-RX610",
+   "url": "https://www.bike24.com/p2729393.html"
+  },
+  "tune-r7120": {
+   "kind": "revendeur",
+   "ref": "Tune Cycles – ST-R7120 + BR-R7170 hydraulique",
+   "url": "https://shop.tunecycles.com.au/shimano-105-st-r7120-l-dual-control-lever-br-r7170-rear-hydraulic-disc-brake"
+  },
+  "pb-rx820": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – ST-RX820 hydraulique, compatible dérailleurs 12v route/gravel, pas VTT 12v",
+   "url": "https://www.performancebike.com/shimano-grx-strx820-hydraulic-brake-shift-levers-black-istrx820lai-p/p1516642"
+  },
+  "sh-sl-m8100": {
+   "kind": "officiel",
+   "ref": "Shimano – SL-M8100-R manette droite 12v",
+   "url": "https://bike.shimano.com/en-EU/product/component/deore-xt-m8100/SL-M8100-R.html"
+  },
+  "halfords-rx815": {
+   "kind": "revendeur",
+   "ref": "Halfords – RD-RX815 compatible toutes manettes Di2 11v dont ST-R8050",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-grx-rd-rx815-di2-11-speed-rear-derailleur-for-double-402918.html"
+  },
+  "veloplus-r7170": {
+   "kind": "revendeur",
+   "ref": "Veloplus – BR-R7170 flat mount 2 pistons, plaquettes L05A-RF, levier ST-R7170",
+   "url": "https://veloplus.ee/en/jarrusatula-shimano-105-br-r7170-flat-mount-takana-51013"
+  },
+  "sh-mineral": {
+   "kind": "officiel",
+   "ref": "Shimano – manuels revendeur freins à disque : uniquement huile minérale Shimano d'origine",
+   "url": "https://si.shimano.com/en/pdfs/dm/GADBR01/DM-GADBR01-09-ENG.pdf"
+  },
+  "sh-l05a": {
+   "kind": "officiel",
+   "ref": "Shimano – plaquettes L05A-RF (forme « L », étriers 2 pistons) : BR-R9270, R8170, R7170, R9170, R8070, R7070, 4770, RS805, RS505, RS405, RS305, U8010, U5000, RX810, RX410, RX400, RX820, MT805, M8110, M7110",
+   "url": "https://bike.shimano.com/en-NZ/products/service-and-upgrade-parts/pdp.P-BP-L05A-RF.html"
+  },
+  "halfords-g05a": {
+   "kind": "revendeur",
+   "ref": "Halfords – plaquettes G05A-RX : XTR BR-M9000/M9020/M987/M985, XT BR-M8100, BR-M8000",
+   "url": "https://www.halfords.com/cycling/bike-parts/bike-brakes/shimano-g05a-disc-brake-pads-and-spring-resin-693830.html"
+  },
+  "wwc-m8100-br": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – BL-M8100 / BR-M8100 post mount 2 pistons",
+   "url": "https://worldwidecyclery.com/products/shimano-xt-m8100-front-disc-brake-left-bl-m8100-lever-br-m8100-2-piston-caliper-pre-bled-finned-metal-pads-1000mm"
+  },
+  "wheeler-rx820": {
+   "kind": "revendeur",
+   "ref": "Wheelerworks – BR-RX820 flat mount, plaquettes L05A",
+   "url": "https://www.wheelerworks.nl/en/winkel/fietsonderdelen/remklauw-shimano-grx-br-rx820-achterzijde-flat-mount-l05a-remblok/"
+  },
+  "mat-r8000-fc": {
+   "kind": "revendeur",
+   "ref": "Matériel-vélo / Excel – FC-R8000 : 4 bras BCD 110 asymétrique, ligne de chaîne 43,5 mm, 50-34 / 52-36 / 53-39 / 46-36",
+   "url": "https://excelsports.com/shimano-ultegra-fc-r8000-crankset"
+  },
+  "mb-r7000-fc": {
+   "kind": "revendeur",
+   "ref": "Modern Bike – FC-R7000 11v, 110 BCD, Hollowtech II, 50-34",
+   "url": "https://www.modernbike.com/shimano-105-fc-r7000-crankset-165mm-11-speed-50-34t-110-bcd-hollowtech-crank-arms-hollowtech-ii-spindle-interface-black"
+  },
+  "wwc-rx810-fc": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – FC-RX810-1 11v, 40T, 110 BCD, Hollowtech II (ligne de chaîne 50,1 ou 49,7 mm selon les sources)",
+   "url": "https://worldwidecyclery.com/products/shimano-grx-fc-rx810-1-40t-11-speed-hollowtech-ii-172-5mm-crankset-without-bottom-bracket"
+  },
+  "wwc-rx600-fc": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – FC-RX600-10 46/30, BCD 110/80, Hollowtech II, ligne 46,9 mm",
+   "url": "https://worldwidecyclery.com/products/shimano-grx-fc-rx600-10-46-30t-10-speed-hollowtech-ii-165mm-crankset-without-bottom-bracket"
+  },
+  "sh-fc-m8100": {
+   "kind": "officiel",
+   "ref": "Shimano – FC-M8100-1 : ligne de chaîne 52 mm, Hollowtech II 24 mm, direct mount 28-36T, boîtier BB-MT800",
+   "url": "https://bike.shimano.com/en-EU/product/component/deore-xt-m8100/FC-M8100-1.html"
+  },
+  "bc-bbr60": {
+   "kind": "revendeur",
+   "ref": "bike-components – SM-BBR60 Hollowtech II 24 mm, BSA 68 mm ou ITA 70 mm",
+   "url": "https://www.bike-components.de/en/Shimano/Ultegra-FC-CX70-105-SM-BBR60-Hollowtech-II-Bottom-Bracket-p35878/"
+  },
+  "mec-rs501": {
+   "kind": "revendeur",
+   "ref": "MEC – BB-RS501 BSA 68 mm, pédaliers axe 24 mm",
+   "url": "https://www.mec.ca/en/product/6036-136/shimano-bb-rs501-threaded-bottom-bracket-cups-68mm"
+  },
+  "excel-m8000-cs": {
+   "kind": "revendeur",
+   "ref": "Excel Sports – chaînes HG-601, HG-701, HG-901 11v avec cassettes CS-M8000",
+   "url": "https://www.excelsports.com/shimano-xt-cs-m8000-11-speed-cassette"
+  },
+  "mantel-cn-m8100": {
+   "kind": "revendeur",
+   "ref": "Mantel – CN-M8100 HG+ 12v : VTT / route / gravel",
+   "url": "https://www.mantel.com/be-en/shimano-xt-cn-m8100-12-speed-chain"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-st-r7000",
+   "type": "shifter",
+   "ref": "ST-R7000",
+   "aliases": [
+    "st r7000",
+    "105 r7000 levier"
+   ],
+   "name": "105 R7000 levier route 11v (frein sur jante)",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "sjs-rx812",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Tirage frein « court » (route) déduit du type de frein sur jante route : à confirmer.",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-st-r8020",
+   "type": "shifter",
+   "ref": "ST-R8020",
+   "aliases": [
+    "st r8020",
+    "r8020"
+   ],
+   "name": "Ultegra R8020 levier hydraulique 11v",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "condor-r8020",
+    "rose-r8070",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-st-r7120",
+   "type": "shifter",
+   "ref": "ST-R7120",
+   "aliases": [
+    "st r7120",
+    "r7120"
+   ],
+   "name": "105 R7120 levier hydraulique 12v mécanique",
+   "discipline": "route",
+   "generation": "105 R7100 (12v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "bike24-r7100",
+    "tune-r7120",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-st-rx820",
+   "type": "shifter",
+   "ref": "ST-RX820",
+   "aliases": [
+    "st rx820",
+    "rx820 levier"
+   ],
+   "name": "GRX RX820 levier hydraulique 12v",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pb-rx820",
+    "bike24-r7100",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-st-rx610",
+   "type": "shifter",
+   "ref": "ST-RX610",
+   "aliases": [
+    "st rx610"
+   ],
+   "name": "GRX RX610 levier hydraulique 12v",
+   "discipline": "gravel",
+   "generation": "GRX RX610 (12v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral"
+   },
+   "src": [
+    "bike24-r7100",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-sl-m8100-r",
+   "type": "shifter",
+   "ref": "SL-M8100-R",
+   "aliases": [
+    "sl m8100",
+    "m8100 manette"
+   ],
+   "name": "Deore XT M8100 manette droite 12v",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "form": "gachette_vtt"
+   },
+   "src": "sh-sl-m8100",
+   "confidence": "haute",
+   "status": "valide",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-st-r8050",
+   "type": "shifter",
+   "ref": "ST-R8050",
+   "aliases": [
+    "st r8050"
+   ],
+   "name": "Ultegra Di2 R8050 levier 11v (frein sur jante)",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v Di2)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "form": "levier_route"
+   },
+   "src": "halfords-rx815",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Caractéristiques du frein intégré non sourcées : non renseignées.",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-cn-hg701-11",
+   "type": "chain",
+   "ref": "CN-HG701-11",
+   "aliases": [
+    "hg701",
+    "cn hg701"
+   ],
+   "name": "Chaîne HG701 11v",
+   "discipline": "route",
+   "generation": "11v",
+   "attrs": {
+    "speeds": 11,
+    "flattop": false,
+    "chainType": "shimano-hg-11"
+   },
+   "src": "excel-m8000-cs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-cn-hg901-11",
+   "type": "chain",
+   "ref": "CN-HG901-11",
+   "aliases": [
+    "hg901"
+   ],
+   "name": "Chaîne HG901 11v",
+   "discipline": "route",
+   "generation": "11v",
+   "attrs": {
+    "speeds": 11,
+    "flattop": false,
+    "chainType": "shimano-hg-11"
+   },
+   "src": "excel-m8000-cs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-cn-hg601-11",
+   "type": "chain",
+   "ref": "CN-HG601-11",
+   "aliases": [
+    "hg601"
+   ],
+   "name": "Chaîne HG601 11v",
+   "discipline": "route",
+   "generation": "11v",
+   "attrs": {
+    "speeds": 11,
+    "flattop": false,
+    "chainType": "shimano-hg-11"
+   },
+   "src": "excel-m8000-cs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-cn-m8100",
+   "type": "chain",
+   "ref": "CN-M8100",
+   "aliases": [
+    "cn m8100",
+    "m8100 chaine"
+   ],
+   "name": "Chaîne XT / Ultegra M8100 HG+ 12v",
+   "discipline": "vtt",
+   "generation": "12v",
+   "attrs": {
+    "speeds": 12,
+    "flattop": false,
+    "chainType": "shimano-hg-12"
+   },
+   "src": "mantel-cn-m8100",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-r8000-50-34",
+   "type": "crankset",
+   "ref": "FC-R8000 50-34",
+   "aliases": [
+    "fc r8000",
+    "r8000 pedalier"
+   ],
+   "name": "Ultegra R8000 50-34",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "50-34",
+    "chainline": 43.5
+   },
+   "src": "mat-r8000-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-r8000-52-36",
+   "type": "crankset",
+   "ref": "FC-R8000 52-36",
+   "aliases": [
+    "fc r8000 52"
+   ],
+   "name": "Ultegra R8000 52-36",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "52-36",
+    "chainline": 43.5
+   },
+   "src": "mat-r8000-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-r8000-53-39",
+   "type": "crankset",
+   "ref": "FC-R8000 53-39",
+   "aliases": [
+    "fc r8000 53"
+   ],
+   "name": "Ultegra R8000 53-39",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "53-39",
+    "chainline": 43.5
+   },
+   "src": "mat-r8000-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-r8000-46-36",
+   "type": "crankset",
+   "ref": "FC-R8000 46-36",
+   "aliases": [
+    "fc r8000 46"
+   ],
+   "name": "Ultegra R8000 46-36 (cyclocross)",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "46-36",
+    "chainline": 43.5
+   },
+   "src": "mat-r8000-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-r7000-50-34",
+   "type": "crankset",
+   "ref": "FC-R7000 50-34",
+   "aliases": [
+    "fc r7000"
+   ],
+   "name": "105 R7000 50-34",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "50-34"
+   },
+   "src": "mb-r7000-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-rx810-1-40",
+   "type": "crankset",
+   "ref": "FC-RX810-1 40T",
+   "aliases": [
+    "fc rx810",
+    "rx810 pedalier"
+   ],
+   "name": "GRX RX810 mono 40T",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 1,
+    "teeth": "40"
+   },
+   "src": "wwc-rx810-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Ligne de chaîne 50,1 ou 49,7 mm selon les sources : laissée vide.",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-rx600-46-30",
+   "type": "crankset",
+   "ref": "FC-RX600-10 46-30",
+   "aliases": [
+    "fc rx600"
+   ],
+   "name": "GRX RX600 10v 46-30",
+   "discipline": "gravel",
+   "generation": "GRX RX600 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "chainrings": 2,
+    "teeth": "46-30",
+    "chainline": 46.9
+   },
+   "src": "wwc-rx600-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD 110 (grand) / 80 (petit) : deux entraxes, champ BCD laissé vide.",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-fc-m8100-1",
+   "type": "crankset",
+   "ref": "FC-M8100-1",
+   "aliases": [
+    "fc m8100",
+    "m8100 pedalier"
+   ],
+   "name": "Deore XT M8100 mono (52 mm)",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "spindle": "shimano_24",
+    "ringInterface": "direct_mount",
+    "dmType": "shimano-dm-vtt-12",
+    "chainrings": 1,
+    "teeth": "32",
+    "chainline": 52
+   },
+   "src": "sh-fc-m8100",
+   "confidence": "haute",
+   "status": "valide",
+   "notes": "Plateaux direct mount 28 à 36T ; 32T pris comme exemple.",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-sm-bbr60-bsa",
+   "type": "bottom_bracket",
+   "ref": "SM-BBR60 (BSA)",
+   "aliases": [
+    "sm bbr60",
+    "bbr60"
+   ],
+   "name": "Boîtier Hollowtech II BSA 68",
+   "discipline": "route",
+   "generation": "Hollowtech II",
+   "attrs": {
+    "shell": "bsa",
+    "shellWidth": 68,
+    "spindle": "shimano_24"
+   },
+   "src": "bc-bbr60",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-sm-bbr60-ita",
+   "type": "bottom_bracket",
+   "ref": "SM-BBR60 (ITA)",
+   "aliases": [
+    "bbr60 ita"
+   ],
+   "name": "Boîtier Hollowtech II ITA 70",
+   "discipline": "route",
+   "generation": "Hollowtech II",
+   "attrs": {
+    "shell": "ita",
+    "shellWidth": 70,
+    "spindle": "shimano_24"
+   },
+   "src": "bc-bbr60",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-bb-rs501",
+   "type": "bottom_bracket",
+   "ref": "BB-RS501",
+   "aliases": [
+    "bb rs501",
+    "rs501"
+   ],
+   "name": "Boîtier Hollowtech II BSA 68",
+   "discipline": "route",
+   "generation": "Hollowtech II",
+   "attrs": {
+    "shell": "bsa",
+    "shellWidth": 68,
+    "spindle": "shimano_24"
+   },
+   "src": "mec-rs501",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-br-r8070",
+   "type": "brake_caliper",
+   "ref": "BR-R8070",
+   "aliases": [
+    "br r8070",
+    "r8070"
+   ],
+   "name": "Ultegra R8070 étrier flat mount",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L"
+   },
+   "src": [
+    "rose-r8070",
+    "sh-l05a",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-br-r7170",
+   "type": "brake_caliper",
+   "ref": "BR-R7170",
+   "aliases": [
+    "br r7170"
+   ],
+   "name": "105 R7170 étrier flat mount",
+   "discipline": "route",
+   "generation": "105 R7100 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L"
+   },
+   "src": [
+    "veloplus-r7170",
+    "sh-l05a",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-br-rx820",
+   "type": "brake_caliper",
+   "ref": "BR-RX820",
+   "aliases": [
+    "br rx820"
+   ],
+   "name": "GRX RX820 étrier flat mount",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L"
+   },
+   "src": [
+    "wheeler-rx820",
+    "sh-l05a",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-br-m8100",
+   "type": "brake_caliper",
+   "ref": "BR-M8100",
+   "aliases": [
+    "br m8100"
+   ],
+   "name": "Deore XT M8100 étrier 2 pistons post mount",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G"
+   },
+   "src": [
+    "wwc-m8100-br",
+    "halfords-g05a",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-bl-m8100",
+   "type": "brake_lever",
+   "ref": "BL-M8100",
+   "aliases": [
+    "bl m8100"
+   ],
+   "name": "Deore XT M8100 levier de frein",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "wwc-m8100-br",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-bp-l05a-rf",
+   "type": "brake_pads",
+   "ref": "L05A-RF",
+   "aliases": [
+    "l05a",
+    "l03a"
+   ],
+   "name": "Plaquettes résine L05A-RF",
+   "discipline": "route",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "resine"
+   },
+   "src": "sh-l05a",
+   "confidence": "haute",
+   "status": "valide",
+   "brand": "Shimano"
+  },
+  {
+   "id": "shimano-bp-g05a-rx",
+   "type": "brake_pads",
+   "ref": "G05A-RX",
+   "aliases": [
+    "g05a",
+    "g03a"
+   ],
+   "name": "Plaquettes résine G05A-RX",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "resine"
+   },
+   "src": "halfords-g05a",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "brand": "Shimano"
+  }
+ ]
+}

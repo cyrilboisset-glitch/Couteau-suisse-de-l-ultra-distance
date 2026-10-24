@@ -40,8 +40,11 @@ export const coqueCadre = {
     if (bb.attrs.shell !== frame.attrs.bbShell) {
       return incompatible(this, `Boîtier ${bb.attrs.shell} dans une coque ${frame.attrs.bbShell} : filetage ou diamètre différent.`);
     }
-    if (bb.attrs.shellWidth && frame.attrs.bbShellWidth && bb.attrs.shellWidth !== frame.attrs.bbShellWidth) {
-      return incompatible(this, `Boîtier pour coque de ${bb.attrs.shellWidth} mm, cadre de ${frame.attrs.bbShellWidth} mm.`, {
+    const widths = bb.attrs.shellWidths
+      ? String(bb.attrs.shellWidths).split('|').map(Number)
+      : bb.attrs.shellWidth ? [bb.attrs.shellWidth] : [];
+    if (widths.length && frame.attrs.bbShellWidth && !widths.includes(frame.attrs.bbShellWidth)) {
+      return incompatible(this, `Boîtier pour coque de ${widths.join(' / ')} mm, cadre de ${frame.attrs.bbShellWidth} mm.`, {
         absolute: false, source: aSourcer('Certains boîtiers acceptent plusieurs largeurs avec entretoises : renseigner la pièce'),
       });
     }

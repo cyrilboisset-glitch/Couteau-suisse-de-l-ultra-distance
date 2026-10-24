@@ -16,8 +16,13 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `system` | Commande (mécanique / électronique) | liste `shiftSystem` | **obligatoire** |
 | `family` | Famille d'actionnement (ratio de tirage ou protocole + génération) | string | **obligatoire** |
 | `protocol` | Protocole électronique | liste `protocol` | *conditionnel* |
-| `maxCog` | Plus grand pignon max | int (dents) | **obligatoire** |
+| `maxCog` | Plus grand pignon max (meilleur cas, en général mono-plateau) | int (dents) | **obligatoire** |
+| `maxCog2x` | Plus grand pignon max en double plateau | int (dents) |  |
+| `maxCog3x` | Plus grand pignon max en triple plateau | int (dents) |  |
 | `minCog` | Plus petit pignon min | int (dents) |  |
+| `minLowCog` | Plus grand pignon minimum (chape prévue pour au moins…) | int (dents) |  |
+| `maxFrontDiff` | Écart max entre plateaux | int (dents) |  |
+| `chainTypes` | Types de chaîne acceptés, séparés par « | » | string |  |
 | `totalCapacity` | Capacité totale | int (dents) | **obligatoire** |
 | `cageLength` | Longueur de chape (SS, GS, SGS…) | string |  |
 | `mount` | Fixation | liste `rdMount` | **obligatoire** |
@@ -53,6 +58,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `fluid` | Fluide (minéral / DOT) | liste `fluid` | *conditionnel* |
 | `cablePull` | Tirage câble (court / long) | liste `cablePull` | *conditionnel* |
 | `hydraulicSystem` | Système hydraulique (marque + famille de maître-cylindre) | string |  |
+| `fluidSpec` | Fluide exact (ex. shimano_mineral, sram_maxima_mineral, magura_royal_blood, dot_5_1, dot_4) | string |  |
 
 ## Levier de frein (`brake_lever`)
 
@@ -62,6 +68,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `fluid` | Fluide (minéral / DOT) | liste `fluid` | *conditionnel* |
 | `cablePull` | Tirage câble (court / long) | liste `cablePull` | *conditionnel* |
 | `hydraulicSystem` | Système hydraulique (marque + famille de maître-cylindre) | string |  |
+| `fluidSpec` | Fluide exact (ex. shimano_mineral, sram_maxima_mineral, magura_royal_blood, dot_5_1, dot_4) | string |  |
 
 ## Étrier / frein (`brake_caliper`)
 
@@ -72,6 +79,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `fluid` | Fluide (minéral / DOT) | liste `fluid` | *conditionnel* |
 | `cablePull` | Tirage câble (court / long) | liste `cablePull` | *conditionnel* |
 | `hydraulicSystem` | Système hydraulique (marque + famille de maître-cylindre) | string |  |
+| `fluidSpec` | Fluide exact (ex. shimano_mineral, sram_maxima_mineral, magura_royal_blood, dot_5_1, dot_4) | string |  |
 | `mount` | Fixation | liste `brakeMount` | **obligatoire** |
 | `padShape` | Forme / référence de plaquette ou patin | string |  |
 
@@ -102,6 +110,9 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `freehub` | Standard de corps de roue libre | liste `freehub` | *conditionnel* |
 | `freewheelThread` | Filetage (roue libre à visser) | string | *conditionnel* |
 | `cogs` | Étagement (ex. 11-12-13-14-16-18-20-22-25-28-32) | string |  |
+| `pitch` | Famille de pas des pignons (ex. hg-11, shimano-12, sram-eagle-12) | string |  |
+| `chainSpeeds` | Largeur de chaîne requise si différente du nombre de vitesses (ex. CUES) | int |  |
+| `chainTypes` | Types de chaîne acceptés, séparés par « | » | string |  |
 | `cogPitch` | Écartement des pignons | number (mm) |  |
 
 ## Chaîne (`chain`)
@@ -110,6 +121,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 |---|---|---|---|
 | `speeds` | Nombre de vitesses | int | **obligatoire** |
 | `flattop` | Flattop | bool |  |
+| `chainType` | Type de chaîne (ex. hg-12, sram-eagle, sram-flattop, sram-t-type, campagnolo-12) | string |  |
 | `connection` | Type d'attache | liste `chainConnection` |  |
 
 ## Pédalier (`crankset`)
@@ -128,6 +140,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `chainline` | Ligne de chaîne | number (mm) |  |
 | `shellWidths` | Largeurs de boîtier admises, séparées par « | » (ex. 68|73) | string (mm) |  |
 | `requiresFlattop` | Exige une chaîne Flattop | bool |  |
+| `chainTypes` | Types de chaîne acceptés, séparés par « | » | string |  |
 
 ## Plateau (`chainring`)
 
@@ -141,6 +154,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `speeds` | Vitesses prévues | int |  |
 | `requiresFlattop` | Exige une chaîne Flattop | bool |  |
 | `acceptsFlattop` | Accepte une chaîne Flattop | bool |  |
+| `chainTypes` | Types de chaîne acceptés, séparés par « | » | string |  |
 | `position` | Position (mono, grand, petit, milieu) | string |  |
 
 ## Boîtier de pédalier (`bottom_bracket`)
@@ -149,6 +163,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 |---|---|---|---|
 | `shell` | Standard de cadre (coque) | liste `bbShell` | **obligatoire** |
 | `shellWidth` | Largeur de coque | number (mm) |  |
+| `shellWidths` | Largeurs de coque admises, séparées par « | » (ex. 68|73|83) | string (mm) |  |
 | `spindle` | Standard d'axe accepté | liste `spindle` | **obligatoire** |
 
 ## Roue / moyeu (`wheel`)
@@ -196,7 +211,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 - `frameHanger` : `standard`, `udh`, `direct_mount`
 - `fdMount` : `collier_28_6`, `collier_31_8`, `collier_34_9`, `braze_on`, `direct_mount`, `e_type`, `autre`
 - `cassetteKind` : `cassette`, `roue_libre`
-- `freehub` : `hg_8_9_10`, `hg_11_route`, `hg_l2`, `microspline`, `xd`, `xdr`, `n3w`, `campagnolo`, `autre`
+- `freehub` : `hg_8_9_10`, `hg_11_route`, `hg_12_route`, `hg_l2`, `microspline`, `xd`, `xdr`, `n3w`, `campagnolo`, `autre`
 - `chainConnection` : `maillon_rapide`, `goupille`
 - `spindle` : `carre_jis`, `carre_iso`, `octalink_v1`, `octalink_v2`, `isis`, `shimano_24`, `sram_gxp`, `sram_dub`, `axe_30`, `campagnolo_ultratorque`, `campagnolo_powertorque`, `autre`
 - `bbShell` : `bsa`, `ita`, `bb86`, `bb92`, `bb30`, `pf30`, `bb386evo`, `bbright`, `t47_externe`, `t47_interne`, `autre`
@@ -212,4 +227,5 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 - `padCompound` : `resine`, `metal`, `semi_metal`
 - `rotorPadCompat` : `resine_seulement`, `resine_et_metal`
 - `confidence` : `haute`, `moyenne`, `basse`
-- `sourceKind` : `officiel`, `physique`, `communaute`, `a_sourcer`
+- `sourceKind` : `officiel`, `revendeur`, `presse`, `communaute`, `physique`, `a_sourcer`
+- `status` : `valide`, `a_valider`

@@ -1,5 +1,5 @@
 import { LEVEL, LEVEL_INFO } from '../levels.js';
-import { hasOfficialSource } from '../schema.js';
+import { hasOfficialSource, needsValidation } from '../schema.js';
 import { EMPTY_KNOWLEDGE } from '../knowledge.js';
 import { TRANSMISSION_RULES } from './rules/transmission.js';
 import { FREINS_RULES } from './rules/freins.js';
@@ -50,6 +50,8 @@ export function aggregate(findings, parts = []) {
     capped = true;
     notes.push(`Données non sourcées officiellement : ${unsourced.map(partLabel).join(', ')}.`);
   }
+  const pending = parts.filter((p) => p && !p.virtual && needsValidation(p));
+  if (pending.length) notes.push(`Données à valider : ${pending.map(partLabel).join(', ')}.`);
   const sorted = [...findings].sort((x, y) => y.level - x.level);
   const decisive = sorted.filter((f) => f.level === level);
   const confidence = (decisive.length ? decisive : sorted)
@@ -67,7 +69,7 @@ export function aggregate(findings, parts = []) {
     tools: uniq(findings.flatMap((f) => f.tools)),
     extraParts: uniq(findings.flatMap((f) => f.extraParts)),
     missing: uniq(findings.flatMap((f) => f.missing)),
-    toValidate: capped || findings.some((f) => f.toValidate && f.level > LEVEL.OFFICIAL),
+    toValidate: capped || pending.length > 0 || findings.some((f) => f.toValidate && f.level > LEVEL.OFFICIAL),
     confidence: findings.length ? confidence : 'basse',
     notes,
   };

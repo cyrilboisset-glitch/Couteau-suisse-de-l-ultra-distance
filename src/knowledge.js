@@ -16,6 +16,8 @@ const TABLES = [
   'brakeMountAdapters', // { caliperMount, frameMount, adapter, ... }
   'spindleFits',        // { crankSpindle, bbSpindle, ... }
   'hangerFits',         // { rdMount, frameHanger, ... }
+  'pitchFits',          // { cassettePitch, derailleurPitch, ... } croisement de pas de pignons
+  'fluidFits',          // { leverFluid, caliperFluid, ... } fluides exacts miscibles
 ];
 
 export function createKnowledge(raw = {}) {
@@ -36,6 +38,10 @@ export function createKnowledge(raw = {}) {
       e.crankSpindle === crankSpindle && e.bbSpindle === bbSpindle),
     hangerFit: (rdMount, frameHanger) => find('hangerFits', (e) =>
       e.rdMount === rdMount && e.frameHanger === frameHanger),
+    pitchFit: (cassettePitch, derailleurPitch) => find('pitchFits', (e) =>
+      e.cassettePitch === cassettePitch && e.derailleurPitch === derailleurPitch),
+    fluidFit: (a, b) => find('fluidFits', (e) =>
+      (e.leverFluid === a && e.caliperFluid === b) || (e.leverFluid === b && e.caliperFluid === a)),
   };
 }
 

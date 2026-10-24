@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "test": "node --test",
-    "schema-doc": "node scripts/schema-doc.js"
+    "schema-doc": "node scripts/schema-doc.js",
+    "build": "node scripts/build-data.js"
   },
   "engines": {
     "node": ">=20"

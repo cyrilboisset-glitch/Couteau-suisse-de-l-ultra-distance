@@ -33,6 +33,7 @@ export function deriveNeighbors(broken) {
         v('shifter', { side: 'arriere', system: x.system, family: x.family, protocol: x.protocol, speeds: x.speeds }),
         v('cassette', { speeds: x.speeds, maxCog: x.maxCog }),
         v('frame', { rdHanger: HANGER_OF_MOUNT[x.mount] }),
+        v('chain', { speeds: x.speeds }),
       ];
     case 'front_derailleur':
       return [
@@ -52,8 +53,8 @@ export function deriveNeighbors(broken) {
       return [
         v('wheel', { freehub: x.freehub, freewheelThread: x.freewheelThread }),
         v('shifter', { side: 'arriere', speeds: x.speeds }),
-        v('rear_derailleur', { maxCog: x.maxCog }),
-        v('chain', { speeds: x.speeds }),
+        v('rear_derailleur', { maxCog: x.maxCog, pitch: x.pitch }),
+        v('chain', { speeds: x.chainSpeeds ?? x.speeds }),
       ];
     case 'chain':
       return [v('cassette', { speeds: x.speeds })];
@@ -128,7 +129,23 @@ const capaciteTotale = {
   },
 };
 
-const SYSTEM_RULES = { rear_derailleur: [capaciteTotale] };
+const pignonSelonPlateaux = {
+  id: 'transmission.pignon_selon_plateaux',
+  label: 'Plus grand pignon admis selon le nombre de plateaux',
+  confidence: 'moyenne',
+  source: { kind: 'officiel', ref: 'Plus grand pignon max en double / triple indiqué par le constructeur' },
+  evaluate(rd, neighbors) {
+    const cas = neighbors.find((p) => p.type === 'cassette' && !p.virtual);
+    const crank = neighbors.find((p) => p.type === 'crankset' && !p.virtual);
+    const n = crank?.attrs?.chainrings;
+    const max = n === 3 ? (rd.attrs.maxCog3x ?? rd.attrs.maxCog2x) : n === 2 ? rd.attrs.maxCog2x : null;
+    if (!cas?.attrs?.maxCog || !max) return null;
+    if (cas.attrs.maxCog <= max) return ok(this, `${cas.attrs.maxCog} dents ≤ ${max} dents admis en ${n} plateaux.`);
+    return incompatible(this, `En ${n} plateaux, ce dérailleur n'admet que ${max} dents (cassette : ${cas.attrs.maxCog}).`);
+  },
+};
+
+const SYSTEM_RULES = { rear_derailleur: [capaciteTotale, pignonSelonPlateaux] };
 
 // --- Comparaison pièce cassée / candidat : constats + « ce qui change » ---
 

@@ -1,0 +1,882 @@
+{
+ "_meta": {
+  "description": "Familles d'actionnement (tirage / protocole), compatibilités entre familles, corps de roue libre et pas de pignons. Faits au niveau des standards, jamais pièce ↔ pièce.",
+  "methode": "Recherche web (moteur de recherche) ; pages ouvertes via résumé de recherche, pas lues intégralement. Tout ce qui n'est pas confirmé par une page constructeur est status a_valider."
+ },
+ "sources": {
+  "shimano-grx-rd": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – GRX RD-RX810/RX812 (texte Shimano) : compatible manettes route 11v Dual Control",
+   "url": "https://www.rosebikes.com/p/shimano-grx-rear-derailleur-11-speed-rx810-rx812-2678828"
+  },
+  "shimano-grx12-levers": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – ST-RX820 : compatible dérailleurs Shimano 12v route/gravel mécaniques (105), PAS avec dérailleurs VTT 12v",
+   "url": "https://www.performancebike.com/shimano-grx-strx820-hydraulic-brake-shift-levers-black-istrx820lai-p/p1516642"
+  },
+  "shimano-r7100-compat": {
+   "kind": "revendeur",
+   "ref": "Bike24 – RD-R7100 : manettes compatibles ST-R7120, ST-RX820, ST-RX610 (recommandation constructeur)",
+   "url": "https://www.bike24.com/p2729393.html"
+  },
+  "gremlin-ratio": {
+   "kind": "presse",
+   "ref": "BikeGremlin – compatibilité dérailleurs : route 11v ≈1,4, VTT 11v ≈1,1 ; Tiagra 4700 = ratio route 11v",
+   "url": "https://bike.bikegremlin.com/1278/bicycle-rear-derailleur-compatibility/"
+  },
+  "retrograde-4700": {
+   "kind": "presse",
+   "ref": "Retrograde – Tiagra 4700 : même ratio d'actionnement que les dérailleurs Shimano route 11v",
+   "url": "https://www.retrograde.bike/drivetrain/shimano-tiagra-4700-shifters11-speed-derailleur"
+  },
+  "shimano-12vtt": {
+   "kind": "presse",
+   "ref": "BikeRadar – XT M8100 : composants VTT 12v Shimano largement inter-compatibles",
+   "url": "https://www.bikeradar.com/reviews/components/groupsets/groupset-mountain/shimano-deore-xt-m8100-review"
+  },
+  "shimano-cues": {
+   "kind": "presse",
+   "ref": "BikeRadar – Shimano CUES : tirage LinkGlide différent d'HyperGlide, cassettes HyperGlide incompatibles, toutes pièces CUES avec chaîne 11v",
+   "url": "https://www.bikeradar.com/news/shimano-cues"
+  },
+  "di2-12-11": {
+   "kind": "presse",
+   "ref": "BetterShifting – Di2 12v non compatible Di2 11v (sauf manettes CLM après firmware)",
+   "url": "https://bettershifting.com/12-speed-r9200-r8100-and-11-speed-di2-compatibility/"
+  },
+  "grx-di2-11": {
+   "kind": "revendeur",
+   "ref": "Halfords – RD-RX815 compatible toutes manettes Di2 11v (ST-R8050…)",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-grx-rd-rx815-di2-11-speed-rear-derailleur-for-double-402918.html"
+  },
+  "shimano-freehub-guide": {
+   "kind": "officiel",
+   "ref": "Shimano – Guide des corps de roue libre 12v : HG = cassettes 12/11v route et 11v VTT ; HG-800, HG-700 et cassettes VTT 11v avec entretoise 1,85 mm ; Micro Spline = cassettes 12v VTT",
+   "url": "https://bike.shimano.com/stories/article/a-guide-to-shimanos-12-speed-freehubs-and-compatibility.html"
+  },
+  "shimano-hgl2": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – CS-R8100 : HG L2 (Shimano route 12v seulement) et HG L (Shimano route 11v)",
+   "url": "https://www.rosebikes.it/shimano-ultegra-cs-r8100-12-speed-cassette-2700206"
+  },
+  "shimano-hg800": {
+   "kind": "officiel",
+   "ref": "Shimano – CS-HG800-11 : compatible corps 10 et 11v, entretoise requise sur corps route",
+   "url": "https://bike.shimano.com/en-US/product/component/ultegra-r8000/CS-HG800-11.html"
+  },
+  "sram-axs-eagle": {
+   "kind": "officiel",
+   "ref": "SRAM – Les manettes eTap AXS pilotent un dérailleur Eagle AXS (cassette et chaîne du dérailleur)",
+   "url": "https://support.sram.com/hc/en-us/articles/6053882160027-Are-eTap-AXS-shift-levers-compatible-with-Eagle-AXS-rear-derailleurs"
+  },
+  "sram-apex-axs-eagle": {
+   "kind": "officiel",
+   "ref": "SRAM – Manettes Apex AXS compatibles dérailleurs Eagle AXS",
+   "url": "https://support.sram.com/hc/en-us/articles/16377981191323-Are-Apex-AXS-shift-levers-compatible-with-Eagle-AXS-rear-derailleurs"
+  },
+  "sram-xplr-axs": {
+   "kind": "officiel",
+   "ref": "SRAM – Compatibilité des pièces XPLR eTap AXS avec les autres composants SRAM",
+   "url": "https://support.sram.com/hc/en-us/articles/6014226075035-Are-SRAM-XPLR-eTap-AXS-parts-compatible-with-other-SRAM-components"
+  },
+  "sram-axs-map": {
+   "kind": "officiel",
+   "ref": "SRAM – Carte de compatibilité des composants AXS",
+   "url": "https://www.sram.com/globalassets/document-hierarchy/compatibility-map/road/axs-components-compatibility-map.pdf"
+  },
+  "sram-red-xplr": {
+   "kind": "officiel",
+   "ref": "SRAM – RED XPLR AXS (E1, 13v) : compatible toutes commandes AXS, chaînes Flattop route, pédaliers route wide 1x ; dérailleurs E1 XPLR seulement avec cassettes 13v 10-46",
+   "url": "https://support.sram.com/hc/en-us/sections/27118201227291-RED-XPLR-AXS"
+  },
+  "sram-adventure": {
+   "kind": "officiel",
+   "ref": "SRAM – Configuration « Adventure » Eagle AXS Transmission sur vélo route/gravel (pédalier route wide + DUB, cassette et chaîne T-Type, cadre UDH)",
+   "url": "https://support.sram.com/hc/en-us/articles/13819655363099-Is-there-an-Adventure-build-configuration-for-SRAM-Eagle-AXS-Transmission-on-road-and-gravel-bikes"
+  },
+  "sram-apex-meca-eagle": {
+   "kind": "officiel",
+   "ref": "SRAM – Manettes Apex 12v mécaniques compatibles tous dérailleurs Eagle mécaniques avec cassette et chaîne Eagle + réglage de tension en ligne",
+   "url": "https://support.sram.com/hc/en-us/articles/16378128396059-Are-12-speed-Apex-mechanical-shift-levers-compatible-with-Eagle-mechanical-rear-derailleurs"
+  },
+  "sram-apex-12only": {
+   "kind": "officiel",
+   "ref": "SRAM – Apex AXS et Apex mécanique sont spécifiques 12v, incompatibles avec les pièces 11v",
+   "url": "https://support.sram.com/hc/en-us/articles/16420525323419-Are-Apex-AXS-components-compatible-with-other-SRAM-AXS-components-like-SRAM-RED-or-Force-eTap-AXS-parts"
+  },
+  "sram-eagle7090": {
+   "kind": "presse",
+   "ref": "Vital MTB – Eagle 90/70 (T-Type mécanique) : ratio de câble différent d'Eagle mécanique, non rétrocompatible, cadre UDH",
+   "url": "https://www.vitalmtb.com/features/sram-mechanical-transmission-overview-eagle-90-and-eagle-70"
+  },
+  "sram-2014": {
+   "kind": "officiel",
+   "ref": "SRAM – Catalogue pièces 2014 : dérailleurs X0, X9, X7 compatibles uniquement manettes 10v Exact Actuation",
+   "url": "https://www.sram.com/globalassets/document-hierarchy/spare-parts/spare-parts-catalog-archive/2014-sram-spare-parts-catalog.pdf"
+  },
+  "ww-sram22": {
+   "kind": "communaute",
+   "ref": "WeightWeenies – manettes SRAM route 22 : pas avec dérailleur Eagle ni VTT 11v, OK avec dérailleur VTT 10v SRAM",
+   "url": "https://weightweenies.starbike.com/forum/viewtopic.php?p=1373943"
+  },
+  "sram-xd-xdr": {
+   "kind": "officiel",
+   "ref": "SRAM – XD / XDR : XDR + entretoise 1,85 mm = XD ; cassettes XDR seulement sur XDR",
+   "url": "https://support.sram.com/hc/en-us/articles/6129614709147-What-is-the-difference-between-XD-and-XDR-driver-bodies"
+  },
+  "sram-road-map-2024": {
+   "kind": "officiel",
+   "ref": "SRAM – Carte de compatibilité route 2024+ : cassettes 10/9/8v sur corps 11v avec entretoise 1,85 mm ; XG-1190 10-42 exige un vrai corps XD",
+   "url": "https://www.sram.com/globalassets/document-hierarchy/compatibility-map/road/road-compatibility-map-2024.pdf"
+  },
+  "campa-n3w": {
+   "kind": "presse",
+   "ref": "road.cc – Campagnolo N3W : corps 4,4 mm plus court, mêmes cannelures ; adaptateur pour cassettes Campagnolo 10/11/12v",
+   "url": "https://road.cc/content/tech-news/campagnolo-launch-ekar-13-speed-gravel-groupset-275995"
+  },
+  "mtbr-12mix": {
+   "kind": "communaute",
+   "ref": "MTBR / eMTB forums – mélange Shimano 12v et SRAM Eagle : fonctionne selon des utilisateurs ; un revendeur le déconseille",
+   "url": "https://www.mtbr.com/threads/sram-shimano-12-speed-compatibility.1104249/"
+  },
+  "sunrace-csmz90": {
+   "kind": "revendeur",
+   "ref": "bike-components – SunRace CSMZ90 12v 11-50 : corps HG, compatible dérailleurs SRAM 12v, pas manettes/dérailleurs Shimano 12v",
+   "url": "https://www.bike-components.de/en/SunRace/CSMZ90-12-speed-Cassette-p70443/"
+  },
+  "microshift-guide": {
+   "kind": "presse",
+   "ref": "BikeRadar – Guide microSHIFT : R8/R9/R10 même tirage que Shimano, cassettes sur corps HG",
+   "url": "https://www.bikeradar.com/advice/buyers-guides/buyers-guide-to-microshift/"
+  },
+  "microshift-faq": {
+   "kind": "revendeur",
+   "ref": "FAQ microSHIFT (distributeur Circles) : Advent X tirage différent de Shimano 10v ; Advent 9v tirage propre, incompatible R9",
+   "url": "https://shop.circles-jp.com/en/pages/microshift"
+  },
+  "microshift-centos": {
+   "kind": "revendeur",
+   "ref": "Velomine – microSHIFT Centos 2x11 « Shimano compatible »",
+   "url": "https://velomine.com/products/microshift-centos-drop-bar-shift-lever-set-2-x-11-speed-shimano-compatible"
+  },
+  "sensah-empire": {
+   "kind": "revendeur",
+   "ref": "Velo Orange – SENSAH Empire 2x11 : compatible dérailleurs Empire 11v et SRAM « Exact Actuation »",
+   "url": "https://velo-orange.com/products/sensah-empire-integrated-2x11-shifter-brake-lever-set-11-speed"
+  },
+  "ltwoo-r9": {
+   "kind": "revendeur",
+   "ref": "99 Bikes – LTWOO R9 2x11 : compatible LTWOO RD-R5011 et Shimano",
+   "url": "https://99bikes.com.au/products/l-twoo-r9-series-shift-brake-lever-set-2x11-speed"
+  },
+  "box-prime9": {
+   "kind": "officiel",
+   "ref": "Box Components – Prime 9 : tirage incompatible avec les 9v traditionnels ; incompatible pattes Shimano direct mount ; tout Prime 9 inter-compatible",
+   "url": "https://eu.boxcomponents.com/it/products/box-two-prime-9-shifters"
+  },
+  "sensah-srx": {
+   "kind": "revendeur",
+   "ref": "Velo Orange – SENSAH SRX 1x11 (fonctionnement type SRAM DoubleTap selon un essai utilisateur)",
+   "url": "https://velo-orange.com/products/sensah-srx-integrated-1x-shifterset"
+  },
+  "ltwoo-a12x": {
+   "kind": "revendeur",
+   "ref": "Bikable – LTWOO A12-X : dérailleur 1x12, cassettes jusqu'à 52T, fixation M10x1",
+   "url": "https://bikable.com/parts/rear-derailleurs/rear-derailliur-for-mtb-commuter-and-urban/ltwoo-a12-x-rear-derailleur-1x12sp-al"
+  }
+ },
+ "families": [
+  {
+   "id": "shimano-route-10",
+   "brand": "Shimano",
+   "label": "Shimano route 10v (avant Tiagra 4700)",
+   "system": "mecanique",
+   "speeds": 10,
+   "pitch": [
+    "hg-10"
+   ],
+   "src": "gremlin-ratio",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-4700",
+   "brand": "Shimano",
+   "label": "Shimano Tiagra 4700 / GRX RX400 10v",
+   "system": "mecanique",
+   "speeds": 10,
+   "pitch": [
+    "hg-10"
+   ],
+   "src": "gremlin-ratio",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-route-11",
+   "brand": "Shimano",
+   "label": "Shimano route 11v mécanique (et GRX 11v)",
+   "system": "mecanique",
+   "speeds": 11,
+   "pitch": [
+    "hg-11"
+   ],
+   "src": [
+    "shimano-grx-rd",
+    "gremlin-ratio"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-vtt-11",
+   "brand": "Shimano",
+   "label": "Shimano VTT 11v mécanique",
+   "system": "mecanique",
+   "speeds": 11,
+   "pitch": [
+    "hg-11"
+   ],
+   "src": "gremlin-ratio",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-route-12",
+   "brand": "Shimano",
+   "label": "Shimano route / GRX 12v mécanique (105 R7100, GRX RX820/RX610)",
+   "system": "mecanique",
+   "speeds": 12,
+   "pitch": [
+    "shimano-12"
+   ],
+   "src": [
+    "shimano-grx12-levers",
+    "shimano-r7100-compat"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-vtt-12",
+   "brand": "Shimano",
+   "label": "Shimano VTT 12v mécanique (XTR/XT/SLX/Deore)",
+   "system": "mecanique",
+   "speeds": 12,
+   "pitch": [
+    "shimano-12"
+   ],
+   "src": "shimano-12vtt",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cues",
+   "brand": "Shimano",
+   "label": "Shimano CUES (LinkGlide 9/10/11v)",
+   "system": "mecanique",
+   "pitch": [
+    "shimano-linkglide"
+   ],
+   "src": "shimano-cues",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-di2-11",
+   "brand": "Shimano",
+   "label": "Shimano Di2 11v route / GRX (E-Tube)",
+   "system": "electronique",
+   "protocol": "di2",
+   "speeds": 11,
+   "pitch": [
+    "hg-11"
+   ],
+   "src": "grx-di2-11",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-di2-12",
+   "brand": "Shimano",
+   "label": "Shimano Di2 12v route / GRX (semi sans fil)",
+   "system": "electronique",
+   "protocol": "di2",
+   "speeds": 12,
+   "pitch": [
+    "shimano-12"
+   ],
+   "src": "di2-12-11",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-exact-10",
+   "brand": "SRAM",
+   "label": "SRAM 10v Exact Actuation (route 10v, VTT X0/X9/X7 10v)",
+   "system": "mecanique",
+   "speeds": 10,
+   "pitch": [
+    "hg-10"
+   ],
+   "src": "sram-2014",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-route-11",
+   "brand": "SRAM",
+   "label": "SRAM route 11v mécanique (Red/Force/Rival 22, Force 1, Rival 1, Apex 1)",
+   "system": "mecanique",
+   "speeds": 11,
+   "pitch": [
+    "hg-11"
+   ],
+   "src": "ww-sram22",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-vtt-11",
+   "brand": "SRAM",
+   "label": "SRAM VTT 11v X-Actuation (XX1/X01/X1/GX/NX 11v)",
+   "system": "mecanique",
+   "speeds": 11,
+   "pitch": [
+    "hg-11"
+   ],
+   "src": "ww-sram22",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-eagle-meca",
+   "brand": "SRAM",
+   "label": "SRAM Eagle 12v mécanique (XX1/X01/GX/NX/SX/Apex Eagle)",
+   "system": "mecanique",
+   "speeds": 12,
+   "pitch": [
+    "sram-eagle-12"
+   ],
+   "src": "sram-apex-meca-eagle",
+   "status": "valide"
+  },
+  {
+   "id": "sram-apex-12-meca",
+   "brand": "SRAM",
+   "label": "Manettes SRAM Apex 12v mécaniques (cintre route)",
+   "system": "mecanique",
+   "speeds": 12,
+   "pitch": [
+    "sram-eagle-12",
+    "sram-road-12"
+   ],
+   "src": "sram-apex-meca-eagle",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-apex-xplr-meca",
+   "brand": "SRAM",
+   "label": "Dérailleur SRAM Apex XPLR 12v mécanique",
+   "system": "mecanique",
+   "speeds": 12,
+   "pitch": [
+    "sram-road-12"
+   ],
+   "src": "sram-apex-meca-eagle",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-t-type-meca",
+   "brand": "SRAM",
+   "label": "SRAM Eagle 90 / 70 Transmission mécanique (T-Type)",
+   "system": "mecanique",
+   "speeds": 12,
+   "pitch": [
+    "sram-t-type-12"
+   ],
+   "src": "sram-eagle7090",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-axs",
+   "brand": "SRAM",
+   "label": "Commandes SRAM AXS (toutes : route, VTT, blips)",
+   "system": "electronique",
+   "protocol": "axs",
+   "src": "sram-axs-map",
+   "status": "valide"
+  },
+  {
+   "id": "sram-axs-route-12",
+   "brand": "SRAM",
+   "label": "Dérailleurs SRAM AXS route 12v (Red/Force/Rival/Apex eTap AXS)",
+   "system": "electronique",
+   "protocol": "axs",
+   "speeds": 12,
+   "pitch": [
+    "sram-road-12"
+   ],
+   "src": "sram-axs-map",
+   "status": "valide"
+  },
+  {
+   "id": "sram-axs-xplr-12",
+   "brand": "SRAM",
+   "label": "Dérailleurs SRAM XPLR AXS 12v (Force/Rival/Apex XPLR)",
+   "system": "electronique",
+   "protocol": "axs",
+   "speeds": 12,
+   "pitch": [
+    "sram-road-12"
+   ],
+   "src": "sram-xplr-axs",
+   "status": "valide"
+  },
+  {
+   "id": "sram-axs-xplr-13",
+   "brand": "SRAM",
+   "label": "Dérailleurs SRAM XPLR AXS E1 13v (Red/Force/Rival XPLR)",
+   "system": "electronique",
+   "protocol": "axs",
+   "speeds": 13,
+   "pitch": [
+    "sram-xplr-13"
+   ],
+   "src": "sram-red-xplr",
+   "status": "valide"
+  },
+  {
+   "id": "sram-axs-eagle",
+   "brand": "SRAM",
+   "label": "Dérailleurs SRAM Eagle AXS 12v (XX1/X01/GX/NX Eagle AXS)",
+   "system": "electronique",
+   "protocol": "axs",
+   "speeds": 12,
+   "pitch": [
+    "sram-eagle-12"
+   ],
+   "src": "sram-axs-eagle",
+   "status": "valide"
+  },
+  {
+   "id": "sram-axs-t-type",
+   "brand": "SRAM",
+   "label": "Dérailleurs SRAM Eagle AXS Transmission (T-Type)",
+   "system": "electronique",
+   "protocol": "axs",
+   "speeds": 12,
+   "pitch": [
+    "sram-t-type-12"
+   ],
+   "src": "sram-adventure",
+   "status": "valide"
+  },
+  {
+   "id": "campagnolo-11",
+   "brand": "Campagnolo",
+   "label": "Campagnolo 11v mécanique",
+   "system": "mecanique",
+   "speeds": 11,
+   "pitch": [
+    "campagnolo-11"
+   ],
+   "src": "campa-n3w",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-12",
+   "brand": "Campagnolo",
+   "label": "Campagnolo 12v mécanique",
+   "system": "mecanique",
+   "speeds": 12,
+   "pitch": [
+    "campagnolo-12"
+   ],
+   "src": "campa-n3w",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-ekar-13",
+   "brand": "Campagnolo",
+   "label": "Campagnolo Ekar 13v",
+   "system": "mecanique",
+   "speeds": 13,
+   "pitch": [
+    "campagnolo-13"
+   ],
+   "src": "campa-n3w",
+   "status": "a_valider"
+  },
+  {
+   "id": "microshift-advent-x",
+   "brand": "microSHIFT",
+   "label": "microSHIFT Advent X 10v (tirage propre)",
+   "system": "mecanique",
+   "speeds": 10,
+   "src": "microshift-faq",
+   "status": "a_valider"
+  },
+  {
+   "id": "microshift-advent-9",
+   "brand": "microSHIFT",
+   "label": "microSHIFT Advent 9v (tirage propre)",
+   "system": "mecanique",
+   "speeds": 9,
+   "src": "microshift-faq",
+   "status": "a_valider"
+  },
+  {
+   "id": "microshift-sword",
+   "brand": "microSHIFT",
+   "label": "microSHIFT Sword 10v (gravel, câble)",
+   "system": "mecanique",
+   "speeds": 10,
+   "src": "microshift-guide",
+   "status": "a_valider"
+  },
+  {
+   "id": "sensah-empire-11",
+   "brand": "SENSAH",
+   "label": "SENSAH Empire 2x11",
+   "system": "mecanique",
+   "speeds": 11,
+   "src": "sensah-empire",
+   "status": "a_valider"
+  },
+  {
+   "id": "box-prime-9",
+   "brand": "Box",
+   "label": "Box Components Prime 9 (tirage propre)",
+   "system": "mecanique",
+   "speeds": 9,
+   "src": "box-prime9",
+   "status": "valide"
+  },
+  {
+   "id": "sensah-srx-11",
+   "brand": "SENSAH",
+   "label": "SENSAH SRX / SRX Pro 1x11",
+   "system": "mecanique",
+   "speeds": 11,
+   "src": "sensah-srx",
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-a12",
+   "brand": "LTWOO",
+   "label": "LTWOO A12 / AX12 1x12 (tirage non documenté)",
+   "system": "mecanique",
+   "speeds": 12,
+   "src": "ltwoo-a12x",
+   "status": "a_valider"
+  }
+ ],
+ "actuation": [
+  {
+   "shifterFamily": "shimano-4700",
+   "derailleurFamily": "shimano-route-11",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Tiagra 4700 (10v) avec dérailleur route 11v Shimano : même ratio d'actionnement.",
+   "limitation": "Cassette 10v obligatoire (la manette indexe 10 vitesses).",
+   "src": "retrograde-4700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-route-11",
+   "derailleurFamily": "shimano-4700",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette route 11v Shimano avec dérailleur Tiagra 4700 : même ratio d'actionnement.",
+   "limitation": "Cassette 11v avec la manette 11v ; vérifier capacité et plus grand pignon du dérailleur 4700.",
+   "src": "retrograde-4700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-route-11",
+   "derailleurFamily": "sram-exact-10",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette SRAM route 11v avec dérailleur VTT SRAM 10v (même Exact Actuation 1:1).",
+   "limitation": "Cassette 11v avec la manette 11v ; vérifier plus grand pignon et capacité du dérailleur VTT.",
+   "src": "ww-sram22",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-axs",
+   "derailleurFamily": "sram-axs-route-12",
+   "side": "arriere",
+   "level": "officiel",
+   "message": "Commande AXS et dérailleur AXS route (appairage sans fil).",
+   "adjustments": [
+    "Appairer la commande et le dérailleur (bouton AXS)"
+   ],
+   "src": "sram-axs-map",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "shifterFamily": "sram-axs",
+   "derailleurFamily": "sram-axs-xplr-12",
+   "side": "arriere",
+   "level": "officiel",
+   "message": "Commande AXS et dérailleur XPLR AXS 12v.",
+   "adjustments": [
+    "Appairer la commande et le dérailleur (bouton AXS)"
+   ],
+   "src": "sram-xplr-axs",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "shifterFamily": "sram-axs",
+   "derailleurFamily": "sram-axs-xplr-13",
+   "side": "arriere",
+   "level": "officiel",
+   "message": "Toute commande AXS pilote les dérailleurs XPLR E1 13v.",
+   "limitation": "Cassette 13v 10-46 obligatoire avec ce dérailleur.",
+   "adjustments": [
+    "Appairer la commande et le dérailleur (bouton AXS)"
+   ],
+   "src": "sram-red-xplr",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "shifterFamily": "sram-axs",
+   "derailleurFamily": "sram-axs-eagle",
+   "side": "arriere",
+   "level": "officiel",
+   "message": "Montage « mullet » officiel : commande AXS (route ou VTT) avec dérailleur Eagle AXS.",
+   "limitation": "Cassette Eagle et chaîne Eagle obligatoires avec ce dérailleur.",
+   "adjustments": [
+    "Appairer la commande et le dérailleur (bouton AXS)"
+   ],
+   "src": [
+    "sram-axs-eagle",
+    "sram-apex-axs-eagle"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "shifterFamily": "sram-axs",
+   "derailleurFamily": "sram-axs-t-type",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Commande AXS avec dérailleur Eagle AXS Transmission (configuration « Adventure » prévue par SRAM).",
+   "limitation": "Cadre UDH, cassette et chaîne T-Type, pédalier route wide (ligne de chaîne).",
+   "adjustments": [
+    "Appairer la commande et le dérailleur (bouton AXS)"
+   ],
+   "src": "sram-adventure",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-apex-12-meca",
+   "derailleurFamily": "sram-eagle-meca",
+   "side": "arriere",
+   "level": "officiel",
+   "message": "Manettes Apex 12v mécaniques avec dérailleur Eagle mécanique.",
+   "limitation": "Cassette Eagle et chaîne Eagle obligatoires.",
+   "extraParts": [
+    "Réglage de tension de câble en ligne (inline barrel adjuster)"
+   ],
+   "src": "sram-apex-meca-eagle",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "shifterFamily": "sram-apex-12-meca",
+   "derailleurFamily": "sram-apex-xplr-meca",
+   "side": "arriere",
+   "level": "officiel",
+   "message": "Groupe d'origine Apex 12v mécanique XPLR.",
+   "src": "sram-apex-meca-eagle",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-eagle-meca",
+   "derailleurFamily": "sram-apex-xplr-meca",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Gâchette Eagle mécanique avec dérailleur Apex XPLR mécanique (annoncé compatible par les revendeurs).",
+   "limitation": "Cassette XPLR / route et chaîne Flattop avec ce dérailleur.",
+   "src": "sram-apex-meca-eagle",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sensah-empire-11",
+   "derailleurFamily": "sram-route-11",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manettes SENSAH Empire avec dérailleur SRAM route 11v (Exact Actuation) selon le revendeur.",
+   "src": "sensah-empire",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-route-11",
+   "derailleurFamily": "shimano-vtt-11",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette route 11v Shimano et dérailleur VTT 11v Shimano : ratios différents (≈1,4 contre ≈1,1).",
+   "src": "gremlin-ratio",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-route-12",
+   "derailleurFamily": "shimano-vtt-12",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette route / GRX 12v mécanique et dérailleur VTT 12v Shimano : non compatibles.",
+   "src": "shimano-grx12-levers",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-eagle-meca",
+   "derailleurFamily": "sram-t-type-meca",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Eagle mécanique et Eagle 90/70 Transmission : ratios de câble différents.",
+   "src": "sram-eagle7090",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-t-type-meca",
+   "derailleurFamily": "sram-eagle-meca",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Eagle 90/70 Transmission et Eagle mécanique : ratios de câble différents.",
+   "src": "sram-eagle7090",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ],
+ "freehubFits": [
+  {
+   "cassette": "hg_8_9_10",
+   "body": "hg_11_route",
+   "spacerMm": 1.85,
+   "level": "officiel",
+   "message": "Cassette sur cannelures HG standard montée sur corps HG route 11v.",
+   "src": [
+    "shimano-freehub-guide",
+    "sram-road-map-2024"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "cassette": "hg_12_route",
+   "body": "hg_11_route",
+   "level": "officiel",
+   "message": "Cassette Shimano route 12v sur corps HG route 11v.",
+   "src": [
+    "shimano-freehub-guide",
+    "shimano-hgl2"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "cassette": "hg_12_route",
+   "body": "hg_l2",
+   "level": "officiel",
+   "message": "Cassette Shimano route 12v sur corps HG L2.",
+   "src": "shimano-hgl2",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "hg_11_route",
+   "body": "hg_l2",
+   "level": "incompatible",
+   "message": "Corps HG L2 réservé aux cassettes Shimano route 12v.",
+   "src": "shimano-hgl2",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "hg_8_9_10",
+   "body": "hg_l2",
+   "level": "incompatible",
+   "message": "Corps HG L2 réservé aux cassettes Shimano route 12v.",
+   "src": "shimano-hgl2",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "xd",
+   "body": "xdr",
+   "spacerMm": 1.85,
+   "level": "officiel",
+   "message": "Cassette XD sur corps XDR avec entretoise.",
+   "src": "sram-xd-xdr",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "cassette": "xdr",
+   "body": "xd",
+   "level": "incompatible",
+   "message": "Une cassette XDR ne se monte que sur un corps XDR.",
+   "src": "sram-xd-xdr",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "cassette": "campagnolo",
+   "body": "n3w",
+   "level": "officiel",
+   "message": "Cassette Campagnolo 10/11/12v sur corps N3W avec adaptateur.",
+   "extraParts": [
+    "Adaptateur N3W pour cassettes Campagnolo 10/11/12v"
+   ],
+   "src": "campa-n3w",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ],
+ "pitchFits": [
+  {
+   "cassettePitch": "shimano-12",
+   "derailleurPitch": "sram-eagle-12",
+   "level": "depannage",
+   "message": "Cassette Shimano 12v avec indexation SRAM Eagle.",
+   "limitation": "Hors doc officielle : fonctionne selon des utilisateurs, passages moins précis possibles.",
+   "src": "mtbr-12mix",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "cassettePitch": "sram-eagle-12",
+   "derailleurPitch": "shimano-12",
+   "level": "depannage",
+   "message": "Cassette SRAM Eagle avec indexation Shimano 12v.",
+   "limitation": "Hors doc officielle et déconseillé par un revendeur : passages moins précis possibles.",
+   "src": [
+    "mtbr-12mix",
+    "sunrace-csmz90"
+   ],
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "cassettePitch": "hg-11",
+   "derailleurPitch": "shimano-linkglide",
+   "level": "incompatible",
+   "message": "Cassette HyperGlide avec transmission CUES / LinkGlide : incompatible.",
+   "src": "shimano-cues",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassettePitch": "shimano-linkglide",
+   "derailleurPitch": "hg-11",
+   "level": "incompatible",
+   "message": "Cassette LinkGlide avec transmission HyperGlide 11v : incompatible.",
+   "src": "shimano-cues",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ]
+}

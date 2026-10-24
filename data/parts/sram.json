@@ -1,0 +1,1455 @@
+{
+ "_meta": {
+  "description": "SRAM – route AXS, XPLR (12 et 13v), Eagle mécanique / AXS / Transmission, PG-1170 11v."
+ },
+ "sources": {
+  "sram-red36": {
+   "kind": "officiel",
+   "ref": "SRAM – RED eTap AXS 36T Max : cassettes 10-28, 10-33, 10-36, 1x et 2x ; dérailleurs marqués MAX 33T ou MAX 36T",
+   "url": "https://www.sram.com/en/life/stories/red-etap-axs-36t-max-rear-derailleur"
+  },
+  "sram-force-maxcog": {
+   "kind": "officiel",
+   "ref": "SRAM – Plus grand pignon des nouveaux dérailleurs Force AXS",
+   "url": "https://support.sram.com/hc/en-us/articles/13302982407835-What-is-the-max-cog-size-that-is-compatible-with-new-Force-AXS-rear-derailleurs"
+  },
+  "sram-rival-rd": {
+   "kind": "officiel",
+   "ref": "SRAM – Rival eTap AXS RD : 36T max, cassettes 10-28/10-30/10-33/10-36, chaîne Flattop",
+   "url": "https://www.sram.com/en/sram/models/rd-riv-e-d1"
+  },
+  "bike24-force-xplr": {
+   "kind": "revendeur",
+   "ref": "Bike24 – Force XPLR AXS D2 : 1x, cassettes 10-44 XPLR et 10-36, 44T max, 10T min, capacité 34",
+   "url": "https://www.bike24.com/p2720504.html"
+  },
+  "sram-apex-xplr-axs": {
+   "kind": "officiel",
+   "ref": "SRAM – Apex XPLR AXS : 1x, cassettes 11-44, 10-44 et 10-36 seulement",
+   "url": "https://support.sram.com/hc/en-us/articles/16420151386651-What-cassette-sizes-are-compatible-with-Apex-rear-derailleurs"
+  },
+  "bc-apex-xplr": {
+   "kind": "revendeur",
+   "ref": "bike-components – Apex XPLR 12v mécanique : manettes Apex et Eagle mécaniques, cassettes 10-44 / 11-44, chaîne Flattop",
+   "url": "https://bike-components.de/en/SRAM/Apex-XPLR-12-speed-Rear-Derailleur-p90546/"
+  },
+  "sram-apex-meca-eagle": {
+   "kind": "officiel",
+   "ref": "SRAM – manettes Apex 12v mécaniques compatibles dérailleurs Eagle mécaniques (cassette et chaîne Eagle, réglage en ligne)",
+   "url": "https://support.sram.com/hc/en-us/articles/16378128396059-Are-12-speed-Apex-mechanical-shift-levers-compatible-with-Eagle-mechanical-rear-derailleurs"
+  },
+  "mikes-gx-eagle": {
+   "kind": "revendeur",
+   "ref": "Mike's Bikes – GX Eagle : 52T max, capacité 42T, compatible 10-50 et 10-52",
+   "url": "https://mikesbikes.com/collections/components/products/gx-eagle-rear-derailleur-lunar-long-cage"
+  },
+  "wwc-nx-eagle": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – NX Eagle : chape longue 50T max, cassettes 11-50 et 10-50",
+   "url": "https://worldwidecyclery.com/products/sram-nx-eagle-rear-derailleur-cassette-12-speed-black"
+  },
+  "sram-tt-adventure": {
+   "kind": "officiel",
+   "ref": "SRAM – Eagle AXS Transmission (cadre UDH, cassette et chaîne T-Type)",
+   "url": "https://support.sram.com/hc/en-us/articles/13819655363099-Is-there-an-Adventure-build-configuration-for-SRAM-Eagle-AXS-Transmission-on-road-and-gravel-bikes"
+  },
+  "mantel-xs1275": {
+   "kind": "revendeur",
+   "ref": "Mantel – XS-1275 GX T-Type 10-52, corps XD, uniquement chaîne et dérailleur T-Type",
+   "url": "https://www.mantel.com/pl/sram-xs-1275-gx-eagle-t-type-cassette"
+  },
+  "vital-7090": {
+   "kind": "presse",
+   "ref": "Vital MTB – Eagle 90/70 : T-Type mécanique, cadres UDH, chaîne Flattop T-Type",
+   "url": "https://www.vitalmtb.com/features/sram-mechanical-transmission-overview-eagle-90-and-eagle-70"
+  },
+  "sram-red-xplr": {
+   "kind": "officiel",
+   "ref": "SRAM – RED XPLR AXS E1 13v : cassettes 10-46 13v seulement, toutes commandes AXS, chaînes Flattop route",
+   "url": "https://support.sram.com/hc/en-us/sections/27118201227291-RED-XPLR-AXS"
+  },
+  "bikeradar-redxplr": {
+   "kind": "presse",
+   "ref": "BikeRadar – RED XPLR AXS 13v : dérailleur montage direct, cassette 10-46 sur XDR, cadres UDH",
+   "url": "https://www.bikeradar.com/advice/buyers-guides/news/sram-aims-to-set-the-gravel-standard-with-red-axs-xplr"
+  },
+  "pb-xg1290": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – XG-1290 / XG-1270 / XG-1250 XDR : 10-26, 10-28, 10-30, 10-33, 10-36 (étagements), XDR seulement ; 10-30 et 10-36 RED : chaîne Flattop",
+   "url": "https://performancebike.com/sram-red-axs-xg1290-cassette-silver-12-speed-xdr-00.2418.087.002-p/p943469"
+  },
+  "rose-xg1251": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – XG-1251 XPLR 10-44 : 10-11-13-15-17-19-21-24-28-32-38-44, XDR, Flattop",
+   "url": "https://www.rosebikes.com/sram-xplr-xg-1251-cassette-2700092"
+  },
+  "sram-pg1230": {
+   "kind": "officiel",
+   "ref": "SRAM – PG-1230 NX Eagle 11-50 : 11,13,15,17,19,22,25,28,32,36,42,50 ; cannelures 8/9/10v",
+   "url": "https://www.sram.com/en/sram/models/CS-PG-1230-A1"
+  },
+  "rose-eagle-cs": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – XG-1275 / XG-1295 / XG-1299 Eagle 10-52 et XG-1295 10-50 (étagements), corps XD ; 10-52 avec dérailleurs XX1/X01/GX Eagle 2020+",
+   "url": "https://www.rosebikes.es/sram-xg-1275-eagletm-cassette-10-52-teeth-2690428"
+  },
+  "rose-pg1170": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – PG-1170 11v : corps Shimano HG route 11/12v, chaîne PC-1170 recommandée",
+   "url": "https://www.rosebikes.com/p/sram-force-pg-1170-11-speed-cassette-712574"
+  },
+  "sram-chains": {
+   "kind": "officiel",
+   "ref": "SRAM – chaîne Flattop route 12v ≠ Eagle ; Eagle seulement cassettes Eagle 10-50/10-52/11-50",
+   "url": "https://support.sram.com/hc/en-us/articles/6526784724379-Will-a-road-Flattop-chain-work-on-a-SRAM-Eagle-drivetrain-and-vise-versa"
+  },
+  "sram-tt-chain": {
+   "kind": "officiel",
+   "ref": "SRAM – chaîne T-Type : compatible plateaux route 1x AXS, non interchangeable avec Flattop route",
+   "url": "https://support.sram.com/hc/en-us/articles/13821165928475-The-SRAM-Eagle-AXS-Transmission-chain-looks-like-the-SRAM-12-speed-Road-Flattop-chain-Is-it-compatible-with-SRAM-road-12-speed-drivetrains"
+  },
+  "sram-axs-shifters": {
+   "kind": "officiel",
+   "ref": "SRAM – manettes eTap AXS : pilotent dérailleurs route et Eagle AXS",
+   "url": "https://support.sram.com/hc/en-us/articles/6053882160027-Are-eTap-AXS-shift-levers-compatible-with-Eagle-AXS-rear-derailleurs"
+  },
+  "sram-hrd-fluid": {
+   "kind": "officiel",
+   "ref": "SRAM – freins route hydrauliques : DOT 5.1 ou DOT 4 uniquement, jamais d'huile minérale ni DOT 5",
+   "url": "https://www.sram.com/globalassets/document-hierarchy/service-manuals/sram-road/brakes/etap-axs-hrd--service-manual.pdf"
+  },
+  "meinhartje-rival": {
+   "kind": "revendeur",
+   "ref": "Meinhartje – frein Rival AXS : DOT 5.1, plaquettes organiques, flat mount",
+   "url": "https://meinhartje.com/en/sram-disc-brake-rival-axs/03075439"
+  },
+  "bc-force-cal": {
+   "kind": "revendeur",
+   "ref": "bike-components – étrier Force AXS E1 flat mount, remplace l'étrier Rival AXS",
+   "url": "https://www.bike-components.de/en/SRAM/Brake-Caliper-Force-Axs-E1-FM-p215159/"
+  },
+  "sram-red-fc": {
+   "kind": "officiel",
+   "ref": "SRAM – pédalier RED D1 : 46/33, 48/35, 50/37 ; ligne de chaîne 45 mm",
+   "url": "https://www.sram.com/en/service/models/fc-red-d1"
+  },
+  "sram-force-fc": {
+   "kind": "officiel",
+   "ref": "SRAM – pédalier Force D1 : 46/33, 48/35 ; ligne 45 / 51 mm",
+   "url": "https://www.sram.com/en/service/models/fc-frc-d1"
+  },
+  "sram-axs-rings": {
+   "kind": "officiel",
+   "ref": "SRAM – plateaux eTap AXS : 2x Wide 43/30 (Force, Rival) ; 1x 36 à 46T ; plateaux route 8-bolt non recommandés sur pédaliers T-Type (ligne 55 vs 45/47,5 mm)",
+   "url": "https://support.sram.com/hc/en-us/articles/6520142397851-What-chainring-size-options-do-you-offer-for-eTap-AXS-cranksets"
+  },
+  "sram-dub-bsa": {
+   "kind": "officiel",
+   "ref": "SRAM – boîtier DUB BSA : BSA 68, 73, 83, 100",
+   "url": "https://www.sram.com/en/sram/models/bb-dub-bsa-a1"
+  },
+  "sram-dub-pf30": {
+   "kind": "officiel",
+   "ref": "SRAM – boîtier DUB PressFit30 : PF30 68, 73, 79, 83, 86,5 ; BB386 ; BBRight",
+   "url": "https://www.sram.com/en/sram/models/bb-dub-pf30-a1"
+  },
+  "sram-dub-t47": {
+   "kind": "officiel",
+   "ref": "SRAM – boîtier DUB T47 (pédaliers route) : T47 68, 77, 85,5 ; BBRight",
+   "url": "https://www.sram.com/en/service/models/bb-dub-t47-a1"
+  },
+  "halfords-s200": {
+   "kind": "revendeur",
+   "ref": "Halfords – gâchette Eagle S200 12v : dérailleurs GX, X01, XX1, NX, SX Eagle ; pas T-Type",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/sram-eagle-s200-12-speed-trigger-shifter-513091.html"
+  }
+ },
+ "parts": [
+  {
+   "id": "sram-rd-red-axs-36",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD RED eTap AXS (MAX 36T)",
+   "aliases": [
+    "red axs",
+    "red etap axs",
+    "red rd"
+   ],
+   "name": "RED eTap AXS 12v, marqué MAX 36T",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-route-12",
+    "maxCog": 36,
+    "minCog": 10,
+    "mount": "standard",
+    "maxFrontChainrings": 2,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-red36",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-rd-red-axs-33",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD RED eTap AXS (MAX 33T)",
+   "aliases": [
+    "red axs 33"
+   ],
+   "name": "RED eTap AXS 12v, marqué MAX 33T",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-route-12",
+    "maxCog": 33,
+    "minCog": 10,
+    "mount": "standard",
+    "maxFrontChainrings": 2,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-red36",
+   "confidence": "haute",
+   "status": "valide",
+   "notes": "SRAM : la vis B ne permet pas de passer un 36T."
+  },
+  {
+   "id": "sram-rd-force-axs-36",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Force eTap AXS (MAX 36T)",
+   "aliases": [
+    "force axs",
+    "force etap"
+   ],
+   "name": "Force eTap AXS 12v 36T",
+   "discipline": "route",
+   "generation": "Force eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-route-12",
+    "maxCog": 36,
+    "minCog": 10,
+    "mount": "standard",
+    "maxFrontChainrings": 2,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-force-maxcog",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-rival-axs",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD-RIV-E-D1",
+   "aliases": [
+    "rival axs",
+    "rival etap"
+   ],
+   "name": "Rival eTap AXS 12v",
+   "discipline": "route",
+   "generation": "Rival eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-route-12",
+    "maxCog": 36,
+    "minCog": 10,
+    "mount": "standard",
+    "maxFrontChainrings": 2,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-rival-rd",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-rd-force-xplr-axs",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Force XPLR eTap AXS D2",
+   "aliases": [
+    "force xplr"
+   ],
+   "name": "Force XPLR AXS 12v 1x",
+   "discipline": "gravel",
+   "generation": "Force XPLR AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-xplr-12",
+    "maxCog": 44,
+    "minCog": 10,
+    "totalCapacity": 34,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "bike24-force-xplr",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-apex-xplr-axs",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Apex XPLR eTap AXS D1",
+   "aliases": [
+    "apex xplr axs"
+   ],
+   "name": "Apex XPLR AXS 12v 1x",
+   "discipline": "gravel",
+   "generation": "Apex AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-xplr-12",
+    "maxCog": 44,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-apex-xplr-axs",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-rd-apex-xplr-meca",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Apex XPLR 12v (mécanique)",
+   "aliases": [
+    "apex xplr",
+    "apex 12 mecanique"
+   ],
+   "name": "Apex XPLR 12v mécanique 1x",
+   "discipline": "gravel",
+   "generation": "Apex (12v mécanique)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sram-apex-xplr-meca",
+    "maxCog": 44,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "bc-apex-xplr",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-gx-eagle",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD GX Eagle",
+   "aliases": [
+    "gx eagle",
+    "gx 12"
+   ],
+   "name": "GX Eagle 12v mécanique",
+   "discipline": "vtt",
+   "generation": "GX Eagle (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sram-eagle-meca",
+    "maxCog": 52,
+    "totalCapacity": 42,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-eagle"
+   },
+   "src": "mikes-gx-eagle",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-nx-eagle",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD NX Eagle",
+   "aliases": [
+    "nx eagle"
+   ],
+   "name": "NX Eagle 12v mécanique",
+   "discipline": "vtt",
+   "generation": "NX Eagle (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sram-eagle-meca",
+    "maxCog": 50,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-eagle"
+   },
+   "src": "wwc-nx-eagle",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-gx-t-type",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD GX Eagle AXS T-Type",
+   "aliases": [
+    "gx t-type",
+    "gx transmission"
+   ],
+   "name": "GX Eagle AXS Transmission",
+   "discipline": "vtt",
+   "generation": "Eagle AXS Transmission (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-t-type",
+    "maxCog": 52,
+    "minCog": 10,
+    "mount": "udh_direct",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-t-type"
+   },
+   "src": [
+    "sram-tt-adventure",
+    "mantel-xs1275"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-eagle-90",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Eagle 90 T-Type",
+   "aliases": [
+    "eagle 90",
+    "eagle 70"
+   ],
+   "name": "Eagle 90 Transmission mécanique",
+   "discipline": "vtt",
+   "generation": "Eagle 90 / 70 (12v mécanique)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sram-t-type-meca",
+    "maxCog": 52,
+    "minCog": 10,
+    "mount": "udh_direct",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-t-type"
+   },
+   "src": "vital-7090",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-red-xplr-e1",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD RED XPLR eTap AXS E1",
+   "aliases": [
+    "red xplr",
+    "xplr 13"
+   ],
+   "name": "RED XPLR AXS 13v",
+   "discipline": "gravel",
+   "generation": "RED XPLR AXS (13v)",
+   "attrs": {
+    "speeds": 13,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs-xplr-13",
+    "maxCog": 46,
+    "minCog": 10,
+    "mount": "udh_direct",
+    "maxFrontChainrings": 1,
+    "chainTypes": "sram-flattop"
+   },
+   "src": [
+    "sram-red-xplr",
+    "bikeradar-redxplr"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-st-axs-route",
+   "type": "shifter",
+   "brand": "SRAM",
+   "ref": "Leviers eTap AXS HRD (RED / Force / Rival)",
+   "aliases": [
+    "etap axs",
+    "red axs levier",
+    "force axs levier",
+    "rival axs levier"
+   ],
+   "name": "Leviers route eTap AXS hydrauliques",
+   "discipline": "route",
+   "generation": "eTap AXS (12v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "axs",
+    "family": "sram-axs",
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "fluidSpec": "dot_5_1",
+    "hydraulicSystem": "sram-route-hydro"
+   },
+   "src": [
+    "sram-axs-shifters",
+    "sram-hrd-fluid"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Regroupe les leviers RED, Force et Rival eTap AXS HRD."
+  },
+  {
+   "id": "sram-st-apex-12-meca",
+   "type": "shifter",
+   "brand": "SRAM",
+   "ref": "Leviers Apex 12v mécaniques",
+   "aliases": [
+    "apex 12 levier",
+    "apex mecanique"
+   ],
+   "name": "Apex 12v mécanique (cintre route)",
+   "discipline": "gravel",
+   "generation": "Apex (12v mécanique)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sram-apex-12-meca",
+    "form": "levier_route"
+   },
+   "src": "sram-apex-meca-eagle",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Version de frein (hydraulique / mécanique) non renseignée."
+  },
+  {
+   "id": "sram-sl-eagle-s200",
+   "type": "shifter",
+   "brand": "SRAM",
+   "ref": "Gâchette Eagle S200 12v",
+   "aliases": [
+    "eagle trigger",
+    "s200",
+    "gachette eagle"
+   ],
+   "name": "Gâchette Eagle mécanique",
+   "discipline": "vtt",
+   "generation": "Eagle (12v mécanique)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sram-eagle-meca",
+    "form": "gachette_vtt"
+   },
+   "src": "halfords-s200",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1290-10-26",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1290 10-26",
+   "aliases": [
+    "xg1290 10-26"
+   ],
+   "name": "RED AXS XG-1290 10-26",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 26,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-12-13-14-15-16-17-19-21-23-26"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1290-10-30",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1290 10-30",
+   "aliases": [
+    "xg1290 10-30"
+   ],
+   "name": "RED AXS XG-1290 10-30",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 30,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-12-13-14-15-17-19-21-24-27-30"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1290-10-36",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1290 10-36",
+   "aliases": [
+    "xg1290 10-36"
+   ],
+   "name": "RED AXS XG-1290 10-36",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 36,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-12-13-15-17-19-21-24-28-32-36"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1290-10-28",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1290 10-28",
+   "aliases": [
+    "xg1290 10-28"
+   ],
+   "name": "RED AXS XG-1290 10-28",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 28,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1290-10-33",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1290 10-33",
+   "aliases": [
+    "xg1290 10-33"
+   ],
+   "name": "RED AXS XG-1290 10-33",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 33,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1270-10-26",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1270 10-26",
+   "aliases": [
+    "xg1270 10-26"
+   ],
+   "name": "Force AXS XG-1270 10-26",
+   "discipline": "route",
+   "generation": "Force eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 26,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1270-10-28",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1270 10-28",
+   "aliases": [
+    "xg1270 10-28"
+   ],
+   "name": "Force AXS XG-1270 10-28",
+   "discipline": "route",
+   "generation": "Force eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 28,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1270-10-33",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1270 10-33",
+   "aliases": [
+    "xg1270 10-33"
+   ],
+   "name": "Force AXS XG-1270 10-33",
+   "discipline": "route",
+   "generation": "Force eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 33,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1270-10-36",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1270 10-36",
+   "aliases": [
+    "xg1270 10-36"
+   ],
+   "name": "Force AXS XG-1270 10-36",
+   "discipline": "route",
+   "generation": "Force eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 36,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1250-10-30",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1250 10-30",
+   "aliases": [
+    "xg1250 10-30"
+   ],
+   "name": "Rival AXS XG-1250 10-30",
+   "discipline": "route",
+   "generation": "Rival eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 30,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1250-10-36",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1250 10-36",
+   "aliases": [
+    "xg1250 10-36"
+   ],
+   "name": "Rival AXS XG-1250 10-36",
+   "discipline": "route",
+   "generation": "Rival eTap AXS (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 36,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "pb-xg1290",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1251-10-44",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1251 10-44",
+   "aliases": [
+    "xg1251",
+    "xplr 10-44"
+   ],
+   "name": "XPLR XG-1251 10-44",
+   "discipline": "gravel",
+   "generation": "XPLR (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 44,
+    "freehub": "xdr",
+    "pitch": "sram-road-12",
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-13-15-17-19-21-24-28-32-38-44"
+   },
+   "src": "rose-xg1251",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1230-11-50",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1230 11-50",
+   "aliases": [
+    "pg1230",
+    "nx eagle cassette"
+   ],
+   "name": "NX Eagle PG-1230 11-50",
+   "discipline": "vtt",
+   "generation": "NX Eagle (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 50,
+    "freehub": "hg_8_9_10",
+    "pitch": "sram-eagle-12",
+    "chainTypes": "sram-eagle",
+    "cogs": "11-13-15-17-19-22-25-28-32-36-42-50"
+   },
+   "src": "sram-pg1230",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-xg-1275-10-52",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1275 10-52",
+   "aliases": [
+    "xg1275 10-52"
+   ],
+   "name": "XG-1275 Eagle 10-52",
+   "discipline": "vtt",
+   "generation": "GX Eagle (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 52,
+    "freehub": "xd",
+    "pitch": "sram-eagle-12",
+    "chainTypes": "sram-eagle",
+    "cogs": "10-12-14-16-18-21-24-28-32-36-42-52"
+   },
+   "src": "rose-eagle-cs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Avec dérailleurs XX1/X01/GX Eagle 2020 et plus (avant : 50T max)."
+  },
+  {
+   "id": "sram-xg-1295-10-52",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1295 10-52",
+   "aliases": [
+    "xg1295 10-52"
+   ],
+   "name": "XG-1295 Eagle 10-52",
+   "discipline": "vtt",
+   "generation": "X01 Eagle (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 52,
+    "freehub": "xd",
+    "pitch": "sram-eagle-12",
+    "chainTypes": "sram-eagle",
+    "cogs": "10-12-14-16-18-21-24-28-32-36-42-52"
+   },
+   "src": "rose-eagle-cs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Avec dérailleurs XX1/X01/GX Eagle 2020 et plus (avant : 50T max)."
+  },
+  {
+   "id": "sram-xg-1299-10-52",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1299 10-52",
+   "aliases": [
+    "xg1299 10-52"
+   ],
+   "name": "XG-1299 Eagle 10-52",
+   "discipline": "vtt",
+   "generation": "XX1 Eagle (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 52,
+    "freehub": "xd",
+    "pitch": "sram-eagle-12",
+    "chainTypes": "sram-eagle",
+    "cogs": "10-12-14-16-18-21-24-28-32-36-42-52"
+   },
+   "src": "rose-eagle-cs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Avec dérailleurs XX1/X01/GX Eagle 2020 et plus (avant : 50T max)."
+  },
+  {
+   "id": "sram-xg-1295-10-50",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1295 10-50",
+   "aliases": [
+    "xg1295 10-50"
+   ],
+   "name": "X01 Eagle XG-1295 10-50",
+   "discipline": "vtt",
+   "generation": "X01 Eagle (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 50,
+    "freehub": "xd",
+    "pitch": "sram-eagle-12",
+    "chainTypes": "sram-eagle",
+    "cogs": "10-12-14-16-18-21-24-28-32-36-42-50"
+   },
+   "src": "rose-eagle-cs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xs-1275-10-52",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XS-1275 10-52",
+   "aliases": [
+    "xs1275",
+    "t-type cassette"
+   ],
+   "name": "GX Eagle T-Type XS-1275 10-52",
+   "discipline": "vtt",
+   "generation": "Eagle Transmission (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 52,
+    "freehub": "xd",
+    "pitch": "sram-t-type-12",
+    "chainTypes": "sram-t-type"
+   },
+   "src": "mantel-xs1275",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1170-11-25",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1170 11-25",
+   "aliases": [
+    "pg1170 11-25"
+   ],
+   "name": "PG-1170 11v 11-25",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 25,
+    "freehub": "hg_11_route",
+    "pitch": "hg-11"
+   },
+   "src": "rose-pg1170",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plages vendues 11-25 à 11-36 ; étagements non trouvés."
+  },
+  {
+   "id": "sram-pg-1170-11-28",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1170 11-28",
+   "aliases": [
+    "pg1170 11-28"
+   ],
+   "name": "PG-1170 11v 11-28",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 28,
+    "freehub": "hg_11_route",
+    "pitch": "hg-11"
+   },
+   "src": "rose-pg1170",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plages vendues 11-25 à 11-36 ; étagements non trouvés."
+  },
+  {
+   "id": "sram-pg-1170-11-32",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1170 11-32",
+   "aliases": [
+    "pg1170 11-32"
+   ],
+   "name": "PG-1170 11v 11-32",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 32,
+    "freehub": "hg_11_route",
+    "pitch": "hg-11"
+   },
+   "src": "rose-pg1170",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plages vendues 11-25 à 11-36 ; étagements non trouvés."
+  },
+  {
+   "id": "sram-pg-1170-11-36",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1170 11-36",
+   "aliases": [
+    "pg1170 11-36"
+   ],
+   "name": "PG-1170 11v 11-36",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 36,
+    "freehub": "hg_11_route",
+    "pitch": "hg-11"
+   },
+   "src": "rose-pg1170",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plages vendues 11-25 à 11-36 ; étagements non trouvés."
+  },
+  {
+   "id": "sram-cn-flattop-12",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "Chaîne Flattop 12v (RED / Force / Rival / Apex)",
+   "aliases": [
+    "flattop",
+    "chaine flattop"
+   ],
+   "name": "Chaîne SRAM route Flattop 12v",
+   "discipline": "route",
+   "generation": "eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "flattop": true,
+    "chainType": "sram-flattop"
+   },
+   "src": "sram-chains",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-cn-eagle-12",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "Chaîne Eagle 12v (GX / NX / SX / X01 / XX1)",
+   "aliases": [
+    "chaine eagle",
+    "gx eagle chain"
+   ],
+   "name": "Chaîne SRAM Eagle 12v",
+   "discipline": "vtt",
+   "generation": "Eagle (12v)",
+   "attrs": {
+    "speeds": 12,
+    "flattop": false,
+    "chainType": "sram-eagle"
+   },
+   "src": "sram-chains",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-cn-t-type",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "Chaîne T-Type (Eagle Transmission)",
+   "aliases": [
+    "chaine t-type",
+    "transmission chain"
+   ],
+   "name": "Chaîne SRAM T-Type Flattop",
+   "discipline": "vtt",
+   "generation": "Eagle Transmission (12v)",
+   "attrs": {
+    "speeds": 12,
+    "flattop": true,
+    "chainType": "sram-t-type"
+   },
+   "src": "sram-tt-chain",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-pc-1170",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "PC-1170",
+   "aliases": [
+    "pc1170"
+   ],
+   "name": "Chaîne SRAM PC-1170 11v",
+   "discipline": "route",
+   "generation": "11v",
+   "attrs": {
+    "speeds": 11,
+    "flattop": false,
+    "chainType": "sram-11"
+   },
+   "src": "rose-pg1170",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-fc-red-d1-48-35",
+   "type": "crankset",
+   "brand": "SRAM",
+   "ref": "FC RED D1 48/35",
+   "aliases": [
+    "red axs pedalier"
+   ],
+   "name": "Pédalier RED AXS 48/35",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "spindle": "sram_dub",
+    "ringInterface": "direct_mount",
+    "dmType": "sram-8-bolt-route",
+    "chainrings": 2,
+    "teeth": "48-35",
+    "chainline": 45,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-red-fc",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-fc-red-d1-50-37",
+   "type": "crankset",
+   "brand": "SRAM",
+   "ref": "FC RED D1 50/37",
+   "aliases": [],
+   "name": "Pédalier RED AXS 50/37",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "spindle": "sram_dub",
+    "ringInterface": "direct_mount",
+    "dmType": "sram-8-bolt-route",
+    "chainrings": 2,
+    "teeth": "50-37",
+    "chainline": 45,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-red-fc",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-fc-red-d1-46-33",
+   "type": "crankset",
+   "brand": "SRAM",
+   "ref": "FC RED D1 46/33",
+   "aliases": [],
+   "name": "Pédalier RED AXS 46/33",
+   "discipline": "route",
+   "generation": "RED eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "spindle": "sram_dub",
+    "ringInterface": "direct_mount",
+    "dmType": "sram-8-bolt-route",
+    "chainrings": 2,
+    "teeth": "46-33",
+    "chainline": 45,
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-red-fc",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-fc-force-d1-48-35",
+   "type": "crankset",
+   "brand": "SRAM",
+   "ref": "FC Force D1 48/35",
+   "aliases": [
+    "force axs pedalier"
+   ],
+   "name": "Pédalier Force AXS 48/35",
+   "discipline": "route",
+   "generation": "Force eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "spindle": "sram_dub",
+    "ringInterface": "direct_mount",
+    "dmType": "sram-8-bolt-route",
+    "chainrings": 2,
+    "teeth": "48-35",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-force-fc",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Ligne de chaîne 45 ou 51 mm selon version (wide)."
+  },
+  {
+   "id": "sram-fc-force-wide-43-30",
+   "type": "crankset",
+   "brand": "SRAM",
+   "ref": "FC Force / Rival Wide 43/30",
+   "aliases": [
+    "43/30 wide"
+   ],
+   "name": "Pédalier AXS 2x Wide 43/30",
+   "discipline": "gravel",
+   "generation": "eTap AXS (12v)",
+   "attrs": {
+    "speeds": 12,
+    "spindle": "sram_dub",
+    "ringInterface": "direct_mount",
+    "chainrings": 2,
+    "teeth": "43-30",
+    "chainTypes": "sram-flattop"
+   },
+   "src": "sram-axs-rings",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Type de direct mount et ligne de chaîne non renseignés."
+  },
+  {
+   "id": "sram-bb-dub-bsa",
+   "type": "bottom_bracket",
+   "brand": "SRAM",
+   "ref": "DUB BSA",
+   "aliases": [
+    "dub bsa"
+   ],
+   "name": "Boîtier DUB BSA",
+   "discipline": "autre",
+   "generation": "DUB",
+   "attrs": {
+    "shell": "bsa",
+    "shellWidths": "68|73|83|100",
+    "spindle": "sram_dub"
+   },
+   "src": "sram-dub-bsa",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-bb-dub-pf30",
+   "type": "bottom_bracket",
+   "brand": "SRAM",
+   "ref": "DUB PressFit30",
+   "aliases": [
+    "dub pf30"
+   ],
+   "name": "Boîtier DUB PF30",
+   "discipline": "autre",
+   "generation": "DUB",
+   "attrs": {
+    "shell": "pf30",
+    "shellWidths": "68|73|79|83|86.5",
+    "spindle": "sram_dub"
+   },
+   "src": "sram-dub-pf30",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "sram-bb-dub-t47-ext",
+   "type": "bottom_bracket",
+   "brand": "SRAM",
+   "ref": "DUB T47 (68 / 77)",
+   "aliases": [
+    "dub t47"
+   ],
+   "name": "Boîtier DUB T47 externe",
+   "discipline": "route",
+   "generation": "DUB",
+   "attrs": {
+    "shell": "t47_externe",
+    "shellWidths": "68|77",
+    "spindle": "sram_dub"
+   },
+   "src": "sram-dub-t47",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pédaliers route seulement (SRAM)."
+  },
+  {
+   "id": "sram-bb-dub-t47-int",
+   "type": "bottom_bracket",
+   "brand": "SRAM",
+   "ref": "DUB T47 (85,5)",
+   "aliases": [
+    "dub t47 85.5"
+   ],
+   "name": "Boîtier DUB T47 85,5",
+   "discipline": "route",
+   "generation": "DUB",
+   "attrs": {
+    "shell": "t47_interne",
+    "shellWidths": "85.5",
+    "spindle": "sram_dub"
+   },
+   "src": "sram-dub-t47",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pédaliers route seulement (SRAM)."
+  },
+  {
+   "id": "sram-br-rival-axs-fm",
+   "type": "brake_caliper",
+   "brand": "SRAM",
+   "ref": "Étrier Rival AXS flat mount",
+   "aliases": [
+    "rival axs etrier"
+   ],
+   "name": "Étrier hydraulique Rival AXS",
+   "discipline": "route",
+   "generation": "Rival eTap AXS (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "fluidSpec": "dot_5_1",
+    "hydraulicSystem": "sram-route-hydro",
+    "mount": "flat_mount"
+   },
+   "src": [
+    "meinhartje-rival",
+    "sram-hrd-fluid"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Forme de plaquette non renseignée."
+  },
+  {
+   "id": "sram-br-force-axs-e1-fm",
+   "type": "brake_caliper",
+   "brand": "SRAM",
+   "ref": "Étrier Force AXS E1 flat mount",
+   "aliases": [
+    "force axs etrier"
+   ],
+   "name": "Étrier hydraulique Force AXS E1",
+   "discipline": "route",
+   "generation": "Force eTap AXS (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "fluidSpec": "dot_5_1",
+    "hydraulicSystem": "sram-route-hydro",
+    "mount": "flat_mount"
+   },
+   "src": [
+    "bc-force-cal",
+    "sram-hrd-fluid"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Forme de plaquette non renseignée."
+  }
+ ]
+}

@@ -33,7 +33,7 @@ export const fluide = {
   absolute: true,
   confidence: 'haute',
   source: physique('Le DOT détruit les joints prévus pour l\'huile minérale et inversement : ne JAMAIS mélanger.'),
-  evaluate(lever, cal) {
+  evaluate(lever, cal, kb) {
     if (noBrake(lever)) return null;
     if (lever.attrs?.brakeActuation !== 'hydraulique' || cal.attrs?.brakeActuation !== 'hydraulique') return null;
     const g = guard(this, [[lever, ['fluid']], [cal, ['fluid']]]);
@@ -41,7 +41,18 @@ export const fluide = {
     if (lever.attrs.fluid !== cal.attrs.fluid) {
       return incompatible(this, `Fluide ${lever.attrs.fluid} côté levier, ${cal.attrs.fluid} côté étrier : JAMAIS de mélange (joints détruits, perte de freinage).`);
     }
-    return ok(this, `Même fluide (${cal.attrs.fluid}).`);
+    const a = lever.attrs.fluidSpec;
+    const b = cal.attrs.fluidSpec;
+    if (a && b && a !== b) {
+      const entry = kb.fluidFit(a, b);
+      if (entry) return fromEntry(this, entry);
+      // Les huiles minérales ne sont pas normalisées : joints prévus pour une huile précise.
+      return incompatible(this, `Fluides différents (${a} / ${b}) : chaque constructeur impose son huile, joints non garantis.`, {
+        absolute: false,
+        source: { kind: 'officiel', ref: 'SRAM : huile minérale Maxima exclusivement pour Maven ; huiles minérales non normalisées', url: 'https://support.sram.com/hc/en-us/articles/23145900069275-Do-Maven-brakes-use-mineral-oil-or-DOT-fluid' },
+      });
+    }
+    return ok(this, `Même fluide (${b ?? a ?? cal.attrs.fluid}).`);
   },
 };
 

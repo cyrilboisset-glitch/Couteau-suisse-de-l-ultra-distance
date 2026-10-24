@@ -16,7 +16,7 @@ règle porte sa source ; ce qui n'est pas sourcé officiellement est « à valid
 ## Avancement
 
 1. ✅ Schéma de données + moteur de règles + tests unitaires
-2. ⬜ Base pilote : Shimano 11/12v (route, GRX, VTT) + SRAM 12v (route, XPLR, Eagle)
+2. 🟡 Base pilote : Shimano 11/12v, SRAM 12/13v, Campagnolo Ekar, microSHIFT, LTWOO, SENSAH, SunRace, Box — 158 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
 3. ⬜ Interface de recherche + résultats
 4. ⬜ PWA hors ligne
 5. ⬜ Extension 10 → 8 vitesses, Campagnolo, marques asiatiques
@@ -30,7 +30,8 @@ src/knowledge.js       base de connaissances par standards (familles, corps de r
 src/engine/rules/      règles : transmission, freins, pédalier
 src/engine/core.js     checkPair (deux pièces), agrégation des niveaux
 src/engine/replacement.js  checkReplacement, findReplacements, checkAvailable
-data/                  base réelle (vide à l'étape 1)
+data/                  base réelle (knowledge/ = standards, parts/ = pièces), voir docs/DONNEES.md
+scripts/build-data.js  validation + dist/catalogue.json + docs/COUVERTURE.md
 test/                  tests (pièces de test illustratives, pas des données réelles)
 ```
 
@@ -49,4 +50,5 @@ checkPair(manette, derailleur, kb);                           // deux pièces en
 
 ```
 npm test          # Node ≥ 20, aucune dépendance
+npm run build     # valide data/ et génère dist/catalogue.json
 ```
