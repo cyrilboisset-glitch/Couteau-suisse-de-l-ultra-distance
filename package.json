@@ -1,0 +1,14 @@
+{
+  "name": "trousse-du-baroudeur",
+  "version": "0.1.0",
+  "description": "Compatibilité de pièces vélo en cas de casse, 100 % hors ligne (PWA).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "schema-doc": "node scripts/schema-doc.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
