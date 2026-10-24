@@ -34,6 +34,7 @@ export const ENUMS = Object.freeze({
   brakeMount: ['flat_mount', 'post_mount', 'is', 'etrier_central', 'direct_mount_jante', 'cantilever', 'v_brake'],
   wheelBrake: ['disque', 'jante', 'les_deux'],
   rotorMount: ['six_trous', 'centerlock'],
+  axleType: ['serrage_rapide', 'axe_traversant', 'ecrous', 'autre'],
   padCompound: ['resine', 'metal', 'semi_metal'],
   rotorPadCompat: ['resine_seulement', 'resine_et_metal'],
   confidence: ['haute', 'moyenne', 'basse'],
@@ -58,6 +59,12 @@ const BRAKE_ATTRS = {
   fluid: a('enum', 'Fluide (minéral / DOT)', { enum: 'fluid', requiredIf: (x) => x.brakeActuation === 'hydraulique' }),
   cablePull: a('enum', 'Tirage câble (court / long)', { enum: 'cablePull', requiredIf: (x) => x.brakeActuation === 'mecanique' }),
   hydraulicSystem: a('string', 'Système hydraulique (marque + famille de maître-cylindre)'),
+};
+
+const AXLE_ATTRS = {
+  axleType: a('enum', "Type d'axe de roue", { enum: 'axleType' }),
+  axleDiameter: a('number', "Diamètre d'axe (5 = serrage rapide, 12, 15, 20…)", { unit: 'mm' }),
+  axleWidth: a('number', 'Largeur entre pattes (100, 110, 130, 135, 142, 148…)', { unit: 'mm' }),
 };
 
 export const PART_TYPES = Object.freeze({
@@ -198,6 +205,7 @@ export const PART_TYPES = Object.freeze({
       freehub: a('enum', 'Corps de roue libre', { enum: 'freehub' }),
       freewheelThread: a('string', 'Filetage roue libre (moyeu à visser)'),
       rotorMount: a('enum', 'Fixation disque', { enum: 'rotorMount', requiredIf: (x) => x.brakeInterface !== 'jante' }),
+      ...AXLE_ATTRS,
     },
   },
   frame: {
@@ -208,6 +216,16 @@ export const PART_TYPES = Object.freeze({
       rdHanger: a('enum', 'Patte de dérailleur', { enum: 'frameHanger' }),
       fdMount: a('enum', 'Fixation dérailleur avant', { enum: 'fdMount' }),
       brakeMount: a('enum', 'Fixation de frein', { enum: 'brakeMount' }),
+      maxRotor: a('int', 'Diamètre de disque maximal autorisé', { unit: 'mm' }),
+      ...AXLE_ATTRS,
+    },
+  },
+  quick_link: {
+    label: 'Maillon rapide',
+    attrs: {
+      speeds: a('int', 'Nombre de vitesses', { required: true }),
+      flattop: a('bool', 'Flattop'),
+      reusable: a('bool', 'Réutilisable'),
     },
   },
 });

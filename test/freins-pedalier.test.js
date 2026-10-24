@@ -108,3 +108,33 @@ describe('pédalier et boîtier', () => {
     assert.equal(checkPair(P.crankRoute, P.ring130, kb).absolute, true);
   });
 });
+
+describe('règles A15 à A18', () => {
+  test('A15 : disque plus grand que le maximum du cadre', () => {
+    const fork = P.part('frame', 'FOURCHE-160', { maxRotor: 160 });
+    const r203 = P.part('rotor', 'RT-203', { mount: 'six_trous', diameter: 203 });
+    assert.equal(checkPair(r203, fork, kb).absolute, true);
+    assert.equal(checkPair(P.rotor6bolt, fork, kb).level, LEVEL.OFFICIAL);
+  });
+  test('A16 : maillon rapide', () => {
+    const link11 = P.part('quick_link', 'QL-11', { speeds: 11, flattop: false });
+    const link12f = P.part('quick_link', 'QL-12-F', { speeds: 12, flattop: true });
+    assert.equal(checkPair(link11, P.chain11, kb).level, LEVEL.OFFICIAL);
+    assert.equal(checkPair(link11, P.chain10, kb).absolute, true);
+    assert.equal(checkPair(link12f, P.chain12, kb).absolute, true);
+    assert.equal(checkPair(link12f, P.chainFlattop, kb).level, LEVEL.OFFICIAL);
+  });
+  test('A17 : axe de roue', () => {
+    const frameTa = P.part('frame', 'FR-TA', { axleType: 'axe_traversant', axleDiameter: 12, axleWidth: 142 });
+    const wheelQr = P.part('wheel', 'WH-QR', { brakeInterface: 'disque', rotorMount: 'centerlock', axleType: 'serrage_rapide', axleDiameter: 5, axleWidth: 135 });
+    const wheelTa148 = P.part('wheel', 'WH-148', { brakeInterface: 'disque', rotorMount: 'centerlock', axleType: 'axe_traversant', axleDiameter: 12, axleWidth: 148 });
+    const wheelTa142 = P.part('wheel', 'WH-142', { brakeInterface: 'disque', rotorMount: 'centerlock', axleType: 'axe_traversant', axleDiameter: 12, axleWidth: 142 });
+    assert.equal(checkPair(wheelQr, frameTa, kb).absolute, true);
+    assert.equal(checkPair(wheelTa148, frameTa, kb).absolute, true);
+    assert.equal(checkPair(wheelTa142, frameTa, kb).level, LEVEL.OFFICIAL);
+  });
+  test('A18 : générations électroniques non documentées : exclusion absolue', () => {
+    const sh = P.part('shifter', 'ST-DI2-X', { side: 'arriere', speeds: 12, system: 'electronique', protocol: 'di2', family: 'T-DI2-12' });
+    assert.equal(checkPair(sh, P.rdDi2, kb).absolute, true);
+  });
+});

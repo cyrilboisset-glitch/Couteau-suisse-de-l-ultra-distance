@@ -21,12 +21,12 @@ describe('exclusions absolues de commande', () => {
     assert.match(r.reasons.join(), /DI2 ≠ AXS/);
   });
 
-  test('même protocole, génération non documentée : incompatible mais pas « absolu »', () => {
+  test('même protocole, génération non documentée : exclusion absolue (A18)', () => {
     const old = { ...P.rdDi2, id: 'RD-DI2-ANCIEN', attrs: { ...P.rdDi2.attrs, family: 'T-DI2-10' } };
     const sh = P.part('shifter', 'ST-DI2', { side: 'arriere', speeds: 11, system: 'electronique', protocol: 'di2', family: 'T-DI2-11' });
     const r = checkPair(sh, old, kb);
     assert.equal(r.level, LEVEL.INCOMPATIBLE);
-    assert.equal(r.absolute, false);
+    assert.equal(r.absolute, true);
   });
 
   test('même protocole et même famille (ex. AXS route + dérailleur AXS) : compatible', () => {

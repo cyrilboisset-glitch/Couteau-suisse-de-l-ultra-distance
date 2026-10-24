@@ -159,6 +159,9 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `freehub` | Corps de roue libre | liste `freehub` |  |
 | `freewheelThread` | Filetage roue libre (moyeu à visser) | string |  |
 | `rotorMount` | Fixation disque | liste `rotorMount` | *conditionnel* |
+| `axleType` | Type d'axe de roue | liste `axleType` |  |
+| `axleDiameter` | Diamètre d'axe (5 = serrage rapide, 12, 15, 20…) | number (mm) |  |
+| `axleWidth` | Largeur entre pattes (100, 110, 130, 135, 142, 148…) | number (mm) |  |
 
 ## Cadre / fourche (`frame`)
 
@@ -169,6 +172,18 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `rdHanger` | Patte de dérailleur | liste `frameHanger` |  |
 | `fdMount` | Fixation dérailleur avant | liste `fdMount` |  |
 | `brakeMount` | Fixation de frein | liste `brakeMount` |  |
+| `maxRotor` | Diamètre de disque maximal autorisé | int (mm) |  |
+| `axleType` | Type d'axe de roue | liste `axleType` |  |
+| `axleDiameter` | Diamètre d'axe (5 = serrage rapide, 12, 15, 20…) | number (mm) |  |
+| `axleWidth` | Largeur entre pattes (100, 110, 130, 135, 142, 148…) | number (mm) |  |
+
+## Maillon rapide (`quick_link`)
+
+| Attribut | Description | Type | Statut |
+|---|---|---|---|
+| `speeds` | Nombre de vitesses | int | **obligatoire** |
+| `flattop` | Flattop | bool |  |
+| `reusable` | Réutilisable | bool |  |
 
 ## Listes de valeurs
 
@@ -193,6 +208,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 - `brakeMount` : `flat_mount`, `post_mount`, `is`, `etrier_central`, `direct_mount_jante`, `cantilever`, `v_brake`
 - `wheelBrake` : `disque`, `jante`, `les_deux`
 - `rotorMount` : `six_trous`, `centerlock`
+- `axleType` : `serrage_rapide`, `axe_traversant`, `ecrous`, `autre`
 - `padCompound` : `resine`, `metal`, `semi_metal`
 - `rotorPadCompat` : `resine_seulement`, `resine_et_metal`
 - `confidence` : `haute`, `moyenne`, `basse`

@@ -51,12 +51,14 @@ Celles que j'ajoute — **à valider** :
 | A13 | Interface plateau ≠ manivelle (BCD ou nombre de vis différents, direct mount différent) | Ne se fixe pas | `pedalier.interface_plateau` |
 | A14 | Dérailleur à montage direct UDH (type SRAM Transmission) sans cadre UDH | Se fixe sur l'axe de roue du cadre UDH | `transmission.patte` |
 
-Proposées mais **pas encore codées** (dis-moi si tu les veux) :
+Validées et codées :
 
-- A15 Disque plus grand que le maximum autorisé par le cadre / la fourche (sécurité).
-- A16 Maillon rapide d'un autre nombre de vitesses que la chaîne.
-- A17 Axe de roue : serrage rapide ≠ axe traversant, et largeurs d'axe (100/110/135/142/148) — utile pour « j'ai une roue sous la main ».
-- A18 Batterie / câblage électronique d'une autre génération (ex. Di2 filaire ≠ semi-sans-fil) — aujourd'hui traité par la famille d'actionnement.
+| # | Règle | Id moteur |
+|---|---|---|
+| A15 | Disque plus grand que le maximum autorisé par le cadre / la fourche | `freins.diametre_max` |
+| A16 | Maillon rapide d'un autre nombre de vitesses que la chaîne, ou Flattop ≠ non Flattop | `transmission.maillon_rapide` |
+| A17 | Axe de roue : type (serrage rapide / traversant / écrous), diamètre et largeur entre pattes | `roues.axe` |
+| A18 | Générations électroniques d'un même protocole non documentées comme compatibles | `transmission.famille` |
 
 ## Règles non absolues (niveau calculé)
 

@@ -219,7 +219,25 @@ export const fixationDisque = {
   },
 };
 
-export const FREINS_RULES = [
+export const diametreMax = {
+  id: 'freins.diametre_max',
+  label: 'Diamètre de disque ↔ maximum du cadre / de la fourche',
+  between: [['rotor', 'frame']],
+  absolute: true,
+  confidence: 'haute',
+  source: { kind: 'officiel', ref: 'Diamètre maximal indiqué par le fabricant du cadre / de la fourche' },
+  evaluate(rotor, frame) {
+    if (!frame.attrs?.maxRotor) return null;
+    const g = guard(this, [[rotor, ['diameter']]]);
+    if (g) return g.finding;
+    if (rotor.attrs.diameter > frame.attrs.maxRotor) {
+      return incompatible(this, `Disque de ${rotor.attrs.diameter} mm au-delà des ${frame.attrs.maxRotor} mm autorisés : risque de rupture de la fixation.`);
+    }
+    return ok(this, `Disque de ${rotor.attrs.diameter} mm ≤ ${frame.attrs.maxRotor} mm autorisés.`);
+  },
+};
+
+export const FREINS_RULES = [diametreMax, 
   hydrauliqueMecanique, fluide, systemeHydraulique, tirageCable,
   disqueJanteCadre, freinRoue, etrierDisque, formePlaquette, plaquetteDisque, fixationDisque,
 ];

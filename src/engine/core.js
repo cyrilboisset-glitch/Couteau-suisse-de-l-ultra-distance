@@ -4,9 +4,10 @@ import { EMPTY_KNOWLEDGE } from '../knowledge.js';
 import { TRANSMISSION_RULES } from './rules/transmission.js';
 import { FREINS_RULES } from './rules/freins.js';
 import { PEDALIER_RULES } from './rules/pedalier.js';
+import { ROUES_RULES } from './rules/roues.js';
 import { partLabel } from './finding.js';
 
-export const RULES = [...TRANSMISSION_RULES, ...FREINS_RULES, ...PEDALIER_RULES];
+export const RULES = [...TRANSMISSION_RULES, ...FREINS_RULES, ...PEDALIER_RULES, ...ROUES_RULES];
 
 const CONFIDENCE_RANK = { haute: 3, moyenne: 2, basse: 1 };
 const uniq = (xs) => [...new Set(xs.filter(Boolean))];

@@ -76,6 +76,17 @@ export function deriveNeighbors(broken) {
       return [v('wheel', { brakeInterface: 'disque', rotorMount: x.mount })];
     case 'brake_pads':
       return [v('brake_caliper', { brakeType: 'disque', padShape: x.shape })];
+    case 'quick_link':
+      return [v('chain', { speeds: x.speeds, flattop: x.flattop })];
+    case 'wheel': {
+      // La cassette et le disque de la roue cassée sont remontés sur la nouvelle.
+      const out = [v('frame', { axleType: x.axleType, axleDiameter: x.axleDiameter, axleWidth: x.axleWidth })];
+      if (x.freehub) out.push(v('cassette', { kind: 'cassette', freehub: x.freehub }));
+      if (x.freewheelThread) out.push(v('cassette', { kind: 'roue_libre', freewheelThread: x.freewheelThread }));
+      if (x.rotorMount) out.push(v('rotor', { mount: x.rotorMount }));
+      if (x.brakeInterface) out.push(v('brake_caliper', { brakeType: x.brakeInterface === 'les_deux' ? undefined : x.brakeInterface }));
+      return out;
+    }
     default:
       return [];
   }

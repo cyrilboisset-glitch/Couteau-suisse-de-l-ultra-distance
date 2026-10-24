@@ -70,6 +70,8 @@ export const familleActionnement = {
       ? `Générations électroniques non interopérables connues (${sf} ≠ ${df}).`
       : `Ratio de tirage différent : manette famille ${sf}, dérailleur famille ${df}, aucune compatibilité documentée.`;
     return incompatible(this, what + cross, {
+      // A18 : deux générations électroniques non documentées comme compatibles ne dialoguent pas.
+      absolute: sh.attrs.system === 'electronique',
       source: aSourcer('Aucune entrée dans la base pour ce couple de familles — ajoutez-la si une source existe'),
     });
   },
@@ -275,6 +277,29 @@ export const flattop = {
   },
 };
 
+export const maillonRapide = {
+  id: 'transmission.maillon_rapide',
+  label: 'Maillon rapide ↔ chaîne',
+  between: [['quick_link', 'chain']],
+  absolute: true,
+  confidence: 'haute',
+  source: physique("Largeur intérieure, longueur d'axe et profil des plaques propres à chaque largeur de chaîne (et au Flattop)."),
+  evaluate(link, chain) {
+    const g = guard(this, [[link, ['speeds']], [chain, ['speeds']]]);
+    if (g) return g.finding;
+    if (link.attrs.speeds !== chain.attrs.speeds) {
+      return incompatible(this, `Maillon rapide ${link.attrs.speeds}v sur chaîne ${chain.attrs.speeds}v : jamais (risque de rupture). Dépannage possible : dérive-chaîne et goupille, ou maillon de la bonne largeur.`);
+    }
+    if (Boolean(link.attrs.flattop) !== Boolean(chain.attrs.flattop)) {
+      return incompatible(this, 'Maillon Flattop et chaîne non Flattop (ou l\'inverse) : profils différents.');
+    }
+    return ok(this, `Maillon ${link.attrs.speeds}v adapté.`, {
+      adjustments: link.attrs.reusable === false ? ['Maillon à usage unique : ne pas le réutiliser après ouverture'] : [],
+      tools: ['Pince à maillon rapide (ou à défaut à la main)'],
+    });
+  },
+};
+
 export const fixationDerailleurAvant = {
   id: 'transmission.fixation_avant',
   label: 'Fixation du dérailleur avant ↔ cadre',
@@ -352,6 +377,6 @@ export const derailleurAvantPedalier = {
 
 export const TRANSMISSION_RULES = [
   commandeSysteme, familleActionnement, vitessesManetteCassette, vitessesElectronique,
-  plusGrandPignon, patteDerailleur, roueLibre, largeurChaine, flattop,
+  plusGrandPignon, patteDerailleur, roueLibre, largeurChaine, flattop, maillonRapide,
   fixationDerailleurAvant, derailleurAvantPedalier,
 ];
