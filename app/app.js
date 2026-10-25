@@ -74,7 +74,7 @@ const bikeParts = () => state.bike.map((id) => state.byId.get(id)).filter(Boolea
  */
 function searchBox(container, { placeholder, hint, filter = () => true, action = 'Choisir', onPick, initial = '' }) {
   container.innerHTML = `
-    <div class="search"><input type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false"
+    <div class="search"><input id="q-${container.id || 'main'}" type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false"
       placeholder="${esc(placeholder)}" aria-label="${esc(placeholder)}" value="${esc(initial)}"></div>
     <p class="hint">${hint}</p>
     <div class="crit"></div>
