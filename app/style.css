@@ -87,7 +87,7 @@ button, input { font: inherit; color: inherit; }
 
 .tabs {
   position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
   padding-block: 8px;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
@@ -101,7 +101,7 @@ body::before {
   display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center;
   min-height: var(--tap); padding: 6px; border-radius: var(--radius);
   border: 2px solid var(--border); background: var(--card); color: var(--fg);
-  text-decoration: none; font-weight: 600; font-size: .9rem; line-height: 1.15;
+  text-decoration: none; font-weight: 600; font-size: .82rem; line-height: 1.15;
 }
 .tab[aria-current="page"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
 .count:not(:empty) { background: var(--fg); color: var(--bg); border-radius: 999px; padding: 0 8px; font-size: .8rem; }
@@ -200,6 +200,22 @@ summary { cursor: pointer; min-height: 44px; display: flex; align-items: center;
 .finding a { overflow-wrap: anywhere; }
 .legend { font-size: .85rem; color: var(--muted); margin-top: 24px; }
 .empty { color: var(--muted); padding: 12px 0; }
+
+.field { display: grid; gap: 4px; margin: 10px 0; font-size: .9rem; }
+.field span { color: var(--muted); }
+.field input, .field select, textarea {
+  width: 100%; min-height: 52px; padding: 8px 12px; border-radius: var(--radius);
+  border: 2px solid var(--border); background: var(--card); color: var(--fg); font-size: 1rem;
+}
+textarea { min-height: 100px; font-family: ui-monospace, monospace; font-size: .8rem; }
+.form { display: grid; gap: 2px; }
+.slot-edit:not(:empty) { padding: 10px 0 4px; }
+.checklist { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 6px; }
+.checklist label { display: flex; gap: 12px; align-items: center; min-height: 48px; padding: 6px 10px; border-radius: var(--radius); background: var(--bg); }
+.checklist input { width: 28px; height: 28px; flex: none; accent-color: var(--accent); }
+.checklist input:checked + * , .checklist label:has(input:checked) { text-decoration: line-through; color: var(--muted); }
+.ok-note { background: var(--l1-bg); }
+a.row { color: var(--fg); text-decoration: none; }
 
 @media (max-width: 380px) {
   body { font-size: 18px; }

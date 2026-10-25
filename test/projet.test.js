@@ -172,3 +172,22 @@ describe('longueur de chaîne', () => {
     assert.equal(c.links, links);
   });
 });
+
+describe('outils du mode Projet', () => {
+  test('chargement de groupe cohérent (pas de levier hydraulique avec frein sur jante)', async () => {
+    const { groupConfig } = await import('../src/project.js');
+    const { checkPair } = await import('../src/index.js');
+    const slots = groupConfig('Ultegra R8000 (11v)', parts, kb);
+    const chosen = Object.values(slots).map((id) => parts.find((p) => p.id === id));
+    for (let i = 0; i < chosen.length; i++) {
+      for (let j = i + 1; j < chosen.length; j++) {
+        assert.ok(!checkPair(chosen[i], chosen[j], kb).absolute, `${chosen[i].ref} / ${chosen[j].ref}`);
+      }
+    }
+    assert.ok(slots.rear_derailleur && slots.cassette && slots.crankset);
+  });
+  test('incompatibilité déjà présente signalée', () => {
+    const r = run({ slots: { ...R8000, shifter: 'shimano-st-r8020' }, wheel: roueRoute11, frame: {} }, 'shimano-cs-r8000-11-28');
+    assert.ok(r.preexisting.some((x) => /hydraulique/.test(x.message)));
+  });
+});

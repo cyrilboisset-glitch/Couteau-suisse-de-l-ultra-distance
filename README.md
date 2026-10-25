@@ -16,8 +16,9 @@ règle porte sa source ; ce qui n'est pas sourcé officiellement est « à valid
 ## Avancement
 
 1. ✅ Schéma de données + moteur de règles + tests unitaires
-2. 🟡 Base pilote : Shimano 11/12v, SRAM 12/13v, Campagnolo Ekar, microSHIFT, LTWOO, SENSAH, SunRace, Box — 158 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
+2. 🟡 Base : 7v à 13v — Shimano, SRAM, Campagnolo, microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC, TRP — 257 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
 3. ✅ Interface : recherche tolérante + critères, résultats par niveau, « sous la main », « mon vélo », mode sombre
+3 bis. ✅ Mode Projet : pièce cible → pièces à garder / changer / ajouter / retirer, cascade, liste de courses, projets enregistrés ([docs/PROJET.md](docs/PROJET.md))
 4. ⬜ PWA hors ligne
 5. ⬜ Extension 10 → 8 vitesses, Campagnolo, marques asiatiques
 6. ⬜ Import CSV
@@ -31,6 +32,7 @@ src/engine/rules/      règles : transmission, freins, pédalier
 src/engine/core.js     checkPair (deux pièces), agrégation des niveaux
 src/engine/replacement.js  checkReplacement, findReplacements, checkAvailable
 src/search.js          recherche par référence (tolérante aux fautes) ou par critères
+src/project.js         mode Projet : analyse d'une config + pièce cible, cascade, liste de courses
 app/                   interface (HTML/CSS/JS sans dépendance)
 scripts/build-www.js   assemble l'appli autonome dans dist/www/
 data/                  base réelle (knowledge/ = standards, parts/ = pièces), voir docs/DONNEES.md

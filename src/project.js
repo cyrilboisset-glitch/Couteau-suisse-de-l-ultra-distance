@@ -26,6 +26,21 @@ export const SLOTS = [
 ];
 const SLOT_BY_ID = Object.fromEntries(SLOTS.map((s) => [s.id, s]));
 
+/**
+ * Remplit une config avec les pièces d'un groupe (champ « generation »), en
+ * choisissant pour chaque emplacement une pièce compatible avec les précédentes.
+ */
+export function groupConfig(generation, catalog, kb = EMPTY_KNOWLEDGE, threshold = LEVEL.KNOWN) {
+  const slots = {};
+  const chosen = [];
+  for (const s of SLOTS) {
+    const pick = catalog.find((p) => p.generation === generation && s.types.includes(p.type) && (!s.accepts || s.accepts(p))
+      && chosen.every((o) => !evaluatePair(p, o, kb).some((f) => !(f.missing?.length) && f.level > threshold)));
+    if (pick) { slots[s.id] = pick.id; chosen.push(pick); }
+  }
+  return slots;
+}
+
 /** Emplacement naturel d'une pièce. */
 export function slotOf(part) {
   if (part.type === 'shifter') return part.attrs?.side === 'avant' ? 'shifter_front' : 'shifter';
@@ -174,6 +189,12 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
     return { m, issues, req, reqIssues: out };
   };
 
+  // Incompatibilités déjà présentes dans la config saisie (souvent une erreur de saisie).
+  const beforeEval = evaluateConfig(materialize(before, byId, frame, wheel), kb, threshold, new Set());
+  const preexisting = beforeEval.filter((x) => x.conflict).map((x) => ({
+    slots: x.slots, message: x.finding.message,
+  }));
+
   // --- Cascade -------------------------------------------------------------
   const initial = evalAll(assign);
   const reasons = {};       // slot → raisons de changement
@@ -316,7 +337,7 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
   // Cible trop coûteuse : pièces du même type compatibles avec la config d'origine.
   const changes = slots.filter((s) => ['changer', 'ajouter'].includes(s.status)).length;
   let alternativesToTarget = [];
-  if (changes >= 2 || !solution) {
+  if (changes >= 3 || !solution || external.length) {
     const origFixed = Object.entries(materialize(before, byId, frame, wheel).parts)
       .filter(([k]) => k !== targetSlot).map(([, p]) => p);
     alternativesToTarget = catalog
@@ -332,6 +353,7 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
     external: external.map((e) => ({ what: e.what, message: e.finding.message, with: e.with, absolute: e.finding.absolute })),
     unsolved: unsolved.map((s) => SLOT_BY_ID[s]?.label ?? s),
     checks, recommendations, shopping, extras, works, tools, chain: chainInfo, alternativesToTarget,
+    preexisting: preexisting.map((x) => ({ ...x, labels: x.slots.map((k) => SLOT_BY_ID[k]?.label ?? (k === 'frame' ? 'Cadre' : 'Roue arrière')) })),
   };
 }
 

@@ -1,6 +1,7 @@
 // Interface : pièce cassée → remplacements classés ; « sous la main » ; « mon vélo ».
 import { createKnowledge, findReplacements, checkAvailable, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
 import { searchParts } from './src/search.js';
+import { createProjetView } from './projet.js';
 
 const CATALOGUE_URL = './catalogue.json';
 const view = document.getElementById('view');
@@ -290,6 +291,12 @@ const VIEWS = {
   },
 };
 
+let projetView = null;
+VIEWS.projet = (id) => {
+  projetView ??= createProjetView({ state, view, esc, fmt, searchBox, partTitle, partSub, store });
+  projetView(id);
+};
+
 function updateCount() {
   document.getElementById('bike-count').textContent = state.bike.length ? String(state.bike.length) : '';
 }
@@ -302,6 +309,7 @@ function route() {
     else a.removeAttribute('aria-current');
   }
   if (name === 'piece') VIEWS.piece(decodeURIComponent(arg ?? ''));
+  else if (name === 'projet') VIEWS.projet(arg ? decodeURIComponent(arg) : null);
   else (VIEWS[tab] ?? VIEWS.casse)();
   window.scrollTo(0, 0);
 }
