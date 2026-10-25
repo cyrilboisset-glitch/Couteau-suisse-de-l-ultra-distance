@@ -2,7 +2,7 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **257 pièces**, dont 24 validées par une page constructeur et **233 à valider**.
+- **274 pièces**, dont 24 validées par une page constructeur et **250 à valider**.
 - Base de connaissances : fluidFits : 3, brakeMountAdapters : 1, spindleFits : 0, chainLength : 1, recommendations : 7, families : 40, actuation : 39, freehubFits : 8, pitchFits : 4.
 
 | Marque | Pièces |
@@ -13,12 +13,12 @@
 | LTWOO | 2 |
 | SENSAH | 3 |
 | SRAM | 62 |
-| Shimano | 141 |
+| Shimano | 158 |
 | SunRace | 8 |
 | TRP | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (68)
+## Dérailleur arrière (70)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -55,6 +55,8 @@
 | RD-M8120-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M9100-GS | Shimano | vtt | à valider |  |
 | RD-M9100-SGS | Shimano | vtt | à valider |  |
+| RD-R2000-GS | Shimano | route | à valider |  |
+| RD-R2000-SS | Shimano | route | à valider |  |
 | RD-R3000-GS | Shimano | route | à valider |  |
 | RD-R3000-SS | Shimano | route | à valider |  |
 | RD-R7000-GS | Shimano | route | à valider |  |
@@ -91,7 +93,7 @@
 | RD X5 10v chape moyenne | SRAM | vtt | à valider |  |
 | RD X5 9v chape moyenne | SRAM | vtt | à valider | totalCapacity |
 
-## Manette / levier de vitesses (23)
+## Manette / levier de vitesses (25)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -108,6 +110,8 @@
 | SL-M4100 | Shimano | vtt | à valider |  |
 | SL-M8100-R | Shimano | vtt | validé |  |
 | ST-4700 | Shimano | route | à valider |  |
+| ST-R2000 | Shimano | route | à valider |  |
+| ST-R3000 | Shimano | route | à valider |  |
 | ST-R7000 | Shimano | route | à valider |  |
 | ST-R7120 | Shimano | route | à valider |  |
 | ST-R8020 | Shimano | route | à valider |  |
@@ -128,7 +132,7 @@
 | BL-T4000 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
-## Cassette / roue libre (98)
+## Cassette / roue libre (102)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -164,6 +168,10 @@
 | CS-HG41-8 11-32 | Shimano | vtt | à valider |  |
 | CS-HG41-8 11-34 | Shimano | vtt | à valider |  |
 | CS-HG50-10 11-36 | Shimano | vtt | à valider |  |
+| CS-HG50-8 11-30 | Shimano | route | à valider |  |
+| CS-HG50-8 11-32 | Shimano | route | à valider |  |
+| CS-HG50-8 11-34 | Shimano | route | à valider |  |
+| CS-HG50-8 12-25 | Shimano | route | à valider |  |
 | CS-HG500-10 11-25 | Shimano | route | à valider |  |
 | CS-HG500-10 11-32 | Shimano | route | à valider |  |
 | CS-HG500-10 11-34 | Shimano | route | à valider |  |
@@ -250,22 +258,27 @@
 | Chaîne T-Type (Eagle Transmission) | SRAM | vtt | validé |  |
 | PC-1170 | SRAM | route | à valider |  |
 
-## Dérailleur avant (5)
+## Dérailleur avant (9)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
+| FD-R2000 (collier) | Shimano | route | à valider |  |
+| FD-R2000-F | Shimano | route | à valider |  |
+| FD-R2030-F | Shimano | route | à valider |  |
+| FD-R3000 (collier) | Shimano | route | à valider |  |
 | FD-R7000-F | Shimano | route | à valider |  |
 | FD-R7100-F | Shimano | route | à valider |  |
 | FD-R8000-F | Shimano | route | à valider |  |
 | FD-RX810-F | Shimano | gravel | à valider |  |
 | FD-RX820-F | Shimano | gravel | à valider |  |
 
-## Étrier / frein (11)
+## Étrier / frein (12)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | BR-M8100 | Shimano | vtt | à valider |  |
 | BR-MT200 | Shimano | vtt | à valider |  |
+| BR-R2000 | Shimano | route | à valider |  |
 | BR-R7000 | Shimano | route | à valider |  |
 | BR-R7170 | Shimano | route | à valider |  |
 | BR-R8000 | Shimano | route | à valider |  |
@@ -276,13 +289,14 @@
 | Étrier Rival AXS flat mount | SRAM | route | à valider |  |
 | Spyre flat mount | TRP | route | à valider |  |
 
-## Plaquettes / patins (4)
+## Plaquettes / patins (5)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | B01S | Shimano | vtt | à valider |  |
 | G05A-RX | Shimano | vtt | à valider |  |
 | L05A-RF | Shimano | route | validé |  |
+| R50T2 | Shimano | route | à valider |  |
 | R55C4 | Shimano | route | à valider |  |
 
 ## Disque (4)
@@ -294,7 +308,7 @@
 | SM-RT70 140 | Shimano | route | à valider |  |
 | SM-RT70 160 | Shimano | route | à valider |  |
 
-## Pédalier (17)
+## Pédalier (20)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -303,6 +317,9 @@
 | FC-4700 50-34 | Shimano | route | à valider |  |
 | FC-4700 52-36 | Shimano | route | à valider |  |
 | FC-M8100-1 | Shimano | vtt | validé |  |
+| FC-R2000 50-34 | Shimano | route | à valider | bolts |
+| FC-R2030 50-39-30 | Shimano | route | à valider |  |
+| FC-R3000 50-34 | Shimano | route | à valider |  |
 | FC-R7000 50-34 | Shimano | route | à valider |  |
 | FC-R8000 46-36 | Shimano | route | à valider |  |
 | FC-R8000 50-34 | Shimano | route | à valider |  |

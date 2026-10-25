@@ -125,3 +125,19 @@ describe('pédalier', () => {
     assert.ok(checkPair(P('microshift-fc-sword'), P('shimano-bb-rs501'), kb).level <= LEVEL.KNOWN);
   });
 });
+
+describe('Claris R2000 (8v)', () => {
+  test('la recherche « claris » trouve le groupe', async () => {
+    const { searchParts } = await import('../src/search.js');
+    const refs = searchParts('claris', parts).results.map((r) => r.part.ref);
+    for (const ref of ['RD-R2000-SS', 'ST-R2000', 'FC-R2000 50-34', 'BR-R2000']) assert.ok(refs.includes(ref), ref);
+  });
+  test('manette Claris 8v + cassette HG50 8v : compatible ; + cassette 9v : dépannage seulement', () => {
+    assert.ok(checkPair(P('shimano-st-r2000'), P('shimano-cs-hg50-8-11-32'), kb).level <= LEVEL.KNOWN);
+    assert.equal(checkPair(P('shimano-st-r2000'), P('shimano-cs-hg200-9-11-32'), kb).level, LEVEL.DEGRADED);
+  });
+  test('chape courte R2000-SS limitée à 32 dents', () => {
+    assert.ok(checkPair(P('shimano-rd-r2000-ss'), P('shimano-cs-hg50-8-11-32'), kb).level <= LEVEL.KNOWN);
+    assert.ok(checkPair(P('shimano-rd-r2000-ss'), P('shimano-cs-hg50-8-11-34'), kb).level >= LEVEL.DEGRADED);
+  });
+});

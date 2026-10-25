@@ -16,7 +16,7 @@ règle porte sa source ; ce qui n'est pas sourcé officiellement est « à valid
 ## Avancement
 
 1. ✅ Schéma de données + moteur de règles + tests unitaires
-2. 🟡 Base : 7v à 13v — Shimano, SRAM, Campagnolo, microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC, TRP — 257 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
+2. 🟡 Base : 7v à 13v — Shimano, SRAM, Campagnolo, microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC, TRP — 274 pièces (dont Claris R2000 et Sora R3000), à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
 3. ✅ Interface : recherche tolérante + critères, résultats par niveau, « sous la main », « mon vélo », mode sombre
 3 bis. ✅ Mode Projet : pièce cible → pièces à garder / changer / ajouter / retirer, cascade, liste de courses, projets enregistrés ([docs/PROJET.md](docs/PROJET.md))
 4. ⬜ PWA hors ligne
