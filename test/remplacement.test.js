@@ -71,7 +71,7 @@ describe('remplacement de cassette', () => {
     assert.equal(r.level, LEVEL.DEGRADED);
     assert.ok(r.limitations.some((l) => /10 vitesses sur 11|cran/.test(l)));
     // Entretoise HG 8/9/10 sur corps HG 11 route.
-    assert.ok(r.adjustments.some((a) => /Entretoise/.test(a)));
+    assert.ok(r.extraParts.some((a) => /Entretoise/.test(a)));
   });
   test('cassette VTT 11-42 sur vélo de route : condition sur le dérailleur', () => {
     const r = checkReplacement(P.cassette11_34, P.cassette11_42, { kb });

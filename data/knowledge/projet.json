@@ -1,0 +1,127 @@
+{
+ "_meta": {
+  "description": "Mode Projet : méthode de longueur de chaîne et recommandations 💡. Les coefficients viennent de la formule publiée, jamais du code."
+ },
+ "sources": {
+  "runbikecalc": {
+   "kind": "presse",
+   "ref": "RunBikeCalc – formule Park Tool : L(pouces) = 2 × base + grand plateau/4 + grand pignon/4 + 1 ; 1 maillon = ½ pouce ; arrondir au nombre pair supérieur",
+   "url": "https://runbikecalc.com/bike-chain-length-calculator"
+  },
+  "ebr-parktool": {
+   "kind": "communaute",
+   "ref": "Electric Bike Review forum – formule Park Tool citée, +2 maillons pour chape longue",
+   "url": "https://forums.electricbikereview.com/goto/post?id=337385"
+  },
+  "bikeradar-shimano-chain": {
+   "kind": "communaute",
+   "ref": "BikeRadar forum citant le manuel Shimano : chaîne sur grand plateau + grand pignon sans passer par le dérailleur, + 2 maillons",
+   "url": "https://forum.bikeradar.com/discussion/comment/20758006/"
+  },
+  "roadcc-chain": {
+   "kind": "presse",
+   "ref": "road.cc – Shimano (B. Hillsdon) : envisager cassette / plateaux neufs avec la chaîne neuve, une chaîne neuve sur pignons usés passe mal",
+   "url": "https://road.cc/content/feature/256420-when-should-you-replace-your-chainrings-and-cassette"
+  },
+  "rbr-1x": {
+   "kind": "presse",
+   "ref": "RoadBikeRider – mono-plateau : embrayage et plateau narrow-wide limitent les déraillements, le plateau étant le plus efficace",
+   "url": "https://www.roadbikerider.com/chain-dropping-problem-1x/"
+  },
+  "treefort-xsync": {
+   "kind": "revendeur",
+   "ref": "Tree Fort – SRAM X-Sync : fonctionne mieux avec un dérailleur à embrayage",
+   "url": "https://www.treefortbikes.com/SRAM-X-Sync-Chainring-44T-110mm-BCD"
+  },
+  "veloplus-rx810l": {
+   "kind": "revendeur",
+   "ref": "Veloplus – levier GRX ST-RX810 gauche frein seul (1x)",
+   "url": "https://veloplus.ee/en/jarruvipu-shimano-grx-st-rx810-vasen-50974"
+  },
+  "wwc-apex1-left": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – levier gauche SRAM Apex 1 frein seul",
+   "url": "https://worldwidecyclery.com/collections/brake-lever-drop-bar-individual"
+  }
+ },
+ "chainLength": [
+  {
+   "id": "park-tool",
+   "label": "formule Park Tool",
+   "chainstayFactor": 2,
+   "unitMm": 25.4,
+   "teethFactor": 0.25,
+   "constant": 1,
+   "linksPerUnit": 2,
+   "message": "Contrôle sur le vélo (méthode Shimano) : chaîne sur grand plateau et grand pignon sans passer par le dérailleur, puis + 2 maillons. Chape longue ou embrayage : quelques maillons de plus possibles.",
+   "src": [
+    "runbikecalc",
+    "ebr-parktool",
+    "bikeradar-shimano-chain"
+   ],
+   "status": "a_valider"
+  }
+ ],
+ "recommendations": [
+  {
+   "trigger": "cassette_changee",
+   "slot": "chain",
+   "message": "Chaîne neuve conseillée avec la cassette neuve (une chaîne usée fait sauter les pignons neufs).",
+   "src": "roadcc-chain",
+   "status": "a_valider"
+  },
+  {
+   "trigger": "plateaux_changes",
+   "slot": "chain",
+   "message": "Avec de nouveaux plateaux, vérifiez l'usure de la chaîne et recalculez sa longueur.",
+   "src": "roadcc-chain",
+   "status": "a_valider"
+  },
+  {
+   "trigger": "mono_sans_embrayage",
+   "slot": "rear_derailleur",
+   "message": "En mono-plateau, un dérailleur à embrayage (clutch) limite les déraillements ; sans lui, prévoir un guide-chaîne.",
+   "src": [
+    "rbr-1x",
+    "treefort-xsync"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "trigger": "mono_sans_narrow_wide",
+   "slot": "crankset",
+   "message": "En mono-plateau, un plateau à dents alternées (narrow-wide) est le moyen le plus efficace de garder la chaîne.",
+   "src": "rbr-1x",
+   "status": "a_valider"
+  },
+  {
+   "trigger": "passage_1x",
+   "slot": "shifter",
+   "message": "Le levier gauche ne sert plus qu'à freiner : il peut rester, ou être remplacé par un levier gauche « frein seul » (ex. GRX ST-RX810 gauche 1x, SRAM Apex 1 gauche).",
+   "src": [
+    "veloplus-rx810l",
+    "wwc-apex1-left"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "trigger": "passage_1x",
+   "slot": "cassette",
+   "message": "En mono-plateau, une cassette plus étagée compense la perte du petit plateau, si le dérailleur arrière l'accepte.",
+   "src": "rbr-1x",
+   "status": "a_valider"
+  },
+  {
+   "trigger": "freins_hydrauliques",
+   "slot": "brake_caliper",
+   "message": "Montage hydraulique : purge avec le fluide du constructeur ; vérifiez fixations du cadre et de la fourche, diamètre de disque autorisé et moyeux.",
+   "status": "a_valider",
+   "sources": [
+    {
+     "kind": "physique",
+     "ref": "Principe : un circuit hydraulique neuf ou modifié se purge avec son fluide"
+    }
+   ]
+  }
+ ]
+}

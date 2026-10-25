@@ -145,7 +145,7 @@ const pignonSelonPlateaux = {
   },
 };
 
-const SYSTEM_RULES = { rear_derailleur: [capaciteTotale, pignonSelonPlateaux] };
+export const SYSTEM_RULES = { rear_derailleur: [capaciteTotale, pignonSelonPlateaux] };
 
 // --- Comparaison pièce cassée / candidat : constats + « ce qui change » ---
 

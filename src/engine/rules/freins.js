@@ -21,7 +21,8 @@ export const hydrauliqueMecanique = {
     if (g) return g.finding;
     const l = lever.attrs.brakeActuation;
     const c = cal.attrs.brakeActuation;
-    if (l !== c) return incompatible(this, `Levier ${l} et frein ${c} : jamais compatibles.`);
+    const lbl = { mecanique: 'mécanique', hydraulique: 'hydraulique' };
+    if (l !== c) return incompatible(this, `Levier ${lbl[l] ?? l} et frein ${lbl[c] ?? c} : jamais compatibles.`);
     return ok(this, `Freinage ${l} des deux côtés.`);
   },
 };

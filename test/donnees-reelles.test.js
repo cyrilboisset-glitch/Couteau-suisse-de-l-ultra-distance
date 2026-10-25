@@ -67,7 +67,7 @@ describe('croisements route / gravel / VTT', () => {
   });
   test('cassette VTT 11-42 pour remplacer une 11-32 route : entretoise + condition dérailleur', () => {
     const r = checkReplacement(P('shimano-cs-r8000-11-32'), P('shimano-cs-m8000-11-42'), { kb });
-    assert.ok(r.adjustments.some((a) => /1.85/.test(a)));
+    assert.ok(r.extraParts.some((a) => /1.85/.test(a)));
     assert.ok(r.conditions.some((c) => /42 dents/.test(c)));
   });
   test('cassette SunRace (pas SRAM) avec manette Shimano 12v : dépannage', () => {

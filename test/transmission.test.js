@@ -118,7 +118,7 @@ describe('corps de roue libre', () => {
   test('HG 8/9/10 sur corps HG 11 route : entretoise', () => {
     const r = checkPair(P.cassette10_36, P.wheelHg11, kb);
     assert.equal(r.level, LEVEL.OFFICIAL);
-    assert.ok(r.adjustments.some((a) => /1.85 mm/.test(a)));
+    assert.ok(r.extraParts.some((a) => /1.85 mm/.test(a)));
   });
   test('HG 11 route sur corps HG 8/9/10 : exclusion absolue', () => {
     const r = checkPair(P.cassette11_34, P.wheelHg, kb);

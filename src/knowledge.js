@@ -18,6 +18,8 @@ const TABLES = [
   'hangerFits',         // { rdMount, frameHanger, ... }
   'pitchFits',          // { cassettePitch, derailleurPitch, ... } croisement de pas de pignons
   'fluidFits',          // { leverFluid, caliperFluid, ... } fluides exacts miscibles
+  'chainLength',        // méthodes de calcul de longueur de chaîne (coefficients sourcés)
+  'recommendations',    // { trigger, message, ... } conseils 💡 du mode Projet
 ];
 
 export function createKnowledge(raw = {}) {

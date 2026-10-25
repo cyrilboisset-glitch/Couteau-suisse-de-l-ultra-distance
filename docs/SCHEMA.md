@@ -54,6 +54,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `family` | Famille d'actionnement (ratio de tirage ou protocole + génération) | string | **obligatoire** |
 | `protocol` | Protocole électronique | liste `protocol` | *conditionnel* |
 | `form` | Forme | liste `shifterForm` |  |
+| `frontPositions` | Positions avant (2 ou 3 plateaux) | int |  |
 | `brakeActuation` | Freinage hydraulique / mécanique | liste `brakeActuation` |  |
 | `fluid` | Fluide (minéral / DOT) | liste `fluid` | *conditionnel* |
 | `cablePull` | Tirage câble (court / long) | liste `cablePull` | *conditionnel* |
@@ -64,6 +65,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 
 | Attribut | Description | Type | Statut |
 |---|---|---|---|
+| `form` | Forme | liste `shifterForm` |  |
 | `brakeActuation` | Freinage hydraulique / mécanique | liste `brakeActuation` | **obligatoire** |
 | `fluid` | Fluide (minéral / DOT) | liste `fluid` | *conditionnel* |
 | `cablePull` | Tirage câble (court / long) | liste `cablePull` | *conditionnel* |
@@ -122,6 +124,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `speeds` | Nombre de vitesses | int | **obligatoire** |
 | `flattop` | Flattop | bool |  |
 | `chainType` | Type de chaîne (ex. hg-12, sram-eagle, sram-flattop, sram-t-type, campagnolo-12) | string |  |
+| `links` | Nombre de maillons à la vente | int |  |
 | `connection` | Type d'attache | liste `chainConnection` |  |
 
 ## Pédalier (`crankset`)
@@ -141,6 +144,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `shellWidths` | Largeurs de boîtier admises, séparées par « | » (ex. 68|73) | string (mm) |  |
 | `requiresFlattop` | Exige une chaîne Flattop | bool |  |
 | `chainTypes` | Types de chaîne acceptés, séparés par « | » | string |  |
+| `narrowWide` | Plateau à dents alternées (narrow-wide) | bool |  |
 
 ## Plateau (`chainring`)
 
@@ -154,6 +158,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `speeds` | Vitesses prévues | int |  |
 | `requiresFlattop` | Exige une chaîne Flattop | bool |  |
 | `acceptsFlattop` | Accepte une chaîne Flattop | bool |  |
+| `narrowWide` | Dents alternées (narrow-wide) | bool |  |
 | `chainTypes` | Types de chaîne acceptés, séparés par « | » | string |  |
 | `position` | Position (mono, grand, petit, milieu) | string |  |
 
@@ -173,6 +178,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `brakeInterface` | Freinage prévu (disque / jante) | liste `wheelBrake` | **obligatoire** |
 | `freehub` | Corps de roue libre | liste `freehub` |  |
 | `freewheelThread` | Filetage roue libre (moyeu à visser) | string |  |
+| `freehubOptions` | Autres corps de roue libre proposés pour ce moyeu, séparés par « | » | string |  |
 | `rotorMount` | Fixation disque | liste `rotorMount` | *conditionnel* |
 | `axleType` | Type d'axe de roue | liste `axleType` |  |
 | `axleDiameter` | Diamètre d'axe (5 = serrage rapide, 12, 15, 20…) | number (mm) |  |
@@ -188,6 +194,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `fdMount` | Fixation dérailleur avant | liste `fdMount` |  |
 | `brakeMount` | Fixation de frein | liste `brakeMount` |  |
 | `maxRotor` | Diamètre de disque maximal autorisé | int (mm) |  |
+| `chainstayLength` | Longueur de base (axe du pédalier → axe de roue) | number (mm) |  |
 | `axleType` | Type d'axe de roue | liste `axleType` |  |
 | `axleDiameter` | Diamètre d'axe (5 = serrage rapide, 12, 15, 20…) | number (mm) |  |
 | `axleWidth` | Largeur entre pattes (100, 110, 130, 135, 142, 148…) | number (mm) |  |

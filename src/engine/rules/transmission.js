@@ -222,7 +222,7 @@ export const roueLibre = {
     const entry = kb.freehubFit(c, b);
     if (entry) {
       const f = fromEntry(this, entry);
-      if (entry.spacerMm) f.adjustments = [`Entretoise de ${entry.spacerMm} mm derrière la cassette`, ...f.adjustments];
+      if (entry.spacerMm) f.extraParts = [`Entretoise de ${entry.spacerMm} mm derrière la cassette`, ...f.extraParts];
       return f;
     }
     return incompatible(this, `Cassette ${c} sur corps ${b} : non montable. Il faut changer le corps de roue libre (si le moyeu le permet) ou la roue.`);
@@ -338,6 +338,23 @@ export const pasPignons = {
   },
 };
 
+export const plateauxDerailleur = {
+  id: 'transmission.plateaux_derailleur',
+  label: 'Nombre de plateaux prévu pour le dérailleur arrière',
+  between: [['rear_derailleur', 'crankset']],
+  confidence: 'moyenne',
+  source: { kind: 'officiel', ref: 'Configuration (1x / 2x / 3x) indiquée par le constructeur du dérailleur' },
+  evaluate(rd, crank) {
+    const max = rd.attrs?.maxFrontChainrings;
+    const n = crank.attrs?.chainrings;
+    if (!max || !n || crank.virtual) return null;
+    if (n <= max) return ok(this, `Dérailleur prévu jusqu'à ${max} plateau(x).`);
+    return degraded(this, `Dérailleur prévu pour ${max} plateau(x), pédalier à ${n} plateaux.`, {
+      limitation: 'Hors configuration constructeur : capacité et position de chape à vérifier, passages dégradés possibles.',
+    });
+  },
+};
+
 export const maillonRapide = {
   id: 'transmission.maillon_rapide',
   label: 'Maillon rapide ↔ chaîne',
@@ -438,6 +455,6 @@ export const derailleurAvantPedalier = {
 
 export const TRANSMISSION_RULES = [
   commandeSysteme, familleActionnement, vitessesManetteCassette, vitessesElectronique,
-  plusGrandPignon, patteDerailleur, roueLibre, largeurChaine, flattop, maillonRapide, typeChaine, pasPignons,
+  plusGrandPignon, patteDerailleur, roueLibre, largeurChaine, flattop, maillonRapide, typeChaine, pasPignons, plateauxDerailleur,
   fixationDerailleurAvant, derailleurAvantPedalier,
 ];

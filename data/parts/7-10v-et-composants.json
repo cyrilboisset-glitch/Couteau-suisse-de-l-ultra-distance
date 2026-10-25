@@ -1,0 +1,2769 @@
+{
+ "_meta": {
+  "description": "Transmissions 7 à 10v (Shimano route / VTT, SRAM, Campagnolo, microSHIFT), Campagnolo 11/12v, dérailleurs avant, freins sur jante, V-brake, disques mécaniques et hydrauliques d'entrée de gamme, chaînes, boîtiers."
+ },
+ "sources": {
+  "vp-4700ss": {
+   "kind": "revendeur",
+   "ref": "Veloplus – RD-4700-SS : 28T max, 11T min, capacité 33T, écart 16T",
+   "url": "https://veloplus.ee/en/tagavahetaja-shimano-tiagra-rd-4700-ss-10-kaiku-51296"
+  },
+  "hf-4700": {
+   "kind": "revendeur",
+   "ref": "Halfords – RD-4700 : SS 25-28T ; GS jusqu'à 34T en double, 25-32T en triple",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-tiagra-rd-4700-10-speed-rear-derailleur-793214.html"
+  },
+  "bc-4700": {
+   "kind": "revendeur",
+   "ref": "bike-components – RD-4700 : manettes ST-4700, 4720, 4725, RS405, RX400 ; GS capacité 41T en triple",
+   "url": "https://bike-components.de/en/Shimano/Tiagra-RD-4700-10-speed-Rear-Derailleur-p43858"
+  },
+  "gt-5700": {
+   "kind": "revendeur",
+   "ref": "Geartrade – RD-5700 SS : 28T max, capacité 33T, écart 16T",
+   "url": "https://geartrade.com/products/shimano-105-rd-5700-rear-derailleur-1524425"
+  },
+  "tf-6700": {
+   "kind": "revendeur",
+   "ref": "Tree Fort – RD-6700 : écart 16T (SS) / 22T (GS), capacité 33T (SS) / 39T (GS)",
+   "url": "https://www.treefortbikes.com/Shimano-Ultegra-6700-10-Speed-Rear-Derailleur"
+  },
+  "atc-r3000": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – RD-R3000-GS : 34T max, 11T min, capacité 43T, écart 20T",
+   "url": "https://allterraincycles.co.uk/products/shimano-rd-r3000-sora-9-speed-gs-rear-derailleur"
+  },
+  "hf-r3000ss": {
+   "kind": "revendeur",
+   "ref": "Halfords – RD-R3000-SS : 32T max, écart 16T, capacité 37T",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-sora-rd-r3000-9-speed-rear-derailleur-ss-short-cage-267259.html"
+  },
+  "sh-m591": {
+   "kind": "officiel",
+   "ref": "Shimano (portail revendeurs) – RD-M591 : 34T max, capacité 45T",
+   "url": "https://dealers.bike.shimano.com/product/1786261/shimano-cycling-rd-m591-rear-derailleur"
+  },
+  "sh-m3100": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-M3100-SGS Alivio 9v : capacité 45T, 36T max",
+   "url": "https://bike.shimano.com/en-US/product/component/alivio-m3100/RD-M3100-SGS.html"
+  },
+  "atc-m2000": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – RD-M2000 SGS : 36T max (32T min), capacité 45T",
+   "url": "https://allterraincycles.co.uk/products/shimano-rd-m2000-altus-9-speed-sgs-rear-derailleur"
+  },
+  "wf-m310": {
+   "kind": "revendeur",
+   "ref": "Wolfis – RD-M310 Altus 7/8v : 34T max, capacité 43T",
+   "url": "https://wolfis.ae/products/shimano-altus-rd-m310"
+  },
+  "pb-ty300": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – RD-TY300 Tourney 6/7v : 34T max, capacité 43T, version patte à griffe",
+   "url": "https://www.performancebike.com/shimano-tourney-rdty300-rear-derailleur-black-6-7-speed-erdty300b-p/p1279146"
+  },
+  "vp-m6000gs": {
+   "kind": "revendeur",
+   "ref": "Veloplus – RD-M6000-GS : 42T max, capacité 41T",
+   "url": "https://veloplus.ee/en/tagavahetaja-shimano-deore-rd-m6000-gs-10-kaiku-4799"
+  },
+  "vp-m6000sgs": {
+   "kind": "revendeur",
+   "ref": "Veloplus – RD-M6000-SGS : 36T max, capacité 43T, écart 22T",
+   "url": "https://veloplus.ee/en/tagavahetaja-shimano-deore-rd-m6000-sgs-10-kaiku-51301"
+  },
+  "mec-5800": {
+   "kind": "revendeur",
+   "ref": "MEC – RD-5800-GS : 32T max, 11T min, écart 16T, capacité 37T",
+   "url": "https://checkout.mec.ca/5048-352"
+  },
+  "pb-ms-r9": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – microSHIFT R9 RD-R43M : 9v, chape moyenne, 34T max, compatible Shimano 7/8/9v et route 10v",
+   "url": "https://www.performancebike.com/microshift-r9-r43m-road-rear-derailleur-black-9-speed-medium-cage-rd-r43m/p1279042"
+  },
+  "pb-ms-r10": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – microSHIFT R10 leviers 2x10 : compatible Shimano route 10v",
+   "url": "https://www.performancebike.com/microshift-r10-drop-bar-brake-shift-levers-black-standard-reach-sb-r402k/p1356237"
+  },
+  "pb-x5-10": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – SRAM X5 10v : moyenne 36T / 35T, longue 36T / 47T, 11T min",
+   "url": "https://www.performancebike.com/sram-x5-rear-derailleur-black-10-speed-long-cage-00.7515.081.000/p1279094"
+  },
+  "ba-x5-9": {
+   "kind": "revendeur",
+   "ref": "bikes.com.au – SRAM X5 9v chape moyenne : cassettes jusqu'à 36T",
+   "url": "https://bikes.com.au/products/sram-rear-derailleur-medium-cage-9-speed-aluminum-silver"
+  },
+  "hf-x4": {
+   "kind": "revendeur",
+   "ref": "Halfords – SRAM X4 7/8/9v : manettes SRAM 1:1 seulement",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/sram-x4-7%2F8%2F9-speed-rear-derailleur-black-188170.html"
+  },
+  "tf-force10": {
+   "kind": "revendeur",
+   "ref": "Tree Fort / Worldwide – SRAM Force WiFLi 10v : chape moyenne, 32T max, capacité 37T, manettes DoubleTap",
+   "url": "https://www.treefortbikes.com/prod/333222385272"
+  },
+  "bc-x5-trigger": {
+   "kind": "revendeur",
+   "ref": "bike-components – SRAM X5 gâchette 9v pour dérailleurs SRAM 1:1",
+   "url": "https://www.bike-components.de/en/Sram/Trigger-Schaltgriff-X5-p29519/"
+  },
+  "pb-gx11": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – SRAM GX 2x11 : 42T max (capacité 41 à 46T selon les sources)",
+   "url": "https://performancebike.com/sram-gx-rear-derailleur-black-2-x-11-speed-00.7518.082.000-p/p1279104"
+  },
+  "nb-chorus11": {
+   "kind": "revendeur",
+   "ref": "Nashbar – Campagnolo Chorus 11 (2015+) : chape courte 29T, moyenne 32T, capacité 37T",
+   "url": "https://www.nashbar.com/campagnolo-chorus-rear-derailleur-black-carbon-11-speed-rd18-ch1-p/p1279052"
+  },
+  "rose-centaur11-rd": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – Campagnolo Centaur 11 : 32T max, capacité 37T, marquage D",
+   "url": "https://www.rosebikes.com/p/campagnolo-centaur-rear-derailleur-11-speed-2668744"
+  },
+  "ba-chorus12": {
+   "kind": "revendeur",
+   "ref": "Bike Addict / Cahaba – Campagnolo Chorus 12 : 34T max, capacité 37T",
+   "url": "https://bike-addict.co.za/products/campagnolo-chorus-12-speed-rear-derailleur"
+  },
+  "mantel-record12": {
+   "kind": "revendeur",
+   "ref": "Mantel – Campagnolo Record 12 chape moyenne : 32T max, capacité 37T",
+   "url": "https://www.mantel.com/pt/campagnolo-record-12-speed-rear-derailleur"
+  },
+  "velomine-4700st": {
+   "kind": "revendeur",
+   "ref": "Velomine – ST-4700 2x10 : frein tirage court, compatible RD-4700 seulement",
+   "url": "https://velomine.com/products/shimano-tiagra-st-4700-2x10-speed-shift-brake-lever-set-black"
+  },
+  "bc-sl-m4100": {
+   "kind": "revendeur",
+   "ref": "bike-components – SL-M4100 Deore 10v (Dyna-Sys)",
+   "url": "https://bike-components.de/en/Shimano/Deore-SL-M4100-10-speed-Shifter-w-Clamp-p77720"
+  },
+  "hf-sl-m3100": {
+   "kind": "revendeur",
+   "ref": "Halfords – SL-M3100-R Alivio 9v : dérailleurs 9v Shimano (Altus M2000, Acera, Alivio, Deore, XT)",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-alivio-sl-m3100-shifter-right-hand-9-speed-799158.html"
+  },
+  "velomine-chorus11st": {
+   "kind": "revendeur",
+   "ref": "Velomine – Ergopower Chorus 11 : frein tirage court, dérailleurs Campagnolo 2015+",
+   "url": "https://velomine.com/products/campagnolo-chorus-ergopower-shifter-set-11-speed-carbon"
+  },
+  "rose-centaur11st": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – Ergopower Centaur 11 Power Shift : seulement avec pièces Centaur 11 marquées D",
+   "url": "https://www.rosebikes.com/p/campagnolo-centaur-ergopower-power-shift-brakeshift-lever-combination-2668760"
+  },
+  "bc-hg500": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG500-10 : 11-25, 11-32, 11-34, 12-28 (étagements) et 11-42 ; corps 8/9/10v, route 11v + 1,85 mm",
+   "url": "https://bike-components.de/en/Shimano/CS-HG500-10-10-speed-Cassette-p43864/"
+  },
+  "lg-4700cs": {
+   "kind": "revendeur",
+   "ref": "Lordgun – Tiagra CS-4700 = CS-HG500",
+   "url": "https://www.lordgun.com/shimano-tiagra-cs-4700-hg-500-cassette-1"
+  },
+  "bc-hg50-10": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG50-10 11-36",
+   "url": "https://www.bike-components.de/en/Shimano/CS-HG50-10-10-speed-Cassette-p36936"
+  },
+  "bc-m4100cs": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-M4100-10 11-42",
+   "url": "https://www.bike-components.de/es/Shimano/Cassette-Deore-CS-M4100-10-de-10-velocidades-p77709/"
+  },
+  "bc-hg400": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG400-9 : 11-28, 11-32, 11-34, 11-36, 12-36 ; route 11/12v + 1,85 mm",
+   "url": "https://www.bike-components.de/en/Shimano/CS-HG400-9-9-speed-Cassette-p40155/"
+  },
+  "bc-hg200": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG200-9 : 11-32, 11-34, 11-36",
+   "url": "https://bike-components.de/en/Shimano/CS-HG200-9-9-speed-Cassette-p43021"
+  },
+  "bc-hg41-8": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG41-8 : 11-30, 11-32, 11-34 ; corps VTT, route 11/12v + 1,85 mm",
+   "url": "https://www.bike-components.de/en/Shimano/CS-HG41-8-8-speed-Cassette-p29617/"
+  },
+  "bc-hg41-7": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG41-7 11-28 pour corps 7v",
+   "url": "https://www.bike-components.de/en/Shimano/CS-HG41-7-7-speed-Cassette-p29616/"
+  },
+  "atc-tz500": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – MF-TZ500 roue libre à visser 7v, 14-28 et 14-34, moyeux à visser uniquement",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-tourney-mf-tz500-7-speed-multiple-freewheel-14-34"
+  },
+  "pb-pg1050": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle / Excel – SRAM PG-1050 : 11-32, 11-36, 12-28 (étagements)",
+   "url": "https://www.excelsports.com/sram-pg-1050-10-speed-cassette"
+  },
+  "pb-pg1030": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – SRAM PG-1030 11-32 (étagement), 11-36",
+   "url": "https://performancebike.com/sram-pg1030-10-speed-cassette-1132t-00.2418.033.002/p311981"
+  },
+  "bc-campa11": {
+   "kind": "revendeur",
+   "ref": "bike-components – cassette Campagnolo 11v : 11-25, 11-27, 11-29, 11-32 (dérailleur moyen), 12-27",
+   "url": "https://www.bike-components.de/en/Campagnolo/11-speed-Cassette-p49792"
+  },
+  "sjs-chorus12": {
+   "kind": "revendeur",
+   "ref": "SJS Cycles – Chorus 12v : 11-29, 11-32 (compat Record / SR 12), 11-34 Chorus seulement (11-12-13-14-15-16-17-19-22-25-29-34)",
+   "url": "https://www.sjscycles.co.uk/cassettes/campagnolo-chorus-12-speed-cassette-1134t"
+  },
+  "bc-centaur10": {
+   "kind": "revendeur",
+   "ref": "bike-components – Campagnolo Centaur 10v : 12-27, 12-30",
+   "url": "https://bike-components.de/en/Campagnolo/Centaur-10-speed-Cassette-p25852"
+  },
+  "bc-veloce10": {
+   "kind": "revendeur",
+   "ref": "bike-components – Campagnolo Veloce 10v : 11-25, 12-25, 13-26, 13-29",
+   "url": "https://bike-components.de/en/Campagnolo/Veloce-10-speed-Cassette-p19190/"
+  },
+  "racy-hg40": {
+   "kind": "revendeur",
+   "ref": "RA Cycles – CN-HG40 6/7/8v, 116 maillons",
+   "url": "https://racycles.com/collections/bike-chains/products/shimano-cn-hg40-chain"
+  },
+  "hf-hg53": {
+   "kind": "revendeur",
+   "ref": "Halfords – CN-HG53 9v, 116 maillons",
+   "url": "https://www.halfords.ie/cycling/bike-parts/gears%2C-drivetrain-and-cables/119986.html"
+  },
+  "fc-x8": {
+   "kind": "revendeur",
+   "ref": "Full Cycle – KMC X8 : compatible SRAM, Shimano, Campagnolo",
+   "url": "https://www.fullcycle.bike/products/kmc-x8-np-gy"
+  },
+  "wwc-x12": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – KMC X12 : Shimano et Campagnolo 12v, pas SRAM Flattop ; 126 maillons",
+   "url": "https://worldwidecyclery.com/products/kmc-x12-chain-12-speed-126-links-aurora"
+  },
+  "rose-fd-r8000": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – FD-R8000-F : grand plateau 46-53T, capacité 16T, braze-on",
+   "url": "https://www.rosebikes.com/p/shimano-ultegra-fd-r8000-f-2x11-front-derailleur-braze-on-2654550"
+  },
+  "bc-fd-r7000": {
+   "kind": "revendeur",
+   "ref": "bike-components – FD-R7000 : 46-53T, capacité 16T, ligne 43,5 mm",
+   "url": "https://www.bike-components.de/en/Shimano/105-FD-R7000-2-11-speed-Front-Derailleur-p64811"
+  },
+  "mv-fd-r7100": {
+   "kind": "revendeur",
+   "ref": "Matériel-vélo – FD-R7100-F 12v : 50-52T, capacité 16T, braze-on",
+   "url": "https://www.materiel-velo.com/gb/1877352-shimano-105-mechanical-12-speed-road-bike-front-derailleur-fd-r7100-f.html"
+  },
+  "pb-fd-rx810": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – FD-RX810 : capacité 17T, 48T max, braze-on, ligne 47 mm",
+   "url": "https://www.performancebike.com/shimano-grx-fdrx810-front-derailleur-2-x-11-speed-brazeon-ifdrx810f/p1278468"
+  },
+  "mb-fd-rx820": {
+   "kind": "revendeur",
+   "ref": "Modern Bike – FD-RX820-F : 12v, braze-on, 48T max, capacité 17",
+   "url": "https://www.modernbike.com/shimano-grx-fd-rx820-f-front-derailleur---12-speed-double-braze-on-down-swing-down-pull-48t-max"
+  },
+  "ss-r55c4": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – patins R55C4 : BR-R8000, BR-R7000 (et 6800)",
+   "url": "https://www.sigmasports.com/item/Shimano/Dura-Ace-R55C4-Brake-Pad-Inserts-Pair/17TET"
+  },
+  "b24-brr7000": {
+   "kind": "revendeur",
+   "ref": "Bike24 – BR-R7000 : pneu 28 mm max, portée 51 mm, fixation écrou central, patins R55C4",
+   "url": "https://www.bike24.com/p2271236.html"
+  },
+  "bc-brt4000": {
+   "kind": "revendeur",
+   "ref": "bike-components – BR-T4000 V-brake : leviers BL-T4000 et leviers cintre plat BL-R3000 / BL-R2000",
+   "url": "https://www.bike-components.de/en/Shimano/BR-T4000-V-Brake-Set-p83062"
+  },
+  "bc-blt4000": {
+   "kind": "revendeur",
+   "ref": "bike-components – BL-T4000 : leviers pour V-brake et disque mécanique",
+   "url": "https://www.bike-components.de/en/Shimano/BL-T4000-Brake-Levers-p40163/"
+  },
+  "rose-mt200": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes / Performance – BR-MT200 : huile minérale, post mount, plaquettes B01S (B05S), disque 180 mm max, leviers BL-MT200/MT201, disques SM-RT10/RT26",
+   "url": "https://www.rosebikes.com/p/shimano-br-mt200-brake-caliper-165849"
+  },
+  "pb-spyre": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle / REI – TRP Spyre flat mount : disque mécanique tirage court, adaptateur avant FF-5",
+   "url": "https://www.performancebike.com/trp-spyre-disc-brake-caliper-black-silver-mechanical-front-or-rear-abmd000033/p1366765"
+  },
+  "tf-rt56": {
+   "kind": "revendeur",
+   "ref": "Tree Fort – SM-RT56 6 trous, plaquettes résine seulement, 160 / 180 mm",
+   "url": "https://www.treefortbikes.com/Shimano-RT56M-180mm-6-Bolt-Disc-Brake-Rotor-Resin-Pad"
+  },
+  "vp-rt70": {
+   "kind": "revendeur",
+   "ref": "Veloplus – SM-RT70 Center Lock 140/160/180/203 mm",
+   "url": "https://veloplus.ee/lt/shimano-rt70-center-lock-disc-rotor-60623"
+  },
+  "vp-4700fc": {
+   "kind": "revendeur",
+   "ref": "Veloplus – FC-4700 2x10 : 48-34 / 50-34 / 52-36, BCD 110 asymétrique 4 bras, ligne 43,5 mm, Hollowtech II, boîtier BB-RS501",
+   "url": "https://veloplus.ee/en/vandad-shimano-tiagra-fc-4700-2x10-kaiku-60549"
+  },
+  "bc-un300": {
+   "kind": "revendeur",
+   "ref": "bike-components – BB-UN300 axe carré JIS, BSA 68 (110 à 122,5 mm) et 73 (113, 118 mm)",
+   "url": "https://bike-components.de/en/Shimano/BB-UN300-Square-Taper-Bottom-Bracket-p76645/"
+  },
+  "vp-rx810l": {
+   "kind": "revendeur",
+   "ref": "Veloplus – levier GRX ST-RX810 gauche, frein hydraulique seul (1x)",
+   "url": "https://veloplus.ee/en/jarruvipu-shimano-grx-st-rx810-vasen-50974"
+  },
+  "sh-mineral": {
+   "kind": "officiel",
+   "ref": "Shimano – manuels freins à disque : huile minérale Shimano uniquement",
+   "url": "https://si.shimano.com/en/pdfs/dm/GADBR01/DM-GADBR01-09-ENG.pdf"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-rd-4700-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-4700-SS",
+   "aliases": [
+    "rd 4700 ss",
+    "tiagra 4700 ss"
+   ],
+   "name": "Tiagra 4700 chape courte",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-4700",
+    "maxCog": 28,
+    "minLowCog": 25,
+    "minCog": 11,
+    "totalCapacity": 33,
+    "maxFrontDiff": 16,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "vp-4700ss",
+    "hf-4700"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-4700-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-4700-GS",
+   "aliases": [
+    "rd 4700 gs",
+    "rd4700",
+    "tiagra 4700"
+   ],
+   "name": "Tiagra 4700 chape moyenne",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-4700",
+    "maxCog": 34,
+    "maxCog2x": 34,
+    "maxCog3x": 32,
+    "totalCapacity": 41,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "hf-4700",
+    "bc-4700"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité 39T en double, 41T en triple selon les sources."
+  },
+  {
+   "id": "shimano-rd-5700-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5700-SS",
+   "aliases": [
+    "rd 5700",
+    "105 5700"
+   ],
+   "name": "105 5700 chape courte",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 28,
+    "totalCapacity": 33,
+    "maxFrontDiff": 16,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "gt-5700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-6700-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6700-SS",
+   "aliases": [
+    "rd 6700 ss",
+    "ultegra 6700"
+   ],
+   "name": "Ultegra 6700 chape courte",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 28,
+    "totalCapacity": 33,
+    "maxFrontDiff": 16,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "tf-6700",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "28T (6700) ; la révision 6700-A est donnée à 30T par des utilisateurs."
+  },
+  {
+   "id": "shimano-rd-6700-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6700-GS",
+   "aliases": [
+    "rd 6700 gs"
+   ],
+   "name": "Ultegra 6700 chape moyenne",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "totalCapacity": 39,
+    "maxFrontDiff": 22,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "tf-6700",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plus grand pignon non confirmé par une source."
+  },
+  {
+   "id": "shimano-rd-r3000-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-R3000-GS",
+   "aliases": [
+    "rd r3000",
+    "sora r3000"
+   ],
+   "name": "Sora R3000 chape moyenne",
+   "discipline": "route",
+   "generation": "Sora R3000 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 34,
+    "minCog": 11,
+    "totalCapacity": 43,
+    "maxFrontDiff": 20,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "atc-r3000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r3000-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-R3000-SS",
+   "aliases": [
+    "r3000 ss"
+   ],
+   "name": "Sora R3000 chape courte",
+   "discipline": "route",
+   "generation": "Sora R3000 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "maxFrontDiff": 16,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "hf-r3000ss",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m591-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M591-SGS",
+   "aliases": [
+    "m591",
+    "deore 9"
+   ],
+   "name": "Deore M591 9v chape longue",
+   "discipline": "vtt",
+   "generation": "Deore M590 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 34,
+    "minLowCog": 28,
+    "totalCapacity": 45,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "sh-m591",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-rd-m3100-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M3100-SGS",
+   "aliases": [
+    "m3100",
+    "alivio"
+   ],
+   "name": "Alivio M3100 9v",
+   "discipline": "vtt",
+   "generation": "Alivio M3100 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 36,
+    "totalCapacity": 45,
+    "maxFrontDiff": 22,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "sh-m3100",
+    "hf-sl-m3100"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m2000-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M2000-SGS",
+   "aliases": [
+    "m2000",
+    "altus 9"
+   ],
+   "name": "Altus M2000 9v",
+   "discipline": "vtt",
+   "generation": "Altus M2000 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 36,
+    "minLowCog": 32,
+    "totalCapacity": 45,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "atc-m2000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m310",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M310",
+   "aliases": [
+    "m310",
+    "altus 8"
+   ],
+   "name": "Altus M310 7/8v",
+   "discipline": "vtt",
+   "generation": "Altus M310 (7/8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 34,
+    "totalCapacity": 43,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "wf-m310",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévu pour 7 et 8 vitesses."
+  },
+  {
+   "id": "shimano-rd-ty300",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-TY300",
+   "aliases": [
+    "ty300",
+    "tourney"
+   ],
+   "name": "Tourney TY300 6/7v",
+   "discipline": "vtt",
+   "generation": "Tourney (6/7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "maxCog": 34,
+    "totalCapacity": 43,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "pb-ty300",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Existe en version patte à griffe (sous l'axe) : vérifier la patte du cadre."
+  },
+  {
+   "id": "shimano-rd-m6000-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M6000-GS",
+   "aliases": [
+    "m6000 gs",
+    "deore 10"
+   ],
+   "name": "Deore M6000 10v chape moyenne",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 42,
+    "totalCapacity": 41,
+    "cageLength": "GS",
+    "clutch": true,
+    "maxFrontChainrings": 2
+   },
+   "src": "vp-m6000gs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m6000-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M6000-SGS",
+   "aliases": [
+    "m6000 sgs"
+   ],
+   "name": "Deore M6000 10v chape longue",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "totalCapacity": 43,
+    "maxFrontDiff": 22,
+    "cageLength": "SGS",
+    "clutch": true,
+    "maxFrontChainrings": 3
+   },
+   "src": "vp-m6000sgs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-5800-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5800-GS",
+   "aliases": [
+    "rd 5800",
+    "105 5800"
+   ],
+   "name": "105 5800 11v chape moyenne",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-route-11",
+    "maxCog": 32,
+    "minCog": 11,
+    "totalCapacity": 37,
+    "maxFrontDiff": 16,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": "mec-5800",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "microshift-rd-r43m",
+   "type": "rear_derailleur",
+   "brand": "microSHIFT",
+   "ref": "RD-R43M (R9)",
+   "aliases": [
+    "microshift r9",
+    "r43m"
+   ],
+   "name": "microSHIFT R9 9v chape moyenne",
+   "discipline": "route",
+   "generation": "R9 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 34,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-ms-r9",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-x5-10-m",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X5 10v chape moyenne",
+   "aliases": [
+    "x5 10"
+   ],
+   "name": "SRAM X5 10v moyenne",
+   "discipline": "vtt",
+   "generation": "X5 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 36,
+    "minCog": 11,
+    "totalCapacity": 35,
+    "cageLength": "moyen",
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-x5-10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-x5-10-l",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X5 10v chape longue",
+   "aliases": [
+    "x5 10 longue"
+   ],
+   "name": "SRAM X5 10v longue",
+   "discipline": "vtt",
+   "generation": "X5 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 36,
+    "minCog": 11,
+    "totalCapacity": 47,
+    "cageLength": "long",
+    "maxFrontChainrings": 3
+   },
+   "src": "pb-x5-10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-x5-9-m",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X5 9v chape moyenne",
+   "aliases": [
+    "x5 9"
+   ],
+   "name": "SRAM X5 9v moyenne",
+   "discipline": "vtt",
+   "generation": "X5 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sram-1-1",
+    "maxCog": 36,
+    "cageLength": "moyen"
+   },
+   "src": "ba-x5-9",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-force-10-wifli",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Force 10v WiFLi",
+   "aliases": [
+    "force 10",
+    "wifli"
+   ],
+   "name": "SRAM Force 10v WiFLi",
+   "discipline": "route",
+   "generation": "Force (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "cageLength": "moyen",
+    "maxFrontChainrings": 2
+   },
+   "src": "tf-force10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-gx-11",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD GX 2x11",
+   "aliases": [
+    "gx 11"
+   ],
+   "name": "SRAM GX 11v",
+   "discipline": "vtt",
+   "generation": "GX (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-vtt-11",
+    "maxCog": 42,
+    "clutch": true,
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-gx11",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité 41, 44 ou 46T selon les sources : laissée vide."
+  },
+  {
+   "id": "campagnolo-rd-chorus11-ss",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Chorus 11 (2015+) chape courte",
+   "aliases": [
+    "chorus 11"
+   ],
+   "name": "Campagnolo Chorus 11 courte",
+   "discipline": "route",
+   "generation": "Chorus 11 (2015+)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11",
+    "maxCog": 29,
+    "totalCapacity": 37,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "nb-chorus11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-rd-chorus11-m",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Chorus 11 (2015+) chape moyenne",
+   "aliases": [
+    "chorus 11 moyenne"
+   ],
+   "name": "Campagnolo Chorus 11 moyenne",
+   "discipline": "route",
+   "generation": "Chorus 11 (2015+)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": "nb-chorus11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-rd-centaur11",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Centaur 11 (D)",
+   "aliases": [
+    "centaur 11"
+   ],
+   "name": "Campagnolo Centaur 11",
+   "discipline": "route",
+   "generation": "Centaur 11 (D)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11-d",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": "rose-centaur11-rd",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-rd-chorus12",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Chorus 12",
+   "aliases": [
+    "chorus 12"
+   ],
+   "name": "Campagnolo Chorus 12",
+   "discipline": "route",
+   "generation": "Chorus 12",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "campagnolo-12",
+    "maxCog": 34,
+    "totalCapacity": 37,
+    "maxFrontChainrings": 2
+   },
+   "src": "ba-chorus12",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-rd-record12-m",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Record 12 chape moyenne",
+   "aliases": [
+    "record 12"
+   ],
+   "name": "Campagnolo Record 12",
+   "discipline": "route",
+   "generation": "Record 12",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "campagnolo-12",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": "mantel-record12",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-4700",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-4700",
+   "aliases": [
+    "st 4700",
+    "tiagra 4700 levier"
+   ],
+   "name": "Tiagra 4700 leviers 2x10",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "velomine-4700st",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m4100",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M4100",
+   "aliases": [
+    "sl m4100",
+    "deore 10 manette"
+   ],
+   "name": "Deore M4100 manette 10v",
+   "discipline": "vtt",
+   "generation": "Deore M4100 (10v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-sl-m4100",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m3100-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M3100-R",
+   "aliases": [
+    "sl m3100",
+    "alivio manette"
+   ],
+   "name": "Alivio M3100 manette 9v",
+   "discipline": "vtt",
+   "generation": "Alivio M3100 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "src": "hf-sl-m3100",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "microshift-st-r10",
+   "type": "shifter",
+   "brand": "microSHIFT",
+   "ref": "Leviers R10 2x10 (SB-R402)",
+   "aliases": [
+    "microshift r10"
+   ],
+   "name": "microSHIFT R10 2x10",
+   "discipline": "route",
+   "generation": "R10 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique"
+   },
+   "src": "pb-ms-r10",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Tirage de câble de frein non renseigné."
+  },
+  {
+   "id": "sram-sl-x5-9",
+   "type": "shifter",
+   "brand": "SRAM",
+   "ref": "Gâchette X5 9v",
+   "aliases": [
+    "x5 trigger"
+   ],
+   "name": "SRAM X5 gâchette 9v",
+   "discipline": "vtt",
+   "generation": "X5 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "sram-1-1-9",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-x5-trigger",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-st-chorus11",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Chorus 11",
+   "aliases": [
+    "ergopower chorus",
+    "chorus 11 levier"
+   ],
+   "name": "Campagnolo Ergopower Chorus 11",
+   "discipline": "route",
+   "generation": "Chorus 11 (2015+)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "campagnolo-11",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "velomine-chorus11st",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-st-centaur11",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Centaur 11 Power Shift",
+   "aliases": [
+    "ergopower centaur"
+   ],
+   "name": "Campagnolo Ergopower Centaur 11",
+   "discipline": "route",
+   "generation": "Centaur 11 (D)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "campagnolo-11-d",
+    "form": "levier_route",
+    "brakeActuation": "mecanique"
+   },
+   "src": "rose-centaur11st",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-rx810-l-1x",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "ST-RX810 gauche 1x (frein seul)",
+   "aliases": [
+    "rx810 gauche",
+    "grx 1x levier"
+   ],
+   "name": "GRX levier gauche frein seul",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v)",
+   "attrs": {
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "vp-rx810l",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-t4000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-T4000",
+   "aliases": [
+    "bl t4000"
+   ],
+   "name": "Leviers V-brake Alivio",
+   "discipline": "vtt",
+   "generation": "Alivio (V-brake)",
+   "attrs": {
+    "form": "autre",
+    "brakeActuation": "mecanique",
+    "cablePull": "long"
+   },
+   "src": "bc-blt4000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt201",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT201",
+   "aliases": [
+    "bl mt201",
+    "mt201"
+   ],
+   "name": "Levier hydraulique MT201",
+   "discipline": "vtt",
+   "generation": "MT200",
+   "attrs": {
+    "form": "autre",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-mt200"
+   },
+   "src": [
+    "rose-mt200",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg500-10-11-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG500-10 11-25",
+   "aliases": [
+    "hg500 11-25",
+    "cs 4700 11-25"
+   ],
+   "name": "Cassette HG500 10v 11-25 (Tiagra 4700)",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 25,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-14-15-17-19-21-23-25"
+   },
+   "src": [
+    "bc-hg500",
+    "lg-4700cs"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg500-10-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG500-10 11-32",
+   "aliases": [
+    "hg500 11-32",
+    "cs 4700 11-32"
+   ],
+   "name": "Cassette HG500 10v 11-32 (Tiagra 4700)",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-14-16-18-20-22-25-28-32"
+   },
+   "src": [
+    "bc-hg500",
+    "lg-4700cs"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg500-10-11-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG500-10 11-34",
+   "aliases": [
+    "hg500 11-34",
+    "cs 4700 11-34"
+   ],
+   "name": "Cassette HG500 10v 11-34 (Tiagra 4700)",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-23-26-30-34"
+   },
+   "src": [
+    "bc-hg500",
+    "lg-4700cs"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg500-10-12-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG500-10 12-28",
+   "aliases": [
+    "hg500 12-28",
+    "cs 4700 12-28"
+   ],
+   "name": "Cassette HG500 10v 12-28 (Tiagra 4700)",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 28,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "12-13-14-15-17-19-21-23-25-28"
+   },
+   "src": [
+    "bc-hg500",
+    "lg-4700cs"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-10-11-36",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-10 11-36",
+   "aliases": [
+    "hg50 11-36"
+   ],
+   "name": "Cassette HG50 10v 11-36",
+   "discipline": "vtt",
+   "generation": "Deore (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-24-28-32-36"
+   },
+   "src": "bc-hg50-10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m4100-10-11-42",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M4100-10 11-42",
+   "aliases": [
+    "m4100 11-42"
+   ],
+   "name": "Deore M4100 10v 11-42",
+   "discipline": "vtt",
+   "generation": "Deore M4100 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 42,
+    "pitch": "hg-10",
+    "cogs": "11-13-15-18-21-24-28-32-37-42"
+   },
+   "src": "bc-m4100cs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Corps de roue libre non confirmé par la source : champ laissé vide."
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG400-9 11-28",
+   "aliases": [
+    "hg400 11-28"
+   ],
+   "name": "Alivio HG400 9v 11-28",
+   "discipline": "vtt",
+   "generation": "Alivio (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 28,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-14-16-18-21-24-28"
+   },
+   "src": "bc-hg400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG400-9 11-32",
+   "aliases": [
+    "hg400 11-32"
+   ],
+   "name": "Alivio HG400 9v 11-32",
+   "discipline": "vtt",
+   "generation": "Alivio (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-14-16-18-21-24-28-32"
+   },
+   "src": "bc-hg400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG400-9 11-34",
+   "aliases": [
+    "hg400 11-34"
+   ],
+   "name": "Alivio HG400 9v 11-34",
+   "discipline": "vtt",
+   "generation": "Alivio (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-30-34"
+   },
+   "src": "bc-hg400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-36",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG400-9 11-36",
+   "aliases": [
+    "hg400 11-36"
+   ],
+   "name": "Alivio HG400 9v 11-36",
+   "discipline": "vtt",
+   "generation": "Alivio (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-30-36"
+   },
+   "src": "bc-hg400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg400-9-12-36",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG400-9 12-36",
+   "aliases": [
+    "hg400 12-36"
+   ],
+   "name": "Alivio HG400 9v 12-36",
+   "discipline": "vtt",
+   "generation": "Alivio (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 12,
+    "maxCog": 36,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "12-14-16-18-21-24-28-32-36"
+   },
+   "src": "bc-hg400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg200-9-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG200-9 11-32",
+   "aliases": [
+    "hg200 11-32"
+   ],
+   "name": "HG200 9v 11-32",
+   "discipline": "vtt",
+   "generation": "Altus (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-14-16-18-21-24-28-32"
+   },
+   "src": "bc-hg200",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg200-9-11-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG200-9 11-34",
+   "aliases": [
+    "hg200 11-34"
+   ],
+   "name": "HG200 9v 11-34",
+   "discipline": "vtt",
+   "generation": "Altus (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-30-34"
+   },
+   "src": "bc-hg200",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg200-9-11-36",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG200-9 11-36",
+   "aliases": [
+    "hg200 11-36"
+   ],
+   "name": "HG200 9v 11-36",
+   "discipline": "vtt",
+   "generation": "Altus (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-30-36"
+   },
+   "src": "bc-hg200",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg41-8-11-30",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG41-8 11-30",
+   "aliases": [
+    "hg41 8 11-30"
+   ],
+   "name": "Acera HG41 8v 11-30",
+   "discipline": "vtt",
+   "generation": "Acera (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 30,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-30"
+   },
+   "src": "bc-hg41-8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg41-8-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG41-8 11-32",
+   "aliases": [
+    "hg41 8 11-32"
+   ],
+   "name": "Acera HG41 8v 11-32",
+   "discipline": "vtt",
+   "generation": "Acera (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-18-21-24-28-32"
+   },
+   "src": "bc-hg41-8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg41-8-11-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG41-8 11-34",
+   "aliases": [
+    "hg41 8 11-34"
+   ],
+   "name": "Acera HG41 8v 11-34",
+   "discipline": "vtt",
+   "generation": "Acera (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-34"
+   },
+   "src": "bc-hg41-8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg41-7-11-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG41-7 11-28",
+   "aliases": [
+    "hg41 7"
+   ],
+   "name": "HG41 7v 11-28",
+   "discipline": "vtt",
+   "generation": "Tourney/Altus (7v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 7,
+    "minCog": 11,
+    "maxCog": 28,
+    "pitch": "hg-7",
+    "cogs": "11-13-15-18-21-24-28"
+   },
+   "src": "bc-hg41-7",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévue pour les corps de roue libre 7v (source revendeur)."
+  },
+  {
+   "id": "shimano-mf-tz500-14-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-TZ500 14-28",
+   "aliases": [
+    "tz500 14-28",
+    "roue libre 7v"
+   ],
+   "name": "Roue libre Tourney TZ500 7v 14-28",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 7,
+    "minCog": 14,
+    "maxCog": 28,
+    "pitch": "hg-7"
+   },
+   "src": "atc-tz500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Roue libre à visser : moyeux à visser uniquement. Filetage non renseigné."
+  },
+  {
+   "id": "shimano-mf-tz500-14-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-TZ500 14-34",
+   "aliases": [
+    "tz500 14-34",
+    "roue libre 7v"
+   ],
+   "name": "Roue libre Tourney TZ500 7v 14-34",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 7,
+    "minCog": 14,
+    "maxCog": 34,
+    "pitch": "hg-7"
+   },
+   "src": "atc-tz500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Roue libre à visser : moyeux à visser uniquement. Filetage non renseigné."
+  },
+  {
+   "id": "sram-pg-1050-11-32",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1050 11-32",
+   "aliases": [
+    "pg1050 11-32"
+   ],
+   "name": "SRAM PG-1050 10v 11-32",
+   "discipline": "route",
+   "generation": "Apex / Rival / Force (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-14-15-17-19-22-25-28-32"
+   },
+   "src": "pb-pg1050",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1050-11-36",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1050 11-36",
+   "aliases": [
+    "pg1050 11-36"
+   ],
+   "name": "SRAM PG-1050 10v 11-36",
+   "discipline": "route",
+   "generation": "Apex / Rival / Force (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-22-25-28-32-36"
+   },
+   "src": "pb-pg1050",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1050-12-28",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1050 12-28",
+   "aliases": [
+    "pg1050 12-28"
+   ],
+   "name": "SRAM PG-1050 10v 12-28",
+   "discipline": "route",
+   "generation": "Apex / Rival / Force (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 28,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "12-13-14-15-16-17-19-22-25-28"
+   },
+   "src": "pb-pg1050",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1030-11-32",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1030 11-32",
+   "aliases": [
+    "pg1030"
+   ],
+   "name": "SRAM PG-1030 10v 11-32",
+   "discipline": "vtt",
+   "generation": "10v",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-15-17-19-22-25-28-32"
+   },
+   "src": "pb-pg1030",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-11-11-25",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Campagnolo 11v 11-25",
+   "aliases": [
+    "campagnolo 11 11-25"
+   ],
+   "name": "Campagnolo 11v 11-25",
+   "discipline": "route",
+   "generation": "Campagnolo 11v",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 25,
+    "pitch": "campagnolo-11",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-campa11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-11-11-27",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Campagnolo 11v 11-27",
+   "aliases": [
+    "campagnolo 11 11-27"
+   ],
+   "name": "Campagnolo 11v 11-27",
+   "discipline": "route",
+   "generation": "Campagnolo 11v",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 27,
+    "pitch": "campagnolo-11",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-campa11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-11-11-29",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Campagnolo 11v 11-29",
+   "aliases": [
+    "campagnolo 11 11-29"
+   ],
+   "name": "Campagnolo 11v 11-29",
+   "discipline": "route",
+   "generation": "Campagnolo 11v",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 29,
+    "pitch": "campagnolo-11",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-campa11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-11-11-32",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Campagnolo 11v 11-32",
+   "aliases": [
+    "campagnolo 11 11-32"
+   ],
+   "name": "Campagnolo 11v 11-32",
+   "discipline": "route",
+   "generation": "Campagnolo 11v",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "campagnolo-11",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-campa11",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Dérailleur chape moyenne requis (revendeur)."
+  },
+  {
+   "id": "campagnolo-cs-11-12-27",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Campagnolo 11v 12-27",
+   "aliases": [
+    "campagnolo 11 12-27"
+   ],
+   "name": "Campagnolo 11v 12-27",
+   "discipline": "route",
+   "generation": "Campagnolo 11v",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 12,
+    "maxCog": 27,
+    "pitch": "campagnolo-11",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-campa11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-chorus12-11-29",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Chorus 12 11-29",
+   "aliases": [
+    "chorus 12 11-29"
+   ],
+   "name": "Campagnolo Chorus 12v 11-29",
+   "discipline": "route",
+   "generation": "Chorus 12",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 29,
+    "pitch": "campagnolo-12",
+    "freehub": "campagnolo"
+   },
+   "src": "sjs-chorus12",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-chorus12-11-32",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Chorus 12 11-32",
+   "aliases": [
+    "chorus 12 11-32"
+   ],
+   "name": "Campagnolo Chorus 12v 11-32",
+   "discipline": "route",
+   "generation": "Chorus 12",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "campagnolo-12",
+    "freehub": "campagnolo"
+   },
+   "src": "sjs-chorus12",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-chorus12-11-34",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Chorus 12 11-34",
+   "aliases": [
+    "chorus 12 11-34"
+   ],
+   "name": "Campagnolo Chorus 12v 11-34",
+   "discipline": "route",
+   "generation": "Chorus 12",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "campagnolo-12",
+    "freehub": "campagnolo",
+    "cogs": "11-12-13-14-15-16-17-19-22-25-29-34"
+   },
+   "src": "sjs-chorus12",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Chorus seulement, pas Record / Super Record 12."
+  },
+  {
+   "id": "campagnolo-cs-centaur10-12-27",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Centaur 10 12-27",
+   "aliases": [
+    "centaur 10 12-27"
+   ],
+   "name": "Campagnolo Centaur 10v 12-27",
+   "discipline": "route",
+   "generation": "Centaur 10",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 27,
+    "pitch": "campagnolo-10",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-centaur10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-centaur10-12-30",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Centaur 10 12-30",
+   "aliases": [
+    "centaur 10 12-30"
+   ],
+   "name": "Campagnolo Centaur 10v 12-30",
+   "discipline": "route",
+   "generation": "Centaur 10",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 30,
+    "pitch": "campagnolo-10",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-centaur10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce10-11-25",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 10 11-25",
+   "aliases": [
+    "veloce 10 11-25"
+   ],
+   "name": "Campagnolo Veloce 10v 11-25",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 25,
+    "pitch": "campagnolo-10",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce10-12-25",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 10 12-25",
+   "aliases": [
+    "veloce 10 12-25"
+   ],
+   "name": "Campagnolo Veloce 10v 12-25",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 25,
+    "pitch": "campagnolo-10",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce10-13-26",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 10 13-26",
+   "aliases": [
+    "veloce 10 13-26"
+   ],
+   "name": "Campagnolo Veloce 10v 13-26",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 13,
+    "maxCog": 26,
+    "pitch": "campagnolo-10",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce10-13-29",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 10 13-29",
+   "aliases": [
+    "veloce 10 13-29"
+   ],
+   "name": "Campagnolo Veloce 10v 13-29",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 13,
+    "maxCog": 29,
+    "pitch": "campagnolo-10",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cn-hg40",
+   "type": "chain",
+   "brand": "Shimano",
+   "ref": "CN-HG40",
+   "aliases": [
+    "hg40"
+   ],
+   "name": "Chaîne HG40 6/7/8v",
+   "discipline": "vtt",
+   "generation": "6/7/8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false,
+    "chainType": "shimano-hg",
+    "links": 116
+   },
+   "src": "racy-hg40",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévue pour 6, 7 et 8 vitesses."
+  },
+  {
+   "id": "shimano-cn-hg53",
+   "type": "chain",
+   "brand": "Shimano",
+   "ref": "CN-HG53",
+   "aliases": [
+    "hg53"
+   ],
+   "name": "Chaîne HG53 9v",
+   "discipline": "vtt",
+   "generation": "9v",
+   "attrs": {
+    "speeds": 9,
+    "flattop": false,
+    "chainType": "shimano-hg",
+    "links": 116
+   },
+   "src": "hf-hg53",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "kmc-x8",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "X8",
+   "aliases": [
+    "kmc x8"
+   ],
+   "name": "Chaîne KMC X8",
+   "discipline": "autre",
+   "generation": "8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false,
+    "chainType": "kmc"
+   },
+   "src": "fc-x8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "kmc-x12",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "X12",
+   "aliases": [
+    "kmc x12"
+   ],
+   "name": "Chaîne KMC X12",
+   "discipline": "autre",
+   "generation": "12v",
+   "attrs": {
+    "speeds": 12,
+    "flattop": false,
+    "chainType": "kmc-12",
+    "links": 126
+   },
+   "src": "wwc-x12",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano et Campagnolo 12v ; pas SRAM Flattop."
+  },
+  {
+   "id": "shimano-fd-r8000-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-R8000-F",
+   "aliases": [
+    "fd r8000"
+   ],
+   "name": "Ultegra R8000 dérailleur avant braze-on",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "mount": "braze_on",
+    "capacity": 16,
+    "maxRing": 53,
+    "minRing": 46
+   },
+   "src": "rose-fd-r8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-r7000-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-R7000-F",
+   "aliases": [
+    "fd r7000"
+   ],
+   "name": "105 R7000 dérailleur avant braze-on",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "mount": "braze_on",
+    "capacity": 16,
+    "maxRing": 53,
+    "minRing": 46,
+    "chainline": 43.5
+   },
+   "src": "bc-fd-r7000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-r7100-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-R7100-F",
+   "aliases": [
+    "fd r7100"
+   ],
+   "name": "105 R7100 dérailleur avant 12v",
+   "discipline": "route",
+   "generation": "105 R7100 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "mount": "braze_on",
+    "capacity": 16,
+    "maxRing": 52,
+    "minRing": 50
+   },
+   "src": "mv-fd-r7100",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-rx810-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-RX810-F",
+   "aliases": [
+    "fd rx810"
+   ],
+   "name": "GRX RX810 dérailleur avant",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "mount": "braze_on",
+    "capacity": 17,
+    "maxRing": 48,
+    "chainline": 47
+   },
+   "src": "pb-fd-rx810",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "48T max (une autre source dit 50T)."
+  },
+  {
+   "id": "shimano-fd-rx820-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-RX820-F",
+   "aliases": [
+    "fd rx820"
+   ],
+   "name": "GRX RX820 dérailleur avant 12v",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "mount": "braze_on",
+    "capacity": 17,
+    "maxRing": 48
+   },
+   "src": "mb-fd-rx820",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-r8000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-R8000",
+   "aliases": [
+    "br r8000"
+   ],
+   "name": "Ultegra R8000 étrier sur jante",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "ss-r55c4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-r7000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-R7000",
+   "aliases": [
+    "br r7000"
+   ],
+   "name": "105 R7000 étrier sur jante",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": [
+    "b24-brr7000",
+    "ss-r55c4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pneu 28 mm max, portée 51 mm."
+  },
+  {
+   "id": "shimano-bs-r55c4",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "R55C4",
+   "aliases": [
+    "r55c4",
+    "patins route"
+   ],
+   "name": "Patins cartouche R55C4",
+   "discipline": "route",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-R55C4"
+   },
+   "src": "ss-r55c4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-t4000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-T4000",
+   "aliases": [
+    "br t4000",
+    "v-brake"
+   ],
+   "name": "V-brake Alivio",
+   "discipline": "vtt",
+   "generation": "Alivio (V-brake)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "long",
+    "mount": "v_brake"
+   },
+   "src": "bc-brt4000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-mt200",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-MT200",
+   "aliases": [
+    "br mt200",
+    "mt200"
+   ],
+   "name": "Étrier hydraulique MT200",
+   "discipline": "vtt",
+   "generation": "MT200",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-mt200",
+    "mount": "post_mount",
+    "padShape": "shimano-B"
+   },
+   "src": [
+    "rose-mt200",
+    "sh-mineral"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Disque 180 mm max."
+  },
+  {
+   "id": "shimano-bp-b01s",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "B01S",
+   "aliases": [
+    "b01s",
+    "b05s"
+   ],
+   "name": "Plaquettes résine B01S",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-B",
+    "compound": "resine"
+   },
+   "src": "rose-mt200",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "trp-spyre-fm",
+   "type": "brake_caliper",
+   "brand": "TRP",
+   "ref": "Spyre flat mount",
+   "aliases": [
+    "spyre",
+    "trp spyre"
+   ],
+   "name": "TRP Spyre disque mécanique",
+   "discipline": "route",
+   "generation": "Spyre",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "flat_mount"
+   },
+   "src": "pb-spyre",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Adaptateur avant FF-5 vendu à part. Forme de plaquette non renseignée."
+  },
+  {
+   "id": "shimano-sm-rt56-160",
+   "type": "rotor",
+   "brand": "Shimano",
+   "ref": "SM-RT56 160",
+   "aliases": [
+    "rt56 160"
+   ],
+   "name": "Disque 6 trous 160 mm",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "mount": "six_trous",
+    "diameter": 160,
+    "padCompat": "resine_seulement"
+   },
+   "src": "tf-rt56",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sm-rt56-180",
+   "type": "rotor",
+   "brand": "Shimano",
+   "ref": "SM-RT56 180",
+   "aliases": [
+    "rt56 180"
+   ],
+   "name": "Disque 6 trous 180 mm",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "mount": "six_trous",
+    "diameter": 180,
+    "padCompat": "resine_seulement"
+   },
+   "src": "tf-rt56",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sm-rt70-160",
+   "type": "rotor",
+   "brand": "Shimano",
+   "ref": "SM-RT70 160",
+   "aliases": [
+    "rt70 160"
+   ],
+   "name": "Disque Center Lock 160 mm",
+   "discipline": "route",
+   "generation": "",
+   "attrs": {
+    "mount": "centerlock",
+    "diameter": 160
+   },
+   "src": "vp-rt70",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sm-rt70-140",
+   "type": "rotor",
+   "brand": "Shimano",
+   "ref": "SM-RT70 140",
+   "aliases": [
+    "rt70 140"
+   ],
+   "name": "Disque Center Lock 140 mm",
+   "discipline": "route",
+   "generation": "",
+   "attrs": {
+    "mount": "centerlock",
+    "diameter": 140
+   },
+   "src": "vp-rt70",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-4700-50-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-4700 50-34",
+   "aliases": [
+    "fc 4700",
+    "fc 4700 50-34"
+   ],
+   "name": "Tiagra 4700 50-34",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "50-34",
+    "chainline": 43.5
+   },
+   "src": "vp-4700fc",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-4700-48-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-4700 48-34",
+   "aliases": [
+    "fc 4700",
+    "fc 4700 48-34"
+   ],
+   "name": "Tiagra 4700 48-34",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "48-34",
+    "chainline": 43.5
+   },
+   "src": "vp-4700fc",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-4700-52-36",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-4700 52-36",
+   "aliases": [
+    "fc 4700",
+    "fc 4700 52-36"
+   ],
+   "name": "Tiagra 4700 52-36",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "52-36",
+    "chainline": 43.5
+   },
+   "src": "vp-4700fc",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bb-un300-68",
+   "type": "bottom_bracket",
+   "brand": "Shimano",
+   "ref": "BB-UN300 BSA 68",
+   "aliases": [
+    "bb un300",
+    "axe carre"
+   ],
+   "name": "Boîtier axe carré BSA 68",
+   "discipline": "autre",
+   "generation": "Axe carré",
+   "attrs": {
+    "shell": "bsa",
+    "shellWidth": 68,
+    "spindle": "carre_jis"
+   },
+   "src": "bc-un300",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "La longueur d'axe (110 à 122,5 mm) fixe la ligne de chaîne : reprendre celle d'origine."
+  },
+  {
+   "id": "shimano-bb-un300-73",
+   "type": "bottom_bracket",
+   "brand": "Shimano",
+   "ref": "BB-UN300 BSA 73",
+   "aliases": [
+    "un300 73"
+   ],
+   "name": "Boîtier axe carré BSA 73",
+   "discipline": "autre",
+   "generation": "Axe carré",
+   "attrs": {
+    "shell": "bsa",
+    "shellWidth": 73,
+    "spindle": "carre_jis"
+   },
+   "src": "bc-un300",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Longueurs d'axe 113 / 118 mm."
+  }
+ ]
+}

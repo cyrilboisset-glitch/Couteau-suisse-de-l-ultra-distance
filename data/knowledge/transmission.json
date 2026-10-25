@@ -183,19 +183,92 @@
    "kind": "revendeur",
    "ref": "Bikable – LTWOO A12-X : dérailleur 1x12, cassettes jusqu'à 52T, fixation M10x1",
    "url": "https://bikable.com/parts/rear-derailleurs/rear-derailliur-for-mtb-commuter-and-urban/ltwoo-a12-x-rear-derailleur-1x12sp-al"
+  },
+  "wikibooks-gear": {
+   "kind": "presse",
+   "ref": "Wikibooks – Gear-changing dimensions : dérailleurs Shimano 5-9v (route et VTT) ratio ≈1,7 ; tirage manette 7v 2,9 mm, 8v 2,8, 9v 2,5, 10v 2,3 ; pas 5,0 / 4,8 / 4,35 / 3,95 mm ; mélange route/VTT possible si manette et cassette ont le même nombre de vitesses",
+   "url": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions"
+  },
+  "cyclechat-789": {
+   "kind": "communaute",
+   "ref": "CycleChat – un dérailleur Shimano 8 ou 9v fonctionne en 7, 8 ou 9v avec une manette Shimano de la même vitesse que la cassette",
+   "url": "https://cyclechat.net/threads/quick-compatibility-question.187754"
+  },
+  "cyclechat-10-9": {
+   "kind": "communaute",
+   "ref": "CycleChat / RBW – manette route 10v + dérailleur 9v : résultats contradictoires selon les utilisateurs",
+   "url": "https://cyclechat.net/threads/is-a-10-speed-rear-mech-compatible-with-9-speed-shifters.100081"
+  },
+  "mtbr-dynasys": {
+   "kind": "communaute",
+   "ref": "MTBR – dérailleurs Dyna-Sys 10v incompatibles avec manettes 9v et inversement ; route 10 ≠ VTT 10",
+   "url": "https://www.mtbr.com/threads/dyna-sys-10-speed-compatability-with-9-speed-shimano-systems.646014/"
+  },
+  "bikeradar-4700": {
+   "kind": "communaute",
+   "ref": "BikeRadar forum – manettes Tiagra 4700 incompatibles avec dérailleurs 105 / Ultegra 10v (5700, 6700)",
+   "url": "https://forum.bikeradar.com/discussion/comment/20434996/"
+  },
+  "velomine-4700": {
+   "kind": "revendeur",
+   "ref": "Velomine – ST-4700 : compatible uniquement RD-4700-SS/GS ; frein tirage court",
+   "url": "https://velomine.com/products/shimano-tiagra-st-4700-2x10-speed-shift-brake-lever-set-black"
+  },
+  "bc-sl-m4100": {
+   "kind": "revendeur",
+   "ref": "bike-components – SL-M4100 Deore 10v : dérailleurs RD-M5120, M4120, M6000, M7000-10, T8000, T6000, M820, M640, T780, T670-A, T610",
+   "url": "https://bike-components.de/en/Shimano/Deore-SL-M4100-10-speed-Shifter-w-Clamp-p77720"
+  },
+  "halfords-x4": {
+   "kind": "revendeur",
+   "ref": "Halfords – SRAM X4 7/8/9v : uniquement manettes SRAM 1:1 (ESP, gâchettes et poignées X)",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/sram-x4-7%2F8%2F9-speed-rear-derailleur-black-188170.html"
+  },
+  "bc-force10": {
+   "kind": "revendeur",
+   "ref": "bike-components – SRAM route 10v : ratio 1:1 issu du VTT ; RED, Force, Rival, Apex 10v inter-compatibles",
+   "url": "https://www.bike-components.de/en/SRAM/Force-10-speed-Rear-Derailleur-p22390/"
+  },
+  "cyclechat-campa": {
+   "kind": "communaute",
+   "ref": "CycleChat (centre technique Campagnolo cité) – dérailleurs 9 et 10v interchangeables (≥ 1999/2000), Ergo 9v ≠ cassette 10v, cassettes 9/10v sur le même corps sans entretoise",
+   "url": "https://cyclechat.net/threads/campagnolo-compatibility.179471"
+  },
+  "velomine-chorus11": {
+   "kind": "revendeur",
+   "ref": "Velomine – Ergopower Chorus 11 : compatible dérailleurs Centaur, Potenza, Chorus, Record, Super Record 2015+, PAS 2011-2014 ; frein tirage court",
+   "url": "https://velomine.com/products/campagnolo-chorus-ergopower-shifter-set-11-speed-carbon"
+  },
+  "rose-centaur11": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – Centaur 11 : leviers, dérailleurs et pédalier marqués D compatibles uniquement entre eux",
+   "url": "https://www.rosebikes.com/p/campagnolo-centaur-ergopower-power-shift-brakeshift-lever-combination-2668760"
+  },
+  "pb-ms-r9": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – microSHIFT R9 : compatible Shimano route et VTT 7/8/9v et route 10v, PAS Tiagra 4700 ni GRX 400",
+   "url": "https://www.performancebike.com/microshift-r9-r43m-road-rear-derailleur-black-9-speed-medium-cage-rd-r43m/p1279042"
+  },
+  "pb-ms-r10": {
+   "kind": "revendeur",
+   "ref": "Performance Bicycle – microSHIFT R10 2x10 : compatible Shimano route 10v, PAS GRX ni Tiagra 4700",
+   "url": "https://www.performancebike.com/microshift-r10-drop-bar-brake-shift-levers-black-standard-reach-sb-r402k/p1356237"
   }
  },
  "families": [
   {
    "id": "shimano-route-10",
    "brand": "Shimano",
-   "label": "Shimano route 10v (avant Tiagra 4700)",
+   "label": "Shimano route 10v (5600/5700/6600/6700/7800/7900/4600, ratio ≈1,7)",
    "system": "mecanique",
    "speeds": 10,
    "pitch": [
     "hg-10"
    ],
-   "src": "gremlin-ratio",
+   "src": [
+    "wikibooks-gear",
+    "bikeradar-4700"
+   ],
    "status": "a_valider"
   },
   {
@@ -310,7 +383,10 @@
    "pitch": [
     "hg-10"
    ],
-   "src": "sram-2014",
+   "src": [
+    "sram-2014",
+    "bc-force10"
+   ],
    "status": "a_valider"
   },
   {
@@ -463,13 +539,15 @@
   {
    "id": "campagnolo-11",
    "brand": "Campagnolo",
-   "label": "Campagnolo 11v mécanique",
+   "label": "Campagnolo 11v 2015+ (Chorus, Record, Super Record, Potenza)",
    "system": "mecanique",
    "speeds": 11,
    "pitch": [
     "campagnolo-11"
    ],
-   "src": "campa-n3w",
+   "src": [
+    "velomine-chorus11"
+   ],
    "status": "a_valider"
   },
   {
@@ -557,6 +635,112 @@
    "system": "mecanique",
    "speeds": 12,
    "src": "ltwoo-a12x",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-7",
+   "brand": "Shimano",
+   "label": "Shimano 7v (route et VTT, dérailleur ratio ≈1,7)",
+   "system": "mecanique",
+   "speeds": 7,
+   "pitch": [
+    "hg-7"
+   ],
+   "src": [
+    "wikibooks-gear"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-8",
+   "brand": "Shimano",
+   "label": "Shimano 8v (route et VTT, dérailleur ratio ≈1,7)",
+   "system": "mecanique",
+   "speeds": 8,
+   "pitch": [
+    "hg-8"
+   ],
+   "src": [
+    "wikibooks-gear"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-9",
+   "brand": "Shimano",
+   "label": "Shimano 9v (route et VTT, dérailleur ratio ≈1,7)",
+   "system": "mecanique",
+   "speeds": 9,
+   "pitch": [
+    "hg-9"
+   ],
+   "src": [
+    "wikibooks-gear"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-vtt-10",
+   "brand": "Shimano",
+   "label": "Shimano VTT 10v Dyna-Sys",
+   "system": "mecanique",
+   "speeds": 10,
+   "pitch": [
+    "hg-10"
+   ],
+   "src": [
+    "mtbr-dynasys",
+    "bc-sl-m4100"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-1-1",
+   "brand": "SRAM",
+   "label": "SRAM VTT 7/8/9v ratio 1:1 (ESP, X.3 à X.0)",
+   "system": "mecanique",
+   "pitch": [
+    "hg-7",
+    "hg-8",
+    "hg-9"
+   ],
+   "src": "halfords-x4",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-1-1-9",
+   "brand": "SRAM",
+   "label": "Manettes SRAM 1:1 9v",
+   "system": "mecanique",
+   "speeds": 9,
+   "pitch": [
+    "hg-9"
+   ],
+   "src": "halfords-x4",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-10",
+   "brand": "Campagnolo",
+   "label": "Campagnolo 9/10v (dérailleurs ≥ 2000)",
+   "system": "mecanique",
+   "speeds": 10,
+   "pitch": [
+    "campagnolo-10"
+   ],
+   "src": "cyclechat-campa",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-11-d",
+   "brand": "Campagnolo",
+   "label": "Campagnolo Centaur 11 (marquage D)",
+   "system": "mecanique",
+   "speeds": 11,
+   "pitch": [
+    "campagnolo-11"
+   ],
+   "src": "rose-centaur11",
    "status": "a_valider"
   }
  ],
@@ -747,6 +931,306 @@
    "level": "incompatible",
    "message": "Eagle 90/70 Transmission et Eagle mécanique : ratios de câble différents.",
    "src": "sram-eagle7090",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-7",
+   "derailleurFamily": "shimano-8",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 7v et dérailleur Shimano 8v : même ratio de dérailleur (≈1,7), route ou VTT.",
+   "src": [
+    "wikibooks-gear",
+    "cyclechat-789"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 7v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-7",
+   "derailleurFamily": "shimano-9",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 7v et dérailleur Shimano 9v : même ratio de dérailleur (≈1,7), route ou VTT.",
+   "src": [
+    "wikibooks-gear",
+    "cyclechat-789"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 7v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-7",
+   "derailleurFamily": "shimano-route-10",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 7v et dérailleur route 10v (ratio ≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 7v obligatoire."
+  },
+  {
+   "shifterFamily": "shimano-route-10",
+   "derailleurFamily": "shimano-7",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette route 10v et dérailleur Shimano 7v : même ratio annoncé, résultats contradictoires selon les utilisateurs.",
+   "src": [
+    "cyclechat-10-9",
+    "wikibooks-gear"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Indexation à vérifier sur toute la cassette 10v ; peut manquer de course de câble."
+  },
+  {
+   "shifterFamily": "shimano-8",
+   "derailleurFamily": "shimano-7",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 8v et dérailleur Shimano 7v : même ratio de dérailleur (≈1,7), route ou VTT.",
+   "src": [
+    "wikibooks-gear",
+    "cyclechat-789"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 8v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-8",
+   "derailleurFamily": "shimano-9",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 8v et dérailleur Shimano 9v : même ratio de dérailleur (≈1,7), route ou VTT.",
+   "src": [
+    "wikibooks-gear",
+    "cyclechat-789"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 8v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-8",
+   "derailleurFamily": "shimano-route-10",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 8v et dérailleur route 10v (ratio ≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 8v obligatoire."
+  },
+  {
+   "shifterFamily": "shimano-route-10",
+   "derailleurFamily": "shimano-8",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette route 10v et dérailleur Shimano 8v : même ratio annoncé, résultats contradictoires selon les utilisateurs.",
+   "src": [
+    "cyclechat-10-9",
+    "wikibooks-gear"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Indexation à vérifier sur toute la cassette 10v ; peut manquer de course de câble."
+  },
+  {
+   "shifterFamily": "shimano-9",
+   "derailleurFamily": "shimano-7",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 9v et dérailleur Shimano 7v : même ratio de dérailleur (≈1,7), route ou VTT.",
+   "src": [
+    "wikibooks-gear",
+    "cyclechat-789"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 9v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-9",
+   "derailleurFamily": "shimano-8",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 9v et dérailleur Shimano 8v : même ratio de dérailleur (≈1,7), route ou VTT.",
+   "src": [
+    "wikibooks-gear",
+    "cyclechat-789"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 9v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-9",
+   "derailleurFamily": "shimano-route-10",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano 9v et dérailleur route 10v (ratio ≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 9v obligatoire."
+  },
+  {
+   "shifterFamily": "shimano-route-10",
+   "derailleurFamily": "shimano-9",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette route 10v et dérailleur Shimano 9v : même ratio annoncé, résultats contradictoires selon les utilisateurs.",
+   "src": [
+    "cyclechat-10-9",
+    "wikibooks-gear"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Indexation à vérifier sur toute la cassette 10v ; peut manquer de course de câble."
+  },
+  {
+   "shifterFamily": "shimano-4700",
+   "derailleurFamily": "shimano-route-10",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette Tiagra 4700 et dérailleur route 10v (5700, 6700…) : ratios différents.",
+   "src": [
+    "bikeradar-4700",
+    "velomine-4700"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-route-10",
+   "derailleurFamily": "shimano-4700",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette route 10v (5700, 6700…) et dérailleur Tiagra 4700 : ratios différents.",
+   "src": [
+    "bikeradar-4700",
+    "velomine-4700"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-vtt-10",
+   "derailleurFamily": "shimano-9",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette VTT 10v Dyna-Sys et dérailleur 9v : environ deux fois plus de câble par cran.",
+   "src": [
+    "mtbr-dynasys"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-9",
+   "derailleurFamily": "shimano-vtt-10",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette 9v et dérailleur VTT 10v Dyna-Sys : ratios différents.",
+   "src": [
+    "mtbr-dynasys"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-1-1-9",
+   "derailleurFamily": "sram-1-1",
+   "side": "arriere",
+   "level": "officiel",
+   "message": "Manette SRAM 1:1 9v et dérailleur SRAM 1:1.",
+   "src": [
+    "halfords-x4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette 9v."
+  },
+  {
+   "shifterFamily": "shimano-7",
+   "derailleurFamily": "sram-1-1",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette Shimano (tirage ≈2:1) et dérailleur SRAM 1:1 (ESP) : incompatibles.",
+   "src": [
+    "halfords-x4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-8",
+   "derailleurFamily": "sram-1-1",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette Shimano (tirage ≈2:1) et dérailleur SRAM 1:1 (ESP) : incompatibles.",
+   "src": [
+    "halfords-x4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-9",
+   "derailleurFamily": "sram-1-1",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette Shimano (tirage ≈2:1) et dérailleur SRAM 1:1 (ESP) : incompatibles.",
+   "src": [
+    "halfords-x4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-1-1-9",
+   "derailleurFamily": "shimano-9",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette SRAM 1:1 et dérailleur Shimano : incompatibles.",
+   "src": [
+    "halfords-x4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "campagnolo-11",
+   "derailleurFamily": "campagnolo-11-d",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Campagnolo 11v 2015+ et Centaur 11 « D » : marquages différents, non compatibles.",
+   "src": [
+    "rose-centaur11"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "campagnolo-11-d",
+   "derailleurFamily": "campagnolo-11",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Centaur 11 « D » et Campagnolo 11v 2015+ : marquages différents, non compatibles.",
+   "src": [
+    "rose-centaur11"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   }

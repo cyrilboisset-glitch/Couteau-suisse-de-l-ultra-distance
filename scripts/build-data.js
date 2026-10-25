@@ -25,7 +25,8 @@ export function checkData({ parts, knowledgeRaw }) {
       const label = `${e.file} / ${table}`;
       if (!e.sources.length) errors.push(`${label} : entrée sans source ${JSON.stringify(e).slice(0, 80)}`);
       if (!['valide', 'a_valider'].includes(e.status)) errors.push(`${label} : statut manquant ou inconnu (${e.status})`);
-      if (table !== 'families') {
+      if (table === 'chainLength') continue;
+      if (table !== 'families' && table !== 'recommendations') {
         try { levelFromName(e.level); } catch (err) { errors.push(`${label} : ${err.message}`); }
         if (!e.message) errors.push(`${label} : message manquant`);
       }
