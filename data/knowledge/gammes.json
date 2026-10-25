@@ -1434,6 +1434,96 @@
    "generation": "Atom",
    "gamme": "Roues libres",
    "status": "a_valider"
+  },
+  {
+   "brand": "Stronglight",
+   "generation": "Stronglight",
+   "gamme": "Pédaliers",
+   "status": "a_valider"
+  },
+  {
+   "brand": "TA",
+   "generation": "TA",
+   "gamme": "Pédaliers",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Velo Orange",
+   "generation": "Velo Orange",
+   "gamme": "Velo Orange",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Sugino",
+   "generation": "Sugino",
+   "gamme": "Pédaliers",
+   "status": "a_valider"
+  },
+  {
+   "brand": "YST",
+   "generation": "Dépannage boîtier",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Simplex",
+   "generation": "Simplex",
+   "gamme": "Manettes",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M700",
+   "gamme": "Deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunTour",
+   "generation": "SunTour XC",
+   "gamme": "XC",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Mafac",
+   "generation": "Mafac",
+   "gamme": "Racer",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Weinmann",
+   "generation": "Weinmann",
+   "gamme": "Vainqueur 999",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Tektro",
+   "generation": "Tektro",
+   "gamme": "Étriers",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunRace",
+   "generation": "Roues libres 7v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunRace",
+   "generation": "Roues libres 6v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "DNP",
+   "generation": "Roues libres 8v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "DNP",
+   "generation": "Roues libres 7v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
   }
  ]
 }

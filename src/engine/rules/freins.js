@@ -111,6 +111,28 @@ export const tirageCable = {
   },
 };
 
+export const porteeEtrier = {
+  id: 'freins.portee',
+  label: 'Portée de l\'étrier ↔ cadre / fourche',
+  between: [['brake_caliper', 'frame']],
+  confidence: 'haute',
+  source: physique('Le patin doit atteindre la piste de la jante : la portée de l\'étrier doit couvrir la distance boulon → jante du cadre et de la fourche.'),
+  evaluate(cal, frame) {
+    if (cal.attrs?.brakeType !== 'jante' || cal.attrs?.mount !== 'etrier_central') return null;
+    if (!frame.attrs?.brakeReach) return null;
+    const g = guard(this, [[cal, ['reachMin', 'reachMax']]]);
+    if (g) return g.finding;
+    const r = frame.attrs.brakeReach;
+    const { reachMin: a, reachMax: b } = cal.attrs;
+    if (r >= a && r <= b) return ok(this, `Portée ${a}–${b} mm, cadre ${r} mm.`);
+    return incompatible(this, r > b
+      ? `Portée ${a}–${b} mm trop courte pour ce cadre (${r} mm) : les patins n'atteignent pas la jante.`
+      : `Portée ${a}–${b} mm trop longue pour ce cadre (${r} mm) : les patins passent sous la jante (risque de toucher le pneu).`, {
+      absolute: false,
+    });
+  },
+};
+
 export const disqueJanteCadre = {
   id: 'freins.fixation',
   label: 'Frein ↔ fixation du cadre (disque ≠ jante)',
@@ -249,7 +271,7 @@ export const diametreMax = {
   },
 };
 
-export const FREINS_RULES = [diametreMax, 
+export const FREINS_RULES = [diametreMax, porteeEtrier, 
   hydrauliqueMecanique, fluide, systemeHydraulique, tirageCable,
   disqueJanteCadre, freinRoue, etrierDisque, formePlaquette, plaquetteDisque, fixationDisque,
 ];

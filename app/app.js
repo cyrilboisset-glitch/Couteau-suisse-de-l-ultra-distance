@@ -64,7 +64,7 @@ const VALUE_LABELS = {
   t47_externe: 'T47 (cuvettes externes)', t47_interne: 'T47 (interne)', flat_mount: 'flat mount', post_mount: 'post mount', is: 'IS',
   court: 'court (route)', long: 'long (V-brake)', resine: 'résine', metal: 'métallique',
   iso_anglais: 'anglais / ISO (1,37" × 24)', italien: 'italien (35 × 24)', francais: 'français', suisse: 'suisse',
-  clavette: 'axe à clavettes', uniglide: 'Uniglide (Shimano ancien)', hg_7: 'HG 7v', carre_jis: 'carré JIS', carre_iso: 'carré ISO',
+  clavette: 'axe à clavettes', sans_filetage: 'sans filetage (serrage)', uniglide: 'Uniglide (Shimano ancien)', hg_7: 'HG 7v', carre_jis: 'carré JIS', carre_iso: 'carré ISO',
 };
 const fmt = (v) => (typeof v === 'boolean' ? (v ? 'oui' : 'non') : VALUE_LABELS[v] ?? v);
 const levelClass = (l) => `l${l}`;

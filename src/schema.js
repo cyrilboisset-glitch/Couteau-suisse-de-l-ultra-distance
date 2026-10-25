@@ -22,7 +22,7 @@ export const ENUMS = Object.freeze({
     'sram_gxp', 'sram_dub', 'axe_30', 'campagnolo_ultratorque', 'campagnolo_powertorque', 'clavette', 'autre',
   ],
   bbShell: [
-    'bsa', 'ita', 'francais', 'suisse', 'bb86', 'bb92', 'bb30', 'pf30', 'bb386evo', 'bbright',
+    'bsa', 'ita', 'francais', 'suisse', 'sans_filetage', 'bb86', 'bb92', 'bb30', 'pf30', 'bb386evo', 'bbright',
     't47_externe', 't47_interne', 'autre',
   ],
   ringInterface: ['bcd', 'direct_mount'],
@@ -134,6 +134,8 @@ export const PART_TYPES = Object.freeze({
       brakeActuation: { ...BRAKE_ATTRS.brakeActuation, required: true },
       mount: a('enum', 'Fixation', { enum: 'brakeMount', required: true }),
       padShape: a('string', 'Forme / référence de plaquette ou patin'),
+      reachMin: a('number', 'Portée mini (étrier sur jante)', { unit: 'mm' }),
+      reachMax: a('number', 'Portée maxi (étrier sur jante)', { unit: 'mm' }),
     },
   },
   rotor: {
@@ -240,6 +242,7 @@ export const PART_TYPES = Object.freeze({
       bbShellWidth: a('number', 'Largeur de coque', { unit: 'mm' }),
       rdHanger: a('enum', 'Patte de dérailleur', { enum: 'frameHanger' }),
       fdMount: a('enum', 'Fixation dérailleur avant', { enum: 'fdMount' }),
+      brakeReach: a('number', 'Portée de frein nécessaire (centre du boulon → piste de la jante)', { unit: 'mm' }),
       brakeMount: a('enum', 'Fixation de frein', { enum: 'brakeMount' }),
       maxRotor: a('int', 'Diamètre de disque maximal autorisé', { unit: 'mm' }),
       chainstayLength: a('number', 'Longueur de base (axe du pédalier → axe de roue)', { unit: 'mm' }),

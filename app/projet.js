@@ -21,6 +21,7 @@ const FRAME_FIELDS = [
   ['frame', 'bbShellWidth', 'Largeur de coque (mm)', null],
   ['frame', 'brakeMount', 'Fixation des freins', 'brakeMount'],
   ['frame', 'maxRotor', 'Disque max autorisé (mm)', null],
+  ['frame', 'brakeReach', 'Portée de frein sur jante (mm, boulon → piste de jante)', null],
   ['frame', 'chainstayLength', 'Longueur de base (mm, axe pédalier → axe roue)', null],
   ['wheel', 'freehub', 'Corps de roue libre (roue arrière)', 'freehub'],
   ['wheel', 'freewheelThread', 'Ou moyeu à visser : filetage de roue libre', 'freewheelThread'],

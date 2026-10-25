@@ -75,6 +75,10 @@ distingué par le moteur (signalé en note) ; les tirages SunTour varient selon 
 - coques de boîtier françaises et suisses, axe à clavettes, corps Uniglide (cassette Hyperglide refusée) ;
 - familles `shimano-6` (SIS 1984) et `shimano-da7400` (manettes 7400 : autre dérailleur = 🟠, mode friction).
 
+- portée des étriers sur jante (`reachMin` / `reachMax`) comparée à la portée du cadre (`brakeReach`, à saisir dans le mode Projet) ; étriers longue portée actuels (Tektro R559 55-73, BR-R650 47-57) pour les cadres anciens ;
+- boîtier sans filetage (serrage) = dépannage 🟠 pour une coque au filetage abîmé ou inconnu ; boîtier français actuel (Velo Orange) ;
+- pédaliers BCD 50,4 / 122 / 144 (TA, Stronglight, Sugino, Campagnolo), roues libres actuelles 6/7/8v (SunRace, DNP), chaînes 5/6v.
+
 Limite : peu de capacités et pignons max publiés pour ces pièces (beaucoup de valeurs de forums ou d'annonces, confiance basse).
 
 ## Documents officiels à ouvrir pour valider en masse

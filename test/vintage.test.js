@@ -63,3 +63,28 @@ describe('premiers systèmes indexés Shimano', () => {
     assert.equal(checkPair(P('shimano-sl-7400'), P('shimano-rd-6207'), kb).level, LEVEL.DEGRADED);
   });
 });
+
+describe('freins sur jante : portée', () => {
+  const frame = (r) => ({ id: 'f', type: 'frame', brand: 'test', ref: 'cadre', attrs: { brakeReach: r, brakeMount: 'etrier_central' }, sources: [{ kind: 'physique' }] });
+  test('cadre vintage 60 mm : Tektro R559 (55-73) passe, BR-R650 (47-57) trop court', () => {
+    assert.ok(checkPair(P('tektro-r559'), frame(60), kb).level <= LEVEL.KNOWN);
+    const r = checkPair(P('shimano-br-r650'), frame(60), kb);
+    assert.equal(r.level, LEVEL.INCOMPATIBLE);
+    assert.ok(r.reasons.some((x) => /trop courte/.test(x)));
+  });
+  test('portée inconnue de l\'étrier : donnée manquante signalée', () => {
+    const r = checkPair(P('shimano-br-r8000'), frame(52), kb);
+    assert.ok(r.missing.some((x) => /reachMin|reachMax/.test(x)));
+  });
+});
+
+describe('boîtiers vintage', () => {
+  const frame = (shell) => ({ id: 'f', type: 'frame', brand: 'test', ref: 'cadre', attrs: { bbShell: shell }, sources: [{ kind: 'physique' }] });
+  test('boîtier français dans une coque française : compatible ; dans une coque anglaise : refusé', () => {
+    assert.ok(checkPair(P('velo-orange-grand-cru-bb-fr'), frame('francais'), kb).level <= LEVEL.KNOWN);
+    assert.equal(checkPair(P('velo-orange-grand-cru-bb-fr'), frame('bsa'), kb).level, LEVEL.INCOMPATIBLE);
+  });
+  test('boîtier sans filetage dans une coque italienne abîmée : dépannage', () => {
+    assert.equal(checkPair(P('yst-bb-sans-filetage'), frame('ita'), kb).level, LEVEL.DEGRADED);
+  });
+});

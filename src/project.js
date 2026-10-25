@@ -59,6 +59,7 @@ const MEASURES = [
   ['front_derailleur', 'frame', 'fdMount', 'Fixation du dérailleur avant sur le cadre (collier et diamètre du tube, braze-on, direct mount)'],
   ['bottom_bracket', 'frame', 'bbShell', 'Standard de la coque de boîtier du cadre (BSA, ITA, PF30, T47…) et sa largeur'],
   ['brake_caliper', 'frame', 'brakeMount', 'Fixations de frein du cadre et de la fourche (flat mount, post mount, IS, étrier, V-brake…)'],
+  ['brake_caliper', 'frame', 'brakeReach', 'Portée de frein du cadre et de la fourche, pour un frein sur jante (vélos anciens : souvent plus longue que les étriers actuels)'],
   ['rotor', 'frame', 'maxRotor', 'Diamètre de disque maximal autorisé par le cadre et la fourche'],
   ['cassette', 'wheel', 'freehub', 'Corps de roue libre de la roue arrière (HG, Micro Spline, XD, XDR, Campagnolo…)'],
   ['brake_caliper', 'wheel', 'brakeInterface', 'Roues : piste de freinage sur jante ou moyeux pour disque'],

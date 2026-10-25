@@ -85,6 +85,8 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `fluidSpec` | Fluide exact (ex. shimano_mineral, sram_maxima_mineral, magura_royal_blood, dot_5_1, dot_4) | string |  |
 | `mount` | Fixation | liste `brakeMount` | **obligatoire** |
 | `padShape` | Forme / référence de plaquette ou patin | string |  |
+| `reachMin` | Portée mini (étrier sur jante) | number (mm) |  |
+| `reachMax` | Portée maxi (étrier sur jante) | number (mm) |  |
 
 ## Disque (`rotor`)
 
@@ -193,6 +195,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `bbShellWidth` | Largeur de coque | number (mm) |  |
 | `rdHanger` | Patte de dérailleur | liste `frameHanger` |  |
 | `fdMount` | Fixation dérailleur avant | liste `fdMount` |  |
+| `brakeReach` | Portée de frein nécessaire (centre du boulon → piste de la jante) | number (mm) |  |
 | `brakeMount` | Fixation de frein | liste `brakeMount` |  |
 | `maxRotor` | Diamètre de disque maximal autorisé | int (mm) |  |
 | `chainstayLength` | Longueur de base (axe du pédalier → axe de roue) | number (mm) |  |
@@ -223,7 +226,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 - `freehub` : `uniglide`, `hg_7`, `hg_8_9_10`, `hg_11_route`, `hg_12_route`, `hg_l2`, `microspline`, `xd`, `xdr`, `n3w`, `campagnolo`, `campagnolo_8`, `autre`
 - `chainConnection` : `maillon_rapide`, `goupille`
 - `spindle` : `carre_jis`, `carre_iso`, `octalink_v1`, `octalink_v2`, `isis`, `shimano_24`, `sram_gxp`, `sram_dub`, `axe_30`, `campagnolo_ultratorque`, `campagnolo_powertorque`, `clavette`, `autre`
-- `bbShell` : `bsa`, `ita`, `francais`, `suisse`, `bb86`, `bb92`, `bb30`, `pf30`, `bb386evo`, `bbright`, `t47_externe`, `t47_interne`, `autre`
+- `bbShell` : `bsa`, `ita`, `francais`, `suisse`, `sans_filetage`, `bb86`, `bb92`, `bb30`, `pf30`, `bb386evo`, `bbright`, `t47_externe`, `t47_interne`, `autre`
 - `ringInterface` : `bcd`, `direct_mount`
 - `brakeType` : `disque`, `jante`
 - `brakeActuation` : `hydraulique`, `mecanique`
