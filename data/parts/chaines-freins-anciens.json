@@ -699,7 +699,6 @@
     "brakeActuation": "hydraulique",
     "fluid": "mineral",
     "fluidSpec": "shimano_mineral",
-    "hydraulicSystem": "shimano-vtt-hydro",
     "mount": "post_mount",
     "padShape": "shimano-B"
    },
@@ -709,7 +708,7 @@
     "biketart-bleedkit"
    ],
    "confidence": "basse",
-   "notes": "Système hydraulique supposé « VTT Shimano » : à valider.",
+   "notes": "Système hydraulique (maître-cylindre) non renseigné par la source : à vérifier avant d’associer un levier.",
    "status": "a_valider"
   },
   {
@@ -728,7 +727,6 @@
     "brakeActuation": "hydraulique",
     "fluid": "mineral",
     "fluidSpec": "shimano_mineral",
-    "hydraulicSystem": "shimano-vtt-hydro",
     "mount": "post_mount",
     "padShape": "shimano-B"
    },
@@ -738,7 +736,7 @@
     "biketart-bleedkit"
    ],
    "confidence": "basse",
-   "notes": "Système hydraulique supposé « VTT Shimano » : à valider.",
+   "notes": "Système hydraulique (maître-cylindre) non renseigné par la source : à vérifier avant d’associer un levier.",
    "status": "a_valider"
   },
   {
@@ -757,7 +755,6 @@
     "brakeActuation": "hydraulique",
     "fluid": "mineral",
     "fluidSpec": "shimano_mineral",
-    "hydraulicSystem": "shimano-vtt-hydro",
     "mount": "post_mount",
     "padShape": "shimano-B"
    },
@@ -767,7 +764,7 @@
     "biketart-bleedkit"
    ],
    "confidence": "basse",
-   "notes": "Système hydraulique supposé « VTT Shimano » : à valider.",
+   "notes": "Système hydraulique (maître-cylindre) non renseigné par la source : à vérifier avant d’associer un levier.",
    "status": "a_valider"
   },
   {

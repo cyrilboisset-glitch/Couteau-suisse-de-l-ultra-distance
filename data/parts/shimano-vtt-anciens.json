@@ -232,6 +232,66 @@
    "kind": "communaute",
    "ref": "Bike Trails Pfannenstiel – RD-M510 Deore 9v : capacité 40T",
    "url": "https://biketrailspfannenstiel.ch/auskunft/shimano-deore-schaltwerk-rd-m510/"
+  },
+  "incycle-slm770": {
+   "kind": "revendeur",
+   "ref": "Incycle – SL-M770 XT gauche 9v, gâchette, compatible triple",
+   "url": "https://www.incycle.com/products/shimano-xt-sl-m770"
+  },
+  "bc-slm770-ind": {
+   "kind": "revendeur",
+   "ref": "bike-components – indicateur pour SL-M770 / SL-M770-A 9v",
+   "url": "https://www.bike-components.de/en/Shimano/XT-SL-M770-Gear-Indicator-9-speed-p18690/"
+  },
+  "incycle-slm670l": {
+   "kind": "revendeur",
+   "ref": "Incycle – SL-M670-L SLX gauche : convertisseur 2/3 plateaux, Dyna-Sys 10v",
+   "url": "https://www.incycle.com/products/shimano-slx-sl-m670l"
+  },
+  "freewheel-slm6000l": {
+   "kind": "revendeur",
+   "ref": "Freewheel – SL-M6000-L Deore gauche 2/3 plateaux, collier",
+   "url": "https://www.freewheel.co.uk/shimano-deore-sl-m6000-deore-shift-lever-band-on-2-3-speed-left-hand-slm6000l"
+  },
+  "bc-slm6000": {
+   "kind": "revendeur",
+   "ref": "bike-components – SL-M6000 2/3 x 10v ; dérailleurs avant 2x10 FD-M617, M618, M6020, M6025, M4100 ; FD-M6000 en 3x10",
+   "url": "https://www.bike-components.de/en/Shimano/Deore-SL-M6000-2-3-10-speed-Shifter-w-Clamp-p56777"
+  },
+  "halfords-slm3100l3": {
+   "kind": "revendeur",
+   "ref": "Halfords – SL-M3100 gauche 3 plateaux (triple), 3x9",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-alivio-sl-m3100-shifter-left-hand--3-speed-triple-799166.html"
+  },
+  "halfords-slm3100l2": {
+   "kind": "revendeur",
+   "ref": "Halfords – SL-M3100 gauche 2 plateaux (double), 2x9",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-alivio-sl-m3100-shifter-left-hand-2-speed-double-799150.html"
+  },
+  "bc-slm3100": {
+   "kind": "revendeur",
+   "ref": "bike-components – SL-M3100 3x9 : dérailleurs avant Altus FD-M370-3 / FD-M371-3…",
+   "url": "https://www.Bike-Components.de/en/Shimano/Alivio-SL-M3100-3-9-speed-Shifter-p83911/"
+  },
+  "ebay-slm590l": {
+   "kind": "revendeur",
+   "ref": "eBay – SL-M590 Deore manette gauche Rapidfire 3 vitesses",
+   "url": "https://www.ebay.de/itm/226532725765"
+  },
+  "mtbiker-fdm590": {
+   "kind": "revendeur",
+   "ref": "MTBiker – FD-M590 Deore 3x9 : collier 34,9 / 31,8 mm, ligne de chaîne 50 mm, grand plateau 48T max, tirage haut et bas",
+   "url": "https://www.mtbiker.shop/shop/components/front-derailleurs/mtb/shimano-deore-fd-m590-rearrangement-3x9-p29676.html"
+  },
+  "cafaba-fdm770": {
+   "kind": "revendeur",
+   "ref": "Cafaba – FD-M770 XT 3x9 top swing, collier multiple 34,9 / 31,8 / 28,6 mm",
+   "url": "https://www.cafaba.com.co/products/shimano-xt-fd-m770-3x9-speed-top-swing-multi-clamp-front-derailleur/201449606"
+  },
+  "rose-fdm3100": {
+   "kind": "revendeur",
+   "ref": "Rose – FD-M3100-M Alivio 3x9 à collier",
+   "url": "https://www.rosebikes.com/p/shimano-alivio-fd-m3100-m-front-derailleur-3-x-9-speed-clamp-attachment-2689550"
   }
  },
  "parts": [
@@ -1406,6 +1466,238 @@
    "confidence": "basse",
    "status": "a_valider",
    "notes": "Pignon max non trouvé."
+  },
+  {
+   "id": "shimano-sl-m590-l",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M590-L",
+   "aliases": [
+    "sl m590 l",
+    "manette avant deore 9v"
+   ],
+   "name": "Deore M590 manette gauche 3 plateaux (9v)",
+   "discipline": "vtt",
+   "generation": "Deore M590 (9v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 3,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt",
+    "frontPositions": 3
+   },
+   "src": [
+    "ebay-slm590l",
+    "tf-m590"
+   ],
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m770-l",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M770-L",
+   "aliases": [
+    "sl m770 l",
+    "manette avant xt 9v"
+   ],
+   "name": "XT M770 manette gauche 3 plateaux (9v)",
+   "discipline": "vtt",
+   "generation": "XT M770 (9v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 3,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt",
+    "frontPositions": 3
+   },
+   "src": [
+    "incycle-slm770",
+    "bc-slm770-ind"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Ne pas confondre avec la SL-M770-10 (10v)."
+  },
+  {
+   "id": "shimano-sl-m3100-l3",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M3100-L (3 plateaux)",
+   "aliases": [
+    "sl m3100 l",
+    "manette avant alivio"
+   ],
+   "name": "Alivio M3100 manette gauche 3 plateaux (9v)",
+   "discipline": "vtt",
+   "generation": "Alivio M3100 (9v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 3,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt",
+    "frontPositions": 3
+   },
+   "src": [
+    "halfords-slm3100l3",
+    "bc-slm3100"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m3100-l2",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M3100-L (2 plateaux)",
+   "aliases": [
+    "sl m3100 l 2",
+    "manette avant alivio double"
+   ],
+   "name": "Alivio M3100 manette gauche 2 plateaux (9v)",
+   "discipline": "vtt",
+   "generation": "Alivio M3100 (9v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt",
+    "frontPositions": 2
+   },
+   "src": "halfords-slm3100l2",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m670-l",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M670-L",
+   "aliases": [
+    "sl m670 l",
+    "manette avant slx 10v"
+   ],
+   "name": "SLX M670 manette gauche 2/3 plateaux (10v)",
+   "discipline": "vtt",
+   "generation": "SLX M670 (10v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 3,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt",
+    "frontPositions": 3
+   },
+   "src": "incycle-slm670l",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Convertible 2 ou 3 plateaux."
+  },
+  {
+   "id": "shimano-sl-m6000-l",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M6000-L",
+   "aliases": [
+    "sl m6000 l",
+    "manette avant deore 10v"
+   ],
+   "name": "Deore M6000 manette gauche 2/3 plateaux (10v)",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 3,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt",
+    "frontPositions": 3
+   },
+   "src": [
+    "freewheel-slm6000l",
+    "bc-slm6000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Convertible 2 ou 3 plateaux."
+  },
+  {
+   "id": "shimano-fd-m590",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-M590",
+   "aliases": [
+    "fd m590",
+    "deore m590 avant"
+   ],
+   "name": "Deore M590 dérailleur avant 3x9 collier 34,9 / 31,8",
+   "discipline": "vtt",
+   "generation": "Deore M590 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "mount": "collier_34_9",
+    "maxRing": 48,
+    "chainline": 50
+   },
+   "src": "mtbiker-fdm590",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Cale 31,8 mm. Tirage haut ou bas."
+  },
+  {
+   "id": "shimano-fd-m770",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-M770",
+   "aliases": [
+    "fd m770",
+    "xt m770 avant"
+   ],
+   "name": "XT M770 dérailleur avant 3x9 top swing collier multiple",
+   "discipline": "vtt",
+   "generation": "XT M770 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "mount": "collier_34_9"
+   },
+   "src": "cafaba-fdm770",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Collier 34,9 avec cales 31,8 / 28,6 mm."
+  },
+  {
+   "id": "shimano-fd-m3100-m",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-M3100-M",
+   "aliases": [
+    "fd m3100",
+    "alivio m3100 avant"
+   ],
+   "name": "Alivio M3100 dérailleur avant 3x9 à collier",
+   "discipline": "vtt",
+   "generation": "Alivio M3100 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "src": "rose-fdm3100",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Version à collier : diamètre non confirmé par la source (champ laissé vide)."
   }
  ]
 }

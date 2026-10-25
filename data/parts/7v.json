@@ -1,0 +1,548 @@
+{
+ "_meta": {
+  "description": "Transmissions 6/7v : Tourney, roues libres, cassettes, chaînes 6-8v, pédaliers axe carré, manettes."
+ },
+ "sources": {
+  "papanui-stef41": {
+   "kind": "revendeur",
+   "ref": "Papanui Cycles – ST-EF41 EZ-Fire Plus 7v",
+   "url": "https://www.papanuicycles.co.nz/products/shimano-st-ef41-7-speed-ez-fire-plus-shifters"
+  },
+  "trek-stef41": {
+   "kind": "revendeur",
+   "ref": "Trekstore – ST-EF41 3x7 pour V-brake, levier 2 doigts",
+   "url": "https://www.trekstore.co.uk/shop/components/brakes/shimano-st-ef41-ez-fire-plus-sti-set-for-v-brakes-3x7-speed-2-finger-lever-13665/option/"
+  },
+  "shimano-rda070": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-A070 Tourney 7v route 3x7 : capacité 37T, petit pignon 11T min, grand pignon 28T max, chaînes HG 6/7/8v",
+   "url": "https://bike.shimano.com/en-EU/product/component/tourney-a070/RD-A070.html"
+  },
+  "99-rda070": {
+   "kind": "revendeur",
+   "ref": "99 Bikes – RD-A070 7/8v fixation sur l'axe (patte)",
+   "url": "https://www.99bikes.co.nz/products/shimano-derailler-rr-7-8sp-tourney-axle-mount"
+  },
+  "shimano-fca070": {
+   "kind": "officiel",
+   "ref": "Shimano – FC-A070 Tourney 2x7/8 50-34, axe carré, boîtier BB-UN300 recommandé",
+   "url": "https://bike.shimano.com/en-EU/product/component/tourney-a070/FC-A070.html"
+  },
+  "veloplus-fcty301": {
+   "kind": "revendeur",
+   "ref": "Veloplus – FC-TY301 3x6/7/8, axe carré, 42-34-24 ou 48-38-28, ligne de chaîne 47,5 / 50 mm, BB-UN101 / BB-UN300 recommandés",
+   "url": "https://veloplus.ee/en/vandad-shimano-fc-ty301-3x678-kaiku-60585"
+  },
+  "rose-fcty501": {
+   "kind": "revendeur",
+   "ref": "Rose – FC-TY501 3x6/7/8 42-34-24 axe carré",
+   "url": "https://www.rosebikes.it/shimano-tourney-fc-ty501-crankset-3-x-678-speed-42-34-24-teeth-2706604"
+  },
+  "velomine-mfm05": {
+   "kind": "revendeur",
+   "ref": "Velomine – roue libre SunRace MFM05 7v 14-28, équivalent Shimano MF-TZ21 / MF-TZ20",
+   "url": "https://velomine.com/products/fw-multi-sunrace-mfm05-14-28-7s-frict-bk-l"
+  },
+  "condor-tz500": {
+   "kind": "revendeur",
+   "ref": "Condor – MF-TZ500 remplace la roue libre MF-TZ21, 14-28 ou 14-34",
+   "url": "https://www.condorcycles.com/products/shimano-tourney-mf-tz500-7-speed-multiple-freewheel"
+  },
+  "atc-hg200-7": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – CS-HG200-7 : 12-28 (12-14-16-18-21-24-28), 12-32 (12-14-16-18-21-26-32), chaînes HG/IG 6/7/8v",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-cs-hg200-7-speed-cassette"
+  },
+  "sb-hg200-7": {
+   "kind": "revendeur",
+   "ref": "Sports Basement – CS-HG200-7 remplace la CS-HG20-7",
+   "url": "https://shop.sportsbasement.com/products/cs-hg200-7spd-12-32t-csst"
+  },
+  "rose-slrv400": {
+   "kind": "revendeur",
+   "ref": "Rose – SL-RV400-7R Revoshift 7v droite (remplace SL-RS35)",
+   "url": "https://www.rosebikes.com/p/shimano-tourney-sl-rv400-7r-revoshift-twist-shifter-7-speed-right-2713272"
+  },
+  "99-sltx50": {
+   "kind": "revendeur",
+   "ref": "99 Bikes – SL-TX50 7v : arrière indexé (SIS), avant friction",
+   "url": "https://99bikes.com.au/products/shimano-sl-tx50-7-speed-shift-lever-set-right-sis-left"
+  },
+  "shimano-fdty300": {
+   "kind": "officiel",
+   "ref": "Shimano – FD-TY300 down swing 3x7/6, collier 28,6 / 31,8 mm, ligne de chaîne 47,5 mm, grand plateau 42T",
+   "url": "https://bike.shimano.com/en-EU/product/component/tourney/FD-TY300-DS6.html"
+  },
+  "shimano-fdty500": {
+   "kind": "officiel",
+   "ref": "Shimano – FD-TY500 top swing 3x7/6, collier 34,9 mm (28,6 / 31,8 avec adaptateur), tirage haut et bas",
+   "url": "https://bike.shimano.com/en-EU/product/component/tourney/FD-TY500-TS6.html"
+  },
+  "shimano-fdtz500": {
+   "kind": "officiel",
+   "ref": "Shimano – FD-TZ500 down swing 3 (friction) x 8/7, collier 28,6 / 31,8 mm",
+   "url": "https://bike.shimano.com/en-AU/product/component/tourney-tz500/FD-TZ500-DS6.html"
+  },
+  "99-kmc-z": {
+   "kind": "revendeur",
+   "ref": "99 Bikes – KMC Z7 6/7/8v 116 maillons, axe 7,3 mm",
+   "url": "https://99bikes.com.au/products/kmc-z-series-6-8-speed-chain"
+  },
+  "rose-kmc-z8": {
+   "kind": "revendeur",
+   "ref": "Rose – KMC Z8 8v 114 maillons, compatible 6/7/8v Shimano, SRAM, Campagnolo",
+   "url": "https://www.rosebikes.com/p/kmc-z8-8-speed-chain-2677488"
+  },
+  "pb-kmc-z83": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – KMC Z8.3 6/7/8v (dont Shimano HG 8v) 116 maillons",
+   "url": "https://performancebike.com/kmc-z8.3-nickleplated-chain-silver-grey-68-speed-116-links-z8.3-116l-np-gy/p871909"
+  },
+  "pb-kmc-z81": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – KMC Z8.1 6/7v et moyeux à vitesses intégrées 8v (pas pour HG 8v)",
+   "url": "https://www.performancebike.com/kmc-z8.1-nickleplated-chain-silver-grey-68-speed-116-links-z8.1-x-116l-np-gy/p943505"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-st-ef41-7",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF41 (3x7)",
+   "aliases": [
+    "st ef41",
+    "ef41",
+    "ez fire 7v"
+   ],
+   "name": "Shimano ST-EF41 EZ-Fire Plus 3x7 (manettes + leviers V-brake)",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt",
+    "frontPositions": 3,
+    "brakeActuation": "mecanique",
+    "cablePull": "long"
+   },
+   "src": [
+    "papanui-stef41",
+    "trek-stef41"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-rv400-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-RV400-7R",
+   "aliases": [
+    "sl rv400",
+    "revoshift 7",
+    "poignee tournante 7v"
+   ],
+   "name": "Shimano Tourney Revoshift SL-RV400 7v (poignée tournante droite)",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "poignee_tournante"
+   },
+   "src": "rose-slrv400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-tx50-7",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-TX50 (7v)",
+   "aliases": [
+    "sl tx50",
+    "manette pouce 7v"
+   ],
+   "name": "Shimano Tourney SL-TX50 manettes pouce 7v (arrière indexé)",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "autre"
+   },
+   "src": "99-sltx50",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Manette avant à friction (non indexée) dans le même lot."
+  },
+  {
+   "id": "shimano-rd-a070",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-A070",
+   "aliases": [
+    "rd a070",
+    "tourney a070",
+    "tourney route 7v"
+   ],
+   "name": "Shimano Tourney A070 7v route",
+   "discipline": "route",
+   "generation": "Tourney A070 (7v)",
+   "attrs": {
+    "system": "mecanique",
+    "speeds": 7,
+    "family": "shimano-7",
+    "maxCog": 28,
+    "minCog": 11,
+    "totalCapacity": 37,
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "shimano-rda070",
+    "99-rda070"
+   ],
+   "confidence": "haute",
+   "status": "a_valider",
+   "notes": "Fixation sur l'axe de roue (patte d'adaptation) selon un revendeur : type de fixation laissé vide."
+  },
+  {
+   "id": "shimano-fc-a070-50-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-A070 50-34",
+   "aliases": [
+    "fc a070",
+    "tourney a070 pedalier"
+   ],
+   "name": "Shimano Tourney A070 2x7/8 50-34 (axe carré)",
+   "discipline": "route",
+   "generation": "Tourney A070 (7v)",
+   "attrs": {
+    "speeds": 8,
+    "spindle": "carre_jis",
+    "chainrings": 2,
+    "teeth": "50-34"
+   },
+   "src": "shimano-fca070",
+   "confidence": "haute",
+   "status": "a_valider",
+   "notes": "Axe carré, boîtier BB-UN300 (JIS) recommandé par Shimano."
+  },
+  {
+   "id": "shimano-fc-ty301-42-34-24",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-TY301 42-34-24",
+   "aliases": [
+    "fc ty301",
+    "tourney ty301"
+   ],
+   "name": "Shimano Tourney TY301 42-34-24 (axe carré)",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "speeds": 8,
+    "spindle": "carre_jis",
+    "chainrings": 3,
+    "teeth": "42-34-24",
+    "chainline": 47.5
+   },
+   "src": "veloplus-fcty301",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévu 3x6/7/8. Existe aussi en ligne de chaîne 50 mm."
+  },
+  {
+   "id": "shimano-fc-ty301-48-38-28",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-TY301 48-38-28",
+   "aliases": [
+    "fc ty301 48"
+   ],
+   "name": "Shimano Tourney TY301 48-38-28 (axe carré)",
+   "discipline": "autre",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "speeds": 8,
+    "spindle": "carre_jis",
+    "chainrings": 3,
+    "teeth": "48-38-28"
+   },
+   "src": "veloplus-fcty301",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-ty501-42-34-24",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-TY501 42-34-24",
+   "aliases": [
+    "fc ty501",
+    "tourney ty501"
+   ],
+   "name": "Shimano Tourney TY501 42-34-24 (axe carré)",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "teeth": "42-34-24",
+    "chainline": 50
+   },
+   "src": "rose-fcty501",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Axe carré : type (JIS / ISO) non précisé par la source, champ laissé vide."
+  },
+  {
+   "id": "shimano-mf-tz21-14-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-TZ21 14-28",
+   "aliases": [
+    "mf tz21",
+    "roue libre 7v tz21"
+   ],
+   "name": "Roue libre Shimano MF-TZ21 7v 14-28 (remplacée par MF-TZ500)",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 7,
+    "minCog": 14,
+    "maxCog": 28,
+    "pitch": "hg-7"
+   },
+   "src": [
+    "condor-tz500",
+    "velomine-mfm05"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Roue libre à visser : moyeux à visser uniquement."
+  },
+  {
+   "id": "shimano-cs-hg200-7-12-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG200-7 12-28",
+   "aliases": [
+    "hg200 7 12-28",
+    "cassette 7v"
+   ],
+   "name": "Cassette HG200 7v 12-28",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 7,
+    "minCog": 12,
+    "maxCog": 28,
+    "pitch": "hg-7",
+    "freehub": "hg_7",
+    "cogs": "12-14-16-18-21-24-28"
+   },
+   "src": [
+    "atc-hg200-7",
+    "sb-hg200-7"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Remplace la CS-HG20-7. Corps 7v, ou 8/9/10v avec entretoise."
+  },
+  {
+   "id": "shimano-cs-hg200-7-12-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG200-7 12-32",
+   "aliases": [
+    "hg200 7 12-32"
+   ],
+   "name": "Cassette HG200 7v 12-32",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 7,
+    "minCog": 12,
+    "maxCog": 32,
+    "pitch": "hg-7",
+    "freehub": "hg_7",
+    "cogs": "12-14-16-18-21-26-32"
+   },
+   "src": "atc-hg200-7",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-ty300",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-TY300 (31,8)",
+   "aliases": [
+    "fd ty300",
+    "tourney avant"
+   ],
+   "name": "Shimano Tourney TY300 dérailleur avant 3x7 down swing collier 31,8",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "speeds": 7,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "mount": "collier_31_8",
+    "maxRing": 42,
+    "chainline": 47.5
+   },
+   "src": "shimano-fdty300",
+   "confidence": "haute",
+   "status": "a_valider",
+   "notes": "Existe aussi en collier 28,6 mm."
+  },
+  {
+   "id": "shimano-fd-ty500",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-TY500",
+   "aliases": [
+    "fd ty500"
+   ],
+   "name": "Shimano Tourney TY500 dérailleur avant 3x7 top swing collier 34,9",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "speeds": 7,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "mount": "collier_34_9"
+   },
+   "src": "shimano-fdty500",
+   "confidence": "haute",
+   "status": "a_valider",
+   "notes": "28,6 / 31,8 mm avec adaptateur."
+  },
+  {
+   "id": "shimano-fd-tz500",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-TZ500 (28,6)",
+   "aliases": [
+    "fd tz500"
+   ],
+   "name": "Shimano Tourney TZ500 dérailleur avant 3 (friction) x 7/8 collier 28,6",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "speeds": 7,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "mount": "collier_28_6"
+   },
+   "src": "shimano-fdtz500",
+   "confidence": "haute",
+   "status": "a_valider",
+   "notes": "Prévu pour manette avant à friction. Existe en 31,8 mm."
+  },
+  {
+   "id": "kmc-z7",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "Z7",
+   "aliases": [
+    "kmc z7"
+   ],
+   "name": "Chaîne KMC Z7 6/7/8v",
+   "discipline": "autre",
+   "generation": "6/7/8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false,
+    "chainType": "kmc-8",
+    "links": 116
+   },
+   "src": "99-kmc-z",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévue 6, 7 et 8 vitesses."
+  },
+  {
+   "id": "kmc-z8",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "Z8",
+   "aliases": [
+    "kmc z8"
+   ],
+   "name": "Chaîne KMC Z8 8v (6/7/8v)",
+   "discipline": "autre",
+   "generation": "6/7/8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false,
+    "chainType": "kmc-8",
+    "links": 114
+   },
+   "src": "rose-kmc-z8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "kmc-z8-3",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "Z8.3",
+   "aliases": [
+    "kmc z8.3",
+    "z83"
+   ],
+   "name": "Chaîne KMC Z8.3 6/7/8v",
+   "discipline": "autre",
+   "generation": "6/7/8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false,
+    "chainType": "kmc-8",
+    "links": 116
+   },
+   "src": "pb-kmc-z83",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "kmc-z8-1",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "Z8.1",
+   "aliases": [
+    "kmc z8.1",
+    "z81"
+   ],
+   "name": "Chaîne KMC Z8.1 6/7v (et moyeux à vitesses intégrées 8v)",
+   "discipline": "autre",
+   "generation": "6/7v",
+   "attrs": {
+    "speeds": 7,
+    "flattop": false,
+    "chainType": "kmc-7",
+    "links": 116
+   },
+   "src": "pb-kmc-z81",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pas pour une transmission HG 8v à dérailleur."
+  }
+ ]
+}

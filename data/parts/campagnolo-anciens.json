@@ -42,6 +42,21 @@
    "kind": "revendeur",
    "ref": "Halfords – cuvettes Ultra-Torque BSA OC12 : pédaliers Ultra-Torque uniquement",
    "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/campagnolo-ultra-torque-bottom-bracket-cups-bsa-oc12-reg-822382.html"
+  },
+  "velomine-ergo-spring": {
+   "kind": "revendeur",
+   "ref": "Velomine – ressort de levier Ergopower : Mirage 9v et Veloce 9v 2001-03, Centaur / Chorus / Record 9-10v 2001-03",
+   "url": "https://velomine.com/products/campagnolo-ergopower-right-release-lever-return-spring"
+  },
+  "retro-campa-9-question": {
+   "kind": "communaute",
+   "ref": "Retrobike – systèmes Campagnolo 9v d'avant et d'après 2001 différents ; dérailleurs 9/10v récents incompatibles avec les Ergo d'avant 2001 sans changer l'index",
+   "url": "https://www.retrobike.co.uk/threads/campagnolo-nine-speed-question.227823"
+  },
+  "ebay-ec-re500": {
+   "kind": "revendeur",
+   "ref": "eBay – cocottes EC-RE500 pour Ergopower 8 et 9v Record, Chorus, Centaur, Veloce",
+   "url": "https://www.ebay.com/itm/306262249003"
   }
  },
  "parts": [
@@ -307,6 +322,280 @@
    "confidence": "moyenne",
    "status": "a_valider",
    "notes": "Existe aussi pour BB30, BB86, PF30, T47… (non saisis)."
+  },
+  {
+   "id": "campagnolo-ep-record-9-2001",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Record 9v (2001-2003)",
+   "aliases": [
+    "ergopower record 9",
+    "record 9v",
+    "ergo 9v"
+   ],
+   "name": "Ergopower Record 9v (2001 et après)",
+   "discipline": "route",
+   "generation": "Record 9 (2001+)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "velomine-ergo-spring",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "À partir de 2001 : même ratio que les dérailleurs Campagnolo 9 et 10v récents."
+  },
+  {
+   "id": "campagnolo-ep-chorus-9-2001",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Chorus 9v (2001-2003)",
+   "aliases": [
+    "ergopower chorus 9",
+    "chorus 9v",
+    "ergo 9v"
+   ],
+   "name": "Ergopower Chorus 9v (2001 et après)",
+   "discipline": "route",
+   "generation": "Chorus 9 (2001+)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "velomine-ergo-spring",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "À partir de 2001 : même ratio que les dérailleurs Campagnolo 9 et 10v récents."
+  },
+  {
+   "id": "campagnolo-ep-centaur-9-2001",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Centaur 9v (2001-2003)",
+   "aliases": [
+    "ergopower centaur 9",
+    "centaur 9v",
+    "ergo 9v"
+   ],
+   "name": "Ergopower Centaur 9v (2001 et après)",
+   "discipline": "route",
+   "generation": "Centaur 9 (2001+)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "velomine-ergo-spring",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "À partir de 2001 : même ratio que les dérailleurs Campagnolo 9 et 10v récents."
+  },
+  {
+   "id": "campagnolo-ep-veloce-9-2001",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Veloce 9v (2001-2003)",
+   "aliases": [
+    "ergopower veloce 9",
+    "veloce 9v",
+    "ergo 9v"
+   ],
+   "name": "Ergopower Veloce 9v (2001 et après)",
+   "discipline": "route",
+   "generation": "Veloce 9 (2001+)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "velomine-ergo-spring",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "À partir de 2001 : même ratio que les dérailleurs Campagnolo 9 et 10v récents."
+  },
+  {
+   "id": "campagnolo-ep-mirage-9-2001",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Mirage 9v (2001-2003)",
+   "aliases": [
+    "ergopower mirage 9",
+    "mirage 9v",
+    "ergo 9v"
+   ],
+   "name": "Ergopower Mirage 9v (2001 et après)",
+   "discipline": "route",
+   "generation": "Mirage 9 (2001+)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "velomine-ergo-spring",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "À partir de 2001 : même ratio que les dérailleurs Campagnolo 9 et 10v récents."
+  },
+  {
+   "id": "campagnolo-ep-record-9-ancien",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Record 9v (avant 2001)",
+   "aliases": [
+    "ergopower record 9 ancien",
+    "record 9v 1999"
+   ],
+   "name": "Ergopower Record 9v (1997-2000)",
+   "discipline": "route",
+   "generation": "Record 9 (avant 2001)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-8-9-ancien",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "retro-campa-9-question",
+    "ebay-ec-re500"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Avant 2001 : ratio des dérailleurs 8/9v anciens ; avec un dérailleur récent, dépannage seulement. Vérifier l'année du levier."
+  },
+  {
+   "id": "campagnolo-ep-chorus-9-ancien",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Chorus 9v (avant 2001)",
+   "aliases": [
+    "ergopower chorus 9 ancien",
+    "chorus 9v 1999"
+   ],
+   "name": "Ergopower Chorus 9v (1997-2000)",
+   "discipline": "route",
+   "generation": "Chorus 9 (avant 2001)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-8-9-ancien",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "retro-campa-9-question",
+    "ebay-ec-re500"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Avant 2001 : ratio des dérailleurs 8/9v anciens ; avec un dérailleur récent, dépannage seulement. Vérifier l'année du levier."
+  },
+  {
+   "id": "campagnolo-ep-veloce-9-ancien",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Veloce 9v (avant 2001)",
+   "aliases": [
+    "ergopower veloce 9 ancien",
+    "veloce 9v 1999"
+   ],
+   "name": "Ergopower Veloce 9v (1997-2000)",
+   "discipline": "route",
+   "generation": "Veloce 9 (avant 2001)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "campagnolo-8-9-ancien",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "retro-campa-9-question",
+    "ebay-ec-re500"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Avant 2001 : ratio des dérailleurs 8/9v anciens ; avec un dérailleur récent, dépannage seulement. Vérifier l'année du levier."
+  },
+  {
+   "id": "campagnolo-ep-record-8",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Record 8v",
+   "aliases": [
+    "ergopower record 8",
+    "record 8v"
+   ],
+   "name": "Ergopower Record 8v",
+   "discipline": "route",
+   "generation": "Record 8",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "campagnolo-8-9-ancien",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "ebay-ec-re500",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Ergopower 8 vitesses (années 1990). avec un dérailleur récent, dépannage seulement. Vérifier l'année du levier."
+  },
+  {
+   "id": "campagnolo-ep-chorus-8",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Chorus 8v",
+   "aliases": [
+    "ergopower chorus 8",
+    "chorus 8v"
+   ],
+   "name": "Ergopower Chorus 8v",
+   "discipline": "route",
+   "generation": "Chorus 8",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "campagnolo-8-9-ancien",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "ebay-ec-re500",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Ergopower 8 vitesses (années 1990). avec un dérailleur récent, dépannage seulement. Vérifier l'année du levier."
   }
  ]
 }

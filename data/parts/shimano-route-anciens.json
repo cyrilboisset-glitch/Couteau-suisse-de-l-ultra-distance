@@ -1005,8 +1005,7 @@
     "speeds": 11,
     "chainrings": 2,
     "system": "mecanique",
-    "family": "shimano-route-11",
-    "mount": "collier_34_9"
+    "family": "shimano-route-11"
    },
    "src": [
     "sigma-fd5800",
@@ -1014,7 +1013,7 @@
    ],
    "confidence": "basse",
    "status": "a_valider",
-   "notes": "Diamètre de collier non confirmé (34,9 mm supposé par la base : vérifier) ; capacité non trouvée."
+   "notes": "Version à collier : diamètre non confirmé par la source (champ laissé vide). Capacité non trouvée."
   },
   {
    "id": "shimano-fd-5700-f",

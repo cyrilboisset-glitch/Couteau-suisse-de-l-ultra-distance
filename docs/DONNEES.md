@@ -55,11 +55,17 @@ chaînes et freins). Standards ajoutés dans `data/knowledge/transmission.json` 
 - SRAM 1:1 (7/8/9v) ↔ Exact Actuation (10v) ↔ X-Actuation (VTT 11v) : ❌ ;
 - route Shimano 11v : 9000, 6800, 5800 rangés dans la même famille que R9100 / R8000 / R7000.
 
-Limites connues : beaucoup de pignons max et de capacités non trouvés (champ vide, la pièce
-reste proposée dans « remplaçants non vérifiables ») ; tirage des étriers route Shimano
-« SLR » / « nouveau Super SLR » non distingué par le moteur (signalé en note) ; pas encore
-de manettes avant VTT 9v / 10v, de manettes Campagnolo 9v, de Suntour, Sachs, Hayes,
-Hope ni Formula.
+Ajouts suivants :
+
+- familles `suntour-accushift` (↔ Shimano 7/8v : 🟠 essai-erreur) et `sachs-2-1` (Sachs non ESP ↔ Shimano 7/8/9v : 🟢) ;
+- Ergopower Campagnolo 8v / 9v séparés avant 2001 (`campagnolo-8-9-ancien`) et à partir de 2001 (`campagnolo-10`) ;
+- huiles minérales de marques différentes (Shimano, Magura, Formula) : 🟠 dépannage d'urgence, purge complète au retour ; DOT ↔ minéral reste une exclusion absolue ;
+- manettes avant VTT 9v / 10v, Hayes, Hope, Formula, références 6/7v (Tourney, roues libres, cassettes HG200-7, chaînes KMC Z).
+
+Limites connues : beaucoup de pignons max, capacités, fixations de frein et normes DOT
+exactes non trouvés (champ vide : la pièce reste proposée dans « remplaçants non
+vérifiables ») ; tirage des étriers route Shimano « SLR » / « nouveau Super SLR » non
+distingué par le moteur (signalé en note) ; les tirages SunTour varient selon les années.
 
 ## Documents officiels à ouvrir pour valider en masse
 

@@ -1,15 +1,97 @@
 {
-  "_meta": { "description": "Freins : systèmes hydrauliques, fluides exacts, adaptateurs de fixation." },
-  "sources": {
-    "cyclon-dot": { "kind": "revendeur", "ref": "CyclOn DOT 5.1 (fiche Mantel) : miscible avec DOT 3, DOT 4, DOT 5.1 (FMVSS 116) ; jamais avec huile minérale ni DOT 5 silicone", "url": "https://www.mantel.com/it/cyclon-dot-51" },
-    "shimano-ma-f160pd": { "kind": "revendeur", "ref": "Rose Bikes – Shimano SM-MA-F160P/DA : étrier post mount sur fourche flat mount, disque 160 mm", "url": "https://www.rosebikes.com/shimano-flatmountpostmount-front-wheel-disc-brake-adapter-sm-ma-f160-pda-o160mm-756371" }
+ "_meta": {
+  "description": "Freins : systèmes hydrauliques, fluides exacts, adaptateurs de fixation."
+ },
+ "sources": {
+  "cyclon-dot": {
+   "kind": "revendeur",
+   "ref": "CyclOn DOT 5.1 (fiche Mantel) : miscible avec DOT 3, DOT 4, DOT 5.1 (FMVSS 116) ; jamais avec huile minérale ni DOT 5 silicone",
+   "url": "https://www.mantel.com/it/cyclon-dot-51"
   },
-  "fluidFits": [
-    { "leverFluid": "dot_4", "caliperFluid": "dot_5_1", "level": "connu", "message": "DOT 4 et DOT 5.1 sont miscibles (même base glycol, norme FMVSS 116).", "limitation": "Purger entièrement avec le fluide préconisé dès que possible.", "src": "cyclon-dot", "confidence": "moyenne", "status": "a_valider" },
-    { "leverFluid": "dot_3", "caliperFluid": "dot_5_1", "level": "connu", "message": "DOT 3 et DOT 5.1 sont miscibles (FMVSS 116).", "limitation": "Purger entièrement avec le fluide préconisé dès que possible.", "src": "cyclon-dot", "confidence": "moyenne", "status": "a_valider" },
-    { "leverFluid": "dot_3", "caliperFluid": "dot_4", "level": "connu", "message": "DOT 3 et DOT 4 sont miscibles (FMVSS 116).", "limitation": "Purger entièrement avec le fluide préconisé dès que possible.", "src": "cyclon-dot", "confidence": "moyenne", "status": "a_valider" }
-  ],
-  "brakeMountAdapters": [
-    { "caliperMount": "post_mount", "frameMount": "flat_mount", "level": "officiel", "adapter": "Adaptateur flat mount → post mount (ex. Shimano SM-MA-F160P/DA à l'avant, disque 160 mm)", "message": "Étrier post mount sur fourche flat mount via adaptateur.", "limitation": "Adaptateur spécifique avant/arrière et diamètre de disque.", "src": "shimano-ma-f160pd", "confidence": "moyenne", "status": "a_valider" }
-  ]
+  "shimano-ma-f160pd": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – Shimano SM-MA-F160P/DA : étrier post mount sur fourche flat mount, disque 160 mm",
+   "url": "https://www.rosebikes.com/shimano-flatmountpostmount-front-wheel-disc-brake-adapter-sm-ma-f160-pda-o160mm-756371"
+  },
+  "mtbr-cura-oil": {
+   "kind": "communaute",
+   "ref": "MTBR – Formula Cura : en cas de panne, une autre huile minérale (Shimano, Magura) plutôt que rester bloqué ; purge complète ensuite",
+   "url": "https://www.mtbr.com/posts/13732089"
+  }
+ },
+ "fluidFits": [
+  {
+   "leverFluid": "dot_4",
+   "caliperFluid": "dot_5_1",
+   "level": "connu",
+   "message": "DOT 4 et DOT 5.1 sont miscibles (même base glycol, norme FMVSS 116).",
+   "limitation": "Purger entièrement avec le fluide préconisé dès que possible.",
+   "src": "cyclon-dot",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "leverFluid": "dot_3",
+   "caliperFluid": "dot_5_1",
+   "level": "connu",
+   "message": "DOT 3 et DOT 5.1 sont miscibles (FMVSS 116).",
+   "limitation": "Purger entièrement avec le fluide préconisé dès que possible.",
+   "src": "cyclon-dot",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "leverFluid": "dot_3",
+   "caliperFluid": "dot_4",
+   "level": "connu",
+   "message": "DOT 3 et DOT 4 sont miscibles (FMVSS 116).",
+   "limitation": "Purger entièrement avec le fluide préconisé dès que possible.",
+   "src": "cyclon-dot",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "leverFluid": "shimano_mineral",
+   "caliperFluid": "magura_royal_blood",
+   "level": "depannage",
+   "message": "Huiles minérales de marques différentes : dépannage d'urgence seulement.",
+   "limitation": "Viscosité et joints non garantis : purger entièrement avec l'huile du constructeur dès le retour.",
+   "src": "mtbr-cura-oil",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "leverFluid": "shimano_mineral",
+   "caliperFluid": "formula_mineral",
+   "level": "depannage",
+   "message": "Huiles minérales de marques différentes : dépannage d'urgence seulement.",
+   "limitation": "Viscosité et joints non garantis : purger entièrement avec l'huile du constructeur dès le retour.",
+   "src": "mtbr-cura-oil",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "leverFluid": "magura_royal_blood",
+   "caliperFluid": "formula_mineral",
+   "level": "depannage",
+   "message": "Huiles minérales de marques différentes : dépannage d'urgence seulement.",
+   "limitation": "Viscosité et joints non garantis : purger entièrement avec l'huile du constructeur dès le retour.",
+   "src": "mtbr-cura-oil",
+   "confidence": "basse",
+   "status": "a_valider"
+  }
+ ],
+ "brakeMountAdapters": [
+  {
+   "caliperMount": "post_mount",
+   "frameMount": "flat_mount",
+   "level": "officiel",
+   "adapter": "Adaptateur flat mount → post mount (ex. Shimano SM-MA-F160P/DA à l'avant, disque 160 mm)",
+   "message": "Étrier post mount sur fourche flat mount via adaptateur.",
+   "limitation": "Adaptateur spécifique avant/arrière et diamètre de disque.",
+   "src": "shimano-ma-f160pd",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ]
 }

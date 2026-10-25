@@ -1,0 +1,559 @@
+{
+ "_meta": {
+  "description": "SunTour, SR Suntour, Sachs, Hayes, Hope, Formula."
+ },
+ "sources": {
+  "bf-xct-lite": {
+   "kind": "communaute",
+   "ref": "BikeForums – dérailleur SunTour XCT Lite 7v (Schwinn 1993) avec manette Shimano SL-M310 et cassette Shimano",
+   "url": "https://m.bikeforums.net/showthread.php?p=20118476"
+  },
+  "velomine-xcc-42": {
+   "kind": "revendeur",
+   "ref": "Velomine – SR Suntour XCC CW14 42-34-24, axe carré, 3x6/7/8, équivalent Shimano FC-M171 / FC-M131",
+   "url": "https://velomine.com/products/crankset-srst-xcc-cw14-170x42-34-24-sqr-bk"
+  },
+  "incycle-xcc": {
+   "kind": "revendeur",
+   "ref": "Incycle – SR Suntour XCC 24/34/42, axe carré JIS, plateaux non remplaçables",
+   "url": "https://www.incycle.com/products/sr-suntour-xcc"
+  },
+  "velomine-xcc-48": {
+   "kind": "revendeur",
+   "ref": "Velomine – SR Suntour XCC CW14 48-38-28 axe carré avec garde-chaîne",
+   "url": "https://velomine.com/products/crankset-srst-xcc-cw14-170x48-38-28-sqr-w-cg-bk"
+  },
+  "velomine-xcc-42-22": {
+   "kind": "revendeur",
+   "ref": "Velomine – SR Suntour XCC CW19 42-32-22 axe carré",
+   "url": "https://velomine.com/products/crankset-srst-xcc-cw19-170x42-32-22-sqr-bk"
+  },
+  "dtm-1999": {
+   "kind": "officiel",
+   "ref": "Catalogue SRAM 1999 (DTM) : manettes et dérailleurs 9v 9.0SL, 9.0, 7.0 Plasma, Quarz, Neos",
+   "url": "https://manualzilla.com/doc/5694400/1999-dtm-mtb"
+  },
+  "retro-sachs": {
+   "kind": "communaute",
+   "ref": "Retrobike – Sachs Plasma, Quarz, Neos, Centera : tirage type Shimano ; New Success Ergo au tirage Shimano 7v",
+   "url": "https://www.retrobike.co.uk/threads/sachs-wavy-shifters.67882"
+  },
+  "bf-new-success": {
+   "kind": "communaute",
+   "ref": "BikeForums – leviers Sachs New Success Ergo prévus pour tirage Shimano 7v",
+   "url": "https://www.bikeforums.net/19472812-post4.html"
+  },
+  "stw-hayes-dot": {
+   "kind": "communaute",
+   "ref": "Singletrack – consigne Hayes citée (Stroker Trail) : DOT 4 ou DOT 3 neuf uniquement",
+   "url": "https://singletrackworld.com/forum/bike-forum/brake-questions/"
+  },
+  "nashbar-hayes-dot51": {
+   "kind": "revendeur",
+   "ref": "Nashbar – fluide Hayes DOT 5.1 : pas dans un système prévu pour minéral, DOT 3, DOT 4 ou DOT 5.0 ; voir le manuel du frein",
+   "url": "https://nashbar.com/hayes-dot5.1-hydraulic-brake-fluid-98-36143-p/p1620752"
+  },
+  "wwc-hayes": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – plaquettes Hayes Stroker Ryde / Dyno / Radar (même forme)",
+   "url": "https://worldwidecyclery.com/collections/hayes?page=1"
+  },
+  "biketart-bleedkit": {
+   "kind": "revendeur",
+   "ref": "Biketart (Bleedkit) – huile minérale : Shimano, Magura, Tektro, Formula Cura… ; DOT : Hayes, Hope, SRAM, Avid, Formula ancien",
+   "url": "https://www.biketart.com/products/bleedkit-fluid-gold-hydraulic-disc-brake-oil"
+  },
+  "b24-hope-tech3": {
+   "kind": "revendeur",
+   "ref": "bike24 – kit de purge Hope Tech 3 : DOT 5.1",
+   "url": "https://www.bike24.com/p21026268.html"
+  },
+  "pb-hope-rx4": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – étrier Hope RX4+ route / gravel DOT, flat mount ; plaquettes communes avec l'étrier VTT Tech E4",
+   "url": "https://www.performancebike.com/hope-rx4-road-gravel-disc-brake-caliper-black-hydraulic-hbspc71n/p1620649"
+  },
+  "bc-formula-oil": {
+   "kind": "revendeur",
+   "ref": "bike-components – huile minérale Formula pour Cura, Cura E, Cura 4",
+   "url": "https://www.bike-components.de/en/Formula/Mineral-Oil-Brake-Fluid-for-Cura-Cura-E-p52690/"
+  },
+  "pinkbike-cura": {
+   "kind": "presse",
+   "ref": "Pinkbike – Formula Cura : 1er frein Formula à huile minérale (tous les précédents au DOT), joints nouveaux, accepte les plaquettes Formula précédentes",
+   "url": "https://m.pinkbike.com/news/formula-cura-brake-sea-otter-2016.html"
+  }
+ },
+ "parts": [
+  {
+   "id": "suntour-rd-xct-lite",
+   "type": "rear_derailleur",
+   "brand": "SunTour",
+   "ref": "RD SunTour XCT Lite",
+   "aliases": [
+    "xct lite",
+    "suntour xct"
+   ],
+   "name": "SunTour XCT Lite 7v",
+   "discipline": "vtt",
+   "generation": "SunTour (7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "suntour-accushift"
+   },
+   "src": "bf-xct-lite",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "srsuntour-fc-xcc-42-34-24",
+   "type": "crankset",
+   "brand": "SR Suntour",
+   "ref": "XCC CW14 42-34-24",
+   "aliases": [
+    "suntour xcc",
+    "xcc 42-34-24",
+    "pedalier suntour"
+   ],
+   "name": "SR Suntour XCC triple 42-34-24 (axe carré)",
+   "discipline": "vtt",
+   "generation": "SR Suntour XCC (6/7/8v)",
+   "attrs": {
+    "speeds": 8,
+    "spindle": "carre_jis",
+    "chainrings": 3,
+    "teeth": "42-34-24"
+   },
+   "src": [
+    "velomine-xcc-42",
+    "incycle-xcc"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plateaux rivetés / non remplaçables. Équivalent Shimano FC-M171 / FC-M131 selon le revendeur."
+  },
+  {
+   "id": "srsuntour-fc-xcc-48-38-28",
+   "type": "crankset",
+   "brand": "SR Suntour",
+   "ref": "XCC CW14 48-38-28",
+   "aliases": [
+    "xcc 48-38-28"
+   ],
+   "name": "SR Suntour XCC triple 48-38-28 avec garde-chaîne (axe carré)",
+   "discipline": "autre",
+   "generation": "SR Suntour XCC (6/7/8v)",
+   "attrs": {
+    "spindle": "carre_jis",
+    "chainrings": 3,
+    "teeth": "48-38-28"
+   },
+   "src": "velomine-xcc-48",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plateaux non remplaçables."
+  },
+  {
+   "id": "srsuntour-fc-xcc-42-32-22",
+   "type": "crankset",
+   "brand": "SR Suntour",
+   "ref": "XCC CW19 42-32-22",
+   "aliases": [
+    "xcc 42-32-22"
+   ],
+   "name": "SR Suntour XCC triple 42-32-22 (axe carré)",
+   "discipline": "vtt",
+   "generation": "SR Suntour XCC (6/7/8v)",
+   "attrs": {
+    "spindle": "carre_jis",
+    "chainrings": 3,
+    "teeth": "42-32-22"
+   },
+   "src": "velomine-xcc-42-22",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sachs-rd-plasma",
+   "type": "rear_derailleur",
+   "brand": "Sachs",
+   "ref": "RD Sachs 7.0 Plasma",
+   "aliases": [
+    "sachs plasma",
+    "plasma"
+   ],
+   "name": "Sachs / SRAM 7.0 Plasma",
+   "discipline": "vtt",
+   "generation": "Sachs (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sachs-2-1"
+   },
+   "src": [
+    "dtm-1999",
+    "retro-sachs"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage type Shimano (non ESP). Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "sachs-rd-quarz",
+   "type": "rear_derailleur",
+   "brand": "Sachs",
+   "ref": "RD Sachs Quarz",
+   "aliases": [
+    "sachs quarz",
+    "quarz"
+   ],
+   "name": "Sachs / SRAM Quarz",
+   "discipline": "vtt",
+   "generation": "Sachs (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sachs-2-1"
+   },
+   "src": [
+    "dtm-1999",
+    "retro-sachs"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage type Shimano (non ESP). Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "sachs-rd-neos",
+   "type": "rear_derailleur",
+   "brand": "Sachs",
+   "ref": "RD Sachs Neos",
+   "aliases": [
+    "sachs neos",
+    "neos"
+   ],
+   "name": "Sachs / SRAM Neos",
+   "discipline": "vtt",
+   "generation": "Sachs (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sachs-2-1"
+   },
+   "src": [
+    "dtm-1999",
+    "retro-sachs"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage type Shimano (non ESP). Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "sachs-st-new-success",
+   "type": "shifter",
+   "brand": "Sachs",
+   "ref": "Ergo Sachs New Success",
+   "aliases": [
+    "new success",
+    "sachs ergo"
+   ],
+   "name": "Leviers Sachs New Success Ergo (tirage Shimano 7v)",
+   "discipline": "route",
+   "generation": "Sachs New Success (7v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "bf-new-success",
+    "retro-sachs"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Fonctionnement proche des Ergopower Campagnolo, mais tirage Shimano 7v."
+  },
+  {
+   "id": "hayes-stroker-trail",
+   "type": "brake_caliper",
+   "brand": "Hayes",
+   "ref": "Stroker Trail",
+   "aliases": [
+    "hayes stroker",
+    "stroker trail"
+   ],
+   "name": "Hayes Stroker Trail (DOT 4 / DOT 3)",
+   "discipline": "vtt",
+   "generation": "Hayes Stroker",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "fluidSpec": "dot_4",
+    "hydraulicSystem": "hayes-stroker"
+   },
+   "src": [
+    "stw-hayes-dot",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Vérifier le fluide sur le manuel de l'année. Fixation non confirmée par la source (champ vide)."
+  },
+  {
+   "id": "hayes-stroker-ryde",
+   "type": "brake_caliper",
+   "brand": "Hayes",
+   "ref": "Stroker Ryde",
+   "aliases": [
+    "stroker ryde",
+    "hayes ryde"
+   ],
+   "name": "Hayes Stroker Ryde (DOT)",
+   "discipline": "vtt",
+   "generation": "Hayes Stroker",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "padShape": "hayes-ryde"
+   },
+   "src": [
+    "wwc-hayes",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Norme DOT exacte et fixation non trouvées."
+  },
+  {
+   "id": "hayes-dyno",
+   "type": "brake_caliper",
+   "brand": "Hayes",
+   "ref": "Dyno",
+   "aliases": [
+    "hayes dyno"
+   ],
+   "name": "Hayes Dyno (DOT)",
+   "discipline": "vtt",
+   "generation": "Hayes Dyno",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "padShape": "hayes-ryde"
+   },
+   "src": [
+    "wwc-hayes",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Norme DOT exacte et fixation non trouvées."
+  },
+  {
+   "id": "hayes-radar",
+   "type": "brake_caliper",
+   "brand": "Hayes",
+   "ref": "Radar",
+   "aliases": [
+    "hayes radar"
+   ],
+   "name": "Hayes Radar (DOT)",
+   "discipline": "vtt",
+   "generation": "Hayes Radar",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "padShape": "hayes-ryde"
+   },
+   "src": [
+    "wwc-hayes",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Norme DOT exacte et fixation non trouvées."
+  },
+  {
+   "id": "hayes-pads-ryde",
+   "type": "brake_pads",
+   "brand": "Hayes",
+   "ref": "Plaquettes Stroker Ryde / Dyno / Radar",
+   "aliases": [
+    "plaquettes hayes",
+    "hayes type 100"
+   ],
+   "name": "Plaquettes Hayes Stroker Ryde / Dyno / Radar",
+   "discipline": "vtt",
+   "generation": "Hayes",
+   "attrs": {
+    "shape": "hayes-ryde"
+   },
+   "src": "wwc-hayes",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "hope-tech3-e4",
+   "type": "brake_caliper",
+   "brand": "Hope",
+   "ref": "Tech 3 E4",
+   "aliases": [
+    "hope e4",
+    "tech 3 e4",
+    "hope tech 3"
+   ],
+   "name": "Hope Tech 3 E4 (DOT 5.1, 4 pistons)",
+   "discipline": "vtt",
+   "generation": "Hope Tech 3",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "fluidSpec": "dot_5_1",
+    "hydraulicSystem": "hope-tech",
+    "padShape": "hope-e4"
+   },
+   "src": [
+    "b24-hope-tech3",
+    "pb-hope-rx4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation non confirmée par la source (champ vide)."
+  },
+  {
+   "id": "hope-tech3-lever",
+   "type": "brake_lever",
+   "brand": "Hope",
+   "ref": "Levier Tech 3",
+   "aliases": [
+    "levier hope tech 3"
+   ],
+   "name": "Levier Hope Tech 3 (DOT 5.1)",
+   "discipline": "vtt",
+   "generation": "Hope Tech 3",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "fluidSpec": "dot_5_1",
+    "hydraulicSystem": "hope-tech"
+   },
+   "src": "b24-hope-tech3",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "hope-rx4-plus-fm",
+   "type": "brake_caliper",
+   "brand": "Hope",
+   "ref": "RX4+ flat mount",
+   "aliases": [
+    "hope rx4",
+    "rx4+"
+   ],
+   "name": "Hope RX4+ route / gravel flat mount (DOT)",
+   "discipline": "gravel",
+   "generation": "Hope RX4+",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot",
+    "mount": "flat_mount",
+    "padShape": "hope-e4"
+   },
+   "src": "pb-hope-rx4",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Existe aussi en version minérale (leviers Shimano) : vérifier le marquage DOT / MIN."
+  },
+  {
+   "id": "formula-cura",
+   "type": "brake_caliper",
+   "brand": "Formula",
+   "ref": "Cura",
+   "aliases": [
+    "formula cura",
+    "cura"
+   ],
+   "name": "Formula Cura (huile minérale Formula)",
+   "discipline": "vtt",
+   "generation": "Formula Cura",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "formula_mineral",
+    "hydraulicSystem": "formula-cura"
+   },
+   "src": [
+    "bc-formula-oil",
+    "pinkbike-cura"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation non confirmée par la source (champ vide)."
+  },
+  {
+   "id": "formula-cura-4",
+   "type": "brake_caliper",
+   "brand": "Formula",
+   "ref": "Cura 4",
+   "aliases": [
+    "formula cura 4",
+    "cura 4"
+   ],
+   "name": "Formula Cura 4 (huile minérale Formula)",
+   "discipline": "vtt",
+   "generation": "Formula Cura",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "formula_mineral",
+    "hydraulicSystem": "formula-cura"
+   },
+   "src": "bc-formula-oil",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "formula-r1",
+   "type": "brake_caliper",
+   "brand": "Formula",
+   "ref": "R1 / RX / The One (anciens)",
+   "aliases": [
+    "formula r1",
+    "formula rx",
+    "formula the one"
+   ],
+   "name": "Formula R1 / RX / The One (DOT, avant Cura)",
+   "discipline": "vtt",
+   "generation": "Formula (DOT)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "dot"
+   },
+   "src": [
+    "pinkbike-cura",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Avant la Cura (2016), tous les freins VTT Formula étaient au DOT. Norme DOT exacte non trouvée."
+  }
+ ]
+}

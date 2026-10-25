@@ -2,25 +2,31 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **467 pièces**, dont 24 validées par une page constructeur et **443 à valider**.
-- Base de connaissances : fluidFits : 3, brakeMountAdapters : 1, spindleFits : 0, chainLength : 1, recommendations : 7, families : 41, actuation : 46, freehubFits : 12, pitchFits : 4.
+- **523 pièces**, dont 24 validées par une page constructeur et **499 à valider**.
+- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, spindleFits : 0, chainLength : 1, recommendations : 7, families : 43, actuation : 56, freehubFits : 12, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
 | Avid | 2 |
 | Box | 2 |
-| Campagnolo | 37 |
-| KMC | 5 |
+| Campagnolo | 47 |
+| Formula | 3 |
+| Hayes | 5 |
+| Hope | 3 |
+| KMC | 9 |
 | LTWOO | 2 |
 | Magura | 6 |
 | SENSAH | 3 |
+| SR Suntour | 3 |
 | SRAM | 92 |
-| Shimano | 300 |
+| Sachs | 4 |
+| Shimano | 323 |
 | SunRace | 8 |
+| SunTour | 1 |
 | TRP | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (127)
+## Dérailleur arrière (132)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -37,6 +43,9 @@
 | RD-M6205 (Advent X) | microSHIFT | vtt | à valider |  |
 | RD-R58S (Centos) | microSHIFT | route | à valider |  |
 | RD-R43M (R9) | microSHIFT | route | à valider | totalCapacity |
+| RD Sachs Neos | Sachs | vtt | à valider | maxCog, totalCapacity |
+| RD Sachs 7.0 Plasma | Sachs | vtt | à valider | maxCog, totalCapacity |
+| RD Sachs Quarz | Sachs | vtt | à valider | maxCog, totalCapacity |
 | RD SRX | SENSAH | gravel | à valider | totalCapacity |
 | RD-2300 | Shimano | route | à valider |  |
 | RD-2400-SS | Shimano | route | à valider | totalCapacity |
@@ -68,6 +77,7 @@
 | RD-7800-SS | Shimano | route | à valider | maxCog |
 | RD-7900-SS | Shimano | route | à valider | totalCapacity |
 | RD-9000-SS | Shimano | route | à valider |  |
+| RD-A070 | Shimano | route | à valider | mount |
 | RD-M2000-SGS | Shimano | vtt | à valider |  |
 | RD-M310 | Shimano | vtt | à valider |  |
 | RD-M3100-SGS | Shimano | vtt | à valider |  |
@@ -151,13 +161,24 @@
 | RD X7 9v | SRAM | vtt | à valider |  |
 | RD X9 10v | SRAM | vtt | à valider | maxCog, totalCapacity |
 | RD X9 9v chape moyenne | SRAM | vtt | à valider | maxCog, totalCapacity |
+| RD SunTour XCT Lite | SunTour | vtt | à valider | maxCog, totalCapacity |
 
-## Manette / levier de vitesses (50)
+## Manette / levier de vitesses (70)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Box Two Prime 9 | Box | vtt | validé |  |
+| Ergopower Centaur 9v (2001-2003) | Campagnolo | route | à valider |  |
+| Ergopower Chorus 8v | Campagnolo | route | à valider |  |
+| Ergopower Chorus 9v (2001-2003) | Campagnolo | route | à valider |  |
+| Ergopower Chorus 9v (avant 2001) | Campagnolo | route | à valider |  |
+| Ergopower Mirage 9v (2001-2003) | Campagnolo | route | à valider |  |
+| Ergopower Record 8v | Campagnolo | route | à valider |  |
+| Ergopower Record 9v (2001-2003) | Campagnolo | route | à valider |  |
+| Ergopower Record 9v (avant 2001) | Campagnolo | route | à valider |  |
 | Ergopower Veloce 10v | Campagnolo | route | à valider |  |
+| Ergopower Veloce 9v (2001-2003) | Campagnolo | route | à valider |  |
+| Ergopower Veloce 9v (avant 2001) | Campagnolo | route | à valider |  |
 | Ergopower Xenon 10v | Campagnolo | route | à valider |  |
 | Ergopower Centaur 11 Power Shift | Campagnolo | route | à valider | cablePull |
 | Ergopower Chorus 11 | Campagnolo | route | à valider |  |
@@ -165,20 +186,29 @@
 | Manette Advent X 10v | microSHIFT | vtt | à valider |  |
 | Leviers Centos 2x11 | microSHIFT | route | à valider |  |
 | Leviers R10 2x10 (SB-R402) | microSHIFT | route | à valider | cablePull |
+| Ergo Sachs New Success | Sachs | route | à valider |  |
 | Leviers Empire 2x11 | SENSAH | route | à valider | cablePull |
 | Leviers SRX 1x11 | SENSAH | gravel | à valider |  |
+| SL-M3100-L (2 plateaux) | Shimano | vtt | à valider |  |
+| SL-M3100-L (3 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-R | Shimano | vtt | à valider |  |
 | SL-M370-R | Shimano | vtt | à valider |  |
 | SL-M4100 | Shimano | vtt | à valider |  |
 | SL-M5100-R | Shimano | vtt | à valider |  |
+| SL-M590-L | Shimano | vtt | à valider |  |
 | SL-M590-R | Shimano | vtt | à valider |  |
+| SL-M6000-L | Shimano | vtt | à valider |  |
 | SL-M6000-R | Shimano | vtt | à valider |  |
+| SL-M670-L | Shimano | vtt | à valider |  |
 | SL-M7000-10-R | Shimano | vtt | à valider |  |
 | SL-M7000-L | Shimano | vtt | à valider |  |
 | SL-M7000-11-R | Shimano | vtt | à valider |  |
+| SL-M770-L | Shimano | vtt | à valider |  |
 | SL-M8000-R | Shimano | vtt | à valider |  |
 | SL-M8100-R | Shimano | vtt | validé |  |
 | SL-M9000-R | Shimano | vtt | à valider |  |
+| SL-RV400-7R | Shimano | vtt | à valider |  |
+| SL-TX50 (7v) | Shimano | vtt | à valider |  |
 | ST-2400 | Shimano | route | à valider |  |
 | ST-3400 | Shimano | route | à valider |  |
 | ST-4600 | Shimano | route | à valider |  |
@@ -192,6 +222,7 @@
 | ST-7700 | Shimano | route | à valider |  |
 | ST-7800 | Shimano | route | à valider |  |
 | ST-7900 | Shimano | route | à valider |  |
+| ST-EF41 (3x7) | Shimano | vtt | à valider |  |
 | ST-R2000 | Shimano | route | à valider |  |
 | ST-R3000 | Shimano | route | à valider |  |
 | ST-R7000 | Shimano | route | à valider |  |
@@ -207,10 +238,11 @@
 | Leviers Apex 12v mécaniques | SRAM | gravel | à valider |  |
 | Leviers eTap AXS HRD (RED / Force / Rival) | SRAM | route | à valider |  |
 
-## Levier de frein (6)
+## Levier de frein (7)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
+| Levier Tech 3 | Hope | vtt | à valider |  |
 | BL-4700 | Shimano | route | à valider |  |
 | BL-M8100 | Shimano | vtt | à valider |  |
 | BL-MT201 | Shimano | vtt | à valider |  |
@@ -218,7 +250,7 @@
 | BL-T4000 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
-## Cassette / roue libre (135)
+## Cassette / roue libre (138)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -256,6 +288,8 @@
 | CS-6700 11-28 | Shimano | route | à valider |  |
 | CS-6700 12-25 | Shimano | route | à valider |  |
 | CS-6700 12-30 | Shimano | route | à valider |  |
+| CS-HG200-7 12-28 | Shimano | vtt | à valider |  |
+| CS-HG200-7 12-32 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-32 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-34 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-36 | Shimano | vtt | à valider |  |
@@ -312,6 +346,7 @@
 | CS-R8100 11-34 | Shimano | route | à valider |  |
 | CS-R9200 11-30 | Shimano | route | à valider |  |
 | CS-R9200 11-34 | Shimano | route | à valider |  |
+| MF-TZ21 14-28 | Shimano | vtt | à valider | freewheelThread |
 | MF-TZ500 14-28 | Shimano | vtt | à valider | freewheelThread |
 | MF-TZ500 14-34 | Shimano | vtt | à valider | freewheelThread |
 | PG-1030 11-32 | SRAM | vtt | à valider |  |
@@ -358,7 +393,7 @@
 | CSMX8 11-46 | SunRace | vtt | à valider |  |
 | CSMZ90 11-50 | SunRace | vtt | à valider |  |
 
-## Chaîne (27)
+## Chaîne (31)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -370,6 +405,10 @@
 | X12 | KMC | autre | à valider |  |
 | X8 | KMC | autre | à valider |  |
 | X9 | KMC | autre | à valider |  |
+| Z7 | KMC | autre | à valider |  |
+| Z8 | KMC | autre | à valider |  |
+| Z8.1 | KMC | autre | à valider |  |
+| Z8.3 | KMC | autre | à valider |  |
 | CN-6701 | Shimano | route | à valider |  |
 | CN-HG40 | Shimano | vtt | à valider |  |
 | CN-HG53 | Shimano | vtt | à valider |  |
@@ -390,16 +429,19 @@
 | PC-850 | SRAM | autre | à valider |  |
 | PC-951 | SRAM | autre | à valider |  |
 
-## Dérailleur avant (17)
+## Dérailleur avant (23)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | FD-5700 (collier 31,8) | Shimano | route | à valider |  |
 | FD-5700-F | Shimano | route | à valider |  |
-| FD-5800 (collier) | Shimano | route | à valider |  |
+| FD-5800 (collier) | Shimano | route | à valider | mount |
 | FD-6700-G | Shimano | route | à valider |  |
+| FD-M3100-M | Shimano | vtt | à valider | mount |
 | FD-M4000 | Shimano | vtt | à valider | mount |
+| FD-M590 | Shimano | vtt | à valider |  |
 | FD-M6000-L | Shimano | vtt | à valider |  |
+| FD-M770 | Shimano | vtt | à valider |  |
 | FD-M780-A | Shimano | vtt | à valider |  |
 | FD-M8000-D | Shimano | vtt | à valider |  |
 | FD-R2000 (collier) | Shimano | route | à valider |  |
@@ -411,13 +453,25 @@
 | FD-R8000-F | Shimano | route | à valider |  |
 | FD-RX810-F | Shimano | gravel | à valider |  |
 | FD-RX820-F | Shimano | gravel | à valider |  |
+| FD-TY300 (31,8) | Shimano | vtt | à valider |  |
+| FD-TY500 | Shimano | vtt | à valider |  |
+| FD-TZ500 (28,6) | Shimano | vtt | à valider |  |
 
-## Étrier / frein (36)
+## Étrier / frein (45)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | BB7 MTB | Avid | vtt | à valider |  |
 | BB7 Road | Avid | route | à valider |  |
+| Cura | Formula | vtt | à valider | mount |
+| Cura 4 | Formula | vtt | à valider | mount |
+| R1 / RX / The One (anciens) | Formula | vtt | à valider | mount |
+| Dyno | Hayes | vtt | à valider | mount |
+| Radar | Hayes | vtt | à valider | mount |
+| Stroker Ryde | Hayes | vtt | à valider | mount |
+| Stroker Trail | Hayes | vtt | à valider | mount |
+| RX4+ flat mount | Hope | gravel | à valider |  |
+| Tech 3 E4 | Hope | vtt | à valider | mount |
 | HS33 | Magura | vtt | à valider |  |
 | MT2 | Magura | vtt | à valider |  |
 | MT4 | Magura | vtt | à valider |  |
@@ -453,10 +507,11 @@
 | Étrier Rival AXS flat mount | SRAM | route | à valider |  |
 | Spyre flat mount | TRP | route | à valider |  |
 
-## Plaquettes / patins (11)
+## Plaquettes / patins (12)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
+| Plaquettes Stroker Ryde / Dyno / Radar | Hayes | vtt | à valider |  |
 | Plaquettes 7.P | Magura | vtt | à valider |  |
 | Plaquettes 9.P | Magura | vtt | à valider |  |
 | B01S | Shimano | vtt | à valider |  |
@@ -478,7 +533,7 @@
 | SM-RT70 140 | Shimano | route | à valider |  |
 | SM-RT70 160 | Shimano | route | à valider |  |
 
-## Pédalier (41)
+## Pédalier (48)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -498,6 +553,7 @@
 | FC-7900 53-39 | Shimano | route | à valider | bolts |
 | FC-9000 50-34 | Shimano | route | à valider |  |
 | FC-9000 52-36 | Shimano | route | à valider |  |
+| FC-A070 50-34 | Shimano | route | à valider | ringInterface |
 | FC-M361 42-32-22 | Shimano | vtt | à valider | bolts |
 | FC-M4000 40-30-22 | Shimano | vtt | à valider | bolts |
 | FC-M590 44-32-22 | Shimano | vtt | à valider | bolts |
@@ -518,11 +574,17 @@
 | FC-R8000 53-39 | Shimano | route | à valider |  |
 | FC-RX600-10 46-30 | Shimano | gravel | à valider | bcd, bolts |
 | FC-RX810-1 40T | Shimano | gravel | à valider |  |
+| FC-TY301 42-34-24 | Shimano | vtt | à valider | ringInterface |
+| FC-TY301 48-38-28 | Shimano | autre | à valider | ringInterface |
+| FC-TY501 42-34-24 | Shimano | vtt | à valider | spindle, ringInterface |
 | FC Force D1 48/35 | SRAM | route | à valider |  |
 | FC Force / Rival Wide 43/30 | SRAM | gravel | à valider | dmType |
 | FC RED D1 46/33 | SRAM | route | validé |  |
 | FC RED D1 48/35 | SRAM | route | validé |  |
 | FC RED D1 50/37 | SRAM | route | validé |  |
+| XCC CW19 42-32-22 | SR Suntour | vtt | à valider | ringInterface |
+| XCC CW14 42-34-24 | SR Suntour | vtt | à valider | ringInterface |
+| XCC CW14 48-38-28 | SR Suntour | autre | à valider | ringInterface |
 
 ## Boîtier de pédalier (13)
 

@@ -303,6 +303,21 @@
    "kind": "communaute",
    "ref": "TrainerRoad – pièces Shimano route 11v 5800 et R8000 compatibles entre elles",
    "url": "https://www.trainerroad.com/forum/t/shimano-groupset-compatibility/53637"
+  },
+  "sheldon-mixing": {
+   "kind": "communaute",
+   "ref": "Sheldon Brown – drivetrain mixing : Shimano, SRAM, Campagnolo et SunTour tirent des quantités de câble différentes",
+   "url": "https://www.sheldonbrown.com/drivetrain-mixing.shtml"
+  },
+  "bf-suntour-shimano": {
+   "kind": "communaute",
+   "ref": "BikeForums – dérailleur SunTour XCT Lite 7v fonctionnant avec manette Shimano SL-M310 ; manette Accushift 6v indexant un dérailleur Shimano (cassette 7v moins un pignon) ; essai-erreur",
+   "url": "https://m.bikeforums.net/showthread.php?p=20118476"
+  },
+  "retro-sachs-wavy": {
+   "kind": "communaute",
+   "ref": "Retrobike – Sachs Plasma, Quarz, Neos, Centera : même rapport de tirage que Shimano, interchangeables (hors ESP 1:1)",
+   "url": "https://www.retrobike.co.uk/threads/sachs-wavy-shifters.67882"
   }
  },
  "families": [
@@ -810,6 +825,35 @@
    ],
    "src": [
     "retrobike-campa-8-9"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "suntour-accushift",
+   "brand": "SunTour",
+   "label": "SunTour Accushift (6/7v, années 1980-90)",
+   "system": "mecanique",
+   "pitch": [
+    "hg-7"
+   ],
+   "src": [
+    "sheldon-mixing",
+    "bf-suntour-shimano"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "sachs-2-1",
+   "brand": "Sachs",
+   "label": "Sachs non ESP (Plasma, Quarz, Neos, Centera, New Success) : tirage type Shimano",
+   "system": "mecanique",
+   "pitch": [
+    "hg-7",
+    "hg-8",
+    "hg-9"
+   ],
+   "src": [
+    "retro-sachs-wavy"
    ],
    "status": "a_valider"
   }
@@ -1391,6 +1435,140 @@
    ],
    "confidence": "moyenne",
    "status": "a_valider"
+  },
+  {
+   "shifterFamily": "shimano-7",
+   "derailleurFamily": "suntour-accushift",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette Shimano (shimano-7) avec dérailleur SunTour Accushift.",
+   "src": [
+    "bf-suntour-shimano",
+    "sheldon-mixing"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Tirages différents selon les sources : indexation à régler par essai-erreur, un pignon parfois inaccessible."
+  },
+  {
+   "shifterFamily": "suntour-accushift",
+   "derailleurFamily": "shimano-7",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette SunTour Accushift avec dérailleur Shimano (shimano-7).",
+   "src": [
+    "bf-suntour-shimano",
+    "sheldon-mixing"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Tirages différents selon les sources : indexation à régler par essai-erreur, un pignon parfois inaccessible."
+  },
+  {
+   "shifterFamily": "shimano-8",
+   "derailleurFamily": "suntour-accushift",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette Shimano (shimano-8) avec dérailleur SunTour Accushift.",
+   "src": [
+    "bf-suntour-shimano",
+    "sheldon-mixing"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Tirages différents selon les sources : indexation à régler par essai-erreur, un pignon parfois inaccessible."
+  },
+  {
+   "shifterFamily": "suntour-accushift",
+   "derailleurFamily": "shimano-8",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette SunTour Accushift avec dérailleur Shimano (shimano-8).",
+   "src": [
+    "bf-suntour-shimano",
+    "sheldon-mixing"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Tirages différents selon les sources : indexation à régler par essai-erreur, un pignon parfois inaccessible."
+  },
+  {
+   "shifterFamily": "sachs-2-1",
+   "derailleurFamily": "shimano-7",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Sachs (non ESP) avec dérailleur Shimano : même rapport de tirage.",
+   "src": [
+    "retro-sachs-wavy"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette."
+  },
+  {
+   "shifterFamily": "shimano-7",
+   "derailleurFamily": "sachs-2-1",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano avec dérailleur Sachs (non ESP) : même rapport de tirage.",
+   "src": [
+    "retro-sachs-wavy"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette."
+  },
+  {
+   "shifterFamily": "sachs-2-1",
+   "derailleurFamily": "shimano-8",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Sachs (non ESP) avec dérailleur Shimano : même rapport de tirage.",
+   "src": [
+    "retro-sachs-wavy"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette."
+  },
+  {
+   "shifterFamily": "shimano-8",
+   "derailleurFamily": "sachs-2-1",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano avec dérailleur Sachs (non ESP) : même rapport de tirage.",
+   "src": [
+    "retro-sachs-wavy"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette."
+  },
+  {
+   "shifterFamily": "sachs-2-1",
+   "derailleurFamily": "shimano-9",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Sachs (non ESP) avec dérailleur Shimano : même rapport de tirage.",
+   "src": [
+    "retro-sachs-wavy"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette."
+  },
+  {
+   "shifterFamily": "shimano-9",
+   "derailleurFamily": "sachs-2-1",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano avec dérailleur Sachs (non ESP) : même rapport de tirage.",
+   "src": [
+    "retro-sachs-wavy"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette."
   }
  ],
  "freehubFits": [
