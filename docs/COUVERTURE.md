@@ -3,7 +3,7 @@
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
 - **523 pièces**, dont 24 validées par une page constructeur et **499 à valider**.
-- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, spindleFits : 0, chainLength : 1, recommendations : 7, families : 43, actuation : 56, freehubFits : 12, pitchFits : 4.
+- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 189, spindleFits : 0, chainLength : 1, recommendations : 7, families : 43, actuation : 56, freehubFits : 12, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|

@@ -1,0 +1,1318 @@
+{
+ "_meta": {
+  "description": "Gammes et années de lancement par génération (pour la navigation Marque → Gamme → Génération). Année seulement si sourcée."
+ },
+ "sources": {
+  "shimano-da-50": {
+   "kind": "officiel",
+   "ref": "Shimano – 50 ans de Dura-Ace : 7700 (1996), 7800 (2004), 7900 (2008), 9000 (2012), R9200 (2021)",
+   "url": "https://road.shimano.com/50-years-of-dura-ace"
+  },
+  "shimano-ultegra-hist": {
+   "kind": "officiel",
+   "ref": "Shimano – histoire Ultegra : 6500 (1997), 6600 (2005), 6700 (2010), 6800 (2013), R8000 (2017)",
+   "url": "https://www.shimano.com/en/100th/history/products/41.html"
+  },
+  "roadcc-r7100": {
+   "kind": "presse",
+   "ref": "road.cc – 105 R7100 (2022, 40 ans de 105)",
+   "url": "https://road.cc/content/tech-news/shimano-releases-105-r7100-di2-disc-groupset-293985"
+  },
+  "rcuk-tiagra4700": {
+   "kind": "presse",
+   "ref": "Road Cycling UK – Tiagra 4700 en magasin en juin 2015",
+   "url": "https://roadcyclinguk.com/gear/shimano-launch-brand-new-tiagra-4700.html"
+  },
+  "cyclistshub-road": {
+   "kind": "presse",
+   "ref": "Cyclists Hub – lancements : Claris R2000 2017, Sora R3000 2016, Tiagra 4700 2015",
+   "url": "https://www.cyclistshub.com/shimano-claris-vs-sora-vs-tiagra"
+  },
+  "shimano-xtr-hist": {
+   "kind": "officiel",
+   "ref": "Shimano – histoire XTR : M900 1992, M960 2002, M970 2006, M980 2010, M9000 2014, M9100 2018",
+   "url": "https://www.shimano.com/en/100th/history/products/58.html"
+  },
+  "wiki-shimano-list": {
+   "kind": "communaute",
+   "ref": "Wikipedia – liste des groupes Shimano (5500 en 1999 ; XT M8000 en 2015)",
+   "url": "https://en.wikipedia.org/wiki/List_of_Shimano_groupsets"
+  },
+  "wiki-deore-xt": {
+   "kind": "communaute",
+   "ref": "Wikipedia – Deore XT : M760 (2003)",
+   "url": "https://en.wikipedia.org/wiki/Shimano_Deore_XT"
+  },
+  "shimano-m8100-news": {
+   "kind": "officiel",
+   "ref": "Shimano – XT M8100 et SLX M7100 en vente le 14 juin 2019",
+   "url": "https://bike.shimano.com/en-US/information/news/shimano-deore-xt-m8100-debuts-with-shimanos-marquee-mountain-bik.html"
+  },
+  "radavist-deore": {
+   "kind": "presse",
+   "ref": "The Radavist – Deore M6100, M5100, M4100 annoncés en mai 2020",
+   "url": "https://theradavist.com/shimano-announces-new-deore-m6100-m5100-and-m4100-components"
+  },
+  "flow-grx": {
+   "kind": "presse",
+   "ref": "Flow MTB – GRX annoncé en 2019 ; GRX 12v (RX820, RX822, RX610) cinq ans plus tard (2023)",
+   "url": "https://flowmountainbike.com/tests/shimano-grx-820-12-speed-review/"
+  },
+  "sram-history": {
+   "kind": "officiel",
+   "ref": "SRAM – histoire : Force et Rival 10v en 2006",
+   "url": "https://www.sram.com/en/company/about/history"
+  },
+  "wiki-sram": {
+   "kind": "communaute",
+   "ref": "Wikipedia – SRAM : Eagle 1x12 XX1 / X01 en mai 2016",
+   "url": "https://en.wikipedia.org/wiki/SRAM_Corporation"
+  },
+  "roadcc-campa": {
+   "kind": "presse",
+   "ref": "road.cc – Ekar mécanique septembre 2020 ; Chorus 12v 2019",
+   "url": "https://road.cc/content/tech-news/what-coming-next-campagnolo-295233"
+  },
+  "wiki-campagnolo": {
+   "kind": "communaute",
+   "ref": "Wikipedia – Campagnolo : 11v en 2008 ; Record 12v en avril 2018",
+   "url": "https://en.wikipedia.org/wiki/Campagnolo"
+  },
+  "retro-campa-9": {
+   "kind": "communaute",
+   "ref": "Retrobike – changement des leviers et dérailleurs Campagnolo 9v en 2001",
+   "url": "https://www.retrobike.co.uk/threads/campagnolo-nine-speed-question.227823"
+  },
+  "pinkbike-cura": {
+   "kind": "presse",
+   "ref": "Pinkbike – Formula Cura présenté au Sea Otter 2016",
+   "url": "https://m.pinkbike.com/news/formula-cura-brake-sea-otter-2016.html"
+  }
+ },
+ "gammes": [
+  {
+   "brand": "Avid",
+   "generation": "BB7",
+   "gamme": "BB7",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Box",
+   "generation": "Prime 9 (9v)",
+   "gamme": "Prime 9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Campagnolo 11v",
+   "gamme": "Campagnolo 11v",
+   "year": 2008,
+   "src": "wiki-campagnolo",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Centaur 10",
+   "gamme": "Centaur",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Centaur 11 (D)",
+   "gamme": "Centaur",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Centaur 9 (2001+)",
+   "gamme": "Centaur",
+   "year": 2001,
+   "src": "retro-campa-9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Chorus 11 (2015+)",
+   "gamme": "Chorus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Chorus 12",
+   "gamme": "Chorus",
+   "year": 2019,
+   "src": "roadcc-campa",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Chorus 8",
+   "gamme": "Chorus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Chorus 9 (2001+)",
+   "gamme": "Chorus",
+   "year": 2001,
+   "src": "retro-campa-9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Chorus 9 (avant 2001)",
+   "gamme": "Chorus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Ekar (13v)",
+   "gamme": "Ekar",
+   "year": 2020,
+   "src": "roadcc-campa",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Mirage 9 (2001+)",
+   "gamme": "Mirage",
+   "year": 2001,
+   "src": "retro-campa-9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Record 12",
+   "gamme": "Record",
+   "year": 2018,
+   "src": "wiki-campagnolo",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Record 8",
+   "gamme": "Record",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Record 9 (2001+)",
+   "gamme": "Record",
+   "year": 2001,
+   "src": "retro-campa-9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Record 9 (avant 2001)",
+   "gamme": "Record",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Ultra-Torque",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Veloce 10",
+   "gamme": "Veloce",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Veloce 9",
+   "gamme": "Veloce",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Veloce 9 (2001+)",
+   "gamme": "Veloce",
+   "year": 2001,
+   "src": "retro-campa-9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Veloce 9 (avant 2001)",
+   "gamme": "Veloce",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Xenon 10",
+   "gamme": "Xenon",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Formula",
+   "generation": "Formula (DOT)",
+   "gamme": "Formula R1 / RX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Formula",
+   "generation": "Formula Cura",
+   "gamme": "Cura",
+   "year": 2016,
+   "src": "pinkbike-cura",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Hayes",
+   "generation": "Hayes",
+   "gamme": "Hayes",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Hayes",
+   "generation": "Hayes Dyno",
+   "gamme": "Dyno",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Hayes",
+   "generation": "Hayes Radar",
+   "gamme": "Radar",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Hayes",
+   "generation": "Hayes Stroker",
+   "gamme": "Stroker",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Hope",
+   "generation": "Hope RX4+",
+   "gamme": "RX4+",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Hope",
+   "generation": "Hope Tech 3",
+   "gamme": "Tech 3",
+   "status": "a_valider"
+  },
+  {
+   "brand": "KMC",
+   "generation": "10v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "KMC",
+   "generation": "11v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "KMC",
+   "generation": "12v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "KMC",
+   "generation": "6/7/8v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "KMC",
+   "generation": "6/7v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "KMC",
+   "generation": "8v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "KMC",
+   "generation": "9v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "A12 (12v)",
+   "gamme": "A12",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "R9 (11v)",
+   "gamme": "R9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Magura",
+   "generation": "Magura HS",
+   "gamme": "HS",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Magura",
+   "generation": "Magura MT",
+   "gamme": "MT",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SENSAH",
+   "generation": "Empire (11v)",
+   "gamme": "Empire",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SENSAH",
+   "generation": "SRX (11v)",
+   "gamme": "SRX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SR Suntour",
+   "generation": "SR Suntour XCC (6/7/8v)",
+   "gamme": "XCC",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "10v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "11v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "8v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "9v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Apex (12v mécanique)",
+   "gamme": "Apex",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Apex / Rival / Force (10v)",
+   "gamme": "Apex / Rival / Force",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Apex 1 / Rival 1 / Force 1 (11v)",
+   "gamme": "Apex 1 / Rival 1 / Force 1",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Apex AXS (12v)",
+   "gamme": "Apex",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "DUB",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Eagle (12v mécanique)",
+   "gamme": "Eagle",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Eagle (12v)",
+   "gamme": "Eagle",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Eagle 90 / 70 (12v mécanique)",
+   "gamme": "Eagle Transmission",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Eagle AXS Transmission (12v)",
+   "gamme": "Eagle Transmission",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Eagle Transmission (12v)",
+   "gamme": "Eagle Transmission",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Force (10v)",
+   "gamme": "Force",
+   "year": 2006,
+   "src": "sram-history",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "gamme": "Force / Rival 22",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Force XPLR AXS (12v)",
+   "gamme": "Force",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Force eTap AXS (12v)",
+   "gamme": "Force",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "GX (11v)",
+   "gamme": "GX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "GX Eagle (12v)",
+   "gamme": "GX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "NX (11v)",
+   "gamme": "NX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "NX Eagle (12v)",
+   "gamme": "NX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "RED XPLR AXS (13v)",
+   "gamme": "RED",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "RED eTap AXS (12v)",
+   "gamme": "RED",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Red (10v)",
+   "gamme": "RED",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Rival eTap AXS (12v)",
+   "gamme": "Rival",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X0 (10v)",
+   "gamme": "X0",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X01 / XX1 (11v)",
+   "gamme": "X01 / XX1",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X01 Eagle (12v)",
+   "gamme": "X01",
+   "year": 2016,
+   "src": "wiki-sram",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X5 (10v)",
+   "gamme": "X5",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X5 (9v)",
+   "gamme": "X5",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X7 (10v)",
+   "gamme": "X7",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X7 (9v)",
+   "gamme": "X7",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X9 (10v)",
+   "gamme": "X9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X9 (9v)",
+   "gamme": "X9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "XPLR (12v)",
+   "gamme": "XPLR",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "XX1 Eagle (12v)",
+   "gamme": "XX1",
+   "year": 2016,
+   "src": "wiki-sram",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "eTap AXS (12v)",
+   "gamme": "AXS (route)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Sachs",
+   "generation": "Sachs (9v)",
+   "gamme": "Sachs",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Sachs",
+   "generation": "Sachs New Success (7v)",
+   "gamme": "New Success",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 5500 (9v)",
+   "gamme": "105",
+   "year": 1999,
+   "src": "wiki-shimano-list",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 5600 (10v)",
+   "gamme": "105",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 5700 (10v)",
+   "gamme": "105",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 5800 (11v)",
+   "gamme": "105",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 R7000 (11v)",
+   "gamme": "105",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 R7100 (12v Di2)",
+   "gamme": "105",
+   "year": 2022,
+   "src": "roadcc-r7100",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 R7100 (12v)",
+   "gamme": "105",
+   "year": 2022,
+   "src": "roadcc-r7100",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "10v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "11v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "12v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "6/7/8v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "8v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "9v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Acera (7/8v)",
+   "gamme": "Acera",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Acera (8v)",
+   "gamme": "Acera",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Acera (disque)",
+   "gamme": "Acera",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Alivio (9v)",
+   "gamme": "Alivio",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Alivio (V-brake)",
+   "gamme": "Alivio",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Alivio / Deore (disque)",
+   "gamme": "Alivio",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Alivio M3100 (9v)",
+   "gamme": "Alivio",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Alivio M4000 (9v)",
+   "gamme": "Alivio",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Alivio T4000 (9v)",
+   "gamme": "Alivio",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Altus (9v)",
+   "gamme": "Altus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Altus (disque)",
+   "gamme": "Altus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Altus M2000 (9v)",
+   "gamme": "Altus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Altus M310 (7/8v)",
+   "gamme": "Altus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Altus M370 (9v)",
+   "gamme": "Altus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Axe carré",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Cantilever",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Cintre plat route",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Claris 2300 (8v)",
+   "gamme": "Claris",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Claris 2400 (8v)",
+   "gamme": "Claris",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Claris R2000 (8v)",
+   "gamme": "Claris",
+   "year": 2017,
+   "src": "cyclistshub-road",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore (10v)",
+   "gamme": "Deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M4100 (10v)",
+   "gamme": "Deore",
+   "year": 2020,
+   "src": "radavist-deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M510 (9v)",
+   "gamme": "Deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M5100 (11v)",
+   "gamme": "Deore",
+   "year": 2020,
+   "src": "radavist-deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M590 (9v)",
+   "gamme": "Deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M6000 (10v)",
+   "gamme": "Deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M610 (10v)",
+   "gamme": "Deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore M6100 (12v)",
+   "gamme": "Deore",
+   "year": 2020,
+   "src": "radavist-deore",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace 7700 (9v)",
+   "gamme": "Dura-Ace",
+   "year": 1996,
+   "src": "shimano-da-50",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace 7800 (10v)",
+   "gamme": "Dura-Ace",
+   "year": 2004,
+   "src": "shimano-da-50",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace 7900 (10v)",
+   "gamme": "Dura-Ace",
+   "year": 2008,
+   "src": "shimano-da-50",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace 9000 (11v)",
+   "gamme": "Dura-Ace",
+   "year": 2012,
+   "src": "shimano-da-50",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace R9200 (12v Di2)",
+   "gamme": "Dura-Ace",
+   "year": 2021,
+   "src": "shimano-da-50",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace R9200 (12v)",
+   "gamme": "Dura-Ace",
+   "year": 2021,
+   "src": "shimano-da-50",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "GRX RX600 (10v)",
+   "gamme": "GRX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "GRX RX610 (12v)",
+   "gamme": "GRX",
+   "year": 2023,
+   "src": "flow-grx",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "GRX RX800 (11v Di2)",
+   "gamme": "GRX",
+   "year": 2019,
+   "src": "flow-grx",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "GRX RX800 (11v)",
+   "gamme": "GRX",
+   "year": 2019,
+   "src": "flow-grx",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "GRX RX820 (12v)",
+   "gamme": "GRX",
+   "year": 2023,
+   "src": "flow-grx",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Hollowtech II",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "MT200",
+   "gamme": "MT200",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Octalink V1",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Octalink V2",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "SLX M670 (10v)",
+   "gamme": "SLX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "SLX M7000 (10v)",
+   "gamme": "SLX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "SLX M7000 (11v)",
+   "gamme": "SLX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "SLX M7100 (12v)",
+   "gamme": "SLX",
+   "year": 2019,
+   "src": "shimano-m8100-news",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Sora 3300 (8v)",
+   "gamme": "Sora",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Sora 3400 (9v)",
+   "gamme": "Sora",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Sora 3500 (9v)",
+   "gamme": "Sora",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Sora R3000 (9v)",
+   "gamme": "Sora",
+   "year": 2016,
+   "src": "cyclistshub-road",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tiagra 4400 (9v)",
+   "gamme": "Tiagra",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tiagra 4500 (9v)",
+   "gamme": "Tiagra",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tiagra 4600 (10v)",
+   "gamme": "Tiagra",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tiagra 4700 (10v)",
+   "gamme": "Tiagra",
+   "year": 2015,
+   "src": "rcuk-tiagra4700",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tourney (6/7v)",
+   "gamme": "Tourney",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tourney (7v)",
+   "gamme": "Tourney",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tourney A070 (7v)",
+   "gamme": "Tourney",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tourney TX (6/7v)",
+   "gamme": "Tourney",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Tourney/Altus (7v)",
+   "gamme": "Tourney",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Type B",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Type G",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra 6500 (9v)",
+   "gamme": "Ultegra",
+   "year": 1997,
+   "src": "shimano-ultegra-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra 6600 (10v)",
+   "gamme": "Ultegra",
+   "year": 2005,
+   "src": "shimano-ultegra-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra 6700 (10v)",
+   "gamme": "Ultegra",
+   "year": 2010,
+   "src": "shimano-ultegra-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra 6800 (11v)",
+   "gamme": "Ultegra",
+   "year": 2013,
+   "src": "shimano-ultegra-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra R8000 (11v Di2)",
+   "gamme": "Ultegra",
+   "year": 2017,
+   "src": "shimano-ultegra-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra R8000 (11v)",
+   "gamme": "Ultegra",
+   "year": 2017,
+   "src": "shimano-ultegra-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra R8100 (12v Di2)",
+   "gamme": "Ultegra",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Ultegra R8100 (12v)",
+   "gamme": "Ultegra",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "V-brake",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XT M760 (9v)",
+   "gamme": "XT",
+   "year": 2003,
+   "src": "wiki-deore-xt",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XT M770 (9v)",
+   "gamme": "XT",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XT M780 (10v)",
+   "gamme": "XT",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XT M8000 (11v)",
+   "gamme": "XT",
+   "year": 2015,
+   "src": "wiki-shimano-list",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XT M8100 (12v)",
+   "gamme": "XT",
+   "year": 2019,
+   "src": "shimano-m8100-news",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XTR M9000 (11v)",
+   "gamme": "XTR",
+   "year": 2014,
+   "src": "shimano-xtr-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XTR M9100 (12v)",
+   "gamme": "XTR",
+   "year": 2018,
+   "src": "shimano-xtr-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XTR M950 (9v)",
+   "gamme": "XTR",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XTR M980 (10v)",
+   "gamme": "XTR",
+   "year": 2010,
+   "src": "shimano-xtr-hist",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunRace",
+   "generation": "MS8 (11v)",
+   "gamme": "MS8",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunRace",
+   "generation": "MX8 (11v)",
+   "gamme": "MX8",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunRace",
+   "generation": "MZ90 (12v)",
+   "gamme": "MZ90",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunTour",
+   "generation": "SunTour (7v)",
+   "gamme": "SunTour",
+   "status": "a_valider"
+  },
+  {
+   "brand": "TRP",
+   "generation": "Spyre",
+   "gamme": "Spyre",
+   "status": "a_valider"
+  },
+  {
+   "brand": "microSHIFT",
+   "generation": "Advent X (10v)",
+   "gamme": "Advent X",
+   "status": "a_valider"
+  },
+  {
+   "brand": "microSHIFT",
+   "generation": "Centos (11v)",
+   "gamme": "Centos",
+   "status": "a_valider"
+  },
+  {
+   "brand": "microSHIFT",
+   "generation": "R10 (10v)",
+   "gamme": "R10",
+   "status": "a_valider"
+  },
+  {
+   "brand": "microSHIFT",
+   "generation": "R9 (9v)",
+   "gamme": "R9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "microSHIFT",
+   "generation": "Sword (10v)",
+   "gamme": "Sword",
+   "status": "a_valider"
+  }
+ ]
+}

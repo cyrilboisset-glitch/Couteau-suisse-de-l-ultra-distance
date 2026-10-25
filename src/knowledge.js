@@ -20,6 +20,7 @@ const TABLES = [
   'fluidFits',          // { leverFluid, caliperFluid, ... } fluides exacts miscibles
   'chainLength',        // méthodes de calcul de longueur de chaîne (coefficients sourcés)
   'recommendations',    // { trigger, message, ... } conseils 💡 du mode Projet
+  'gammes',             // { brand, generation, gamme, year? } navigation Marque → Gamme → Génération
 ];
 
 export function createKnowledge(raw = {}) {

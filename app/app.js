@@ -2,6 +2,7 @@
 import { createKnowledge, findReplacements, checkAvailable, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
 import { searchParts } from './src/search.js';
 import { createProjetView } from './projet.js';
+import { createParcourirView } from './parcourir.js';
 
 const CATALOGUE_URL = './catalogue.json';
 const view = document.getElementById('view');
@@ -17,12 +18,20 @@ const state = {
 };
 
 // --- Stockage local (confort seulement : l'appli marche sans) ---------------
+// Si le navigateur bloque le stockage (fichier ouvert depuis les téléchargements,
+// navigation privée…), les données restent en mémoire le temps de la session.
+const memory = new Map();
 const store = {
+  persistent: (() => {
+    try { localStorage.setItem('__test__', '1'); localStorage.removeItem('__test__'); return true; } catch { return false; }
+  })(),
   get(key, fallback) {
+    if (memory.has(key)) return memory.get(key);
     try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
   },
   set(key, value) {
-    try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* navigation privée */ }
+    memory.set(key, value);
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch { store.persistent = false; }
   },
 };
 
@@ -188,7 +197,11 @@ const bikeNote = (broken) => {
 // --- Vues -----------------------------------------------------------------
 const VIEWS = {
   casse() {
-    view.innerHTML = '<h2>Quelle pièce est cassée ?</h2><div id="sb"></div>';
+    view.innerHTML = `<div class="seg" role="tablist" aria-label="Mode de recherche">
+        <a class="seg-btn" href="#/" aria-current="page">🔎 Par référence</a>
+        <a class="seg-btn" href="#/parcourir">🗂️ Parcourir</a>
+      </div>
+      <h2>Quelle pièce est cassée ?</h2><div id="sb"></div>`;
     const input = searchBox(view.querySelector('#sb'), {
       placeholder: 'Référence : r8000 gs, rx812…',
       hint: 'Ou par critères : « dérailleur arrière 11v route chape longue », « cassette 11-34 », « chaîne 12v ».',
@@ -291,6 +304,12 @@ const VIEWS = {
   },
 };
 
+let parcourirView = null;
+VIEWS.parcourir = (segments) => {
+  parcourirView ??= createParcourirView({ state, view, esc, typeLabel, partTitle });
+  parcourirView(segments);
+};
+
 let projetView = null;
 VIEWS.projet = (id) => {
   projetView ??= createProjetView({ state, view, esc, fmt, searchBox, partTitle, partSub, store });
@@ -302,14 +321,15 @@ function updateCount() {
 }
 
 function route() {
-  const [, name = '', arg] = location.hash.split('/');
-  const tab = name === 'piece' || name === '' ? 'casse' : name;
+  const [, name = '', arg, ...rest] = location.hash.split('/');
+  const tab = name === 'piece' || name === '' || name === 'parcourir' ? 'casse' : name;
   for (const a of document.querySelectorAll('.tab')) {
     if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   }
   if (name === 'piece') VIEWS.piece(decodeURIComponent(arg ?? ''));
   else if (name === 'projet') VIEWS.projet(arg ? decodeURIComponent(arg) : null);
+  else if (name === 'parcourir') VIEWS.parcourir([arg, ...rest].filter((x) => x !== undefined && x !== ''));
   else (VIEWS[tab] ?? VIEWS.casse)();
   window.scrollTo(0, 0);
 }

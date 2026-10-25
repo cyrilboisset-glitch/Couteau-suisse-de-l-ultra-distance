@@ -23,6 +23,12 @@ export function checkData({ parts, knowledgeRaw }) {
   for (const [table, entries] of Object.entries(knowledgeRaw)) {
     for (const e of entries) {
       const label = `${e.file} / ${table}`;
+      // Gammes : seule l'année doit être sourcée (la gamme est le nom commercial de la génération).
+      if (table === 'gammes') {
+        if (!e.brand || !e.gamme || e.generation === undefined) errors.push(`${label} : marque, gamme ou génération manquante`);
+        if (e.year && !e.sources.length) errors.push(`${label} : année sans source (${e.generation})`);
+        continue;
+      }
       if (!e.sources.length) errors.push(`${label} : entrée sans source ${JSON.stringify(e).slice(0, 80)}`);
       if (!['valide', 'a_valider'].includes(e.status)) errors.push(`${label} : statut manquant ou inconnu (${e.status})`);
       if (table === 'chainLength') continue;

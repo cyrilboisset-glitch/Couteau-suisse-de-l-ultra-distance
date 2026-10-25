@@ -44,6 +44,7 @@ export function createProjetView(ctx) {
     const projects = load();
     view.innerHTML = `<h2>Projets</h2>
       <p class="muted small">Je veux monter une pièce sur mon vélo : qu'est-ce qui reste compatible, que faut-il changer, quoi acheter ? Les projets sont gardés sur ce téléphone.</p>
+      ${store.persistent ? '' : '<p class="note">Ce navigateur bloque l\'enregistrement : les projets restent disponibles jusqu\'à la fermeture de la page. Pour les garder, utilisez « Copier le projet » ou ouvrez l\'appli depuis Chrome (pas depuis un aperçu de fichier).</p>'}
       <div class="btn-row"><button class="btn" type="button" id="new">+ Nouveau projet</button>
         <button class="btn ghost" type="button" id="import">Importer</button></div>
       <div id="import-box" hidden><textarea id="import-text" rows="5" placeholder="Collez ici un projet copié"></textarea>
@@ -147,7 +148,10 @@ export function createProjetView(ctx) {
 
   function editor(id) {
     const proj = get(id);
-    if (!proj) { location.hash = '#/projet'; return; }
+    if (!proj) {
+      view.innerHTML = `<p class="note">Projet introuvable sur ce téléphone.</p><div class="btn-row"><a class="btn ghost" href="#/projet">‹ Projets</a></div>`;
+      return;
+    }
     const target = part(proj.target);
     const generations = [...new Set(state.parts.map((p) => p.generation).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'fr'));
     view.innerHTML = `
