@@ -25,11 +25,12 @@ describe('1. Cassette 11-25 → 11-34 sur groupe route 11v à chape courte', () 
     assert.equal(rd.after.attrs.family, 'shimano-route-11', 'remplaçant de même tirage');
     assert.ok(rd.after.attrs.maxCog >= 34);
   });
-  test('remplaçants filtrés : même tirage, 34T admis', () => {
-    const alts = slot(r, 'rear_derailleur').alternatives;
+  test('remplaçants filtrés : même tirage, 34T admis ; données manquantes mises à part', () => {
+    const { alternatives: alts, unverified } = slot(r, 'rear_derailleur');
     assert.ok(alts.length > 0);
     assert.ok(alts.every((p) => p.attrs.maxCog >= 34));
     assert.ok(!alts.some((p) => p.attrs.family === 'shimano-vtt-11'));
+    assert.ok(unverified.every((p) => p.attrs.maxCog === undefined || p.attrs.totalCapacity === undefined));
   });
   test('corps de roue libre vérifié : entretoise 1,85 mm dans la liste de courses', () => {
     assert.ok(r.extras.some((x) => /1.85/.test(x)));
@@ -88,10 +89,20 @@ describe('3. Passage 10v → 11v', () => {
 
 describe('4. Dérailleur VTT sur transmission route', () => {
   const r = run({ slots: R8000, wheel: roueRoute11, frame: {} }, 'shimano-rd-m8000-gs');
-  test('tirage incompatible détecté : commandes à changer, aucune manette VTT 11v dans la base', () => {
-    assert.equal(slot(r, 'shifter').status, 'introuvable');
-    assert.ok(slot(r, 'shifter').reasons.some((x) => /ratios différents|Ratio de tirage/.test(x)));
-    assert.ok(r.unsolved.includes('Commandes de vitesses'));
+  test('tirage incompatible détecté : manette VTT 11v imposée, avec la raison', () => {
+    const sh = slot(r, 'shifter');
+    assert.equal(sh.status, 'changer');
+    assert.equal(sh.after.attrs.family, 'shimano-vtt-11');
+    assert.ok(sh.reasons.some((x) => /ratios différents|Ratio de tirage/.test(x)));
+  });
+  test('changement de forme signalé ; levier de frein séparé ajouté', () => {
+    assert.ok(slot(r, 'shifter').checks.some((x) => /Forme différente/.test(x)));
+    assert.equal(slot(r, 'brake_lever').status, 'ajouter');
+    assert.equal(slot(r, 'brake_lever').after.attrs.cablePull, 'court');
+  });
+  test('commande avant VTT 11v absente de la base : signalée, pas inventée', () => {
+    assert.equal(slot(r, 'shifter_front').status, 'introuvable');
+    assert.equal(r.solved, false);
   });
   test('alternative proposée : dérailleur gravel au tirage route (GRX RX810, compatible double plateau)', () => {
     assert.ok(r.alternativesToTarget.some((p) => p.id === 'shimano-rd-rx810'));

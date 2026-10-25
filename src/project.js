@@ -153,9 +153,17 @@ function compatibleWith(cand, fixed, kb, threshold) {
   return { ok: true };
 }
 
+/** Une donnée manque-t-il sur ce candidat pour le vérifier contre les pièces fixes ? */
+function missingOn(cand, fixed, kb) {
+  const mine = `${partLabel(cand)} →`;
+  return fixed.some((other) => other && other.id !== cand.id
+    && evaluatePair(cand, other, kb).some((f) => f.missing?.some((x) => x.startsWith(mine))));
+}
+
 function rankCandidates(cands, target, current) {
   const score = (p) => (p.brand === current?.brand ? 0 : 1) + (p.brand === target.brand ? 0 : 1)
-    + (p.generation && p.generation === target.generation ? -1 : 0);
+    + (p.generation && p.generation === target.generation ? -1 : 0)
+    + (p.attrs?.form && current?.attrs?.form && p.attrs.form !== current.attrs.form ? 2 : 0);
   return [...cands].sort((x, y) => score(x) - score(y) || String(x.ref).localeCompare(String(y.ref)));
 }
 
@@ -250,8 +258,11 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
 
   // Sans solution complète : meilleur candidat de chaque emplacement pris isolément.
   const finalAssign = { ...assign, ...(solution ?? partial) };
-  const noCandidate = solution ? new Set() : new Set([...toChange].filter((s) => !partial[s] || partial[s] === assign[s]));
   const final = evalAll(finalAssign);
+  // Sans solution : emplacements sans candidat (ou « retiré » alors qu'il reste nécessaire).
+  const noCandidate = solution ? new Set() : new Set([...toChange].filter((s) => !partial[s] || partial[s] === assign[s]
+    || (partial[s] === REMOVE && final.req[s] === 'requis')));
+  if (!solution && !unsolved.length) unsolved = [...noCandidate];
 
   // --- Points à vérifier (⚠️) ----------------------------------------------
   const checks = [];
@@ -268,6 +279,14 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
   }
   for (const s of SLOTS) {
     if (!finalAssign[s.id] && final.req[s.id] === 'requis') checks.push({ slots: [s.id], text: `${s.label} : pièce actuelle non renseignée, non vérifiée.` });
+  }
+
+  // Commande de forme différente (levier route ↔ gâchette VTT…) : cintre et leviers à revoir.
+  const FORMS = { levier_route: 'levier route', gachette_vtt: 'gâchette VTT', poignee_tournante: 'poignée tournante', bout_de_cintre: 'manette en bout de cintre', satellite: 'satellite' };
+  const shBefore = byId.get(before.shifter);
+  const shAfter = final.m.parts.shifter;
+  if (shBefore?.attrs?.form && shAfter?.attrs?.form && shBefore.attrs.form !== shAfter.attrs.form && shAfter.id !== shBefore.id) {
+    checks.push({ slots: ['shifter'], text: `Forme différente : ${FORMS[shBefore.attrs.form] ?? shBefore.attrs.form} → ${FORMS[shAfter.attrs.form] ?? shAfter.attrs.form}. Cintre, leviers de frein et gaines à adapter.` });
   }
 
   // Longueur de chaîne (coefficients de la base, base mesurée par l'utilisateur).
@@ -299,19 +318,22 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
     const myRecos = recommendations.filter((r) => r.slot === s.id);
     if (status === 'ok' && myChecks.length) status = 'verifier';
     let alternatives = [];
+    let unverified = [];
     if (status === 'introuvable') {
       (reasons[s.id] ??= new Set()).add('Aucune pièce de la base ne convient avec le reste de la configuration (donnée manquante ou combinaison impossible).');
     }
     if (['changer', 'ajouter', 'introuvable'].includes(status)) {
       const fixed = Object.entries(final.m.parts).filter(([k]) => k !== s.id).map(([, p]) => p);
-      alternatives = catalog
+      const cands = catalog
         .filter((p) => s.types.includes(p.type) && (s.accepts ? s.accepts(p) : true) && p.id !== now)
-        .filter((p) => compatibleWith(p, [...fixed, frame, wheel], kb, threshold).ok)
-        .slice(0, 30);
+        .filter((p) => compatibleWith(p, [...fixed, frame, wheel], kb, threshold).ok);
+      for (const p of cands) (missingOn(p, [...fixed, frame, wheel], kb) ? unverified : alternatives).push(p);
+      alternatives = alternatives.slice(0, 30);
+      unverified = unverified.slice(0, 15);
     }
     return {
       slot: s.id, label: s.label, status, before: wasPart, after: nowPart,
-      reasons: [...(reasons[s.id] ?? [])], checks: [...new Set(myChecks)], recommendations: myRecos, alternatives,
+      reasons: [...(reasons[s.id] ?? [])], checks: [...new Set(myChecks)], recommendations: myRecos, alternatives, unverified,
     };
   });
 
@@ -479,8 +501,10 @@ function solve(assign, slots, ctx) {
     out.push({ slot: s, blockers });
   }
   // Exigences (ex. dérailleur avant requis) : l'emplacement concerné entre dans la cascade.
-  const m = materialize(current, byId, frame, wheel);
-  for (const r of requirementIssues(current, m.parts, beforeReq).out) {
+  // Calculées avec les meilleurs candidats (une manette sans frein intégré exige un levier de frein).
+  const probe = { ...assign, ...greedy() };
+  const m = materialize(probe, byId, frame, wheel);
+  for (const r of requirementIssues(probe, m.parts, beforeReq).out) {
     if (!slots.includes(r.slot)) out.push({ slot: slots[0], blockers: [{ slot: r.slot, finding: { message: `${SLOT_BY_ID[r.slot].label} : exigence de la nouvelle configuration.` } }] });
   }
   return { blocked: out, empty: [], partial: greedy() };

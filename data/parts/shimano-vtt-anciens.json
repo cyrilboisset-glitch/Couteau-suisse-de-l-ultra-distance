@@ -1,0 +1,1411 @@
+{
+ "_meta": {
+  "description": "Shimano VTT anciennes générations (6v à 11v) : XTR, XT, SLX, LX, Deore, Alivio, Acera, Altus, Tourney."
+ },
+ "sources": {
+  "pb-rdm772": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – RD-M772-SGS 9v Shadow chape longue",
+   "url": "https://www.performancebike.com/shimano-xt-rdm772sgs-9speed-shadow-rear-derailleur-long-cage-irdm772sgs/p319464"
+  },
+  "mtbiker-rdm772": {
+   "kind": "revendeur",
+   "ref": "MTBiker – RD-M772 SGS : pignon max 36T, capacité 45T",
+   "url": "https://www.mtbiker.shop/shop/components/rear-derailleurs/mtb-7-8-9-speed/shimano-xt-rd-m772-sgs-shadow-9-st-p60239.html"
+  },
+  "roar-rdm780gs": {
+   "kind": "revendeur",
+   "ref": "BikeRoar – RD-M780-GS : 36T max, 11T min, écart 18T, capacité 35T",
+   "url": "https://www.bikeroar.com/products/shimano/shimano-race-trail-rear-derailleur-rd-m780-gs-xt-2012/specs"
+  },
+  "roar-compare": {
+   "kind": "revendeur",
+   "ref": "BikeRoar – comparatif RD-M780-GS / RD-M980 GS (32-36T, 11T, écart 18T, capacité 41T) / RD-M663",
+   "url": "https://www.bikeroar.com/products_comparison/shimano-race-trail-rear-derailleur-rd-m780-gs-xt-2012,shimano-race-trail-rear-derailleur-rd-m980-sgs-xtr-2012,shimano-rear-derailleur-10sp-rd-m663-sgs-slx-2012"
+  },
+  "atc-rdm786": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – RD-M786 SGS : 36T max, écart 22T, capacité 43T",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-rd-m786-xt-10-speed-sgs-rear-derailleur"
+  },
+  "velonova-rdm786gs": {
+   "kind": "revendeur",
+   "ref": "Velonova – RD-M786 GS : écart 18T, capacité 35T",
+   "url": "https://velonova.lt/en/shimano-deore-xt-rd-m786-gs-t-nor-shadow-plus-rear-derailleur-10-speed"
+  },
+  "mtbiker-rdm670": {
+   "kind": "revendeur",
+   "ref": "MTBiker – RD-M670 SGS 10v : 36T max, 32T min, petit pignon 11T, écart 22T, capacité 43T",
+   "url": "https://www.mtbiker.shop/shop/components/rear-derailleurs/mtb-10-11-12-speed/shimano-slx-rd-m670-sgs-10-speed-derailleur-p4181.html"
+  },
+  "shimano-rdm7000-10sgs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-M7000-10-SGS (3x10) : 36T max, écart 22T, capacité 43T",
+   "url": "https://bike.shimano.com/en-US/product/component/slx-m7000/RD-M7000-10-SGS.html"
+  },
+  "velonova-rdm592": {
+   "kind": "revendeur",
+   "ref": "Velonova – RD-M592 SGS 9v : 36T max, petit pignon 12T max, écart 22T, capacité 45T",
+   "url": "https://www.velonova.lt/en/shimano-deore-rd-m592-sgs-rear-derailleur"
+  },
+  "sjs-rdm592": {
+   "kind": "revendeur",
+   "ref": "SJS Cycles – RD-M592 Shadow 9v top normal SGS",
+   "url": "https://sjscycles.co.uk/derailleurs-rear/shimano-deore-rdm592-shadow-9-speed-top-normal-rear-derailleur-sgs-long-cage-black"
+  },
+  "mtbiker-rdm4000": {
+   "kind": "revendeur",
+   "ref": "MTBiker – RD-M4000 SGS 9v : 36T max, 32T min, petit pignon 11-12T, écart 22T, capacité 45T",
+   "url": "https://www.mtbiker.shop/shop/components/rear-derailleurs/mtb-7-8-9-speed/shimano-alivio-rd-m4000-sgs-9-sp-derailleur-black-p8301.html"
+  },
+  "rose-rdt4000": {
+   "kind": "revendeur",
+   "ref": "Rose – RD-T4000 Alivio trekking 9v : 34T max",
+   "url": "https://www.rosebikes.com/shimano-alivio-rd-t4000-rear-derailleur-742613"
+  },
+  "rose-rdm9000": {
+   "kind": "revendeur",
+   "ref": "Rose – RD-M9000 GS 11v : 42T (2x) / 46T (1x), 40T min, 11T, capacité 37T",
+   "url": "https://www.rosebikes.com/p/shimano-xtr-rd-m9000-shadow-rear-derailleur-742664"
+  },
+  "mtbiker-rdm9000sgs": {
+   "kind": "revendeur",
+   "ref": "MTBiker – RD-M9000 SGS 11v : 40T (3x) / 42T (2x) / 46T (1x), capacité 45T",
+   "url": "https://www.mtbiker.shop/tools/widgetRedirect/48205/similar-products/shop/0/mtbiker"
+  },
+  "merlin-rdm370": {
+   "kind": "revendeur",
+   "ref": "Merlin – RD-M370 Altus 9v : 34T max, écart 22T, capacité 45T",
+   "url": "https://www.merlincycles.com/shimano-altus-m370-rear-derailleur-9-speed-237164.html"
+  },
+  "si-tourney": {
+   "kind": "officiel",
+   "ref": "Shimano – notice Tourney : RD-TX35 6/7v capacité 43T, grand pignon 28-34T, petit 11T, écart 20T",
+   "url": "https://manualsnet.com/shimano/tourney"
+  },
+  "morebikes-tx35": {
+   "kind": "revendeur",
+   "ref": "More Bikes – RD-TX35 Tourney 6/7v",
+   "url": "https://morebikes.ca/products/shimano-tourney-6-7sp-rdtx35b-rear-derailleur"
+  },
+  "bc-rdm8000-compat": {
+   "kind": "revendeur",
+   "ref": "bike-components – RD-M8000 : manettes SL-M9000, SL-M8000, SL-M7000-11, SL-M5100 ; GS 1x/2x jusqu'à 46/42T, SGS 3x11 avec 11-40",
+   "url": "https://www.bike-components.de/en/Shimano/XT-RD-M8000-11-speed-Shadow-Plus-Rear-Derailleur-p43938/"
+  },
+  "mikes-slm6000": {
+   "kind": "revendeur",
+   "ref": "Mike's Bikes – SL-M6000 10v Dyna-Sys droite",
+   "url": "https://mikesbikes.com/collections/vendors/products/m6000-deore-shifter-right-10spd"
+  },
+  "bc-csm771": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-M771-10 : 11-32, 11-34, 11-36 (11-13-15-17-19-21-24-28-32-36) ; manettes SL-M7000-10, SL-M6000, SL-M4100 ; RD-M7000-10, RD-M6000…",
+   "url": "https://www.bike-components.de/en/Shimano/XT-CS-M771-10-10-Speed-Cassette-p24985/"
+  },
+  "bc-csm770": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-M770 9v : 11-32 (11-12-14-16-18-21-24-28-32), 11-34 (11-13-15-17-20-23-26-30-34)",
+   "url": "https://www.bike-components.de/en/Shimano/XT-CS-M760-CS-M770-9-speed-Sprocket-p25232/"
+  },
+  "sigma-slm590": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – SL-M590 Rapidfire 9v (Mega9)",
+   "url": "https://sigmasports.com/item/Shimano/SL-M590-Deore-9-speed-Rapidfire-pods/2IJR"
+  },
+  "tf-m590": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – manettes Deore M590 3x9",
+   "url": "https://treefortbikes.com/Shimano-Deore-M590-3x9-Speed-Shifter-Set"
+  },
+  "tf-m370": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – manettes Altus M370 3x9 (remplacées par SL-M3100 / SL-M315)",
+   "url": "https://www.treefortbikes.com/Shimano-Altus-M370-3x9-Speed-Shifter-Set"
+  },
+  "tf-fcm760": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – FC-M760 XT : Hollowtech II, 4 vis, 22/32/44, coques 68/73, chaîne 9v",
+   "url": "https://www.treefortbikes.com/Shimano-M760-XT-Crankset"
+  },
+  "buycycle-fcm762": {
+   "kind": "revendeur",
+   "ref": "buycycle – FC-M762 : 44/32/22, Hollowtech II 24 mm, BCD 104/64",
+   "url": "https://buycycle.com/en-hr/product/6a91ec2e08b9d"
+  },
+  "tf-fcm4000": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – FC-M4000 Alivio 9v 22-30-40 Octalink II, BCD 104/64",
+   "url": "https://www.treefortbikes.com/Shimano-Alivio-M4000-9-Speed-175mm-22-30-40t-Octalink"
+  },
+  "mb-fcr345": {
+   "kind": "revendeur",
+   "ref": "Modern Bike – FC-R345 9v 50-34, 5 vis BCD 110, Octalink V2",
+   "url": "https://www.modernbike.com/shimano-fc-r345-l-crankset---175mm-9-speed-50-34t-5-bolt---110-bcd-octalink-v2-spindle-interface-black"
+  },
+  "tpc-fcm590": {
+   "kind": "revendeur",
+   "ref": "The Pro's Closet – FC-M590 Deore 9v 44/32/22 BCD 104 Hollowtech II",
+   "url": "https://www.theproscloset.com/products/shimano-deore-fc-m590-crank-set-9-speed-175mm-44-32-22t-black"
+  },
+  "pb-fcm361": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – FC-M361 Acera 3x7/8 axe carré 42/32/22 BCD 104/64",
+   "url": "https://www.performancebike.com/shimano-acera-fcm361-crankset-black-3-x-7-8-speed-square-taper-efcm361c222cl-p/p1277495"
+  },
+  "velomine-fcm6000-3": {
+   "kind": "revendeur",
+   "ref": "Velomine – FC-M6000-3 10v 40/30/22 BCD 96/64 Hollowtech II",
+   "url": "https://velomine.com/products/shimano-fc-m6000-3-crankset-175mm-10-speed-40-30-22t-96-64-bcd-hollowtech-ii-spindle-interface-black"
+  },
+  "veloplus-fcm6000-2": {
+   "kind": "revendeur",
+   "ref": "Veloplus – FC-M6000-2 2x10 : ligne de chaîne 48,8 mm, BCD 96/64",
+   "url": "https://veloplus.ee/en/vandad-shimano-deore-fc-m6000-2-2x10-kaiku-60552"
+  },
+  "wwc-fcm6000-2": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – FC-M6000-2 10v 38/28 BCD 96/64 Hollowtech II",
+   "url": "https://worldwidecyclery.com/products/shimano-deore-m6000-2-10-speed-170mm-28-38t-crankset-without-bottom-bracket"
+  },
+  "bc-fcm8000b2": {
+   "kind": "revendeur",
+   "ref": "bike-components – FC-M8000-B2 : ligne de chaîne 51,8 mm (Boost 148), BCD 96/64",
+   "url": "https://www.bike-components.de/en/Shimano/XT-FC-M8000-B2-Hollowtech-II-Crankset-p43961/"
+  },
+  "bc-fcm7000b2": {
+   "kind": "revendeur",
+   "ref": "bike-components – FC-M7000-11-B2 : ligne de chaîne 51,8 mm, BCD 96/64, 4 bras",
+   "url": "https://www.bike-components.de/en/Shimano/FC-M7000-11-B2-SLX-Hollowtech-II-Crankset-p49893/"
+  },
+  "nashbar-bbes25": {
+   "kind": "revendeur",
+   "ref": "Nashbar – BB-ES25 68 x 118 mm Octalink V2 BSA",
+   "url": "https://www.nashbar.com/shimano-es25-68-x-118mm-octalink-v2-spline-english-bottom-bracket-ebbes25b18/p1179662"
+  },
+  "bc-bbun55": {
+   "kind": "revendeur",
+   "ref": "bike-components – BB-UN55 axe carré JIS (vis de manivelle)",
+   "url": "https://bike-components.de/en/Shimano/Crank-Bolt-for-BB-UN55-Square-Taper-Bottom-Brackets-p42742"
+  },
+  "mec-fdm780": {
+   "kind": "revendeur",
+   "ref": "MEC – FD-M780-A 3x10 top swing dual pull : ligne de chaîne 50 mm, collier 28,6/31,8/34,9, grand plateau 40-42T, capacité 18T",
+   "url": "https://checkout.mec.ca/5054-064"
+  },
+  "veloplus-slm7000l": {
+   "kind": "revendeur",
+   "ref": "Veloplus – SL-M7000 gauche 2/3 plateaux (2x11 / 3x11)",
+   "url": "https://veloplus.ee/en/kaiguhoob-shimano-slx-sl-m7000-vasak-23-kaiku-23x11-kaiku-5716"
+  },
+  "bc-fdm8000": {
+   "kind": "revendeur",
+   "ref": "bike-components – FD-M8000 3x11 direct mount (high) : manettes SL-M9000, SL-M8000, SL-M7000",
+   "url": "https://www.bike-components.de/en/Shimano/XT-FD-M8000-3-11-speed-Front-Derailleur-p43941"
+  },
+  "shimano-fdm6000l": {
+   "kind": "officiel",
+   "ref": "Shimano – FD-M6000-L side swing, collier bas, 3x10",
+   "url": "https://bike.shimano.com/en-AU/product/component/deore-m6000/FD-M6000-L.html"
+  },
+  "bc-fdm6000": {
+   "kind": "revendeur",
+   "ref": "bike-components – FD-M6000 3x10 : manettes SL-M7000, SL-M6000, SL-M610",
+   "url": "https://www.bike-components.de/en/Shimano/Deore-FD-M6000-3-10-speed-Front-Derailleur-p56766"
+  },
+  "nashbar-fdm6000": {
+   "kind": "revendeur",
+   "ref": "Nashbar – FD-M6000 3x10 collier 31,8 / 34,9 mm, side swing, tirage avant",
+   "url": "https://www.nashbar.com/shimano-deore-fdm6000h-3x10-front-derailleur-31.8-34.9mm-frontpull-ifdm6000lx6/p630900"
+  },
+  "clc-fdm4000": {
+   "kind": "revendeur",
+   "ref": "CL Cycle – FD-M4000 3x9 top swing dual pull : ligne de chaîne 50 mm, capacité 18T",
+   "url": "https://www.clcycle.ca/products/front-derailleur-avant-fd-m4000-top-swig-dual-pull"
+  },
+  "retro-m952": {
+   "kind": "communaute",
+   "ref": "Retrobike – RD-M952 XTR : pignon max 34T (spécification Shimano citée), capacité ≈33T chape courte / moyenne",
+   "url": "https://www.retrobike.co.uk/threads/xtr-rd-952-capacity-and-compatibility.209732"
+  },
+  "btp-rdm510": {
+   "kind": "communaute",
+   "ref": "Bike Trails Pfannenstiel – RD-M510 Deore 9v : capacité 40T",
+   "url": "https://biketrailspfannenstiel.ch/auskunft/shimano-deore-schaltwerk-rd-m510/"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-rd-m772-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M772-SGS",
+   "aliases": [
+    "rd m772",
+    "xt m772",
+    "xt 9v shadow"
+   ],
+   "name": "XT M772 Shadow 9v chape longue",
+   "discipline": "vtt",
+   "generation": "XT M770 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 36,
+    "totalCapacity": 45,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "mtbiker-rdm772",
+    "pb-rdm772"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m780-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M780-GS",
+   "aliases": [
+    "rd m780",
+    "xt m780"
+   ],
+   "name": "XT M780 10v chape moyenne",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "minCog": 11,
+    "maxFrontDiff": 18,
+    "totalCapacity": 35,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": "roar-rdm780gs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m786-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M786-SGS",
+   "aliases": [
+    "rd m786",
+    "xt m786",
+    "xt shadow plus 10v"
+   ],
+   "name": "XT M786 Shadow Plus 10v chape longue",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "minCog": 11,
+    "maxFrontDiff": 22,
+    "totalCapacity": 43,
+    "cageLength": "SGS",
+    "clutch": true,
+    "maxFrontChainrings": 3
+   },
+   "src": "atc-rdm786",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m786-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M786-GS",
+   "aliases": [
+    "rd m786 gs"
+   ],
+   "name": "XT M786 Shadow Plus 10v chape moyenne",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxFrontDiff": 18,
+    "totalCapacity": 35,
+    "cageLength": "GS",
+    "clutch": true,
+    "maxFrontChainrings": 2
+   },
+   "src": "velonova-rdm786gs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m980-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M980-GS",
+   "aliases": [
+    "rd m980",
+    "xtr m980"
+   ],
+   "name": "XTR M980 10v chape moyenne",
+   "discipline": "vtt",
+   "generation": "XTR M980 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "minLowCog": 32,
+    "minCog": 11,
+    "maxFrontDiff": 18,
+    "totalCapacity": 41,
+    "cageLength": "GS"
+   },
+   "src": "roar-compare",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m670-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M670-SGS",
+   "aliases": [
+    "rd m670",
+    "slx m670"
+   ],
+   "name": "SLX M670 10v chape longue",
+   "discipline": "vtt",
+   "generation": "SLX M670 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "minLowCog": 32,
+    "minCog": 11,
+    "maxFrontDiff": 22,
+    "totalCapacity": 43,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "mtbiker-rdm670",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m7000-10-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M7000-10-SGS",
+   "aliases": [
+    "rd m7000 10",
+    "slx m7000 10v"
+   ],
+   "name": "SLX M7000 3x10 Shadow Plus chape longue",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "maxFrontDiff": 22,
+    "totalCapacity": 43,
+    "cageLength": "SGS",
+    "clutch": true,
+    "maxFrontChainrings": 3
+   },
+   "src": "shimano-rdm7000-10sgs",
+   "confidence": "haute",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m592-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M592-SGS",
+   "aliases": [
+    "rd m592",
+    "deore m592",
+    "deore 9v shadow"
+   ],
+   "name": "Deore M592 Shadow 9v chape longue",
+   "discipline": "vtt",
+   "generation": "Deore M590 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 36,
+    "maxFrontDiff": 22,
+    "totalCapacity": 45,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "velonova-rdm592",
+    "sjs-rdm592"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m4000-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M4000-SGS",
+   "aliases": [
+    "rd m4000",
+    "alivio m4000"
+   ],
+   "name": "Alivio M4000 9v chape longue",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 36,
+    "minLowCog": 32,
+    "minCog": 11,
+    "maxFrontDiff": 22,
+    "totalCapacity": 45,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "mtbiker-rdm4000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-t4000-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-T4000-SGS",
+   "aliases": [
+    "rd t4000",
+    "alivio t4000"
+   ],
+   "name": "Alivio T4000 trekking 9v chape longue",
+   "discipline": "autre",
+   "generation": "Alivio T4000 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 34,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "rose-rdt4000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m9000-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M9000-GS",
+   "aliases": [
+    "rd m9000",
+    "xtr m9000"
+   ],
+   "name": "XTR M9000 11v chape moyenne",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-vtt-11",
+    "maxCog": 46,
+    "maxCog2x": 42,
+    "minLowCog": 40,
+    "minCog": 11,
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "clutch": true,
+    "maxFrontChainrings": 2
+   },
+   "src": "rose-rdm9000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m9000-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M9000-SGS",
+   "aliases": [
+    "rd m9000 sgs"
+   ],
+   "name": "XTR M9000 11v chape longue",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-vtt-11",
+    "maxCog": 46,
+    "maxCog2x": 42,
+    "maxCog3x": 40,
+    "totalCapacity": 45,
+    "cageLength": "SGS",
+    "clutch": true,
+    "maxFrontChainrings": 3
+   },
+   "src": "mtbiker-rdm9000sgs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m370-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M370",
+   "aliases": [
+    "rd m370",
+    "altus m370"
+   ],
+   "name": "Altus M370 9v",
+   "discipline": "vtt",
+   "generation": "Altus M370 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 34,
+    "maxFrontDiff": 22,
+    "totalCapacity": 45,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": "merlin-rdm370",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-tx35",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-TX35",
+   "aliases": [
+    "rd tx35",
+    "tourney tx35",
+    "tourney 7v"
+   ],
+   "name": "Tourney TX35 6/7v",
+   "discipline": "vtt",
+   "generation": "Tourney TX (6/7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "maxCog": 34,
+    "minLowCog": 28,
+    "minCog": 11,
+    "maxFrontDiff": 20,
+    "totalCapacity": 43
+   },
+   "src": [
+    "si-tourney",
+    "morebikes-tx35"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Version à patte intégrée (B) ou à vis de cadre (A) : vérifier."
+  },
+  {
+   "id": "shimano-sl-m9000-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M9000-R",
+   "aliases": [
+    "sl m9000 r"
+   ],
+   "name": "XTR M9000 manette droite 11v",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-rdm8000-compat",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m8000-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M8000-R",
+   "aliases": [
+    "sl m8000",
+    "manette xt 11v",
+    "xt m8000"
+   ],
+   "name": "XT M8000 manette droite 11v",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-rdm8000-compat",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m7000-11-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M7000-11-R",
+   "aliases": [
+    "sl m7000",
+    "manette slx 11v",
+    "slx m7000"
+   ],
+   "name": "SLX M7000 manette droite 11v",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-rdm8000-compat",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m5100-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M5100-R",
+   "aliases": [
+    "sl m5100",
+    "manette deore 11v",
+    "deore m5100"
+   ],
+   "name": "Deore M5100 manette droite 11v",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-rdm8000-compat",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m6000-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M6000-R",
+   "aliases": [
+    "sl m6000",
+    "manette deore 10v"
+   ],
+   "name": "Deore M6000 manette droite 10v",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "mikes-slm6000",
+    "bc-csm771"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m7000-10-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M7000-10-R",
+   "aliases": [
+    "sl m7000 10"
+   ],
+   "name": "SLX M7000 manette droite 10v",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (10v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-csm771",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m590-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M590-R",
+   "aliases": [
+    "sl m590",
+    "manette deore 9v"
+   ],
+   "name": "Deore M590 manette droite 9v",
+   "discipline": "vtt",
+   "generation": "Deore M590 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "sigma-slm590",
+    "tf-m590"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m370-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M370-R",
+   "aliases": [
+    "sl m370",
+    "manette altus 9v"
+   ],
+   "name": "Altus M370 manette droite 9v",
+   "discipline": "vtt",
+   "generation": "Altus M370 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "src": "tf-m370",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m771-11-36",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M771-10 11-36",
+   "aliases": [
+    "m771 11-36",
+    "cassette xt 10v"
+   ],
+   "name": "XT M771 10v 11-36",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-19-21-24-28-32-36"
+   },
+   "src": "bc-csm771",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m771-11-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M771-10 11-34",
+   "aliases": [
+    "m771 11-34"
+   ],
+   "name": "XT M771 10v 11-34",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "bc-csm771",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m771-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M771-10 11-32",
+   "aliases": [
+    "m771 11-32"
+   ],
+   "name": "XT M771 10v 11-32",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "bc-csm771",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m770-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M770 11-32",
+   "aliases": [
+    "m770 11-32",
+    "cassette xt 9v"
+   ],
+   "name": "XT M770 9v 11-32",
+   "discipline": "vtt",
+   "generation": "XT M770 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-14-16-18-21-24-28-32"
+   },
+   "src": "bc-csm770",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-m770-11-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M770 11-34",
+   "aliases": [
+    "m770 11-34"
+   ],
+   "name": "XT M770 9v 11-34",
+   "discipline": "vtt",
+   "generation": "XT M770 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-30-34"
+   },
+   "src": "bc-csm770",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-m760",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M760 44-32-22",
+   "aliases": [
+    "fc m760",
+    "xt m760",
+    "pedalier xt 9v"
+   ],
+   "name": "XT M760 triple 44-32-22",
+   "discipline": "vtt",
+   "generation": "XT M760 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 104,
+    "bolts": 4,
+    "chainrings": 3,
+    "teeth": "44-32-22",
+    "shellWidths": "68|73"
+   },
+   "src": [
+    "tf-fcm760",
+    "buycycle-fcm762"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD 104 mm (grand et moyen) / 64 mm (petit)."
+  },
+  {
+   "id": "shimano-fc-m590",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M590 44-32-22",
+   "aliases": [
+    "fc m590",
+    "deore m590",
+    "pedalier deore 9v"
+   ],
+   "name": "Deore M590 triple 44-32-22",
+   "discipline": "vtt",
+   "generation": "Deore M590 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 104,
+    "chainrings": 3,
+    "teeth": "44-32-22"
+   },
+   "src": "tpc-fcm590",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD 104 / 64 mm."
+  },
+  {
+   "id": "shimano-fc-m4000",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M4000 40-30-22",
+   "aliases": [
+    "fc m4000",
+    "alivio m4000",
+    "pedalier alivio"
+   ],
+   "name": "Alivio M4000 triple 40-30-22 (Octalink V2)",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "octalink_v2",
+    "ringInterface": "bcd",
+    "bcd": 104,
+    "chainrings": 3,
+    "teeth": "40-30-22"
+   },
+   "src": "tf-fcm4000",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD 104 / 64 mm."
+  },
+  {
+   "id": "shimano-fc-r345",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-R345 50-34",
+   "aliases": [
+    "fc r345"
+   ],
+   "name": "FC-R345 route 9v 50-34 (Octalink V2)",
+   "discipline": "route",
+   "generation": "9v",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "octalink_v2",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 5,
+    "chainrings": 2,
+    "teeth": "50-34"
+   },
+   "src": "mb-fcr345",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-m361",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M361 42-32-22",
+   "aliases": [
+    "fc m361",
+    "acera m361",
+    "pedalier acera"
+   ],
+   "name": "Acera M361 triple 42-32-22 (axe carré)",
+   "discipline": "vtt",
+   "generation": "Acera (7/8v)",
+   "attrs": {
+    "speeds": 8,
+    "spindle": "carre_jis",
+    "ringInterface": "bcd",
+    "bcd": 104,
+    "chainrings": 3,
+    "teeth": "42-32-22"
+   },
+   "src": "pb-fcm361",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévu 7/8v. BCD 104 / 64 mm."
+  },
+  {
+   "id": "shimano-fc-m6000-3",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M6000-3 40-30-22",
+   "aliases": [
+    "fc m6000",
+    "deore m6000 triple"
+   ],
+   "name": "Deore M6000 triple 40-30-22",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 96,
+    "chainrings": 3,
+    "teeth": "40-30-22"
+   },
+   "src": "velomine-fcm6000-3",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD 96 / 64 mm."
+  },
+  {
+   "id": "shimano-fc-m6000-2",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M6000-2 38-28",
+   "aliases": [
+    "fc m6000 2",
+    "deore m6000 double"
+   ],
+   "name": "Deore M6000 double 38-28",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 96,
+    "chainrings": 2,
+    "teeth": "38-28",
+    "chainline": 48.8
+   },
+   "src": [
+    "wwc-fcm6000-2",
+    "veloplus-fcm6000-2"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-m8000-b2",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M8000-B2 36-26",
+   "aliases": [
+    "fc m8000",
+    "xt m8000 double"
+   ],
+   "name": "XT M8000 double Boost 36-26",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 96,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "36-26",
+    "chainline": 51.8
+   },
+   "src": "bc-fcm8000b2",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-m7000-11-b2",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-M7000-11-B2",
+   "aliases": [
+    "fc m7000",
+    "slx m7000 double"
+   ],
+   "name": "SLX M7000 double Boost",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 96,
+    "bolts": 4,
+    "chainrings": 2,
+    "chainline": 51.8
+   },
+   "src": "bc-fcm7000b2",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Dentures selon version."
+  },
+  {
+   "id": "shimano-bb-es25-68",
+   "type": "bottom_bracket",
+   "brand": "Shimano",
+   "ref": "BB-ES25 BSA 68",
+   "aliases": [
+    "bb es25",
+    "octalink v2",
+    "bb es51"
+   ],
+   "name": "Boîtier Octalink V2 BSA 68",
+   "discipline": "autre",
+   "generation": "Octalink V2",
+   "attrs": {
+    "shell": "bsa",
+    "shellWidth": 68,
+    "spindle": "octalink_v2"
+   },
+   "src": "nashbar-bbes25",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plusieurs longueurs d'axe (ex. 118 mm) : reprendre celle d'origine. Octalink V2 ≠ V1 (route)."
+  },
+  {
+   "id": "shimano-bb-un55-68",
+   "type": "bottom_bracket",
+   "brand": "Shimano",
+   "ref": "BB-UN55",
+   "aliases": [
+    "bb un55",
+    "bb un26",
+    "axe carre"
+   ],
+   "name": "Boîtier axe carré UN55",
+   "discipline": "autre",
+   "generation": "Axe carré",
+   "attrs": {
+    "spindle": "carre_jis"
+   },
+   "src": "bc-bbun55",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Remplacé par le BB-UN300. Coque et longueur d'axe selon version."
+  },
+  {
+   "id": "shimano-fd-m780-a",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-M780-A",
+   "aliases": [
+    "fd m780",
+    "xt m780 avant"
+   ],
+   "name": "XT M780 dérailleur avant 3x10 collier",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "mount": "collier_34_9",
+    "capacity": 18,
+    "maxRing": 42,
+    "minRing": 40,
+    "chainline": 50
+   },
+   "src": "mec-fdm780",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Collier 34,9 avec cales 31,8 / 28,6 mm. Top swing, tirage haut ou bas."
+  },
+  {
+   "id": "shimano-sl-m7000-11-l",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M7000-L",
+   "aliases": [
+    "sl m7000 l",
+    "manette avant slx 11v"
+   ],
+   "name": "SLX M7000 manette gauche 2/3 plateaux (11v)",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 3,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "form": "gachette_vtt",
+    "frontPositions": 3
+   },
+   "src": "veloplus-slm7000l",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Réglable 2 ou 3 plateaux."
+  },
+  {
+   "id": "shimano-fd-m8000-d",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-M8000-D",
+   "aliases": [
+    "fd m8000",
+    "xt m8000 avant"
+   ],
+   "name": "XT M8000 dérailleur avant 3x11 direct mount",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "mount": "direct_mount"
+   },
+   "src": "bc-fdm8000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-m6000-l",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-M6000-L",
+   "aliases": [
+    "fd m6000",
+    "deore m6000 avant"
+   ],
+   "name": "Deore M6000 dérailleur avant 3x10 side swing collier bas",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "mount": "collier_34_9"
+   },
+   "src": [
+    "shimano-fdm6000l",
+    "bc-fdm6000",
+    "nashbar-fdm6000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Collier 34,9 avec cale 31,8 mm. Tirage par l'avant (side swing)."
+  },
+  {
+   "id": "shimano-fd-m4000",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-M4000",
+   "aliases": [
+    "fd m4000",
+    "alivio m4000 avant"
+   ],
+   "name": "Alivio M4000 dérailleur avant 3x9 top swing",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "capacity": 18,
+    "chainline": 50
+   },
+   "src": "clc-fdm4000",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation (diamètre de collier) non renseignée."
+  },
+  {
+   "id": "shimano-rd-m952",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M952",
+   "aliases": [
+    "rd m952",
+    "xtr m952",
+    "xtr 9v"
+   ],
+   "name": "XTR M952 9v",
+   "discipline": "vtt",
+   "generation": "XTR M950 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 34
+   },
+   "src": "retro-m952",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Capacité selon chape : ≈33T (courte / moyenne), 43 ou 45T (longue) selon les sources."
+  },
+  {
+   "id": "shimano-rd-m510",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M510",
+   "aliases": [
+    "rd m510",
+    "deore m510"
+   ],
+   "name": "Deore M510 9v",
+   "discipline": "vtt",
+   "generation": "Deore M510 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "totalCapacity": 40
+   },
+   "src": "btp-rdm510",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max non trouvé."
+  }
+ ]
+}

@@ -44,6 +44,23 @@ Règles appliquées :
 - une déduction est toujours écrite dans `notes` (ex. famille de tirage d'un dérailleur microSHIFT déduite de « Shimano compatible ») ;
 - aucune compatibilité entre familles n'est supposée : sans entrée sourcée, le moteur répond ❌ « non documenté ».
 
+## Générations anciennes
+
+Fichiers `data/parts/*-anciens.json` (route Shimano, VTT Shimano, SRAM, Campagnolo,
+chaînes et freins). Standards ajoutés dans `data/knowledge/transmission.json` :
+
+- corps de roue libre Shimano 7v (`hg_7`) : cassette 7v sur corps 8/9/10v avec entretoise de 4 mm (🟢) ; cassette 8-10v sur corps 7v impossible (❌) ;
+- corps Campagnolo 8v Exa-Drive (`campagnolo_8`) : cassette 8v sur corps 9/10/11v = 🟠 (entretoise ≈2,5 mm, sources contradictoires) ;
+- famille `campagnolo-8-9-ancien` (leviers et dérailleurs d'avant 2001) ↔ Campagnolo 9/10v récent : 🟠 ;
+- SRAM 1:1 (7/8/9v) ↔ Exact Actuation (10v) ↔ X-Actuation (VTT 11v) : ❌ ;
+- route Shimano 11v : 9000, 6800, 5800 rangés dans la même famille que R9100 / R8000 / R7000.
+
+Limites connues : beaucoup de pignons max et de capacités non trouvés (champ vide, la pièce
+reste proposée dans « remplaçants non vérifiables ») ; tirage des étriers route Shimano
+« SLR » / « nouveau Super SLR » non distingué par le moteur (signalé en note) ; pas encore
+de manettes avant VTT 9v / 10v, de manettes Campagnolo 9v, de Suntour, Sachs, Hayes,
+Hope ni Formula.
+
 ## Documents officiels à ouvrir pour valider en masse
 
 - Shimano, tableau de compatibilité 2026-2027 : https://productinfo.shimano.com/pdfs/product/thisyear/2026-2027_Compatibility_v026_en.pdf

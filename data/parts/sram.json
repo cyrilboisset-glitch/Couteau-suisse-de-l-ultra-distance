@@ -162,6 +162,16 @@
    "kind": "revendeur",
    "ref": "Halfords – gâchette Eagle S200 12v : dérailleurs GX, X01, XX1, NX, SX Eagle ; pas T-Type",
    "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/sram-eagle-s200-12-speed-trigger-shifter-513091.html"
+  },
+  "nanobike-pg1170": {
+   "kind": "revendeur",
+   "ref": "Nanobike – PG-1170 11-32 : 11-12-13-14-15-17-19-22-25-28-32",
+   "url": "https://nanobike.de/en/bike-parts/chains-cassettes/cassettes-11-speed/7496/sram-zahnkranz-kassette-pg-1170-11-fach-11-32"
+  },
+  "zs-pg1170": {
+   "kind": "revendeur",
+   "ref": "Zweirad Stadler – PG-1170 11-28 : 11-12-13-14-15-16-17-19-22-25-28",
+   "url": "https://shop.zweirad-stadler.de/fahrrad-teile/antrieb/sram-pg-1170-fahrrad-kassette-11-fach-11-28-zaehne.html"
   }
  },
  "parts": [
@@ -1057,12 +1067,15 @@
     "minCog": 11,
     "maxCog": 28,
     "freehub": "hg_11_route",
-    "pitch": "hg-11"
+    "pitch": "hg-11",
+    "cogs": "11-12-13-14-15-16-17-19-22-25-28"
    },
-   "src": "rose-pg1170",
+   "src": [
+    "rose-pg1170",
+    "zs-pg1170"
+   ],
    "confidence": "moyenne",
-   "status": "a_valider",
-   "notes": "Plages vendues 11-25 à 11-36 ; étagements non trouvés."
+   "status": "a_valider"
   },
   {
    "id": "sram-pg-1170-11-32",
@@ -1081,12 +1094,15 @@
     "minCog": 11,
     "maxCog": 32,
     "freehub": "hg_11_route",
-    "pitch": "hg-11"
+    "pitch": "hg-11",
+    "cogs": "11-12-13-14-15-17-19-22-25-28-32"
    },
-   "src": "rose-pg1170",
+   "src": [
+    "rose-pg1170",
+    "nanobike-pg1170"
+   ],
    "confidence": "moyenne",
-   "status": "a_valider",
-   "notes": "Plages vendues 11-25 à 11-36 ; étagements non trouvés."
+   "status": "a_valider"
   },
   {
    "id": "sram-pg-1170-11-36",

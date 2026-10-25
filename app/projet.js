@@ -110,6 +110,7 @@ export function createProjetView(ctx) {
     const extHtml = ext.map((e) => `<article class="card l4"><span class="badge l4">❌ ${e.what === 'wheel' ? 'Roue arrière' : e.what === 'frame' ? 'Cadre / fourche' : 'Pièce du projet'}</span>
       <p>${esc(e.message)}</p>${e.what === 'wheel' && proj.config.wheel?.freehubOptions ? `<p class="small muted">Corps proposés pour ce moyeu : ${esc(proj.config.wheel.freehubOptions)}</p>` : ''}
       <p class="small muted">Hors catalogue : à adapter ou remplacer${e.what === 'wheel' ? ' (corps de roue libre si le fabricant du moyeu en propose un, sinon roue)' : ''}.</p></article>`).join('');
+    const altList = (slot, list) => `<ul class="list">${list.map((p) => `<li><button class="row" type="button" data-prefer="${slot}" data-id="${esc(p.id)}"><span class="main"><span class="ref">${esc(partTitle(p))}</span><span class="sub">${esc(partSub(p))}</span></span><span class="act">Choisir</span></button></li>`).join('')}</ul>`;
     const cards = r.slots.filter((s) => s.status !== 'absent').map((s) => {
       const st = STATUS[s.status] ?? STATUS.ok;
       const alts = s.alternatives.filter((p) => p.id !== s.after?.id);
@@ -120,7 +121,8 @@ export function createProjetView(ctx) {
         ${s.reasons.length ? `<div class="block"><h4>Pourquoi</h4><ul>${s.reasons.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
         ${s.checks.length ? `<div class="block"><h4>⚠️ À vérifier / mesurer</h4><ul>${s.checks.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
         ${s.recommendations.length ? `<div class="block"><h4>💡 Recommandé</h4><ul>${s.recommendations.map((x) => `<li>${esc(x.message)}${x.toValidate ? ' <span class="chip warn">à valider</span>' : ''}${x.source?.url ? ` <a href="${esc(x.source.url)}" target="_blank" rel="noopener">source</a>` : ''}</li>`).join('')}</ul></div>` : ''}
-        ${alts.length ? `<details><summary>Autres remplaçants possibles (${alts.length})</summary><ul class="list">${alts.map((p) => `<li><button class="row" type="button" data-prefer="${s.slot}" data-id="${esc(p.id)}"><span class="main"><span class="ref">${esc(partTitle(p))}</span><span class="sub">${esc(partSub(p))}</span></span><span class="act">Choisir</span></button></li>`).join('')}</ul></details>` : ''}
+        ${alts.length ? `<details><summary>Autres remplaçants possibles (${alts.length})</summary>${altList(s.slot, alts)}</details>` : ''}
+        ${s.unverified?.length ? `<details><summary>⚠️ Remplaçants non vérifiables : données manquantes (${s.unverified.length})</summary><p class="small muted">Rien d'incompatible trouvé, mais une valeur manque dans la base pour ces pièces : contrôler avant d'acheter.</p>${altList(s.slot, s.unverified)}</details>` : ''}
       </article>`;
     }).join('');
     const done = new Set(proj.done ?? []);

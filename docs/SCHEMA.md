@@ -218,7 +218,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 - `frameHanger` : `standard`, `udh`, `direct_mount`
 - `fdMount` : `collier_28_6`, `collier_31_8`, `collier_34_9`, `braze_on`, `direct_mount`, `e_type`, `autre`
 - `cassetteKind` : `cassette`, `roue_libre`
-- `freehub` : `hg_8_9_10`, `hg_11_route`, `hg_12_route`, `hg_l2`, `microspline`, `xd`, `xdr`, `n3w`, `campagnolo`, `autre`
+- `freehub` : `hg_7`, `hg_8_9_10`, `hg_11_route`, `hg_12_route`, `hg_l2`, `microspline`, `xd`, `xdr`, `n3w`, `campagnolo`, `campagnolo_8`, `autre`
 - `chainConnection` : `maillon_rapide`, `goupille`
 - `spindle` : `carre_jis`, `carre_iso`, `octalink_v1`, `octalink_v2`, `isis`, `shimano_24`, `sram_gxp`, `sram_dub`, `axe_30`, `campagnolo_ultratorque`, `campagnolo_powertorque`, `autre`
 - `bbShell` : `bsa`, `ita`, `bb86`, `bb92`, `bb30`, `pf30`, `bb386evo`, `bbright`, `t47_externe`, `t47_interne`, `autre`

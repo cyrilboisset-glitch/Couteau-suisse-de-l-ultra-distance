@@ -1,0 +1,312 @@
+{
+ "_meta": {
+  "description": "Campagnolo anciennes générations : 9v et 10v (Veloce, Centaur, Xenon, Mirage), chaînes, cuvettes Ultra-Torque."
+ },
+ "sources": {
+  "bc-veloce10-rd": {
+   "kind": "revendeur",
+   "ref": "bike-components – dérailleur Veloce 10v : capacité 32T (courte), 37T (moyenne), 40T (longue)",
+   "url": "https://www.bike-components.de/en/Campagnolo/Veloce-10-speed-Rear-Derailleur-p25890"
+  },
+  "hbs-veloce10-m": {
+   "kind": "revendeur",
+   "ref": "Holland Bike Shop – dérailleur Veloce 10v chape moyenne : pignon max 29T",
+   "url": "https://hollandbikeshop.com/en-gb/campagnolo/campagnolo-derailleur/campagnolo-rear-derailleur/campagnolo-rear-derailleur-veloce-medium-long-cage-black-209143/"
+  },
+  "pb-veloce10-ergo": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – Ergopower Veloce 2x10 : dérailleurs Campagnolo Mirage / Veloce / Centaur 10v, Power-Shift",
+   "url": "https://www.performancebike.com/campagnolo-veloce-ergopower-brake-shift-levers-black-pair-2-x-10-speed-ep15-vlbxc/p1356215"
+  },
+  "condor-xenon10": {
+   "kind": "revendeur",
+   "ref": "Condor – Ergopower Xenon 10v : tous les dérailleurs arrière Campagnolo 10v",
+   "url": "https://condorcycles.com/en-us/products/campagnolo-xenon-alloy-ergopower-10-speed-levers"
+  },
+  "bc-veloce9-cs": {
+   "kind": "revendeur",
+   "ref": "bike-components – cassette Veloce 9v : 12-23, 13-23, 13-26, 13-28, 14-28",
+   "url": "https://bike-components.de/en/Campagnolo/Veloce-9-speed-Cassette-p459"
+  },
+  "bc-veloce9-set": {
+   "kind": "revendeur",
+   "ref": "bike-components – lot cassette Veloce 9v + chaîne Record 9v CN99-RE09",
+   "url": "https://bike-components.de/en/Campagnolo/Veloce-Cassette-Record-9-speed-Chain-Set-p49425"
+  },
+  "bc-veloce10-set": {
+   "kind": "revendeur",
+   "ref": "bike-components – chaîne Veloce 10v 5,9 mm (ultra narrow), pour pignons Campagnolo 10v",
+   "url": "https://bike-components.de/en/Campagnolo/Veloce-Cassette-Veloce-10-speed-Chain-Set-p49424/"
+  },
+  "halfords-ut-bsa": {
+   "kind": "revendeur",
+   "ref": "Halfords – cuvettes Ultra-Torque BSA OC12 : pédaliers Ultra-Torque uniquement",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/campagnolo-ultra-torque-bottom-bracket-cups-bsa-oc12-reg-822382.html"
+  }
+ },
+ "parts": [
+  {
+   "id": "campagnolo-rd-veloce-10-ss",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Veloce 10v chape courte",
+   "aliases": [
+    "veloce 10",
+    "campagnolo veloce 10v"
+   ],
+   "name": "Campagnolo Veloce 10v chape courte",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "campagnolo-10",
+    "totalCapacity": 32,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "bc-veloce10-rd",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pignon max non confirmé (sources contradictoires)."
+  },
+  {
+   "id": "campagnolo-rd-veloce-10-m",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Veloce 10v chape moyenne",
+   "aliases": [
+    "veloce 10 moyenne",
+    "veloce 10 triple"
+   ],
+   "name": "Campagnolo Veloce 10v chape moyenne",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "campagnolo-10",
+    "maxCog": 29,
+    "totalCapacity": 37,
+    "cageLength": "M"
+   },
+   "src": [
+    "hbs-veloce10-m",
+    "bc-veloce10-rd"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-ep-veloce-10",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Veloce 10v",
+   "aliases": [
+    "ergopower veloce 10",
+    "ergo veloce",
+    "veloce 10"
+   ],
+   "name": "Ergopower Veloce 2x10 Power-Shift",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "campagnolo-10",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "pb-veloce10-ergo",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-ep-xenon-10",
+   "type": "shifter",
+   "brand": "Campagnolo",
+   "ref": "Ergopower Xenon 10v",
+   "aliases": [
+    "ergopower xenon",
+    "xenon 10"
+   ],
+   "name": "Ergopower Xenon 10v",
+   "discipline": "route",
+   "generation": "Xenon 10",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "campagnolo-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "condor-xenon10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce-9-12-23",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 9v 12-23",
+   "aliases": [
+    "veloce 9 12-23",
+    "cassette campagnolo 9v"
+   ],
+   "name": "Campagnolo Veloce 9v 12-23",
+   "discipline": "route",
+   "generation": "Veloce 9",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 12,
+    "maxCog": 23,
+    "pitch": "campagnolo-9",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce9-cs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce-9-13-26",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 9v 13-26",
+   "aliases": [
+    "veloce 9 13-26"
+   ],
+   "name": "Campagnolo Veloce 9v 13-26",
+   "discipline": "route",
+   "generation": "Veloce 9",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 13,
+    "maxCog": 26,
+    "pitch": "campagnolo-9",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce9-cs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce-9-13-28",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 9v 13-28",
+   "aliases": [
+    "veloce 9 13-28"
+   ],
+   "name": "Campagnolo Veloce 9v 13-28",
+   "discipline": "route",
+   "generation": "Veloce 9",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 13,
+    "maxCog": 28,
+    "pitch": "campagnolo-9",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce9-cs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cs-veloce-9-14-28",
+   "type": "cassette",
+   "brand": "Campagnolo",
+   "ref": "Cassette Veloce 9v 14-28",
+   "aliases": [
+    "veloce 9 14-28"
+   ],
+   "name": "Campagnolo Veloce 9v 14-28",
+   "discipline": "route",
+   "generation": "Veloce 9",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 14,
+    "maxCog": 28,
+    "pitch": "campagnolo-9",
+    "freehub": "campagnolo"
+   },
+   "src": "bc-veloce9-cs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cn-record-9",
+   "type": "chain",
+   "brand": "Campagnolo",
+   "ref": "CN99-RE09",
+   "aliases": [
+    "chaine record 9",
+    "chaine campagnolo 9v"
+   ],
+   "name": "Chaîne Campagnolo Record 9v",
+   "discipline": "route",
+   "generation": "Veloce 9",
+   "attrs": {
+    "speeds": 9,
+    "flattop": false,
+    "chainType": "campagnolo-9"
+   },
+   "src": "bc-veloce9-set",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-cn-veloce-10",
+   "type": "chain",
+   "brand": "Campagnolo",
+   "ref": "Chaîne Veloce 10v",
+   "aliases": [
+    "chaine veloce 10",
+    "chaine campagnolo 10v"
+   ],
+   "name": "Chaîne Campagnolo Veloce 10v (5,9 mm)",
+   "discipline": "route",
+   "generation": "Veloce 10",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "campagnolo-10"
+   },
+   "src": "bc-veloce10-set",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-bb-ut-bsa",
+   "type": "bottom_bracket",
+   "brand": "Campagnolo",
+   "ref": "Cuvettes Ultra-Torque BSA",
+   "aliases": [
+    "ultra torque",
+    "ultra-torque bsa",
+    "oc12"
+   ],
+   "name": "Cuvettes Campagnolo Ultra-Torque BSA",
+   "discipline": "route",
+   "generation": "Ultra-Torque",
+   "attrs": {
+    "shell": "bsa",
+    "spindle": "campagnolo_ultratorque"
+   },
+   "src": "halfords-ut-bsa",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Existe aussi pour BB30, BB86, PF30, T47… (non saisis)."
+  }
+ ]
+}

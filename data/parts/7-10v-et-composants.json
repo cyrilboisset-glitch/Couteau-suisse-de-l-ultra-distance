@@ -342,6 +342,11 @@
    "kind": "officiel",
    "ref": "Shimano – manuels freins à disque : huile minérale Shimano uniquement",
    "url": "https://si.shimano.com/en/pdfs/dm/GADBR01/DM-GADBR01-09-ENG.pdf"
+  },
+  "sheldon-cassette-bodies": {
+   "kind": "communaute",
+   "ref": "Sheldon Brown – Shimano cassette bodies : cassette 7v sur corps 8-9-10v avec entretoise de 4 mm",
+   "url": "https://www.sheldonbrown.com/shimano-cassette-bodies.html"
   }
  },
  "parts": [
@@ -1718,12 +1723,16 @@
     "minCog": 11,
     "maxCog": 28,
     "pitch": "hg-7",
-    "cogs": "11-13-15-18-21-24-28"
+    "cogs": "11-13-15-18-21-24-28",
+    "freehub": "hg_7"
    },
-   "src": "bc-hg41-7",
+   "src": [
+    "bc-hg41-7",
+    "sheldon-cassette-bodies"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Prévue pour les corps de roue libre 7v (source revendeur)."
+   "notes": "Cassette 7v : corps 7v, ou corps 8/9/10v avec entretoise de 4 mm."
   },
   {
    "id": "shimano-mf-tz500-14-28",

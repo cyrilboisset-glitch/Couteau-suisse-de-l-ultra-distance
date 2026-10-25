@@ -253,6 +253,56 @@
    "kind": "revendeur",
    "ref": "Performance Bicycle – microSHIFT R10 2x10 : compatible Shimano route 10v, PAS GRX ni Tiagra 4700",
    "url": "https://www.performancebike.com/microshift-r10-drop-bar-brake-shift-levers-black-standard-reach-sb-r402k/p1356237"
+  },
+  "sheldon-cassette-bodies": {
+   "kind": "communaute",
+   "ref": "Sheldon Brown – Shimano cassette bodies : cassette 7v sur corps 8-9-10v avec entretoise de 4 mm",
+   "url": "https://www.sheldonbrown.com/shimano-cassette-bodies.html"
+  },
+  "sjs-jtek-7": {
+   "kind": "revendeur",
+   "ref": "SJS Cycles – entretoise Jtek cassette 7v sur corps 8/9/10v (4 mm selon le vendeur)",
+   "url": "https://www.sjscycles.co.uk/cassettes/jtek-cassette-spacer-for-shimano-8910-speed-body-to-7-speed-conversion-black"
+  },
+  "cyclechat-7-8-freehub": {
+   "kind": "communaute",
+   "ref": "CycleChat – deux longueurs de corps Shimano (7v et 8/9/10v) ; cassette 8/9/10v impossible sur corps 7v",
+   "url": "https://www.cyclechat.net/threads/7-and-8-speed-freehubs.288205/latest"
+  },
+  "retrobike-campa-8": {
+   "kind": "communaute",
+   "ref": "Retrobike – corps Campagnolo 8v (pré-Exa-Drive 1991, Exa-Drive 1994) ; cassette 8v Exa-Drive sur corps 9/10/11v avec entretoise ≈2,5 mm selon certains, refusée selon d'autres",
+   "url": "https://www.retrobike.co.uk/threads/campagnolo-8-sp-freehub-vs-9-or-10-or-11.142311/"
+  },
+  "retrobike-campa-8-9": {
+   "kind": "communaute",
+   "ref": "Retrobike – ratio des dérailleurs Campagnolo changé en 2001 pour le 10v ; dérailleurs 8v et 9v d'avant 2001 au même ratio",
+   "url": "https://www.retrobike.co.uk/threads/campagnolo-8-speed-on-9-speed-rear-mech.129568"
+  },
+  "retrobike-campa-9ergo": {
+   "kind": "communaute",
+   "ref": "Retrobike – leviers Ergopower 9v d'avant 2001 et dérailleurs 9/10v récents : avis contradictoires",
+   "url": "https://retrobike.co.uk/threads/campagnolo-mid-90s-9-speed-ergo-shifters.417335"
+  },
+  "retrobike-sram-9-10": {
+   "kind": "communaute",
+   "ref": "Retrobike – SRAM 8/9v en 1:1, SRAM 10v en Exact Actuation : tirage différent, pas d'interchangeabilité",
+   "url": "https://www.retrobike.co.uk/threads/sram-compatibility-question-help-please.302698"
+  },
+  "mtbr-exact-x": {
+   "kind": "communaute",
+   "ref": "MTBR – Exact Actuation (route 10/11v, VTT 10v) ≠ X-Actuation (VTT 11v) : pas de compatibilité croisée",
+   "url": "https://www.mtbr.com/threads/x-actuation-and-exact-actuation.938188/"
+  },
+  "roadcc-11v": {
+   "kind": "communaute",
+   "ref": "road.cc – Shimano liste ST-5800/6800 et ST-R70xx/80xx/90xx compatibles avec FD-5800/6800 et FD-R7000/8000/9x00 ; dérailleurs arrière 11v interchangeables selon les utilisateurs",
+   "url": "https://road.cc/forums/topic/262492-shimano-7000-rear-derailleur-compatibility"
+  },
+  "trainerroad-11v": {
+   "kind": "communaute",
+   "ref": "TrainerRoad – pièces Shimano route 11v 5800 et R8000 compatibles entre elles",
+   "url": "https://www.trainerroad.com/forum/t/shimano-groupset-compatibility/53637"
   }
  },
  "families": [
@@ -286,7 +336,7 @@
   {
    "id": "shimano-route-11",
    "brand": "Shimano",
-   "label": "Shimano route 11v mécanique (et GRX 11v)",
+   "label": "Shimano route 11v mécanique (9000, 6800, 5800, R9100, R8000, R7000, GRX 11v)",
    "system": "mecanique",
    "speeds": 11,
    "pitch": [
@@ -294,7 +344,9 @@
    ],
    "src": [
     "shimano-grx-rd",
-    "gremlin-ratio"
+    "gremlin-ratio",
+    "roadcc-11v",
+    "trainerroad-11v"
    ],
    "status": "a_valider"
   },
@@ -722,13 +774,17 @@
   {
    "id": "campagnolo-10",
    "brand": "Campagnolo",
-   "label": "Campagnolo 9/10v (dérailleurs ≥ 2000)",
+   "label": "Campagnolo 9/10v (leviers et dérailleurs à partir de 2001)",
    "system": "mecanique",
    "speeds": 10,
    "pitch": [
+    "campagnolo-9",
     "campagnolo-10"
    ],
-   "src": "cyclechat-campa",
+   "src": [
+    "cyclechat-campa",
+    "retrobike-campa-8-9"
+   ],
    "status": "a_valider"
   },
   {
@@ -741,6 +797,20 @@
     "campagnolo-11"
    ],
    "src": "rose-centaur11",
+   "status": "a_valider"
+  },
+  {
+   "id": "campagnolo-8-9-ancien",
+   "brand": "Campagnolo",
+   "label": "Campagnolo 8v et 9v d'avant 2001 (leviers et dérailleurs)",
+   "system": "mecanique",
+   "pitch": [
+    "campagnolo-8",
+    "campagnolo-9"
+   ],
+   "src": [
+    "retrobike-campa-8-9"
+   ],
    "status": "a_valider"
   }
  ],
@@ -1233,6 +1303,94 @@
    ],
    "confidence": "moyenne",
    "status": "a_valider"
+  },
+  {
+   "shifterFamily": "campagnolo-8-9-ancien",
+   "derailleurFamily": "campagnolo-10",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Levier Campagnolo d'avant 2001 avec dérailleur Campagnolo 9/10v récent.",
+   "src": [
+    "retrobike-campa-9ergo",
+    "retrobike-campa-8-9"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Ratio modifié en 2001 : indexation imprécise possible, sources contradictoires."
+  },
+  {
+   "shifterFamily": "campagnolo-10",
+   "derailleurFamily": "campagnolo-8-9-ancien",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Levier Campagnolo 9/10v récent avec dérailleur Campagnolo d'avant 2001.",
+   "src": [
+    "retrobike-campa-9ergo",
+    "retrobike-campa-8-9"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Ratio modifié en 2001 : indexation imprécise possible, sources contradictoires."
+  },
+  {
+   "shifterFamily": "sram-1-1",
+   "derailleurFamily": "sram-exact-10",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette SRAM 1:1 (7/8/9v) et dérailleur SRAM 10v Exact Actuation : tirages différents.",
+   "src": [
+    "retrobike-sram-9-10"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-1-1-9",
+   "derailleurFamily": "sram-exact-10",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette SRAM 9v 1:1 et dérailleur SRAM 10v Exact Actuation : tirages différents.",
+   "src": [
+    "retrobike-sram-9-10"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-exact-10",
+   "derailleurFamily": "sram-1-1",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette SRAM 10v Exact Actuation et dérailleur SRAM 1:1 (7/8/9v) : tirages différents.",
+   "src": [
+    "retrobike-sram-9-10"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-exact-10",
+   "derailleurFamily": "sram-vtt-11",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette SRAM Exact Actuation (10v) et dérailleur SRAM VTT 11v X-Actuation : tirages différents.",
+   "src": [
+    "mtbr-exact-x"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "shifterFamily": "sram-vtt-11",
+   "derailleurFamily": "sram-exact-10",
+   "side": "arriere",
+   "level": "incompatible",
+   "message": "Manette SRAM VTT 11v X-Actuation et dérailleur Exact Actuation (10v / route) : tirages différents.",
+   "src": [
+    "mtbr-exact-x"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
   }
  ],
  "freehubFits": [
@@ -1317,6 +1475,55 @@
    ],
    "src": "campa-n3w",
    "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "hg_7",
+   "body": "hg_8_9_10",
+   "spacerMm": 4,
+   "level": "connu",
+   "message": "Cassette Shimano 7v sur corps 8/9/10v.",
+   "src": [
+    "sheldon-cassette-bodies",
+    "sjs-jtek-7"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "hg_8_9_10",
+   "body": "hg_7",
+   "level": "incompatible",
+   "message": "Cassette 8/9/10v sur corps 7v : corps trop court.",
+   "src": [
+    "cyclechat-7-8-freehub",
+    "sheldon-cassette-bodies"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "campagnolo_8",
+   "body": "campagnolo",
+   "spacerMm": 2.5,
+   "level": "depannage",
+   "message": "Cassette Campagnolo 8v Exa-Drive sur corps Campagnolo 9/10/11v.",
+   "limitation": "Sources contradictoires ; cannelures moins profondes : risque d'abîmer un corps alu. Écrou 9v nécessaire selon un témoignage.",
+   "src": [
+    "retrobike-campa-8"
+   ],
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "campagnolo",
+   "body": "campagnolo_8",
+   "level": "incompatible",
+   "message": "Cassette Campagnolo 9/10/11v sur corps 8v : non montable.",
+   "src": [
+    "retrobike-campa-8"
+   ],
+   "confidence": "basse",
    "status": "a_valider"
   }
  ],

@@ -12,8 +12,9 @@ const bundle = await build({
 const js = bundle.outputFiles[0].text.replace(/<\/script/gi, '<\\/script');
 const css = readFileSync(root('dist/www/style.css'), 'utf8');
 const catalogue = readFileSync(root('dist/www/catalogue.json'), 'utf8').replace(/<\//g, '<\\/');
+// Remplacement par fonction : sinon « $' », « $& »… présents dans le code minifié sont interprétés.
 const html = readFileSync(root('dist/www/index.html'), 'utf8')
-  .replace('<link rel="stylesheet" href="style.css">', `<style>\n${css}</style>`)
-  .replace('<script type="module" src="app.js"></script>', `<script>window.__CATALOGUE__=${catalogue};</script>\n<script>${js}</script>`);
+  .replace('<link rel="stylesheet" href="style.css">', () => `<style>\n${css}</style>`)
+  .replace('<script type="module" src="app.js"></script>', () => `<script>window.__CATALOGUE__=${catalogue};</script>\n<script>${js}</script>`);
 writeFileSync(root('dist/trousse-du-baroudeur.html'), html);
 console.log(`dist/trousse-du-baroudeur.html (${Math.round(html.length / 1024)} Ko)`);

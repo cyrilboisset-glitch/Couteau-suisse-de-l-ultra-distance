@@ -16,11 +16,11 @@ règle porte sa source ; ce qui n'est pas sourcé officiellement est « à valid
 ## Avancement
 
 1. ✅ Schéma de données + moteur de règles + tests unitaires
-2. 🟡 Base : 7v à 13v — Shimano, SRAM, Campagnolo, microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC, TRP — 274 pièces (dont Claris R2000 et Sora R3000), à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
+2. 🟡 Base : 6v à 13v, groupes actuels et anciens (Dura-Ace 7700 → aujourd'hui, XTR / XT / Deore 9v → 12v, SRAM 1:1 / Exact Actuation / X-Actuation, Campagnolo 9v → 13v) — Shimano, SRAM, Campagnolo, Magura, Avid, microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC, TRP — 467 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
 3. ✅ Interface : recherche tolérante + critères, résultats par niveau, « sous la main », « mon vélo », mode sombre
 3 bis. ✅ Mode Projet : pièce cible → pièces à garder / changer / ajouter / retirer, cascade, liste de courses, projets enregistrés ([docs/PROJET.md](docs/PROJET.md))
 4. ⬜ PWA hors ligne
-5. ⬜ Extension 10 → 8 vitesses, Campagnolo, marques asiatiques
+5. 🟡 Extension aux générations anciennes et autres marques (largement faite, voir [DONNEES](docs/DONNEES.md#générations-anciennes))
 6. ⬜ Import CSV
 
 ## Structure

@@ -1,0 +1,1132 @@
+{
+ "_meta": {
+  "description": "Chaînes 6v à 11v et freins anciens : étriers route SLR / nouveau Super SLR, V-brake, cantilever, disques Shimano, Avid, Magura."
+ },
+ "sources": {
+  "halfords-hg93": {
+   "kind": "revendeur",
+   "ref": "Halfords – CN-HG93 9v 116 maillons",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-cn-hg93-9-speed-chain-116-links-300174.html"
+  },
+  "tf-hg71": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – CN-HG71 6/7/8v",
+   "url": "https://www.treefortbikes.com/Shimano-CN-HG71-6-7-8-Speed-Chain"
+  },
+  "pb-shimano-chains": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – CN-HG54 Deore 10v 116 maillons ; CN-HG95 XT 10v 116 maillons",
+   "url": "https://www.performancebike.com/shimano-chains-accessories-parts/c16416?fb=1468"
+  },
+  "racycles-pc951": {
+   "kind": "revendeur",
+   "ref": "RA Cycles – SRAM PC-951 9v PowerLink",
+   "url": "https://racycles.com/collections/bike-chains/products/sram-pc-951-chain"
+  },
+  "bc-pc850": {
+   "kind": "revendeur",
+   "ref": "bike-components – SRAM PC-850 7/8v PowerLink",
+   "url": "https://www.bike-components.de/en/Sram/PC-850-7-8-fach-Kette-p16894/grau-8-fach-o130339/"
+  },
+  "rei-pc1091": {
+   "kind": "revendeur",
+   "ref": "REI – SRAM PC-1091 10v (SRAM et Shimano 10v) ; PC-1051, PC-1071 10v ; PC-1130 11v",
+   "url": "https://www.rei.com/product/761162"
+  },
+  "campfire-x9": {
+   "kind": "revendeur",
+   "ref": "Campfire Cycling – KMC X9 : Shimano, Campagnolo, SRAM 9v",
+   "url": "https://www.campfirecycling.com/product/kmc-x9-chain-9-speed.html"
+  },
+  "topgear-x11": {
+   "kind": "revendeur",
+   "ref": "Top Gear Cycles – KMC X11 : Shimano, Campagnolo, SRAM 11v, 118 maillons",
+   "url": "https://www.topgearcycles.co.nz/collections/drivetrain/products/kmc-x11-chains"
+  },
+  "velomine-r55c4": {
+   "kind": "revendeur",
+   "ref": "Velomine – patins R55C4 : BR-9000, 9010, 7900, 7800, 7700, 6800, 6700, 6600, 6500, 5800, 5700…",
+   "url": "https://velomine.com/products/shimano-r55c4-road-brake-pads-pair"
+  },
+  "lecyclo-m70t4": {
+   "kind": "revendeur",
+   "ref": "Le Cyclo – patins V-brake 70 mm M70T4 : BR-M590, M580, M570, M530, M510, M432, M431, M430, M422, M421, M420",
+   "url": "https://www.lecyclo.com/de-de/products/patins-de-frein-v-brake-a-visser-70-mm-m70t4-shimano"
+  },
+  "sjs-brcx50": {
+   "kind": "revendeur",
+   "ref": "SJS Cycles – BR-CX50 cantilever : tirage Super SLR (leviers route STI), incompatible leviers V-brake",
+   "url": "https://www.sjscycles.co.uk/brakes/shimano-brcx50-cantilever-brake-front-or-rear"
+  },
+  "westbrook-b01s": {
+   "kind": "revendeur",
+   "ref": "Westbrook Cycles – plaquettes B01S (résine, acier) pour BR-M445, BR-M395, BR-M315 (étriers 2 pistons)",
+   "url": "https://westbrookcycles.co.uk/b01s_disc_brake_pads_and_spring_-_steel_backed,_resin-2171"
+  },
+  "rose-b05s": {
+   "kind": "revendeur",
+   "ref": "Rose – B05S (remplace B01S / B03S), type B, post mount : BR-M445, BR-M395, BR-M315",
+   "url": "https://www.rosebikes.com/p/shimano-b05s-disc-brake-pads-2710957"
+  },
+  "bp-g01s": {
+   "kind": "revendeur",
+   "ref": "Bike-Packing – G01S résine type G étroit : BR-M985, M785, M675, M666, M615",
+   "url": "https://bike-packing.de/en/shimano-g01s-resin-brake-pads-auslaufmodell"
+  },
+  "rei-j04c": {
+   "kind": "revendeur",
+   "ref": "REI – J04C métal à ailettes : BR-M9000, M987, M985, M8000, M785, M7000, M675, M666, M6000, M615…",
+   "url": "https://www.rei.com/product/125346"
+  },
+  "sjs-bb7road": {
+   "kind": "revendeur",
+   "ref": "SJS Cycles – Avid BB7 Road : tirage court (leviers route) ; version VTT tirage long (V-brake)",
+   "url": "https://sjscycles.co.uk/brakes/avid-bb7-road-front-rear-cable-disc-brake-platinum-g2cs-6-bolt-rotor-160-mm/?src=00055"
+  },
+  "tarty-royalblood": {
+   "kind": "revendeur",
+   "ref": "Tarty Bikes – Magura Royal Blood : huile minérale officielle des HS33 et des freins à disque Magura",
+   "url": "https://www.tartybikes.co.uk/brake_spares/magura_royal_blood_mineral_oil/c111p2075.html"
+  },
+  "bc-magura-7p": {
+   "kind": "revendeur",
+   "ref": "bike-components – plaquettes Magura 7.P : MT2, MT4, MT6, MT8",
+   "url": "https://www.bike-components.de/en/Magura/Type-7-P-Performance-Brake-Pads-p66597"
+  },
+  "enduro-mt5": {
+   "kind": "presse",
+   "ref": "Enduro MTB – Magura MT5 4 pistons, huile minérale Royal Blood",
+   "url": "https://enduro-mtb.com/en/?p=56573"
+  },
+  "bp-magura-9": {
+   "kind": "revendeur",
+   "ref": "Bike-Packing – plaquettes Magura type 9 : MT5, MT7",
+   "url": "https://www.bike-packing.de/en/magura-brake-pads-typ-9-mt5-mt7?p=2"
+  },
+  "wwc-sram-dot": {
+   "kind": "revendeur",
+   "ref": "Worldwide Cyclery – fluide SRAM DOT 5.1 pour tous les freins hydrauliques SRAM et Avid (Guide, Level, Code, G2)",
+   "url": "https://worldwidecyclery.com/collections/brakes/sram"
+  },
+  "biketart-bleedkit": {
+   "kind": "revendeur",
+   "ref": "Biketart (Bleedkit) – huile minérale : Shimano, Magura, Tektro… ; pas pour freins DOT (Hayes, Hope, SRAM, Avid)",
+   "url": "https://www.biketart.com/products/bleedkit-fluid-gold-hydraulic-disc-brake-oil"
+  },
+  "nashbar-br6800": {
+   "kind": "revendeur",
+   "ref": "Nashbar – BR-6800 : leviers SLR-EV ou Super SLR (9000, 7900, 6800, 6700, 5700…) ; avec leviers SLR standard, freinage spongieux",
+   "url": "https://www.nashbar.com/shimano-ultegra-br6800-brake-caliper-rear-ibr6800ar82a/p304752"
+  },
+  "bots-br9000": {
+   "kind": "revendeur",
+   "ref": "Bums on the Saddle – BR-9000 : leviers Super SLR (7970, 7900, 6770, 6700, 5700, 4600) ; leviers SLR standard = freinage spongieux",
+   "url": "https://bumsonthesaddle.com/products/shimano-br-9000-dura-ace-brakes"
+  },
+  "bc-blr780": {
+   "kind": "revendeur",
+   "ref": "bike-components – leviers BL-R780 (cintre plat) : étriers route BR-9000, BR-6800, BR-5800…",
+   "url": "https://www.bike-components.de/en/Shimano/BL-R780-Brake-Levers-p35317/"
+  },
+  "bc-bl4700": {
+   "kind": "revendeur",
+   "ref": "bike-components – leviers Tiagra BL-4700 (cintre plat) : étriers route BR-9000, BR-6800, BR-5800…",
+   "url": "https://www.bike-components.de/en/Shimano/Tiagra-BL-4700-Brake-Levers-p43856/"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-cn-hg93",
+   "type": "chain",
+   "brand": "Shimano",
+   "ref": "CN-HG93",
+   "aliases": [
+    "hg93",
+    "chaine 9v"
+   ],
+   "name": "Chaîne Shimano HG93 9v",
+   "discipline": "autre",
+   "generation": "9v",
+   "attrs": {
+    "speeds": 9,
+    "flattop": false,
+    "chainType": "shimano-hg",
+    "links": 116
+   },
+   "src": "halfords-hg93",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "shimano-cn-hg71",
+   "type": "chain",
+   "brand": "Shimano",
+   "ref": "CN-HG71",
+   "aliases": [
+    "hg71",
+    "chaine 8v"
+   ],
+   "name": "Chaîne Shimano HG71 6/7/8v",
+   "discipline": "autre",
+   "generation": "8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false,
+    "chainType": "shimano-hg",
+    "links": 116
+   },
+   "src": "tf-hg71",
+   "notes": "Prévue pour 6, 7 et 8 vitesses.",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "shimano-cn-hg54",
+   "type": "chain",
+   "brand": "Shimano",
+   "ref": "CN-HG54",
+   "aliases": [
+    "hg54",
+    "chaine 10v"
+   ],
+   "name": "Chaîne Shimano Deore HG54 10v",
+   "discipline": "autre",
+   "generation": "10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10",
+    "links": 116
+   },
+   "src": "pb-shimano-chains",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "shimano-cn-hg95",
+   "type": "chain",
+   "brand": "Shimano",
+   "ref": "CN-HG95",
+   "aliases": [
+    "hg95"
+   ],
+   "name": "Chaîne Shimano XT HG95 10v",
+   "discipline": "autre",
+   "generation": "10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10",
+    "links": 116
+   },
+   "src": "pb-shimano-chains",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "sram-pc-951",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "PC-951",
+   "aliases": [
+    "pc951",
+    "pc 951"
+   ],
+   "name": "Chaîne SRAM PC-951 9v",
+   "discipline": "autre",
+   "generation": "9v",
+   "attrs": {
+    "speeds": 9,
+    "flattop": false,
+    "chainType": "sram-9"
+   },
+   "src": "racycles-pc951",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "sram-pc-850",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "PC-850",
+   "aliases": [
+    "pc850",
+    "pc 850"
+   ],
+   "name": "Chaîne SRAM PC-850 7/8v",
+   "discipline": "autre",
+   "generation": "8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false,
+    "chainType": "sram-8"
+   },
+   "src": "bc-pc850",
+   "notes": "Prévue pour 7 et 8 vitesses.",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "sram-pc-1091",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "PC-1091",
+   "aliases": [
+    "pc1091",
+    "pc 1091",
+    "pc 1071",
+    "pc 1051"
+   ],
+   "name": "Chaîne SRAM PC-1091 10v",
+   "discipline": "autre",
+   "generation": "10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "sram-10"
+   },
+   "src": "rei-pc1091",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "sram-pc-1130",
+   "type": "chain",
+   "brand": "SRAM",
+   "ref": "PC-1130",
+   "aliases": [
+    "pc1130",
+    "pc 1130"
+   ],
+   "name": "Chaîne SRAM PC-1130 11v",
+   "discipline": "autre",
+   "generation": "11v",
+   "attrs": {
+    "speeds": 11,
+    "flattop": false,
+    "chainType": "sram-11"
+   },
+   "src": "rei-pc1091",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "kmc-x9",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "X9",
+   "aliases": [
+    "kmc x9"
+   ],
+   "name": "Chaîne KMC X9 9v",
+   "discipline": "autre",
+   "generation": "9v",
+   "attrs": {
+    "speeds": 9,
+    "flattop": false,
+    "chainType": "kmc-9"
+   },
+   "src": "campfire-x9",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "kmc-x11",
+   "type": "chain",
+   "brand": "KMC",
+   "ref": "X11",
+   "aliases": [
+    "kmc x11"
+   ],
+   "name": "Chaîne KMC X11 11v",
+   "discipline": "autre",
+   "generation": "11v",
+   "attrs": {
+    "speeds": 11,
+    "flattop": false,
+    "chainType": "kmc-11",
+    "links": 118
+   },
+   "src": "topgear-x11",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "shimano-br-9000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-9000",
+   "aliases": [
+    "br 9000",
+    "br-9000"
+   ],
+   "name": "BR-9000 étrier sur jante",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": [
+    "velomine-r55c4",
+    "nashbar-br6800",
+    "bots-br9000"
+   ],
+   "confidence": "moyenne",
+   "notes": "Prévu pour leviers Super SLR / SLR-EV (ex. 9000, 7900, 6800, 6700, 5800, 5700, 4600) ; avec des leviers SLR standard plus anciens, freinage spongieux.",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-6800",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-6800",
+   "aliases": [
+    "br 6800",
+    "br-6800"
+   ],
+   "name": "BR-6800 étrier sur jante",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": [
+    "velomine-r55c4",
+    "nashbar-br6800",
+    "bots-br9000"
+   ],
+   "confidence": "moyenne",
+   "notes": "Prévu pour leviers Super SLR / SLR-EV (ex. 9000, 7900, 6800, 6700, 5800, 5700, 4600) ; avec des leviers SLR standard plus anciens, freinage spongieux.",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-5800",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-5800",
+   "aliases": [
+    "br 5800",
+    "br-5800"
+   ],
+   "name": "BR-5800 étrier sur jante",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": [
+    "velomine-r55c4",
+    "nashbar-br6800",
+    "bots-br9000"
+   ],
+   "confidence": "moyenne",
+   "notes": "Prévu pour leviers Super SLR / SLR-EV (ex. 9000, 7900, 6800, 6700, 5800, 5700, 4600) ; avec des leviers SLR standard plus anciens, freinage spongieux.",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-7900",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-7900",
+   "aliases": [
+    "br 7900",
+    "br-7900"
+   ],
+   "name": "BR-7900 étrier sur jante",
+   "discipline": "route",
+   "generation": "Dura-Ace 7900 (10v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "velomine-r55c4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-6700",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-6700",
+   "aliases": [
+    "br 6700",
+    "br-6700"
+   ],
+   "name": "BR-6700 étrier sur jante",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "velomine-r55c4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-5700",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-5700",
+   "aliases": [
+    "br 5700",
+    "br-5700"
+   ],
+   "name": "BR-5700 étrier sur jante",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "velomine-r55c4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-7800",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-7800",
+   "aliases": [
+    "br 7800",
+    "br-7800"
+   ],
+   "name": "BR-7800 étrier sur jante",
+   "discipline": "route",
+   "generation": "Dura-Ace 7800 (10v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "velomine-r55c4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-6600",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-6600",
+   "aliases": [
+    "br 6600",
+    "br-6600"
+   ],
+   "name": "BR-6600 étrier sur jante",
+   "discipline": "route",
+   "generation": "Ultegra 6600 (10v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "velomine-r55c4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-7700",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-7700",
+   "aliases": [
+    "br 7700",
+    "br-7700"
+   ],
+   "name": "BR-7700 étrier sur jante",
+   "discipline": "route",
+   "generation": "Dura-Ace 7700 (9v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "velomine-r55c4",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-6500",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-6500",
+   "aliases": [
+    "br 6500",
+    "br-6500"
+   ],
+   "name": "BR-6500 étrier sur jante",
+   "discipline": "route",
+   "generation": "Ultegra 6500 (9v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R55C4"
+   },
+   "src": "velomine-r55c4",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-m590",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M590",
+   "aliases": [
+    "br m590",
+    "v-brake deore"
+   ],
+   "name": "Deore M590 V-brake",
+   "discipline": "vtt",
+   "generation": "Deore M590 (9v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "long",
+    "mount": "v_brake",
+    "padShape": "shimano-M70"
+   },
+   "src": "lecyclo-m70t4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-m422",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M422",
+   "aliases": [
+    "br m422",
+    "v-brake acera"
+   ],
+   "name": "Acera M422 V-brake",
+   "discipline": "vtt",
+   "generation": "Acera (7/8v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "long",
+    "mount": "v_brake",
+    "padShape": "shimano-M70"
+   },
+   "src": "lecyclo-m70t4",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bs-m70t4",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "M70T4",
+   "aliases": [
+    "patins m70t4",
+    "patins v-brake 70"
+   ],
+   "name": "Patins V-brake 70 mm M70T4 (à visser)",
+   "discipline": "vtt",
+   "generation": "V-brake",
+   "attrs": {
+    "shape": "shimano-M70"
+   },
+   "src": "lecyclo-m70t4",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "shimano-br-cx50",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-CX50",
+   "aliases": [
+    "br cx50",
+    "cantilever"
+   ],
+   "name": "Cantilever CX50 (tirage court)",
+   "discipline": "gravel",
+   "generation": "Cantilever",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "cantilever"
+   },
+   "src": "sjs-brcx50",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-m445",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M445",
+   "aliases": [
+    "br m445"
+   ],
+   "name": "Shimano M445 hydraulique 2 pistons",
+   "discipline": "vtt",
+   "generation": "Alivio / Deore (disque)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B"
+   },
+   "src": [
+    "westbrook-b01s",
+    "rose-b05s",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "notes": "Système hydraulique supposé « VTT Shimano » : à valider.",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-m395",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M395",
+   "aliases": [
+    "br m395"
+   ],
+   "name": "Shimano M395 hydraulique 2 pistons",
+   "discipline": "vtt",
+   "generation": "Acera (disque)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B"
+   },
+   "src": [
+    "westbrook-b01s",
+    "rose-b05s",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "notes": "Système hydraulique supposé « VTT Shimano » : à valider.",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-m315",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M315",
+   "aliases": [
+    "br m315"
+   ],
+   "name": "Shimano M315 hydraulique 2 pistons",
+   "discipline": "vtt",
+   "generation": "Altus (disque)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B"
+   },
+   "src": [
+    "westbrook-b01s",
+    "rose-b05s",
+    "biketart-bleedkit"
+   ],
+   "confidence": "basse",
+   "notes": "Système hydraulique supposé « VTT Shimano » : à valider.",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-m615",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M615",
+   "aliases": [
+    "br m615",
+    "frein deore 10v"
+   ],
+   "name": "Deore M615 hydraulique 2 pistons",
+   "discipline": "vtt",
+   "generation": "Deore M610 (10v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G"
+   },
+   "src": [
+    "bp-g01s",
+    "rei-j04c",
+    "biketart-bleedkit"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-m785",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M785",
+   "aliases": [
+    "br m785",
+    "frein xt 10v"
+   ],
+   "name": "XT M785 hydraulique 2 pistons",
+   "discipline": "vtt",
+   "generation": "XT M780 (10v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G"
+   },
+   "src": [
+    "bp-g01s",
+    "rei-j04c",
+    "biketart-bleedkit"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bp-g01s",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "G01S",
+   "aliases": [
+    "g01s",
+    "plaquettes g01s"
+   ],
+   "name": "Plaquettes G01S résine (type G)",
+   "discipline": "vtt",
+   "generation": "Type G",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "resine"
+   },
+   "src": "bp-g01s",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "shimano-bp-j04c",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "J04C",
+   "aliases": [
+    "j04c",
+    "plaquettes j04c"
+   ],
+   "name": "Plaquettes J04C métal à ailettes (type G/J)",
+   "discipline": "vtt",
+   "generation": "Type G",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "metal"
+   },
+   "src": "rei-j04c",
+   "notes": "Forme compatible type G (étriers 2 pistons VTT Shimano) selon la liste du revendeur.",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "shimano-bp-b05s",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "B05S",
+   "aliases": [
+    "b05s",
+    "plaquettes b05s",
+    "b01s"
+   ],
+   "name": "Plaquettes B05S résine (type B, remplace B01S)",
+   "discipline": "vtt",
+   "generation": "Type B",
+   "attrs": {
+    "shape": "shimano-B",
+    "compound": "resine"
+   },
+   "src": "rose-b05s",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "avid-bb7-road",
+   "type": "brake_caliper",
+   "brand": "Avid",
+   "ref": "BB7 Road",
+   "aliases": [
+    "bb7 road",
+    "avid bb7"
+   ],
+   "name": "Avid BB7 Road (mécanique, tirage court)",
+   "discipline": "route",
+   "generation": "BB7",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "post_mount",
+    "padShape": "avid-bb7"
+   },
+   "src": "sjs-bb7road",
+   "confidence": "basse",
+   "notes": "Fixation : post mount (adaptateur IS fourni selon version) : à vérifier.",
+   "status": "a_valider"
+  },
+  {
+   "id": "avid-bb7-mtb",
+   "type": "brake_caliper",
+   "brand": "Avid",
+   "ref": "BB7 MTB",
+   "aliases": [
+    "bb7 mtb",
+    "bb7 vtt"
+   ],
+   "name": "Avid BB7 VTT (mécanique, tirage long)",
+   "discipline": "vtt",
+   "generation": "BB7",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "long",
+    "mount": "post_mount",
+    "padShape": "avid-bb7"
+   },
+   "src": "sjs-bb7road",
+   "confidence": "basse",
+   "notes": "Fixation : post mount (adaptateur IS selon version) : à vérifier.",
+   "status": "a_valider"
+  },
+  {
+   "id": "magura-mt2",
+   "type": "brake_caliper",
+   "brand": "Magura",
+   "ref": "MT2",
+   "aliases": [
+    "mt2",
+    "magura mt2"
+   ],
+   "name": "Magura MT2 (2 pistons, Royal Blood)",
+   "discipline": "vtt",
+   "generation": "Magura MT",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "magura_royal_blood",
+    "hydraulicSystem": "magura-mt",
+    "mount": "post_mount",
+    "padShape": "magura-7"
+   },
+   "src": [
+    "bc-magura-7p",
+    "tarty-royalblood"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "magura-mt4",
+   "type": "brake_caliper",
+   "brand": "Magura",
+   "ref": "MT4",
+   "aliases": [
+    "mt4",
+    "magura mt4"
+   ],
+   "name": "Magura MT4 (2 pistons, Royal Blood)",
+   "discipline": "vtt",
+   "generation": "Magura MT",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "magura_royal_blood",
+    "hydraulicSystem": "magura-mt",
+    "mount": "post_mount",
+    "padShape": "magura-7"
+   },
+   "src": [
+    "bc-magura-7p",
+    "tarty-royalblood"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "magura-mt5",
+   "type": "brake_caliper",
+   "brand": "Magura",
+   "ref": "MT5",
+   "aliases": [
+    "mt5",
+    "magura mt5"
+   ],
+   "name": "Magura MT5 (4 pistons, Royal Blood)",
+   "discipline": "vtt",
+   "generation": "Magura MT",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "magura_royal_blood",
+    "hydraulicSystem": "magura-mt",
+    "mount": "post_mount",
+    "padShape": "magura-9"
+   },
+   "src": [
+    "enduro-mt5",
+    "bp-magura-9",
+    "tarty-royalblood"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "magura-pads-7p",
+   "type": "brake_pads",
+   "brand": "Magura",
+   "ref": "Plaquettes 7.P",
+   "aliases": [
+    "magura 7.p",
+    "magura type 7"
+   ],
+   "name": "Plaquettes Magura type 7 (MT2/MT4/MT6/MT8)",
+   "discipline": "vtt",
+   "generation": "Magura MT",
+   "attrs": {
+    "shape": "magura-7"
+   },
+   "src": "bc-magura-7p",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "magura-pads-9p",
+   "type": "brake_pads",
+   "brand": "Magura",
+   "ref": "Plaquettes 9.P",
+   "aliases": [
+    "magura 9.p",
+    "magura type 9"
+   ],
+   "name": "Plaquettes Magura type 9 (MT5/MT7)",
+   "discipline": "vtt",
+   "generation": "Magura MT",
+   "attrs": {
+    "shape": "magura-9"
+   },
+   "src": "bp-magura-9",
+   "status": "a_valider",
+   "confidence": "moyenne"
+  },
+  {
+   "id": "magura-hs33",
+   "type": "brake_caliper",
+   "brand": "Magura",
+   "ref": "HS33",
+   "aliases": [
+    "hs33",
+    "magura hs33"
+   ],
+   "name": "Magura HS33 (frein sur jante hydraulique, Royal Blood)",
+   "discipline": "vtt",
+   "generation": "Magura HS",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "magura_royal_blood",
+    "hydraulicSystem": "magura-hs",
+    "mount": "v_brake"
+   },
+   "src": "tarty-royalblood",
+   "confidence": "moyenne",
+   "notes": "Monté sur les tétons de cantilever / V-brake.",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-r780",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-R780",
+   "aliases": [
+    "bl r780",
+    "levier frein cintre plat route"
+   ],
+   "name": "Leviers de frein BL-R780 cintre plat, tirage court (étriers route)",
+   "discipline": "route",
+   "generation": "Cintre plat route",
+   "attrs": {
+    "form": "autre",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "bc-blr780",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-4700",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-4700",
+   "aliases": [
+    "bl 4700",
+    "tiagra bl-4700"
+   ],
+   "name": "Leviers de frein Tiagra BL-4700 cintre plat, tirage court",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "attrs": {
+    "form": "autre",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "bc-bl4700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ]
+}

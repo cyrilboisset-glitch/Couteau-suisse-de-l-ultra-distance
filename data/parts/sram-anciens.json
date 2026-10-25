@@ -1,0 +1,807 @@
+{
+ "_meta": {
+  "description": "SRAM anciennes générations : VTT 9v 1:1, 10v Exact Actuation, 11v X-Actuation ; route 10v, 22 (11v) et 1x11."
+ },
+ "sources": {
+  "sram-rdx7-9": {
+   "kind": "officiel",
+   "ref": "SRAM – RD-X7-A1 (9v) : pignon max 36T, capacité 37T",
+   "url": "https://sram.com/en/sram/models/rd-x7-a1"
+  },
+  "tf-x7-9": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – SRAM X7 9v : manettes 1:1",
+   "url": "https://www.treefortbikes.com/SRAM-X7-9-Speed-Rear-Derailleur"
+  },
+  "sigma-x9-9m": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – SRAM X9 9v chape moyenne",
+   "url": "https://sigmasports.com/item/SRAM/X9-9-Speed-Rear-Derailleur-Medium-Cage/MYJ"
+  },
+  "vital-x0-10": {
+   "kind": "revendeur",
+   "ref": "Vital MTB – SRAM X0 10v : cassette 36T max, chapes courte / moyenne / longue",
+   "url": "https://vitalmtb.com/product/guide/Rear-Derailleurs,23/SRAM/X0-10-Speed,17646?page=1"
+  },
+  "cc-x9-10": {
+   "kind": "revendeur",
+   "ref": "Competitive Cyclist – SRAM X9 10v : rapport 1:1 Exact Actuation (identique au VTT 10v)",
+   "url": "https://www.competitivecyclist.com/sram-x9-rear-derailleur-10-speed"
+  },
+  "stw-x7-10": {
+   "kind": "presse",
+   "ref": "Singletrack – X7 passe en 10v Exact Actuation (manettes et dérailleur)",
+   "url": "https://singletrackworld.com/2010/03/sram-x-7-goes-ten-speed/"
+  },
+  "pb-red10": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – SRAM Red 10v : 28T (courte) / 32T (moyenne), 11T min, capacité 31T",
+   "url": "https://www.performancebike.com/sram-red-rear-derailleur-black-silver-10-speed-medium-cage-00.7515.090.010/p1279010"
+  },
+  "tf-apex10": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – SRAM Apex 10v : courte 28T / capacité 33T ; moyenne 32T / capacité 37T",
+   "url": "https://treefortbikes.com/SRAM-Apex-10-Speed-Rear-Derailleur"
+  },
+  "tune-rival22": {
+   "kind": "revendeur",
+   "ref": "Tune Cycles – Rival 22 chape courte 28T max",
+   "url": "https://shop.tunecycles.com.au/sram-rival-22-rear-derailleur-11-speed-short-cage-28t"
+  },
+  "pb-rival22": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – Rival 22 : 28T (courte) / 32T (moyenne), 11T min",
+   "url": "https://www.performancebike.com/sram-rival-22-rear-derailleur-black-silver-11-speed-short-cage-00.7518.043.000/p1279012"
+  },
+  "mantel-rival22wifli": {
+   "kind": "revendeur",
+   "ref": "Mantel – Rival 22 WiFLi 11v",
+   "url": "https://www.mantel.com/fi/sram-rival-22-wifli-rear-derailleur&spec[]=1747"
+  },
+  "condor-apex1": {
+   "kind": "revendeur",
+   "ref": "Condor – Apex 1 11v : 42T max, Exact Actuation, systèmes route 1x 10/11v",
+   "url": "https://condorcycles.com/en-us/products/sram-apex-1-rear-derailleur-11-speed"
+  },
+  "pb-x01-11": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – X01 1x11 : 42T max, 10T min, capacité 32T, mono-plateau uniquement",
+   "url": "https://www.performancebike.com/sram-x01-rear-derailleur-black-red-1-x-11-speed-00.7518.064.001-p/p1279099"
+  },
+  "mantel-gx1": {
+   "kind": "revendeur",
+   "ref": "Mantel – GX1 11v : 42T max, capacité 32T",
+   "url": "https://www.mantel.com/en/sram-gx1-rear-derailleur"
+  },
+  "rose-nx11": {
+   "kind": "revendeur",
+   "ref": "Rose – NX 1x11 Type 3.0 X-Horizon : 42T max",
+   "url": "https://www.rosebikes.es/sram-nx-1-x-11-speed-type-30-x-horizontm-rear-derailleur-2700009"
+  },
+  "tf-nx11-twist": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – poignée NX 11v : même tirage X-Actuation que X1, compatible GX / X01 / XX1",
+   "url": "https://www.treefortbikes.com/SRAM-NX-11-Speed-Rear-Twist-Shifter"
+  },
+  "bc-xg1175": {
+   "kind": "revendeur",
+   "ref": "bike-components – XG-1175 11v 10-42 corps XD",
+   "url": "https://bike-components.de/en/SRAM/XG-1175-11-speed-Cassette-p57688/"
+  },
+  "cc-xg1180": {
+   "kind": "revendeur",
+   "ref": "Competitive Cyclist – XG-1180 10-42 corps XD uniquement",
+   "url": "https://www.competitivecyclist.com/sram-xg-1180-cassette-11-speed"
+  },
+  "bc-pg1130": {
+   "kind": "revendeur",
+   "ref": "bike-components – PG-1130 11v : 11-28 (11-12-13-14-15-16-17-19-22-25-28), 11-32, 11-36, 11-42",
+   "url": "https://www.bike-components.de/en/SRAM/PG-1130-11-speed-Cassette-p40216/"
+  },
+  "atc-pg1130": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – PG-1130 11-42 corps non XD (entretoise 1,85 mm sur corps route 11v)",
+   "url": "https://www.allterraincycles.co.uk/products/sram-pg-1130-11-speed-cassette-11-42"
+  },
+  "bc-pg950": {
+   "kind": "revendeur",
+   "ref": "bike-components – PG-950 9v 11-32 / 11-34, corps Shimano HG",
+   "url": "https://www.bike-components.de/en/SRAM/PG-950-9-speed-MTB-Cassette-p9068/"
+  },
+  "rei-pg970": {
+   "kind": "revendeur",
+   "ref": "REI – PG-970 9v 11-32 : 11-12-14-16-18-21-24-28-32",
+   "url": "https://www.rei.com/product/704733"
+  },
+  "rose-pg950": {
+   "kind": "revendeur",
+   "ref": "Rose – PG-950 11-34 : 11-13-15-17-20-23-26-30-34",
+   "url": "https://www.rosebikes.com/p/sram-pg-950-9-speed-cassette-859185"
+  },
+  "nanobike-pg1070": {
+   "kind": "revendeur",
+   "ref": "Nanobike – PG-1070 10v 12-28",
+   "url": "https://nanobike.de/en/bike-parts/chains-cassettes/cassettes-10-speed/7462/sram-zahnkranz-kassette-pg-1070-10-fach-12-28"
+  },
+  "bc-x9-9-trigger": {
+   "kind": "revendeur",
+   "ref": "Backcountry – gâchette X9 9v 1:1, 3x9",
+   "url": "https://www.backcountry.com/sram-x.9-trigger-shifter-set"
+  }
+ },
+ "parts": [
+  {
+   "id": "sram-rd-x7-9",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X7 9v",
+   "aliases": [
+    "x7 9v",
+    "x.7",
+    "sram x7 9"
+   ],
+   "name": "SRAM X7 9v",
+   "discipline": "vtt",
+   "generation": "X7 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sram-1-1",
+    "maxCog": 36,
+    "totalCapacity": 37
+   },
+   "src": [
+    "sram-rdx7-9",
+    "tf-x7-9"
+   ],
+   "confidence": "haute",
+   "status": "a_valider",
+   "notes": "Capacité donnée pour une chape : vérifier la longueur de chape."
+  },
+  {
+   "id": "sram-rd-x9-9-m",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X9 9v chape moyenne",
+   "aliases": [
+    "x9 9v",
+    "x.9",
+    "sram x9 9"
+   ],
+   "name": "SRAM X9 9v chape moyenne",
+   "discipline": "vtt",
+   "generation": "X9 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sram-1-1",
+    "cageLength": "M"
+   },
+   "src": "sigma-x9-9m",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "sram-rd-x0-10",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X0 10v",
+   "aliases": [
+    "x0 10v",
+    "x.0",
+    "sram x0 10"
+   ],
+   "name": "SRAM X0 10v",
+   "discipline": "vtt",
+   "generation": "X0 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 36
+   },
+   "src": "vital-x0-10",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Chapes courte, moyenne, longue : capacité selon chape non renseignée."
+  },
+  {
+   "id": "sram-rd-x9-10",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X9 10v",
+   "aliases": [
+    "x9 10v",
+    "sram x9 10"
+   ],
+   "name": "SRAM X9 10v",
+   "discipline": "vtt",
+   "generation": "X9 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10"
+   },
+   "src": "cc-x9-10",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pignon max et capacité non trouvés (12-36 utilisé selon un essai)."
+  },
+  {
+   "id": "sram-rd-x7-10",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X7 10v",
+   "aliases": [
+    "x7 10v",
+    "sram x7 10"
+   ],
+   "name": "SRAM X7 10v",
+   "discipline": "vtt",
+   "generation": "X7 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10"
+   },
+   "src": "stw-x7-10",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "sram-rd-red-10-ss",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Red 10v chape courte",
+   "aliases": [
+    "red 10v",
+    "sram red 10"
+   ],
+   "name": "SRAM Red 10v chape courte",
+   "discipline": "route",
+   "generation": "Red (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 28,
+    "minCog": 11,
+    "totalCapacity": 31,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-red10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-red-10-m",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Red 10v chape moyenne",
+   "aliases": [
+    "red 10v moyenne",
+    "red wifli"
+   ],
+   "name": "SRAM Red 10v chape moyenne",
+   "discipline": "route",
+   "generation": "Red (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 32,
+    "minCog": 11,
+    "cageLength": "M",
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-red10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-apex-10-ss",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Apex 10v chape courte",
+   "aliases": [
+    "apex 10v",
+    "sram apex 10"
+   ],
+   "name": "SRAM Apex 10v chape courte",
+   "discipline": "route",
+   "generation": "Apex / Rival / Force (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 28,
+    "totalCapacity": 33,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "tf-apex10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-apex-10-wifli",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Apex 10v WiFLi",
+   "aliases": [
+    "apex wifli",
+    "apex 10v moyenne"
+   ],
+   "name": "SRAM Apex 10v WiFLi chape moyenne",
+   "discipline": "route",
+   "generation": "Apex / Rival / Force (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "sram-exact-10",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "cageLength": "M",
+    "maxFrontChainrings": 2
+   },
+   "src": "tf-apex10",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-rival-22-ss",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Rival 22 chape courte",
+   "aliases": [
+    "rival 22",
+    "sram rival 22",
+    "force 22",
+    "red 22"
+   ],
+   "name": "SRAM Rival 22 chape courte",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 28,
+    "minCog": 11,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tune-rival22",
+    "pb-rival22"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité contradictoire selon les sources (33 ou 37T). Force 22 et Red 22 : même conception selon les revendeurs."
+  },
+  {
+   "id": "sram-rd-rival-22-wifli",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Rival 22 WiFLi",
+   "aliases": [
+    "rival 22 wifli",
+    "force 22 wifli"
+   ],
+   "name": "SRAM Rival 22 WiFLi chape moyenne",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 32,
+    "minCog": 11,
+    "cageLength": "M",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pb-rival22",
+    "mantel-rival22wifli"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-apex-1",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Apex 1 11v",
+   "aliases": [
+    "apex 1",
+    "apex1",
+    "rival 1",
+    "force 1"
+   ],
+   "name": "SRAM Apex 1 11v chape longue (mono-plateau)",
+   "discipline": "gravel",
+   "generation": "Apex 1 / Rival 1 / Force 1 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 42,
+    "cageLength": "L",
+    "clutch": true,
+    "maxFrontChainrings": 1
+   },
+   "src": "condor-apex1",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-x01-11",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X01 11v",
+   "aliases": [
+    "x01 11v",
+    "xx1 11v",
+    "sram x01"
+   ],
+   "name": "SRAM X01 1x11",
+   "discipline": "vtt",
+   "generation": "X01 / XX1 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-vtt-11",
+    "maxCog": 42,
+    "minCog": 10,
+    "totalCapacity": 32,
+    "clutch": true,
+    "maxFrontChainrings": 1
+   },
+   "src": "pb-x01-11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-gx1-11",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD GX1 11v",
+   "aliases": [
+    "gx1",
+    "gx 1x11",
+    "x1 11v"
+   ],
+   "name": "SRAM GX 1x11",
+   "discipline": "vtt",
+   "generation": "GX (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-vtt-11",
+    "maxCog": 42,
+    "totalCapacity": 32,
+    "clutch": true,
+    "maxFrontChainrings": 1
+   },
+   "src": "mantel-gx1",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-nx-11",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD NX 11v",
+   "aliases": [
+    "nx 11v",
+    "sram nx 11"
+   ],
+   "name": "SRAM NX 1x11",
+   "discipline": "vtt",
+   "generation": "NX (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-vtt-11",
+    "maxCog": 42,
+    "clutch": true,
+    "maxFrontChainrings": 1
+   },
+   "src": "rose-nx11",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-gs-nx-11",
+   "type": "shifter",
+   "brand": "SRAM",
+   "ref": "Poignée NX 11v",
+   "aliases": [
+    "nx grip shift",
+    "gripshift nx 11"
+   ],
+   "name": "SRAM NX 11v poignée tournante",
+   "discipline": "vtt",
+   "generation": "NX (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "sram-vtt-11",
+    "form": "poignee_tournante"
+   },
+   "src": "tf-nx11-twist",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-sl-x9-9",
+   "type": "shifter",
+   "brand": "SRAM",
+   "ref": "Gâchette X9 9v",
+   "aliases": [
+    "x9 trigger 9v",
+    "x.9 gachette"
+   ],
+   "name": "SRAM X9 9v gâchette",
+   "discipline": "vtt",
+   "generation": "X9 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "sram-1-1-9",
+    "form": "gachette_vtt"
+   },
+   "src": "bc-x9-9-trigger",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1175-10-42",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1175 10-42",
+   "aliases": [
+    "xg 1175",
+    "xg1175"
+   ],
+   "name": "XG-1175 11v 10-42 (XD)",
+   "discipline": "vtt",
+   "generation": "GX (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 10,
+    "maxCog": 42,
+    "freehub": "xd",
+    "pitch": "hg-11"
+   },
+   "src": "bc-xg1175",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-xg-1180-10-42",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "XG-1180 10-42",
+   "aliases": [
+    "xg 1180",
+    "xg1180"
+   ],
+   "name": "XG-1180 11v 10-42 (XD)",
+   "discipline": "vtt",
+   "generation": "X01 / XX1 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 10,
+    "maxCog": 42,
+    "freehub": "xd",
+    "pitch": "hg-11"
+   },
+   "src": "cc-xg1180",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1130-11-42",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1130 11-42",
+   "aliases": [
+    "pg 1130 11-42",
+    "pg1130"
+   ],
+   "name": "PG-1130 11v 11-42",
+   "discipline": "vtt",
+   "generation": "NX (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 42,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "atc-pg1130",
+    "bc-pg1130"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1130-11-28",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1130 11-28",
+   "aliases": [
+    "pg 1130 11-28"
+   ],
+   "name": "PG-1130 11v 11-28",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 28,
+    "freehub": "hg_11_route",
+    "pitch": "hg-11",
+    "cogs": "11-12-13-14-15-16-17-19-22-25-28"
+   },
+   "src": "bc-pg1130",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1130-11-32",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1130 11-32",
+   "aliases": [
+    "pg 1130 11-32"
+   ],
+   "name": "PG-1130 11v 11-32",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 32,
+    "freehub": "hg_11_route",
+    "pitch": "hg-11"
+   },
+   "src": "bc-pg1130",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-1070-12-28",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-1070 12-28",
+   "aliases": [
+    "pg 1070",
+    "pg1070"
+   ],
+   "name": "PG-1070 10v 12-28",
+   "discipline": "route",
+   "generation": "Apex / Rival / Force (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 28,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-10"
+   },
+   "src": "nanobike-pg1070",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-950-11-32",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-950 11-32",
+   "aliases": [
+    "pg 950",
+    "pg950",
+    "pg 970"
+   ],
+   "name": "PG-950 9v 11-32",
+   "discipline": "vtt",
+   "generation": "X7 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 32,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-9",
+    "cogs": "11-12-14-16-18-21-24-28-32"
+   },
+   "src": [
+    "bc-pg950",
+    "rei-pg970"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-pg-950-11-34",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-950 11-34",
+   "aliases": [
+    "pg 950 11-34"
+   ],
+   "name": "PG-950 9v 11-34",
+   "discipline": "vtt",
+   "generation": "X7 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 34,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-9",
+    "cogs": "11-13-15-17-20-23-26-30-34"
+   },
+   "src": [
+    "rose-pg950",
+    "bc-pg950"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Un revendeur donne 22 au lieu de 23 pour le 6e pignon."
+  },
+  {
+   "id": "sram-pg-970-11-32",
+   "type": "cassette",
+   "brand": "SRAM",
+   "ref": "PG-970 11-32",
+   "aliases": [
+    "pg 970 11-32",
+    "pg970"
+   ],
+   "name": "PG-970 9v 11-32",
+   "discipline": "vtt",
+   "generation": "X9 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 32,
+    "freehub": "hg_8_9_10",
+    "pitch": "hg-9",
+    "cogs": "11-12-14-16-18-21-24-28-32"
+   },
+   "src": "rei-pg970",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ]
+}

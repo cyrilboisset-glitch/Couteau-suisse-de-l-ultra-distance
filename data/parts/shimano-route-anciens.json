@@ -1,0 +1,2056 @@
+{
+ "_meta": {
+  "description": "Shimano route anciennes générations (7v à 11v) : Dura-Ace 7700 à 9000, Ultegra 6500 à 6800, 105 5500 à 5800, Tiagra 4400 à 4600, Sora 3300 à 3500, Claris 2200 à 2400."
+ },
+ "sources": {
+  "shimano-rd9000ss": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-9000-SS : pignon max 28T, min 23T, capacité 33T",
+   "url": "https://bike.shimano.com/en-AU/product/component/duraace-9000/RD-9000-SS.html"
+  },
+  "sigma-rd9000": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – RD-9000 : 28T max",
+   "url": "https://www.sigmasports.com/item/Shimano/Dura-Ace-9000-Rear-Derailleur/1DIQ"
+  },
+  "pb-rd6800ss": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – RD-6800-SS : 28T max, capacité 33",
+   "url": "https://www.performancebike.com/shimano-rd6800-ultegra-ss-rear-derailleur-11speed-28t-max-ird6800ss/p319568"
+  },
+  "pb-rd6800gs": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – RD-6800-GS : 32T max, capacité 41",
+   "url": "https://www.performancebike.com/shimano-ultegra-rd6800-gs-rear-derailleur-11speed-32t-max-ird6800gs/p319567"
+  },
+  "mec-rd5800gs": {
+   "kind": "revendeur",
+   "ref": "MEC – RD-5800-GS : 32T max, 11T min, écart avant 16T, capacité 37T",
+   "url": "https://checkout.mec.ca/5048-352"
+  },
+  "atc-rd5800ss": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – RD-5800-SS",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-rd-5800-105-11-speed-ss-rear-derailleur"
+  },
+  "geartrade-rd5700": {
+   "kind": "revendeur",
+   "ref": "Geartrade – RD-5700 SS : 28T max, capacité 33T",
+   "url": "https://geartrade.com/products/shimano-105-rd-5700-rear-derailleur-1524425"
+  },
+  "br-5700-5701": {
+   "kind": "communaute",
+   "ref": "BikeRadar – RD-5700 (Wiggle) : SS 30T / 34T ; GS 32T en double, écart 22T, capacité 40T",
+   "url": "https://forum.bikeradar.com/discussion/comment/19703504/"
+  },
+  "sigma-rd5701": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – RD-5701 : 32T max, capacité 40T (GS)",
+   "url": "https://www.sigmasports.com/products/105-5701-10-speed-rear-derailleur-max-32t-black-2igy"
+  },
+  "360-rd5701ss": {
+   "kind": "revendeur",
+   "ref": "360 Cycles – RD-5701-SS : 30T max, 25T min, petit pignon 11-14T, écart 16T, capacité 34T",
+   "url": "https://360cycles.ie/shimano-105-rd-5701-10-speed-rear-derailleur-ss-ma.html"
+  },
+  "velonova-rd5701gs": {
+   "kind": "revendeur",
+   "ref": "Velonova – RD-5701-GS : capacité 40T, 32T (double) / 30T (triple)",
+   "url": "https://velonova.lt/en/shimano-105-rd-5701-gs-rear-derailleur-10-speed-2593-1"
+  },
+  "ww-7900-28": {
+   "kind": "communaute",
+   "ref": "WeightWeenies – Shimano annonce 28T max pour RD-7900, RD-6700 et RD-5700",
+   "url": "https://weightweenies.starbike.com/forum/viewtopic.php?p=782525"
+  },
+  "br-6700a": {
+   "kind": "communaute",
+   "ref": "BikeRadar – RD-6700-A SS marqué 30T ; premier RD-6700 SS limité à 28T",
+   "url": "https://forum.bikeradar.com/discussion/13028977/shimano-6700-rd"
+  },
+  "manualslib-rd7800": {
+   "kind": "officiel",
+   "ref": "Shimano – notice RD-7800 : capacité 29T max, écart avant 14T (texte extrait peu lisible)",
+   "url": "https://www.manualslib.com/manual/364250/Shimano-Rd-7800-Technical.html"
+  },
+  "pw-rd6600": {
+   "kind": "revendeur",
+   "ref": "Peter White Cycles – RD-6600 : SS capacité 29T, GS capacité 37T",
+   "url": "https://peterwhitecycles.com/roadrear.php"
+  },
+  "cc-rd3500": {
+   "kind": "communaute",
+   "ref": "CycleChat – RD-3500 SS : 32T max, petit pignon 14T max, écart 16T, capacité 37T",
+   "url": "https://www.cyclechat.net/threads/rear-derailleur-limitations-with-rear-cassette.157249/latest"
+  },
+  "sigma-rd3500ss": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – RD-3500 SS : 11-32T, capacité 37T",
+   "url": "https://www.sigmasports.com/item/Shimano/RD-3500-Sora-SS-Rear-Derailleur-9-Speed/34VS"
+  },
+  "sigma-rd3500gs": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – RD-3500 GS : 11-32T, capacité 41T",
+   "url": "https://www.sigmasport.co.uk/item/Shimano/RD-3500-Sora-GS-Rear-Derailleur-9-speed/327I"
+  },
+  "sigma-rd2400ss": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – RD-2400 SS : 32T max, double",
+   "url": "https://www.sigmasport.co.uk/item/Shimano/RD-2400-Claris-8-speed-Short-Cage-Rear-Derailleur/2TFF"
+  },
+  "cc-rd2300": {
+   "kind": "communaute",
+   "ref": "CycleChat – recommandation Shimano citée pour RD-2300 : 26T max, capacité 35T, écart avant 22T",
+   "url": "https://www.cyclechat.net/threads/claris-2400-vs-2300.166568/latest"
+  },
+  "bf-10v-pull": {
+   "kind": "communaute",
+   "ref": "BikeForums – Shimano route 8, 9, 10v : même ratio de dérailleur ; tirage ST-7900 = ST-6700 = ST-5700 ; Tiagra 4700 au tirage 11v",
+   "url": "https://www.bikeforums.net/22516189-post2.html"
+  },
+  "excel-rd5701": {
+   "kind": "revendeur",
+   "ref": "Excel Sports – RD-5701 compatible avec les transmissions route 10v Shimano 1re et 2e génération, de Tiagra à Dura-Ace",
+   "url": "https://excelsports.com/shimano-105-rd-5701-10-speed-rear-derailleur"
+  },
+  "br-7800-6600": {
+   "kind": "communaute",
+   "ref": "BikeRadar – leviers Dura-Ace 7800 avec dérailleurs Ultegra 6600 sans problème",
+   "url": "https://forum.bikeradar.com/discussion/comment/18675963/"
+  },
+  "treefort-st4600": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – ST-4600 10v compatible avec tous les groupes route Shimano 10v",
+   "url": "https://www.treefortbikes.com/Shimano-Tiagra-ST-4600-10-Speed-STI-Lever-Set"
+  },
+  "treefort-st2400": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – ST-2400 droit : dérailleurs arrière Shimano 8v",
+   "url": "https://treefortbikes.com/Shimano-Claris-2400-8-Speed-Right-STI-Lever"
+  },
+  "pb-st6800-hoods": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – cocottes ST-6800 (aussi ST-5800 / ST-4700), 11v",
+   "url": "https://www.performancebike.com/shimano-ultegra-st6800-sti-lever-hoods-black-y00e98080/p317231"
+  },
+  "sigma-fd5800": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – FD-5800 11v à collier, double",
+   "url": "https://www.sigmasport.co.uk/item/Shimano/FD5800-105-11-Speed-Band-On-Front-Derailleur-Double/5WNU"
+  },
+  "tune-fc9000": {
+   "kind": "revendeur",
+   "ref": "Tune Cycles – FC-9000 : 4 bras BCD 110, axe Hollowtech II 24 mm, 50/34 ou 52/36, 11v",
+   "url": "https://shop.tunecycles.com.au/shimano-dura-ace-fc-9000-crankset-50-34t-175mm-11-speed"
+  },
+  "mb-bb5500": {
+   "kind": "revendeur",
+   "ref": "Modern Bike – BB-5500 Octalink V1 (axe 22 mm cannelé) pour FC-7700 / 7703 / 6500 / 6503 / 5500 / 5501 / 5503 / 5504",
+   "url": "https://www.modernbike.com/bottom-brackets+shimano-octalink-v2isyes+square-taper-isoequalsyes+truvativ-power-splineisyes+shimano-hollowtech-iiisyes+frame-interfaceis24mm+sram---truvativ-gxpisyes+rotor-3disyes+campagnolo-over-torqueisyes+brandisshimano"
+  },
+  "bc-fd5700": {
+   "kind": "revendeur",
+   "ref": "bike-components – FD-5700 2x10 : capacité 16T, grand plateau 50-56T, ligne de chaîne 43,5 mm",
+   "url": "https://bike-components.de/en/Shimano/105-FD-5700-2-10-speed-Front-Derailleur-p25006"
+  },
+  "360-fd5700": {
+   "kind": "revendeur",
+   "ref": "360 Cycles – FD-5700 10v collier 28,6 / 31,8 mm",
+   "url": "https://360cycles.ie/shimano-fd-5700-105-10-speed-front-mech-derailleur.html"
+  },
+  "nashbar-fd6700g": {
+   "kind": "revendeur",
+   "ref": "Nashbar – FD-6700-G 2x10 collier 34,9 mm : capacité 16, grand plateau 56T",
+   "url": "https://nashbar.com/shimano-ultegra-fd6700g-2x10-front-derailleur-34.9mm-ifd6700blg/p310135"
+  },
+  "roadcc-11v-parts": {
+   "kind": "communaute",
+   "ref": "road.cc – Shimano liste ST-5800/6800 et ST-R70xx/80xx/90xx compatibles avec FD-5800/6800 et FD-R7000/8000/9x00",
+   "url": "https://road.cc/forums/topic/262492-shimano-7000-rear-derailleur-compatibility"
+  },
+  "si-rd7700": {
+   "kind": "officiel",
+   "ref": "Shimano – notice RD-7700 (SS) : capacité 26T, pignon max 26T, min 11T, écart avant 14T",
+   "url": "https://www.manualslib.com/manual/1428101/Shimano-Rd-7700.html"
+  },
+  "rbr-rd5500gs": {
+   "kind": "communaute",
+   "ref": "RoadBikeReview – notice Shimano SI-5TK0D citée : RD-5500 GS capacité 37T ; 27-28T sans souci selon l'utilisateur",
+   "url": "https://www.roadbikereview.com/threads/confused-trying-to-work-out-if-i-need-a-gs-or-ss-derailleur.262587/"
+  },
+  "si-rd3400": {
+   "kind": "officiel",
+   "ref": "Shimano – notice RD-3400 : SS pignon max 27T, min 11T, écart 16T ; GS capacité 37T",
+   "url": "https://manualsnet.com/shimano/rd-3400"
+  },
+  "si-st3400": {
+   "kind": "officiel",
+   "ref": "Shimano – notice ST-3400 (Sora 9v)",
+   "url": "https://manualsnet.com/shimano/st-3400"
+  },
+  "nelos-rd3300": {
+   "kind": "revendeur",
+   "ref": "Nelos Cycles – RD-3300 Sora : 8 vitesses",
+   "url": "https://neloscycles.com/Derailleurs-(Rear)-Sora-Rear-Derailleur/11/304/3286/e13'177813g17Sora%20Rear%20Derailleur'e16'4/248"
+  },
+  "atc-rd7700": {
+   "kind": "revendeur",
+   "ref": "Around The Cycle – RD-7700 Dura-Ace 9 vitesses route",
+   "url": "https://aroundthecycle.com/products/used-shimano-dura-ace-rd-7700-rear-derailleur-9-speed-road-silver"
+  },
+  "ebay-st7700": {
+   "kind": "revendeur",
+   "ref": "eBay – leviers ST-7700-C Dura-Ace 9 vitesses",
+   "url": "https://www.ebay.com/itm/156925784007"
+  },
+  "tpc-fc7800": {
+   "kind": "revendeur",
+   "ref": "The Pro's Closet – FC-7800 10v 53/39 BCD 130 Hollowtech II",
+   "url": "https://www.theproscloset.com/products/shimano-dura-ace-fc-7800-crank-set-10-speed-170mm-53-39t-130mm-bcd-pre-owned"
+  },
+  "tpc-fc5700": {
+   "kind": "revendeur",
+   "ref": "The Pro's Closet – FC-5700 10v 53/39 BCD 130 Hollowtech II",
+   "url": "https://www.theproscloset.com/products/shimano-105-fc-5700-10-speed-crank-set-175mm-53-39t-130mm-bcd-hollowtech-ii"
+  },
+  "cambria-fc6700": {
+   "kind": "revendeur",
+   "ref": "Cambria – FC-6700 10v 5 bras BCD 130",
+   "url": "https://cambriabike.com/products/shimano-ultegra-fc6700-10-spd-double-chainring"
+  },
+  "rbr-fc7900": {
+   "kind": "communaute",
+   "ref": "RoadBikeReview – FC-7900 53/39 : BCD 130",
+   "url": "https://www.roadbikereview.com/threads/shimano-7900-crankset-chainrings.358877/"
+  },
+  "cc-fc5750": {
+   "kind": "communaute",
+   "ref": "CycleChat – 105 standard BCD 130, compact (FC-5750) BCD 110 selon la doc Shimano citée",
+   "url": "https://www.cyclechat.net/threads/shimano-105-5750-compact-question.167051/latest"
+  },
+  "cc-rd4400": {
+   "kind": "communaute",
+   "ref": "CycleChat – RD-4400 Tiagra : 27T max selon un utilisateur",
+   "url": "https://www.cyclechat.net/threads/lowering-shimano-105-gearing.198048/latest"
+  },
+  "bc-cs5700": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-5700 : 11-25 = 11-12-13-14-15-17-19-21-23-25 ; 11-28 = 11-12-13-14-15-17-19-21-24-28",
+   "url": "https://bike-components.de/en/Shimano/105-CS-5700-10-speed-Cassette-p24994/"
+  },
+  "atc-cs6700": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – CS-6700 : 11-23, 11-25, 11-28, 12-25 (12-13-14-15-16-17-19-21-23-25), 12-30 (12-13-14-15-17-19-21-24-27-30)",
+   "url": "https://allterraincycles.co.uk/products/shimano-cs-6700-ultegra-10-speed-cassette"
+  },
+  "bd-cs5800": {
+   "kind": "revendeur",
+   "ref": "bike-discount – pignons de rechange CS-5800 pour 11-28, 11-30, 11-32, 12-25",
+   "url": "https://www.bike-discount.de/en/shimano-sprocket-wheel-for-cs-r7000/cs-5800"
+  },
+  "bc-hg50-9": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG50-9 : 12-25 (12-13-14-15-17-19-21-23-25), 13-25, 14-25 ; corps 8/9/10v, route 11v avec entretoise 1,85 mm",
+   "url": "https://www.bike-components.de/en/Shimano/Tiagra-Sora-CS-HG50-9-9-speed-Cassette-p3801/"
+  },
+  "b24-hg50-8": {
+   "kind": "revendeur",
+   "ref": "bike24 – CS-HG50-8 : 11-28, 11-30, 11-32, 11-34, 12-25, 13-26",
+   "url": "https://www.bike24.com/p259533.html"
+  },
+  "si-rd4500": {
+   "kind": "officiel",
+   "ref": "Shimano – notice RD-4500 : pignon max 27T, min 11T ; SS capacité 31T écart 16T ; GS capacité 37T écart 22T",
+   "url": "https://manualsnet.com/shimano/rd-4500"
+  },
+  "bc-cn6701": {
+   "kind": "revendeur",
+   "ref": "bike-components – CN-6701 10v (114 / 116 maillons) : pédaliers 2x10 FC-7900/6700/5700/4600 ; alternative à la CN-7901",
+   "url": "https://www.bike-components.de/en/Shimano/Ultegra-Dura-Ace-105-CN-6701-10-speed-Chain-p25237"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-rd-9000-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-9000-SS",
+   "aliases": [
+    "rd 9000",
+    "dura-ace 9000",
+    "dura ace 9000"
+   ],
+   "name": "Dura-Ace 9000 chape courte",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-route-11",
+    "maxCog": 28,
+    "minLowCog": 23,
+    "totalCapacity": 33,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "shimano-rd9000ss",
+    "sigma-rd9000"
+   ],
+   "confidence": "haute",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-6800-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6800-SS",
+   "aliases": [
+    "rd 6800",
+    "ultegra 6800"
+   ],
+   "name": "Ultegra 6800 chape courte",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-route-11",
+    "maxCog": 28,
+    "minLowCog": 23,
+    "totalCapacity": 33,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-rd6800ss",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-6800-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6800-GS",
+   "aliases": [
+    "rd 6800 gs",
+    "ultegra 6800"
+   ],
+   "name": "Ultegra 6800 chape moyenne",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-route-11",
+    "maxCog": 32,
+    "minLowCog": 28,
+    "totalCapacity": 41,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": "pb-rd6800gs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-5800-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5800-SS",
+   "aliases": [
+    "rd 5800",
+    "105 5800"
+   ],
+   "name": "105 5800 chape courte",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-route-11",
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "atc-rd5800ss",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max et capacité contradictoires selon les sources : non renseignés (lire l'étiquette du dérailleur)."
+  },
+  {
+   "id": "shimano-rd-5700-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5700-GS",
+   "aliases": [
+    "rd 5700 gs",
+    "105 5700 triple"
+   ],
+   "name": "105 5700 chape moyenne",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 32,
+    "maxCog3x": 30,
+    "maxFrontDiff": 22,
+    "totalCapacity": 40,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "br-5700-5701",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-5701-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5701-SS",
+   "aliases": [
+    "rd 5701",
+    "105 5701"
+   ],
+   "name": "105 5701 chape courte",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 30,
+    "minLowCog": 25,
+    "minCog": 11,
+    "maxFrontDiff": 16,
+    "totalCapacity": 34,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "360-rd5701ss",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-5701-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5701-GS",
+   "aliases": [
+    "rd 5701 gs"
+   ],
+   "name": "105 5701 chape moyenne",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 32,
+    "maxCog3x": 30,
+    "totalCapacity": 40,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "velonova-rd5701gs",
+    "sigma-rd5701"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-6700-a-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6700-A-SS",
+   "aliases": [
+    "rd 6700 a",
+    "6700a"
+   ],
+   "name": "Ultegra 6700-A chape courte (révision 30T)",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 30,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "br-6700a",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-7900-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-7900-SS",
+   "aliases": [
+    "rd 7900",
+    "dura-ace 7900",
+    "dura ace 7900"
+   ],
+   "name": "Dura-Ace 7900 chape courte",
+   "discipline": "route",
+   "generation": "Dura-Ace 7900 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 28,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "ww-7900-28",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-7800-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-7800-SS",
+   "aliases": [
+    "rd 7800",
+    "dura-ace 7800",
+    "dura ace 7800"
+   ],
+   "name": "Dura-Ace 7800 chape courte",
+   "discipline": "route",
+   "generation": "Dura-Ace 7800 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "totalCapacity": 29,
+    "maxFrontDiff": 14,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "manualslib-rd7800",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max non trouvé dans une source lisible."
+  },
+  {
+   "id": "shimano-rd-6600-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6600-SS",
+   "aliases": [
+    "rd 6600",
+    "ultegra 6600"
+   ],
+   "name": "Ultegra 6600 chape courte",
+   "discipline": "route",
+   "generation": "Ultegra 6600 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "totalCapacity": 29,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "pw-rd6600",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pignon max non trouvé dans une source lisible."
+  },
+  {
+   "id": "shimano-rd-6600-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6600-GS",
+   "aliases": [
+    "rd 6600 gs",
+    "ultegra 6600 triple"
+   ],
+   "name": "Ultegra 6600 chape moyenne",
+   "discipline": "route",
+   "generation": "Ultegra 6600 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "pw-rd6600",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pignon max non trouvé dans une source lisible."
+  },
+  {
+   "id": "shimano-rd-3500-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-3500-SS",
+   "aliases": [
+    "rd 3500",
+    "sora 3500"
+   ],
+   "name": "Sora 3500 chape courte",
+   "discipline": "route",
+   "generation": "Sora 3500 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 32,
+    "minCog": 11,
+    "maxFrontDiff": 16,
+    "totalCapacity": 37,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "cc-rd3500",
+    "sigma-rd3500ss"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-3500-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-3500-GS",
+   "aliases": [
+    "rd 3500 gs",
+    "sora 3500 triple"
+   ],
+   "name": "Sora 3500 chape moyenne",
+   "discipline": "route",
+   "generation": "Sora 3500 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 32,
+    "minCog": 11,
+    "totalCapacity": 41,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "sigma-rd3500gs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-2400-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-2400-SS",
+   "aliases": [
+    "rd 2400",
+    "claris 2400"
+   ],
+   "name": "Claris 2400 chape courte",
+   "discipline": "route",
+   "generation": "Claris 2400 (8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 32,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "sigma-rd2400ss",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-2300",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-2300",
+   "aliases": [
+    "rd 2300",
+    "claris 2300"
+   ],
+   "name": "Claris 2300",
+   "discipline": "route",
+   "generation": "Claris 2300 (8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 26,
+    "maxFrontDiff": 22,
+    "totalCapacity": 35
+   },
+   "src": "cc-rd2300",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Valeurs citées sur un forum : vérifier l'étiquette (chape courte ou longue)."
+  },
+  {
+   "id": "shimano-st-5700",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-5700",
+   "aliases": [
+    "st 5700",
+    "105 5700",
+    "levier 105 5700"
+   ],
+   "name": "105 5700 leviers 2x10",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "bf-10v-pull",
+    "excel-rd5701"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-6700",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-6700",
+   "aliases": [
+    "st 6700",
+    "ultegra 6700"
+   ],
+   "name": "Ultegra 6700 leviers 2x10",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "bf-10v-pull",
+    "excel-rd5701"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-7900",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-7900",
+   "aliases": [
+    "st 7900",
+    "dura-ace 7900",
+    "dura ace 7900"
+   ],
+   "name": "Dura-Ace 7900 leviers 2x10",
+   "discipline": "route",
+   "generation": "Dura-Ace 7900 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "bf-10v-pull",
+    "excel-rd5701"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-7800",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-7800",
+   "aliases": [
+    "st 7800",
+    "dura-ace 7800",
+    "dura ace 7800"
+   ],
+   "name": "Dura-Ace 7800 leviers 10v",
+   "discipline": "route",
+   "generation": "Dura-Ace 7800 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "br-7800-6600",
+    "excel-rd5701"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-6600",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-6600",
+   "aliases": [
+    "st 6600",
+    "ultegra 6600"
+   ],
+   "name": "Ultegra 6600 leviers 10v",
+   "discipline": "route",
+   "generation": "Ultegra 6600 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "excel-rd5701",
+    "bf-10v-pull"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-5600",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-5600",
+   "aliases": [
+    "st 5600",
+    "105 5600"
+   ],
+   "name": "105 5600 leviers 10v",
+   "discipline": "route",
+   "generation": "105 5600 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "excel-rd5701",
+    "bf-10v-pull"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-4600",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-4600",
+   "aliases": [
+    "st 4600",
+    "tiagra 4600"
+   ],
+   "name": "Tiagra 4600 leviers 10v",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "treefort-st4600",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Existe en 2x10 et 3x10."
+  },
+  {
+   "id": "shimano-st-2400",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-2400",
+   "aliases": [
+    "st 2400",
+    "claris 2400"
+   ],
+   "name": "Claris 2400 leviers 8v",
+   "discipline": "route",
+   "generation": "Claris 2400 (8v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "treefort-st2400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-6800",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-6800",
+   "aliases": [
+    "st 6800",
+    "ultegra 6800"
+   ],
+   "name": "Ultegra 6800 leviers 2x11",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "roadcc-11v-parts",
+    "pb-st6800-hoods"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-5800",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-5800",
+   "aliases": [
+    "st 5800",
+    "105 5800"
+   ],
+   "name": "105 5800 leviers 2x11",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "roadcc-11v-parts",
+    "pb-st6800-hoods"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-5800",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-5800 (collier)",
+   "aliases": [
+    "fd 5800",
+    "105 5800"
+   ],
+   "name": "105 5800 dérailleur avant à collier",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "mount": "collier_34_9"
+   },
+   "src": [
+    "sigma-fd5800",
+    "roadcc-11v-parts"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Diamètre de collier non confirmé (34,9 mm supposé par la base : vérifier) ; capacité non trouvée."
+  },
+  {
+   "id": "shimano-fd-5700-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-5700-F",
+   "aliases": [
+    "fd 5700",
+    "105 5700"
+   ],
+   "name": "105 5700 dérailleur avant braze-on",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "mount": "braze_on",
+    "capacity": 16,
+    "maxRing": 56,
+    "minRing": 50,
+    "chainline": 43.5
+   },
+   "src": "bc-fd5700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-5700-collier",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-5700 (collier 31,8)",
+   "aliases": [
+    "fd 5700 collier"
+   ],
+   "name": "105 5700 dérailleur avant à collier 31,8 / 28,6",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "mount": "collier_31_8",
+    "capacity": 16,
+    "maxRing": 56,
+    "minRing": 50,
+    "chainline": 43.5
+   },
+   "src": [
+    "360-fd5700",
+    "bc-fd5700"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-6700-g",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-6700-G",
+   "aliases": [
+    "fd 6700",
+    "ultegra 6700"
+   ],
+   "name": "Ultegra 6700 dérailleur avant collier 34,9",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "mount": "collier_34_9",
+    "capacity": 16,
+    "maxRing": 56
+   },
+   "src": "nashbar-fd6700g",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-9000-50-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-9000 50-34",
+   "aliases": [
+    "fc 9000",
+    "dura-ace 9000",
+    "dura ace 9000"
+   ],
+   "name": "Dura-Ace 9000 50-34",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "50-34"
+   },
+   "src": "tune-fc9000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-9000-52-36",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-9000 52-36",
+   "aliases": [
+    "fc 9000 52-36"
+   ],
+   "name": "Dura-Ace 9000 52-36",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "52-36"
+   },
+   "src": "tune-fc9000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-7700",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-7700",
+   "aliases": [
+    "fc 7700",
+    "dura-ace 7700",
+    "dura ace 7700"
+   ],
+   "name": "Dura-Ace 7700 (Octalink V1, double)",
+   "discipline": "route",
+   "generation": "Dura-Ace 7700 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "octalink_v1",
+    "ringInterface": "bcd",
+    "chainrings": 2
+   },
+   "src": "mb-bb5500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD et dentures non renseignés : lire le marquage des plateaux."
+  },
+  {
+   "id": "shimano-fc-6500",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-6500",
+   "aliases": [
+    "fc 6500",
+    "ultegra 6500"
+   ],
+   "name": "Ultegra 6500 (Octalink V1, double)",
+   "discipline": "route",
+   "generation": "Ultegra 6500 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "octalink_v1",
+    "ringInterface": "bcd",
+    "chainrings": 2
+   },
+   "src": "mb-bb5500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD et dentures non renseignés : lire le marquage des plateaux."
+  },
+  {
+   "id": "shimano-fc-6503",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-6503",
+   "aliases": [
+    "fc 6503",
+    "ultegra 6500 triple"
+   ],
+   "name": "Ultegra 6503 triple (Octalink V1)",
+   "discipline": "route",
+   "generation": "Ultegra 6500 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "octalink_v1",
+    "ringInterface": "bcd",
+    "chainrings": 3
+   },
+   "src": "mb-bb5500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD et dentures non renseignés."
+  },
+  {
+   "id": "shimano-fc-5500",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-5500",
+   "aliases": [
+    "fc 5500",
+    "105 5500",
+    "fc 5501"
+   ],
+   "name": "105 5500 / 5501 (Octalink V1, double)",
+   "discipline": "route",
+   "generation": "105 5500 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "octalink_v1",
+    "ringInterface": "bcd",
+    "chainrings": 2
+   },
+   "src": "mb-bb5500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD et dentures non renseignés."
+  },
+  {
+   "id": "shimano-fc-5503",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-5503",
+   "aliases": [
+    "fc 5503",
+    "105 triple"
+   ],
+   "name": "105 5503 triple (Octalink V1)",
+   "discipline": "route",
+   "generation": "105 5500 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "octalink_v1",
+    "ringInterface": "bcd",
+    "chainrings": 3
+   },
+   "src": "mb-bb5500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD et dentures non renseignés."
+  },
+  {
+   "id": "shimano-bb-5500",
+   "type": "bottom_bracket",
+   "brand": "Shimano",
+   "ref": "BB-5500",
+   "aliases": [
+    "bb 5500",
+    "octalink v1",
+    "bb-6500",
+    "bb 7700"
+   ],
+   "name": "Boîtier Octalink V1 (route)",
+   "discipline": "route",
+   "generation": "Octalink V1",
+   "attrs": {
+    "spindle": "octalink_v1"
+   },
+   "src": "mb-bb5500",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Existe en filetage BSA et ITA, plusieurs longueurs d'axe : reprendre celle d'origine. Coque non renseignée."
+  },
+  {
+   "id": "shimano-rd-7700-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-7700-SS",
+   "aliases": [
+    "rd 7700",
+    "dura-ace 7700",
+    "dura ace 7700"
+   ],
+   "name": "Dura-Ace 7700 chape courte",
+   "discipline": "route",
+   "generation": "Dura-Ace 7700 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 26,
+    "minCog": 11,
+    "maxFrontDiff": 14,
+    "totalCapacity": 26,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "si-rd7700",
+    "atc-rd7700"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-5500-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5500-GS",
+   "aliases": [
+    "rd 5500",
+    "105 5500"
+   ],
+   "name": "105 5500 chape moyenne",
+   "discipline": "route",
+   "generation": "105 5500 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "rbr-rd5500gs",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max non lisible dans la source (27-28T sans souci selon un utilisateur)."
+  },
+  {
+   "id": "shimano-rd-4400",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-4400",
+   "aliases": [
+    "rd 4400",
+    "tiagra 4400"
+   ],
+   "name": "Tiagra 4400",
+   "discipline": "route",
+   "generation": "Tiagra 4400 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 27
+   },
+   "src": "cc-rd4400",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "27T cité par un utilisateur, sans source officielle."
+  },
+  {
+   "id": "shimano-rd-3400-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-3400-SS",
+   "aliases": [
+    "rd 3400",
+    "sora 3400"
+   ],
+   "name": "Sora 3400 chape courte",
+   "discipline": "route",
+   "generation": "Sora 3400 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 27,
+    "minCog": 11,
+    "maxFrontDiff": 16,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "si-rd3400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-3400-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-3400-GS",
+   "aliases": [
+    "rd 3400 gs",
+    "sora 3400 triple"
+   ],
+   "name": "Sora 3400 chape longue",
+   "discipline": "route",
+   "generation": "Sora 3400 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "si-rd3400",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max illisible dans la notice extraite."
+  },
+  {
+   "id": "shimano-rd-3300",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-3300",
+   "aliases": [
+    "rd 3300",
+    "sora 3300"
+   ],
+   "name": "Sora 3300",
+   "discipline": "route",
+   "generation": "Sora 3300 (8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8"
+   },
+   "src": "nelos-rd3300",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "shimano-st-3400",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-3400",
+   "aliases": [
+    "st 3400",
+    "sora 3400"
+   ],
+   "name": "Sora 3400 leviers 9v",
+   "discipline": "route",
+   "generation": "Sora 3400 (9v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "si-st3400",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-7700",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-7700",
+   "aliases": [
+    "st 7700",
+    "dura-ace 7700",
+    "dura ace 7700"
+   ],
+   "name": "Dura-Ace 7700 leviers 9v",
+   "discipline": "route",
+   "generation": "Dura-Ace 7700 (9v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": "ebay-st7700",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-7800-53-39",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-7800 53-39",
+   "aliases": [
+    "fc 7800",
+    "dura-ace 7800",
+    "dura ace 7800"
+   ],
+   "name": "Dura-Ace 7800 53-39",
+   "discipline": "route",
+   "generation": "Dura-Ace 7800 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 130,
+    "chainrings": 2,
+    "teeth": "53-39"
+   },
+   "src": "tpc-fc7800",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-7900-53-39",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-7900 53-39",
+   "aliases": [
+    "fc 7900",
+    "dura-ace 7900",
+    "dura ace 7900"
+   ],
+   "name": "Dura-Ace 7900 53-39",
+   "discipline": "route",
+   "generation": "Dura-Ace 7900 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 130,
+    "chainrings": 2,
+    "teeth": "53-39"
+   },
+   "src": "rbr-fc7900",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-6700",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-6700",
+   "aliases": [
+    "fc 6700",
+    "ultegra 6700"
+   ],
+   "name": "Ultegra 6700 (BCD 130, 5 bras)",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 130,
+    "bolts": 5,
+    "chainrings": 2
+   },
+   "src": "cambria-fc6700",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Version compacte FC-6750 en BCD 110."
+  },
+  {
+   "id": "shimano-fc-5700-53-39",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-5700 53-39",
+   "aliases": [
+    "fc 5700",
+    "105 5700"
+   ],
+   "name": "105 5700 53-39",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 130,
+    "chainrings": 2,
+    "teeth": "53-39"
+   },
+   "src": "tpc-fc5700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-5750-50-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-5750 50-34",
+   "aliases": [
+    "fc 5750",
+    "105 compact"
+   ],
+   "name": "105 5750 compact 50-34",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "chainrings": 2,
+    "teeth": "50-34"
+   },
+   "src": "cc-fc5750",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-5700-11-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-5700 11-25",
+   "aliases": [
+    "5700 11-25"
+   ],
+   "name": "105 5700 10v 11-25",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 25,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-14-15-17-19-21-23-25"
+   },
+   "src": "bc-cs5700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-5700-11-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-5700 11-28",
+   "aliases": [
+    "5700 11-28"
+   ],
+   "name": "105 5700 10v 11-28",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 28,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-14-15-17-19-21-24-28"
+   },
+   "src": "bc-cs5700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-6700-12-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-6700 12-25",
+   "aliases": [
+    "6700 12-25"
+   ],
+   "name": "Ultegra 6700 10v 12-25",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 25,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "12-13-14-15-16-17-19-21-23-25"
+   },
+   "src": "atc-cs6700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-6700-12-30",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-6700 12-30",
+   "aliases": [
+    "6700 12-30"
+   ],
+   "name": "Ultegra 6700 10v 12-30",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 12,
+    "maxCog": 30,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10",
+    "cogs": "12-13-14-15-17-19-21-24-27-30"
+   },
+   "src": "atc-cs6700",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévue pour dérailleurs chape moyenne (4600, 4601, 5701 GS)."
+  },
+  {
+   "id": "shimano-cs-6700-11-23",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-6700 11-23",
+   "aliases": [
+    "6700 11-23"
+   ],
+   "name": "Ultegra 6700 10v 11-23",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 23,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "atc-cs6700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-6700-11-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-6700 11-25",
+   "aliases": [
+    "6700 11-25"
+   ],
+   "name": "Ultegra 6700 10v 11-25",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 25,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "atc-cs6700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-6700-11-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-6700 11-28",
+   "aliases": [
+    "6700 11-28"
+   ],
+   "name": "Ultegra 6700 10v 11-28",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 28,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "atc-cs6700",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-5800-11-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-5800 11-28",
+   "aliases": [
+    "5800 11-28"
+   ],
+   "name": "105 5800 11v 11-28",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 28,
+    "pitch": "hg-11",
+    "freehub": "hg_11_route"
+   },
+   "src": "bd-cs5800",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-5800-11-30",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-5800 11-30",
+   "aliases": [
+    "5800 11-30"
+   ],
+   "name": "105 5800 11v 11-30",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 30,
+    "pitch": "hg-11",
+    "freehub": "hg_11_route"
+   },
+   "src": "bd-cs5800",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-5800-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-5800 11-32",
+   "aliases": [
+    "5800 11-32"
+   ],
+   "name": "105 5800 11v 11-32",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-11",
+    "freehub": "hg_11_route"
+   },
+   "src": "bd-cs5800",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-5800-12-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-5800 12-25",
+   "aliases": [
+    "5800 12-25"
+   ],
+   "name": "105 5800 11v 12-25",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 12,
+    "maxCog": 25,
+    "pitch": "hg-11",
+    "freehub": "hg_11_route"
+   },
+   "src": "bd-cs5800",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-9-12-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-9 12-25",
+   "aliases": [
+    "hg50 9 12-25",
+    "cassette tiagra 9v",
+    "cassette sora 9v"
+   ],
+   "name": "HG50 9v 12-25 (Tiagra / Sora)",
+   "discipline": "route",
+   "generation": "Tiagra 4500 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 12,
+    "maxCog": 25,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10",
+    "cogs": "12-13-14-15-17-19-21-23-25"
+   },
+   "src": "bc-hg50-9",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-9-13-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-9 13-25",
+   "aliases": [
+    "hg50 9 13-25"
+   ],
+   "name": "HG50 9v 13-25",
+   "discipline": "route",
+   "generation": "Tiagra 4500 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 13,
+    "maxCog": 25,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "bc-hg50-9",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-9-14-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-9 14-25",
+   "aliases": [
+    "hg50 9 14-25"
+   ],
+   "name": "HG50 9v 14-25",
+   "discipline": "route",
+   "generation": "Tiagra 4500 (9v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 14,
+    "maxCog": 25,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "bc-hg50-9",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-8-13-26",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-8 13-26",
+   "aliases": [
+    "hg50 8 13-26"
+   ],
+   "name": "HG50 8v 13-26",
+   "discipline": "route",
+   "generation": "Claris 2400 (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 13,
+    "maxCog": 26,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "src": "b24-hg50-8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-4500-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-4500-SS",
+   "aliases": [
+    "rd 4500",
+    "tiagra 4500"
+   ],
+   "name": "Tiagra 4500 chape courte",
+   "discipline": "route",
+   "generation": "Tiagra 4500 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 27,
+    "minCog": 11,
+    "maxFrontDiff": 16,
+    "totalCapacity": 31,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "si-rd4500",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-4500-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-4500-GS",
+   "aliases": [
+    "rd 4500 gs",
+    "tiagra 4500 triple"
+   ],
+   "name": "Tiagra 4500 chape longue",
+   "discipline": "route",
+   "generation": "Tiagra 4500 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 27,
+    "minCog": 11,
+    "maxFrontDiff": 22,
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "si-rd4500",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cn-6701",
+   "type": "chain",
+   "brand": "Shimano",
+   "ref": "CN-6701",
+   "aliases": [
+    "cn 6701",
+    "chaine 10v route",
+    "cn 7901",
+    "cn 5701"
+   ],
+   "name": "Chaîne Shimano Ultegra CN-6701 10v (route)",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10",
+    "links": 116
+   },
+   "src": "bc-cn6701",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Directionnelle (marquage à l'extérieur). Prévue pour 2x10 route. Existe en 114 maillons."
+  }
+ ]
+}
