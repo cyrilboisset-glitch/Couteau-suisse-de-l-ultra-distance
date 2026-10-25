@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#111418">
+  <title>Trousse du baroudeur</title>
+  <meta name="description" content="Pièce cassée en ultra-distance : toutes les pièces de remplacement compatibles, hors ligne.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="title">Trousse du baroudeur</h1>
+    <button id="theme" class="icon-btn" type="button" aria-label="Changer de thème">◐</button>
+  </header>
+  <nav class="tabs" aria-label="Modes">
+    <a class="tab" href="#/" data-tab="casse">Pièce cassée</a>
+    <a class="tab" href="#/dispo" data-tab="dispo">Sous la main</a>
+    <a class="tab" href="#/velo" data-tab="velo">Mon vélo <span id="bike-count" class="count"></span></a>
+  </nav>
+  <main id="view" tabindex="-1">
+    <p class="loading">Chargement de la base…</p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

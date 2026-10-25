@@ -17,7 +17,7 @@ règle porte sa source ; ce qui n'est pas sourcé officiellement est « à valid
 
 1. ✅ Schéma de données + moteur de règles + tests unitaires
 2. 🟡 Base pilote : Shimano 11/12v, SRAM 12/13v, Campagnolo Ekar, microSHIFT, LTWOO, SENSAH, SunRace, Box — 158 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
-3. ⬜ Interface de recherche + résultats
+3. ✅ Interface : recherche tolérante + critères, résultats par niveau, « sous la main », « mon vélo », mode sombre
 4. ⬜ PWA hors ligne
 5. ⬜ Extension 10 → 8 vitesses, Campagnolo, marques asiatiques
 6. ⬜ Import CSV
@@ -30,6 +30,9 @@ src/knowledge.js       base de connaissances par standards (familles, corps de r
 src/engine/rules/      règles : transmission, freins, pédalier
 src/engine/core.js     checkPair (deux pièces), agrégation des niveaux
 src/engine/replacement.js  checkReplacement, findReplacements, checkAvailable
+src/search.js          recherche par référence (tolérante aux fautes) ou par critères
+app/                   interface (HTML/CSS/JS sans dépendance)
+scripts/build-www.js   assemble l'appli autonome dans dist/www/
 data/                  base réelle (knowledge/ = standards, parts/ = pièces), voir docs/DONNEES.md
 scripts/build-data.js  validation + dist/catalogue.json + docs/COUVERTURE.md
 test/                  tests (pièces de test illustratives, pas des données réelles)
@@ -50,5 +53,6 @@ checkPair(manette, derailleur, kb);                           // deux pièces en
 
 ```
 npm test          # Node ≥ 20, aucune dépendance
-npm run build     # valide data/ et génère dist/catalogue.json
+npm run build     # valide data/, génère dist/catalogue.json et dist/www/
+npm start         # build + serveur local : http://localhost:8080/
 ```
