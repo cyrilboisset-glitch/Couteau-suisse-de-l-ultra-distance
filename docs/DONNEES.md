@@ -67,6 +67,16 @@ exactes non trouvés (champ vide : la pièce reste proposée dans « remplaçant
 vérifiables ») ; tirage des étriers route Shimano « SLR » / « nouveau Super SLR » non
 distingué par le moteur (signalé en note) ; les tirages SunTour varient selon les années.
 
+## Vintage (5v / 6v)
+
+- famille `friction` : une manette à friction (sans crans) déplace tout dérailleur mécanique, quel que soit le nombre de pignons (🟢, avec la condition « course de câble suffisante ») ; un dérailleur d'avant l'indexation avec une manette indexée = 🟠 ;
+- en mode Projet, une manette indexée n'est jamais remplacée d'office par une friction (elle reste dans « Autres remplaçants ») ;
+- filetages de roue libre : anglais / ISO ↔ italien = 🟢 avec limitation (angle de filet) ; français ↔ autres = ❌ ;
+- coques de boîtier françaises et suisses, axe à clavettes, corps Uniglide (cassette Hyperglide refusée) ;
+- familles `shimano-6` (SIS 1984) et `shimano-da7400` (manettes 7400 : autre dérailleur = 🟠, mode friction).
+
+Limite : peu de capacités et pignons max publiés pour ces pièces (beaucoup de valeurs de forums ou d'annonces, confiance basse).
+
 ## Documents officiels à ouvrir pour valider en masse
 
 - Shimano, tableau de compatibilité 2026-2027 : https://productinfo.shimano.com/pdfs/product/thisyear/2026-2027_Compatibility_v026_en.pdf

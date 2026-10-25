@@ -16,7 +16,7 @@ règle porte sa source ; ce qui n'est pas sourcé officiellement est « à valid
 ## Avancement
 
 1. ✅ Schéma de données + moteur de règles + tests unitaires
-2. 🟡 Base : 6v à 13v, groupes actuels et anciens (Dura-Ace 7700 → aujourd'hui, XTR / XT / Deore 9v → 12v, SRAM 1:1 / Exact Actuation / X-Actuation, Campagnolo 9v → 13v) — Shimano, SRAM, Campagnolo, SunTour / SR Suntour, Sachs, Magura, Avid, Hayes, Hope, Formula, microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC, TRP — 523 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
+2. 🟡 Base : 5v à 13v (vintage à friction compris), groupes actuels et anciens (Dura-Ace 7700 → aujourd'hui, XTR / XT / Deore 9v → 12v, SRAM 1:1 / Exact Actuation / X-Actuation, Campagnolo 9v → 13v) — Shimano, SRAM, Campagnolo, SunTour / SR Suntour, Sachs, Simplex, Huret, Regina, Maillard / Atom, Dia-Compe, Magura, Avid, Hayes, Hope, Formula, microSHIFT, LTWOO, SENSAH, SunRace, Box, KMC, TRP — 550 pièces, à valider ([COUVERTURE](docs/COUVERTURE.md), [méthode](docs/DONNEES.md))
 3. ✅ Interface : recherche tolérante + critères, navigation Marque → Gamme → Génération (année sourcée) → Type → Pièce, résultats par niveau, « sous la main », « mon vélo », mode sombre
 3 bis. ✅ Mode Projet : pièce cible → pièces à garder / changer / ajouter / retirer, cascade, liste de courses, projets enregistrés ([docs/PROJET.md](docs/PROJET.md))
 4. ⬜ PWA hors ligne

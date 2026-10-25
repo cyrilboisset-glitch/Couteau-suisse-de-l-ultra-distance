@@ -23,6 +23,7 @@ const FRAME_FIELDS = [
   ['frame', 'maxRotor', 'Disque max autorisé (mm)', null],
   ['frame', 'chainstayLength', 'Longueur de base (mm, axe pédalier → axe roue)', null],
   ['wheel', 'freehub', 'Corps de roue libre (roue arrière)', 'freehub'],
+  ['wheel', 'freewheelThread', 'Ou moyeu à visser : filetage de roue libre', 'freewheelThread'],
   ['wheel', 'brakeInterface', 'Roues : freinage', 'wheelBrake'],
   ['wheel', 'rotorMount', 'Fixation des disques sur le moyeu', 'rotorMount'],
 ];

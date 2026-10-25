@@ -2,31 +2,37 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **523 pièces**, dont 24 validées par une page constructeur et **499 à valider**.
-- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 189, spindleFits : 0, chainLength : 1, recommendations : 7, families : 43, actuation : 56, freehubFits : 12, pitchFits : 4.
+- **550 pièces**, dont 24 validées par une page constructeur et **526 à valider**.
+- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 208, spindleFits : 0, chainLength : 1, recommendations : 7, families : 46, actuation : 65, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
+| Atom | 1 |
 | Avid | 2 |
 | Box | 2 |
-| Campagnolo | 47 |
+| Campagnolo | 49 |
+| Dia-Compe | 2 |
 | Formula | 3 |
 | Hayes | 5 |
 | Hope | 3 |
+| Huret | 2 |
 | KMC | 9 |
 | LTWOO | 2 |
 | Magura | 6 |
+| Maillard | 1 |
+| Regina | 2 |
 | SENSAH | 3 |
 | SR Suntour | 3 |
 | SRAM | 92 |
 | Sachs | 4 |
-| Shimano | 323 |
+| Shimano | 331 |
+| Simplex | 2 |
 | SunRace | 8 |
-| SunTour | 1 |
+| SunTour | 8 |
 | TRP | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (132)
+## Dérailleur arrière (145)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -36,9 +42,12 @@
 | RD Chorus 11 (2015+) chape courte | Campagnolo | route | à valider |  |
 | RD Chorus 12 | Campagnolo | route | à valider |  |
 | RD Ekar 13v | Campagnolo | gravel | à valider |  |
+| Nuovo Record / Super Record | Campagnolo | route | à valider | speeds, maxCog, totalCapacity |
 | RD Record 12 chape moyenne | Campagnolo | route | à valider |  |
 | RD Veloce 10v chape moyenne | Campagnolo | route | à valider |  |
 | RD Veloce 10v chape courte | Campagnolo | route | à valider | maxCog |
+| Duopar Eco | Huret | autre | à valider | speeds, maxCog, totalCapacity |
+| Jubilee | Huret | route | à valider | speeds, maxCog, totalCapacity |
 | RD A12-X | LTWOO | vtt | à valider | totalCapacity |
 | RD-M6205 (Advent X) | microSHIFT | vtt | à valider |  |
 | RD-R58S (Centos) | microSHIFT | route | à valider |  |
@@ -66,6 +75,8 @@
 | RD-5701-SS | Shimano | route | à valider |  |
 | RD-5800-GS | Shimano | route | à valider |  |
 | RD-5800-SS | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-6200 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-6207 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6600-GS | Shimano | route | à valider | maxCog |
 | RD-6600-SS | Shimano | route | à valider | maxCog |
 | RD-6700-A-SS | Shimano | route | à valider | totalCapacity |
@@ -73,6 +84,7 @@
 | RD-6700-SS | Shimano | route | à valider |  |
 | RD-6800-GS | Shimano | route | à valider |  |
 | RD-6800-SS | Shimano | route | à valider |  |
+| RD-7400 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-7700-SS | Shimano | route | à valider |  |
 | RD-7800-SS | Shimano | route | à valider | maxCog |
 | RD-7900-SS | Shimano | route | à valider | totalCapacity |
@@ -90,8 +102,10 @@
 | RD-M6000-GS | Shimano | vtt | à valider |  |
 | RD-M6000-SGS | Shimano | vtt | à valider |  |
 | RD-M6100 | Shimano | vtt | à valider |  |
+| RD-M650 | Shimano | vtt | à valider | totalCapacity |
 | RD-M670-SGS | Shimano | vtt | à valider |  |
 | RD-M7000-10-SGS | Shimano | vtt | à valider |  |
+| RD-M730 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M772-SGS | Shimano | vtt | à valider |  |
 | RD-M780-GS | Shimano | vtt | à valider |  |
 | RD-M786-GS | Shimano | vtt | à valider | maxCog |
@@ -129,6 +143,8 @@
 | RD-T4000-SGS | Shimano | autre | à valider | totalCapacity |
 | RD-TX35 | Shimano | vtt | à valider |  |
 | RD-TY300 | Shimano | vtt | à valider |  |
+| Prestige | Simplex | autre | à valider | speeds, totalCapacity |
+| SX410 | Simplex | autre | à valider | speeds, maxCog, totalCapacity |
 | RD Apex 1 11v | SRAM | gravel | à valider | totalCapacity |
 | RD Apex 10v chape courte | SRAM | route | à valider |  |
 | RD Apex 10v WiFLi | SRAM | route | à valider |  |
@@ -161,9 +177,12 @@
 | RD X7 9v | SRAM | vtt | à valider |  |
 | RD X9 10v | SRAM | vtt | à valider | maxCog, totalCapacity |
 | RD X9 9v chape moyenne | SRAM | vtt | à valider | maxCog, totalCapacity |
+| Cyclone GT | SunTour | route | à valider | speeds |
+| Superbe Pro RD-3100 | SunTour | route | à valider | speeds, totalCapacity |
+| V-GT | SunTour | autre | à valider | speeds, maxCog |
 | RD SunTour XCT Lite | SunTour | vtt | à valider | maxCog, totalCapacity |
 
-## Manette / levier de vitesses (70)
+## Manette / levier de vitesses (74)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -182,6 +201,8 @@
 | Ergopower Xenon 10v | Campagnolo | route | à valider |  |
 | Ergopower Centaur 11 Power Shift | Campagnolo | route | à valider | cablePull |
 | Ergopower Chorus 11 | Campagnolo | route | à valider |  |
+| Bar-Con (rochet) | Dia-Compe | route | à valider |  |
+| ENE Ciclo (manettes de cadre) | Dia-Compe | route | à valider |  |
 | Leviers R9 2x11 | LTWOO | route | à valider |  |
 | Manette Advent X 10v | microSHIFT | vtt | à valider |  |
 | Leviers Centos 2x11 | microSHIFT | route | à valider |  |
@@ -189,6 +210,7 @@
 | Ergo Sachs New Success | Sachs | route | à valider |  |
 | Leviers Empire 2x11 | SENSAH | route | à valider | cablePull |
 | Leviers SRX 1x11 | SENSAH | gravel | à valider |  |
+| SL-7400 | Shimano | route | à valider |  |
 | SL-M3100-L (2 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-L (3 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-R | Shimano | vtt | à valider |  |
@@ -237,6 +259,7 @@
 | Gâchette X9 9v | SRAM | vtt | à valider |  |
 | Leviers Apex 12v mécaniques | SRAM | gravel | à valider |  |
 | Leviers eTap AXS HRD (RED / Force / Rival) | SRAM | route | à valider |  |
+| Bar-Con (friction) | SunTour | route | à valider |  |
 
 ## Levier de frein (7)
 
@@ -250,10 +273,11 @@
 | BL-T4000 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
-## Cassette / roue libre (138)
+## Cassette / roue libre (147)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
+| 77 Compact 14-28 | Atom | autre | à valider |  |
 | Cassette Campagnolo 11v 11-25 | Campagnolo | route | à valider |  |
 | Cassette Campagnolo 11v 11-27 | Campagnolo | route | à valider |  |
 | Cassette Campagnolo 11v 11-29 | Campagnolo | route | à valider |  |
@@ -275,8 +299,11 @@
 | Cassette Veloce 10 12-25 | Campagnolo | route | à valider |  |
 | Cassette Veloce 10 13-26 | Campagnolo | route | à valider |  |
 | Cassette Veloce 10 13-29 | Campagnolo | route | à valider |  |
+| Helicomatic 6v 13-24 | Maillard | route | à valider |  |
 | Cassette Advent X 11-48 | microSHIFT | vtt | à valider |  |
 | Cassette Sword 11-38 | microSHIFT | gravel | à valider |  |
+| Extra BX 6v 13-23 (filetage français) | Regina | route | à valider |  |
+| Extra Oro BX 5v 14-22 (filetage anglais) | Regina | route | à valider |  |
 | CS-5700 11-25 | Shimano | route | à valider |  |
 | CS-5700 11-28 | Shimano | route | à valider |  |
 | CS-5800 11-28 | Shimano | route | à valider |  |
@@ -349,6 +376,8 @@
 | MF-TZ21 14-28 | Shimano | vtt | à valider | freewheelThread |
 | MF-TZ500 14-28 | Shimano | vtt | à valider | freewheelThread |
 | MF-TZ500 14-34 | Shimano | vtt | à valider | freewheelThread |
+| MF-TZ500-6 14-28 | Shimano | autre | à valider | freewheelThread |
+| MF-Z012 14-28 | Shimano | autre | à valider |  |
 | PG-1030 11-32 | SRAM | vtt | à valider |  |
 | PG-1050 11-32 | SRAM | route | à valider |  |
 | PG-1050 11-36 | SRAM | route | à valider |  |
@@ -392,6 +421,9 @@
 | CSMX8 11-42 | SunRace | vtt | à valider |  |
 | CSMX8 11-46 | SunRace | vtt | à valider |  |
 | CSMZ90 11-50 | SunRace | vtt | à valider |  |
+| New Winner | SunTour | autre | à valider | speeds, minCog, maxCog, freewheelThread |
+| Perfect 5v | SunTour | autre | à valider | minCog, maxCog, freewheelThread |
+| Ultra-6 | SunTour | route | à valider | minCog, maxCog, freewheelThread |
 
 ## Chaîne (31)
 
@@ -533,10 +565,11 @@
 | SM-RT70 140 | Shimano | route | à valider |  |
 | SM-RT70 160 | Shimano | route | à valider |  |
 
-## Pédalier (48)
+## Pédalier (49)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
+| Record Pista (BCD 144) | Campagnolo | autre | à valider | bolts |
 | Pédalier Sword (axe 24 mm) | microSHIFT | gravel | à valider | bcd, bolts |
 | FC-4700 48-34 | Shimano | route | à valider |  |
 | FC-4700 50-34 | Shimano | route | à valider |  |

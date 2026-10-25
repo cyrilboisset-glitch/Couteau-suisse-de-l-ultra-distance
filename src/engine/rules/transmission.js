@@ -12,6 +12,9 @@ function sideMatches(shifter, der) {
 }
 
 const commandsRear = (sh) => !sh.attrs?.side || sh.attrs.side !== 'avant';
+const isFriction = (sh) => sh.attrs?.indexed === false || sh.attrs?.family === 'friction';
+const FRICTION_SRC = { kind: 'communaute', ref: 'BikeForums – en mode friction, toute manette fonctionne avec tout dérailleur et tout nombre de pignons ; les manettes 5/6v anciennes peuvent manquer de course', url: 'https://www.bikeforums.net/7875417-post2.html' };
+const THREAD_SRC = { kind: 'communaute', ref: 'Sheldon Brown – roues libres à visser : italien 35 × 24 tpi, ISO 34,92 × 24 tpi, anglais 34,80 × 24 tpi (interchangeables), français 34,7 × 1 mm (incompatible)', url: 'https://www.sheldonbrown.com/freewheels.html' };
 
 export const commandeSysteme = {
   id: 'transmission.systeme',
@@ -56,6 +59,21 @@ export const familleActionnement = {
 
     const sf = sh.attrs.family;
     const df = der.attrs.family;
+    // Manette à friction : aucun cran, l'utilisateur place le dérailleur à l'oreille.
+    if (isFriction(sh)) {
+      return known(this, 'Manette à friction : déplace n\'importe quel dérailleur mécanique, sans indexation.', {
+        condition: 'Course de câble suffisante pour couvrir tous les pignons (certaines manettes 5/6v anciennes manquent de course au-delà de 7-8 pignons).',
+        adjustments: ['Régler les butées haute et basse du dérailleur', 'Trouver chaque vitesse à l\'oreille'],
+        source: FRICTION_SRC,
+      });
+    }
+    // Dérailleur d'avant l'indexation avec une manette indexée.
+    if (df === 'friction') {
+      return degraded(this, 'Dérailleur conçu pour le changement de vitesse à friction, manette indexée.', {
+        limitation: 'Déplacement par cran non garanti : passer la manette en mode friction si elle en a un, sinon indexation approximative.',
+        source: { kind: 'communaute', ref: 'Sheldon Brown – drivetrain mixing : tirage et déplacement différents selon les marques et époques', url: 'https://www.sheldonbrown.com/drivetrain-mixing.shtml' },
+      });
+    }
     if (sf === df) {
       return ok(this, `Même famille d'actionnement (${sf}).`, {
         source: { kind: 'officiel', ref: "Famille d'actionnement identique définie par le constructeur (voir sources des pièces)" },
@@ -87,6 +105,12 @@ export const vitessesManetteCassette = {
   evaluate(sh, cas) {
     if (!commandsRear(sh)) return null;
     if (sh.attrs?.system === 'electronique') return null; // indexation portée par le dérailleur
+    if (isFriction(sh)) {
+      return known(this, 'Manette à friction : indépendante du nombre de pignons.', {
+        condition: (cas.attrs?.speeds ?? 0) > 7 ? 'Vérifier que la course de la manette couvre tous les pignons.' : undefined,
+        source: FRICTION_SRC,
+      });
+    }
     const g = guard(this, [[sh, ['speeds']], [cas, ['speeds']]]);
     if (g) return g.finding;
     const s = sh.attrs.speeds;
@@ -205,8 +229,16 @@ export const roueLibre = {
       }
       const g2 = guard(this, [[cas, ['freewheelThread']]]);
       if (g2) return g2.finding;
-      if (cas.attrs.freewheelThread === wheel.attrs.freewheelThread) return ok(this, 'Même filetage de roue libre.');
-      return incompatible(this, `Filetage différent (${cas.attrs.freewheelThread} ≠ ${wheel.attrs.freewheelThread}).`);
+      const a = cas.attrs.freewheelThread;
+      const b = wheel.attrs.freewheelThread;
+      if (a === b) return ok(this, 'Même filetage de roue libre.');
+      if ([a, b].every((t) => t === 'iso_anglais' || t === 'italien')) {
+        return known(this, 'Filetages anglais / ISO et italien : même pas (24 filets au pouce), diamètres très proches.', {
+          limitation: 'Angle de filet différent (55° / 60°) : les filets se reforment, surtout roue libre acier sur moyeu alu. Éviter d\'alterner les deux sur un même moyeu.',
+          source: THREAD_SRC,
+        });
+      }
+      return incompatible(this, `Filetage différent (${a} ≠ ${b})${a === 'francais' || b === 'francais' ? ' : le filetage français (34,7 × 1 mm) ne se visse pas sur un moyeu anglais / italien, et inversement' : ''}.`, { source: THREAD_SRC });
     }
     if (!wheel.attrs?.freehub) {
       if (wheel.virtual) return null;
@@ -320,7 +352,7 @@ export const pasPignons = {
   confidence: 'moyenne',
   source: physique("L'indexation (tirage × ratio du dérailleur) est calculée pour l'écartement des pignons d'un standard donné."),
   evaluate(rd, cas, kb) {
-    if (rd.type === 'shifter' && (rd.attrs?.system === 'electronique' || rd.attrs?.side === 'avant')) return null;
+    if (rd.type === 'shifter' && (rd.attrs?.system === 'electronique' || rd.attrs?.side === 'avant' || isFriction(rd))) return null;
     if (rd.type === 'rear_derailleur' && rd.attrs?.system !== 'electronique' && !rd.attrs?.pitch) return null;
     const pitches = rd.attrs?.pitch ? listOf(rd.attrs.pitch) : (kb.family(rd.attrs?.family)?.pitch ?? []);
     const cp = cas.attrs?.pitch;

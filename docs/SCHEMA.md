@@ -49,7 +49,8 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | Attribut | Description | Type | Statut |
 |---|---|---|---|
 | `side` | Côté | liste `shifterSide` | **obligatoire** |
-| `speeds` | Nombre de vitesses (arrière) ou de plateaux (avant) | int | **obligatoire** |
+| `indexed` | Indexée (non = manette à friction, sans crans) | bool |  |
+| `speeds` | Nombre de vitesses (arrière) ou de plateaux (avant) | int | *conditionnel* |
 | `system` | Commande (mécanique / électronique) | liste `shiftSystem` | **obligatoire** |
 | `family` | Famille d'actionnement (ratio de tirage ou protocole + génération) | string | **obligatoire** |
 | `protocol` | Protocole électronique | liste `protocol` | *conditionnel* |
@@ -110,7 +111,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 | `minCog` | Plus petit pignon | int (dents) | **obligatoire** |
 | `maxCog` | Plus grand pignon | int (dents) | **obligatoire** |
 | `freehub` | Standard de corps de roue libre | liste `freehub` | *conditionnel* |
-| `freewheelThread` | Filetage (roue libre à visser) | string | *conditionnel* |
+| `freewheelThread` | Filetage (roue libre à visser) | liste `freewheelThread` | *conditionnel* |
 | `cogs` | Étagement (ex. 11-12-13-14-16-18-20-22-25-28-32) | string |  |
 | `pitch` | Famille de pas des pignons (ex. hg-11, shimano-12, sram-eagle-12) | string |  |
 | `chainSpeeds` | Largeur de chaîne requise si différente du nombre de vitesses (ex. CUES) | int |  |
@@ -177,7 +178,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 |---|---|---|---|
 | `brakeInterface` | Freinage prévu (disque / jante) | liste `wheelBrake` | **obligatoire** |
 | `freehub` | Corps de roue libre | liste `freehub` |  |
-| `freewheelThread` | Filetage roue libre (moyeu à visser) | string |  |
+| `freewheelThread` | Filetage roue libre (moyeu à visser) | liste `freewheelThread` |  |
 | `freehubOptions` | Autres corps de roue libre proposés pour ce moyeu, séparés par « | » | string |  |
 | `rotorMount` | Fixation disque | liste `rotorMount` | *conditionnel* |
 | `axleType` | Type d'axe de roue | liste `axleType` |  |
@@ -218,10 +219,11 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 - `frameHanger` : `standard`, `udh`, `direct_mount`
 - `fdMount` : `collier_28_6`, `collier_31_8`, `collier_34_9`, `braze_on`, `direct_mount`, `e_type`, `autre`
 - `cassetteKind` : `cassette`, `roue_libre`
-- `freehub` : `hg_7`, `hg_8_9_10`, `hg_11_route`, `hg_12_route`, `hg_l2`, `microspline`, `xd`, `xdr`, `n3w`, `campagnolo`, `campagnolo_8`, `autre`
+- `freewheelThread` : `iso_anglais`, `italien`, `francais`, `autre`
+- `freehub` : `uniglide`, `hg_7`, `hg_8_9_10`, `hg_11_route`, `hg_12_route`, `hg_l2`, `microspline`, `xd`, `xdr`, `n3w`, `campagnolo`, `campagnolo_8`, `autre`
 - `chainConnection` : `maillon_rapide`, `goupille`
-- `spindle` : `carre_jis`, `carre_iso`, `octalink_v1`, `octalink_v2`, `isis`, `shimano_24`, `sram_gxp`, `sram_dub`, `axe_30`, `campagnolo_ultratorque`, `campagnolo_powertorque`, `autre`
-- `bbShell` : `bsa`, `ita`, `bb86`, `bb92`, `bb30`, `pf30`, `bb386evo`, `bbright`, `t47_externe`, `t47_interne`, `autre`
+- `spindle` : `carre_jis`, `carre_iso`, `octalink_v1`, `octalink_v2`, `isis`, `shimano_24`, `sram_gxp`, `sram_dub`, `axe_30`, `campagnolo_ultratorque`, `campagnolo_powertorque`, `clavette`, `autre`
+- `bbShell` : `bsa`, `ita`, `francais`, `suisse`, `bb86`, `bb92`, `bb30`, `pf30`, `bb386evo`, `bbright`, `t47_externe`, `t47_interne`, `autre`
 - `ringInterface` : `bcd`, `direct_mount`
 - `brakeType` : `disque`, `jante`
 - `brakeActuation` : `hydraulique`, `mecanique`

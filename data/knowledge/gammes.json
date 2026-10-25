@@ -87,6 +87,11 @@
    "kind": "presse",
    "ref": "Pinkbike – Formula Cura présenté au Sea Otter 2016",
    "url": "https://m.pinkbike.com/news/formula-cura-brake-sea-otter-2016.html"
+  },
+  "shimano-sis-1984": {
+   "kind": "officiel",
+   "ref": "Shimano – SIS développé pour la série Dura-Ace 7400, sorti en 1984",
+   "url": "https://www.shimano.com/en/100th/history/products/16.php"
   }
  },
  "gammes": [
@@ -1312,6 +1317,122 @@
    "brand": "microSHIFT",
    "generation": "Sword (10v)",
    "gamme": "Sword",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Dia-Compe",
+   "generation": "Friction",
+   "gamme": "Manettes à friction",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunTour",
+   "generation": "SunTour (friction)",
+   "gamme": "Bar-Con",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace 7400 (6v)",
+   "gamme": "Dura-Ace",
+   "status": "a_valider",
+   "year": 1984,
+   "src": "shimano-sis-1984"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Shimano 600 (6v)",
+   "gamme": "600",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Shimano 600 EX (6v)",
+   "gamme": "600",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore XT M730 (7v)",
+   "gamme": "XT",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore DX M650 (7v)",
+   "gamme": "Deore DX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunTour",
+   "generation": "SunTour Superbe Pro",
+   "gamme": "Superbe",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunTour",
+   "generation": "SunTour Cyclone",
+   "gamme": "Cyclone",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunTour",
+   "generation": "SunTour V",
+   "gamme": "V",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Campagnolo Record (5/6v)",
+   "gamme": "Record",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Simplex",
+   "generation": "Simplex Prestige",
+   "gamme": "Prestige",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Simplex",
+   "generation": "Simplex SX",
+   "gamme": "SX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Huret",
+   "generation": "Huret",
+   "gamme": "Huret",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Regina",
+   "generation": "Regina",
+   "gamme": "Roues libres",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Maillard",
+   "generation": "Maillard",
+   "gamme": "Roues libres",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SunTour",
+   "generation": "SunTour (roues libres)",
+   "gamme": "Roues libres",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Roues libres 6v",
+   "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Atom",
+   "generation": "Atom",
+   "gamme": "Roues libres",
    "status": "a_valider"
   }
  ]

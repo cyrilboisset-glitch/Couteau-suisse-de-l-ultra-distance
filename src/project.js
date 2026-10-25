@@ -153,6 +153,8 @@ function compatibleWith(cand, fixed, kb, threshold) {
   return { ok: true };
 }
 
+const isFriction = (p) => p?.attrs?.indexed === false || p?.attrs?.family === 'friction';
+
 /** Une donnée manque-t-il sur ce candidat pour le vérifier contre les pièces fixes ? */
 function missingOn(cand, fixed, kb) {
   const mine = `${partLabel(cand)} →`;
@@ -413,7 +415,12 @@ function solve(assign, slots, ctx) {
   const empty = [];
   for (const s of slots) {
     const def = SLOT_BY_ID[s];
-    const pool = catalog.filter((p) => def.types.includes(p.type) && (def.accepts ? def.accepts(p) : true));
+    // Une manette à friction ne remplace pas d'office une manette indexée (perte de fonction) :
+    // elle reste proposée dans les autres remplaçants.
+    const cur = byId.get(before[s]);
+    const keepIndexed = def.types.includes('shifter') && cur && !isFriction(cur);
+    const pool = catalog.filter((p) => def.types.includes(p.type) && (def.accepts ? def.accepts(p) : true)
+      && !(keepIndexed && isFriction(p)));
     const okList = [];
     const blockers = new Map();
     for (const p of rankCandidates(pool, target, byId.get(before[s]))) {

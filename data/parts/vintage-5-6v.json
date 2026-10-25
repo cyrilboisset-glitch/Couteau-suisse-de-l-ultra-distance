@@ -1,0 +1,789 @@
+{
+ "_meta": {
+  "description": "Vélos vintage (5/6v, friction et premiers systèmes indexés) : manettes, dérailleurs, roues libres, pédaliers."
+ },
+ "sources": {
+  "clc-ciclo": {
+   "kind": "revendeur",
+   "ref": "CL Cycle – manettes de cadre Dia-Compe ENE Ciclo à friction, jusqu'à 11v (et tout nombre inférieur)",
+   "url": "https://www.clcycle.ca/products/dia-compe-ene-ciclo-shifters-downtube-11spd"
+  },
+  "bf-barcon": {
+   "kind": "communaute",
+   "ref": "BikeForums – Bar-Con SunTour anciens : friction à micro-crans ; génération Accushift indexée 6/7v ; manettes à rochet adaptées aux roues libres 6v",
+   "url": "https://m.bikeforums.net/showthread.php?p=22596117"
+  },
+  "ebay-ld1400": {
+   "kind": "revendeur",
+   "ref": "eBay – SunTour Bar-Con à rochet LD-1400 (années 1980)",
+   "url": "https://www.ebay.de/itm/157417178508"
+  },
+  "rcuk-diacompe-barcon": {
+   "kind": "presse",
+   "ref": "Road Cycling UK – Dia-Compe Bar-Con : rochet hérité du « Retro Friction » SunTour, friction en retour",
+   "url": "https://roadcyclinguk.com/gear/dia-compe-bar-con-shifters.html"
+  },
+  "cb-sl7400": {
+   "kind": "revendeur",
+   "ref": "Cicli Berlinetta – manettes Dura-Ace SL-7400 : 6v indexées ou friction, série lancée en 1984",
+   "url": "https://cicli-berlinetta.com/product/shimano-dura-ace-7400-sl-downtube-shifters/"
+  },
+  "cb-rd7400": {
+   "kind": "revendeur",
+   "ref": "Cicli Berlinetta – RD-7400 Dura-Ace (annoncé 7/8v)",
+   "url": "https://cicli-berlinetta.com/product/shimano-dura-ace-rd-7400-rear-derailleur-7-8-speed/"
+  },
+  "ebay-rd7400": {
+   "kind": "revendeur",
+   "ref": "eBay – RD-7400 chape courte 6v (1985)",
+   "url": "https://www.ebay.com/itm/156637374067"
+  },
+  "ebay-rd6200": {
+   "kind": "revendeur",
+   "ref": "eBay – Shimano 600 RD-6200 chape courte 6v (1980)",
+   "url": "https://www.ebay.de/itm/156901151144"
+  },
+  "ebay-rd6207": {
+   "kind": "revendeur",
+   "ref": "eBay – Shimano 600 RD-6207 chape courte 6v (1986)",
+   "url": "https://www.ebay.de/itm/177141782821"
+  },
+  "ebay-rdm730": {
+   "kind": "revendeur",
+   "ref": "eBay – Deore XT RD-M730 chape longue 7v (1988)",
+   "url": "https://www.ebay.com/p/1000650027"
+  },
+  "ebay-rdm650": {
+   "kind": "revendeur",
+   "ref": "eBay – Deore DX RD-M650 7v chape courte, 28T max (1991)",
+   "url": "https://www.ebay.de/p/1423530929"
+  },
+  "ebay-superbe-pro": {
+   "kind": "revendeur",
+   "ref": "eBay – SunTour Superbe Pro RD-3100 (1980) : 23T max",
+   "url": "https://www.ebay.de/itm/157437247931"
+  },
+  "bc-cyclone-gt": {
+   "kind": "revendeur",
+   "ref": "Bicycle Collective – SunTour Cyclone GT chape courte : capacité 24T, pignon max 24T",
+   "url": "https://bicyclecollective.org/products/suntour-cyclone-rear-derailleur-short-cage-gt-for-parts"
+  },
+  "bf-vgt": {
+   "kind": "communaute",
+   "ref": "BikeForums – SunTour V-GT : capacité annoncée 30T (34T utilisé par certains)",
+   "url": "https://www.bikeforums.net/1322061-post9.html"
+  },
+  "cc-campa-friction": {
+   "kind": "communaute",
+   "ref": "CycleChat – dérailleurs Campagnolo Record / Super Record / Nuovo Gran Sport : capacité ≈26 à 28T",
+   "url": "https://cyclechat.net/threads/old-school-campagnolo-friction-rear-d%C3%A9railleur.169542/post-3392425"
+  },
+  "bf-simplex": {
+   "kind": "communaute",
+   "ref": "BikeForums – Simplex Prestige : 34T limite publiée ; SX410 parallélogramme classique",
+   "url": "https://www.bikeforums.net/18853983-post10.html"
+  },
+  "herse-huret": {
+   "kind": "presse",
+   "ref": "René Herse Cycles – Huret Allvit, Luxe, Jubilee (35 ans de catalogue) ; Duopar à double parallélogramme pour grands pignons",
+   "url": "https://www.renehersecycles.com/derailleurs-of-the-world-huret/"
+  },
+  "ebay-velosaloon": {
+   "kind": "revendeur",
+   "ref": "eBay (velosaloon) – Regina Extra BX 6v 13-23 filetage français (1989) ; Regina Extra Oro BX 5v 14-22 filetage anglais (1988)",
+   "url": "https://www.ebay.com/str/velosaloon/Cycling/_i.html"
+  },
+  "bf-helicomatic": {
+   "kind": "communaute",
+   "ref": "BikeForums – Maillard Helicomatic : moyeu spécifique ; chaîne standard trop large pour la roue libre 6v",
+   "url": "https://m.bikeforums.net/showthread.php?p=21258567"
+  },
+  "nelos-maillard": {
+   "kind": "revendeur",
+   "ref": "Nelos Cycles – pièces Maillard / Atom vintage (Helicomatic 6v 13-24)",
+   "url": "https://neloscycles.com/Vintage-Bicycle-Parts-Nos-Maillard/"
+  },
+  "sheldon-suntour-fw": {
+   "kind": "communaute",
+   "ref": "Sheldon Brown – roues libres SunTour : Perfect (5v, 6v), Pro Compe, New Winner (5/6/7v) ; espacement 5,5 mm standard, Ultra-6 à 5 mm pour moyeu 120 mm",
+   "url": "https://www.sheldonbrown.com/suntour-freewheel.html"
+  },
+  "ebay-mfz012": {
+   "kind": "revendeur",
+   "ref": "eBay – Shimano MF-Z012 6v 14-28 (filetage 35 × 24)",
+   "url": "https://www.ebay.com/itm/156910314562"
+  },
+  "ebay-atom77": {
+   "kind": "revendeur",
+   "ref": "eBay – Atom 77 Compact 6v 14-28, moyeux BSA 1,375 × 24 tpi",
+   "url": "https://www.ebay.de/itm/297629470452"
+  },
+  "bq-tz500-6": {
+   "kind": "revendeur",
+   "ref": "Bicycles Quilicot – MF-TZ500-6 roue libre 6v 14-28",
+   "url": "https://www.bicyclesquilicot.com/en/shimano-mf-tz500-6-freewheel-6-speed-14-28t-emftz5006428"
+  },
+  "pb-record-pista": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – Campagnolo Record Pista : BCD 144, axe carré ISO, boîtier ISO 111 mm",
+   "url": "https://www.performancebike.com/campagnolo-record-track-crankset-silver-single-speed-square-taper-fc01-repi049-p/p1277503"
+  },
+  "retro-campa-144": {
+   "kind": "communaute",
+   "ref": "Retrobike – pédaliers Campagnolo Record : BCD 144 puis 130",
+   "url": "https://retrobike.co.uk/threads/80s-campag-super-nuovo-record-chainring-sprocket-sizes.286909"
+  }
+ },
+ "parts": [
+  {
+   "id": "diacompe-ciclo-downtube",
+   "type": "shifter",
+   "brand": "Dia-Compe",
+   "ref": "ENE Ciclo (manettes de cadre)",
+   "aliases": [
+    "dia compe ciclo",
+    "manette friction",
+    "manette de cadre"
+   ],
+   "name": "Manettes de cadre Dia-Compe ENE Ciclo à friction",
+   "discipline": "route",
+   "generation": "Friction",
+   "attrs": {
+    "side": "les_deux",
+    "indexed": false,
+    "system": "mecanique",
+    "family": "friction",
+    "form": "autre"
+   },
+   "src": "clc-ciclo",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fabriquées aujourd'hui : solution de dépannage pour toute transmission à câble (5 à 11v)."
+  },
+  {
+   "id": "suntour-barcon-friction",
+   "type": "shifter",
+   "brand": "SunTour",
+   "ref": "Bar-Con (friction)",
+   "aliases": [
+    "barcon",
+    "bar con",
+    "suntour barcon",
+    "manette bout de cintre"
+   ],
+   "name": "SunTour Bar-Con à friction (années 1970-80)",
+   "discipline": "route",
+   "generation": "SunTour (friction)",
+   "attrs": {
+    "side": "les_deux",
+    "indexed": false,
+    "system": "mecanique",
+    "family": "friction",
+    "form": "bout_de_cintre"
+   },
+   "src": [
+    "bf-barcon",
+    "ebay-ld1400"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Les Bar-Con Accushift plus récents ont un mode indexé 6/7v SunTour."
+  },
+  {
+   "id": "diacompe-barcon",
+   "type": "shifter",
+   "brand": "Dia-Compe",
+   "ref": "Bar-Con (rochet)",
+   "aliases": [
+    "dia compe barcon"
+   ],
+   "name": "Dia-Compe Bar-Con à rochet (friction)",
+   "discipline": "route",
+   "generation": "Friction",
+   "attrs": {
+    "side": "les_deux",
+    "indexed": false,
+    "system": "mecanique",
+    "family": "friction",
+    "form": "bout_de_cintre"
+   },
+   "src": "rcuk-diacompe-barcon",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-7400",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-7400",
+   "aliases": [
+    "sl 7400",
+    "dura-ace 7400",
+    "manette cadre dura ace"
+   ],
+   "name": "Dura-Ace 7400 manettes de cadre SIS 6v (indexées ou friction)",
+   "discipline": "route",
+   "generation": "Dura-Ace 7400 (6v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-da7400",
+    "form": "autre"
+   },
+   "src": "cb-sl7400",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Mode friction disponible : avec un autre dérailleur, passer en friction si l'indexation ne tombe pas."
+  },
+  {
+   "id": "shimano-rd-7400",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-7400",
+   "aliases": [
+    "rd 7400",
+    "dura-ace 7400"
+   ],
+   "name": "Dura-Ace 7400 chape courte (SIS)",
+   "discipline": "route",
+   "generation": "Dura-Ace 7400 (6v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 6,
+    "family": "shimano-da7400",
+    "cageLength": "SS"
+   },
+   "src": [
+    "ebay-rd7400",
+    "cb-rd7400"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Nombre de vitesses annoncé 6, 7 ou 8 selon les annonces (plusieurs versions 7400, 7401, 7402). Pignon max non trouvé."
+  },
+  {
+   "id": "shimano-rd-6200",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6200",
+   "aliases": [
+    "rd 6200",
+    "shimano 600",
+    "600 arabesque"
+   ],
+   "name": "Shimano 600 RD-6200 chape courte (1980, friction)",
+   "discipline": "route",
+   "generation": "Shimano 600 (6v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 6,
+    "family": "friction",
+    "cageLength": "SS"
+   },
+   "src": "ebay-rd6200",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Antérieur à l'indexation SIS (1984). Pignon max non trouvé."
+  },
+  {
+   "id": "shimano-rd-6207",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-6207",
+   "aliases": [
+    "rd 6207",
+    "600 ex",
+    "shimano 600 ex"
+   ],
+   "name": "Shimano 600 EX RD-6207 chape courte (1986, SIS)",
+   "discipline": "route",
+   "generation": "Shimano 600 EX (6v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 6,
+    "family": "shimano-6",
+    "cageLength": "SS"
+   },
+   "src": "ebay-rd6207",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max non trouvé ; une version chape longue existe."
+  },
+  {
+   "id": "shimano-rd-m730",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M730",
+   "aliases": [
+    "rd m730",
+    "deore xt m730",
+    "xt 1988"
+   ],
+   "name": "Deore XT M730 chape longue 7v (1988)",
+   "discipline": "vtt",
+   "generation": "Deore XT M730 (7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "SGS"
+   },
+   "src": "ebay-rdm730",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max et capacité non trouvés."
+  },
+  {
+   "id": "shimano-rd-m650",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M650",
+   "aliases": [
+    "rd m650",
+    "deore dx"
+   ],
+   "name": "Deore DX M650 7v chape courte",
+   "discipline": "vtt",
+   "generation": "Deore DX M650 (7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "maxCog": 28,
+    "cageLength": "SS"
+   },
+   "src": "ebay-rdm650",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Existe en chape longue."
+  },
+  {
+   "id": "suntour-rd-superbe-pro",
+   "type": "rear_derailleur",
+   "brand": "SunTour",
+   "ref": "Superbe Pro RD-3100",
+   "aliases": [
+    "superbe pro",
+    "suntour superbe",
+    "rd 3100"
+   ],
+   "name": "SunTour Superbe Pro RD-3100 (1980)",
+   "discipline": "route",
+   "generation": "SunTour Superbe Pro",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction",
+    "maxCog": 23
+   },
+   "src": "ebay-superbe-pro",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Jusqu'à 28T possible selon la patte d'après un forum. Nombre de vitesses non indiqué."
+  },
+  {
+   "id": "suntour-rd-cyclone-gt",
+   "type": "rear_derailleur",
+   "brand": "SunTour",
+   "ref": "Cyclone GT",
+   "aliases": [
+    "cyclone gt",
+    "suntour cyclone"
+   ],
+   "name": "SunTour Cyclone GT chape courte",
+   "discipline": "route",
+   "generation": "SunTour Cyclone",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction",
+    "maxCog": 24,
+    "totalCapacity": 24,
+    "cageLength": "SS"
+   },
+   "src": "bc-cyclone-gt",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Nombre de vitesses non indiqué ; davantage possible en pratique selon des utilisateurs."
+  },
+  {
+   "id": "suntour-rd-vgt",
+   "type": "rear_derailleur",
+   "brand": "SunTour",
+   "ref": "V-GT",
+   "aliases": [
+    "vgt",
+    "suntour v-gt"
+   ],
+   "name": "SunTour V-GT chape longue",
+   "discipline": "autre",
+   "generation": "SunTour V",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction",
+    "totalCapacity": 30,
+    "cageLength": "SGS"
+   },
+   "src": "bf-vgt",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Nombre de vitesses et pignon max non trouvés."
+  },
+  {
+   "id": "campagnolo-rd-record-friction",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "Nuovo Record / Super Record",
+   "aliases": [
+    "nuovo record",
+    "super record",
+    "campagnolo record vintage"
+   ],
+   "name": "Campagnolo Nuovo Record / Super Record (friction)",
+   "discipline": "route",
+   "generation": "Campagnolo Record (5/6v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": "cc-campa-friction",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Capacité ≈26 à 28T selon un forum : non renseignée faute de valeur précise."
+  },
+  {
+   "id": "simplex-rd-prestige",
+   "type": "rear_derailleur",
+   "brand": "Simplex",
+   "ref": "Prestige",
+   "aliases": [
+    "simplex prestige",
+    "simplex"
+   ],
+   "name": "Simplex Prestige",
+   "discipline": "autre",
+   "generation": "Simplex Prestige",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction",
+    "maxCog": 34
+   },
+   "src": "bf-simplex",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Corps en Delrin : fragile. Existe en fixation sur patte ou à griffe (axe)."
+  },
+  {
+   "id": "simplex-rd-sx410",
+   "type": "rear_derailleur",
+   "brand": "Simplex",
+   "ref": "SX410",
+   "aliases": [
+    "simplex sx410",
+    "sx 410"
+   ],
+   "name": "Simplex SX410",
+   "discipline": "autre",
+   "generation": "Simplex SX",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": "bf-simplex",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Capacité non trouvée."
+  },
+  {
+   "id": "huret-rd-jubilee",
+   "type": "rear_derailleur",
+   "brand": "Huret",
+   "ref": "Jubilee",
+   "aliases": [
+    "huret jubilee",
+    "jubilee"
+   ],
+   "name": "Huret Jubilee (ultra-léger, plage limitée)",
+   "discipline": "route",
+   "generation": "Huret",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": "herse-huret",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Plage de pignons réduite selon les témoignages : chiffre non trouvé."
+  },
+  {
+   "id": "huret-rd-duopar-eco",
+   "type": "rear_derailleur",
+   "brand": "Huret",
+   "ref": "Duopar Eco",
+   "aliases": [
+    "huret duopar",
+    "duopar"
+   ],
+   "name": "Huret Duopar Eco (double parallélogramme, grands pignons)",
+   "discipline": "autre",
+   "generation": "Huret",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction",
+    "cageLength": "SGS"
+   },
+   "src": "herse-huret",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Conçu pour de très grands pignons : chiffre non trouvé."
+  },
+  {
+   "id": "regina-extra-bx-6-13-23",
+   "type": "cassette",
+   "brand": "Regina",
+   "ref": "Extra BX 6v 13-23 (filetage français)",
+   "aliases": [
+    "regina extra bx",
+    "regina 6v"
+   ],
+   "name": "Roue libre Regina Extra BX 6v 13-23, filetage français",
+   "discipline": "route",
+   "generation": "Regina",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 6,
+    "minCog": 13,
+    "maxCog": 23,
+    "freewheelThread": "francais"
+   },
+   "src": "ebay-velosaloon",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "regina-extra-oro-bx-5-14-22",
+   "type": "cassette",
+   "brand": "Regina",
+   "ref": "Extra Oro BX 5v 14-22 (filetage anglais)",
+   "aliases": [
+    "regina oro",
+    "regina 5v"
+   ],
+   "name": "Roue libre Regina Extra Oro BX 5v 14-22, filetage anglais",
+   "discipline": "route",
+   "generation": "Regina",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 5,
+    "minCog": 14,
+    "maxCog": 22,
+    "freewheelThread": "iso_anglais"
+   },
+   "src": "ebay-velosaloon",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "maillard-helicomatic-6-13-24",
+   "type": "cassette",
+   "brand": "Maillard",
+   "ref": "Helicomatic 6v 13-24",
+   "aliases": [
+    "helicomatic",
+    "maillard helicomatic"
+   ],
+   "name": "Maillard Helicomatic 6v 13-24 (moyeu spécifique)",
+   "discipline": "route",
+   "generation": "Maillard",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 6,
+    "minCog": 13,
+    "maxCog": 24,
+    "freewheelThread": "autre"
+   },
+   "src": [
+    "bf-helicomatic",
+    "nelos-maillard"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Ne se monte que sur moyeu Helicomatic. Chaîne étroite nécessaire."
+  },
+  {
+   "id": "suntour-perfect-5",
+   "type": "cassette",
+   "brand": "SunTour",
+   "ref": "Perfect 5v",
+   "aliases": [
+    "suntour perfect",
+    "perfect 5v"
+   ],
+   "name": "Roue libre SunTour Perfect 5v (espacement 5,5 mm)",
+   "discipline": "autre",
+   "generation": "SunTour (roues libres)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 5,
+    "pitch": "suntour-5-5"
+   },
+   "src": "sheldon-suntour-fw",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Filetage et dentures selon l'exemplaire (non renseignés)."
+  },
+  {
+   "id": "suntour-ultra-6",
+   "type": "cassette",
+   "brand": "SunTour",
+   "ref": "Ultra-6",
+   "aliases": [
+    "ultra 6",
+    "suntour ultra"
+   ],
+   "name": "Roue libre SunTour Ultra-6 (6v étroite, moyeu 120 mm)",
+   "discipline": "route",
+   "generation": "SunTour (roues libres)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 6,
+    "pitch": "suntour-ultra"
+   },
+   "src": [
+    "sheldon-suntour-fw"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "6 pignons dans la largeur d'une 5v : chaîne étroite nécessaire. Filetage selon l'exemplaire."
+  },
+  {
+   "id": "suntour-new-winner",
+   "type": "cassette",
+   "brand": "SunTour",
+   "ref": "New Winner",
+   "aliases": [
+    "new winner",
+    "suntour winner"
+   ],
+   "name": "Roue libre SunTour New Winner (corps 5/6/7v)",
+   "discipline": "autre",
+   "generation": "SunTour (roues libres)",
+   "attrs": {
+    "kind": "roue_libre"
+   },
+   "src": "sheldon-suntour-fw",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Même corps pour 5, 6 ou 7 pignons selon les entretoises : compter les pignons de l'exemplaire."
+  },
+  {
+   "id": "shimano-mf-z012-14-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-Z012 14-28",
+   "aliases": [
+    "mf z012",
+    "roue libre shimano 6v"
+   ],
+   "name": "Roue libre Shimano MF-Z012 6v 14-28",
+   "discipline": "autre",
+   "generation": "Roues libres 6v",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 6,
+    "minCog": 14,
+    "maxCog": 28,
+    "freewheelThread": "iso_anglais"
+   },
+   "src": "ebay-mfz012",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "atom-77-14-28",
+   "type": "cassette",
+   "brand": "Atom",
+   "ref": "77 Compact 14-28",
+   "aliases": [
+    "atom 77",
+    "maillard atom"
+   ],
+   "name": "Roue libre Atom 77 Compact 6v 14-28 (filetage anglais)",
+   "discipline": "autre",
+   "generation": "Atom",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 6,
+    "minCog": 14,
+    "maxCog": 28,
+    "freewheelThread": "iso_anglais"
+   },
+   "src": "ebay-atom77",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Les Atom existent aussi en filetage français (pas de marque) ; poinçon rectangulaire = anglais."
+  },
+  {
+   "id": "shimano-mf-tz500-6-14-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-TZ500-6 14-28",
+   "aliases": [
+    "mf tz500 6",
+    "roue libre 6v"
+   ],
+   "name": "Roue libre Shimano Tourney MF-TZ500 6v 14-28",
+   "discipline": "autre",
+   "generation": "Tourney (6/7v)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 6,
+    "minCog": 14,
+    "maxCog": 28,
+    "pitch": "hg-6"
+   },
+   "src": "bq-tz500-6",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fabriquée aujourd'hui : dépannage pour moyeu à visser 6v. Filetage non précisé par la source."
+  },
+  {
+   "id": "campagnolo-fc-record-pista-144",
+   "type": "crankset",
+   "brand": "Campagnolo",
+   "ref": "Record Pista (BCD 144)",
+   "aliases": [
+    "record pista",
+    "campagnolo 144"
+   ],
+   "name": "Campagnolo Record Pista, BCD 144, axe carré ISO",
+   "discipline": "autre",
+   "generation": "Campagnolo Record (5/6v)",
+   "attrs": {
+    "spindle": "carre_iso",
+    "ringInterface": "bcd",
+    "bcd": 144,
+    "chainrings": 1
+   },
+   "src": [
+    "pb-record-pista",
+    "retro-campa-144"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Boîtier ISO 111 mm. Les pédaliers route Record anciens sont aussi en BCD 144 (plus tard 130)."
+  }
+ ]
+}

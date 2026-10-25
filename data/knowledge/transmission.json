@@ -318,6 +318,21 @@
    "kind": "communaute",
    "ref": "Retrobike – Sachs Plasma, Quarz, Neos, Centera : même rapport de tirage que Shimano, interchangeables (hors ESP 1:1)",
    "url": "https://www.retrobike.co.uk/threads/sachs-wavy-shifters.67882"
+  },
+  "bf-friction": {
+   "kind": "communaute",
+   "ref": "BikeForums – en mode friction, toute manette avec tout dérailleur et tout nombre de pignons ; manettes Dura-Ace 7400 indexées prévues pour dérailleurs 7400",
+   "url": "https://www.bikeforums.net/7875417-post2.html"
+  },
+  "shimano-sis-1984": {
+   "kind": "officiel",
+   "ref": "Shimano – SIS (indexation arrière) développé pour la série 7400, sorti en 1984 (6 vitesses)",
+   "url": "https://www.shimano.com/en/100th/history/products/16.php"
+  },
+  "sheldon-uniglide": {
+   "kind": "communaute",
+   "ref": "Sheldon Brown – corps Uniglide : 9 cannelures égales, pignons Hyperglide non montables sans meuler une cannelure ; pignon extérieur vissé",
+   "url": "https://www.sheldonbrown.com/shimano-cassette-bodies.html"
   }
  },
  "families": [
@@ -854,6 +869,48 @@
    ],
    "src": [
     "retro-sachs-wavy"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "friction",
+   "brand": "—",
+   "label": "Changement de vitesse à friction (manettes sans crans, dérailleurs d'avant l'indexation)",
+   "system": "mecanique",
+   "pitch": [],
+   "src": [
+    "bf-friction"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-6",
+   "brand": "Shimano",
+   "label": "Shimano SIS 6v (1984 et après), dérailleur ratio ≈1,7",
+   "system": "mecanique",
+   "speeds": 6,
+   "pitch": [
+    "hg-6"
+   ],
+   "src": [
+    "shimano-sis-1984",
+    "wikibooks-gear"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-da7400",
+   "brand": "Shimano",
+   "label": "Shimano Dura-Ace 7400 SIS (manettes et dérailleurs)",
+   "system": "mecanique",
+   "pitch": [
+    "hg-6",
+    "hg-7",
+    "hg-8"
+   ],
+   "src": [
+    "shimano-sis-1984",
+    "bf-friction"
    ],
    "status": "a_valider"
   }
@@ -1569,6 +1626,123 @@
    "confidence": "basse",
    "status": "a_valider",
    "limitation": "Cassette du nombre de vitesses de la manette."
+  },
+  {
+   "shifterFamily": "shimano-6",
+   "derailleurFamily": "shimano-7",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano SIS 6v et dérailleur Shimano (shimano-7) : même ratio de dérailleur (≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Roue libre / cassette 6v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-7",
+   "derailleurFamily": "shimano-6",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano (shimano-7) et dérailleur Shimano SIS 6v : même ratio de dérailleur (≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette ; capacité du dérailleur 6v à vérifier."
+  },
+  {
+   "shifterFamily": "shimano-6",
+   "derailleurFamily": "shimano-8",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano SIS 6v et dérailleur Shimano (shimano-8) : même ratio de dérailleur (≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Roue libre / cassette 6v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-8",
+   "derailleurFamily": "shimano-6",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano (shimano-8) et dérailleur Shimano SIS 6v : même ratio de dérailleur (≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette ; capacité du dérailleur 6v à vérifier."
+  },
+  {
+   "shifterFamily": "shimano-6",
+   "derailleurFamily": "shimano-9",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano SIS 6v et dérailleur Shimano (shimano-9) : même ratio de dérailleur (≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Roue libre / cassette 6v obligatoire (celle de la manette)."
+  },
+  {
+   "shifterFamily": "shimano-9",
+   "derailleurFamily": "shimano-6",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manette Shimano (shimano-9) et dérailleur Shimano SIS 6v : même ratio de dérailleur (≈1,7).",
+   "src": [
+    "wikibooks-gear"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "limitation": "Cassette du nombre de vitesses de la manette ; capacité du dérailleur 6v à vérifier."
+  },
+  {
+   "shifterFamily": "shimano-da7400",
+   "derailleurFamily": "shimano-6",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette Dura-Ace 7400 indexée avec un autre dérailleur Shimano.",
+   "src": [
+    "bf-friction"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Indexation prévue pour les dérailleurs 7400 : utiliser le mode friction de la manette si les vitesses ne tombent pas."
+  },
+  {
+   "shifterFamily": "shimano-da7400",
+   "derailleurFamily": "shimano-7",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette Dura-Ace 7400 indexée avec un autre dérailleur Shimano.",
+   "src": [
+    "bf-friction"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Indexation prévue pour les dérailleurs 7400 : utiliser le mode friction de la manette si les vitesses ne tombent pas."
+  },
+  {
+   "shifterFamily": "shimano-da7400",
+   "derailleurFamily": "shimano-8",
+   "side": "arriere",
+   "level": "depannage",
+   "message": "Manette Dura-Ace 7400 indexée avec un autre dérailleur Shimano.",
+   "src": [
+    "bf-friction"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "limitation": "Indexation prévue pour les dérailleurs 7400 : utiliser le mode friction de la manette si les vitesses ne tombent pas."
   }
  ],
  "freehubFits": [
@@ -1702,6 +1876,29 @@
     "retrobike-campa-8"
    ],
    "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "hg_7",
+   "body": "uniglide",
+   "level": "incompatible",
+   "message": "Cassette Hyperglide sur corps Uniglide : cannelures différentes.",
+   "limitation": "Changer le corps de roue libre pour un corps Hyperglide si le moyeu le permet (petit pignon de 12 dents minimum selon les forums).",
+   "src": [
+    "sheldon-uniglide"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "cassette": "hg_8_9_10",
+   "body": "uniglide",
+   "level": "incompatible",
+   "message": "Cassette Hyperglide sur corps Uniglide : cannelures différentes et corps trop court.",
+   "src": [
+    "sheldon-uniglide"
+   ],
+   "confidence": "moyenne",
    "status": "a_valider"
   }
  ],
