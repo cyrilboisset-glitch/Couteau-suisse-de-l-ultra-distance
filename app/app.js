@@ -308,9 +308,14 @@ function route() {
 
 async function init() {
   try {
-    const res = await fetch(CATALOGUE_URL);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const { parts, knowledge } = await res.json();
+    // Version fichier unique : catalogue intégré à la page. Sinon, fichier à côté.
+    let data = window.__CATALOGUE__;
+    if (!data) {
+      const res = await fetch(CATALOGUE_URL);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      data = await res.json();
+    }
+    const { parts, knowledge } = data;
     state.parts = parts;
     state.byId = new Map(parts.map((p) => [p.id, p]));
     state.kb = createKnowledge(knowledge);
