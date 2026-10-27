@@ -1,5 +1,5 @@
 {
-  "name": "trousse-du-baroudeur",
+  "name": "groupset-compatibility-toolbox",
   "version": "0.1.0",
   "description": "Compatibilité de pièces vélo en cas de casse, 100 % hors ligne (PWA).",
   "type": "module",

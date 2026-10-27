@@ -139,7 +139,7 @@ const langMenu = document.getElementById('lang-menu');
 function applyStaticText() {
   const code = getLang();
   document.documentElement.lang = code;
-  document.title = t('Trousse du baroudeur');
+  document.title = 'Groupset Compatibility Toolbox'; // nom de l'appli, identique dans toutes les langues
   for (const el of document.querySelectorAll('[data-t]')) el.textContent = t(el.dataset.t);
   for (const el of document.querySelectorAll('[data-t-label]')) el.setAttribute('aria-label', t(el.dataset.tLabel));
   const cur = LANGS.find((l) => l.code === code);
