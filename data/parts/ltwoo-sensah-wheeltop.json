@@ -1,0 +1,1569 @@
+{
+ "_meta": {
+  "description": "LTWOO, SENSAH et Wheeltop : gammes route, gravel, VTT, mécaniques et électroniques"
+ },
+ "sources": {
+  "crooze-r9-rd": {
+   "kind": "revendeur",
+   "ref": "Crooze – dérailleur LTWOO R9 2x11 (RD-R5011-M-A) : 11-32T, compatible Shimano",
+   "url": "https://crooze.com.au/products/ltwoo-r9-2x11-speed-road-rear-derailleur-shadow-rd-11-32t-shimano-compatible"
+  },
+  "panda-rx-rd": {
+   "kind": "revendeur",
+   "ref": "Panda Podium – dérailleur LTWOO RX RD-R5012-M-C 12v : plage 11-32T",
+   "url": "https://www.pandapodium.cc/product/l-twoo-rx-rd-r5012-m-c-12-speed-rear-derailleur/"
+  },
+  "tycentre-rx": {
+   "kind": "revendeur",
+   "ref": "Tycentre – kit LTWOO RX 2x12 (RD-R5012-M-A/C) : capacité totale 37T",
+   "url": "https://www.tycentre.com/products/ltwoo-cable-brakes-shifter-and-derailleur-kit-2x12-speed-rx"
+  },
+  "tycentre-rseries": {
+   "kind": "revendeur",
+   "ref": "Tycentre – kits LTWOO R2 / R3 / R5 : dérailleurs pour pignons 11/12-28/32T ; dérailleurs avant 46-56T, braze-on ou collier 31,8/34,9",
+   "url": "https://www.tycentre.com/product-page/ltwoo-road-bike-shiter-and-derailleur-kit-r2-r3-r5-r7-r9"
+  },
+  "djc-ltwoo-rd": {
+   "kind": "revendeur",
+   "ref": "DJC Bikes – dérailleurs LTWOO RX/R9/R7/R5/R3/R2 12/11/10/9/8/7v « compatibles Shimano »",
+   "url": "https://djcbikes.com/products/ltwoo-rx-r9-r7-r5-r3-r2-road-bicycle-rear-derailleurs-12-11-10-9-8-7-speed-bike-derailleurs-8v-9v-10v-11v-12v-compatible-shimano-1542"
+  },
+  "letour-gr9": {
+   "kind": "revendeur",
+   "ref": "Le Tour – dérailleur LTWOO GR9 1x11 Shadow, 11-50T, « Not Shimano »",
+   "url": "https://www.letour.com.au/ltwoo-gravel-rear-derailleur-gr9-series-1x11-speed"
+  },
+  "panda-grt": {
+   "kind": "revendeur",
+   "ref": "Panda Podium – groupe LTWOO GRT 1x12 gravel : dérailleur RD-GR7020, 11-50T",
+   "url": "https://www.pandapodium.cc/product/l-twoo-grt-1x12s-carbon-gravel-hydraulic-disc-brake-groupset/"
+  },
+  "amz-gr7": {
+   "kind": "revendeur",
+   "ref": "Amazon – LTWOO GR7 1x10 gravel : compatible cassette 50T max",
+   "url": "https://www.amazon.com/Gravel-Groupset-Shifter-Derailleur-Cassette/dp/B0HJZNXQ8P"
+  },
+  "timgo-a5": {
+   "kind": "revendeur",
+   "ref": "Timgo – LTWOO A5 Elite 9v : pignon max 50T, « compatible Shimano Altus / Acera / Alivio 9v »",
+   "url": "https://timgobike.com/products/ltwoo-a5-elite-mtb-moutain-bike-9-speed-rear-derailleur-max-cogs-50t-compatible-shimano-altus-acera-alivio-9-speed"
+  },
+  "walmart-a7": {
+   "kind": "revendeur",
+   "ref": "Walmart – LTWOO A7 1x10 : dérailleur GS / SGS, « compatible Shimano Deore »",
+   "url": "https://www.walmart.com/ip/LTWOO-A7-1x-10-Speed-Groupset-Rear-Derailleur-Right-Shifter-GS-SGS-medium-long-cage-leg-compatible-for-Shimano-deore/1311547932"
+  },
+  "rinos-a9": {
+   "kind": "revendeur",
+   "ref": "Rinos Bike – dérailleur LTWOO 11v, pignon max 50T, chape alu",
+   "url": "https://rinosbike.eu/products/ltwoo-rear-derailleur-for-11-speed-max-sprocket-50t-alloy-cage"
+  },
+  "alibaba-ax12": {
+   "kind": "revendeur",
+   "ref": "Alibaba – LTWOO AX12 12v dérailleur + manette droite, cassette 50T",
+   "url": "https://www.alibaba.com/product-detail/LTWOO-AX12-12-Speed-Rear-Derailleur_1600266367603.html"
+  },
+  "wp-erx": {
+   "kind": "revendeur",
+   "ref": "Wheel-Parts – LTWOO eRX : sans fil, 2x10 / 2x11 / 2x12, cassettes 11-32T, dérailleur avant 54T max, capacité 16T, freins hydrauliques",
+   "url": "https://www.wheel-parts.shop/en/l-twoo-erx-electronic-road-bike-groupset.html"
+  },
+  "yoeleo-egr": {
+   "kind": "revendeur",
+   "ref": "Yoeleo – LTWOO eGR 1x gravel électronique, avec batterie",
+   "url": "https://www.yoeleocanada.com/products/ltwoo-egr-1x-gravel-electronic-groupset"
+  },
+  "anjoy-empire-pro": {
+   "kind": "revendeur",
+   "ref": "Anjoy – dérailleur SENSAH Empire Pro 12v : chape moyenne pour 11-32T / 11-34T, compatible manettes SRAM",
+   "url": "https://www.anjoycycle.com/products/sensah-empire-pro-12s-rear-derailleur"
+  },
+  "amz-team-pro": {
+   "kind": "revendeur",
+   "ref": "Amazon – SENSAH Team Pro 2x11 « compatible Shimano 11v 5800 / R7000 / 6800 / R8000 »",
+   "url": "https://www.amazon.com/Shifters-Bicycle-Derailleur-Groupset-Compatible/dp/B09FF5L3W9"
+  },
+  "cm-xrx": {
+   "kind": "revendeur",
+   "ref": "Cyclemotion – dérailleur SENSAH XRX 12v, chape longue 52T",
+   "url": "https://www.cyclemotion.com.au/mtb-rear-derailleur-xrx-12sp.html"
+  },
+  "aoeagle-tx": {
+   "kind": "revendeur",
+   "ref": "AOEagle – Wheeltop EDS TX sans fil 2x7-14 vitesses, frein sur jante ou disque",
+   "url": "https://aoeagle.com/products/wheeltop-eds-tx/"
+  },
+  "wt-ca-tx": {
+   "kind": "revendeur",
+   "ref": "Wheeltop Canada – EDS TX : pignon max 30-36T, min 10-11T ; dérailleur avant 53T, capacité 16T ; liquide de frein huile minérale",
+   "url": "https://wheeltop.ca/products/road-eds-tx-ra7000"
+  },
+  "wt-gex": {
+   "kind": "officiel",
+   "ref": "Wheeltop – EDS GeX gravel : 1x seulement (2x en développement), 3-14v, chape 75 mm (11-46T) ou 93 mm (11-51T), étriers flat mount RA7800, huile minérale",
+   "url": "https://wheeltop.us/products/wheeltop-eds-gex"
+  },
+  "budlong-ox": {
+   "kind": "revendeur",
+   "ref": "Budlong – Wheeltop EDS OX2.0 VTT : 1x14 programmable 3-14v ; chape 93 mm 52T (capacité 42T), chape 75 mm 46T (capacité 36T) ; patte classique, version UDH disponible",
+   "url": "https://budlong.bike/products/wheeltop-eds-ox2-0-wireless-electronic-shifter-derailleur-for-mtb-93mm"
+  },
+  "wt-ox": {
+   "kind": "officiel",
+   "ref": "Wheeltop – EDS OX2.0 (VTT) : chape 75 mm compatible cassette 11-45T",
+   "url": "https://wheeltop.us/products/wheeltop-eds-ox"
+  },
+  "br-ltwoo-guide": {
+   "kind": "presse",
+   "ref": "BikeRadar – guide L-Twoo : route R2 (7v) → RX (12v), gravel GR5 (9v, sans clutch), GR7 (10v), GR9 (11v), GRT (12v), VTT A3 → A9, AX (12v), TX ; électronique eRX / ER7 / ER9, eGR",
+   "url": "https://www.bikeradar.com/advice/buyers-guides/l-twoo-groupset-buyers-guide"
+  },
+  "djc-ltwoo-road": {
+   "kind": "revendeur",
+   "ref": "DJC Bikes – leviers LTWOO RX 2x12 / R9 2x11 / R7 2x10 / R5 2x9 / R3 2x8 / R2 2x7 « compatibles Shimano » ; R7 compatible Shimano 4700 seulement",
+   "url": "https://djcbikes.com/products/ltwoo-road-bike-shifter-lever-rx-2x12-r9-2x11-r7-2x10-r5-2x9-r3-2x8-r2-2x7-speed-bike-brake-compatible-for-shimano-derailleur-1541"
+  },
+  "ltwoo-catalog-2024": {
+   "kind": "officiel",
+   "ref": "Catalogue L-TWOO 2024 (V1.3) : gamme gravel « L-TWOO only » ; dérailleurs 12v 11-52T (via résultats de recherche, PDF non consultable)",
+   "url": "http://oss.ltwoo.com/pdf/V1.3_2024-L-TWOO%20-PRODUCT_CATALOG.pdf"
+  },
+  "ltwoo-egr-page": {
+   "kind": "officiel",
+   "ref": "L-TWOO – groupe électronique gravel eGR : dérailleur jusqu'à 11-46T",
+   "url": "https://www.ltwoo.com/en/gravel/electricGravel"
+  },
+  "rinos-ltwoo": {
+   "kind": "revendeur",
+   "ref": "Rinos Bike – L-Twoo propose deux ratios de tirage : compatible Shimano 2:1 et compatible SRAM 1:1, selon le modèle",
+   "url": "https://rinosbike.uk/blogs/news/introduction-to-the-l-twoo-brand-of-bicycle-gear-shifters-from-china"
+  },
+  "vo-empire-rd": {
+   "kind": "revendeur",
+   "ref": "Velo Orange – dérailleur SENSAH Empire 2x11 : 34T max, sans clutch, compatible manettes Empire 11v et SRAM DoubleTap « Exact Actuation » 11v",
+   "url": "https://velo-orange.com/products/sensah-empire-2x11-rear-derailleur"
+  },
+  "cyclabo-sensah": {
+   "kind": "communaute",
+   "ref": "Cyclabo – guide SENSAH : Empire Pro 2x12 compatible SRAM 12v pas Shimano ; Team Pro « Shimano 11v » non mentionné sur le site officiel ; Reflex 1x8 / 2x8 compatible Shimano Claris ; XRX non compatible Shimano",
+   "url": "https://www.cyclabo.com/topics/d61xc4qiv9/"
+  },
+  "wheeltop-universal": {
+   "kind": "officiel",
+   "ref": "Wheeltop – groupes électroniques sans fil EDS TX / OX / GeX programmables de 3 à 14 vitesses",
+   "url": "https://wheeltop.com/blogs/news/universal-electronic-groupsets-in-2026-which-systems-truly-fit-any-bike-frame"
+  }
+ },
+ "parts": [
+  {
+   "id": "ltwoo-st-r2-2x7",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers R2 2x7",
+   "aliases": [
+    "ltwoo r2",
+    "l-twoo r2"
+   ],
+   "name": "Leviers route LTWOO R2 2x7",
+   "discipline": "route",
+   "generation": "R2 (7v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "djc-ltwoo-road",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Leviers pour freins à câble seulement (pas hydraulique). « Compatibles Shimano » selon les revendeurs. Commande de type Campagnolo (bouton au pouce) selon BikeRadar."
+  },
+  {
+   "id": "ltwoo-rd-r2",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD R2 7v",
+   "aliases": [
+    "ltwoo r2",
+    "rd r2"
+   ],
+   "name": "LTWOO R2 dérailleur 7v",
+   "discipline": "route",
+   "generation": "R2 (7v)",
+   "attrs": {
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "maxCog": 32,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tycentre-rseries",
+    "djc-ltwoo-rd"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignons 28 à 32T selon le revendeur (34T possible selon un vendeur, non confirmé). Capacité totale non trouvée."
+  },
+  {
+   "id": "ltwoo-st-r3-2x8",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers R3 2x8",
+   "aliases": [
+    "ltwoo r3",
+    "l-twoo r3"
+   ],
+   "name": "Leviers route LTWOO R3 2x8",
+   "discipline": "route",
+   "generation": "R3 (8v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "djc-ltwoo-road",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Leviers pour freins à câble seulement (pas hydraulique). « Compatibles Shimano » selon les revendeurs. Commande de type Campagnolo (bouton au pouce) selon BikeRadar."
+  },
+  {
+   "id": "ltwoo-rd-r3",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD R3 8v",
+   "aliases": [
+    "ltwoo r3",
+    "rd r3"
+   ],
+   "name": "LTWOO R3 dérailleur 8v",
+   "discipline": "route",
+   "generation": "R3 (8v)",
+   "attrs": {
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "maxCog": 32,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tycentre-rseries",
+    "djc-ltwoo-rd"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignons 28 à 32T selon le revendeur (34T possible selon un vendeur, non confirmé). Capacité totale non trouvée."
+  },
+  {
+   "id": "ltwoo-st-r5-2x9",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers R5 2x9",
+   "aliases": [
+    "ltwoo r5",
+    "l-twoo r5"
+   ],
+   "name": "Leviers route LTWOO R5 2x9",
+   "discipline": "route",
+   "generation": "R5 (9v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "djc-ltwoo-road",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Leviers pour freins à câble seulement (pas hydraulique). « Compatibles Shimano » selon les revendeurs."
+  },
+  {
+   "id": "ltwoo-rd-r5",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD R5 9v",
+   "aliases": [
+    "ltwoo r5",
+    "rd r5"
+   ],
+   "name": "LTWOO R5 dérailleur 9v",
+   "discipline": "route",
+   "generation": "R5 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "maxCog": 32,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tycentre-rseries",
+    "djc-ltwoo-rd"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignons 28 à 32T selon le revendeur (34T possible selon un vendeur, non confirmé). Capacité totale non trouvée. Une fiche donne 37T de capacité."
+  },
+  {
+   "id": "ltwoo-st-r7-2x10",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers R7 2x10",
+   "aliases": [
+    "ltwoo r7",
+    "l-twoo r7"
+   ],
+   "name": "Leviers route LTWOO R7 2x10",
+   "discipline": "route",
+   "generation": "R7 (10v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "djc-ltwoo-road",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Leviers pour freins à câble seulement (pas hydraulique). Compatible Shimano Tiagra 4700 seulement selon le revendeur."
+  },
+  {
+   "id": "ltwoo-rd-r7",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD R7 10v",
+   "aliases": [
+    "ltwoo r7",
+    "rd r7"
+   ],
+   "name": "LTWOO R7 dérailleur 10v",
+   "discipline": "route",
+   "generation": "R7 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "maxCog": 32,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tycentre-rseries",
+    "djc-ltwoo-rd"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignons 28 à 32T selon le revendeur (34T possible selon un vendeur, non confirmé). Capacité totale non trouvée."
+  },
+  {
+   "id": "ltwoo-rd-r9",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD-R5011-M-A (R9)",
+   "aliases": [
+    "ltwoo r9",
+    "rd r5011",
+    "rd-r5011"
+   ],
+   "name": "LTWOO R9 dérailleur 11v",
+   "discipline": "route",
+   "generation": "R9 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 32,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "crooze-r9-rd"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "32T officiel ; 34T utilisé par des utilisateurs (forum), non confirmé."
+  },
+  {
+   "id": "ltwoo-st-rx-2x12",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers RX 2x12",
+   "aliases": [
+    "ltwoo rx",
+    "l-twoo rx"
+   ],
+   "name": "Leviers route LTWOO RX 2x12 (frein à câble)",
+   "discipline": "route",
+   "generation": "RX (12v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "ltwoo-rx-12",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "djc-ltwoo-road",
+    "tycentre-rx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage non documenté : associer au dérailleur RX. Existe aussi en version hydraulique (non saisie)."
+  },
+  {
+   "id": "ltwoo-rd-rx",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD-R5012 (RX)",
+   "aliases": [
+    "ltwoo rx",
+    "rd r5012",
+    "rd-r5012"
+   ],
+   "name": "LTWOO RX dérailleur 12v",
+   "discipline": "route",
+   "generation": "RX (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "ltwoo-rx-12",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "panda-rx-rd",
+    "tycentre-rx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max 32T selon les revendeurs."
+  },
+  {
+   "id": "ltwoo-st-gr5-1x9",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers GR5 1x9",
+   "aliases": [
+    "ltwoo gr5"
+   ],
+   "name": "Leviers gravel LTWOO GR5 1x9",
+   "discipline": "gravel",
+   "generation": "GR5 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "ltwoo-gr-9",
+    "form": "levier_route"
+   },
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Gamme gravel « L-TWOO only » : associer à un dérailleur de la même gamme. Freins (câble ou hydraulique) selon version : non renseignés."
+  },
+  {
+   "id": "ltwoo-rd-gr5",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD GR5 1x9",
+   "aliases": [
+    "ltwoo gr5"
+   ],
+   "name": "LTWOO GR5 dérailleur gravel 9v",
+   "discipline": "gravel",
+   "generation": "GR5 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "ltwoo-gr-9",
+    "maxCog": 50,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "clutch": false
+   },
+   "src": [
+    "amz-gr7",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Cassette 11-50T max (même plage pour toute la gamme gravel selon BikeRadar). Sans clutch."
+  },
+  {
+   "id": "ltwoo-st-gr7-1x10",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers GR7 1x10",
+   "aliases": [
+    "ltwoo gr7"
+   ],
+   "name": "Leviers gravel LTWOO GR7 1x10",
+   "discipline": "gravel",
+   "generation": "GR7 (10v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "ltwoo-gr-10",
+    "form": "levier_route"
+   },
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Gamme gravel « L-TWOO only » : associer à un dérailleur de la même gamme. Freins (câble ou hydraulique) selon version : non renseignés."
+  },
+  {
+   "id": "ltwoo-rd-gr7",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD GR7 1x10",
+   "aliases": [
+    "ltwoo gr7"
+   ],
+   "name": "LTWOO GR7 dérailleur gravel 10v",
+   "discipline": "gravel",
+   "generation": "GR7 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "ltwoo-gr-10",
+    "maxCog": 50,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "amz-gr7",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Cassette 11-50T max (même plage pour toute la gamme gravel selon BikeRadar). Existe avec et sans clutch : vérifier la version."
+  },
+  {
+   "id": "ltwoo-st-gr9-1x11",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers GR9 1x11",
+   "aliases": [
+    "ltwoo gr9"
+   ],
+   "name": "Leviers gravel LTWOO GR9 1x11",
+   "discipline": "gravel",
+   "generation": "GR9 (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "ltwoo-gr-11",
+    "form": "levier_route"
+   },
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Gamme gravel « L-TWOO only » : associer à un dérailleur de la même gamme. Freins (câble ou hydraulique) selon version : non renseignés."
+  },
+  {
+   "id": "ltwoo-rd-gr9",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD GR9 1x11",
+   "aliases": [
+    "ltwoo gr9"
+   ],
+   "name": "LTWOO GR9 dérailleur gravel 11v",
+   "discipline": "gravel",
+   "generation": "GR9 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "ltwoo-gr-11",
+    "maxCog": 50,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "letour-gr9",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Cassette 11-50T max (même plage pour toute la gamme gravel selon BikeRadar). Existe avec et sans clutch : vérifier la version."
+  },
+  {
+   "id": "ltwoo-st-grt-1x12",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers GRT 1x12",
+   "aliases": [
+    "ltwoo grt"
+   ],
+   "name": "Leviers gravel LTWOO GRT 1x12",
+   "discipline": "gravel",
+   "generation": "GRT (12v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "ltwoo-grt-12",
+    "form": "levier_route"
+   },
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Gamme gravel « L-TWOO only » : associer à un dérailleur de la même gamme. Freins (câble ou hydraulique) selon version : non renseignés."
+  },
+  {
+   "id": "ltwoo-rd-grt",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD GRT 1x12 (RD-GR7020)",
+   "aliases": [
+    "ltwoo grt"
+   ],
+   "name": "LTWOO GRT dérailleur gravel 12v",
+   "discipline": "gravel",
+   "generation": "GRT (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "ltwoo-grt-12",
+    "maxCog": 50,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "clutch": true
+   },
+   "src": [
+    "panda-grt",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Cassette 11-50T max (même plage pour toute la gamme gravel selon BikeRadar)."
+  },
+  {
+   "id": "ltwoo-st-a5",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Manette A5 9v",
+   "aliases": [
+    "ltwoo a5"
+   ],
+   "name": "LTWOO A5 manette droite 9v",
+   "discipline": "vtt",
+   "generation": "A5 (9v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "ltwoo-a5",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "timgo-a5",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Associer au dérailleur de la même gamme."
+  },
+  {
+   "id": "ltwoo-rd-a5",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD A5 9v",
+   "aliases": [
+    "ltwoo a5"
+   ],
+   "name": "LTWOO A5 dérailleur VTT 9v",
+   "discipline": "vtt",
+   "generation": "A5 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "ltwoo-a5",
+    "maxCog": 50,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "timgo-a5",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Vendue « compatible Shimano Altus / Acera / Alivio 9v », mais L-Twoo fait deux tirages (Shimano 2:1 et SRAM 1:1) selon la version : vérifier."
+  },
+  {
+   "id": "ltwoo-st-a7",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Manette A7 10v",
+   "aliases": [
+    "ltwoo a7"
+   ],
+   "name": "LTWOO A7 manette droite 10v",
+   "discipline": "vtt",
+   "generation": "A7 (10v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "ltwoo-a7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "walmart-a7",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Associer au dérailleur de la même gamme."
+  },
+  {
+   "id": "ltwoo-rd-a7",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD A7 10v",
+   "aliases": [
+    "ltwoo a7"
+   ],
+   "name": "LTWOO A7 dérailleur VTT 10v",
+   "discipline": "vtt",
+   "generation": "A7 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "ltwoo-a7",
+    "maxCog": 42,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "cageLength": "GS"
+   },
+   "src": [
+    "walmart-a7",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Chape GS 42T ; existe en SGS. Annoncé « compatible Shimano Deore » (tirage 2:1 selon un forum) : non confirmé."
+  },
+  {
+   "id": "ltwoo-st-a9",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Manette A9 11v",
+   "aliases": [
+    "ltwoo a9"
+   ],
+   "name": "LTWOO A9 manette droite 11v",
+   "discipline": "vtt",
+   "generation": "A9 (11v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "ltwoo-a9",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "rinos-a9",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Associer au dérailleur de la même gamme."
+  },
+  {
+   "id": "ltwoo-rd-a9",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD A9 11v",
+   "aliases": [
+    "ltwoo a9"
+   ],
+   "name": "LTWOO A9 dérailleur VTT 11v",
+   "discipline": "vtt",
+   "generation": "A9 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "ltwoo-a9",
+    "maxCog": 50,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "rinos-a9",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "50T ou 52T selon les revendeurs."
+  },
+  {
+   "id": "ltwoo-st-ax12",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Manette AX12",
+   "aliases": [
+    "ltwoo ax12",
+    "ax12"
+   ],
+   "name": "LTWOO AX12 manette droite 12v",
+   "discipline": "vtt",
+   "generation": "A12 (12v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "ltwoo-a12",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "alibaba-ax12",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage non documenté : associer au dérailleur AX12 / A12."
+  },
+  {
+   "id": "ltwoo-st-erx",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers eRX 2x",
+   "aliases": [
+    "ltwoo erx",
+    "erx",
+    "er7"
+   ],
+   "name": "Leviers électroniques LTWOO eRX (frein hydraulique)",
+   "discipline": "route",
+   "generation": "eRX (électronique)",
+   "attrs": {
+    "side": "les_deux",
+    "system": "electronique",
+    "protocol": "ltwoo",
+    "family": "ltwoo-e",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "hydraulique",
+    "speeds": 12
+   },
+   "src": [
+    "wp-erx",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Sans fil vers les dérailleurs. Liquide de frein non renseigné. ER7 : mêmes pièces avec leviers alu."
+  },
+  {
+   "id": "ltwoo-rd-erx",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD eRX",
+   "aliases": [
+    "ltwoo erx",
+    "erx",
+    "er7",
+    "er9"
+   ],
+   "name": "LTWOO eRX dérailleur électronique 10-12v",
+   "discipline": "route",
+   "generation": "eRX (électronique)",
+   "attrs": {
+    "speeds": 12,
+    "speedsMin": 10,
+    "speedsMax": 12,
+    "system": "electronique",
+    "protocol": "ltwoo",
+    "family": "ltwoo-e",
+    "maxCog": 32,
+    "minCog": 11,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "wp-erx",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Cassettes 11-32T. BikeRadar cite deux versions de dérailleur (11-32T et 11-36T) : seule la 32T est saisie."
+  },
+  {
+   "id": "ltwoo-fd-erx",
+   "type": "front_derailleur",
+   "brand": "LTWOO",
+   "ref": "FD eRX",
+   "aliases": [
+    "ltwoo erx",
+    "erx"
+   ],
+   "name": "LTWOO eRX dérailleur avant électronique",
+   "discipline": "route",
+   "generation": "eRX (électronique)",
+   "attrs": {
+    "speeds": 12,
+    "chainrings": 2,
+    "system": "electronique",
+    "protocol": "ltwoo",
+    "family": "ltwoo-e",
+    "capacity": 16,
+    "maxRing": 54
+   },
+   "src": [
+    "wp-erx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Fixation non confirmée (champ vide). 56T max selon une autre fiche."
+  },
+  {
+   "id": "ltwoo-st-egr",
+   "type": "shifter",
+   "brand": "LTWOO",
+   "ref": "Leviers eGR 1x",
+   "aliases": [
+    "ltwoo egr",
+    "egr"
+   ],
+   "name": "Leviers électroniques LTWOO eGR gravel",
+   "discipline": "gravel",
+   "generation": "eGR (électronique)",
+   "attrs": {
+    "side": "arriere",
+    "system": "electronique",
+    "protocol": "ltwoo",
+    "family": "ltwoo-e",
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "speeds": 12
+   },
+   "src": [
+    "ltwoo-egr-page",
+    "yoeleo-egr"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Liquide de frein non renseigné."
+  },
+  {
+   "id": "ltwoo-rd-egr",
+   "type": "rear_derailleur",
+   "brand": "LTWOO",
+   "ref": "RD eGR",
+   "aliases": [
+    "ltwoo egr",
+    "egr"
+   ],
+   "name": "LTWOO eGR dérailleur électronique gravel 1x",
+   "discipline": "gravel",
+   "generation": "eGR (électronique)",
+   "attrs": {
+    "speeds": 12,
+    "speedsMin": 10,
+    "speedsMax": 12,
+    "system": "electronique",
+    "protocol": "ltwoo",
+    "family": "ltwoo-e",
+    "maxCog": 46,
+    "minCog": 11,
+    "clutch": true,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "ltwoo-egr-page",
+    "br-ltwoo-guide"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Clutch débrayable. 10 à 12v (13v selon un guide)."
+  },
+  {
+   "id": "sensah-rd-empire",
+   "type": "rear_derailleur",
+   "brand": "SENSAH",
+   "ref": "RD Empire 2x11",
+   "aliases": [
+    "sensah empire",
+    "empire rd"
+   ],
+   "name": "SENSAH Empire dérailleur 11v",
+   "discipline": "route",
+   "generation": "Empire (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "sensah-empire-11",
+    "maxCog": 34,
+    "clutch": false,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "vo-empire-rd"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Compatible manettes Empire et SRAM « Exact Actuation » 11v."
+  },
+  {
+   "id": "sensah-st-empire-pro-2x12",
+   "type": "shifter",
+   "brand": "SENSAH",
+   "ref": "Leviers Empire Pro 2x12",
+   "aliases": [
+    "sensah empire pro",
+    "empire pro"
+   ],
+   "name": "Leviers route SENSAH Empire Pro 2x12",
+   "discipline": "route",
+   "generation": "Empire Pro (12v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sensah-empire-pro-12",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "cyclabo-sensah"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage SRAM 12v selon un guide, pas Shimano : associer au dérailleur Empire Pro."
+  },
+  {
+   "id": "sensah-rd-empire-pro",
+   "type": "rear_derailleur",
+   "brand": "SENSAH",
+   "ref": "RD Empire Pro 12v",
+   "aliases": [
+    "sensah empire pro",
+    "empire pro"
+   ],
+   "name": "SENSAH Empire Pro dérailleur 12v chape moyenne",
+   "discipline": "route",
+   "generation": "Empire Pro (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sensah-empire-pro-12",
+    "maxCog": 34,
+    "cageLength": "GS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "anjoy-empire-pro"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Chape moyenne pour 11-32T / 11-34T."
+  },
+  {
+   "id": "sensah-st-team-pro-2x11",
+   "type": "shifter",
+   "brand": "SENSAH",
+   "ref": "Leviers Team Pro 2x11",
+   "aliases": [
+    "sensah team pro",
+    "team pro"
+   ],
+   "name": "Leviers route SENSAH Team Pro 2x11 (tirage Shimano)",
+   "discipline": "route",
+   "generation": "Team Pro (11v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "amz-team-pro",
+    "cyclabo-sensah"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Vendus compatibles Shimano 11v (5800, R7000, 6800, R8000) ; non mentionné sur le site SENSAH."
+  },
+  {
+   "id": "sensah-st-reflex-2x8",
+   "type": "shifter",
+   "brand": "SENSAH",
+   "ref": "Leviers Reflex 2x8",
+   "aliases": [
+    "sensah reflex",
+    "reflex"
+   ],
+   "name": "Leviers route SENSAH Reflex 2x8 (tirage Shimano)",
+   "discipline": "route",
+   "generation": "Reflex (8v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "cyclabo-sensah"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Compatible Shimano Claris selon un guide. Existe en 1x8."
+  },
+  {
+   "id": "sensah-st-xrx",
+   "type": "shifter",
+   "brand": "SENSAH",
+   "ref": "Manette XRX 12v",
+   "aliases": [
+    "sensah xrx",
+    "xrx"
+   ],
+   "name": "SENSAH XRX manette droite 12v",
+   "discipline": "vtt",
+   "generation": "XRX (12v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sensah-xrx-12",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "cyclabo-sensah"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Non compatible Shimano selon un guide (vendu « pour Shimano » par des revendeurs) : associer au dérailleur XRX."
+  },
+  {
+   "id": "sensah-rd-xrx",
+   "type": "rear_derailleur",
+   "brand": "SENSAH",
+   "ref": "RD XRX 12v",
+   "aliases": [
+    "sensah xrx",
+    "xrx"
+   ],
+   "name": "SENSAH XRX dérailleur 12v chape longue",
+   "discipline": "vtt",
+   "generation": "XRX (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "sensah-xrx-12",
+    "maxCog": 52,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "cm-xrx",
+    "cyclabo-sensah"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Simple ou double plateau selon un guide. Capacité 50 ou 52T selon les fiches."
+  },
+  {
+   "id": "wheeltop-st-eds-tx-hydro",
+   "type": "shifter",
+   "brand": "Wheeltop",
+   "ref": "EDS TX leviers (hydraulique)",
+   "aliases": [
+    "wheeltop tx",
+    "eds tx",
+    "wheeltop eds"
+   ],
+   "name": "Wheeltop EDS TX leviers sans fil, frein hydraulique",
+   "discipline": "route",
+   "generation": "EDS TX",
+   "attrs": {
+    "side": "les_deux",
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "hydraulicSystem": "wheeltop",
+    "speeds": 12
+   },
+   "src": [
+    "wt-ca-tx",
+    "aoeagle-tx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Huile minérale (type exact non précisé)."
+  },
+  {
+   "id": "wheeltop-st-eds-tx-cable",
+   "type": "shifter",
+   "brand": "Wheeltop",
+   "ref": "EDS TX leviers (câble)",
+   "aliases": [
+    "wheeltop tx",
+    "eds tx"
+   ],
+   "name": "Wheeltop EDS TX leviers sans fil, frein à câble",
+   "discipline": "route",
+   "generation": "EDS TX",
+   "attrs": {
+    "side": "les_deux",
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "speeds": 12
+   },
+   "src": [
+    "aoeagle-tx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Tirage de frein « court » déduit de l'usage route (étriers sur jante) : à confirmer."
+  },
+  {
+   "id": "wheeltop-rd-eds-tx",
+   "type": "rear_derailleur",
+   "brand": "Wheeltop",
+   "ref": "EDS TX dérailleur",
+   "aliases": [
+    "wheeltop tx",
+    "eds tx"
+   ],
+   "name": "Wheeltop EDS TX dérailleur sans fil 7-14v",
+   "discipline": "route",
+   "generation": "EDS TX",
+   "attrs": {
+    "speeds": 12,
+    "speedsMin": 7,
+    "speedsMax": 14,
+    "maxCog": 36,
+    "minCog": 10,
+    "mount": "standard",
+    "maxFrontChainrings": 2,
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds"
+   },
+   "src": [
+    "wt-ca-tx",
+    "aoeagle-tx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Pignon max 30-36T selon la version. Un utilisateur signale qu'une 11-40 ne passe pas, une 11-36 oui."
+  },
+  {
+   "id": "wheeltop-fd-eds-tx",
+   "type": "front_derailleur",
+   "brand": "Wheeltop",
+   "ref": "EDS TX dérailleur avant",
+   "aliases": [
+    "wheeltop tx",
+    "eds tx"
+   ],
+   "name": "Wheeltop EDS TX dérailleur avant sans fil",
+   "discipline": "route",
+   "generation": "EDS TX",
+   "attrs": {
+    "speeds": 12,
+    "chainrings": 2,
+    "capacity": 16,
+    "maxRing": 53,
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds"
+   },
+   "src": [
+    "wt-ca-tx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Grand plateau 46-53 ou 50-53T selon les fiches. Fixation non confirmée (champ vide)."
+  },
+  {
+   "id": "wheeltop-st-eds-gex",
+   "type": "shifter",
+   "brand": "Wheeltop",
+   "ref": "EDS GeX leviers",
+   "aliases": [
+    "wheeltop gex",
+    "eds gex"
+   ],
+   "name": "Wheeltop EDS GeX leviers sans fil gravel, frein hydraulique",
+   "discipline": "gravel",
+   "generation": "EDS GeX",
+   "attrs": {
+    "side": "arriere",
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds",
+    "form": "levier_route",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "hydraulicSystem": "wheeltop",
+    "speeds": 12
+   },
+   "src": [
+    "wt-gex"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "1x seulement ; compatible avec le dérailleur avant TX selon un revendeur."
+  },
+  {
+   "id": "wheeltop-rd-eds-gex-75",
+   "type": "rear_derailleur",
+   "brand": "Wheeltop",
+   "ref": "EDS GeX dérailleur 75 mm",
+   "aliases": [
+    "wheeltop gex",
+    "eds gex"
+   ],
+   "name": "Wheeltop EDS GeX dérailleur sans fil chape 75 mm",
+   "discipline": "gravel",
+   "generation": "EDS GeX",
+   "attrs": {
+    "speeds": 12,
+    "speedsMin": 3,
+    "speedsMax": 14,
+    "maxCog": 46,
+    "minCog": 11,
+    "cageLength": "75 mm",
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds"
+   },
+   "src": [
+    "wt-gex"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "wheeltop-rd-eds-gex-93",
+   "type": "rear_derailleur",
+   "brand": "Wheeltop",
+   "ref": "EDS GeX dérailleur 93 mm",
+   "aliases": [
+    "wheeltop gex",
+    "eds gex"
+   ],
+   "name": "Wheeltop EDS GeX dérailleur sans fil chape 93 mm",
+   "discipline": "gravel",
+   "generation": "EDS GeX",
+   "attrs": {
+    "speeds": 12,
+    "speedsMin": 3,
+    "speedsMax": 14,
+    "maxCog": 51,
+    "minCog": 11,
+    "cageLength": "93 mm",
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds"
+   },
+   "src": [
+    "wt-gex"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "wheeltop-br-ra7800",
+   "type": "brake_caliper",
+   "brand": "Wheeltop",
+   "ref": "RA7800 flat mount",
+   "aliases": [
+    "wheeltop ra7800",
+    "ra7800"
+   ],
+   "name": "Wheeltop RA7800 étrier hydraulique flat mount",
+   "discipline": "gravel",
+   "generation": "EDS GeX",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "hydraulicSystem": "wheeltop",
+    "mount": "flat_mount"
+   },
+   "src": [
+    "wt-gex"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes « compatibles Shimano » : forme exacte non précisée (champ vide)."
+  },
+  {
+   "id": "wheeltop-st-eds-ox",
+   "type": "shifter",
+   "brand": "Wheeltop",
+   "ref": "EDS OX2.0 commande",
+   "aliases": [
+    "wheeltop ox",
+    "eds ox"
+   ],
+   "name": "Wheeltop EDS OX2.0 commande sans fil VTT",
+   "discipline": "vtt",
+   "generation": "EDS OX2.0",
+   "attrs": {
+    "side": "arriere",
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds",
+    "form": "gachette_vtt",
+    "speeds": 12
+   },
+   "src": [
+    "budlong-ox",
+    "wt-ox"
+   ],
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "wheeltop-rd-eds-ox-75",
+   "type": "rear_derailleur",
+   "brand": "Wheeltop",
+   "ref": "EDS OX2.0 dérailleur 75 mm",
+   "aliases": [
+    "wheeltop ox",
+    "eds ox"
+   ],
+   "name": "Wheeltop EDS OX2.0 dérailleur sans fil chape 75 mm",
+   "discipline": "vtt",
+   "generation": "EDS OX2.0",
+   "attrs": {
+    "speeds": 12,
+    "speedsMin": 3,
+    "speedsMax": 14,
+    "maxCog": 46,
+    "totalCapacity": 36,
+    "minCog": 10,
+    "cageLength": "75 mm",
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds"
+   },
+   "src": [
+    "budlong-ox",
+    "wt-ox"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "11-45T selon Wheeltop, 46T selon un revendeur. Version UDH disponible."
+  },
+  {
+   "id": "wheeltop-rd-eds-ox-93",
+   "type": "rear_derailleur",
+   "brand": "Wheeltop",
+   "ref": "EDS OX2.0 dérailleur 93 mm",
+   "aliases": [
+    "wheeltop ox",
+    "eds ox"
+   ],
+   "name": "Wheeltop EDS OX2.0 dérailleur sans fil chape 93 mm",
+   "discipline": "vtt",
+   "generation": "EDS OX2.0",
+   "attrs": {
+    "speeds": 12,
+    "speedsMin": 3,
+    "speedsMax": 14,
+    "maxCog": 52,
+    "totalCapacity": 42,
+    "minCog": 10,
+    "cageLength": "93 mm",
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "system": "electronique",
+    "protocol": "wheeltop",
+    "family": "wheeltop-eds"
+   },
+   "src": [
+    "budlong-ox"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Version UDH disponible."
+  }
+ ]
+}

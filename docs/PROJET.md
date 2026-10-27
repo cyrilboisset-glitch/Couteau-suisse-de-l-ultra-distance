@@ -37,3 +37,11 @@
 - Pas encore de manettes VTT 11v Shimano, de dérailleur avant SRAM / AXS, de corps de roue libre par moyeu dans la base : la cascade le signale (« introuvable »).
 - Freins avant et arrière traités comme identiques.
 - Projets stockés dans le navigateur du téléphone : « Copier le projet » / « Importer » pour les sauvegarder ailleurs.
+
+## Type de vélo
+
+Le projet porte un type de vélo : route, gravel ou VTT (facultatif). Il ne filtre rien,
+il **trie** : la liste « charger un groupe » est rangée par discipline (celle du vélo
+d'abord ; pour un gravel, puis route et VTT), les recherches de pièces et les remplaçants
+proposés font passer les pièces de la même discipline en premier, et le moteur choisit
+d'abord une pièce de cette discipline quand plusieurs conviennent (`disciplineRank`).

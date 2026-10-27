@@ -2,8 +2,8 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **591 pièces**, dont 25 validées par une page constructeur et **566 à valider**.
-- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 223, spindleFits : 0, chainLength : 1, recommendations : 7, families : 46, actuation : 65, freehubFits : 14, pitchFits : 4.
+- **640 pièces**, dont 25 validées par une page constructeur et **615 à valider**.
+- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 244, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
@@ -18,12 +18,12 @@
 | Hope | 3 |
 | Huret | 2 |
 | KMC | 9 |
-| LTWOO | 2 |
+| LTWOO | 33 |
 | Mafac | 2 |
 | Magura | 6 |
 | Maillard | 1 |
 | Regina | 3 |
-| SENSAH | 3 |
+| SENSAH | 10 |
 | SR Suntour | 3 |
 | SRAM | 92 |
 | Sachs | 4 |
@@ -38,10 +38,11 @@
 | Tektro | 1 |
 | Velo Orange | 2 |
 | Weinmann | 2 |
+| Wheeltop | 11 |
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (150)
+## Dérailleur arrière (173)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -58,13 +59,31 @@
 | Duopar Eco | Huret | autre | à valider | speeds, maxCog, totalCapacity |
 | Jubilee | Huret | route | à valider | speeds, maxCog, totalCapacity |
 | RD A12-X | LTWOO | vtt | à valider | totalCapacity |
+| RD A5 9v | LTWOO | vtt | à valider | totalCapacity |
+| RD A7 10v | LTWOO | vtt | à valider | totalCapacity |
+| RD A9 11v | LTWOO | vtt | à valider | totalCapacity |
+| RD eGR | LTWOO | gravel | à valider | totalCapacity |
+| RD eRX | LTWOO | route | à valider | totalCapacity |
+| RD GR5 1x9 | LTWOO | gravel | à valider | totalCapacity |
+| RD GR7 1x10 | LTWOO | gravel | à valider | totalCapacity |
+| RD GR9 1x11 | LTWOO | gravel | à valider | totalCapacity |
+| RD GRT 1x12 (RD-GR7020) | LTWOO | gravel | à valider | totalCapacity |
+| RD R2 7v | LTWOO | route | à valider | totalCapacity |
+| RD R3 8v | LTWOO | route | à valider | totalCapacity |
+| RD R5 9v | LTWOO | route | à valider | totalCapacity |
+| RD R7 10v | LTWOO | route | à valider | totalCapacity |
+| RD-R5011-M-A (R9) | LTWOO | route | à valider | totalCapacity |
+| RD-R5012 (RX) | LTWOO | route | à valider |  |
 | RD-M6205 (Advent X) | microSHIFT | vtt | à valider |  |
 | RD-R58S (Centos) | microSHIFT | route | à valider |  |
 | RD-R43M (R9) | microSHIFT | route | à valider | totalCapacity |
 | RD Sachs Neos | Sachs | vtt | à valider | maxCog, totalCapacity |
 | RD Sachs 7.0 Plasma | Sachs | vtt | à valider | maxCog, totalCapacity |
 | RD Sachs Quarz | Sachs | vtt | à valider | maxCog, totalCapacity |
+| RD Empire 2x11 | SENSAH | route | à valider | totalCapacity |
+| RD Empire Pro 12v | SENSAH | route | à valider | totalCapacity |
 | RD SRX | SENSAH | gravel | à valider | totalCapacity |
+| RD XRX 12v | SENSAH | vtt | à valider | totalCapacity |
 | RD-2300 | Shimano | route | à valider |  |
 | RD-2400-SS | Shimano | route | à valider | totalCapacity |
 | RD-3300 | Shimano | route | à valider | maxCog, totalCapacity |
@@ -195,8 +214,13 @@
 | V-GT | SunTour | autre | à valider | speeds, maxCog |
 | XC Pro | SunTour | vtt | à valider | maxCog |
 | RD SunTour XCT Lite | SunTour | vtt | à valider | maxCog, totalCapacity |
+| EDS GeX dérailleur 75 mm | Wheeltop | gravel | à valider | totalCapacity |
+| EDS GeX dérailleur 93 mm | Wheeltop | gravel | à valider | totalCapacity |
+| EDS OX2.0 dérailleur 75 mm | Wheeltop | vtt | à valider |  |
+| EDS OX2.0 dérailleur 93 mm | Wheeltop | vtt | à valider |  |
+| EDS TX dérailleur | Wheeltop | route | à valider | totalCapacity |
 
-## Manette / levier de vitesses (79)
+## Manette / levier de vitesses (102)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -219,13 +243,32 @@
 | Bar-Con (rochet) | Dia-Compe | route | à valider |  |
 | ENE Ciclo (manettes de cadre) | Dia-Compe | route | à valider |  |
 | Manettes de cadre à rochet | Dia-Compe | route | à valider |  |
+| Manette A5 9v | LTWOO | vtt | à valider |  |
+| Manette A7 10v | LTWOO | vtt | à valider |  |
+| Manette A9 11v | LTWOO | vtt | à valider |  |
+| Manette AX12 | LTWOO | vtt | à valider |  |
+| Leviers eGR 1x | LTWOO | gravel | à valider | fluid |
+| Leviers eRX 2x | LTWOO | route | à valider | fluid |
+| Leviers GR5 1x9 | LTWOO | gravel | à valider |  |
+| Leviers GR7 1x10 | LTWOO | gravel | à valider |  |
+| Leviers GR9 1x11 | LTWOO | gravel | à valider |  |
+| Leviers GRT 1x12 | LTWOO | gravel | à valider |  |
+| Leviers R2 2x7 | LTWOO | route | à valider |  |
+| Leviers R3 2x8 | LTWOO | route | à valider |  |
+| Leviers R5 2x9 | LTWOO | route | à valider |  |
+| Leviers R7 2x10 | LTWOO | route | à valider |  |
 | Leviers R9 2x11 | LTWOO | route | à valider |  |
+| Leviers RX 2x12 | LTWOO | route | à valider |  |
 | Manette Advent X 10v | microSHIFT | vtt | à valider |  |
 | Leviers Centos 2x11 | microSHIFT | route | à valider |  |
 | Leviers R10 2x10 (SB-R402) | microSHIFT | route | à valider | cablePull |
 | Ergo Sachs New Success | Sachs | route | à valider |  |
 | Leviers Empire 2x11 | SENSAH | route | à valider | cablePull |
+| Leviers Empire Pro 2x12 | SENSAH | route | à valider |  |
+| Leviers Reflex 2x8 | SENSAH | route | à valider |  |
 | Leviers SRX 1x11 | SENSAH | gravel | à valider |  |
+| Leviers Team Pro 2x11 | SENSAH | route | à valider |  |
+| Manette XRX 12v | SENSAH | vtt | à valider |  |
 | SL-7400 | Shimano | route | à valider |  |
 | SL-M3100-L (2 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-L (3 plateaux) | Shimano | vtt | à valider |  |
@@ -279,6 +322,10 @@
 | Leviers eTap AXS HRD (RED / Force / Rival) | SRAM | route | à valider |  |
 | Bar-Con (friction) | SunTour | route | à valider |  |
 | Power Ratchet | SunTour | route | à valider |  |
+| EDS GeX leviers | Wheeltop | gravel | à valider |  |
+| EDS OX2.0 commande | Wheeltop | vtt | à valider |  |
+| EDS TX leviers (câble) | Wheeltop | route | à valider |  |
+| EDS TX leviers (hydraulique) | Wheeltop | route | à valider |  |
 
 ## Levier de frein (7)
 
@@ -489,11 +536,12 @@
 | PC-850 | SRAM | autre | à valider |  |
 | PC-951 | SRAM | autre | à valider |  |
 
-## Dérailleur avant (28)
+## Dérailleur avant (30)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Nuovo Record (avant, collier 28,6) | Campagnolo | route | à valider | speeds |
+| FD eRX | LTWOO | route | à valider | mount |
 | FD-4600-F | Shimano | route | à valider |  |
 | FD-5700 (collier 31,8) | Shimano | route | à valider |  |
 | FD-5700-F | Shimano | route | à valider |  |
@@ -521,8 +569,9 @@
 | FD-TY300 (31,8) | Shimano | vtt | à valider |  |
 | FD-TY500 | Shimano | vtt | à valider |  |
 | FD-TZ500 (28,6) | Shimano | vtt | à valider |  |
+| EDS TX dérailleur avant | Wheeltop | route | à valider | mount |
 
-## Étrier / frein (53)
+## Étrier / frein (54)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -579,6 +628,7 @@
 | Spyre flat mount | TRP | route | à valider |  |
 | Vainqueur 999 / 610 | Weinmann | route | à valider | cablePull |
 | Vainqueur 999 / 750 | Weinmann | route | à valider | cablePull |
+| RA7800 flat mount | Wheeltop | gravel | à valider |  |
 
 ## Plaquettes / patins (12)
 

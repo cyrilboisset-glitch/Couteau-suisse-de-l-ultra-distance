@@ -163,8 +163,26 @@ function missingOn(cand, fixed, kb) {
     && evaluatePair(cand, other, kb).some((f) => f.missing?.some((x) => x.startsWith(mine))));
 }
 
-function rankCandidates(cands, target, current) {
-  const score = (p) => (p.brand === current?.brand ? 0 : 1) + (p.brand === target.brand ? 0 : 1)
+/**
+ * Écart entre la discipline d'une pièce et celle du vélo (0 = même discipline).
+ * Un gravel emprunte volontiers des pièces route et VTT ; une pièce sans
+ * discipline (« autre ») convient partout.
+ */
+export function disciplineRank(part, discipline) {
+  if (!discipline || part.discipline === discipline) return 0;
+  if (!part.discipline || part.discipline === 'autre') return 1;
+  if (discipline === 'gravel' && (part.discipline === 'route' || part.discipline === 'vtt')) return 1;
+  if (part.discipline === 'gravel') return 1;
+  return 2;
+}
+
+/** Disciplines représentées dans un groupe (champ « generation »). */
+export function groupDisciplines(generation, catalog) {
+  return [...new Set(catalog.filter((p) => p.generation === generation).map((p) => p.discipline).filter((d) => d && d !== 'autre'))];
+}
+
+function rankCandidates(cands, target, current, discipline) {
+  const score = (p) => 2 * disciplineRank(p, discipline) + (p.brand === current?.brand ? 0 : 1) + (p.brand === target.brand ? 0 : 1)
     + (p.generation && p.generation === target.generation ? -1 : 0)
     + (p.attrs?.form && current?.attrs?.form && p.attrs.form !== current.attrs.form ? 2 : 0);
   return [...cands].sort((x, y) => score(x) - score(y) || String(x.ref).localeCompare(String(y.ref)));
@@ -174,9 +192,10 @@ function rankCandidates(cands, target, current) {
  * Analyse d'un projet.
  * @param config  { slots: { [slotId]: partId | REMOVE }, frame: {attrs}, wheel: {attrs} }
  * @param targetId pièce à monter
- * @param opts { kb, catalog, threshold = LEVEL.KNOWN, maxRounds = 6, locked = [] }
+ * @param opts { kb, catalog, threshold = LEVEL.KNOWN, maxRounds = 6, locked = [], prefer, discipline }
+ *   discipline : 'route' | 'gravel' | 'vtt' — les pièces de cette discipline passent en premier.
  */
-export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog = [], threshold = LEVEL.KNOWN, maxRounds = 6, locked = [], prefer = {} } = {}) {
+export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog = [], threshold = LEVEL.KNOWN, maxRounds = 6, locked = [], prefer = {}, discipline = config.discipline ?? null } = {}) {
   const byId = new Map(catalog.map((p) => [p.id, p]));
   const target = byId.get(targetId);
   if (!target) throw new Error(`Pièce cible inconnue : ${targetId}`);
@@ -240,7 +259,7 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
   let rounds = 0;
   let unsolved = [];
   while (rounds++ < maxRounds) {
-    const res = solve(assign, [...toChange], { byId, catalog, kb, threshold, frame, wheel, target, before, prefer, beforeReq, externalBroken });
+    const res = solve(assign, [...toChange], { byId, catalog, kb, threshold, frame, wheel, target, before, prefer, beforeReq, externalBroken, discipline });
     if (res.solution) { solution = res.solution; break; }
     unsolved = res.empty;
     partial = res.partial ?? {};
@@ -330,7 +349,8 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
       const cands = catalog
         .filter((p) => s.types.includes(p.type) && (s.accepts ? s.accepts(p) : true) && p.id !== now)
         .filter((p) => compatibleWith(p, [...fixed, frame, wheel], kb, threshold).ok);
-      for (const p of cands) (missingOn(p, [...fixed, frame, wheel], kb) ? unverified : alternatives).push(p);
+      const byDiscipline = (x, y) => disciplineRank(x, discipline) - disciplineRank(y, discipline);
+      for (const p of [...cands].sort(byDiscipline)) (missingOn(p, [...fixed, frame, wheel], kb) ? unverified : alternatives).push(p);
       alternatives = alternatives.slice(0, 30);
       unverified = unverified.slice(0, 15);
     }
@@ -368,7 +388,7 @@ export function analyzeProject(config, targetId, { kb = EMPTY_KNOWLEDGE, catalog
     alternativesToTarget = catalog
       .filter((p) => p.type === target.type && p.id !== target.id && p.id !== before[targetSlot])
       .filter((p) => compatibleWith(p, origFixed, kb, threshold).ok)
-      .sort((x, y) => similarity(y, target) - similarity(x, target))
+      .sort((x, y) => (similarity(y, target) - 1.5 * disciplineRank(y, discipline)) - (similarity(x, target) - 1.5 * disciplineRank(x, discipline)))
       .slice(0, 6);
   }
 
@@ -400,7 +420,7 @@ function similarity(p, t) {
  * { blocked: [{ slot, blockers }], empty: [slot] }.
  */
 function solve(assign, slots, ctx) {
-  const { byId, catalog, kb, threshold, frame, wheel, target, before, prefer, beforeReq, externalBroken } = ctx;
+  const { byId, catalog, kb, threshold, frame, wheel, target, before, prefer, beforeReq, externalBroken, discipline } = ctx;
   const fixedParts = Object.entries(assign)
     .filter(([k, v]) => !slots.includes(k) && v && v !== REMOVE && byId.get(v))
     .map(([k, v]) => ({ slot: k, part: byId.get(v) }));
@@ -424,7 +444,7 @@ function solve(assign, slots, ctx) {
       && !(keepIndexed && isFriction(p)));
     const okList = [];
     const blockers = new Map();
-    for (const p of rankCandidates(pool, target, byId.get(before[s]))) {
+    for (const p of rankCandidates(pool, target, byId.get(before[s]), discipline)) {
       const r = compatibleWith(p, fixedList, kb, threshold);
       if (r.ok) okList.push(p);
       else if (r.blocker) {

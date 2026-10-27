@@ -179,7 +179,7 @@ applyStaticText();
  * Champ de recherche + suggestions. onPick(part) est appelé au choix.
  * `filter` restreint les pièces proposées, `action` est le libellé du bouton.
  */
-function searchBox(container, { placeholder, hint, filter = () => true, action = t('Choisir'), onPick, initial = '' }) {
+function searchBox(container, { placeholder, hint, filter = () => true, action = t('Choisir'), onPick, initial = '', rank = null }) {
   container.innerHTML = `
     <div class="search"><input id="q-${container.id || 'main'}" type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false"
       placeholder="${esc(placeholder)}" aria-label="${esc(placeholder)}" value="${esc(initial)}"></div>
@@ -193,7 +193,10 @@ function searchBox(container, { placeholder, hint, filter = () => true, action =
   const render = () => {
     const q = input.value.trim();
     if (q.length < 2) { list.innerHTML = ''; crit.innerHTML = ''; return; }
-    const { results, criteria, relaxed } = searchParts(q, pool, { limit: 25 });
+    const found = searchParts(q, pool, { limit: rank ? 60 : 25 });
+    const { criteria, relaxed } = found;
+    // Tri facultatif (ex. discipline du vélo en premier), le score de recherche départage.
+    const results = rank ? [...found.results].sort((a, b) => rank(a.part) - rank(b.part)).slice(0, 25) : found.results;
     const chips = Object.entries(criteria).map(([k, v], i) => `<span class="chip" style="--i:${i}">${x(k)} : ${esc(fmt(typeof v === 'string' && PART_TYPES[v] ? typeLabel(v) : v))}</span>`);
     crit.innerHTML = (chips.length ? `<div class="chips">${chips.join('')}</div>` : '')
       + (relaxed.length ? `<p class="note">${t('Aucun résultat avec tous les critères : {0} ignoré(s) pour vous proposer quelque chose.', esc(relaxed.map(tr).join(', ')))}</p>` : '');

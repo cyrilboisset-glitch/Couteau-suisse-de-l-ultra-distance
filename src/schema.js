@@ -5,7 +5,7 @@
 export const ENUMS = Object.freeze({
   discipline: ['route', 'gravel', 'vtt', 'autre'],
   shiftSystem: ['mecanique', 'electronique'],
-  protocol: ['di2', 'axs', 'eps', 'autre'],
+  protocol: ['di2', 'axs', 'eps', 'ltwoo', 'wheeltop', 'autre'],
   shifterSide: ['arriere', 'avant', 'les_deux'],
   shifterForm: ['levier_route', 'gachette_vtt', 'poignee_tournante', 'bout_de_cintre', 'satellite', 'autre'],
   // Fixation du dérailleur arrière.
@@ -79,6 +79,8 @@ export const PART_TYPES = Object.freeze({
     attrs: {
       speeds: a('int', 'Nombre de vitesses', { required: true }),
       ...SHIFT_ATTRS,
+      speedsMin: a('int', 'Électronique programmable : nombre de vitesses minimum'),
+      speedsMax: a('int', 'Électronique programmable : nombre de vitesses maximum'),
       maxCog: a('int', 'Plus grand pignon max (meilleur cas, en général mono-plateau)', { unit: 'dents', required: true }),
       maxCog2x: a('int', 'Plus grand pignon max en double plateau', { unit: 'dents' }),
       maxCog3x: a('int', 'Plus grand pignon max en triple plateau', { unit: 'dents' }),

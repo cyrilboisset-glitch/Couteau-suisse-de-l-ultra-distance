@@ -1,7 +1,7 @@
 // Onglet « Projet » : je veux monter telle pièce, que dois-je changer ?
-import { analyzeProject, SLOTS, REMOVE, slotOf, groupConfig } from './src/project.js';
+import { analyzeProject, SLOTS, REMOVE, slotOf, groupConfig, disciplineRank } from './src/project.js';
 import { ENUMS } from './src/schema.js';
-import { t, tr } from './src/i18n/index.js';
+import { t, tr, trName } from './src/i18n/index.js';
 
 const STATUS = {
   cible: { icon: '🎯', label: 'Pièce du projet', cls: 'l1' },
@@ -30,10 +30,50 @@ const FRAME_FIELDS = [
   ['wheel', 'rotorMount', 'Fixation des disques sur le moyeu', 'rotorMount'],
 ];
 
+// Types de vélo proposés pour un montage.
+const BIKE_TYPES = [
+  { id: 'route', icon: '🚴', label: 'Route' },
+  { id: 'gravel', icon: '🪨', label: 'Gravel' },
+  { id: 'vtt', icon: '🚵', label: 'VTT' },
+];
+
+/** Discipline principale d'un groupe : celle de la majorité de ses pièces. */
+function mainDiscipline(parts) {
+  const n = {};
+  for (const p of parts) if (p.discipline && p.discipline !== 'autre') n[p.discipline] = (n[p.discipline] ?? 0) + 1;
+  return Object.entries(n).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'autre';
+}
+
 const uid = () => `p${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
 
 export function createProjetView(ctx) {
   const { state, view, esc, x, nm, fmt, searchBox, partTitle, partSub, store, stagger, toast } = ctx;
+  const bikeType = (proj) => BIKE_TYPES.find((b) => b.id === proj.discipline);
+
+  /** Liste des groupes, rangés par discipline ; celle du vélo d'abord. */
+  function groupOptions(proj) {
+    const byGen = new Map();
+    for (const p of state.parts) if (p.generation) (byGen.get(p.generation) ?? byGen.set(p.generation, []).get(p.generation)).push(p);
+    const buckets = { route: [], gravel: [], vtt: [], autre: [] };
+    // Un groupe a au moins une commande ou un dérailleur arrière (les séries de chaînes « 9v »… n'en sont pas).
+    const label = (g, ps) => `${[...new Set(ps.map((p) => p.brand))].join(' / ')} · ${trName(g)}`;
+    for (const [g, ps] of byGen) {
+      if (ps.some((p) => p.type === 'shifter' || p.type === 'rear_derailleur')) buckets[mainDiscipline(ps)].push({ g, text: label(g, ps) });
+    }
+    for (const k of Object.keys(buckets)) buckets[k].sort((a, b) => a.text.localeCompare(b.text, 'fr', { numeric: true }));
+    const d = proj.discipline;
+    // Gravel : groupes gravel, puis route et VTT (souvent utilisés en gravel).
+    const order = d === 'gravel' ? ['gravel', 'route', 'vtt', 'autre'] : d ? [d, 'gravel', 'autre', ...['route', 'vtt'].filter((k) => k !== d)] : ['route', 'gravel', 'vtt', 'autre'];
+    const labels = { route: t('Route'), gravel: t('Gravel'), vtt: t('VTT'), autre: t('Composants (standards)') };
+    return order.filter((k) => buckets[k].length).map((k, i) => {
+      const head = d && i > 0 ? t('Autres : {0}', labels[k]) : labels[k];
+      return `<optgroup label="${esc(head)}">${buckets[k].map(({ g, text }) => `<option value="${esc(g)}">${esc(text)}</option>`).join('')}</optgroup>`;
+    }).join('');
+  }
+  const rankFor = (proj) => (proj.discipline ? (p) => disciplineRank(p, proj.discipline) : null);
+  const typeChips = (proj) => `<div class="chips bike-type" role="radiogroup" aria-label="${esc(t('Type de vélo'))}">
+      ${BIKE_TYPES.map((b) => `<button type="button" class="chip-btn" role="radio" data-disc="${b.id}" aria-checked="${proj.discipline === b.id}" aria-pressed="${proj.discipline === b.id}">${b.icon} ${t(b.label)}</button>`).join('')}
+    </div>`;
   const load = () => store.get('projects', []);
   const save = (list) => store.set('projects', list);
   const get = (id) => load().find((p) => p.id === id);
@@ -53,7 +93,7 @@ export function createProjetView(ctx) {
       <div id="import-box" hidden><textarea id="import-text" rows="5" placeholder="${esc(t('Collez ici un projet copié'))}"></textarea>
         <div class="btn-row"><button class="btn" type="button" id="import-ok">${t('Importer ce projet')}</button></div><p class="note" id="import-msg" hidden></p></div>
       <ul class="list" id="plist">${projects.map((p) => `<li><a class="row" href="#/projet/${esc(p.id)}">
-        <span class="main"><span class="ref">${esc(p.name)}</span><span class="sub">${p.target ? t('Cible : {0}', esc(partTitle(part(p.target) ?? { brand: '', ref: p.target }))) : t('Pièce cible à choisir')} · ${t('{0} pièce(s)', Object.values(p.config.slots).filter(Boolean).length)}</span></span>
+        <span class="main"><span class="ref">${bikeType(p) ? `${bikeType(p).icon} ` : ''}${esc(p.name)}</span><span class="sub">${bikeType(p) ? `${t(bikeType(p).label)} · ` : ''}${p.target ? t('Cible : {0}', esc(partTitle(part(p.target) ?? { brand: '', ref: p.target }))) : t('Pièce cible à choisir')} · ${t('{0} pièce(s)', Object.values(p.config.slots).filter(Boolean).length)}</span></span>
         <span class="act">${t('Ouvrir')} ›</span></a></li>`).join('') || `<li class="empty">${t('Aucun projet pour l\'instant.')}</li>`}</ul>`;
     stagger(view.querySelector('#plist'));
     view.querySelector('#new').addEventListener('click', () => {
@@ -103,7 +143,7 @@ export function createProjetView(ctx) {
     if (!proj.target) return `<p class="empty">${t('Choisissez la pièce cible pour voir le résultat.')}</p>`;
     let r;
     try {
-      r = analyzeProject(proj.config, proj.target, { kb: state.kb, catalog: state.parts, prefer: proj.prefer ?? {} });
+      r = analyzeProject(proj.config, proj.target, { kb: state.kb, catalog: state.parts, prefer: proj.prefer ?? {}, discipline: proj.discipline ?? null });
     } catch (err) {
       return `<p class="note">${t('Analyse impossible : {0}', esc(err.message))}</p>`;
     }
@@ -157,14 +197,17 @@ export function createProjetView(ctx) {
       return;
     }
     const target = part(proj.target);
-    const generations = [...new Set(state.parts.map((p) => p.generation).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'fr'));
     view.innerHTML = `
       <div class="btn-row two"><a class="btn ghost" href="#/projet">‹ ${t('Projets')}</a><button class="btn danger" type="button" id="del">${t('Supprimer')}</button></div>
       <p id="del-confirm" class="note" hidden>${t('Supprimer ce projet ?')} <button class="btn danger" type="button" id="del-yes">${t('Oui, supprimer')}</button></p>
       <label class="field" for="pname"><span>${t('Nom du projet')}</span><input id="pname" value="${esc(proj.name)}"></label>
+      <section class="summary"><h2>${t('Type de vélo')}</h2>
+        ${typeChips(proj)}
+        <p class="small muted">${proj.discipline ? t('Groupes, recherches et remplaçants de cette discipline passent en premier.') : t('Choisissez le type de vélo : les groupes et les pièces seront triés en conséquence.')}</p>
+      </section>
       <section class="summary"><h2>${t('1. Ma configuration actuelle')}</h2>
         <div class="btn-row"><button class="btn ghost" type="button" id="from-bike">${t('Reprendre « Mon vélo »')}</button></div>
-        <label class="field" for="group"><span>${t('Ou charger un groupe')}</span><select id="group"><option value="">${t('Choisir un groupe…')}</option>${generations.map((g) => `<option value="${esc(g)}">${nm(g)}</option>`).join('')}</select></label>
+        <label class="field" for="group"><span>${t('Ou charger un groupe')}</span><select id="group"><option value="">${t('Choisir un groupe…')}</option>${groupOptions(proj)}</select></label>
         <ul class="list" id="slots">${SLOTS.map((s) => slotRow(proj, s)).join('')}</ul>
         <details><summary>${t('Cadre et roue arrière (facultatif)')}</summary><div class="form">${frameForm(proj)}</div></details>
       </section>
@@ -179,6 +222,12 @@ export function createProjetView(ctx) {
 
     const refresh = () => editor(id);
     view.querySelector('#pname').addEventListener('change', (e) => { proj.name = e.target.value || proj.name; put(proj); });
+    view.querySelector('.bike-type').addEventListener('click', (e) => {
+      const b = e.target.closest('[data-disc]');
+      if (!b) return;
+      proj.discipline = proj.discipline === b.dataset.disc ? null : b.dataset.disc;
+      put(proj); refresh();
+    });
     view.querySelector('#del').addEventListener('click', () => { view.querySelector('#del-confirm').hidden = false; });
     view.querySelector('#del-yes').addEventListener('click', () => { save(load().filter((p) => p.id !== id)); location.hash = '#/projet'; });
     view.querySelector('#from-bike').addEventListener('click', () => {
@@ -208,6 +257,7 @@ export function createProjetView(ctx) {
         placeholder: t('{0} : référence ou critères', tr(s.label)),
         hint: t('Choisissez la pièce montée actuellement.'),
         filter: (p) => s.types.includes(p.type) && (!s.accepts || s.accepts(p)),
+        rank: rankFor(proj),
         onPick: (p) => { proj.config.slots[s.id] = p.id; put(proj); refresh(); },
       }).focus();
     });
@@ -223,6 +273,7 @@ export function createProjetView(ctx) {
       placeholder: t('Pièce cible : référence ou critères'),
       hint: t('Ex. « cassette 11-34 », « rx812 », « pédalier 1x », « étrier flat mount ».'),
       action: t('Monter'),
+      rank: rankFor(proj),
       onPick: (p) => { proj.target = p.id; proj.prefer = {}; put(proj); refresh(); },
     });
     const res = view.querySelector('#res');

@@ -344,18 +344,6 @@
    "status": "a_valider"
   },
   {
-   "brand": "LTWOO",
-   "generation": "A12 (12v)",
-   "gamme": "A12",
-   "status": "a_valider"
-  },
-  {
-   "brand": "LTWOO",
-   "generation": "R9 (11v)",
-   "gamme": "R9",
-   "status": "a_valider"
-  },
-  {
    "brand": "Magura",
    "generation": "Magura HS",
    "gamme": "HS",
@@ -365,12 +353,6 @@
    "brand": "Magura",
    "generation": "Magura MT",
    "gamme": "MT",
-   "status": "a_valider"
-  },
-  {
-   "brand": "SENSAH",
-   "generation": "Empire (11v)",
-   "gamme": "Empire",
    "status": "a_valider"
   },
   {
@@ -1523,6 +1505,150 @@
    "brand": "DNP",
    "generation": "Roues libres 7v",
    "gamme": "Composants (standards)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "A12 (12v)",
+   "gamme": "VTT (A / AX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "A5 (9v)",
+   "gamme": "VTT (A / AX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "A7 (10v)",
+   "gamme": "VTT (A / AX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "A9 (11v)",
+   "gamme": "VTT (A / AX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "GR5 (9v)",
+   "gamme": "Gravel (GR)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "GR7 (10v)",
+   "gamme": "Gravel (GR)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "GR9 (11v)",
+   "gamme": "Gravel (GR)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "GRT (12v)",
+   "gamme": "Gravel (GR)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "R2 (7v)",
+   "gamme": "Route (R / RX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "R3 (8v)",
+   "gamme": "Route (R / RX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "R5 (9v)",
+   "gamme": "Route (R / RX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "R7 (10v)",
+   "gamme": "Route (R / RX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "R9 (11v)",
+   "gamme": "Route (R / RX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "RX (12v)",
+   "gamme": "Route (R / RX)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "eGR (électronique)",
+   "gamme": "Électronique (eRX / eGR)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "LTWOO",
+   "generation": "eRX (électronique)",
+   "gamme": "Électronique (eRX / eGR)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SENSAH",
+   "generation": "Empire (11v)",
+   "gamme": "Empire",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SENSAH",
+   "generation": "Empire Pro (12v)",
+   "gamme": "Empire Pro",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SENSAH",
+   "generation": "Reflex (8v)",
+   "gamme": "Reflex",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SENSAH",
+   "generation": "Team Pro (11v)",
+   "gamme": "Team Pro",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SENSAH",
+   "generation": "XRX (12v)",
+   "gamme": "XRX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Wheeltop",
+   "generation": "EDS GeX",
+   "gamme": "EDS (électronique sans fil)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Wheeltop",
+   "generation": "EDS OX2.0",
+   "gamme": "EDS (électronique sans fil)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Wheeltop",
+   "generation": "EDS TX",
+   "gamme": "EDS (électronique sans fil)",
    "status": "a_valider"
   }
  ]

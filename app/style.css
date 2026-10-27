@@ -434,3 +434,7 @@ textarea { min-height: 100px; font-family: ui-monospace, monospace; font-size: .
     transition-duration: .001ms !important;
   }
 }
+
+/* Type de vélo du projet */
+.bike-type .chip-btn { min-height: 52px; padding: 8px 16px; font-size: 1rem; }
+.bike-type .chip-btn[aria-pressed="true"] { animation: pop .35s var(--spring); }

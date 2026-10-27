@@ -137,6 +137,14 @@ export const vitessesElectronique = {
     const g = guard(this, [[rd, ['speeds']], [cas, ['speeds']]]);
     if (g) return g.finding;
     if (rd.attrs.speeds === cas.attrs.speeds) return ok(this, `Dérailleur et cassette ${cas.attrs.speeds} vitesses.`);
+    // Certains systèmes se programment dans une application (Wheeltop, LTWOO).
+    const { speedsMin: lo, speedsMax: hi } = rd.attrs;
+    if (lo && hi && cas.attrs.speeds >= lo && cas.attrs.speeds <= hi) {
+      return ok(this, `Nombre de vitesses programmable de ${lo} à ${hi} : réglez ${cas.attrs.speeds} vitesses dans l'application.`, {
+        adjustments: [`Programmer ${cas.attrs.speeds} vitesses dans l'application du dérailleur`],
+        source: rd.sources?.[0] ?? this.source,
+      });
+    }
     return degraded(this, `Dérailleur électronique ${rd.attrs.speeds}v sur cassette ${cas.attrs.speeds}v.`, {
       limitation: "Indexation non prévue pour cet écartement : seules quelques vitesses passent proprement.",
       adjustments: ['Micro-réglage électronique pour centrer les pignons du milieu'],

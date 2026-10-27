@@ -333,6 +333,46 @@
    "kind": "communaute",
    "ref": "Sheldon Brown – corps Uniglide : 9 cannelures égales, pignons Hyperglide non montables sans meuler une cannelure ; pignon extérieur vissé",
    "url": "https://www.sheldonbrown.com/shimano-cassette-bodies.html"
+  },
+  "br-ltwoo-guide": {
+   "kind": "presse",
+   "ref": "BikeRadar – guide L-Twoo : route R2 (7v) → RX (12v), gravel GR5 (9v, sans clutch), GR7 (10v), GR9 (11v), GRT (12v), VTT A3 → A9, AX (12v), TX ; électronique eRX / ER7 / ER9, eGR",
+   "url": "https://www.bikeradar.com/advice/buyers-guides/l-twoo-groupset-buyers-guide"
+  },
+  "djc-ltwoo-road": {
+   "kind": "revendeur",
+   "ref": "DJC Bikes – leviers LTWOO RX 2x12 / R9 2x11 / R7 2x10 / R5 2x9 / R3 2x8 / R2 2x7 « compatibles Shimano » ; R7 compatible Shimano 4700 seulement",
+   "url": "https://djcbikes.com/products/ltwoo-road-bike-shifter-lever-rx-2x12-r9-2x11-r7-2x10-r5-2x9-r3-2x8-r2-2x7-speed-bike-brake-compatible-for-shimano-derailleur-1541"
+  },
+  "ltwoo-catalog-2024": {
+   "kind": "officiel",
+   "ref": "Catalogue L-TWOO 2024 (V1.3) : gamme gravel « L-TWOO only » ; dérailleurs 12v 11-52T (via résultats de recherche, PDF non consultable)",
+   "url": "http://oss.ltwoo.com/pdf/V1.3_2024-L-TWOO%20-PRODUCT_CATALOG.pdf"
+  },
+  "ltwoo-egr-page": {
+   "kind": "officiel",
+   "ref": "L-TWOO – groupe électronique gravel eGR : dérailleur jusqu'à 11-46T",
+   "url": "https://www.ltwoo.com/en/gravel/electricGravel"
+  },
+  "rinos-ltwoo": {
+   "kind": "revendeur",
+   "ref": "Rinos Bike – L-Twoo propose deux ratios de tirage : compatible Shimano 2:1 et compatible SRAM 1:1, selon le modèle",
+   "url": "https://rinosbike.uk/blogs/news/introduction-to-the-l-twoo-brand-of-bicycle-gear-shifters-from-china"
+  },
+  "vo-empire-rd": {
+   "kind": "revendeur",
+   "ref": "Velo Orange – dérailleur SENSAH Empire 2x11 : 34T max, sans clutch, compatible manettes Empire 11v et SRAM DoubleTap « Exact Actuation » 11v",
+   "url": "https://velo-orange.com/products/sensah-empire-2x11-rear-derailleur"
+  },
+  "cyclabo-sensah": {
+   "kind": "communaute",
+   "ref": "Cyclabo – guide SENSAH : Empire Pro 2x12 compatible SRAM 12v pas Shimano ; Team Pro « Shimano 11v » non mentionné sur le site officiel ; Reflex 1x8 / 2x8 compatible Shimano Claris ; XRX non compatible Shimano",
+   "url": "https://www.cyclabo.com/topics/d61xc4qiv9/"
+  },
+  "wheeltop-universal": {
+   "kind": "officiel",
+   "ref": "Wheeltop – groupes électroniques sans fil EDS TX / OX / GeX programmables de 3 à 14 vitesses",
+   "url": "https://wheeltop.com/blogs/news/universal-electronic-groupsets-in-2026-which-systems-truly-fit-any-bike-frame"
   }
  },
  "families": [
@@ -912,6 +952,138 @@
     "shimano-sis-1984",
     "bf-friction"
    ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-rx-12",
+   "brand": "LTWOO",
+   "label": "LTWOO RX 2x12 mécanique (tirage non documenté)",
+   "system": "mecanique",
+   "speeds": 12,
+   "src": "djc-ltwoo-road",
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-gr-9",
+   "brand": "LTWOO",
+   "label": "LTWOO GR5 gravel 1x9 (« L-TWOO only »)",
+   "system": "mecanique",
+   "speeds": 9,
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-gr-10",
+   "brand": "LTWOO",
+   "label": "LTWOO GR7 gravel 1x10 (« L-TWOO only »)",
+   "system": "mecanique",
+   "speeds": 10,
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-gr-11",
+   "brand": "LTWOO",
+   "label": "LTWOO GR9 gravel 1x11 (« L-TWOO only »)",
+   "system": "mecanique",
+   "speeds": 11,
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-grt-12",
+   "brand": "LTWOO",
+   "label": "LTWOO GRT gravel 1x12 (« L-TWOO only »)",
+   "system": "mecanique",
+   "speeds": 12,
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-catalog-2024"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-a5",
+   "brand": "LTWOO",
+   "label": "LTWOO A5 VTT 9v (deux tirages selon version : Shimano 2:1 ou SRAM 1:1)",
+   "system": "mecanique",
+   "speeds": 9,
+   "src": [
+    "br-ltwoo-guide",
+    "rinos-ltwoo"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-a7",
+   "brand": "LTWOO",
+   "label": "LTWOO A7 VTT 10v",
+   "system": "mecanique",
+   "speeds": 10,
+   "src": [
+    "br-ltwoo-guide",
+    "rinos-ltwoo"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-a9",
+   "brand": "LTWOO",
+   "label": "LTWOO A9 VTT 11v",
+   "system": "mecanique",
+   "speeds": 11,
+   "src": [
+    "br-ltwoo-guide",
+    "rinos-ltwoo"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "ltwoo-e",
+   "brand": "LTWOO",
+   "label": "LTWOO électronique (eRX, ER7, ER9, eGR) programmable",
+   "system": "electronique",
+   "protocol": "ltwoo",
+   "src": [
+    "br-ltwoo-guide",
+    "ltwoo-egr-page"
+   ],
+   "status": "a_valider"
+  },
+  {
+   "id": "sensah-empire-pro-12",
+   "brand": "SENSAH",
+   "label": "SENSAH Empire Pro 2x12 (tirage SRAM 12v selon un guide)",
+   "system": "mecanique",
+   "speeds": 12,
+   "src": "cyclabo-sensah",
+   "status": "a_valider"
+  },
+  {
+   "id": "sensah-xrx-12",
+   "brand": "SENSAH",
+   "label": "SENSAH XRX VTT 1x12 (non compatible Shimano selon un guide)",
+   "system": "mecanique",
+   "speeds": 12,
+   "src": "cyclabo-sensah",
+   "status": "a_valider"
+  },
+  {
+   "id": "wheeltop-eds",
+   "brand": "Wheeltop",
+   "label": "Wheeltop EDS sans fil (TX route, GeX gravel, OX VTT), programmable 3 à 14 vitesses",
+   "system": "electronique",
+   "protocol": "wheeltop",
+   "src": "wheeltop-universal",
    "status": "a_valider"
   }
  ],
@@ -1743,6 +1915,16 @@
    "confidence": "basse",
    "status": "a_valider",
    "limitation": "Indexation prévue pour les dérailleurs 7400 : utiliser le mode friction de la manette si les vitesses ne tombent pas."
+  },
+  {
+   "shifterFamily": "sram-route-11",
+   "derailleurFamily": "sensah-empire-11",
+   "side": "arriere",
+   "level": "connu",
+   "message": "Manettes SRAM route 11v (Exact Actuation) avec dérailleur SENSAH Empire 11v selon le revendeur.",
+   "src": "vo-empire-rd",
+   "confidence": "basse",
+   "status": "a_valider"
   }
  ],
  "freehubFits": [
