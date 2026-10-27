@@ -18,3 +18,13 @@ const html = readFileSync(root('dist/www/index.html'), 'utf8')
   .replace('<script type="module" src="app.js"></script>', () => `<script>window.__CATALOGUE__=${catalogue};</script>\n<script>${js}</script>`);
 writeFileSync(root('dist/groupset-compatibility-toolbox.html'), html);
 console.log(`dist/groupset-compatibility-toolbox.html (${Math.round(html.length / 1024)} Ko)`);
+
+// Appli météo de parcours en fichier unique : dist/vent-et-temperatures.html
+const meteoJs = (await build({
+  entryPoints: [root('meteo/app.js')], bundle: true, format: 'iife', minify: true, write: false, target: 'es2020',
+})).outputFiles[0].text.replace(/<\/script/gi, '<\\/script');
+const meteo = readFileSync(root('meteo/index.html'), 'utf8')
+  .replace('<link rel="stylesheet" href="style.css">', () => `<style>\n${readFileSync(root('meteo/style.css'), 'utf8')}</style>`)
+  .replace('<script type="module" src="app.js"></script>', () => `<script>${meteoJs}</script>`);
+writeFileSync(root('dist/vent-et-temperatures.html'), meteo);
+console.log(`dist/vent-et-temperatures.html (${Math.round(meteo.length / 1024)} Ko)`);

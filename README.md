@@ -24,6 +24,31 @@ règle porte sa source ; ce qui n'est pas sourcé officiellement est « à valid
 5. 🟡 Extension aux générations anciennes et autres marques (largement faite, voir [DONNEES](docs/DONNEES.md#générations-anciennes))
 6. ⬜ Import CSV
 
+## Vent et températures (météo de parcours)
+
+Deuxième outil du couteau suisse, dans [meteo/](meteo/) : j'importe le GPX de la sortie,
+je donne l'heure de départ et ma vitesse moyenne, et l'appli me dit :
+
+- **dans quel sens faire la boucle pour avoir le vent dans le dos en fin de parcours**
+  (vent moyen dans l'axe sur le dernier tiers, dans les deux sens, à l'heure où j'y passerai ;
+  si les deux se valent, on départage sur l'ensemble). Le GPX dans le bon sens se télécharge.
+- **les températures mini et maxi prévues au passage**, avec le km, l'altitude et l'heure,
+  sur un profil altitude + température + ressenti à vélo (refroidissement éolien avec la
+  vitesse du vélo et le vent de face).
+- **comment s'habiller** : tenue de base, couches à ajouter pour le moment le plus froid, pluie.
+
+Prévisions [Open-Meteo](https://open-meteo.com/) (gratuit, sans clé, 16 jours, connexion
+nécessaire), demandées à l'altitude de chaque point du GPX pour corriger la température.
+Heures de passage estimées : 100 m de D+ comptent comme 1 km de plat, 100 m de D− font gagner 0,5 km.
+
+```
+meteo/src/   moteur : gpx.js (lecture/écriture), geo.js (distances, caps, horaires),
+             openmeteo.js (requête, interpolation), analyse.js (vent, ressenti, tenue)
+meteo/       interface (index.html, app.js, style.css), en français
+```
+
+`npm run build` produit aussi `dist/www/meteo/` et `dist/vent-et-temperatures.html` (fichier unique à ouvrir sur le téléphone).
+
 ## Structure
 
 ```
