@@ -62,26 +62,39 @@ export function textScore(query, part) {
 
 // --- Critères ---------------------------------------------------------------
 
+// Mots-clés en français, anglais, allemand, espagnol et italien (sans accents).
+// En italien et en espagnol, « cambio » désigne le dérailleur arrière.
 const TYPE_WORDS = [
-  ['rear_derailleur', ['derailleur arriere', 'derailleur ar', 'derailleur', 'rd', 'deraileur arriere', 'derailleur arrriere']],
-  ['front_derailleur', ['derailleur avant', 'derailleur av', 'fd']],
-  ['cassette', ['cassette', 'roue libre', 'pignons']],
-  ['chain', ['chaine']],
-  ['quick_link', ['maillon rapide', 'maillon']],
-  ['shifter', ['manette', 'levier de vitesse', 'levier vitesse', 'shifter', 'sti', 'commande']],
-  ['brake_lever', ['levier de frein', 'levier frein']],
-  ['brake_caliper', ['etrier', 'frein']],
-  ['brake_pads', ['plaquettes', 'plaquette', 'patins', 'patin']],
-  ['rotor', ['disque']],
-  ['crankset', ['pedalier', 'manivelle', 'manivelles']],
-  ['chainring', ['plateau']],
-  ['bottom_bracket', ['boitier', 'boitier de pedalier', 'bb']],
+  ['rear_derailleur', ['derailleur arriere', 'derailleur ar', 'derailleur', 'rd', 'deraileur arriere', 'derailleur arrriere',
+    'rear derailleur', 'rear mech', 'schaltwerk', 'cambio trasero', 'desviador trasero', 'cambio', 'deragliatore posteriore']],
+  ['front_derailleur', ['derailleur avant', 'derailleur av', 'fd', 'front derailleur', 'front mech', 'umwerfer',
+    'desviador delantero', 'desviador', 'deragliatore anteriore', 'deragliatore']],
+  ['cassette', ['cassette', 'roue libre', 'pignons', 'freewheel', 'sprockets', 'kassette', 'zahnkranz', 'ritzelpaket',
+    'casete', 'pinones', 'cassetta', 'pignoni', 'ruota libera']],
+  ['chain', ['chaine', 'chain', 'kette', 'cadena', 'catena']],
+  ['quick_link', ['maillon rapide', 'maillon', 'quick link', 'master link', 'kettenschloss', 'eslabon rapido', 'falsa maglia', 'maglia rapida']],
+  ['shifter', ['manette', 'levier de vitesse', 'levier vitesse', 'shifter', 'sti', 'commande', 'shift lever', 'schalthebel',
+    'mando', 'maneta de cambio', 'palanca de cambio', 'comando', 'leva cambio', 'ergopower']],
+  ['brake_lever', ['levier de frein', 'levier frein', 'brake lever', 'bremshebel', 'maneta de freno', 'leva freno']],
+  ['brake_caliper', ['etrier', 'frein', 'caliper', 'brake', 'bremssattel', 'bremse', 'pinza', 'freno']],
+  ['brake_pads', ['plaquettes', 'plaquette', 'patins', 'patin', 'brake pads', 'pads', 'brake shoes', 'bremsbelage', 'bremsbelag',
+    'bremsschuhe', 'pastillas de freno', 'pastillas freno', 'pastillas', 'zapatas', 'pastiglie freno', 'pastiglie', 'pattini', 'brake pad', 'plaquettes de frein']],
+  ['rotor', ['disque', 'rotor', 'disc', 'bremsscheibe', 'disco']],
+  ['crankset', ['pedalier', 'manivelle', 'manivelles', 'crankset', 'crank', 'cranks', 'kurbel', 'kurbelgarnitur', 'bielas', 'guarnitura', 'pedivelle']],
+  ['chainring', ['plateau', 'chainring', 'kettenblatt', 'plato', 'corona']],
+  ['bottom_bracket', ['boitier', 'boitier de pedalier', 'bb', 'bottom bracket', 'innenlager', 'tretlager', 'eje pedalier', 'caja de pedalier', 'movimento centrale']],
 ];
 
 const CAGES = [
-  ['chape longue', ['SGS', 'long']],
-  ['chape moyenne', ['GS', 'moyen']],
-  ['chape courte', ['SS', 'court']],
+  ['chape longue', ['SGS', 'long'], ['long cage', 'langer kafig', 'caja larga', 'gabbia lunga']],
+  ['chape moyenne', ['GS', 'moyen'], ['medium cage', 'mittlerer kafig', 'caja media', 'gabbia media']],
+  ['chape courte', ['SS', 'court'], ['short cage', 'kurzer kafig', 'caja corta', 'gabbia corta']],
+];
+
+const DISCIPLINE_WORDS = [
+  ['route', ['route', 'road', 'rennrad', 'strasse', 'carretera', 'strada', 'corsa']],
+  ['gravel', ['gravel']],
+  ['vtt', ['vtt', 'mtb', 'mountain bike', 'mountainbike', 'btt']],
 ];
 
 /**
@@ -96,8 +109,10 @@ export function parseCriteria(query) {
     if (m) text = text.replace(m[0], ' ');
     return m;
   };
-  for (const [label, values] of CAGES) {
-    if (take(new RegExp(` ${label} `))) c.cage = { label, values };
+  for (const [label, values, synonyms] of CAGES) {
+    for (const w of [label, ...synonyms]) {
+      if (!c.cage && take(new RegExp(` ${w} `))) c.cage = { label, values };
+    }
   }
   // « levier de frein » avant « frein », « dérailleur avant » avant « dérailleur ».
   const ordered = TYPE_WORDS.flatMap(([type, words]) => words.map((w) => [type, w])).sort((a, b) => b[1].length - a[1].length);
@@ -105,19 +120,21 @@ export function parseCriteria(query) {
     if (c.type) break;
     if (take(new RegExp(` ${w} `))) c.type = type;
   }
-  let m = take(/ (\d{1,2}) ?(?:v|s|vitesses?|speed|sp) /);
+  let m = take(/ (\d{1,2}) ?(?:v|s|vitesses?|speeds?|sp|fach|gang|velocidades|vel|velocita|rapporti|marce) /);
   if (m) c.speeds = Number(m[1]);
   // « 11-34 » (cassette, croissant) ou « 50-34 » (plateaux, décroissant).
   m = take(/ (\d{1,2}) (\d{2}) /);
   if (m && Number(m[2]) > Number(m[1])) { c.minCog = Number(m[1]); c.maxCog = Number(m[2]); }
   else if (m) c.teeth = `${m[1]}-${m[2]}`;
-  m = take(/ (\d{2}) ?(?:t|dents?) /);
+  m = take(/ (\d{2}) ?(?:t|dents?|teeth|z|zahne|dientes|denti) /);
   if (m) c.maxCog = Number(m[1]);
-  for (const d of ['route', 'gravel', 'vtt']) if (take(new RegExp(` ${d} `))) c.discipline = d;
-  if (take(/ (electronique|di2|axs|eps|etap) /)) c.system = 'electronique';
-  if (take(/ (mecanique|cable) /)) c.system = 'mecanique';
-  if (take(/ (hydraulique|hydro) /)) c.brakeActuation = 'hydraulique';
-  if (take(/ (mineral|minerale) /)) c.fluid = 'mineral';
+  for (const [d, words] of DISCIPLINE_WORDS) {
+    for (const w of words) if (!c.discipline && take(new RegExp(` ${w} `))) c.discipline = d;
+  }
+  if (take(/ (electronique|di2|axs|eps|etap|electronic|elektronisch|electronico|elettronico) /)) c.system = 'electronique';
+  if (take(/ (mecanique|cable|mechanical|mechanisch|mecanico|meccanico) /)) c.system = 'mecanique';
+  if (take(/ (hydraulique|hydro|hydraulic|hydraulisch|hidraulico|idraulico) /)) c.brakeActuation = 'hydraulique';
+  if (take(/ (mineral|minerale|mineralol) /)) c.fluid = 'mineral';
   if (take(/ dot /)) c.fluid = 'dot';
   for (const [w, v] of [['microspline', 'microspline'], ['xdr', 'xdr'], ['xd', 'xd'], ['n3w', 'n3w']]) {
     if (take(new RegExp(` ${w} `))) c.freehub = v;

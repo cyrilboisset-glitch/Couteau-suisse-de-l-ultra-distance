@@ -7,7 +7,7 @@
   "scripts": {
     "test": "node --test",
     "schema-doc": "node scripts/schema-doc.js",
-    "build": "node scripts/build-data.js && node scripts/build-www.js && node scripts/build-single.js",
+    "build": "node scripts/i18n.js build && node scripts/build-data.js && node scripts/build-www.js && node scripts/build-single.js",
     "start": "npm run build && node scripts/serve.js"
   },
   "engines": {
