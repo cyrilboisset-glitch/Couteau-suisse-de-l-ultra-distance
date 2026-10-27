@@ -2,7 +2,7 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **582 pièces**, dont 24 validées par une page constructeur et **558 à valider**.
+- **591 pièces**, dont 25 validées par une page constructeur et **566 à valider**.
 - Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 223, spindleFits : 0, chainLength : 1, recommendations : 7, families : 46, actuation : 65, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 92 |
 | Sachs | 4 |
-| Shimano | 338 |
+| Shimano | 347 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -41,7 +41,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (149)
+## Dérailleur arrière (150)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -75,6 +75,7 @@
 | RD-4400 | Shimano | route | à valider | totalCapacity |
 | RD-4500-GS | Shimano | route | à valider |  |
 | RD-4500-SS | Shimano | route | à valider |  |
+| RD-4601-GS | Shimano | route | à valider | totalCapacity |
 | RD-4700-GS | Shimano | route | à valider |  |
 | RD-4700-SS | Shimano | route | à valider |  |
 | RD-5500-GS | Shimano | route | à valider |  |
@@ -84,7 +85,7 @@
 | RD-5701-GS | Shimano | route | à valider |  |
 | RD-5701-SS | Shimano | route | à valider |  |
 | RD-5800-GS | Shimano | route | à valider |  |
-| RD-5800-SS | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-5800-SS | Shimano | route | à valider |  |
 | RD-6200 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6207 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6600-GS | Shimano | route | à valider |  |
@@ -126,7 +127,7 @@
 | RD-M8000-SGS | Shimano | vtt | validé |  |
 | RD-M8100-GS | Shimano | vtt | validé |  |
 | RD-M8100-SGS | Shimano | vtt | à valider |  |
-| RD-M8120-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M8120-SGS | Shimano | vtt | à valider |  |
 | RD-M9000-GS | Shimano | vtt | à valider |  |
 | RD-M9000-SGS | Shimano | vtt | à valider |  |
 | RD-M9100-GS | Shimano | vtt | à valider |  |
@@ -148,11 +149,11 @@
 | RD-RX810 | Shimano | gravel | à valider |  |
 | RD-RX812 | Shimano | gravel | à valider |  |
 | RD-RX815 | Shimano | gravel | validé |  |
-| RD-RX817 | Shimano | gravel | à valider | totalCapacity |
+| RD-RX817 | Shimano | gravel | à valider |  |
 | RD-RX820 | Shimano | gravel | validé |  |
 | RD-RX822-GS | Shimano | gravel | validé |  |
 | RD-RX822-SGS | Shimano | gravel | à valider |  |
-| RD-T4000-SGS | Shimano | autre | à valider | totalCapacity |
+| RD-T4000-SGS | Shimano | autre | à valider |  |
 | RD-TX35 | Shimano | vtt | à valider |  |
 | RD-TY300 | Shimano | vtt | à valider |  |
 | Prestige | Simplex | autre | à valider | speeds, totalCapacity |
@@ -195,7 +196,7 @@
 | XC Pro | SunTour | vtt | à valider | maxCog |
 | RD SunTour XCT Lite | SunTour | vtt | à valider | maxCog, totalCapacity |
 
-## Manette / levier de vitesses (78)
+## Manette / levier de vitesses (79)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -248,6 +249,7 @@
 | SL-TX50 (7v) | Shimano | vtt | à valider |  |
 | ST-2400 | Shimano | route | à valider |  |
 | ST-3400 | Shimano | route | à valider |  |
+| ST-3500 | Shimano | route | à valider |  |
 | ST-4600 | Shimano | route | à valider |  |
 | ST-4700 | Shimano | route | à valider |  |
 | ST-5600 | Shimano | route | à valider |  |
@@ -290,7 +292,7 @@
 | BL-T4000 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
-## Cassette / roue libre (152)
+## Cassette / roue libre (154)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -334,6 +336,8 @@
 | CS-6700 11-28 | Shimano | route | à valider |  |
 | CS-6700 12-25 | Shimano | route | à valider |  |
 | CS-6700 12-30 | Shimano | route | à valider |  |
+| CS-9000 11-25 | Shimano | route | à valider |  |
+| CS-9000 11-28 | Shimano | route | à valider |  |
 | CS-HG200-7 12-28 | Shimano | vtt | à valider |  |
 | CS-HG200-7 12-32 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-32 | Shimano | vtt | à valider |  |
@@ -485,15 +489,19 @@
 | PC-850 | SRAM | autre | à valider |  |
 | PC-951 | SRAM | autre | à valider |  |
 
-## Dérailleur avant (24)
+## Dérailleur avant (28)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Nuovo Record (avant, collier 28,6) | Campagnolo | route | à valider | speeds |
+| FD-4600-F | Shimano | route | à valider |  |
 | FD-5700 (collier 31,8) | Shimano | route | à valider |  |
 | FD-5700-F | Shimano | route | à valider |  |
 | FD-5800 (collier) | Shimano | route | à valider | mount |
 | FD-6700-G | Shimano | route | à valider |  |
+| FD-6800 (collier 34,9) | Shimano | route | à valider |  |
+| FD-6800-F | Shimano | route | validé |  |
+| FD-9000-F | Shimano | route | à valider |  |
 | FD-M3100-M | Shimano | vtt | à valider | mount |
 | FD-M4000 | Shimano | vtt | à valider | mount |
 | FD-M590 | Shimano | vtt | à valider |  |
@@ -525,8 +533,8 @@
 | R1 / RX / The One (anciens) | Formula | vtt | à valider | mount |
 | Dyno | Hayes | vtt | à valider | mount |
 | Radar | Hayes | vtt | à valider | mount |
-| Stroker Ryde | Hayes | vtt | à valider | mount |
-| Stroker Trail | Hayes | vtt | à valider | mount |
+| Stroker Ryde | Hayes | vtt | à valider |  |
+| Stroker Trail | Hayes | vtt | à valider |  |
 | RX4+ flat mount | Hope | gravel | à valider |  |
 | Tech 3 E4 | Hope | vtt | à valider | mount |
 | Racer (portée courte) | Mafac | route | à valider | cablePull |
@@ -598,7 +606,7 @@
 | SM-RT70 140 | Shimano | route | à valider |  |
 | SM-RT70 160 | Shimano | route | à valider |  |
 
-## Pédalier (55)
+## Pédalier (56)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -614,6 +622,7 @@
 | FC-6500 | Shimano | route | à valider | bcd, bolts |
 | FC-6503 | Shimano | route | à valider | bcd, bolts |
 | FC-6700 | Shimano | route | à valider |  |
+| FC-6800 50-34 | Shimano | route | à valider |  |
 | FC-7700 | Shimano | route | à valider | bcd, bolts |
 | FC-7800 53-39 | Shimano | route | à valider | bolts |
 | FC-7900 53-39 | Shimano | route | à valider | bolts |
@@ -663,7 +672,7 @@
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Cuvettes Ultra-Torque BSA | Campagnolo | route | à valider |  |
-| BB-5500 | Shimano | route | à valider | shell |
+| BB-5500 | Shimano | route | à valider |  |
 | BB-ES25 BSA 68 | Shimano | autre | à valider |  |
 | BB-RS501 | Shimano | route | à valider |  |
 | BB-UN300 BSA 68 | Shimano | autre | à valider |  |

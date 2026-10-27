@@ -147,6 +147,16 @@
    "kind": "revendeur",
    "ref": "Excel Sports – Force 22 : chape courte 33T ; WiFLi 37T, 32T max",
    "url": "https://www.excelsports.com/sram-force-22-11-speed-rear-derailleur"
+  },
+  "nanobike-xg1175": {
+   "kind": "revendeur",
+   "ref": "Nanobike – XG-1175 10-42 : 10-12-14-16-18-21-24-28-32-36-42",
+   "url": "https://nanobike.de/en/bike-parts/chains-cassettes/cassettes-11-speed/26839/sram-cassette-xg-1175-11-speed-10-42-teeth-black"
+  },
+  "bikebug-pg1130": {
+   "kind": "revendeur",
+   "ref": "Bikebug – PG-1130 11-42 : 11-13-15-17-19-22-25-28-32-36-42",
+   "url": "https://www.bikebug.com/sram-apex-1-pg1130-11-42t-11-speed-cassette.html"
   }
  },
  "parts": [
@@ -476,9 +486,12 @@
     "clutch": true,
     "maxFrontChainrings": 1
    },
-   "src": "condor-apex1",
+   "src": [
+    "condor-apex1"
+   ],
    "confidence": "moyenne",
-   "status": "a_valider"
+   "status": "a_valider",
+   "notes": "Capacité totale non confirmée : 32T ou 25T selon les revendeurs (champ laissé vide, à valider)."
   },
   {
    "id": "sram-rd-x01-11",
@@ -624,9 +637,13 @@
     "minCog": 10,
     "maxCog": 42,
     "freehub": "xd",
-    "pitch": "hg-11"
+    "pitch": "hg-11",
+    "cogs": "10-12-14-16-18-21-24-28-32-36-42"
    },
-   "src": "bc-xg1175",
+   "src": [
+    "bc-xg1175",
+    "nanobike-xg1175"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -672,11 +689,13 @@
     "minCog": 11,
     "maxCog": 42,
     "freehub": "hg_8_9_10",
-    "pitch": "hg-11"
+    "pitch": "hg-11",
+    "cogs": "11-13-15-17-19-22-25-28-32-36-42"
    },
    "src": [
     "atc-pg1130",
-    "bc-pg1130"
+    "bc-pg1130",
+    "bikebug-pg1130"
    ],
    "confidence": "moyenne",
    "status": "a_valider"

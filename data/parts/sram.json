@@ -192,6 +192,11 @@
    "kind": "revendeur",
    "ref": "Campfire Cycling – NX Eagle chape longue : 50T max, capacité 40T",
    "url": "https://www.campfirecycling.com/product/sram-nx-eagle-rear-derailleur.html"
+  },
+  "b24-xg1270": {
+   "kind": "revendeur",
+   "ref": "Bike24 / Halfords / Nashbar – XG-1270 : 10-26, 10-28, 10-33, 10-36 (étagements)",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/sram-xg-1270-e1-12-speed-cassette-10-33t-460499.html"
   }
  },
  "parts": [
@@ -756,9 +761,13 @@
     "maxCog": 26,
     "freehub": "xdr",
     "pitch": "sram-road-12",
-    "chainTypes": "sram-flattop"
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-12-13-14-15-16-17-19-21-23-26"
    },
-   "src": "pb-xg1290",
+   "src": [
+    "pb-xg1290",
+    "b24-xg1270"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -780,9 +789,13 @@
     "maxCog": 28,
     "freehub": "xdr",
     "pitch": "sram-road-12",
-    "chainTypes": "sram-flattop"
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-12-13-14-15-16-17-19-21-24-28"
    },
-   "src": "pb-xg1290",
+   "src": [
+    "pb-xg1290",
+    "b24-xg1270"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -804,9 +817,13 @@
     "maxCog": 33,
     "freehub": "xdr",
     "pitch": "sram-road-12",
-    "chainTypes": "sram-flattop"
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-12-13-14-15-17-19-21-24-28-33"
    },
-   "src": "pb-xg1290",
+   "src": [
+    "pb-xg1290",
+    "b24-xg1270"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -828,9 +845,13 @@
     "maxCog": 36,
     "freehub": "xdr",
     "pitch": "sram-road-12",
-    "chainTypes": "sram-flattop"
+    "chainTypes": "sram-flattop",
+    "cogs": "10-11-12-13-15-17-19-21-24-28-32-36"
    },
-   "src": "pb-xg1290",
+   "src": [
+    "pb-xg1290",
+    "b24-xg1270"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },

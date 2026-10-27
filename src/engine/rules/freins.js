@@ -120,10 +120,19 @@ export const porteeEtrier = {
   evaluate(cal, frame) {
     if (cal.attrs?.brakeType !== 'jante' || cal.attrs?.mount !== 'etrier_central') return null;
     if (!frame.attrs?.brakeReach) return null;
-    const g = guard(this, [[cal, ['reachMin', 'reachMax']]]);
+    const g = guard(this, [[cal, ['reachMax']]]);
     if (g) return g.finding;
     const r = frame.attrs.brakeReach;
     const { reachMin: a, reachMax: b } = cal.attrs;
+    // Le constructeur ne donne parfois que la portée maximale.
+    if (a === undefined || a === null) {
+      if (r <= b) {
+        return ok(this, `Portée jusqu'à ${b} mm, cadre ${r} mm.`, {
+          condition: 'Portée minimale non renseignée : vérifier que les patins ne descendent pas sous la piste de freinage.',
+        });
+      }
+      return incompatible(this, `Portée maximale ${b} mm trop courte pour ce cadre (${r} mm) : les patins n'atteignent pas la jante.`, { absolute: false });
+    }
     if (r >= a && r <= b) return ok(this, `Portée ${a}–${b} mm, cadre ${r} mm.`);
     return incompatible(this, r > b
       ? `Portée ${a}–${b} mm trop courte pour ce cadre (${r} mm) : les patins n'atteignent pas la jante.`

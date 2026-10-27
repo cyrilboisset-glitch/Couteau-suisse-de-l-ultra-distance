@@ -73,8 +73,14 @@ describe('freins sur jante : portée', () => {
     assert.ok(r.reasons.some((x) => /trop courte/.test(x)));
   });
   test('portée inconnue de l\'étrier : donnée manquante signalée', () => {
-    const r = checkPair(P('shimano-br-r8000'), frame(52), kb);
-    assert.ok(r.missing.some((x) => /reachMin|reachMax/.test(x)));
+    const r = checkPair(P('shimano-br-9000'), frame(52), kb);
+    assert.ok(r.missing.some((x) => /reachMax/.test(x)));
+  });
+  test('seule la portée maximale est connue (BR-R8000, 51 mm) : 49 mm passe, 57 mm refusé', () => {
+    const okR = checkPair(P('shimano-br-r8000'), frame(49), kb);
+    assert.ok(okR.level <= LEVEL.KNOWN);
+    assert.ok(okR.conditions.some((x) => /minimale/.test(x)));
+    assert.equal(checkPair(P('shimano-br-r8000'), frame(57), kb).level, LEVEL.INCOMPATIBLE);
   });
 });
 

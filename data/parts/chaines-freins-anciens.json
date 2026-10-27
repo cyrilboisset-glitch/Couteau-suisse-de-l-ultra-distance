@@ -142,6 +142,11 @@
    "kind": "revendeur",
    "ref": "Treefort Bikes – BR-6600 Ultegra SL : portée 39-49 mm",
    "url": "https://www.treefortbikes.com/Shimano-Ultegra-SL-BR-6600-G-Brake-caliper"
+  },
+  "shimano-br-5800": {
+   "kind": "officiel",
+   "ref": "Shimano – BR-5800 : portée 51 mm, pneu 28C max, jante 19-28 mm",
+   "url": "https://bike.shimano.com/en-EU/product/component/105-5800/BR-5800.html"
   }
  },
  "parts": [
@@ -437,12 +442,14 @@
     "brakeActuation": "mecanique",
     "cablePull": "court",
     "mount": "etrier_central",
-    "padShape": "shimano-R55C4"
+    "padShape": "shimano-R55C4",
+    "reachMax": 51
    },
    "src": [
     "velomine-r55c4",
     "nashbar-br6800",
-    "bots-br9000"
+    "bots-br9000",
+    "shimano-br-5800"
    ],
    "confidence": "moyenne",
    "notes": "Prévu pour leviers Super SLR / SLR-EV (ex. 9000, 7900, 6800, 6700, 5800, 5700, 4600) ; avec des leviers SLR standard plus anciens, freinage spongieux.",

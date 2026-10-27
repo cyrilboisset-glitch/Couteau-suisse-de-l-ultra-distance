@@ -357,6 +357,21 @@
    "kind": "revendeur",
    "ref": "Performance Bike – Veloce 10v : 11-25 (11-12-13-14-15-17-19-21-23-25), 13-29 (13-14-15-16-17-19-21-23-26-29)",
    "url": "https://performancebike.com/campagnolo-veloce-cassette-10-speed-1326t-silver-cs9-vlx36/p343016"
+  },
+  "meinhartje-campa11": {
+   "kind": "revendeur",
+   "ref": "Meinhartje – Campagnolo Chorus 11v : 11-25 (11-12-13-14-15-16-17-19-21-23-25), 11-27 (11-12-13-14-15-17-19-21-23-25-27)",
+   "url": "https://meinhartje.com/en/campagnolo-cassette-sprocket-chorus-11/07370851"
+  },
+  "shimano-br-r8000": {
+   "kind": "officiel",
+   "ref": "Shimano – BR-R8000 : portée 51 mm, pneu 28C max, jante 20,8-28 mm",
+   "url": "https://bike.shimano.com/en-EU/product/component/ultegra-r8000/BR-R8000.html"
+  },
+  "stw-spyre-b01": {
+   "kind": "communaute",
+   "ref": "Singletrack – la TRP Spyre utilise la plaquette générique B01 (Shimano M525/M515)",
+   "url": "https://singletrackworld.com/forum/bike-forum/pads-for-trp-sypres/"
   }
  },
  "parts": [
@@ -926,10 +941,12 @@
     "clutch": true,
     "maxFrontChainrings": 2
    },
-   "src": "pb-gx11",
+   "src": [
+    "pb-gx11"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Capacité 41, 44 ou 46T selon les sources : laissée vide."
+   "notes": "Capacité totale non confirmée : 32T ou 41T selon les revendeurs (champ laissé vide, à valider)."
   },
   {
    "id": "campagnolo-rd-chorus11-ss",
@@ -1905,9 +1922,13 @@
     "minCog": 11,
     "maxCog": 25,
     "pitch": "campagnolo-11",
-    "freehub": "campagnolo"
+    "freehub": "campagnolo",
+    "cogs": "11-12-13-14-15-16-17-19-21-23-25"
    },
-   "src": "bc-campa11",
+   "src": [
+    "bc-campa11",
+    "meinhartje-campa11"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1928,9 +1949,13 @@
     "minCog": 11,
     "maxCog": 27,
     "pitch": "campagnolo-11",
-    "freehub": "campagnolo"
+    "freehub": "campagnolo",
+    "cogs": "11-12-13-14-15-17-19-21-23-25-27"
    },
-   "src": "bc-campa11",
+   "src": [
+    "bc-campa11",
+    "meinhartje-campa11"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2452,9 +2477,13 @@
     "brakeActuation": "mecanique",
     "cablePull": "court",
     "mount": "etrier_central",
-    "padShape": "shimano-R55C4"
+    "padShape": "shimano-R55C4",
+    "reachMax": 51
    },
-   "src": "ss-r55c4",
+   "src": [
+    "ss-r55c4",
+    "shimano-br-r8000"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2590,12 +2619,16 @@
     "brakeType": "disque",
     "brakeActuation": "mecanique",
     "cablePull": "court",
-    "mount": "flat_mount"
+    "mount": "flat_mount",
+    "padShape": "shimano-B"
    },
-   "src": "pb-spyre",
+   "src": [
+    "pb-spyre",
+    "stw-spyre-b01"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Adaptateur avant FF-5 vendu à part. Forme de plaquette non renseignée."
+   "notes": "Plaquettes type B01 (Shimano M525/M515) selon des utilisateurs : à valider."
   },
   {
    "id": "shimano-sm-rt56-160",

@@ -292,6 +292,21 @@
    "kind": "revendeur",
    "ref": "Rose – FD-M3100-M Alivio 3x9 à collier",
    "url": "https://www.rosebikes.com/p/shimano-alivio-fd-m3100-m-front-derailleur-3-x-9-speed-clamp-attachment-2689550"
+  },
+  "shimano-rd-t4000": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-T4000 : capacité totale 45T, plus grand pignon 28-34T",
+   "url": "https://bike.shimano.com/en-AU/product/component/alivio-t4000/RD-T4000.html"
+  },
+  "pb-fd-m6000": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – FD-M6000 3x10 : plateau max 42T, capacité 18T",
+   "url": "https://www.performancebike.com/shimano-deore-fdm6000h-3x10-front-derailleur-31.8-34.9mm-frontpull-ifdm6000hx6/p630899"
+  },
+  "sigma-fd-m590": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – FD-M590 : capacité 22T, plateau max 48T",
+   "url": "https://www.sigmasport.co.uk/item/Shimano/Deore-M590-Mountain-Bike-Top-Swing-Front-Derailleur/IVO"
   }
  },
  "parts": [
@@ -573,9 +588,14 @@
     "family": "shimano-9",
     "maxCog": 34,
     "cageLength": "SGS",
-    "maxFrontChainrings": 3
+    "maxFrontChainrings": 3,
+    "totalCapacity": 45,
+    "minLowCog": 28
    },
-   "src": "rose-rdt4000",
+   "src": [
+    "rose-rdt4000",
+    "shimano-rd-t4000"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1382,12 +1402,15 @@
     "chainrings": 3,
     "system": "mecanique",
     "family": "shimano-vtt-10",
-    "mount": "collier_34_9"
+    "mount": "collier_34_9",
+    "capacity": 18,
+    "maxRing": 42
    },
    "src": [
     "shimano-fdm6000l",
     "bc-fdm6000",
-    "nashbar-fdm6000"
+    "nashbar-fdm6000",
+    "pb-fd-m6000"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
@@ -1645,9 +1668,13 @@
     "family": "shimano-9",
     "mount": "collier_34_9",
     "maxRing": 48,
-    "chainline": 50
+    "chainline": 50,
+    "capacity": 22
    },
-   "src": "mtbiker-fdm590",
+   "src": [
+    "mtbiker-fdm590",
+    "sigma-fd-m590"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
    "notes": "Cale 31,8 mm. Tirage haut ou bas."

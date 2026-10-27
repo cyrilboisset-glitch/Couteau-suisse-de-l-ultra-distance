@@ -61,6 +61,11 @@
    "kind": "revendeur",
    "ref": "bike-components – CS-M6100-12 10-51, Micro Spline",
    "url": "https://www.bike-components.de/en/Shimano/Deore-CS-M6100-12-12-speed-Cassette-p77711"
+  },
+  "ebay-csr8100-1130": {
+   "kind": "revendeur",
+   "ref": "Annonce revendeur – CS-R8100 11-30 : 11-12-13-14-15-16-17-19-21-24-27-30",
+   "url": "https://www.ebay.de/itm/146794177865"
   }
  },
  "parts": [
@@ -500,9 +505,13 @@
     "minCog": 11,
     "maxCog": 30,
     "freehub": "hg_12_route",
-    "pitch": "shimano-12"
+    "pitch": "shimano-12",
+    "cogs": "11-12-13-14-15-16-17-19-21-24-27-30"
    },
-   "src": "rose-r8100",
+   "src": [
+    "rose-r8100",
+    "ebay-csr8100-1130"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
    "notes": "Étagement intermédiaire non trouvé."

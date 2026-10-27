@@ -161,6 +161,16 @@
    "kind": "revendeur",
    "ref": "Go Bike and Brew – RD-M8100-SGS : 10-51T, capacité 41T",
    "url": "https://www.gobikeandbrew.ca/shimano-rd-m8100-sgs-xt-12-speed-rear-derailleur-5.html"
+  },
+  "biketart-rd-rx817": {
+   "kind": "revendeur",
+   "ref": "Biketart (revendeur officiel Shimano UK) – RD-RX817 : capacité totale 31T, pignon max 42T (un autre revendeur indique 41T)",
+   "url": "https://biketart.com/products/shimano-grx-di2-rd-rx817-11-speed-shadow-single-rear-mech"
+  },
+  "velonova-rd-m8120": {
+   "kind": "revendeur",
+   "ref": "Velonova – RD-M8120 SGS : pignon max 45T, min 10T, capacité totale 45T",
+   "url": "https://www.velonova.lt/en/shimano-deore-xt-rd-m8120-front-double-sgs-rear-derailleur-11-speed"
   }
  },
  "parts": [
@@ -644,9 +654,13 @@
     "family": "shimano-di2-11",
     "maxCog": 42,
     "mount": "standard",
-    "maxFrontChainrings": 1
+    "maxFrontChainrings": 1,
+    "totalCapacity": 31
    },
-   "src": "halfords-rx815",
+   "src": [
+    "halfords-rx815",
+    "biketart-rd-rx817"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -776,9 +790,13 @@
     "minCog": 10,
     "cageLength": "SGS",
     "mount": "standard",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 2,
+    "totalCapacity": 45
    },
-   "src": "sh-m8120-sgs",
+   "src": [
+    "sh-m8120-sgs",
+    "velonova-rd-m8120"
+   ],
    "confidence": "haute",
    "status": "a_valider"
   },

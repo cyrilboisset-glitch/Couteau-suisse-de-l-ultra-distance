@@ -297,6 +297,66 @@
    "kind": "revendeur",
    "ref": "bike-components – CS-R7000 : 11-28 (11-12-13-14-15-17-19-21-23-25-28), 11-32 (11-12-13-14-16-18-20-22-25-28-32) ; pignons communs avec la CS-5800",
    "url": "https://www.bike-components.de/en/Shimano/105-CS-R7000-11-speed-Cassette-p62071/"
+  },
+  "geartrade-rd-5800": {
+   "kind": "revendeur",
+   "ref": "Geartrade – RD-5800 SS : pignon max 28T, min 23T, différence avant 16T, capacité 33T",
+   "url": "https://geartrade.com/products/shimano-105-rd-5800-11sp-rear-derailleur-1524424"
+  },
+  "bc-cs6700": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-6700 : 11-23, 11-25 (11-12-13-14-15-17-19-21-23-25), 11-28 (11-12-13-14-15-17-19-21-24-28)",
+   "url": "https://www.bike-components.de/en/Shimano/Ultegra-CS-6700-10-speed-Cassette-p22072/"
+  },
+  "sjs-hg50": {
+   "kind": "revendeur",
+   "ref": "SJS Cycles – CS-HG50 9v 13-25 (13-14-15-16-17-19-21-23-25), 14-25 (14-15-16-17-18-19-21-23-25) ; 8v 13-26 (13-14-15-17-19-21-23-26)",
+   "url": "https://sjscycles.co.uk/cassettes/1125-shimano-cshg50-9-speed-cassette"
+  },
+  "atc-bb-5500": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – BB-5500 Octalink BSA 68 mm (existe aussi en ITA 70 mm, E-BB5500I18)",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-bb-5500-octalink-bottom-bracket-68mm"
+  },
+  "shimano-fd-6800-f": {
+   "kind": "officiel",
+   "ref": "Shimano – FD-6800-F braze-on 2x11 : ligne de chaîne 43,5 mm, grand plateau 46-53T, capacité 16T",
+   "url": "https://bike.shimano.com/en-EU/product/component/ultegra-6800/FD-6800-F.html"
+  },
+  "sigma-fd-6800": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – FD-6800 collier 34,9 mm : capacité 16T, grand plateau 46-53T",
+   "url": "https://www.sigmasport.co.uk/item/Shimano/FD-6800-Ultegra-11-Speed-Front-Derailleur-Double-349-mm/BBIR"
+  },
+  "tpc-fc-6800": {
+   "kind": "revendeur",
+   "ref": "The Pro's Closet – FC-6800 50-34, BCD 110 mm, Hollowtech II",
+   "url": "https://www.theproscloset.com/products/shimano-ultegra-fc-6800-crankset-175mm-50-34t-110m-bcd-hollowtech-ii"
+  },
+  "bd-cs-9000": {
+   "kind": "revendeur",
+   "ref": "bike-discount – CS-9000 : 11-25 (11-12-13-14-15-16-17-19-21-23-25), 11-28 (11-12-13-14-15-17-19-21-23-25-28)",
+   "url": "https://www.bike-discount.de/en/shimano-sprocket-wheel-for-cs-r9100/cs-9000"
+  },
+  "shimano-fd-9000-f": {
+   "kind": "officiel",
+   "ref": "Shimano – FD-9000-F : braze-on, down swing, 2x11 route",
+   "url": "https://bike.shimano.com/en-EU/product/component/duraace-9000/FD-9000-F.html"
+  },
+  "tf-rd-4601-gs": {
+   "kind": "revendeur",
+   "ref": "Treefort Bikes – RD-4601-GS : jusqu'à 32T avec pédalier double",
+   "url": "https://www.treefortbikes.com/Shimano-Tiagra-4601-10-Speed-Rear-Derailleur-GS-Mid-Cage"
+  },
+  "rowertour-fd-4600": {
+   "kind": "revendeur",
+   "ref": "Rowertour – FD-4600 Tiagra 2x10, braze-on",
+   "url": "https://www.rowertour.com/p/g019452/shimano-fd-4600-tiagra-przerzutka-przednia-2rz.-na-hak"
+  },
+  "pb-fd-3500": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – leviers Sora 3500 pour transmission 9v",
+   "url": "https://www.performancebike.com/shimano-sora-fd3500-front-derailleur-3-x-9-speed-efd3500bsm-p/p1278435"
   }
  },
  "parts": [
@@ -403,9 +463,16 @@
     "speeds": 11,
     "family": "shimano-route-11",
     "cageLength": "SS",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 2,
+    "maxCog": 28,
+    "minLowCog": 23,
+    "maxFrontDiff": 16,
+    "totalCapacity": 33
    },
-   "src": "atc-rd5800ss",
+   "src": [
+    "atc-rd5800ss",
+    "geartrade-rd-5800"
+   ],
    "confidence": "basse",
    "status": "a_valider",
    "notes": "Pignon max et capacité contradictoires selon les sources : non renseignés (lire l'étiquette du dérailleur)."
@@ -1326,12 +1393,17 @@
    "discipline": "route",
    "generation": "Octalink V1",
    "attrs": {
-    "spindle": "octalink_v1"
+    "spindle": "octalink_v1",
+    "shell": "bsa",
+    "shellWidth": 68
    },
-   "src": "mb-bb5500",
+   "src": [
+    "mb-bb5500",
+    "atc-bb-5500"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Existe en filetage BSA et ITA, plusieurs longueurs d'axe : reprendre celle d'origine. Coque non renseignée."
+   "notes": "Version BSA 68 mm. Une version ITA 70 mm existe (E-BB5500I18)."
   },
   {
    "id": "shimano-rd-7700-ss",
@@ -1783,9 +1855,13 @@
     "minCog": 11,
     "maxCog": 23,
     "pitch": "hg-10",
-    "freehub": "hg_8_9_10"
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-14-15-16-17-19-21-23"
    },
-   "src": "atc-cs6700",
+   "src": [
+    "atc-cs6700",
+    "bc-cs6700"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1806,9 +1882,13 @@
     "minCog": 11,
     "maxCog": 25,
     "pitch": "hg-10",
-    "freehub": "hg_8_9_10"
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-14-15-17-19-21-23-25"
    },
-   "src": "atc-cs6700",
+   "src": [
+    "atc-cs6700",
+    "bc-cs6700"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1829,9 +1909,13 @@
     "minCog": 11,
     "maxCog": 28,
     "pitch": "hg-10",
-    "freehub": "hg_8_9_10"
+    "freehub": "hg_8_9_10",
+    "cogs": "11-12-13-14-15-17-19-21-24-28"
    },
-   "src": "atc-cs6700",
+   "src": [
+    "atc-cs6700",
+    "bc-cs6700"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1980,9 +2064,13 @@
     "minCog": 13,
     "maxCog": 25,
     "pitch": "hg-9",
-    "freehub": "hg_8_9_10"
+    "freehub": "hg_8_9_10",
+    "cogs": "13-14-15-16-17-19-21-23-25"
    },
-   "src": "bc-hg50-9",
+   "src": [
+    "bc-hg50-9",
+    "sjs-hg50"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2003,9 +2091,13 @@
     "minCog": 14,
     "maxCog": 25,
     "pitch": "hg-9",
-    "freehub": "hg_8_9_10"
+    "freehub": "hg_8_9_10",
+    "cogs": "14-15-16-17-18-19-21-23-25"
    },
-   "src": "bc-hg50-9",
+   "src": [
+    "bc-hg50-9",
+    "sjs-hg50"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2026,9 +2118,13 @@
     "minCog": 13,
     "maxCog": 26,
     "pitch": "hg-8",
-    "freehub": "hg_8_9_10"
+    "freehub": "hg_8_9_10",
+    "cogs": "13-14-15-17-19-21-23-26"
    },
-   "src": "b24-hg50-8",
+   "src": [
+    "b24-hg50-8",
+    "sjs-hg50"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2163,6 +2259,252 @@
    },
    "src": "si-5tk0d",
    "confidence": "haute",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-6800-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-6800-F",
+   "aliases": [
+    "fd 6800",
+    "ultegra 6800 avant"
+   ],
+   "name": "Ultegra 6800 dérailleur avant braze-on",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "mount": "braze_on",
+    "capacity": 16,
+    "maxRing": 53,
+    "minRing": 46,
+    "chainline": 43.5
+   },
+   "src": [
+    "shimano-fd-6800-f"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-fd-6800-collier",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-6800 (collier 34,9)",
+   "aliases": [
+    "fd 6800 collier"
+   ],
+   "name": "Ultegra 6800 dérailleur avant à collier 34,9",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "mount": "collier_34_9",
+    "capacity": 16,
+    "maxRing": 53,
+    "minRing": 46
+   },
+   "src": [
+    "sigma-fd-6800"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-6800-50-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-6800 50-34",
+   "aliases": [
+    "fc 6800",
+    "ultegra 6800 pedalier"
+   ],
+   "name": "Ultegra 6800 50-34",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "50-34"
+   },
+   "src": [
+    "tpc-fc-6800"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étoile 4 branches commune à toutes les dentures (BCD 110 asymétrique)."
+  },
+  {
+   "id": "shimano-cs-9000-11-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-9000 11-25",
+   "aliases": [
+    "cs 9000 11-25",
+    "dura-ace 9000 11-25"
+   ],
+   "name": "Dura-Ace 9000 11v 11-25",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 25,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-16-17-19-21-23-25",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "bd-cs-9000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-9000-11-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-9000 11-28",
+   "aliases": [
+    "cs 9000 11-28",
+    "dura-ace 9000 11-28"
+   ],
+   "name": "Dura-Ace 9000 11v 11-28",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 28,
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-17-19-21-23-25-28",
+    "pitch": "hg-11"
+   },
+   "src": [
+    "bd-cs-9000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-9000-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-9000-F",
+   "aliases": [
+    "fd 9000",
+    "dura-ace 9000 avant"
+   ],
+   "name": "Dura-Ace 9000 dérailleur avant braze-on",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "mount": "braze_on"
+   },
+   "src": [
+    "shimano-fd-9000-f"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité non publiée dans la source (champ vide)."
+  },
+  {
+   "id": "shimano-rd-4601-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-4601-GS",
+   "aliases": [
+    "rd 4601",
+    "tiagra 4601",
+    "tiagra 4600 derailleur"
+   ],
+   "name": "Tiagra 4600 chape moyenne (double)",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 32,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tf-rd-4601-gs"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale non trouvée (champ vide)."
+  },
+  {
+   "id": "shimano-fd-4600-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-4600-F",
+   "aliases": [
+    "fd 4600",
+    "tiagra 4600 avant"
+   ],
+   "name": "Tiagra 4600 dérailleur avant braze-on (double)",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "mount": "braze_on"
+   },
+   "src": [
+    "rowertour-fd-4600"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité non trouvée (champ vide)."
+  },
+  {
+   "id": "shimano-st-3500",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-3500",
+   "aliases": [
+    "st 3500",
+    "sora 3500"
+   ],
+   "name": "Sora 3500 leviers 9v",
+   "discipline": "route",
+   "generation": "Sora 3500 (9v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "levier_route",
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "pb-fd-3500"
+   ],
+   "confidence": "basse",
    "status": "a_valider"
   }
  ]

@@ -82,6 +82,16 @@
    "kind": "presse",
    "ref": "Pinkbike – Formula Cura : 1er frein Formula à huile minérale (tous les précédents au DOT), joints nouveaux, accepte les plaquettes Formula précédentes",
    "url": "https://m.pinkbike.com/news/formula-cura-brake-sea-otter-2016.html"
+  },
+  "mbr-stroker": {
+   "kind": "presse",
+   "ref": "MBR – Hayes Stroker : tous les modèles partagent le même étrier post mount à deux pistons opposés",
+   "url": "https://www.mbr.co.uk/reviews/products/hayes-stroker-trail-120"
+  },
+  "galfer-formula-16": {
+   "kind": "revendeur",
+   "ref": "Galfer – plaquette forme n°16 : Formula C1, Cura, Mega, R0, R1 (2008+), RR1, RX (2009+), T1, The One",
+   "url": "https://velomine.com/products/galfer-formula-c1-cura-mega-ro-r1-rr1-rx-t1-the-one-disc-brake-pads-standard-compound"
   }
  },
  "parts": [
@@ -300,11 +310,13 @@
     "brakeActuation": "hydraulique",
     "fluid": "dot",
     "fluidSpec": "dot_4",
-    "hydraulicSystem": "hayes-stroker"
+    "hydraulicSystem": "hayes-stroker",
+    "mount": "post_mount"
    },
    "src": [
     "stw-hayes-dot",
-    "biketart-bleedkit"
+    "biketart-bleedkit",
+    "mbr-stroker"
    ],
    "confidence": "basse",
    "status": "a_valider",
@@ -326,11 +338,13 @@
     "brakeType": "disque",
     "brakeActuation": "hydraulique",
     "fluid": "dot",
-    "padShape": "hayes-ryde"
+    "padShape": "hayes-ryde",
+    "mount": "post_mount"
    },
    "src": [
     "wwc-hayes",
-    "biketart-bleedkit"
+    "biketart-bleedkit",
+    "mbr-stroker"
    ],
    "confidence": "basse",
    "status": "a_valider",
@@ -496,11 +510,13 @@
     "brakeActuation": "hydraulique",
     "fluid": "mineral",
     "fluidSpec": "formula_mineral",
-    "hydraulicSystem": "formula-cura"
+    "hydraulicSystem": "formula-cura",
+    "padShape": "formula-16"
    },
    "src": [
     "bc-formula-oil",
-    "pinkbike-cura"
+    "pinkbike-cura",
+    "galfer-formula-16"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
@@ -545,11 +561,13 @@
    "attrs": {
     "brakeType": "disque",
     "brakeActuation": "hydraulique",
-    "fluid": "dot"
+    "fluid": "dot",
+    "padShape": "formula-16"
    },
    "src": [
     "pinkbike-cura",
-    "biketart-bleedkit"
+    "biketart-bleedkit",
+    "galfer-formula-16"
    ],
    "confidence": "basse",
    "status": "a_valider",
