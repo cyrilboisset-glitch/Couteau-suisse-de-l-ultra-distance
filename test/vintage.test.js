@@ -88,3 +88,11 @@ describe('boîtiers vintage', () => {
     assert.equal(checkPair(P('yst-bb-sans-filetage'), frame('ita'), kb).level, LEVEL.DEGRADED);
   });
 });
+
+describe('pédaliers à plateaux rivetés', () => {
+  test('un plateau seul ne se monte pas sur un pédalier riveté', () => {
+    const ring = { id: 'r', type: 'chainring', brand: 'test', ref: 'plateau 104', attrs: { ringInterface: 'bcd', bcd: 104, bolts: 4 }, sources: [{ kind: 'physique' }] };
+    const r = checkPair(P('shimano-fc-ty301-42-34-24'), ring, kb);
+    assert.equal(r.level, LEVEL.INCOMPATIBLE);
+  });
+});

@@ -57,6 +57,11 @@
    "kind": "revendeur",
    "ref": "eBay – cocottes EC-RE500 pour Ergopower 8 et 9v Record, Chorus, Centaur, Veloce",
    "url": "https://www.ebay.com/itm/306262249003"
+  },
+  "nashbar-veloce9-cs": {
+   "kind": "revendeur",
+   "ref": "Nashbar – Veloce 9v : 12-23 (12-13-14-15-16-17-19-21-23), 13-26 (13-14-15-16-17-19-21-23-26)",
+   "url": "https://nashbar.com/campagnolo-veloce-cassette-9-speed-1326t-silver-cs01-ec0936/p312191"
   }
  },
  "parts": [
@@ -184,9 +189,13 @@
     "minCog": 12,
     "maxCog": 23,
     "pitch": "campagnolo-9",
-    "freehub": "campagnolo"
+    "freehub": "campagnolo",
+    "cogs": "12-13-14-15-16-17-19-21-23"
    },
-   "src": "bc-veloce9-cs",
+   "src": [
+    "bc-veloce9-cs",
+    "nashbar-veloce9-cs"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -207,9 +216,13 @@
     "minCog": 13,
     "maxCog": 26,
     "pitch": "campagnolo-9",
-    "freehub": "campagnolo"
+    "freehub": "campagnolo",
+    "cogs": "13-14-15-16-17-19-21-23-26"
    },
-   "src": "bc-veloce9-cs",
+   "src": [
+    "bc-veloce9-cs",
+    "nashbar-veloce9-cs"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },

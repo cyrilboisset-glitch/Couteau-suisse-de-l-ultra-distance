@@ -132,6 +132,16 @@
    "kind": "revendeur",
    "ref": "bike-components – leviers Tiagra BL-4700 (cintre plat) : étriers route BR-9000, BR-6800, BR-5800…",
    "url": "https://www.bike-components.de/en/Shimano/Tiagra-BL-4700-Brake-Levers-p43856/"
+  },
+  "pb-br-6800": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – BR-6800 : Short Reach Caliper (39-49 mm)",
+   "url": "https://performancebike.com/shimano-ultegra-br6800-brake-caliper-set-ibr6800a82/p304750"
+  },
+  "tf-br-6600": {
+   "kind": "revendeur",
+   "ref": "Treefort Bikes – BR-6600 Ultegra SL : portée 39-49 mm",
+   "url": "https://www.treefortbikes.com/Shimano-Ultegra-SL-BR-6600-G-Brake-caliper"
   }
  },
  "parts": [
@@ -396,12 +406,15 @@
     "brakeActuation": "mecanique",
     "cablePull": "court",
     "mount": "etrier_central",
-    "padShape": "shimano-R55C4"
+    "padShape": "shimano-R55C4",
+    "reachMin": 39,
+    "reachMax": 49
    },
    "src": [
     "velomine-r55c4",
     "nashbar-br6800",
-    "bots-br9000"
+    "bots-br9000",
+    "pb-br-6800"
    ],
    "confidence": "moyenne",
    "notes": "Prévu pour leviers Super SLR / SLR-EV (ex. 9000, 7900, 6800, 6700, 5800, 5700, 4600) ; avec des leviers SLR standard plus anciens, freinage spongieux.",
@@ -544,9 +557,14 @@
     "brakeActuation": "mecanique",
     "cablePull": "court",
     "mount": "etrier_central",
-    "padShape": "shimano-R55C4"
+    "padShape": "shimano-R55C4",
+    "reachMin": 39,
+    "reachMax": 49
    },
-   "src": "velomine-r55c4",
+   "src": [
+    "velomine-r55c4",
+    "tf-br-6600"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },

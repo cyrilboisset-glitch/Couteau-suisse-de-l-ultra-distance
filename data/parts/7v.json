@@ -102,6 +102,26 @@
    "kind": "revendeur",
    "ref": "Performance Bike – KMC Z8.1 6/7v et moyeux à vitesses intégrées 8v (pas pour HG 8v)",
    "url": "https://www.performancebike.com/kmc-z8.1-nickleplated-chain-silver-grey-68-speed-116-links-z8.1-x-116l-np-gy/p943505"
+  },
+  "shimano-fc-a070": {
+   "kind": "officiel",
+   "ref": "Shimano – FC-A070 : interface boîtier axe carré",
+   "url": "https://bike.shimano.com/en-EU/product/component/tourney-a070/FC-A070.html"
+  },
+  "velomine-fc-a070": {
+   "kind": "revendeur",
+   "ref": "Velomine – FC-A070 50/34 riveté, axe carré JIS",
+   "url": "https://velomine.com/products/shimano-tourney-fc-a070-crankset-170mm-7-8-speed-50-34t-riveted-square-taper-jis-spindle-interface-black"
+  },
+  "veloplus-fc-ty301": {
+   "kind": "revendeur",
+   "ref": "Veloplus – FC-TY301 42-34-24 / 48-38-28, plateaux rivetés, axe carré",
+   "url": "https://veloplus.ee/en/vandad-shimano-fc-ty301-3x678-kaiku-60585"
+  },
+  "modernbike-fc-ty501": {
+   "kind": "revendeur",
+   "ref": "Modern Bike – FC-TY501 42/34/24 riveté, axe carré JIS",
+   "url": "https://www.modernbike.com/shimano-tourney-fc-ty501-crankset---170mm-6-7-8-speed-42-34-24t-riveted-square-taper-jis-spindle-interface-black"
   }
  },
  "parts": [
@@ -229,9 +249,14 @@
     "speeds": 8,
     "spindle": "carre_jis",
     "chainrings": 2,
-    "teeth": "50-34"
+    "teeth": "50-34",
+    "ringInterface": "rivete"
    },
-   "src": "shimano-fca070",
+   "src": [
+    "shimano-fca070",
+    "shimano-fc-a070",
+    "velomine-fc-a070"
+   ],
    "confidence": "haute",
    "status": "a_valider",
    "notes": "Axe carré, boîtier BB-UN300 (JIS) recommandé par Shimano."
@@ -253,9 +278,13 @@
     "spindle": "carre_jis",
     "chainrings": 3,
     "teeth": "42-34-24",
-    "chainline": 47.5
+    "chainline": 47.5,
+    "ringInterface": "rivete"
    },
-   "src": "veloplus-fcty301",
+   "src": [
+    "veloplus-fcty301",
+    "veloplus-fc-ty301"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
    "notes": "Prévu 3x6/7/8. Existe aussi en ligne de chaîne 50 mm."
@@ -275,9 +304,13 @@
     "speeds": 8,
     "spindle": "carre_jis",
     "chainrings": 3,
-    "teeth": "48-38-28"
+    "teeth": "48-38-28",
+    "ringInterface": "rivete"
    },
-   "src": "veloplus-fcty301",
+   "src": [
+    "veloplus-fcty301",
+    "veloplus-fc-ty301"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -297,12 +330,17 @@
     "speeds": 8,
     "chainrings": 3,
     "teeth": "42-34-24",
-    "chainline": 50
+    "chainline": 50,
+    "ringInterface": "rivete",
+    "spindle": "carre_jis"
    },
-   "src": "rose-fcty501",
+   "src": [
+    "rose-fcty501",
+    "modernbike-fc-ty501"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Axe carré : type (JIS / ISO) non précisé par la source, champ laissé vide."
+   "notes": "Plateaux rivetés, axe carré JIS (axe de 122 mm selon un revendeur). Ligne de chaîne : 47,5 ou 50 mm selon les sources."
   },
   {
    "id": "shimano-mf-tz21-14-28",

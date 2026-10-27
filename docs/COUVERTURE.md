@@ -2,7 +2,7 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **580 pièces**, dont 24 validées par une page constructeur et **556 à valider**.
+- **582 pièces**, dont 24 validées par une page constructeur et **558 à valider**.
 - Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 223, spindleFits : 0, chainLength : 1, recommendations : 7, families : 46, actuation : 65, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 92 |
 | Sachs | 4 |
-| Shimano | 336 |
+| Shimano | 338 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -41,7 +41,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (147)
+## Dérailleur arrière (149)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -77,7 +77,8 @@
 | RD-4500-SS | Shimano | route | à valider |  |
 | RD-4700-GS | Shimano | route | à valider |  |
 | RD-4700-SS | Shimano | route | à valider |  |
-| RD-5500-GS | Shimano | route | à valider | maxCog |
+| RD-5500-GS | Shimano | route | à valider |  |
+| RD-5500-SS | Shimano | route | à valider |  |
 | RD-5700-GS | Shimano | route | à valider |  |
 | RD-5700-SS | Shimano | route | à valider |  |
 | RD-5701-GS | Shimano | route | à valider |  |
@@ -86,8 +87,8 @@
 | RD-5800-SS | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6200 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6207 | Shimano | route | à valider | maxCog, totalCapacity |
-| RD-6600-GS | Shimano | route | à valider | maxCog |
-| RD-6600-SS | Shimano | route | à valider | maxCog |
+| RD-6600-GS | Shimano | route | à valider |  |
+| RD-6600-SS | Shimano | route | à valider |  |
 | RD-6700-A-SS | Shimano | route | à valider | totalCapacity |
 | RD-6700-GS | Shimano | route | à valider | maxCog |
 | RD-6700-SS | Shimano | route | à valider |  |
@@ -95,8 +96,9 @@
 | RD-6800-SS | Shimano | route | à valider |  |
 | RD-7400 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-7700-SS | Shimano | route | à valider |  |
-| RD-7800-SS | Shimano | route | à valider | maxCog |
-| RD-7900-SS | Shimano | route | à valider | totalCapacity |
+| RD-7800-SS | Shimano | route | à valider |  |
+| RD-7900-GS | Shimano | route | à valider | maxCog |
+| RD-7900-SS | Shimano | route | à valider |  |
 | RD-9000-SS | Shimano | route | à valider |  |
 | RD-A070 | Shimano | route | à valider | mount |
 | RD-M2000-SGS | Shimano | vtt | à valider |  |
@@ -123,7 +125,7 @@
 | RD-M8000-GS | Shimano | vtt | à valider |  |
 | RD-M8000-SGS | Shimano | vtt | validé |  |
 | RD-M8100-GS | Shimano | vtt | validé |  |
-| RD-M8100-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M8100-SGS | Shimano | vtt | à valider |  |
 | RD-M8120-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M9000-GS | Shimano | vtt | à valider |  |
 | RD-M9000-SGS | Shimano | vtt | à valider |  |
@@ -142,9 +144,9 @@
 | RD-R8000-GS | Shimano | route | validé |  |
 | RD-R8000-SS | Shimano | route | à valider |  |
 | RD-R8150 | Shimano | route | à valider |  |
-| RD-R9250 | Shimano | route | à valider | totalCapacity |
-| RD-RX810 | Shimano | gravel | à valider | totalCapacity |
-| RD-RX812 | Shimano | gravel | à valider | totalCapacity |
+| RD-R9250 | Shimano | route | à valider |  |
+| RD-RX810 | Shimano | gravel | à valider |  |
+| RD-RX812 | Shimano | gravel | à valider |  |
 | RD-RX815 | Shimano | gravel | validé |  |
 | RD-RX817 | Shimano | gravel | à valider | totalCapacity |
 | RD-RX820 | Shimano | gravel | validé |  |
@@ -158,8 +160,8 @@
 | RD Apex 1 11v | SRAM | gravel | à valider | totalCapacity |
 | RD Apex 10v chape courte | SRAM | route | à valider |  |
 | RD Apex 10v WiFLi | SRAM | route | à valider |  |
-| RD Apex XPLR eTap AXS D1 | SRAM | gravel | validé | totalCapacity |
-| RD Apex XPLR 12v (mécanique) | SRAM | gravel | à valider | totalCapacity |
+| RD Apex XPLR eTap AXS D1 | SRAM | gravel | validé |  |
+| RD Apex XPLR 12v (mécanique) | SRAM | gravel | à valider |  |
 | RD Eagle 90 T-Type | SRAM | vtt | à valider | totalCapacity |
 | RD Force 10v WiFLi | SRAM | route | à valider |  |
 | RD Force eTap AXS (MAX 36T) | SRAM | route | à valider | totalCapacity |
@@ -169,14 +171,14 @@
 | RD GX Eagle AXS T-Type | SRAM | vtt | à valider | totalCapacity |
 | RD GX1 11v | SRAM | vtt | à valider |  |
 | RD NX 11v | SRAM | vtt | à valider | totalCapacity |
-| RD NX Eagle | SRAM | vtt | à valider | totalCapacity |
+| RD NX Eagle | SRAM | vtt | à valider |  |
 | RD Red 10v chape moyenne | SRAM | route | à valider | totalCapacity |
 | RD Red 10v chape courte | SRAM | route | à valider |  |
 | RD RED eTap AXS (MAX 33T) | SRAM | route | validé | totalCapacity |
-| RD RED eTap AXS (MAX 36T) | SRAM | route | validé | totalCapacity |
+| RD RED eTap AXS (MAX 36T) | SRAM | route | validé |  |
 | RD RED XPLR eTap AXS E1 | SRAM | gravel | à valider | totalCapacity |
-| RD Rival 22 chape courte | SRAM | route | à valider | totalCapacity |
-| RD Rival 22 WiFLi | SRAM | route | à valider | totalCapacity |
+| RD Rival 22 chape courte | SRAM | route | à valider |  |
+| RD Rival 22 WiFLi | SRAM | route | à valider |  |
 | RD-RIV-E-D1 | SRAM | route | validé | totalCapacity |
 | RD X0 10v | SRAM | vtt | à valider | totalCapacity |
 | RD X01 11v | SRAM | vtt | à valider |  |
@@ -185,7 +187,7 @@
 | RD X5 9v chape moyenne | SRAM | vtt | à valider | totalCapacity |
 | RD X7 10v | SRAM | vtt | à valider | maxCog, totalCapacity |
 | RD X7 9v | SRAM | vtt | à valider |  |
-| RD X9 10v | SRAM | vtt | à valider | maxCog, totalCapacity |
+| RD X9 10v | SRAM | vtt | à valider | totalCapacity |
 | RD X9 9v chape moyenne | SRAM | vtt | à valider | maxCog, totalCapacity |
 | Cyclone GT | SunTour | route | à valider | speeds |
 | Superbe Pro RD-3100 | SunTour | route | à valider | speeds, totalCapacity |
@@ -617,7 +619,7 @@
 | FC-7900 53-39 | Shimano | route | à valider | bolts |
 | FC-9000 50-34 | Shimano | route | à valider |  |
 | FC-9000 52-36 | Shimano | route | à valider |  |
-| FC-A070 50-34 | Shimano | route | à valider | ringInterface |
+| FC-A070 50-34 | Shimano | route | à valider |  |
 | FC-M361 42-32-22 | Shimano | vtt | à valider | bolts |
 | FC-M4000 40-30-22 | Shimano | vtt | à valider | bolts |
 | FC-M590 44-32-22 | Shimano | vtt | à valider | bolts |
@@ -638,9 +640,9 @@
 | FC-R8000 53-39 | Shimano | route | à valider |  |
 | FC-RX600-10 46-30 | Shimano | gravel | à valider | bcd, bolts |
 | FC-RX810-1 40T | Shimano | gravel | à valider |  |
-| FC-TY301 42-34-24 | Shimano | vtt | à valider | ringInterface |
-| FC-TY301 48-38-28 | Shimano | autre | à valider | ringInterface |
-| FC-TY501 42-34-24 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-TY301 42-34-24 | Shimano | vtt | à valider |  |
+| FC-TY301 48-38-28 | Shimano | autre | à valider |  |
+| FC-TY501 42-34-24 | Shimano | vtt | à valider |  |
 | FC Force D1 48/35 | SRAM | route | à valider |  |
 | FC Force / Rival Wide 43/30 | SRAM | gravel | à valider | dmType |
 | FC RED D1 46/33 | SRAM | route | validé |  |

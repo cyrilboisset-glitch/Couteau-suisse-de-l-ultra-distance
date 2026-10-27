@@ -127,6 +127,26 @@
    "kind": "revendeur",
    "ref": "Backcountry – gâchette X9 9v 1:1, 3x9",
    "url": "https://www.backcountry.com/sram-x.9-trigger-shifter-set"
+  },
+  "sram-rdx9": {
+   "kind": "officiel",
+   "ref": "SRAM – X9 10v : chapes longue / moyenne / courte, pignon max 34 ou 36T",
+   "url": "https://www.sram.com/en/service/models/rd-x9-a1"
+  },
+  "tf-x9-10": {
+   "kind": "revendeur",
+   "ref": "Tree Fort Bikes – X9 10v chape moyenne : capacité 35T, 36T max",
+   "url": "https://www.treefortbikes.com/SRAM-X9-10-Speed-Rear-Derailleur"
+  },
+  "mikes-rival22": {
+   "kind": "revendeur",
+   "ref": "Mike's Bikes – Rival 22 : chape courte 33T de capacité / 28T max ; moyenne 37T / 32T max",
+   "url": "https://mikesbikes.com/products/rival-22-11-speed"
+  },
+  "excel-force22": {
+   "kind": "revendeur",
+   "ref": "Excel Sports – Force 22 : chape courte 33T ; WiFLi 37T, 32T max",
+   "url": "https://www.excelsports.com/sram-force-22-11-speed-rear-derailleur"
   }
  },
  "parts": [
@@ -225,12 +245,17 @@
     "system": "mecanique",
     "mount": "standard",
     "speeds": 10,
-    "family": "sram-exact-10"
+    "family": "sram-exact-10",
+    "maxCog": 34
    },
-   "src": "cc-x9-10",
+   "src": [
+    "cc-x9-10",
+    "sram-rdx9",
+    "tf-x9-10"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Pignon max et capacité non trouvés (12-36 utilisé selon un essai)."
+   "notes": "34T retenu (34 ou 36T selon la chape). Chape moyenne : capacité 35T."
   },
   {
    "id": "sram-rd-x7-10",
@@ -382,15 +407,18 @@
     "maxCog": 28,
     "minCog": 11,
     "cageLength": "SS",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 2,
+    "totalCapacity": 33
    },
    "src": [
     "tune-rival22",
-    "pb-rival22"
+    "pb-rival22",
+    "mikes-rival22",
+    "excel-force22"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Capacité contradictoire selon les sources (33 ou 37T). Force 22 et Red 22 : même conception selon les revendeurs."
+   "notes": "Force 22 et Red 22 : mêmes valeurs selon les revendeurs."
   },
   {
    "id": "sram-rd-rival-22-wifli",
@@ -412,11 +440,14 @@
     "maxCog": 32,
     "minCog": 11,
     "cageLength": "M",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 2,
+    "totalCapacity": 37
    },
    "src": [
     "pb-rival22",
-    "mantel-rival22wifli"
+    "mantel-rival22wifli",
+    "mikes-rival22",
+    "excel-force22"
    ],
    "confidence": "moyenne",
    "status": "a_valider"

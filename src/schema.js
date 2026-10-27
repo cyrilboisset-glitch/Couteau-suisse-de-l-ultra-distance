@@ -25,7 +25,7 @@ export const ENUMS = Object.freeze({
     'bsa', 'ita', 'francais', 'suisse', 'sans_filetage', 'bb86', 'bb92', 'bb30', 'pf30', 'bb386evo', 'bbright',
     't47_externe', 't47_interne', 'autre',
   ],
-  ringInterface: ['bcd', 'direct_mount'],
+  ringInterface: ['bcd', 'direct_mount', 'rivete'],
   brakeType: ['disque', 'jante'],
   brakeActuation: ['hydraulique', 'mecanique'],
   fluid: ['mineral', 'dot'],

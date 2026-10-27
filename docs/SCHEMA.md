@@ -227,7 +227,7 @@ Légende : **obligatoire** = signalé comme manquant s'il est vide ; *conditionn
 - `chainConnection` : `maillon_rapide`, `goupille`
 - `spindle` : `carre_jis`, `carre_iso`, `octalink_v1`, `octalink_v2`, `isis`, `shimano_24`, `sram_gxp`, `sram_dub`, `axe_30`, `campagnolo_ultratorque`, `campagnolo_powertorque`, `clavette`, `autre`
 - `bbShell` : `bsa`, `ita`, `francais`, `suisse`, `sans_filetage`, `bb86`, `bb92`, `bb30`, `pf30`, `bb386evo`, `bbright`, `t47_externe`, `t47_interne`, `autre`
-- `ringInterface` : `bcd`, `direct_mount`
+- `ringInterface` : `bcd`, `direct_mount`, `rivete`
 - `brakeType` : `disque`, `jante`
 - `brakeActuation` : `hydraulique`, `mecanique`
 - `fluid` : `mineral`, `dot`

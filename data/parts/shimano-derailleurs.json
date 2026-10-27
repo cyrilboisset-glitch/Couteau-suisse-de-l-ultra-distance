@@ -1,57 +1,811 @@
 {
-  "_meta": { "description": "Shimano – dérailleurs arrière 11v / 12v (route, GRX, VTT, Di2). Valeur absente = non trouvée dans une source : à compléter." },
-  "defaults": { "brand": "Shimano", "type": "rear_derailleur" },
-  "sources": {
-    "sh-r8000-gs": { "kind": "officiel", "ref": "Shimano – RD-R8000-GS : capacité 39T, grand pignon 28-34T, petit 11-12T, écart plateaux 16T", "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-R8000-GS.html" },
-    "biketart-r8000": { "kind": "revendeur", "ref": "Biketart – RD-R8000 Ultegra 11v", "url": "https://www.biketart.com/products/rd-r8000-ultegra-11-speed-rear-derailleur" },
-    "velonova-r8000-ss": { "kind": "revendeur", "ref": "Velonova – RD-R8000-SS : grand pignon 25-30T, petit 11-14T, écart 16T, capacité 35T", "url": "https://www.velonova.lt/en/shimano-ultegra-rd-r8000-ss-rear-derailleur-11-speed-2597-1" },
-    "atc-r7000": { "kind": "revendeur", "ref": "All Terrain Cycles – RD-R7000-GS : grand pignon 28-34T, capacité 39T, écart 16T ; SS : 30T max, 35T", "url": "https://www.allterraincycles.co.uk/products/shimano-rd-r7000-105-11-speed-gs-rear-derailleur" },
-    "rose-grx11": { "kind": "revendeur", "ref": "Rose Bikes – RD-RX810 (1x/2x, cassettes route 11-30/32/34) et RD-RX812 (1x, cassettes VTT 11-40/11-42), compatibles manettes route 11v", "url": "https://www.rosebikes.com/p/shimano-grx-rear-derailleur-11-speed-rx810-rx812-2678828" },
-    "velonova-rx812": { "kind": "revendeur", "ref": "Velonova – RD-RX812 : grand pignon max 42T, manettes route Dual Control", "url": "https://www.velonova.lt/en/shimano-grx-rd-rx812-rear-derailleur-11-speed-6876-1" },
-    "sh-m8000-sgs": { "kind": "officiel", "ref": "Shimano – RD-M8000-SGS : capacité 47T, grand pignon max 40T (3x11) / 42T (2x11) / 46T (1x11), min 40T", "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-M8000-SGS.html" },
-    "atc-m8000-gs": { "kind": "revendeur", "ref": "All Terrain Cycles – RD-M8000-GS : grand pignon 42T (2x11) / 46T (1x11), capacité 39T", "url": "https://www.allterraincycles.co.uk/products/shimano-rd-m8000-xt-11-speed-gs-rear-derailleur" },
-    "rose-m5100": { "kind": "revendeur", "ref": "Rose Bikes – RD-M5100 1x11 : capacité 40T, cassette 11-51", "url": "https://www.rosebikes.com/p/shimano-deore-rd-m5100-rear-derailleur-shadow-rd-1-x-11-speed-2689617" },
-    "cahaba-r7100": { "kind": "revendeur", "ref": "Cahaba Cycles – RD-R7100 : 12v, Direct Mount, 36T max", "url": "https://www.cahabacycles.com/products/shimano-105-rd-r7100-rear-derailleur-12-speed-direct-mount-one-spec-shadow-design-36t-max-low" },
-    "rose-r7100": { "kind": "revendeur", "ref": "Rose Bikes – RD-R7100 : grand pignon 34-36T, capacité 41T, écart 16T", "url": "https://www.rosebikes.com/p/shimano-105-rd-r7100-rear-derailleur-12-speed-2722784" },
-    "sh-rx820": { "kind": "officiel", "ref": "Shimano – RD-RX820 : cassettes 11-34/11-36, grand pignon 34-36T, petit 11T, écart 17T, capacité 42T", "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-RX820.html" },
-    "sh-rx822-gs": { "kind": "officiel", "ref": "Shimano – RD-RX822-GS : capacité 35T, grand pignon 45T, cassettes VTT 12v 10-45", "url": "https://bike.shimano.com/en-EU/product/component/grx-12-speed/RD-RX822-GS.html" },
-    "halfords-rx822-sgs": { "kind": "revendeur", "ref": "Halfords – RD-RX822-SGS : 51T max, capacité 41T, cassettes 10-51", "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-grx-rd-rx822-12-speed-rear-derailleur-sgs---max-51t-188427.html" },
-    "sh-r9250": { "kind": "officiel", "ref": "Shimano – RD-R9250 : chape unique, grand pignon 28-34T, petit 11T (capacité : sources contradictoires 35T / 37T)", "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-R9250.html" },
-    "sh-r8150": { "kind": "officiel", "ref": "Shimano – RD-R8150 : grand pignon 28-34T", "url": "https://bike.shimano.com/en-EU/product/component/ultegra-r8100/RD-R8150.html" },
-    "playtri-r8150": { "kind": "revendeur", "ref": "Playtri – RD-R8150 : capacité 39T, écart 16T, grand pignon 28-34T", "url": "https://playtricolleyville.com/collections/rear-derailleur/products/shimano-ultegra-di2-rd-r8150-12-speed-rear-derailleur" },
-    "decathlon-r7150": { "kind": "revendeur", "ref": "Decathlon – RD-R7150 : écart 16T, capacité 41T, grand pignon 34-36T, petit 11T", "url": "https://www.decathlon.co.uk/p/mp/rear-derailleur-shimano-105-rd-r7150-12v/33c87c66-3414-4dc3-9df0-a4a431c2493d/c1" },
-    "sh-rx815": { "kind": "officiel", "ref": "Shimano – RD-RX815 GRX Di2 11v (11-30/32/34T) : capacité 38T, grand pignon 34T", "url": "https://bike.shimano.com/en-EU/product/component/grx-di2/RD-RX815.html" },
-    "halfords-rx815": { "kind": "revendeur", "ref": "Halfords – RD-RX815 compatible toutes manettes Di2 11v ; RX817 1x 11-40/11-42", "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-grx-rd-rx815-di2-11-speed-rear-derailleur-for-double-402918.html" },
-    "sh-m8100-gs": { "kind": "officiel", "ref": "Shimano – RD-M8100-GS 1x12 : capacité 35T, grand pignon 45T, petit 10T", "url": "https://bike.shimano.com/en-US/product/component/deore-xt-m8100/RD-M8100-GS.html" },
-    "sh-m8100-sgs": { "kind": "officiel", "ref": "Shimano – RD-M8100-SGS 1x12 : combinaison 10-51T", "url": "https://bike.shimano.com/en-NA/products/components/pdp.P-RD-M8100-SGS.html" },
-    "sh-m8120-sgs": { "kind": "officiel", "ref": "Shimano – RD-M8120-SGS 2x12 : cassettes 10-45T, plateaux 36-26T", "url": "https://bike.shimano.com/en-EU/product/component/deore-xt-m8100/RD-M8120-SGS.html" },
-    "mtbdirect-m9100": { "kind": "revendeur", "ref": "MTB Direct / Steed – RD-M9100-GS : capacité 35T, 45T ; SGS : capacité 41T, 45-51T", "url": "https://steedcycles.com/collections/all/products/shimano-xtr-rd-m9100-sgs-12-speed-rear-derailleur" },
-    "bd-m6100": { "kind": "revendeur", "ref": "bike-discount – RD-M6100 : 12v, 10-51T, capacité 41T", "url": "https://www.bike-discount.de/en/shimano-deore-rd-m6100-12-speed-rear-derailleur" }
+ "_meta": {
+  "description": "Shimano – dérailleurs arrière 11v / 12v (route, GRX, VTT, Di2). Valeur absente = non trouvée dans une source : à compléter."
+ },
+ "defaults": {
+  "brand": "Shimano",
+  "type": "rear_derailleur"
+ },
+ "sources": {
+  "sh-r8000-gs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-R8000-GS : capacité 39T, grand pignon 28-34T, petit 11-12T, écart plateaux 16T",
+   "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-R8000-GS.html"
   },
-  "parts": [
-    { "id": "shimano-rd-r8000-ss", "ref": "RD-R8000-SS", "aliases": ["r8000 ss", "rd8000ss", "ultegra r8000 ss"], "name": "Ultegra R8000 chape courte", "discipline": "route", "generation": "Ultegra R8000 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-route-11", "maxCog": 30, "minLowCog": 25, "minCog": 11, "maxFrontDiff": 16, "totalCapacity": 35, "cageLength": "SS", "mount": "standard", "maxFrontChainrings": 2 }, "src": "velonova-r8000-ss", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-r8000-gs", "ref": "RD-R8000-GS", "aliases": ["r8000 gs", "rd8000", "rd8000gs", "ultegra r8000 gs"], "name": "Ultegra R8000 chape moyenne", "discipline": "route", "generation": "Ultegra R8000 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-route-11", "maxCog": 34, "minLowCog": 28, "minCog": 11, "maxFrontDiff": 16, "totalCapacity": 39, "cageLength": "GS", "mount": "standard", "maxFrontChainrings": 2 }, "src": ["sh-r8000-gs", "biketart-r8000"], "confidence": "haute", "status": "valide" },
-    { "id": "shimano-rd-r7000-ss", "ref": "RD-R7000-SS", "aliases": ["r7000 ss", "105 r7000 ss"], "name": "105 R7000 chape courte", "discipline": "route", "generation": "105 R7000 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-route-11", "maxCog": 30, "totalCapacity": 35, "cageLength": "SS", "mount": "standard", "maxFrontChainrings": 2 }, "src": "atc-r7000", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-r7000-gs", "ref": "RD-R7000-GS", "aliases": ["r7000 gs", "105 r7000 gs", "rd7000"], "name": "105 R7000 chape moyenne", "discipline": "route", "generation": "105 R7000 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-route-11", "maxCog": 34, "minLowCog": 28, "maxFrontDiff": 16, "totalCapacity": 39, "cageLength": "GS", "mount": "standard", "maxFrontChainrings": 2 }, "src": "atc-r7000", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-rx810", "ref": "RD-RX810", "aliases": ["grx rx810", "rx810"], "name": "GRX RX810 11v 1x/2x", "discipline": "gravel", "generation": "GRX RX800 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-route-11", "maxCog": 34, "mount": "standard", "maxFrontChainrings": 2 }, "src": "rose-grx11", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-rx812", "ref": "RD-RX812", "aliases": ["grx rx812", "rx812"], "name": "GRX RX812 11v 1x", "discipline": "gravel", "generation": "GRX RX800 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-route-11", "maxCog": 42, "mount": "standard", "maxFrontChainrings": 1 }, "src": ["rose-grx11", "velonova-rx812"], "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-m8000-gs", "ref": "RD-M8000-GS", "aliases": ["m8000 gs", "xt m8000 gs"], "name": "Deore XT M8000 chape moyenne", "discipline": "vtt", "generation": "XT M8000 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-vtt-11", "maxCog": 46, "maxCog2x": 42, "totalCapacity": 39, "cageLength": "GS", "mount": "standard", "maxFrontChainrings": 2 }, "src": "atc-m8000-gs", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-m8000-sgs", "ref": "RD-M8000-SGS", "aliases": ["m8000 sgs", "xt m8000 sgs"], "name": "Deore XT M8000 chape longue", "discipline": "vtt", "generation": "XT M8000 (11v)", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-vtt-11", "maxCog": 46, "maxCog2x": 42, "maxCog3x": 40, "minLowCog": 40, "totalCapacity": 47, "cageLength": "SGS", "mount": "standard", "maxFrontChainrings": 3 }, "src": "sh-m8000-sgs", "confidence": "haute", "status": "valide" },
-    { "id": "shimano-rd-m5100-sgs", "ref": "RD-M5100-SGS", "aliases": ["m5100", "deore m5100"], "name": "Deore M5100 1x11", "discipline": "vtt", "generation": "Deore M5100 (11v)", "notes": "Famille de tirage supposée VTT 11v Shimano : non confirmée par une source.", "attrs": { "speeds": 11, "system": "mecanique", "family": "shimano-vtt-11", "maxCog": 51, "minCog": 11, "totalCapacity": 40, "cageLength": "SGS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "rose-m5100", "confidence": "basse", "status": "a_valider" },
-    { "id": "shimano-rd-r7100", "ref": "RD-R7100", "aliases": ["r7100", "105 r7100", "rd7100"], "name": "105 R7100 12v mécanique", "discipline": "route", "generation": "105 R7100 (12v)", "notes": "Compatible Direct Mount ; fixation sur patte classique supposée.", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-route-12", "maxCog": 36, "minLowCog": 34, "maxFrontDiff": 16, "totalCapacity": 41, "mount": "standard", "maxFrontChainrings": 2 }, "src": ["rose-r7100", "cahaba-r7100"], "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-rx820", "ref": "RD-RX820", "aliases": ["grx rx820", "rx820"], "name": "GRX RX820 12v 2x", "discipline": "gravel", "generation": "GRX RX820 (12v)", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-route-12", "maxCog": 36, "minLowCog": 34, "minCog": 11, "maxFrontDiff": 17, "totalCapacity": 42, "mount": "standard", "maxFrontChainrings": 2 }, "src": "sh-rx820", "confidence": "haute", "status": "valide" },
-    { "id": "shimano-rd-rx822-gs", "ref": "RD-RX822-GS", "aliases": ["rx822 gs", "grx rx822"], "name": "GRX RX822 12v 1x chape moyenne", "discipline": "gravel", "generation": "GRX RX820 (12v)", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-route-12", "maxCog": 45, "minCog": 10, "totalCapacity": 35, "cageLength": "GS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "sh-rx822-gs", "confidence": "haute", "status": "valide" },
-    { "id": "shimano-rd-rx822-sgs", "ref": "RD-RX822-SGS", "aliases": ["rx822 sgs"], "name": "GRX RX822 12v 1x chape longue", "discipline": "gravel", "generation": "GRX RX820 (12v)", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-route-12", "maxCog": 51, "minCog": 10, "totalCapacity": 41, "cageLength": "SGS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "halfords-rx822-sgs", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-r9250", "ref": "RD-R9250", "aliases": ["r9250", "dura ace di2 12"], "name": "Dura-Ace Di2 R9250 12v", "discipline": "route", "generation": "Dura-Ace R9200 (12v Di2)", "notes": "Capacité totale : 35T ou 37T selon les sources, laissée vide.", "attrs": { "speeds": 12, "system": "electronique", "protocol": "di2", "family": "shimano-di2-12", "maxCog": 34, "minLowCog": 28, "minCog": 11, "mount": "standard", "maxFrontChainrings": 2 }, "src": "sh-r9250", "confidence": "haute", "status": "a_valider" },
-    { "id": "shimano-rd-r8150", "ref": "RD-R8150", "aliases": ["r8150", "ultegra di2 12"], "name": "Ultegra Di2 R8150 12v", "discipline": "route", "generation": "Ultegra R8100 (12v Di2)", "attrs": { "speeds": 12, "system": "electronique", "protocol": "di2", "family": "shimano-di2-12", "maxCog": 34, "minLowCog": 28, "maxFrontDiff": 16, "totalCapacity": 39, "mount": "standard", "maxFrontChainrings": 2 }, "src": ["sh-r8150", "playtri-r8150"], "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-r7150", "ref": "RD-R7150", "aliases": ["r7150", "105 di2"], "name": "105 Di2 R7150 12v", "discipline": "route", "generation": "105 R7100 (12v Di2)", "attrs": { "speeds": 12, "system": "electronique", "protocol": "di2", "family": "shimano-di2-12", "maxCog": 36, "minLowCog": 34, "minCog": 11, "maxFrontDiff": 16, "totalCapacity": 41, "mount": "standard", "maxFrontChainrings": 2 }, "src": "decathlon-r7150", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-rx815", "ref": "RD-RX815", "aliases": ["rx815", "grx di2"], "name": "GRX Di2 RX815 11v", "discipline": "gravel", "generation": "GRX RX800 (11v Di2)", "attrs": { "speeds": 11, "system": "electronique", "protocol": "di2", "family": "shimano-di2-11", "maxCog": 34, "totalCapacity": 38, "mount": "standard", "maxFrontChainrings": 2 }, "src": ["sh-rx815", "halfords-rx815"], "confidence": "haute", "status": "valide" },
-    { "id": "shimano-rd-rx817", "ref": "RD-RX817", "aliases": ["rx817"], "name": "GRX Di2 RX817 11v 1x", "discipline": "gravel", "generation": "GRX RX800 (11v Di2)", "attrs": { "speeds": 11, "system": "electronique", "protocol": "di2", "family": "shimano-di2-11", "maxCog": 42, "mount": "standard", "maxFrontChainrings": 1 }, "src": "halfords-rx815", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-m9100-gs", "ref": "RD-M9100-GS", "aliases": ["m9100 gs", "xtr 12 gs"], "name": "XTR M9100 1x12 chape moyenne", "discipline": "vtt", "generation": "XTR M9100 (12v)", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-vtt-12", "maxCog": 45, "minLowCog": 45, "minCog": 10, "totalCapacity": 35, "cageLength": "GS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "mtbdirect-m9100", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-m9100-sgs", "ref": "RD-M9100-SGS", "aliases": ["m9100 sgs", "xtr 12 sgs"], "name": "XTR M9100 1x12 chape longue", "discipline": "vtt", "generation": "XTR M9100 (12v)", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-vtt-12", "maxCog": 51, "minLowCog": 45, "minCog": 10, "totalCapacity": 41, "cageLength": "SGS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "mtbdirect-m9100", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-rd-m8100-gs", "ref": "RD-M8100-GS", "aliases": ["m8100 gs", "xt 12 gs"], "name": "Deore XT M8100 1x12 chape moyenne", "discipline": "vtt", "generation": "XT M8100 (12v)", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-vtt-12", "maxCog": 45, "minCog": 10, "totalCapacity": 35, "cageLength": "GS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "sh-m8100-gs", "confidence": "haute", "status": "valide" },
-    { "id": "shimano-rd-m8100-sgs", "ref": "RD-M8100-SGS", "aliases": ["m8100 sgs", "xt 12 sgs", "m8100"], "name": "Deore XT M8100 1x12 chape longue", "discipline": "vtt", "generation": "XT M8100 (12v)", "notes": "Capacité totale non trouvée.", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-vtt-12", "maxCog": 51, "minCog": 10, "cageLength": "SGS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "sh-m8100-sgs", "confidence": "haute", "status": "a_valider" },
-    { "id": "shimano-rd-m8120-sgs", "ref": "RD-M8120-SGS", "aliases": ["m8120"], "name": "Deore XT M8120 2x12", "discipline": "vtt", "generation": "XT M8100 (12v)", "notes": "Capacité totale non trouvée.", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-vtt-12", "maxCog": 45, "maxCog2x": 45, "minCog": 10, "cageLength": "SGS", "mount": "standard", "maxFrontChainrings": 2 }, "src": "sh-m8120-sgs", "confidence": "haute", "status": "a_valider" },
-    { "id": "shimano-rd-m6100-sgs", "ref": "RD-M6100", "aliases": ["m6100", "deore 12"], "name": "Deore M6100 1x12", "discipline": "vtt", "generation": "Deore M6100 (12v)", "attrs": { "speeds": 12, "system": "mecanique", "family": "shimano-vtt-12", "maxCog": 51, "minCog": 10, "totalCapacity": 41, "cageLength": "SGS", "mount": "standard", "maxFrontChainrings": 1 }, "src": "bd-m6100", "confidence": "moyenne", "status": "a_valider" }
-  ]
+  "biketart-r8000": {
+   "kind": "revendeur",
+   "ref": "Biketart – RD-R8000 Ultegra 11v",
+   "url": "https://www.biketart.com/products/rd-r8000-ultegra-11-speed-rear-derailleur"
+  },
+  "velonova-r8000-ss": {
+   "kind": "revendeur",
+   "ref": "Velonova – RD-R8000-SS : grand pignon 25-30T, petit 11-14T, écart 16T, capacité 35T",
+   "url": "https://www.velonova.lt/en/shimano-ultegra-rd-r8000-ss-rear-derailleur-11-speed-2597-1"
+  },
+  "atc-r7000": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – RD-R7000-GS : grand pignon 28-34T, capacité 39T, écart 16T ; SS : 30T max, 35T",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-rd-r7000-105-11-speed-gs-rear-derailleur"
+  },
+  "rose-grx11": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – RD-RX810 (1x/2x, cassettes route 11-30/32/34) et RD-RX812 (1x, cassettes VTT 11-40/11-42), compatibles manettes route 11v",
+   "url": "https://www.rosebikes.com/p/shimano-grx-rear-derailleur-11-speed-rx810-rx812-2678828"
+  },
+  "velonova-rx812": {
+   "kind": "revendeur",
+   "ref": "Velonova – RD-RX812 : grand pignon max 42T, manettes route Dual Control",
+   "url": "https://www.velonova.lt/en/shimano-grx-rd-rx812-rear-derailleur-11-speed-6876-1"
+  },
+  "sh-m8000-sgs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-M8000-SGS : capacité 47T, grand pignon max 40T (3x11) / 42T (2x11) / 46T (1x11), min 40T",
+   "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-M8000-SGS.html"
+  },
+  "atc-m8000-gs": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – RD-M8000-GS : grand pignon 42T (2x11) / 46T (1x11), capacité 39T",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-rd-m8000-xt-11-speed-gs-rear-derailleur"
+  },
+  "rose-m5100": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – RD-M5100 1x11 : capacité 40T, cassette 11-51",
+   "url": "https://www.rosebikes.com/p/shimano-deore-rd-m5100-rear-derailleur-shadow-rd-1-x-11-speed-2689617"
+  },
+  "cahaba-r7100": {
+   "kind": "revendeur",
+   "ref": "Cahaba Cycles – RD-R7100 : 12v, Direct Mount, 36T max",
+   "url": "https://www.cahabacycles.com/products/shimano-105-rd-r7100-rear-derailleur-12-speed-direct-mount-one-spec-shadow-design-36t-max-low"
+  },
+  "rose-r7100": {
+   "kind": "revendeur",
+   "ref": "Rose Bikes – RD-R7100 : grand pignon 34-36T, capacité 41T, écart 16T",
+   "url": "https://www.rosebikes.com/p/shimano-105-rd-r7100-rear-derailleur-12-speed-2722784"
+  },
+  "sh-rx820": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-RX820 : cassettes 11-34/11-36, grand pignon 34-36T, petit 11T, écart 17T, capacité 42T",
+   "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-RX820.html"
+  },
+  "sh-rx822-gs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-RX822-GS : capacité 35T, grand pignon 45T, cassettes VTT 12v 10-45",
+   "url": "https://bike.shimano.com/en-EU/product/component/grx-12-speed/RD-RX822-GS.html"
+  },
+  "halfords-rx822-sgs": {
+   "kind": "revendeur",
+   "ref": "Halfords – RD-RX822-SGS : 51T max, capacité 41T, cassettes 10-51",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-grx-rd-rx822-12-speed-rear-derailleur-sgs---max-51t-188427.html"
+  },
+  "sh-r9250": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-R9250 : chape unique, grand pignon 28-34T, petit 11T (capacité : sources contradictoires 35T / 37T)",
+   "url": "https://bike.shimano.com/en-AU/products/components/pdp.P-RD-R9250.html"
+  },
+  "sh-r8150": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-R8150 : grand pignon 28-34T",
+   "url": "https://bike.shimano.com/en-EU/product/component/ultegra-r8100/RD-R8150.html"
+  },
+  "playtri-r8150": {
+   "kind": "revendeur",
+   "ref": "Playtri – RD-R8150 : capacité 39T, écart 16T, grand pignon 28-34T",
+   "url": "https://playtricolleyville.com/collections/rear-derailleur/products/shimano-ultegra-di2-rd-r8150-12-speed-rear-derailleur"
+  },
+  "decathlon-r7150": {
+   "kind": "revendeur",
+   "ref": "Decathlon – RD-R7150 : écart 16T, capacité 41T, grand pignon 34-36T, petit 11T",
+   "url": "https://www.decathlon.co.uk/p/mp/rear-derailleur-shimano-105-rd-r7150-12v/33c87c66-3414-4dc3-9df0-a4a431c2493d/c1"
+  },
+  "sh-rx815": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-RX815 GRX Di2 11v (11-30/32/34T) : capacité 38T, grand pignon 34T",
+   "url": "https://bike.shimano.com/en-EU/product/component/grx-di2/RD-RX815.html"
+  },
+  "halfords-rx815": {
+   "kind": "revendeur",
+   "ref": "Halfords – RD-RX815 compatible toutes manettes Di2 11v ; RX817 1x 11-40/11-42",
+   "url": "https://www.halfords.com/cycling/bike-parts/gears-drivetrain-and-cables/shimano-grx-rd-rx815-di2-11-speed-rear-derailleur-for-double-402918.html"
+  },
+  "sh-m8100-gs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-M8100-GS 1x12 : capacité 35T, grand pignon 45T, petit 10T",
+   "url": "https://bike.shimano.com/en-US/product/component/deore-xt-m8100/RD-M8100-GS.html"
+  },
+  "sh-m8100-sgs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-M8100-SGS 1x12 : combinaison 10-51T",
+   "url": "https://bike.shimano.com/en-NA/products/components/pdp.P-RD-M8100-SGS.html"
+  },
+  "sh-m8120-sgs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-M8120-SGS 2x12 : cassettes 10-45T, plateaux 36-26T",
+   "url": "https://bike.shimano.com/en-EU/product/component/deore-xt-m8100/RD-M8120-SGS.html"
+  },
+  "mtbdirect-m9100": {
+   "kind": "revendeur",
+   "ref": "MTB Direct / Steed – RD-M9100-GS : capacité 35T, 45T ; SGS : capacité 41T, 45-51T",
+   "url": "https://steedcycles.com/collections/all/products/shimano-xtr-rd-m9100-sgs-12-speed-rear-derailleur"
+  },
+  "bd-m6100": {
+   "kind": "revendeur",
+   "ref": "bike-discount – RD-M6100 : 12v, 10-51T, capacité 41T",
+   "url": "https://www.bike-discount.de/en/shimano-deore-rd-m6100-12-speed-rear-derailleur"
+  },
+  "shimano-rdrx810": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-RX810 : capacité 40T, grand pignon 30-34T, petit 11T",
+   "url": "https://bike.shimano.com/en-NZ/product/component/grx-11-speed/RD-RX810.html"
+  },
+  "mv-rdrx812": {
+   "kind": "revendeur",
+   "ref": "Matériel-vélo – RD-RX812 : capacité 31T, grand pignon 40-42T, petit 11T",
+   "url": "https://www.materiel-velo.com/gb/1861241-shimano-grx-rd-rx812-11-speed-rear-derailleur-for-single-chainring-irdrx812.html"
+  },
+  "veloplus-rdrx812": {
+   "kind": "revendeur",
+   "ref": "Veloplus – RD-RX812 : 42T max, capacité 31T",
+   "url": "https://veloplus.ee/en/rear-derailleur-shimano-grx-rd-rx812-top-normal-11-speeds-51331"
+  },
+  "pushys-r9250": {
+   "kind": "revendeur",
+   "ref": "Pushys – RD-R9250 : capacité 37T, grand pignon 30-34T",
+   "url": "https://www.pushys.com.au/shimano-dura-ace-r9250-rear-derailleur-di2-12-speed/"
+  },
+  "velonova-r9250": {
+   "kind": "revendeur",
+   "ref": "Velonova – RD-R9250 : capacité 35T, grand pignon 28-34T",
+   "url": "https://velonova.lt/en/shimano-dura-ace-di2-rd-r9250-rear-derailleur-12-speed-15405-1"
+  },
+  "gbb-m8100sgs": {
+   "kind": "revendeur",
+   "ref": "Go Bike and Brew – RD-M8100-SGS : 10-51T, capacité 41T",
+   "url": "https://www.gobikeandbrew.ca/shimano-rd-m8100-sgs-xt-12-speed-rear-derailleur-5.html"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-rd-r8000-ss",
+   "ref": "RD-R8000-SS",
+   "aliases": [
+    "r8000 ss",
+    "rd8000ss",
+    "ultegra r8000 ss"
+   ],
+   "name": "Ultegra R8000 chape courte",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 30,
+    "minLowCog": 25,
+    "minCog": 11,
+    "maxFrontDiff": 16,
+    "totalCapacity": 35,
+    "cageLength": "SS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "velonova-r8000-ss",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r8000-gs",
+   "ref": "RD-R8000-GS",
+   "aliases": [
+    "r8000 gs",
+    "rd8000",
+    "rd8000gs",
+    "ultegra r8000 gs"
+   ],
+   "name": "Ultegra R8000 chape moyenne",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 34,
+    "minLowCog": 28,
+    "minCog": 11,
+    "maxFrontDiff": 16,
+    "totalCapacity": 39,
+    "cageLength": "GS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "sh-r8000-gs",
+    "biketart-r8000"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-rd-r7000-ss",
+   "ref": "RD-R7000-SS",
+   "aliases": [
+    "r7000 ss",
+    "105 r7000 ss"
+   ],
+   "name": "105 R7000 chape courte",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 30,
+    "totalCapacity": 35,
+    "cageLength": "SS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "atc-r7000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r7000-gs",
+   "ref": "RD-R7000-GS",
+   "aliases": [
+    "r7000 gs",
+    "105 r7000 gs",
+    "rd7000"
+   ],
+   "name": "105 R7000 chape moyenne",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 34,
+    "minLowCog": 28,
+    "maxFrontDiff": 16,
+    "totalCapacity": 39,
+    "cageLength": "GS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "atc-r7000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-rx810",
+   "ref": "RD-RX810",
+   "aliases": [
+    "grx rx810",
+    "rx810"
+   ],
+   "name": "GRX RX810 11v 1x/2x",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 34,
+    "mount": "standard",
+    "maxFrontChainrings": 2,
+    "totalCapacity": 40,
+    "minLowCog": 30
+   },
+   "src": [
+    "rose-grx11",
+    "shimano-rdrx810"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-rx812",
+   "ref": "RD-RX812",
+   "aliases": [
+    "grx rx812",
+    "rx812"
+   ],
+   "name": "GRX RX812 11v 1x",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 42,
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "totalCapacity": 31,
+    "minLowCog": 40
+   },
+   "src": [
+    "rose-grx11",
+    "velonova-rx812",
+    "mv-rdrx812",
+    "veloplus-rdrx812"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m8000-gs",
+   "ref": "RD-M8000-GS",
+   "aliases": [
+    "m8000 gs",
+    "xt m8000 gs"
+   ],
+   "name": "Deore XT M8000 chape moyenne",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "maxCog": 46,
+    "maxCog2x": 42,
+    "totalCapacity": 39,
+    "cageLength": "GS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "atc-m8000-gs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m8000-sgs",
+   "ref": "RD-M8000-SGS",
+   "aliases": [
+    "m8000 sgs",
+    "xt m8000 sgs"
+   ],
+   "name": "Deore XT M8000 chape longue",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "maxCog": 46,
+    "maxCog2x": 42,
+    "maxCog3x": 40,
+    "minLowCog": 40,
+    "totalCapacity": 47,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 3
+   },
+   "src": "sh-m8000-sgs",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-rd-m5100-sgs",
+   "ref": "RD-M5100-SGS",
+   "aliases": [
+    "m5100",
+    "deore m5100"
+   ],
+   "name": "Deore M5100 1x11",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "notes": "Famille de tirage supposée VTT 11v Shimano : non confirmée par une source.",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-vtt-11",
+    "maxCog": 51,
+    "minCog": 11,
+    "totalCapacity": 40,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "rose-m5100",
+   "confidence": "basse",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r7100",
+   "ref": "RD-R7100",
+   "aliases": [
+    "r7100",
+    "105 r7100",
+    "rd7100"
+   ],
+   "name": "105 R7100 12v mécanique",
+   "discipline": "route",
+   "generation": "105 R7100 (12v)",
+   "notes": "Compatible Direct Mount ; fixation sur patte classique supposée.",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "maxCog": 36,
+    "minLowCog": 34,
+    "maxFrontDiff": 16,
+    "totalCapacity": 41,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "rose-r7100",
+    "cahaba-r7100"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-rx820",
+   "ref": "RD-RX820",
+   "aliases": [
+    "grx rx820",
+    "rx820"
+   ],
+   "name": "GRX RX820 12v 2x",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "maxCog": 36,
+    "minLowCog": 34,
+    "minCog": 11,
+    "maxFrontDiff": 17,
+    "totalCapacity": 42,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "sh-rx820",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-rd-rx822-gs",
+   "ref": "RD-RX822-GS",
+   "aliases": [
+    "rx822 gs",
+    "grx rx822"
+   ],
+   "name": "GRX RX822 12v 1x chape moyenne",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "maxCog": 45,
+    "minCog": 10,
+    "totalCapacity": 35,
+    "cageLength": "GS",
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "sh-rx822-gs",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-rd-rx822-sgs",
+   "ref": "RD-RX822-SGS",
+   "aliases": [
+    "rx822 sgs"
+   ],
+   "name": "GRX RX822 12v 1x chape longue",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-route-12",
+    "maxCog": 51,
+    "minCog": 10,
+    "totalCapacity": 41,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "halfords-rx822-sgs",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r9250",
+   "ref": "RD-R9250",
+   "aliases": [
+    "r9250",
+    "dura ace di2 12"
+   ],
+   "name": "Dura-Ace Di2 R9250 12v",
+   "discipline": "route",
+   "generation": "Dura-Ace R9200 (12v Di2)",
+   "notes": "Capacité 35T (valeur prudente) ; 37T selon d'autres revendeurs.",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-12",
+    "maxCog": 34,
+    "minLowCog": 28,
+    "minCog": 11,
+    "mount": "standard",
+    "maxFrontChainrings": 2,
+    "totalCapacity": 35
+   },
+   "src": [
+    "sh-r9250",
+    "pushys-r9250",
+    "velonova-r9250"
+   ],
+   "confidence": "haute",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r8150",
+   "ref": "RD-R8150",
+   "aliases": [
+    "r8150",
+    "ultegra di2 12"
+   ],
+   "name": "Ultegra Di2 R8150 12v",
+   "discipline": "route",
+   "generation": "Ultegra R8100 (12v Di2)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-12",
+    "maxCog": 34,
+    "minLowCog": 28,
+    "maxFrontDiff": 16,
+    "totalCapacity": 39,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "sh-r8150",
+    "playtri-r8150"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r7150",
+   "ref": "RD-R7150",
+   "aliases": [
+    "r7150",
+    "105 di2"
+   ],
+   "name": "105 Di2 R7150 12v",
+   "discipline": "route",
+   "generation": "105 R7100 (12v Di2)",
+   "attrs": {
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-12",
+    "maxCog": 36,
+    "minLowCog": 34,
+    "minCog": 11,
+    "maxFrontDiff": 16,
+    "totalCapacity": 41,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "decathlon-r7150",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-rx815",
+   "ref": "RD-RX815",
+   "aliases": [
+    "rx815",
+    "grx di2"
+   ],
+   "name": "GRX Di2 RX815 11v",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v Di2)",
+   "attrs": {
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 34,
+    "totalCapacity": 38,
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "sh-rx815",
+    "halfords-rx815"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-rd-rx817",
+   "ref": "RD-RX817",
+   "aliases": [
+    "rx817"
+   ],
+   "name": "GRX Di2 RX817 11v 1x",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v Di2)",
+   "attrs": {
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 42,
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "halfords-rx815",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m9100-gs",
+   "ref": "RD-M9100-GS",
+   "aliases": [
+    "m9100 gs",
+    "xtr 12 gs"
+   ],
+   "name": "XTR M9100 1x12 chape moyenne",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "maxCog": 45,
+    "minLowCog": 45,
+    "minCog": 10,
+    "totalCapacity": 35,
+    "cageLength": "GS",
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "mtbdirect-m9100",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m9100-sgs",
+   "ref": "RD-M9100-SGS",
+   "aliases": [
+    "m9100 sgs",
+    "xtr 12 sgs"
+   ],
+   "name": "XTR M9100 1x12 chape longue",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "maxCog": 51,
+    "minLowCog": 45,
+    "minCog": 10,
+    "totalCapacity": 41,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "mtbdirect-m9100",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m8100-gs",
+   "ref": "RD-M8100-GS",
+   "aliases": [
+    "m8100 gs",
+    "xt 12 gs"
+   ],
+   "name": "Deore XT M8100 1x12 chape moyenne",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "maxCog": 45,
+    "minCog": 10,
+    "totalCapacity": 35,
+    "cageLength": "GS",
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "sh-m8100-gs",
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-rd-m8100-sgs",
+   "ref": "RD-M8100-SGS",
+   "aliases": [
+    "m8100 sgs",
+    "xt 12 sgs",
+    "m8100"
+   ],
+   "name": "Deore XT M8100 1x12 chape longue",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "notes": "Capacité totale non trouvée.",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "maxCog": 51,
+    "minCog": 10,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 1,
+    "totalCapacity": 41
+   },
+   "src": [
+    "sh-m8100-sgs",
+    "gbb-m8100sgs"
+   ],
+   "confidence": "haute",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m8120-sgs",
+   "ref": "RD-M8120-SGS",
+   "aliases": [
+    "m8120"
+   ],
+   "name": "Deore XT M8120 2x12",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "notes": "Capacité totale non trouvée.",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "maxCog": 45,
+    "maxCog2x": 45,
+    "minCog": 10,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 2
+   },
+   "src": "sh-m8120-sgs",
+   "confidence": "haute",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m6100-sgs",
+   "ref": "RD-M6100",
+   "aliases": [
+    "m6100",
+    "deore 12"
+   ],
+   "name": "Deore M6100 1x12",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "maxCog": 51,
+    "minCog": 10,
+    "totalCapacity": 41,
+    "cageLength": "SGS",
+    "mount": "standard",
+    "maxFrontChainrings": 1
+   },
+   "src": "bd-m6100",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ]
 }

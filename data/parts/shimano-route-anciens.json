@@ -267,6 +267,36 @@
    "kind": "revendeur",
    "ref": "bike-components – CN-6701 10v (114 / 116 maillons) : pédaliers 2x10 FC-7900/6700/5700/4600 ; alternative à la CN-7901",
    "url": "https://www.bike-components.de/en/Shimano/Ultegra-Dura-Ace-105-CN-6701-10-speed-Chain-p25237"
+  },
+  "gear11-rd7900ss": {
+   "kind": "revendeur",
+   "ref": "gearEleven – RD-7900-SS : 28T max, 11T min, écart 16T, capacité 33T ; RD-7900-GS capacité 39T",
+   "url": "https://gear11.blogspot.com/2010/11/shimano-dura-ace-rear-derailleur-rd.html"
+  },
+  "st-rd7800": {
+   "kind": "communaute",
+   "ref": "Slowtwitch – notice Shimano citée : RD-7800 grand pignon 27T",
+   "url": "https://forum.slowtwitch.com/t/11-28-cassette-with-shimano-rd-7800/546445"
+  },
+  "bf-rd6600": {
+   "kind": "communaute",
+   "ref": "BikeForums – spécifications Shimano RD-6600 : 27T max (GS)",
+   "url": "https://www.bikeforums.net/classic-vintage/1063953-max-cog-size-possible-triple-shimano-105-6600-rd.html"
+  },
+  "si-5tk0d": {
+   "kind": "officiel",
+   "ref": "Shimano SI-5TK0D – RD-5500 : grand pignon 27T ; GS capacité 37T, SS capacité 29T",
+   "url": "https://si.shimano.com/es/pdfs/si/5TK0D/SI-5TK0D-000-ENG.pdf"
+  },
+  "gear11-rd7900gs": {
+   "kind": "revendeur",
+   "ref": "gearEleven – RD-7900-GS : capacité 39T",
+   "url": "https://gear11.blogspot.com/2010/11/shimano-dura-ace-rear-derailleur-rd_05.html"
+  },
+  "bc-r7000-cs": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-R7000 : 11-28 (11-12-13-14-15-17-19-21-23-25-28), 11-32 (11-12-13-14-16-18-20-22-25-28-32) ; pignons communs avec la CS-5800",
+   "url": "https://www.bike-components.de/en/Shimano/105-CS-R7000-11-speed-Cassette-p62071/"
   }
  },
  "parts": [
@@ -511,9 +541,15 @@
     "family": "shimano-route-10",
     "maxCog": 28,
     "cageLength": "SS",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 2,
+    "totalCapacity": 33,
+    "maxFrontDiff": 16,
+    "minCog": 11
    },
-   "src": "ww-7900-28",
+   "src": [
+    "ww-7900-28",
+    "gear11-rd7900ss"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -538,12 +574,16 @@
     "totalCapacity": 29,
     "maxFrontDiff": 14,
     "cageLength": "SS",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 2,
+    "maxCog": 27
    },
-   "src": "manualslib-rd7800",
+   "src": [
+    "manualslib-rd7800",
+    "st-rd7800"
+   ],
    "confidence": "basse",
    "status": "a_valider",
-   "notes": "Pignon max non trouvé dans une source lisible."
+   "notes": ""
   },
   {
    "id": "shimano-rd-6600-ss",
@@ -564,12 +604,16 @@
     "family": "shimano-route-10",
     "totalCapacity": 29,
     "cageLength": "SS",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 2,
+    "maxCog": 27
    },
-   "src": "pw-rd6600",
+   "src": [
+    "pw-rd6600",
+    "bf-rd6600"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Pignon max non trouvé dans une source lisible."
+   "notes": "27T (valeur prudente) ; 28T cité ailleurs."
   },
   {
    "id": "shimano-rd-6600-gs",
@@ -590,12 +634,16 @@
     "family": "shimano-route-10",
     "totalCapacity": 37,
     "cageLength": "GS",
-    "maxFrontChainrings": 3
+    "maxFrontChainrings": 3,
+    "maxCog": 27
    },
-   "src": "pw-rd6600",
+   "src": [
+    "pw-rd6600",
+    "bf-rd6600"
+   ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Pignon max non trouvé dans une source lisible."
+   "notes": ""
   },
   {
    "id": "shimano-rd-3500-ss",
@@ -1336,12 +1384,16 @@
     "family": "shimano-9",
     "totalCapacity": 37,
     "cageLength": "GS",
-    "maxFrontChainrings": 3
+    "maxFrontChainrings": 3,
+    "maxCog": 27
    },
-   "src": "rbr-rd5500gs",
-   "confidence": "basse",
+   "src": [
+    "rbr-rd5500gs",
+    "si-5tk0d"
+   ],
+   "confidence": "haute",
    "status": "a_valider",
-   "notes": "Pignon max non lisible dans la source (27-28T sans souci selon un utilisateur)."
+   "notes": ""
   },
   {
    "id": "shimano-rd-4400",
@@ -1800,11 +1852,16 @@
     "minCog": 11,
     "maxCog": 28,
     "pitch": "hg-11",
-    "freehub": "hg_11_route"
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-15-17-19-21-23-25-28"
    },
-   "src": "bd-cs5800",
+   "src": [
+    "bd-cs5800",
+    "bc-r7000-cs"
+   ],
    "confidence": "moyenne",
-   "status": "a_valider"
+   "status": "a_valider",
+   "notes": "Étagement repris de la CS-R7000, dont les pignons sont communs selon un revendeur."
   },
   {
    "id": "shimano-cs-5800-11-30",
@@ -1846,11 +1903,16 @@
     "minCog": 11,
     "maxCog": 32,
     "pitch": "hg-11",
-    "freehub": "hg_11_route"
+    "freehub": "hg_11_route",
+    "cogs": "11-12-13-14-16-18-20-22-25-28-32"
    },
-   "src": "bd-cs5800",
+   "src": [
+    "bd-cs5800",
+    "bc-r7000-cs"
+   ],
    "confidence": "moyenne",
-   "status": "a_valider"
+   "status": "a_valider",
+   "notes": "Étagement repris de la CS-R7000, dont les pignons sont communs selon un revendeur."
   },
   {
    "id": "shimano-cs-5800-12-25",
@@ -2050,6 +2112,58 @@
    "confidence": "moyenne",
    "status": "a_valider",
    "notes": "Directionnelle (marquage à l'extérieur). Prévue pour 2x10 route. Existe en 114 maillons."
+  },
+  {
+   "id": "shimano-rd-7900-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-7900-GS",
+   "aliases": [
+    "rd 7900 gs",
+    "dura-ace 7900 triple"
+   ],
+   "name": "Dura-Ace 7900 chape moyenne",
+   "discipline": "route",
+   "generation": "Dura-Ace 7900 (10v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "totalCapacity": 39,
+    "cageLength": "GS",
+    "maxFrontChainrings": 3
+   },
+   "src": "gear11-rd7900gs",
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pignon max non trouvé pour la chape moyenne."
+  },
+  {
+   "id": "shimano-rd-5500-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-5500-SS",
+   "aliases": [
+    "rd 5500 ss",
+    "105 5500"
+   ],
+   "name": "105 5500 chape courte",
+   "discipline": "route",
+   "generation": "105 5500 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 27,
+    "totalCapacity": 29,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "si-5tk0d",
+   "confidence": "haute",
+   "status": "a_valider"
   }
  ]
 }

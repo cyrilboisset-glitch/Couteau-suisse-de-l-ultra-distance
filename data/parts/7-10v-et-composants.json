@@ -347,6 +347,16 @@
    "kind": "communaute",
    "ref": "Sheldon Brown – Shimano cassette bodies : cassette 7v sur corps 8-9-10v avec entretoise de 4 mm",
    "url": "https://www.sheldonbrown.com/shimano-cassette-bodies.html"
+  },
+  "b24-chorus12-cs": {
+   "kind": "revendeur",
+   "ref": "bike24 – Chorus 12v 11-29 : 11-12-13-14-15-16-17-19-21-23-26-29 ; options 11-29, 11-32, 11-34",
+   "url": "https://www.bike24.com/p2322027.html"
+  },
+  "pb-veloce10-cs": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – Veloce 10v : 11-25 (11-12-13-14-15-17-19-21-23-25), 13-29 (13-14-15-16-17-19-21-23-26-29)",
+   "url": "https://performancebike.com/campagnolo-veloce-cassette-10-speed-1326t-silver-cs9-vlx36/p343016"
   }
  },
  "parts": [
@@ -2011,9 +2021,13 @@
     "minCog": 11,
     "maxCog": 29,
     "pitch": "campagnolo-12",
-    "freehub": "campagnolo"
+    "freehub": "campagnolo",
+    "cogs": "11-12-13-14-15-16-17-19-21-23-26-29"
    },
-   "src": "sjs-chorus12",
+   "src": [
+    "sjs-chorus12",
+    "b24-chorus12-cs"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2128,9 +2142,13 @@
     "minCog": 11,
     "maxCog": 25,
     "pitch": "campagnolo-10",
-    "freehub": "campagnolo"
+    "freehub": "campagnolo",
+    "cogs": "11-12-13-14-15-17-19-21-23-25"
    },
-   "src": "bc-veloce10",
+   "src": [
+    "bc-veloce10",
+    "pb-veloce10-cs"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2197,9 +2215,13 @@
     "minCog": 13,
     "maxCog": 29,
     "pitch": "campagnolo-10",
-    "freehub": "campagnolo"
+    "freehub": "campagnolo",
+    "cogs": "13-14-15-16-17-19-21-23-26-29"
    },
-   "src": "bc-veloce10",
+   "src": [
+    "bc-veloce10",
+    "pb-veloce10-cs"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2460,7 +2482,7 @@
    ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Pneu 28 mm max, portée 51 mm."
+   "notes": "Portée non confirmée : un revendeur annonce 51 mm, un autre 39-49 mm (champ laissé vide, à valider)."
   },
   {
    "id": "shimano-bs-r55c4",

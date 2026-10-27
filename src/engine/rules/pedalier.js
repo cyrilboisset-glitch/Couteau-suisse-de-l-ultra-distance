@@ -76,7 +76,7 @@ export const largeurCoque = {
 
 export const interfacePlateau = {
   id: 'pedalier.interface_plateau',
-  label: 'Interface plateau ↔ manivelle (BCD / direct mount)',
+  label: 'Interface plateau ↔ manivelle (BCD / direct mount / riveté)',
   between: [['crankset', 'chainring']],
   absolute: true,
   confidence: 'haute',
@@ -84,6 +84,9 @@ export const interfacePlateau = {
   evaluate(crank, ring) {
     const g = guard(this, [[crank, ['ringInterface']], [ring, ['ringInterface']]]);
     if (g) return g.finding;
+    if (crank.attrs.ringInterface === 'rivete') {
+      return incompatible(this, 'Plateaux rivetés sur la manivelle : un plateau seul ne se remplace pas, il faut changer le pédalier complet.');
+    }
     if (crank.attrs.ringInterface !== ring.attrs.ringInterface) {
       return incompatible(this, `Plateau ${ring.attrs.ringInterface === 'bcd' ? 'à vis (BCD)' : 'direct mount'} sur manivelle ${crank.attrs.ringInterface === 'bcd' ? 'à vis (BCD)' : 'direct mount'}.`);
     }

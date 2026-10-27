@@ -102,6 +102,11 @@
    "kind": "presse",
    "ref": "road.cc – Ekar 13v : cassettes 9-36, 9-42, 10-44 sur corps N3W ; chaîne 13v",
    "url": "https://road.cc/content/tech-news/campagnolo-launch-ekar-13-speed-gravel-groupset-275995"
+  },
+  "steed-ekar": {
+   "kind": "revendeur",
+   "ref": "Steed Cycles – Ekar 13v : 9-36 (9-10-11-12-13-14-16-18-20-23-27-31-36), 9-42 (9-10-11-12-13-14-16-18-21-25-30-36-42)",
+   "url": "https://steedcycles.com/products/campagnolo-ekar-13sp-cassette-9-42t"
   }
  },
  "parts": [
@@ -673,9 +678,13 @@
     "minCog": 9,
     "maxCog": 36,
     "freehub": "n3w",
-    "pitch": "campagnolo-13"
+    "pitch": "campagnolo-13",
+    "cogs": "9-10-11-12-13-14-16-18-20-23-27-31-36"
    },
-   "src": "roadcc-ekar",
+   "src": [
+    "roadcc-ekar",
+    "steed-ekar"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -696,9 +705,13 @@
     "minCog": 9,
     "maxCog": 42,
     "freehub": "n3w",
-    "pitch": "campagnolo-13"
+    "pitch": "campagnolo-13",
+    "cogs": "9-10-11-12-13-14-16-18-21-25-30-36-42"
    },
-   "src": "roadcc-ekar",
+   "src": [
+    "roadcc-ekar",
+    "steed-ekar"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },

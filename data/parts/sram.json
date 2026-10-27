@@ -172,6 +172,26 @@
    "kind": "revendeur",
    "ref": "Zweirad Stadler – PG-1170 11-28 : 11-12-13-14-15-16-17-19-22-25-28",
    "url": "https://shop.zweirad-stadler.de/fahrrad-teile/antrieb/sram-pg-1170-fahrrad-kassette-11-fach-11-28-zaehne.html"
+  },
+  "roadcc-red36": {
+   "kind": "presse",
+   "ref": "road.cc – RED eTap AXS 36T max : capacité 39T",
+   "url": "https://road.cc/content/tech-news/sram-unveils-red-etap-axs-rear-mech-36-tooth-maximum-280747"
+  },
+  "velomine-apex-xplr-axs": {
+   "kind": "revendeur",
+   "ref": "Velomine – Apex eTap XPLR AXS D1 : 44T max, capacité 34T",
+   "url": "https://velomine.com/products/der-sram-rr-apex-etap-xplr-axs-d1-12s-bk-44t-max-battery-not-included"
+  },
+  "stash-apex-xplr": {
+   "kind": "revendeur",
+   "ref": "Stash Cycles – Apex XPLR D1 : 44T max, capacité 34T",
+   "url": "https://www.stashcycles.com/products/sram-apex-xplr-rear-derailleur-12-speed-medium-cage-44t-max-black-d1"
+  },
+  "campfire-nxeagle": {
+   "kind": "revendeur",
+   "ref": "Campfire Cycling – NX Eagle chape longue : 50T max, capacité 40T",
+   "url": "https://www.campfirecycling.com/product/sram-nx-eagle-rear-derailleur.html"
   }
  },
  "parts": [
@@ -197,9 +217,13 @@
     "minCog": 10,
     "mount": "standard",
     "maxFrontChainrings": 2,
-    "chainTypes": "sram-flattop"
+    "chainTypes": "sram-flattop",
+    "totalCapacity": 39
    },
-   "src": "sram-red36",
+   "src": [
+    "sram-red36",
+    "roadcc-red36"
+   ],
    "confidence": "haute",
    "status": "valide"
   },
@@ -330,9 +354,13 @@
     "maxCog": 44,
     "mount": "standard",
     "maxFrontChainrings": 1,
-    "chainTypes": "sram-flattop"
+    "chainTypes": "sram-flattop",
+    "totalCapacity": 34
    },
-   "src": "sram-apex-xplr-axs",
+   "src": [
+    "sram-apex-xplr-axs",
+    "velomine-apex-xplr-axs"
+   ],
    "confidence": "haute",
    "status": "valide"
   },
@@ -355,9 +383,13 @@
     "maxCog": 44,
     "mount": "standard",
     "maxFrontChainrings": 1,
-    "chainTypes": "sram-flattop"
+    "chainTypes": "sram-flattop",
+    "totalCapacity": 34
    },
-   "src": "bc-apex-xplr",
+   "src": [
+    "bc-apex-xplr",
+    "stash-apex-xplr"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -405,9 +437,13 @@
     "maxCog": 50,
     "mount": "standard",
     "maxFrontChainrings": 1,
-    "chainTypes": "sram-eagle"
+    "chainTypes": "sram-eagle",
+    "totalCapacity": 40
    },
-   "src": "wwc-nx-eagle",
+   "src": [
+    "wwc-nx-eagle",
+    "campfire-nxeagle"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },

@@ -56,7 +56,7 @@ const typeLabel = (t) => PART_TYPES[t]?.label ?? t;
 const DISCIPLINE = { route: 'Route', gravel: 'Gravel', vtt: 'VTT', autre: 'Polyvalent' };
 const VALUE_LABELS = {
   mecanique: 'mécanique', electronique: 'électronique', hydraulique: 'hydraulique', mineral: 'minéral', dot: 'DOT',
-  standard: 'patte classique', udh_direct: 'montage direct UDH', direct_mount: 'direct mount', les_deux: 'droite + gauche',
+  standard: 'patte classique', udh_direct: 'montage direct UDH', direct_mount: 'direct mount', rivete: 'plateaux rivetés', les_deux: 'droite + gauche',
   arriere: 'arrière', avant: 'avant', disque: 'disque', jante: 'jante', cassette: 'cassette', roue_libre: 'roue libre à visser',
   hg_8_9_10: 'HG standard (8/9/10v, VTT 11v)', hg_11_route: 'HG route 11v', hg_12_route: 'Shimano route 12v', hg_l2: 'HG L2',
   microspline: 'Micro Spline', xd: 'XD', xdr: 'XDR', n3w: 'Campagnolo N3W', campagnolo: 'Campagnolo',

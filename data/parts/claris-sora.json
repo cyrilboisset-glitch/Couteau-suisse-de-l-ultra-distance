@@ -1,87 +1,599 @@
 {
-  "_meta": { "description": "Shimano Claris R2000 (8v) et compléments Sora R3000 (9v) : manettes, dérailleurs, pédaliers, cassettes, freins sur jante." },
-  "sources": {
-    "shimano-rd-r2000-ss": { "kind": "officiel", "ref": "Shimano – RD-R2000-SS : pignon max 32T, min 11T, capacité 37T, écart avant 16T", "url": "https://bike.shimano.com/en-US/product/component/claris-r2000/RD-R2000-SS.html" },
-    "shimano-rd-r2000-gs": { "kind": "officiel", "ref": "Shimano – RD-R2000-GS : pignon max 34T, capacité 43T", "url": "https://bike.shimano.com/en-EU/product/component/claris-r2000/RD-R2000-GS.html" },
-    "mec-r2000gs": { "kind": "revendeur", "ref": "MEC – RD-R2000-GS : capacité 43T, pignon max 34T, min 11T", "url": "https://www.mec.ca/en/product/5057-679/shimano-claris-rd-r2000-gs-8-speed-rear-derailleur" },
-    "tune-str2000": { "kind": "revendeur", "ref": "Tune Cycles – ST-R2000 2x8 : FC-R2000, FD-R2000, RD-R2000, cassettes CS-HG50/HG51 8v", "url": "https://shop.tunecycles.com.au/shimano-claris-st-r2000-sti-shifter-set-2x8-speed" },
-    "b24-str2000": { "kind": "revendeur", "ref": "bike24 – ST-R2000 : dérailleurs recommandés RD-R2000, RD-2400", "url": "https://www.bike24.com/p2855060.html" },
-    "bq-fdr2000f": { "kind": "revendeur", "ref": "Bicycles Quilicot – FD-R2000-F braze-on : capacité 16T, grand plateau 46-52T", "url": "https://www.bicyclesquilicot.com/en/shimano-claris-fd-r2000-front-derailleur-braze-on-efdr2000f" },
-    "vp-fdr2000": { "kind": "revendeur", "ref": "Veloplus – FD-R2000 collier 34,9 mm avec cales 31,8 / 28,6 mm", "url": "https://veloplus.ee/en/etuvaihtaja-shimano-claris-fd-r2000-2x8-349mm318mm286mm-63481" },
-    "pb-fcr2000": { "kind": "revendeur", "ref": "Performance Bike – FC-R2000 2x8 Hollowtech II 50/34 BCD 110", "url": "https://performancebike.com/shimano-claris-fcr2000-crankset-black-2-x-8-speed-hollowtech-ii-efcr2000ex04x-p/p1277497" },
-    "pushys-fcr2000": { "kind": "revendeur", "ref": "Pushys – FC-R2000 : ligne de chaîne 43,5 mm, BCD 110", "url": "https://www.pushys.com.au/shimano-claris-fc-r2000-crankset/" },
-    "pb-fcr2030": { "kind": "revendeur", "ref": "Performance Bike – FC-R2030 3x8 Hollowtech II 50/39/30 BCD 110/74", "url": "https://www.performancebike.com/shimano-claris-fcr2030-crankset-black-3-x-8-speed-hollowtech-ii-efcr2030cx090x-p/p1277498" },
-    "atc-fcr2030": { "kind": "revendeur", "ref": "All Terrain Cycles – FC-R2030 triple 8v 50-39-30", "url": "https://allterraincycles.co.uk/products/shimano-claris-fc-r2030-3x8-speed-crank-50-39-30t-175mm" },
-    "99-fdr2030": { "kind": "revendeur", "ref": "99 Bikes – FD-R2030 Claris triple braze-on", "url": "https://99bikes.com.au/products/shimano-fd-r2030-claris-triple-braze-on-front-derailleur" },
-    "bc-hg50-8": { "kind": "revendeur", "ref": "bike-components – CS-HG50-8 : 12-25 = 12-13-15-17-19-21-23-25 ; entretoise 1,85 mm sur corps route 11v", "url": "https://www.bike-components.de/en/Shimano/CS-HG50-8-8-speed-Cassette-p14596/" },
-    "rose-hg50-8": { "kind": "revendeur", "ref": "Rose – HG50-8 : 11-32 = 11-13-15-18-21-24-28-32 ; 11-34 = 11-13-15-18-21-24-28-34", "url": "https://www.rosebikes.it/shimano-hg-50-8-8-speed-cassette-2659033" },
-    "atc-hg50-8-30": { "kind": "revendeur", "ref": "All Terrain Cycles – HG50-8 11-30 = 11-13-15-17-20-23-26-30", "url": "https://www.allterraincycles.co.uk/products/shimano-cs-hg50-8-speed-cassette-11-30t" },
-    "b24-brr2000": { "kind": "revendeur", "ref": "bike24 – BR-R2000 : patins R50T2, portée 51 mm, jante 19-26 mm, pneu 28 mm max", "url": "https://www.bike24.com/p2222271.html" },
-    "peak-brr2000": { "kind": "revendeur", "ref": "Peak Sports – BR-R2000 double pivot, tirage court Super SLR", "url": "https://www.peaksportscorvallis.com/product/shimano-claris-br-r2000-dual-pivot-caliper-brake-363228-1.htm" },
-    "bc-str3000": { "kind": "revendeur", "ref": "bike-components – ST-R3000 2x9 : FD-R3000, RD-R3000, RD-3500", "url": "https://www.bike-components.de/en/Shimano/Sora-STI-ST-R3000-2-9-speed-Shift-Brake-Levers-p50390" },
-    "tune-str3000": { "kind": "revendeur", "ref": "Tune Cycles – ST-R3000 gauche : FD-R3000 seulement, pas de triple", "url": "https://shop.tunecycles.com.au/shimano-sora-st-r3000-sti-dual-control-lever-set-2x9-speed" },
-    "nashbar-str3000": { "kind": "revendeur", "ref": "Nashbar – ST-R3000 : frein mécanique, tirage court", "url": "https://www.nashbar.com/shimano-sora-r3000-sti-shift-lever-black-estr3000lia/p530813" },
-    "bc-fdr3000": { "kind": "revendeur", "ref": "bike-components – FD-R3000 2x9 : capacité 16T, plateau jusqu'à 52T ; collier 34,9 avec cales 31,8 / 28,6", "url": "https://www.bike-components.de/en/Shimano/Sora-FD-R3000-2-9-speed-Front-Derailleur-p50337/" },
-    "bc-fcr3000": { "kind": "revendeur", "ref": "bike-components – FC-R3000 2x9 50-34, 4 bras, BCD 110, ligne de chaîne 43,5 mm", "url": "https://www.bike-components.de/en/Shimano/Sora-FC-R3000-Crankset-p50334/" }
+ "_meta": {
+  "description": "Shimano Claris R2000 (8v) et compléments Sora R3000 (9v) : manettes, dérailleurs, pédaliers, cassettes, freins sur jante."
+ },
+ "sources": {
+  "shimano-rd-r2000-ss": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-R2000-SS : pignon max 32T, min 11T, capacité 37T, écart avant 16T",
+   "url": "https://bike.shimano.com/en-US/product/component/claris-r2000/RD-R2000-SS.html"
   },
-  "parts": [
-    { "id": "shimano-rd-r2000-ss", "type": "rear_derailleur", "brand": "Shimano", "ref": "RD-R2000-SS", "aliases": ["rd r2000", "claris", "claris r2000", "claris chape courte"], "name": "Claris R2000 chape courte", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "system": "mecanique", "mount": "standard", "speeds": 8, "family": "shimano-8", "maxCog": 32, "minCog": 11, "totalCapacity": 37, "maxFrontDiff": 16, "cageLength": "SS", "maxFrontChainrings": 2 },
-      "src": "shimano-rd-r2000-ss", "confidence": "haute", "status": "a_valider" },
-    { "id": "shimano-rd-r2000-gs", "type": "rear_derailleur", "brand": "Shimano", "ref": "RD-R2000-GS", "aliases": ["rd r2000 gs", "claris", "claris r2000", "claris chape moyenne"], "name": "Claris R2000 chape moyenne", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "system": "mecanique", "mount": "standard", "speeds": 8, "family": "shimano-8", "maxCog": 34, "minCog": 11, "totalCapacity": 43, "cageLength": "GS" },
-      "src": ["shimano-rd-r2000-gs", "mec-r2000gs"], "confidence": "haute", "status": "a_valider",
-      "notes": "Écart avant max et usage en triple non confirmés par une source lisible : à vérifier." },
-    { "id": "shimano-st-r2000", "type": "shifter", "brand": "Shimano", "ref": "ST-R2000", "aliases": ["st r2000", "claris", "claris r2000", "levier claris", "manette claris"], "name": "Claris R2000 leviers 2x8", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "side": "les_deux", "speeds": 8, "system": "mecanique", "family": "shimano-8", "form": "levier_route", "frontPositions": 2, "brakeActuation": "mecanique", "cablePull": "court" },
-      "src": ["tune-str2000", "b24-str2000", "peak-brr2000"], "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-fd-r2000-f", "type": "front_derailleur", "brand": "Shimano", "ref": "FD-R2000-F", "aliases": ["fd r2000", "claris", "claris r2000", "derailleur avant claris"], "name": "Claris R2000 dérailleur avant braze-on", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "speeds": 8, "chainrings": 2, "system": "mecanique", "family": "shimano-8", "mount": "braze_on", "capacity": 16, "maxRing": 52, "minRing": 46 },
-      "src": "bq-fdr2000f", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-fd-r2000-collier", "type": "front_derailleur", "brand": "Shimano", "ref": "FD-R2000 (collier)", "aliases": ["fd r2000 collier", "claris collier"], "name": "Claris R2000 dérailleur avant à collier 34,9 (cales 31,8 / 28,6)", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "speeds": 8, "chainrings": 2, "system": "mecanique", "family": "shimano-8", "mount": "collier_34_9", "capacity": 16, "maxRing": 52, "minRing": 46 },
-      "src": ["vp-fdr2000", "bq-fdr2000f"], "confidence": "moyenne", "status": "a_valider",
-      "notes": "Livré avec cales pour tubes 31,8 et 28,6 mm." },
-    { "id": "shimano-fd-r2030-f", "type": "front_derailleur", "brand": "Shimano", "ref": "FD-R2030-F", "aliases": ["fd r2030", "claris triple"], "name": "Claris R2030 dérailleur avant triple braze-on", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "speeds": 8, "chainrings": 3, "system": "mecanique", "family": "shimano-8", "mount": "braze_on" },
-      "src": "99-fdr2030", "confidence": "basse", "status": "a_valider",
-      "notes": "Capacité et grand plateau max contradictoires selon les sources (16 ou 20 dents ; 50 ou 52 dents) : non renseignés." },
-    { "id": "shimano-fc-r2000-50-34", "type": "crankset", "brand": "Shimano", "ref": "FC-R2000 50-34", "aliases": ["fc r2000", "claris", "claris r2000", "pedalier claris"], "name": "Claris R2000 50-34", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "speeds": 8, "spindle": "shimano_24", "ringInterface": "bcd", "bcd": 110, "chainrings": 2, "teeth": "50-34", "chainline": 43.5 },
-      "src": ["pb-fcr2000", "pushys-fcr2000"], "confidence": "moyenne", "status": "a_valider",
-      "notes": "Nombre de vis de plateau non confirmé par les sources." },
-    { "id": "shimano-fc-r2030-50-39-30", "type": "crankset", "brand": "Shimano", "ref": "FC-R2030 50-39-30", "aliases": ["fc r2030", "claris triple"], "name": "Claris R2030 triple 50-39-30", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "speeds": 8, "spindle": "shimano_24", "ringInterface": "bcd", "bcd": 110, "bolts": 4, "chainrings": 3, "teeth": "50-39-30", "chainline": 45 },
-      "src": ["pb-fcr2030", "atc-fcr2030"], "confidence": "moyenne", "status": "a_valider",
-      "notes": "BCD 110 mm (grand et moyen plateaux) / 74 mm (petit plateau)." },
-    { "id": "shimano-cs-hg50-8-11-30", "type": "cassette", "brand": "Shimano", "ref": "CS-HG50-8 11-30", "aliases": ["hg50 8 11-30", "cassette claris"], "name": "HG50 8v 11-30", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "kind": "cassette", "speeds": 8, "minCog": 11, "maxCog": 30, "pitch": "hg-8", "freehub": "hg_8_9_10", "cogs": "11-13-15-17-20-23-26-30" },
-      "src": "atc-hg50-8-30", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-cs-hg50-8-11-32", "type": "cassette", "brand": "Shimano", "ref": "CS-HG50-8 11-32", "aliases": ["hg50 8 11-32", "cassette claris"], "name": "HG50 8v 11-32", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "kind": "cassette", "speeds": 8, "minCog": 11, "maxCog": 32, "pitch": "hg-8", "freehub": "hg_8_9_10", "cogs": "11-13-15-18-21-24-28-32" },
-      "src": "rose-hg50-8", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-cs-hg50-8-11-34", "type": "cassette", "brand": "Shimano", "ref": "CS-HG50-8 11-34", "aliases": ["hg50 8 11-34", "cassette claris"], "name": "HG50 8v 11-34", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "kind": "cassette", "speeds": 8, "minCog": 11, "maxCog": 34, "pitch": "hg-8", "freehub": "hg_8_9_10", "cogs": "11-13-15-18-21-24-28-34" },
-      "src": "rose-hg50-8", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-cs-hg50-8-12-25", "type": "cassette", "brand": "Shimano", "ref": "CS-HG50-8 12-25", "aliases": ["hg50 8 12-25"], "name": "HG50 8v 12-25", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "kind": "cassette", "speeds": 8, "minCog": 12, "maxCog": 25, "pitch": "hg-8", "freehub": "hg_8_9_10", "cogs": "12-13-15-17-19-21-23-25" },
-      "src": "bc-hg50-8", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-br-r2000", "type": "brake_caliper", "brand": "Shimano", "ref": "BR-R2000", "aliases": ["br r2000", "claris", "frein claris"], "name": "Claris R2000 étrier sur jante", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "brakeType": "jante", "brakeActuation": "mecanique", "cablePull": "court", "mount": "etrier_central", "padShape": "shimano-R50T2" },
-      "src": ["b24-brr2000", "peak-brr2000"], "confidence": "moyenne", "status": "a_valider",
-      "notes": "Pneu 28 mm max, jante 19-26 mm. Portée : 51 mm selon bike24, 39-49 mm selon d'autres revendeurs : à mesurer." },
-    { "id": "shimano-bs-r50t2", "type": "brake_pads", "brand": "Shimano", "ref": "R50T2", "aliases": ["patins r50t2", "patins claris"], "name": "Patins R50T2 (monobloc)", "discipline": "route", "generation": "Claris R2000 (8v)",
-      "attrs": { "shape": "shimano-R50T2" },
-      "src": "b24-brr2000", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-st-r3000", "type": "shifter", "brand": "Shimano", "ref": "ST-R3000", "aliases": ["st r3000", "sora", "sora r3000", "levier sora", "manette sora"], "name": "Sora R3000 leviers 2x9", "discipline": "route", "generation": "Sora R3000 (9v)",
-      "attrs": { "side": "les_deux", "speeds": 9, "system": "mecanique", "family": "shimano-9", "form": "levier_route", "frontPositions": 2, "brakeActuation": "mecanique", "cablePull": "court" },
-      "src": ["bc-str3000", "tune-str3000", "nashbar-str3000"], "confidence": "moyenne", "status": "a_valider",
-      "notes": "Levier gauche prévu pour le FD-R3000 double uniquement (pas de triple)." },
-    { "id": "shimano-fd-r3000-collier", "type": "front_derailleur", "brand": "Shimano", "ref": "FD-R3000 (collier)", "aliases": ["fd r3000", "sora", "sora r3000"], "name": "Sora R3000 dérailleur avant à collier 34,9 (cales 31,8 / 28,6)", "discipline": "route", "generation": "Sora R3000 (9v)",
-      "attrs": { "speeds": 9, "chainrings": 2, "system": "mecanique", "family": "shimano-9", "mount": "collier_34_9", "capacity": 16, "maxRing": 52 },
-      "src": "bc-fdr3000", "confidence": "moyenne", "status": "a_valider" },
-    { "id": "shimano-fc-r3000-50-34", "type": "crankset", "brand": "Shimano", "ref": "FC-R3000 50-34", "aliases": ["fc r3000", "sora", "sora r3000", "pedalier sora"], "name": "Sora R3000 50-34", "discipline": "route", "generation": "Sora R3000 (9v)",
-      "attrs": { "speeds": 9, "spindle": "shimano_24", "ringInterface": "bcd", "bcd": 110, "bolts": 4, "chainrings": 2, "teeth": "50-34", "chainline": 43.5 },
-      "src": "bc-fcr3000", "confidence": "moyenne", "status": "a_valider" }
-  ]
+  "shimano-rd-r2000-gs": {
+   "kind": "officiel",
+   "ref": "Shimano – RD-R2000-GS : pignon max 34T, capacité 43T",
+   "url": "https://bike.shimano.com/en-EU/product/component/claris-r2000/RD-R2000-GS.html"
+  },
+  "mec-r2000gs": {
+   "kind": "revendeur",
+   "ref": "MEC – RD-R2000-GS : capacité 43T, pignon max 34T, min 11T",
+   "url": "https://www.mec.ca/en/product/5057-679/shimano-claris-rd-r2000-gs-8-speed-rear-derailleur"
+  },
+  "tune-str2000": {
+   "kind": "revendeur",
+   "ref": "Tune Cycles – ST-R2000 2x8 : FC-R2000, FD-R2000, RD-R2000, cassettes CS-HG50/HG51 8v",
+   "url": "https://shop.tunecycles.com.au/shimano-claris-st-r2000-sti-shifter-set-2x8-speed"
+  },
+  "b24-str2000": {
+   "kind": "revendeur",
+   "ref": "bike24 – ST-R2000 : dérailleurs recommandés RD-R2000, RD-2400",
+   "url": "https://www.bike24.com/p2855060.html"
+  },
+  "bq-fdr2000f": {
+   "kind": "revendeur",
+   "ref": "Bicycles Quilicot – FD-R2000-F braze-on : capacité 16T, grand plateau 46-52T",
+   "url": "https://www.bicyclesquilicot.com/en/shimano-claris-fd-r2000-front-derailleur-braze-on-efdr2000f"
+  },
+  "vp-fdr2000": {
+   "kind": "revendeur",
+   "ref": "Veloplus – FD-R2000 collier 34,9 mm avec cales 31,8 / 28,6 mm",
+   "url": "https://veloplus.ee/en/etuvaihtaja-shimano-claris-fd-r2000-2x8-349mm318mm286mm-63481"
+  },
+  "pb-fcr2000": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – FC-R2000 2x8 Hollowtech II 50/34 BCD 110",
+   "url": "https://performancebike.com/shimano-claris-fcr2000-crankset-black-2-x-8-speed-hollowtech-ii-efcr2000ex04x-p/p1277497"
+  },
+  "pushys-fcr2000": {
+   "kind": "revendeur",
+   "ref": "Pushys – FC-R2000 : ligne de chaîne 43,5 mm, BCD 110",
+   "url": "https://www.pushys.com.au/shimano-claris-fc-r2000-crankset/"
+  },
+  "pb-fcr2030": {
+   "kind": "revendeur",
+   "ref": "Performance Bike – FC-R2030 3x8 Hollowtech II 50/39/30 BCD 110/74",
+   "url": "https://www.performancebike.com/shimano-claris-fcr2030-crankset-black-3-x-8-speed-hollowtech-ii-efcr2030cx090x-p/p1277498"
+  },
+  "atc-fcr2030": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – FC-R2030 triple 8v 50-39-30",
+   "url": "https://allterraincycles.co.uk/products/shimano-claris-fc-r2030-3x8-speed-crank-50-39-30t-175mm"
+  },
+  "99-fdr2030": {
+   "kind": "revendeur",
+   "ref": "99 Bikes – FD-R2030 Claris triple braze-on",
+   "url": "https://99bikes.com.au/products/shimano-fd-r2030-claris-triple-braze-on-front-derailleur"
+  },
+  "bc-hg50-8": {
+   "kind": "revendeur",
+   "ref": "bike-components – CS-HG50-8 : 12-25 = 12-13-15-17-19-21-23-25 ; entretoise 1,85 mm sur corps route 11v",
+   "url": "https://www.bike-components.de/en/Shimano/CS-HG50-8-8-speed-Cassette-p14596/"
+  },
+  "rose-hg50-8": {
+   "kind": "revendeur",
+   "ref": "Rose – HG50-8 : 11-32 = 11-13-15-18-21-24-28-32 ; 11-34 = 11-13-15-18-21-24-28-34",
+   "url": "https://www.rosebikes.it/shimano-hg-50-8-8-speed-cassette-2659033"
+  },
+  "atc-hg50-8-30": {
+   "kind": "revendeur",
+   "ref": "All Terrain Cycles – HG50-8 11-30 = 11-13-15-17-20-23-26-30",
+   "url": "https://www.allterraincycles.co.uk/products/shimano-cs-hg50-8-speed-cassette-11-30t"
+  },
+  "b24-brr2000": {
+   "kind": "revendeur",
+   "ref": "bike24 – BR-R2000 : patins R50T2, portée 51 mm, jante 19-26 mm, pneu 28 mm max",
+   "url": "https://www.bike24.com/p2222271.html"
+  },
+  "peak-brr2000": {
+   "kind": "revendeur",
+   "ref": "Peak Sports – BR-R2000 double pivot, tirage court Super SLR",
+   "url": "https://www.peaksportscorvallis.com/product/shimano-claris-br-r2000-dual-pivot-caliper-brake-363228-1.htm"
+  },
+  "bc-str3000": {
+   "kind": "revendeur",
+   "ref": "bike-components – ST-R3000 2x9 : FD-R3000, RD-R3000, RD-3500",
+   "url": "https://www.bike-components.de/en/Shimano/Sora-STI-ST-R3000-2-9-speed-Shift-Brake-Levers-p50390"
+  },
+  "tune-str3000": {
+   "kind": "revendeur",
+   "ref": "Tune Cycles – ST-R3000 gauche : FD-R3000 seulement, pas de triple",
+   "url": "https://shop.tunecycles.com.au/shimano-sora-st-r3000-sti-dual-control-lever-set-2x9-speed"
+  },
+  "nashbar-str3000": {
+   "kind": "revendeur",
+   "ref": "Nashbar – ST-R3000 : frein mécanique, tirage court",
+   "url": "https://www.nashbar.com/shimano-sora-r3000-sti-shift-lever-black-estr3000lia/p530813"
+  },
+  "bc-fdr3000": {
+   "kind": "revendeur",
+   "ref": "bike-components – FD-R3000 2x9 : capacité 16T, plateau jusqu'à 52T ; collier 34,9 avec cales 31,8 / 28,6",
+   "url": "https://www.bike-components.de/en/Shimano/Sora-FD-R3000-2-9-speed-Front-Derailleur-p50337/"
+  },
+  "bc-fcr3000": {
+   "kind": "revendeur",
+   "ref": "bike-components – FC-R3000 2x9 50-34, 4 bras, BCD 110, ligne de chaîne 43,5 mm",
+   "url": "https://www.bike-components.de/en/Shimano/Sora-FC-R3000-Crankset-p50334/"
+  },
+  "velomine-br-r2000": {
+   "kind": "revendeur",
+   "ref": "Velomine – BR-R2000 avant/arrière : Short Reach Caliper (39-49 mm)",
+   "url": "https://velomine.com/products/shimano-claris-br-r2000-rear-brake-caliper"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-rd-r2000-ss",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-R2000-SS",
+   "aliases": [
+    "rd r2000",
+    "claris",
+    "claris r2000",
+    "claris chape courte"
+   ],
+   "name": "Claris R2000 chape courte",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 32,
+    "minCog": 11,
+    "totalCapacity": 37,
+    "maxFrontDiff": 16,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": "shimano-rd-r2000-ss",
+   "confidence": "haute",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-r2000-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-R2000-GS",
+   "aliases": [
+    "rd r2000 gs",
+    "claris",
+    "claris r2000",
+    "claris chape moyenne"
+   ],
+   "name": "Claris R2000 chape moyenne",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 34,
+    "minCog": 11,
+    "totalCapacity": 43,
+    "cageLength": "GS"
+   },
+   "src": [
+    "shimano-rd-r2000-gs",
+    "mec-r2000gs"
+   ],
+   "confidence": "haute",
+   "status": "a_valider",
+   "notes": "Écart avant max et usage en triple non confirmés par une source lisible : à vérifier."
+  },
+  {
+   "id": "shimano-st-r2000",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-R2000",
+   "aliases": [
+    "st r2000",
+    "claris",
+    "claris r2000",
+    "levier claris",
+    "manette claris"
+   ],
+   "name": "Claris R2000 leviers 2x8",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "tune-str2000",
+    "b24-str2000",
+    "peak-brr2000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-r2000-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-R2000-F",
+   "aliases": [
+    "fd r2000",
+    "claris",
+    "claris r2000",
+    "derailleur avant claris"
+   ],
+   "name": "Claris R2000 dérailleur avant braze-on",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "mount": "braze_on",
+    "capacity": 16,
+    "maxRing": 52,
+    "minRing": 46
+   },
+   "src": "bq-fdr2000f",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fd-r2000-collier",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-R2000 (collier)",
+   "aliases": [
+    "fd r2000 collier",
+    "claris collier"
+   ],
+   "name": "Claris R2000 dérailleur avant à collier 34,9 (cales 31,8 / 28,6)",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "mount": "collier_34_9",
+    "capacity": 16,
+    "maxRing": 52,
+    "minRing": 46
+   },
+   "src": [
+    "vp-fdr2000",
+    "bq-fdr2000f"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Livré avec cales pour tubes 31,8 et 28,6 mm."
+  },
+  {
+   "id": "shimano-fd-r2030-f",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-R2030-F",
+   "aliases": [
+    "fd r2030",
+    "claris triple"
+   ],
+   "name": "Claris R2030 dérailleur avant triple braze-on",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "mount": "braze_on"
+   },
+   "src": "99-fdr2030",
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Capacité et grand plateau max contradictoires selon les sources (16 ou 20 dents ; 50 ou 52 dents) : non renseignés."
+  },
+  {
+   "id": "shimano-fc-r2000-50-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-R2000 50-34",
+   "aliases": [
+    "fc r2000",
+    "claris",
+    "claris r2000",
+    "pedalier claris"
+   ],
+   "name": "Claris R2000 50-34",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "speeds": 8,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "chainrings": 2,
+    "teeth": "50-34",
+    "chainline": 43.5
+   },
+   "src": [
+    "pb-fcr2000",
+    "pushys-fcr2000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Nombre de vis de plateau non confirmé par les sources."
+  },
+  {
+   "id": "shimano-fc-r2030-50-39-30",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-R2030 50-39-30",
+   "aliases": [
+    "fc r2030",
+    "claris triple"
+   ],
+   "name": "Claris R2030 triple 50-39-30",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "speeds": 8,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 3,
+    "teeth": "50-39-30",
+    "chainline": 45
+   },
+   "src": [
+    "pb-fcr2030",
+    "atc-fcr2030"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "BCD 110 mm (grand et moyen plateaux) / 74 mm (petit plateau)."
+  },
+  {
+   "id": "shimano-cs-hg50-8-11-30",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-8 11-30",
+   "aliases": [
+    "hg50 8 11-30",
+    "cassette claris"
+   ],
+   "name": "HG50 8v 11-30",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 30,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-17-20-23-26-30"
+   },
+   "src": "atc-hg50-8-30",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-8-11-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-8 11-32",
+   "aliases": [
+    "hg50 8 11-32",
+    "cassette claris"
+   ],
+   "name": "HG50 8v 11-32",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-18-21-24-28-32"
+   },
+   "src": "rose-hg50-8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-8-11-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-8 11-34",
+   "aliases": [
+    "hg50 8 11-34",
+    "cassette claris"
+   ],
+   "name": "HG50 8v 11-34",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10",
+    "cogs": "11-13-15-18-21-24-28-34"
+   },
+   "src": "rose-hg50-8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-cs-hg50-8-12-25",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG50-8 12-25",
+   "aliases": [
+    "hg50 8 12-25"
+   ],
+   "name": "HG50 8v 12-25",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 12,
+    "maxCog": 25,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10",
+    "cogs": "12-13-15-17-19-21-23-25"
+   },
+   "src": "bc-hg50-8",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-r2000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-R2000",
+   "aliases": [
+    "br r2000",
+    "claris",
+    "frein claris"
+   ],
+   "name": "Claris R2000 étrier sur jante",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "brakeType": "jante",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "etrier_central",
+    "padShape": "shimano-R50T2",
+    "reachMin": 39,
+    "reachMax": 49
+   },
+   "src": [
+    "b24-brr2000",
+    "peak-brr2000",
+    "velomine-br-r2000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pneu 28 mm max, jante 19-26 mm. Portée : 51 mm selon bike24, 39-49 mm selon d'autres revendeurs : à mesurer."
+  },
+  {
+   "id": "shimano-bs-r50t2",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "R50T2",
+   "aliases": [
+    "patins r50t2",
+    "patins claris"
+   ],
+   "name": "Patins R50T2 (monobloc)",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "attrs": {
+    "shape": "shimano-R50T2"
+   },
+   "src": "b24-brr2000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-st-r3000",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-R3000",
+   "aliases": [
+    "st r3000",
+    "sora",
+    "sora r3000",
+    "levier sora",
+    "manette sora"
+   ],
+   "name": "Sora R3000 leviers 2x9",
+   "discipline": "route",
+   "generation": "Sora R3000 (9v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "levier_route",
+    "frontPositions": 2,
+    "brakeActuation": "mecanique",
+    "cablePull": "court"
+   },
+   "src": [
+    "bc-str3000",
+    "tune-str3000",
+    "nashbar-str3000"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier gauche prévu pour le FD-R3000 double uniquement (pas de triple)."
+  },
+  {
+   "id": "shimano-fd-r3000-collier",
+   "type": "front_derailleur",
+   "brand": "Shimano",
+   "ref": "FD-R3000 (collier)",
+   "aliases": [
+    "fd r3000",
+    "sora",
+    "sora r3000"
+   ],
+   "name": "Sora R3000 dérailleur avant à collier 34,9 (cales 31,8 / 28,6)",
+   "discipline": "route",
+   "generation": "Sora R3000 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "mount": "collier_34_9",
+    "capacity": 16,
+    "maxRing": 52
+   },
+   "src": "bc-fdr3000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-fc-r3000-50-34",
+   "type": "crankset",
+   "brand": "Shimano",
+   "ref": "FC-R3000 50-34",
+   "aliases": [
+    "fc r3000",
+    "sora",
+    "sora r3000",
+    "pedalier sora"
+   ],
+   "name": "Sora R3000 50-34",
+   "discipline": "route",
+   "generation": "Sora R3000 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "spindle": "shimano_24",
+    "ringInterface": "bcd",
+    "bcd": 110,
+    "bolts": 4,
+    "chainrings": 2,
+    "teeth": "50-34",
+    "chainline": 43.5
+   },
+   "src": "bc-fcr3000",
+   "confidence": "moyenne",
+   "status": "a_valider"
+  }
+ ]
 }
