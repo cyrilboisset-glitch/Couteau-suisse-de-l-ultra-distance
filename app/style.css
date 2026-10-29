@@ -460,3 +460,17 @@ textarea { min-height: 100px; font-family: ui-monospace, monospace; font-size: .
 }
 .foot p { margin: 4px 0; }
 .foot a { color: inherit; }
+
+/* --- Mode baroudeur -------------------------------------------------------- */
+.expedition-bar {
+  display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center;
+  background: var(--warn-bg); border: 2px solid var(--l3); border-radius: var(--radius);
+  padding: 8px 12px; margin: 0 0 12px; font-size: .85rem; font-weight: 600;
+}
+.expedition-bar a { color: var(--l3); margin-left: auto; }
+html.expedition .tabs-wrap { border-bottom: 3px solid var(--l3); }
+.exp-word { display: grid; gap: 6px; margin: 10px 0; font-weight: 600; }
+.exp-word input {
+  min-height: var(--tap); padding: 8px 12px; border-radius: var(--radius); border: 2px solid var(--border);
+  background: var(--card); color: var(--fg); font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase;
+}

@@ -97,6 +97,22 @@ describe('sécurité freinage', () => {
   });
 });
 
+describe('mode baroudeur', () => {
+  const kbExp = { ...kb, expedition: true };
+  test('dépannages de freinage affichés, marqués urgence', () => {
+    for (const [a, b] of [[P.shifterRoute11Hydro, P.caliperMineralFlatOther], [P.padsAMetal, P.rotorCenterlock]]) {
+      const r = checkPair(a, b, kbExp);
+      assert.equal(r.level, LEVEL.DEGRADED);
+      assert.equal(r.emergency, true);
+      assert.equal(r.toValidate, true);
+    }
+  });
+  test('les incompatibilités de freinage restent ❌', () => {
+    const r = checkPair(P.padsAMetal, P.rotorCenterlock, kb);
+    assert.equal(r.level, LEVEL.INCOMPATIBLE);
+  });
+});
+
 describe('pédalier et boîtier', () => {
   test('axe 24 mm dans boîtier 24 mm', () => {
     assert.equal(checkPair(P.crankRoute, P.bbBsa24, kb).level, LEVEL.OFFICIAL);

@@ -2,12 +2,15 @@
 import { t } from './src/i18n/index.js';
 
 // À incrémenter quand les conditions changent : l'utilisateur doit les accepter à nouveau.
-export const TERMS_VERSION = 1;
+export const TERMS_VERSION = 2;
+
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 const TERMS = [
   ['Objet', "Groupset Compatibility Toolbox est une aide à la décision : elle indique des compatibilités entre pièces de vélo à partir de sources publiques citées. Elle ne remplace ni la notice du fabricant ni l'avis d'un mécanicien professionnel."],
   ['Responsabilité de l\'utilisateur', "Le choix, l'achat, le montage et le réglage des pièces restent sous votre seule responsabilité. Vérifiez toujours le montage avant de rouler et, en cas de doute, faites contrôler le vélo par un professionnel."],
   ['Freinage', "Les freins sont des organes de sécurité. L'appli ne propose pour eux que des compatibilités officielles ou connues, jamais de solution de dépannage. Tout montage ou intervention sur les freins doit être contrôlé par un professionnel avant de rouler."],
+  ['Mode baroudeur', "Le mode baroudeur, désactivé par défaut, s'active volontairement pour une durée limitée. Il affiche aussi les solutions de dépannage sur les freins, destinées uniquement à rejoindre l'atelier le plus proche en cas d'isolement. Ces montages sont provisoires, dégradent le freinage et se font à vos risques : testez-les à l'arrêt, roulez à vitesse réduite et faites-les refaire par un professionnel dès que possible. Les combinaisons dangereuses restent refusées."],
   ['Données', "Les données viennent de documents publics des fabricants, revendeurs et de la communauté, avec leur source et leur niveau de confiance. Elles peuvent être incomplètes, contenir des erreurs ou évoluer. Les données marquées « non vérifié » ou « à valider » n'ont pas de confirmation du fabricant."],
   ['Limitation de responsabilité', "Dans les limites permises par la loi, l'éditeur ne peut être tenu responsable des dommages résultant d'un montage, d'un réglage ou d'un achat effectué à partir des informations de l'appli. Rien dans ces conditions ne limite les droits que la loi vous garantit."],
   ['Marques', "L'appli n'est ni affiliée à Shimano, SRAM, Campagnolo ni aux autres marques citées, ni approuvée par elles. Les noms et références sont cités uniquement pour décrire les pièces."],
@@ -44,8 +47,43 @@ export function conditionsHtml() {
     <div class="btn-row"><a class="btn ghost" href="#/">‹ ${t('Retour')}</a></div>`;
 }
 
+// Mode baroudeur : durée d'activation, puis retour automatique au mode sûr.
+export const EXPEDITION_HOURS = 48;
+export const EXPEDITION_WORD = 'URGENCE';
+
+export function expeditionBanner(until) {
+  const end = new Date(until).toLocaleString(undefined, { weekday: 'short', hour: '2-digit', minute: '2-digit' });
+  return `<p class="expedition-bar" role="status"><span aria-hidden="true">🧭</span> ${t('Mode baroudeur actif jusqu\'à {0} : dépannages de freinage affichés.', end)}
+    <a href="#/baroudeur">${t('Gérer')}</a></p>`;
+}
+
+export function expeditionHtml(until) {
+  if (until) {
+    return `<section class="summary expedition">
+      <h2>🧭 ${t('Mode baroudeur actif')}</h2>
+      <p>${t('Les solutions de dépannage sur les freins sont affichées, marquées 🚨 urgence. Retour automatique au mode sûr le {0}.', esc(new Date(until).toLocaleString()))}</p>
+      <div class="btn-row"><button class="btn" type="button" id="exp-off">${t('Revenir au mode sûr')}</button></div>
+    </section>`;
+  }
+  return `<section class="summary expedition">
+    <h2>🧭 ${t('Mode baroudeur')}</h2>
+    <p>${t('Pour le voyageur isolé, loin de tout atelier : affiche aussi les solutions de dépannage sur les freins (huiles minérales de marques différentes, plaquettes non prévues, maîtres-cylindres croisés…).')}</p>
+    ${safetyBanner()}
+    <ul class="gate-points">
+      <li>⚠️ ${t('Montages provisoires qui dégradent le freinage, à vos risques : seulement pour rejoindre l\'atelier le plus proche.')}</li>
+      <li>🧪 ${t('Les combinaisons dangereuses restent refusées (huile minérale ↔ liquide DOT, huiles interdites par le fabricant).')}</li>
+      <li>⏱️ ${t('Activation pour {0} h, puis retour automatique au mode sûr.', EXPEDITION_HOURS)}</li>
+    </ul>
+    <label class="accept"><input type="checkbox" id="exp-box"> ${t('Je comprends et j\'accepte les risques de ces montages d\'urgence.')}</label>
+    <label class="exp-word"><span>${t('Tapez {0} pour confirmer :', `<strong>${EXPEDITION_WORD}</strong>`)}</span>
+      <input type="text" id="exp-word" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
+    <div class="btn-row"><button class="btn danger" type="button" id="exp-on" disabled>${t('Activer le mode baroudeur')}</button>
+      <a class="btn ghost" href="#/">${t('Retour')}</a></div>
+  </section>`;
+}
+
 export function footerHtml(meta) {
   const base = meta ? t('Base du {0} · {1} pièces', meta.date, meta.parts) : '';
   return `<p>${t('Aide à la décision : ne remplace pas un mécanicien.')} ${t('Non affilié à Shimano, SRAM, Campagnolo ni aux autres marques citées ; noms cités à titre descriptif.')}</p>
-    <p>${base ? `${base} · ` : ''}<a href="#/conditions">${t('Conditions d\'utilisation')}</a></p>`;
+    <p>${base ? `${base} · ` : ''}<a href="#/conditions">${t('Conditions d\'utilisation')}</a> · <a href="#/baroudeur">🧭 ${t('Mode baroudeur')}</a></p>`;
 }

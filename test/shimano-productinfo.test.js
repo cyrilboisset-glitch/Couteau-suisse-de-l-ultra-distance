@@ -22,6 +22,12 @@ describe('Shimano productinfo', () => {
     assert.equal(checkPair(P('shimano-bl-m8200'), P('shimano-br-m8100'), kb).level, LEVEL.INCOMPATIBLE);
     assert.ok(checkPair(P('shimano-bl-m8200'), P('shimano-br-m8200'), kb).level <= LEVEL.KNOWN);
   });
+  test('mode baroudeur : minéral ↔ LOW VISCOSITY et minéral ↔ DOT restent incompatibles', () => {
+    const kbExp = { ...kb, expedition: true };
+    assert.equal(checkPair(P('shimano-bl-m8200'), P('shimano-br-m8100'), kbExp).level, LEVEL.INCOMPATIBLE);
+    const dot = parts.find((p) => p.type === 'brake_caliper' && p.attrs?.fluid === 'dot');
+    assert.equal(checkPair(P('shimano-bl-m8100'), dot, kbExp).level, LEVEL.INCOMPATIBLE);
+  });
   test('C-192 : plaquettes 4 pistons sur étrier 4 pistons, pas sur un 2 pistons', () => {
     assert.ok(checkPair(P('shimano-br-m8120'), P('shimano-bp-n03a-rf'), kb).level <= LEVEL.KNOWN);
     assert.equal(checkPair(P('shimano-br-m8100'), P('shimano-bp-d03s-rx'), kb).level, LEVEL.INCOMPATIBLE);

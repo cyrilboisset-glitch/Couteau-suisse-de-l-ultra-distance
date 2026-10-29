@@ -1,10 +1,10 @@
 // Interface : pièce cassée → remplacements classés ; « sous la main » ; « mon vélo ».
-import { createKnowledge, findReplacements, checkAvailable, isSafetyPart, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
+import { createKnowledge, findReplacements, checkAvailable, isSafetyPart, EMERGENCY_STEPS, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
 import { searchParts } from './src/search.js';
 import { tr, t, trName, setLang, getLang, detectLang, LANGS } from './src/i18n/index.js';
 import { createProjetView } from './projet.js';
 import { createParcourirView } from './parcourir.js';
-import { TERMS_VERSION, gateHtml, conditionsHtml, footerHtml, safetyBanner } from './legal.js';
+import { TERMS_VERSION, gateHtml, conditionsHtml, footerHtml, safetyBanner, expeditionHtml, expeditionBanner, EXPEDITION_HOURS, EXPEDITION_WORD } from './legal.js';
 
 const CATALOGUE_URL = './catalogue.json';
 const view = document.getElementById('view');
@@ -12,12 +12,14 @@ const view = document.getElementById('view');
 const state = {
   parts: [],
   byId: new Map(),
-  kb: null,
+  kbBase: null,      // règles normales (freinage sûr)
+  kbExpedition: null, // mode baroudeur : dépannages de freinage affichés
   bike: [],          // ids des pièces connues du vélo
   dispoBroken: null, // id de la pièce cassée en mode « sous la main »
   dispo: [],         // ids des pièces disponibles
   showLevels: { 1: true, 2: true, 3: true, 4: false },
   meta: null,        // date et taille de la base
+  get kb() { return expeditionUntil() ? this.kbExpedition : this.kbBase; },
 };
 
 // --- Stockage local (confort seulement : l'appli marche sans) ---------------
@@ -37,6 +39,13 @@ const store = {
     try { localStorage.setItem(key, JSON.stringify(value)); } catch { store.persistent = false; }
   },
 };
+
+// --- Mode baroudeur ----------------------------------------------------------
+/** Fin du mode baroudeur (horodatage) s'il est actif, sinon null. */
+function expeditionUntil() {
+  const until = store.get('expeditionUntil', 0);
+  return until && until > Date.now() ? until : null;
+}
 
 // --- Thème -----------------------------------------------------------------
 const themeBtn = document.getElementById('theme');
@@ -238,6 +247,7 @@ function resultCard({ part, result: r }, i = 0) {
   if (part.status !== 'valide') tags.push(unverifiedChip(part));
   else if (r.toValidate) tags.push(`<span class="chip warn">${t('à valider')}</span>`);
   if (r.absolute) tags.push(`<span class="chip warn">${t('exclusion absolue')}</span>`);
+  if (r.emergency) tags.push(`<span class="chip warn strong">🚨 ${t('urgence freinage')}</span>`);
   const reasons = incompatible || r.level === LEVEL.DEGRADED ? r.reasons : [];
   const findings = r.findings.map((f) => `<p class="finding">${LEVEL_INFO[f.level].emoji} ${x(f.message)}${f.source?.url ? ` <a href="${esc(f.source.url)}" target="_blank" rel="noopener">${t('source')}</a>` : f.source?.ref ? ` <span class="muted">(${x(f.source.ref)})</span>` : ''}</p>`).join('');
   return `<article class="card ${levelClass(r.level)}" style="--i:${i}">
@@ -247,6 +257,7 @@ function resultCard({ part, result: r }, i = 0) {
     <p class="muted small">${nm(part.name ?? '')}</p>
     <div class="chips">${tags.join('')}</div>
     ${block(incompatible ? t('Pourquoi') : t('Point bloquant'), reasons)}
+    ${r.emergency ? block(`🚨 ${t('Procédure d\'urgence')}`, EMERGENCY_STEPS) : ''}
     ${incompatible ? '' : block(t('❓ À vérifier sur votre vélo'), r.conditions)}
     ${incompatible ? '' : block(t('⚠ Limitations'), r.limitations)}
     ${incompatible ? '' : block(t('Ce qui change'), r.changes)}
@@ -410,6 +421,30 @@ const VIEWS = {
     view.innerHTML = conditionsHtml();
   },
 
+  baroudeur() {
+    const until = expeditionUntil();
+    view.innerHTML = expeditionHtml(until);
+    if (until) {
+      view.querySelector('#exp-off').addEventListener('click', () => {
+        store.set('expeditionUntil', 0);
+        toast(t('Mode sûr rétabli'));
+        route();
+      });
+      return;
+    }
+    const box = view.querySelector('#exp-box');
+    const word = view.querySelector('#exp-word');
+    const btn = view.querySelector('#exp-on');
+    const check = () => { btn.disabled = !(box.checked && word.value.trim().toUpperCase() === EXPEDITION_WORD); };
+    box.addEventListener('change', check);
+    word.addEventListener('input', check);
+    btn.addEventListener('click', () => {
+      store.set('expeditionUntil', Date.now() + EXPEDITION_HOURS * 3600e3);
+      toast(t('Mode baroudeur activé'));
+      location.hash = '#/';
+    });
+  },
+
   gate() {
     view.innerHTML = gateHtml();
     const box = view.querySelector('#accept-box');
@@ -494,6 +529,9 @@ function route() {
   else if (name === 'projet') VIEWS.projet(arg ? decodeURIComponent(arg) : null);
   else if (name === 'parcourir') VIEWS.parcourir([arg, ...rest].filter((s) => s !== undefined && s !== ''));
   else (VIEWS[tab] ?? VIEWS.casse)();
+  const until = expeditionUntil();
+  if (until && name !== 'baroudeur') view.insertAdjacentHTML('afterbegin', expeditionBanner(until));
+  document.documentElement.classList.toggle('expedition', Boolean(until));
   animateIn();
   window.scrollTo(0, 0);
 }
@@ -511,7 +549,8 @@ async function init() {
     state.meta = meta;
     state.parts = parts;
     state.byId = new Map(parts.map((p) => [p.id, p]));
-    state.kb = createKnowledge(knowledge);
+    state.kbBase = createKnowledge(knowledge);
+    state.kbExpedition = { ...state.kbBase, expedition: true };
   } catch (err) {
     view.innerHTML = `<p class="note">${t('Impossible de charger la base ({0}). En local : <code>npm start</code>.', esc(err.message))}</p>`;
     return;

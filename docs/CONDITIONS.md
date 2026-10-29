@@ -1,6 +1,6 @@
 # Conditions d'utilisation – Groupset Compatibility Toolbox
 
-> Version 1. Texte affiché et accepté au premier lancement de l'appli (`app/legal.js`). À faire relire par un juriste avant la commercialisation.
+> Version 2. Texte affiché et accepté au premier lancement de l'appli (`app/legal.js`). À faire relire par un juriste avant la commercialisation.
 
 ## Objet
 
@@ -13,6 +13,10 @@ Le choix, l'achat, le montage et le réglage des pièces restent sous votre seul
 ## Freinage
 
 Les freins sont des organes de sécurité. L'appli ne propose pour eux que des compatibilités officielles ou connues, jamais de solution de dépannage. Tout montage ou intervention sur les freins doit être contrôlé par un professionnel avant de rouler.
+
+## Mode baroudeur
+
+Le mode baroudeur, désactivé par défaut, s'active volontairement pour une durée limitée. Il affiche aussi les solutions de dépannage sur les freins, destinées uniquement à rejoindre l'atelier le plus proche en cas d'isolement. Ces montages sont provisoires, dégradent le freinage et se font à vos risques : testez-les à l'arrêt, roulez à vitesse réduite et faites-les refaire par un professionnel dès que possible. Les combinaisons dangereuses restent refusées.
 
 ## Données
 
