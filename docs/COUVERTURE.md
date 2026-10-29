@@ -2,7 +2,7 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **1084 pièces**, dont 65 validées par une page constructeur et **1019 à valider**.
+- **1214 pièces**, dont 65 validées par une page constructeur et **1149 à valider**.
 - Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 275, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 93 |
 | Sachs | 4 |
-| Shimano | 785 |
+| Shimano | 915 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -322,7 +322,7 @@
 | EDS OX2.0 dérailleur 93 mm | Wheeltop | vtt | à valider |  |
 | EDS TX dérailleur | Wheeltop | route | à valider | totalCapacity |
 
-## Manette / levier de vitesses (234)
+## Manette / levier de vitesses (242)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -380,13 +380,16 @@
 | SL-BSR1 | Shimano | route | à valider |  |
 | SL-FT55-7R | Shimano | vtt | à valider |  |
 | SL-M2000-R | Shimano | vtt | à valider |  |
+| SL-M2010-2L | Shimano | vtt | à valider |  |
 | SL-M2010-9R | Shimano | vtt | à valider |  |
 | SL-M3000-R | Shimano | vtt | à valider |  |
 | SL-M310-7R | Shimano | vtt | validé |  |
 | SL-M310-8R | Shimano | vtt | à valider |  |
+| SL-M3100-2L | Shimano | vtt | à valider |  |
 | SL-M3100-L (2 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-L (3 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-R | Shimano | vtt | à valider |  |
+| SL-M315-2L | Shimano | vtt | à valider |  |
 | SL-M315-7R | Shimano | vtt | validé |  |
 | SL-M315-8R | Shimano | vtt | à valider |  |
 | SL-M360-R | Shimano | vtt | à valider |  |
@@ -410,9 +413,11 @@
 | SL-M7000-10-R | Shimano | vtt | à valider |  |
 | SL-M7000-L | Shimano | vtt | à valider |  |
 | SL-M7000-11-R | Shimano | vtt | à valider |  |
+| SL-M7100-L | Shimano | vtt | à valider |  |
 | SL-M7100-R | Shimano | vtt | à valider |  |
 | SL-M770-L | Shimano | vtt | à valider |  |
 | SL-M8000-R | Shimano | vtt | à valider |  |
+| SL-M8100-L | Shimano | vtt | à valider |  |
 | SL-M8100-R | Shimano | vtt | validé |  |
 | SL-M8130-R11 | Shimano | vtt | à valider |  |
 | SL-M820-R | Shimano | vtt | à valider |  |
@@ -420,6 +425,7 @@
 | SL-M8210-R | Shimano | vtt | à valider |  |
 | SL-M8230-R11 | Shimano | vtt | à valider |  |
 | SL-M9000-R | Shimano | vtt | à valider |  |
+| SL-M9100-L | Shimano | vtt | à valider |  |
 | SL-M9100-R | Shimano | vtt | à valider |  |
 | SL-MC37 | Shimano | vtt | à valider |  |
 | SL-R2000 | Shimano | route | à valider |  |
@@ -497,6 +503,7 @@
 | ST-EF500-7R4A | Shimano | vtt | à valider |  |
 | ST-EF500-8R2A | Shimano | vtt | à valider |  |
 | ST-EF500-8R4A | Shimano | vtt | à valider |  |
+| ST-EF505-2L | Shimano | vtt | à valider |  |
 | ST-EF505-7R | Shimano | vtt | à valider |  |
 | ST-EF505-8R | Shimano | vtt | à valider |  |
 | ST-EF505-9R | Shimano | vtt | à valider |  |
@@ -505,6 +512,7 @@
 | ST-EF510-8R2A | Shimano | vtt | à valider |  |
 | ST-EF510-8R4A | Shimano | vtt | à valider |  |
 | ST-EF510-9R2A | Shimano | vtt | à valider |  |
+| ST-EF515-2L | Shimano | vtt | à valider |  |
 | ST-EF515-7R | Shimano | vtt | à valider |  |
 | ST-EF515-8R | Shimano | vtt | à valider |  |
 | ST-EF65-7R2 | Shimano | vtt | à valider |  |
@@ -892,39 +900,77 @@
 | PC-850 | SRAM | autre | à valider |  |
 | PC-951 | SRAM | autre | à valider |  |
 
-## Dérailleur avant (30)
+## Dérailleur avant (68)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Nuovo Record (avant, collier 28,6) | Campagnolo | route | à valider | speeds |
 | FD eRX | LTWOO | route | à valider | mount |
+| FD-2300 | Shimano | route | à valider | mount |
+| FD-2303 | Shimano | route | à valider | mount |
+| FD-2400 | Shimano | route | à valider | mount |
 | FD-4600-F | Shimano | route | à valider |  |
+| FD-4700 | Shimano | route | à valider | mount |
 | FD-5700 (collier 31,8) | Shimano | route | à valider |  |
 | FD-5700-F | Shimano | route | à valider |  |
 | FD-5800 (collier) | Shimano | route | à valider | mount |
+| FD-5801 | Shimano | route | à valider | mount |
 | FD-6700-G | Shimano | route | à valider |  |
 | FD-6800 (collier 34,9) | Shimano | route | à valider |  |
 | FD-6800-F | Shimano | route | validé |  |
 | FD-9000-F | Shimano | route | à valider |  |
+| FD-A050 | Shimano | route | à valider | mount |
+| FD-A070A | Shimano | route | à valider | mount |
+| FD-A073 | Shimano | route | à valider | mount |
+| FD-CX70 | Shimano | route | à valider | mount |
+| FD-M2000-DS3 | Shimano | vtt | à valider | mount |
+| FD-M2000-TS3 | Shimano | vtt | à valider | mount |
+| FD-M3000-TS3 | Shimano | vtt | à valider | mount |
+| FD-M310-3 | Shimano | vtt | à valider | mount |
 | FD-M3100-M | Shimano | vtt | à valider | mount |
+| FD-M313-3 | Shimano | vtt | à valider | mount |
+| FD-M370-3 | Shimano | vtt | à valider | mount |
+| FD-M371-3 | Shimano | vtt | à valider | mount |
 | FD-M4000 | Shimano | vtt | à valider | mount |
+| FD-M4000-DS3 | Shimano | vtt | à valider | mount |
+| FD-M4000-TS3 | Shimano | vtt | à valider | mount |
 | FD-M590 | Shimano | vtt | à valider |  |
 | FD-M6000-L | Shimano | vtt | à valider |  |
+| FD-M7100 | Shimano | vtt | à valider | mount |
 | FD-M770 | Shimano | vtt | à valider |  |
 | FD-M780-A | Shimano | vtt | à valider |  |
 | FD-M8000-D | Shimano | vtt | à valider |  |
+| FD-M8100 | Shimano | vtt | à valider | mount |
+| FD-M9100 | Shimano | vtt | à valider | mount |
 | FD-R2000 (collier) | Shimano | route | à valider |  |
 | FD-R2000-F | Shimano | route | à valider |  |
 | FD-R2030-F | Shimano | route | à valider |  |
 | FD-R3000 (collier) | Shimano | route | à valider |  |
+| FD-R440A | Shimano | route | à valider | mount |
+| FD-R443A | Shimano | route | à valider | mount |
 | FD-R7000-F | Shimano | route | à valider |  |
 | FD-R7100-F | Shimano | route | à valider |  |
 | FD-R8000-F | Shimano | route | à valider |  |
+| FD-R9100 | Shimano | route | à valider | mount |
+| FD-RX400 | Shimano | gravel | à valider | mount |
 | FD-RX810-F | Shimano | gravel | à valider |  |
 | FD-RX820-F | Shimano | gravel | à valider |  |
+| FD-T3000-2-TS3 | Shimano | vtt | à valider | mount |
+| FD-T3000-TS3 | Shimano | vtt | à valider | mount |
+| FD-T4000-DS3 | Shimano | vtt | à valider | mount |
+| FD-T4000-TS3 | Shimano | vtt | à valider | mount |
+| FD-TX800-TS3 | Shimano | vtt | à valider | mount |
 | FD-TY300 (31,8) | Shimano | vtt | à valider |  |
 | FD-TY500 | Shimano | vtt | à valider |  |
+| FD-TY500-TS3 | Shimano | vtt | à valider | mount |
+| FD-TY510-TS3 | Shimano | vtt | à valider | mount |
+| FD-TY600-L3 | Shimano | vtt | à valider | mount |
+| FD-TY601-L3 | Shimano | vtt | à valider | mount |
+| FD-TY700-TS3 | Shimano | vtt | à valider | mount |
+| FD-TY710-2-TS3 | Shimano | vtt | à valider | mount |
+| FD-TY710-TS3 | Shimano | vtt | à valider | mount |
 | FD-TZ500 (28,6) | Shimano | vtt | à valider |  |
+| FD-U5000 | Shimano | route | à valider | mount |
 | EDS TX dérailleur avant | Wheeltop | route | à valider | mount |
 
 ## Étrier / frein (117)
@@ -1100,12 +1146,16 @@
 | SM-RT70 140 | Shimano | route | à valider |  |
 | SM-RT70 160 | Shimano | route | à valider |  |
 
-## Pédalier (56)
+## Pédalier (140)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Record Pista (BCD 144) | Campagnolo | autre | à valider | bolts |
 | Pédalier Sword (axe 24 mm) | microSHIFT | gravel | à valider | bcd, bolts |
+| FC-08 | Shimano | route | à valider | ringInterface |
+| FC-09 | Shimano | route | à valider | ringInterface |
+| FC-4600 | Shimano | route | à valider | ringInterface |
+| FC-4650 | Shimano | route | à valider | ringInterface |
 | FC-4700 48-34 | Shimano | route | à valider |  |
 | FC-4700 50-34 | Shimano | route | à valider |  |
 | FC-4700 52-36 | Shimano | route | à valider |  |
@@ -1113,9 +1163,11 @@
 | FC-5503 | Shimano | route | à valider | bcd, bolts |
 | FC-5700 53-39 | Shimano | route | à valider | bolts |
 | FC-5750 50-34 | Shimano | route | à valider | bolts |
+| FC-5800 | Shimano | route | à valider | ringInterface |
 | FC-6500 | Shimano | route | à valider | bcd, bolts |
 | FC-6503 | Shimano | route | à valider | bcd, bolts |
 | FC-6700 | Shimano | route | à valider |  |
+| FC-6750 | Shimano | route | à valider | ringInterface |
 | FC-6800 50-34 | Shimano | route | à valider |  |
 | FC-7700 | Shimano | route | à valider | bcd, bolts |
 | FC-7800 53-39 | Shimano | route | à valider | bolts |
@@ -1123,29 +1175,107 @@
 | FC-9000 50-34 | Shimano | route | à valider |  |
 | FC-9000 52-36 | Shimano | route | à valider |  |
 | FC-A070 50-34 | Shimano | route | à valider |  |
+| FC-M3000-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-M315-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M315-B2 | Shimano | vtt | à valider | ringInterface |
 | FC-M361 42-32-22 | Shimano | vtt | à valider | bolts |
 | FC-M4000 40-30-22 | Shimano | vtt | à valider | bolts |
+| FC-M4050-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-M4100-2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-M4100-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-M5100-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M5100-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M5100-B2 | Shimano | vtt | à valider | ringInterface |
 | FC-M590 44-32-22 | Shimano | vtt | à valider | bolts |
 | FC-M6000-2 38-28 | Shimano | vtt | à valider | bolts |
 | FC-M6000-3 40-30-22 | Shimano | vtt | à valider | bolts |
+| FC-M6000-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-M6100-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M6120-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M6130-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M617-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-M7000-1 | Shimano | vtt | à valider | ringInterface |
 | FC-M7000-11-B2 | Shimano | vtt | à valider |  |
+| FC-M7000-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M7000-B1 | Shimano | vtt | à valider | ringInterface |
+| FC-M7000-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-M7100-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M7100-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M7120-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M7120-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-M7130-1 | Shimano | vtt | à valider | ringInterface |
 | FC-M760 44-32-22 | Shimano | vtt | à valider |  |
+| FC-M8000-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M8000-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M8000-3 | Shimano | vtt | à valider | ringInterface |
+| FC-M8000-B1 | Shimano | vtt | à valider | ringInterface |
 | FC-M8000-B2 36-26 | Shimano | vtt | à valider |  |
 | FC-M8100-1 | Shimano | vtt | validé |  |
+| FC-M8100-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M8120-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M8120-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-M8130-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M9000-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M9000-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M9020-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M9020-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M9020-3 | Shimano | vtt | à valider | ringInterface |
+| FC-M9020-B1 | Shimano | vtt | à valider | ringInterface |
+| FC-M9020-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-M9100-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M9100-2 | Shimano | vtt | à valider | ringInterface |
+| FC-M9120-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M9120-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-M9125-1 | Shimano | vtt | à valider | ringInterface |
+| FC-M9130-1 | Shimano | vtt | à valider | ringInterface |
+| FC-MT101-2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT101-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT210-2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT210-3 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT210-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT500-2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT500-3 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT500-B2 | Shimano | vtt | à valider | spindle, ringInterface |
+| FC-MT510-1 | Shimano | vtt | à valider | ringInterface |
+| FC-MT511-1 | Shimano | vtt | à valider | ringInterface |
+| FC-MT512-1 | Shimano | vtt | à valider | ringInterface |
+| FC-MT600-2 | Shimano | vtt | à valider | ringInterface |
+| FC-MT600-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-MT610-2 | Shimano | vtt | à valider | ringInterface |
+| FC-MT610-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-MT700-2 | Shimano | vtt | à valider | ringInterface |
+| FC-MT700-B2 | Shimano | vtt | à valider | ringInterface |
+| FC-MT900-1 | Shimano | vtt | à valider | ringInterface |
 | FC-R2000 50-34 | Shimano | route | à valider | bolts |
 | FC-R2030 50-39-30 | Shimano | route | à valider |  |
 | FC-R3000 50-34 | Shimano | route | à valider |  |
 | FC-R345 50-34 | Shimano | route | à valider |  |
+| FC-R4000 | Shimano | route | à valider | ringInterface |
 | FC-R7000 50-34 | Shimano | route | à valider |  |
 | FC-R8000 46-36 | Shimano | route | à valider |  |
 | FC-R8000 50-34 | Shimano | route | à valider |  |
 | FC-R8000 52-36 | Shimano | route | à valider |  |
 | FC-R8000 53-39 | Shimano | route | à valider |  |
+| FC-R9100 | Shimano | route | à valider | ringInterface |
+| FC-RS400 | Shimano | route | à valider | ringInterface |
+| FC-RS500 | Shimano | route | à valider | ringInterface |
+| FC-RS510 | Shimano | route | à valider | ringInterface |
 | FC-RX600-10 46-30 | Shimano | gravel | à valider | bcd, bolts |
+| FC-RX610-1 | Shimano | gravel | à valider | ringInterface |
+| FC-RX610-2 | Shimano | gravel | à valider | ringInterface |
 | FC-RX810-1 40T | Shimano | gravel | à valider |  |
+| FC-RX810-2 | Shimano | gravel | à valider | ringInterface |
+| FC-RX820-1 | Shimano | gravel | à valider | ringInterface |
+| FC-RX820-2 | Shimano | gravel | à valider | ringInterface |
 | FC-TY301 42-34-24 | Shimano | vtt | à valider |  |
 | FC-TY301 48-38-28 | Shimano | autre | à valider |  |
+| FC-TY501-2 | Shimano | vtt | à valider | ringInterface |
 | FC-TY501 42-34-24 | Shimano | vtt | à valider |  |
+| FC-U2000-1 | Shimano | route | à valider | spindle, ringInterface |
+| FC-U2001-1 | Shimano | route | à valider | spindle, ringInterface |
+| FC-U5000-2 | Shimano | route | à valider | ringInterface |
+| FC-U6030-2 | Shimano | route | à valider | ringInterface |
+| FC-U6040-2 | Shimano | route | à valider | ringInterface |
 | FC Force D1 48/35 | SRAM | route | à valider |  |
 | FC Force / Rival Wide 43/30 | SRAM | gravel | à valider | dmType |
 | FC RED D1 46/33 | SRAM | route | validé |  |

@@ -1,0 +1,2966 @@
+{
+ "_meta": {
+  "description": "Shimano – transmission avant relevée dans les schémas officiels productinfo C-440 (VTT) et C-455 (route, gravel) : pédaliers (nombre de plateaux, axe d'après les boîtiers listés), dérailleurs avant et manettes gauches quand le schéma est sans ambiguïté."
+ },
+ "defaults": {
+  "brand": "Shimano"
+ },
+ "sources": {
+  "pi-C455": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-455 – compatibilité transmission avant route / gravel : leviers, dérailleurs avant, pédaliers, boîtiers, chaînes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-455"
+  },
+  "pi-C440": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-440 – compatibilité transmission avant VTT / trekking : manettes gauches, dérailleurs avant, pédaliers, boîtiers, chaînes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-440"
+  }
+ },
+ "parts": [
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX610 (12v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rx610-1",
+   "type": "crankset",
+   "ref": "FC-RX610-1",
+   "aliases": [
+    "fc rx610 1"
+   ],
+   "name": "GRX FC-RX610-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX610 (12v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rx610-2",
+   "type": "crankset",
+   "ref": "FC-RX610-2",
+   "aliases": [
+    "fc rx610 2"
+   ],
+   "name": "GRX FC-RX610-2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rx820-1",
+   "type": "crankset",
+   "ref": "FC-RX820-1",
+   "aliases": [
+    "fc rx820 1"
+   ],
+   "name": "GRX FC-RX820-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rx820-2",
+   "type": "crankset",
+   "ref": "FC-RX820-2",
+   "aliases": [
+    "fc rx820 2"
+   ],
+   "name": "GRX FC-RX820-2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano 08 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-08",
+   "type": "crankset",
+   "ref": "FC-08",
+   "aliases": [
+    "fc 08"
+   ],
+   "name": "Shimano FC-08 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano 09 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-09",
+   "type": "crankset",
+   "ref": "FC-09",
+   "aliases": [
+    "fc 09"
+   ],
+   "name": "Shimano FC-09 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-5800",
+   "type": "crankset",
+   "ref": "FC-5800",
+   "aliases": [
+    "fc 5800"
+   ],
+   "name": "105 FC-5800 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra R4000 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-r4000",
+   "type": "crankset",
+   "ref": "FC-R4000",
+   "aliases": [
+    "fc r4000"
+   ],
+   "name": "Tiagra FC-R4000 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-r9100",
+   "type": "crankset",
+   "ref": "FC-R9100",
+   "aliases": [
+    "fc r9100"
+   ],
+   "name": "Dura-Ace FC-R9100 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS500 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rs500",
+   "type": "crankset",
+   "ref": "FC-RS500",
+   "aliases": [
+    "fc rs500"
+   ],
+   "name": "Shimano RS FC-RS500 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS510 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rs510",
+   "type": "crankset",
+   "ref": "FC-RS510",
+   "aliases": [
+    "fc rs510"
+   ],
+   "name": "Shimano RS FC-RS510 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX810 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rx810-2",
+   "type": "crankset",
+   "ref": "FC-RX810-2",
+   "aliases": [
+    "fc rx810 2"
+   ],
+   "name": "GRX FC-RX810-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Metrea U5000 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-u5000-2",
+   "type": "crankset",
+   "ref": "FC-U5000-2",
+   "aliases": [
+    "fc u5000 2"
+   ],
+   "name": "Metrea FC-U5000-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "CUES U6030 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-u6030-2",
+   "type": "crankset",
+   "ref": "FC-U6030-2",
+   "aliases": [
+    "fc u6030 2"
+   ],
+   "name": "CUES FC-U6030-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "CUES U6040 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-u6040-2",
+   "type": "crankset",
+   "ref": "FC-U6040-2",
+   "aliases": [
+    "fc u6040 2"
+   ],
+   "name": "CUES FC-U6040-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "105 5800 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-5801",
+   "type": "front_derailleur",
+   "ref": "FD-5801",
+   "aliases": [
+    "fd 5801"
+   ],
+   "name": "105 FD-5801 dérailleur avant 2x11",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-r9100",
+   "type": "front_derailleur",
+   "ref": "FD-R9100",
+   "aliases": [
+    "fd r9100"
+   ],
+   "name": "Dura-Ace FD-R9100 dérailleur avant 2x11",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre. Shimano : non compatible avec un grand plateau de 46 dents."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Metrea U5000 (11v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-u5000",
+   "type": "front_derailleur",
+   "ref": "FD-U5000",
+   "aliases": [
+    "fd u5000"
+   ],
+   "name": "Metrea FD-U5000 dérailleur avant 2x11",
+   "attrs": {
+    "speeds": 11,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-11"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-4600",
+   "type": "crankset",
+   "ref": "FC-4600",
+   "aliases": [
+    "fc 4600"
+   ],
+   "name": "Tiagra FC-4600 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-4650",
+   "type": "crankset",
+   "ref": "FC-4650",
+   "aliases": [
+    "fc 4650"
+   ],
+   "name": "Tiagra FC-4650 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-6750",
+   "type": "crankset",
+   "ref": "FC-6750",
+   "aliases": [
+    "fc 6750"
+   ],
+   "name": "Ultegra FC-6750 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS400 (10v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-rs400",
+   "type": "crankset",
+   "ref": "FC-RS400",
+   "aliases": [
+    "fc rs400"
+   ],
+   "name": "Shimano RS FC-RS400 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-4700",
+   "type": "front_derailleur",
+   "ref": "FD-4700",
+   "aliases": [
+    "fd 4700"
+   ],
+   "name": "Tiagra FD-4700 dérailleur avant 2x10",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-4700"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano CX70 (10v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-cx70",
+   "type": "front_derailleur",
+   "ref": "FD-CX70",
+   "aliases": [
+    "fd cx70"
+   ],
+   "name": "Shimano FD-CX70 dérailleur avant 2x10",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-route-10"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX400 (10v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-rx400",
+   "type": "front_derailleur",
+   "ref": "FD-RX400",
+   "aliases": [
+    "fd rx400"
+   ],
+   "name": "GRX FD-RX400 dérailleur avant 2x10",
+   "attrs": {
+    "speeds": 10,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-4700"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "CUES U2000 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-u2000-1",
+   "type": "crankset",
+   "ref": "FC-U2000-1",
+   "aliases": [
+    "fc u2000 1"
+   ],
+   "name": "CUES FC-U2000-1 pédalier 1 plateau (8v)",
+   "attrs": {
+    "chainrings": 1
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "CUES U2001 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-u2001-1",
+   "type": "crankset",
+   "ref": "FC-U2001-1",
+   "aliases": [
+    "fc u2001 1"
+   ],
+   "name": "CUES FC-U2001-1 pédalier 1 plateau (8v)",
+   "attrs": {
+    "chainrings": 1
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Claris 2300 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-2300",
+   "type": "front_derailleur",
+   "ref": "FD-2300",
+   "aliases": [
+    "fd 2300"
+   ],
+   "name": "Claris FD-2300 dérailleur avant 2x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Claris 2300 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-2303",
+   "type": "front_derailleur",
+   "ref": "FD-2303",
+   "aliases": [
+    "fd 2303"
+   ],
+   "name": "Claris FD-2303 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Claris 2400 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-2400",
+   "type": "front_derailleur",
+   "ref": "FD-2400",
+   "aliases": [
+    "fd 2400"
+   ],
+   "name": "Claris FD-2400 dérailleur avant 2x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney A050 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-a050",
+   "type": "front_derailleur",
+   "ref": "FD-A050",
+   "aliases": [
+    "fd a050"
+   ],
+   "name": "Tourney FD-A050 dérailleur avant 2x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney A070 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-a070a",
+   "type": "front_derailleur",
+   "ref": "FD-A070A",
+   "aliases": [
+    "fd a070a"
+   ],
+   "name": "Tourney FD-A070A dérailleur avant 2x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney A070 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-a073",
+   "type": "front_derailleur",
+   "ref": "FD-A073",
+   "aliases": [
+    "fd a073"
+   ],
+   "name": "Tourney FD-A073 dérailleur avant 2x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano R440 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-r440a",
+   "type": "front_derailleur",
+   "ref": "FD-R440A",
+   "aliases": [
+    "fd r440a"
+   ],
+   "name": "Shimano FD-R440A dérailleur avant 2x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano R440 (8v)",
+   "src": [
+    "pi-C455"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-r443a",
+   "type": "front_derailleur",
+   "ref": "FD-R443A",
+   "aliases": [
+    "fd r443a"
+   ],
+   "name": "Shimano FD-R443A dérailleur avant 2x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m6100-1",
+   "type": "crankset",
+   "ref": "FC-M6100-1",
+   "aliases": [
+    "fc m6100 1"
+   ],
+   "name": "Deore FC-M6100-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m6120-1",
+   "type": "crankset",
+   "ref": "FC-M6120-1",
+   "aliases": [
+    "fc m6120 1"
+   ],
+   "name": "Deore FC-M6120-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m6130-1",
+   "type": "crankset",
+   "ref": "FC-M6130-1",
+   "aliases": [
+    "fc m6130 1"
+   ],
+   "name": "Deore FC-M6130-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7100-1",
+   "type": "crankset",
+   "ref": "FC-M7100-1",
+   "aliases": [
+    "fc m7100 1"
+   ],
+   "name": "SLX FC-M7100-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7100-2",
+   "type": "crankset",
+   "ref": "FC-M7100-2",
+   "aliases": [
+    "fc m7100 2"
+   ],
+   "name": "SLX FC-M7100-2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7120-1",
+   "type": "crankset",
+   "ref": "FC-M7120-1",
+   "aliases": [
+    "fc m7120 1"
+   ],
+   "name": "SLX FC-M7120-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7120-b2",
+   "type": "crankset",
+   "ref": "FC-M7120-B2",
+   "aliases": [
+    "fc m7120 b2"
+   ],
+   "name": "SLX FC-M7120-B2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7130-1",
+   "type": "crankset",
+   "ref": "FC-M7130-1",
+   "aliases": [
+    "fc m7130 1"
+   ],
+   "name": "SLX FC-M7130-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8100-2",
+   "type": "crankset",
+   "ref": "FC-M8100-2",
+   "aliases": [
+    "fc m8100 2"
+   ],
+   "name": "XT FC-M8100-2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8120-1",
+   "type": "crankset",
+   "ref": "FC-M8120-1",
+   "aliases": [
+    "fc m8120 1"
+   ],
+   "name": "XT FC-M8120-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8120-b2",
+   "type": "crankset",
+   "ref": "FC-M8120-B2",
+   "aliases": [
+    "fc m8120 b2"
+   ],
+   "name": "XT FC-M8120-B2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8130-1",
+   "type": "crankset",
+   "ref": "FC-M8130-1",
+   "aliases": [
+    "fc m8130 1"
+   ],
+   "name": "XT FC-M8130-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9100-1",
+   "type": "crankset",
+   "ref": "FC-M9100-1",
+   "aliases": [
+    "fc m9100 1"
+   ],
+   "name": "XTR FC-M9100-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9100-2",
+   "type": "crankset",
+   "ref": "FC-M9100-2",
+   "aliases": [
+    "fc m9100 2"
+   ],
+   "name": "XTR FC-M9100-2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9120-1",
+   "type": "crankset",
+   "ref": "FC-M9120-1",
+   "aliases": [
+    "fc m9120 1"
+   ],
+   "name": "XTR FC-M9120-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9120-b2",
+   "type": "crankset",
+   "ref": "FC-M9120-B2",
+   "aliases": [
+    "fc m9120 b2"
+   ],
+   "name": "XTR FC-M9120-B2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9125-1",
+   "type": "crankset",
+   "ref": "FC-M9125-1",
+   "aliases": [
+    "fc m9125 1"
+   ],
+   "name": "XTR FC-M9125-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9130-1",
+   "type": "crankset",
+   "ref": "FC-M9130-1",
+   "aliases": [
+    "fc m9130 1"
+   ],
+   "name": "XTR FC-M9130-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT510 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt510-1",
+   "type": "crankset",
+   "ref": "FC-MT510-1",
+   "aliases": [
+    "fc mt510 1"
+   ],
+   "name": "Shimano MT FC-MT510-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT510 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt511-1",
+   "type": "crankset",
+   "ref": "FC-MT511-1",
+   "aliases": [
+    "fc mt511 1"
+   ],
+   "name": "Shimano MT FC-MT511-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT510 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt512-1",
+   "type": "crankset",
+   "ref": "FC-MT512-1",
+   "aliases": [
+    "fc mt512 1"
+   ],
+   "name": "Shimano MT FC-MT512-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT610 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt610-2",
+   "type": "crankset",
+   "ref": "FC-MT610-2",
+   "aliases": [
+    "fc mt610 2"
+   ],
+   "name": "Shimano MT FC-MT610-2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT610 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt610-b2",
+   "type": "crankset",
+   "ref": "FC-MT610-B2",
+   "aliases": [
+    "fc mt610 b2"
+   ],
+   "name": "Shimano MT FC-MT610-B2 pédalier 2 plateaux (12v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT900 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt900-1",
+   "type": "crankset",
+   "ref": "FC-MT900-1",
+   "aliases": [
+    "fc mt900 1"
+   ],
+   "name": "Shimano MT FC-MT900-1 pédalier 1 plateau (12v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m7100",
+   "type": "front_derailleur",
+   "ref": "FD-M7100",
+   "aliases": [
+    "fd m7100"
+   ],
+   "name": "SLX FD-M7100 dérailleur avant 2x12",
+   "attrs": {
+    "speeds": 12,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-vtt-12"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m8100",
+   "type": "front_derailleur",
+   "ref": "FD-M8100",
+   "aliases": [
+    "fd m8100"
+   ],
+   "name": "XT FD-M8100 dérailleur avant 2x12",
+   "attrs": {
+    "speeds": 12,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-vtt-12"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m9100",
+   "type": "front_derailleur",
+   "ref": "FD-M9100",
+   "aliases": [
+    "fd m9100"
+   ],
+   "name": "XTR FD-M9100 dérailleur avant 2x12",
+   "attrs": {
+    "speeds": 12,
+    "chainrings": 2,
+    "system": "mecanique",
+    "family": "shimano-vtt-12"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m7100-l",
+   "type": "shifter",
+   "ref": "SL-M7100-L",
+   "aliases": [
+    "sl m7100 l"
+   ],
+   "name": "SLX SL-M7100-L manette gauche 2 plateaux (12v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m8100-l",
+   "type": "shifter",
+   "ref": "SL-M8100-L",
+   "aliases": [
+    "sl m8100 l"
+   ],
+   "name": "XT SL-M8100-L manette gauche 2 plateaux (12v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m9100-l",
+   "type": "shifter",
+   "ref": "SL-M9100-L",
+   "aliases": [
+    "sl m9100 l"
+   ],
+   "name": "XTR SL-M9100-L manette gauche 2 plateaux (12v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m5100-1",
+   "type": "crankset",
+   "ref": "FC-M5100-1",
+   "aliases": [
+    "fc m5100 1"
+   ],
+   "name": "Deore FC-M5100-1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m5100-2",
+   "type": "crankset",
+   "ref": "FC-M5100-2",
+   "aliases": [
+    "fc m5100 2"
+   ],
+   "name": "Deore FC-M5100-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m5100-b2",
+   "type": "crankset",
+   "ref": "FC-M5100-B2",
+   "aliases": [
+    "fc m5100 b2"
+   ],
+   "name": "Deore FC-M5100-B2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7000-1",
+   "type": "crankset",
+   "ref": "FC-M7000-1",
+   "aliases": [
+    "fc m7000 1"
+   ],
+   "name": "SLX FC-M7000-1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7000-2",
+   "type": "crankset",
+   "ref": "FC-M7000-2",
+   "aliases": [
+    "fc m7000 2"
+   ],
+   "name": "SLX FC-M7000-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7000-b1",
+   "type": "crankset",
+   "ref": "FC-M7000-B1",
+   "aliases": [
+    "fc m7000 b1"
+   ],
+   "name": "SLX FC-M7000-B1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m7000-b2",
+   "type": "crankset",
+   "ref": "FC-M7000-B2",
+   "aliases": [
+    "fc m7000 b2"
+   ],
+   "name": "SLX FC-M7000-B2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8000-1",
+   "type": "crankset",
+   "ref": "FC-M8000-1",
+   "aliases": [
+    "fc m8000 1"
+   ],
+   "name": "XT FC-M8000-1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8000-2",
+   "type": "crankset",
+   "ref": "FC-M8000-2",
+   "aliases": [
+    "fc m8000 2"
+   ],
+   "name": "XT FC-M8000-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8000-3",
+   "type": "crankset",
+   "ref": "FC-M8000-3",
+   "aliases": [
+    "fc m8000 3"
+   ],
+   "name": "XT FC-M8000-3 pédalier 3 plateaux (11v)",
+   "attrs": {
+    "chainrings": 3,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M8000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m8000-b1",
+   "type": "crankset",
+   "ref": "FC-M8000-B1",
+   "aliases": [
+    "fc m8000 b1"
+   ],
+   "name": "XT FC-M8000-B1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9000-1",
+   "type": "crankset",
+   "ref": "FC-M9000-1",
+   "aliases": [
+    "fc m9000 1"
+   ],
+   "name": "XTR FC-M9000-1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9000-2",
+   "type": "crankset",
+   "ref": "FC-M9000-2",
+   "aliases": [
+    "fc m9000 2"
+   ],
+   "name": "XTR FC-M9000-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9020-1",
+   "type": "crankset",
+   "ref": "FC-M9020-1",
+   "aliases": [
+    "fc m9020 1"
+   ],
+   "name": "XTR FC-M9020-1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9020-2",
+   "type": "crankset",
+   "ref": "FC-M9020-2",
+   "aliases": [
+    "fc m9020 2"
+   ],
+   "name": "XTR FC-M9020-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9020-3",
+   "type": "crankset",
+   "ref": "FC-M9020-3",
+   "aliases": [
+    "fc m9020 3"
+   ],
+   "name": "XTR FC-M9020-3 pédalier 3 plateaux (11v)",
+   "attrs": {
+    "chainrings": 3,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9020-b1",
+   "type": "crankset",
+   "ref": "FC-M9020-B1",
+   "aliases": [
+    "fc m9020 b1"
+   ],
+   "name": "XTR FC-M9020-B1 pédalier 1 plateau (11v)",
+   "attrs": {
+    "chainrings": 1,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m9020-b2",
+   "type": "crankset",
+   "ref": "FC-M9020-B2",
+   "aliases": [
+    "fc m9020 b2"
+   ],
+   "name": "XTR FC-M9020-B2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT600 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt600-2",
+   "type": "crankset",
+   "ref": "FC-MT600-2",
+   "aliases": [
+    "fc mt600 2"
+   ],
+   "name": "Shimano MT FC-MT600-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT600 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt600-b2",
+   "type": "crankset",
+   "ref": "FC-MT600-B2",
+   "aliases": [
+    "fc mt600 b2"
+   ],
+   "name": "Shimano MT FC-MT600-B2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT700 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt700-2",
+   "type": "crankset",
+   "ref": "FC-MT700-2",
+   "aliases": [
+    "fc mt700 2"
+   ],
+   "name": "Shimano MT FC-MT700-2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT700 (11v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt700-b2",
+   "type": "crankset",
+   "ref": "FC-MT700-B2",
+   "aliases": [
+    "fc mt700 b2"
+   ],
+   "name": "Shimano MT FC-MT700-B2 pédalier 2 plateaux (11v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "shimano_24"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter. Axe 24 mm (Hollowtech II) déduit des boîtiers listés avec ce pédalier."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M4100 (10v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m4100-2",
+   "type": "crankset",
+   "ref": "FC-M4100-2",
+   "aliases": [
+    "fc m4100 2"
+   ],
+   "name": "Deore FC-M4100-2 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M4100 (10v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m4100-b2",
+   "type": "crankset",
+   "ref": "FC-M4100-B2",
+   "aliases": [
+    "fc m4100 b2"
+   ],
+   "name": "Deore FC-M4100-B2 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6000 (10v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m6000-b2",
+   "type": "crankset",
+   "ref": "FC-M6000-B2",
+   "aliases": [
+    "fc m6000 b2"
+   ],
+   "name": "Deore FC-M6000-B2 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M610 (10v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m617-b2",
+   "type": "crankset",
+   "ref": "FC-M617-B2",
+   "aliases": [
+    "fc m617 b2"
+   ],
+   "name": "Deore FC-M617-B2 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT500 (10v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt500-2",
+   "type": "crankset",
+   "ref": "FC-MT500-2",
+   "aliases": [
+    "fc mt500 2"
+   ],
+   "name": "Shimano MT FC-MT500-2 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT500 (10v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt500-3",
+   "type": "crankset",
+   "ref": "FC-MT500-3",
+   "aliases": [
+    "fc mt500 3"
+   ],
+   "name": "Shimano MT FC-MT500-3 pédalier 3 plateaux (10v)",
+   "attrs": {
+    "chainrings": 3
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT500 (10v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt500-b2",
+   "type": "crankset",
+   "ref": "FC-MT500-B2",
+   "aliases": [
+    "fc mt500 b2"
+   ],
+   "name": "Shimano MT FC-MT500-B2 pédalier 2 plateaux (10v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Acera M3000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m3000-b2",
+   "type": "crankset",
+   "ref": "FC-M3000-B2",
+   "aliases": [
+    "fc m3000 b2"
+   ],
+   "name": "Acera FC-M3000-B2 pédalier 2 plateaux (9v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m4050-b2",
+   "type": "crankset",
+   "ref": "FC-M4050-B2",
+   "aliases": [
+    "fc m4050 b2"
+   ],
+   "name": "Alivio FC-M4050-B2 pédalier 2 plateaux (9v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT100 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt101-2",
+   "type": "crankset",
+   "ref": "FC-MT101-2",
+   "aliases": [
+    "fc mt101 2"
+   ],
+   "name": "Shimano MT FC-MT101-2 pédalier 2 plateaux (9v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT100 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt101-b2",
+   "type": "crankset",
+   "ref": "FC-MT101-B2",
+   "aliases": [
+    "fc mt101 b2"
+   ],
+   "name": "Shimano MT FC-MT101-B2 pédalier 2 plateaux (9v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT210 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt210-2",
+   "type": "crankset",
+   "ref": "FC-MT210-2",
+   "aliases": [
+    "fc mt210 2"
+   ],
+   "name": "Shimano MT FC-MT210-2 pédalier 2 plateaux (9v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT210 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt210-3",
+   "type": "crankset",
+   "ref": "FC-MT210-3",
+   "aliases": [
+    "fc mt210 3"
+   ],
+   "name": "Shimano MT FC-MT210-3 pédalier 3 plateaux (9v)",
+   "attrs": {
+    "chainrings": 3
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Shimano MT MT210 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-mt210-b2",
+   "type": "crankset",
+   "ref": "FC-MT210-B2",
+   "aliases": [
+    "fc mt210 b2"
+   ],
+   "name": "Shimano MT FC-MT210-B2 pédalier 2 plateaux (9v)",
+   "attrs": {
+    "chainrings": 2
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M2000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m2000-ds3",
+   "type": "front_derailleur",
+   "ref": "FD-M2000-DS3",
+   "aliases": [
+    "fd m2000 ds3"
+   ],
+   "name": "Altus FD-M2000-DS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M2000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m2000-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-M2000-TS3",
+   "aliases": [
+    "fd m2000 ts3"
+   ],
+   "name": "Altus FD-M2000-TS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Acera M3000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m3000-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-M3000-TS3",
+   "aliases": [
+    "fd m3000 ts3"
+   ],
+   "name": "Acera FD-M3000-TS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M370 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m370-3",
+   "type": "front_derailleur",
+   "ref": "FD-M370-3",
+   "aliases": [
+    "fd m370 3"
+   ],
+   "name": "Altus FD-M370-3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M370 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m371-3",
+   "type": "front_derailleur",
+   "ref": "FD-M371-3",
+   "aliases": [
+    "fd m371 3"
+   ],
+   "name": "Altus FD-M371-3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m4000-ds3",
+   "type": "front_derailleur",
+   "ref": "FD-M4000-DS3",
+   "aliases": [
+    "fd m4000 ds3"
+   ],
+   "name": "Alivio FD-M4000-DS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m4000-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-M4000-TS3",
+   "aliases": [
+    "fd m4000 ts3"
+   ],
+   "name": "Alivio FD-M4000-TS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T3000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-t3000-2-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-T3000-2-TS3",
+   "aliases": [
+    "fd t3000 2 ts3"
+   ],
+   "name": "Deore (trekking) FD-T3000-2-TS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T3000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-t3000-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-T3000-TS3",
+   "aliases": [
+    "fd t3000 ts3"
+   ],
+   "name": "Deore (trekking) FD-T3000-TS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T4000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-t4000-ds3",
+   "type": "front_derailleur",
+   "ref": "FD-T4000-DS3",
+   "aliases": [
+    "fd t4000 ds3"
+   ],
+   "name": "Deore (trekking) FD-T4000-DS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T4000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-t4000-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-T4000-TS3",
+   "aliases": [
+    "fd t4000 ts3"
+   ],
+   "name": "Deore (trekking) FD-T4000-TS3 dérailleur avant 3x9",
+   "attrs": {
+    "speeds": 9,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-9"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M2000 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m2010-2l",
+   "type": "shifter",
+   "ref": "SL-M2010-2L",
+   "aliases": [
+    "sl m2010 2l"
+   ],
+   "name": "Altus SL-M2010-2L manette gauche 2 plateaux (9v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Alivio M3100 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m3100-2l",
+   "type": "shifter",
+   "ref": "SL-M3100-2L",
+   "aliases": [
+    "sl m3100 2l"
+   ],
+   "name": "Alivio SL-M3100-2L manette gauche 2 plateaux (9v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire EF500 (9v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef505-2l",
+   "type": "shifter",
+   "ref": "ST-EF505-2L",
+   "aliases": [
+    "st ef505 2l"
+   ],
+   "name": "EZ-Fire ST-EF505-2L manette gauche 2 plateaux (9v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m315-2",
+   "type": "crankset",
+   "ref": "FC-M315-2",
+   "aliases": [
+    "fc m315 2"
+   ],
+   "name": "Altus FC-M315-2 pédalier 2 plateaux (8v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "carre_jis"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-m315-b2",
+   "type": "crankset",
+   "ref": "FC-M315-B2",
+   "aliases": [
+    "fc m315 b2"
+   ],
+   "name": "Altus FC-M315-B2 pédalier 2 plateaux (8v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "carre_jis"
+   },
+   "notes": "Version Boost (ligne de chaîne 148 mm). Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY500 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fc-ty501-2",
+   "type": "crankset",
+   "ref": "FC-TY501-2",
+   "aliases": [
+    "fc ty501 2"
+   ],
+   "name": "Tourney FC-TY501-2 pédalier 2 plateaux (8v)",
+   "attrs": {
+    "chainrings": 2,
+    "spindle": "carre_jis"
+   },
+   "notes": "Interface et dentures des plateaux non indiquées dans ce tableau : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m310-3",
+   "type": "front_derailleur",
+   "ref": "FD-M310-3",
+   "aliases": [
+    "fd m310 3"
+   ],
+   "name": "Altus FD-M310-3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-m313-3",
+   "type": "front_derailleur",
+   "ref": "FD-M313-3",
+   "aliases": [
+    "fd m313 3"
+   ],
+   "name": "Altus FD-M313-3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TX800 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-tx800-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-TX800-TS3",
+   "aliases": [
+    "fd tx800 ts3"
+   ],
+   "name": "Tourney FD-TX800-TS3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY600 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-ty600-l3",
+   "type": "front_derailleur",
+   "ref": "FD-TY600-L3",
+   "aliases": [
+    "fd ty600 l3"
+   ],
+   "name": "Tourney FD-TY600-L3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY600 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-ty601-l3",
+   "type": "front_derailleur",
+   "ref": "FD-TY601-L3",
+   "aliases": [
+    "fd ty601 l3"
+   ],
+   "name": "Tourney FD-TY601-L3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY700 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-ty700-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-TY700-TS3",
+   "aliases": [
+    "fd ty700 ts3"
+   ],
+   "name": "Tourney FD-TY700-TS3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY710 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-ty710-2-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-TY710-2-TS3",
+   "aliases": [
+    "fd ty710 2 ts3"
+   ],
+   "name": "Tourney FD-TY710-2-TS3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY710 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-ty710-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-TY710-TS3",
+   "aliases": [
+    "fd ty710 ts3"
+   ],
+   "name": "Tourney FD-TY710-TS3 dérailleur avant 3x8",
+   "attrs": {
+    "speeds": 8,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-8"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m315-2l",
+   "type": "shifter",
+   "ref": "SL-M315-2L",
+   "aliases": [
+    "sl m315 2l"
+   ],
+   "name": "Altus SL-M315-2L manette gauche 2 plateaux (8v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire EF510 (8v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef515-2l",
+   "type": "shifter",
+   "ref": "ST-EF515-2L",
+   "aliases": [
+    "st ef515 2l"
+   ],
+   "name": "EZ-Fire ST-EF515-2L manette gauche 2 plateaux (8v)",
+   "attrs": {
+    "side": "avant",
+    "speeds": 2,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "frontPositions": 2,
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY500 (7v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-ty500-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-TY500-TS3",
+   "aliases": [
+    "fd ty500 ts3"
+   ],
+   "name": "Tourney FD-TY500-TS3 dérailleur avant 3x7",
+   "attrs": {
+    "speeds": 7,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-7"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY510 (7v)",
+   "src": [
+    "pi-C440"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-fd-ty510-ts3",
+   "type": "front_derailleur",
+   "ref": "FD-TY510-TS3",
+   "aliases": [
+    "fd ty510 ts3"
+   ],
+   "name": "Tourney FD-TY510-TS3 dérailleur avant 3x7",
+   "attrs": {
+    "speeds": 7,
+    "chainrings": 3,
+    "system": "mecanique",
+    "family": "shimano-7"
+   },
+   "notes": "Fixation (collier, braze-on, direct mount) non indiquée dans ce tableau : à vérifier sur le cadre."
+  }
+ ]
+}
