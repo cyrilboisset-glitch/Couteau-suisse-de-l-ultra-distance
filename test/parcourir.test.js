@@ -39,6 +39,7 @@ describe('arbre sur la base réelle', () => {
   test('filtre par nombre de vitesses', () => {
     const gammes = browse(parts, kb, { brand: 'Shimano' }, { speeds: 7 }).items.map((g) => g.key);
     assert.ok(gammes.includes('Tourney'));
-    assert.ok(!gammes.includes('Dura-Ace'));
+    assert.ok(gammes.includes('Dura-Ace')); // Dura-Ace 7401 (1987)
+    assert.ok(!gammes.includes('GRX'));
   });
 });

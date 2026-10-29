@@ -115,3 +115,18 @@ describe('7 vitesses : Altus, Alivio, STX (tableau Shimano C-439)', () => {
     for (const q of ['altus 7v', 'stx', 'alivio 7v']) assert.ok(searchParts(q, parts).results.length, q);
   });
 });
+
+describe('Anciens groupes 70-90 (Shimano route / VTT, Campagnolo, SRAM)', () => {
+  test('XT M735 (7v) remplacé par un dérailleur 7v Shimano : compatible', () => {
+    const r = findReplacements(P('shimano-rd-m735'), parts, { kb });
+    assert.ok(r.some((x) => x.result.level <= LEVEL.KNOWN));
+  });
+  test('SRAM ESP 9.0 (1:1) avec une manette Shimano : incompatible', () => {
+    assert.equal(checkPair(P('shimano-sl-m310-7r'), P('sram-rd-esp-9-0'), kb).level, LEVEL.INCOMPATIBLE);
+  });
+  test('recherche des groupes anciens', () => {
+    for (const q of ['tricolor', 'xtr 8v', 'rx100', 'exage', 'athena', 'esp 9.0', 'super record', 'deore lx']) {
+      assert.ok(searchParts(q, parts).results.length, q);
+    }
+  });
+});

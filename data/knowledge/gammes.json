@@ -92,6 +92,36 @@
    "kind": "officiel",
    "ref": "Shimano – SIS développé pour la série Dura-Ace 7400, sorti en 1984",
    "url": "https://www.shimano.com/en/100th/history/products/16.php"
+  },
+  "wiki-sh-groups": {
+   "kind": "communaute",
+   "ref": "Wikipédia – List of Shimano groupsets (numéros de série, années, vitesses)",
+   "url": "https://en.wikipedia.org/wiki/List_of_Shimano_groupsets"
+  },
+  "resto-mtb": {
+   "kind": "communaute",
+   "ref": "restoration.bike – tableau des groupes VTT Shimano (XT M730 à M750, XTR M900 à M952, LX M550 à M570)",
+   "url": "https://www.restoration.bike/bike-restoration/shimano-mtb-groupset-chart/"
+  },
+  "co-sr": {
+   "kind": "communaute",
+   "ref": "Cycling Obsession – Campagnolo Super Record (1974-1987), successeur du Nuovo Record",
+   "url": "https://cycling-obsession.com/vintage-campagnolo-super-record-review/"
+  },
+  "campa-wiki": {
+   "kind": "communaute",
+   "ref": "Wikipédia – Campagnolo : Nuovo Record, Super Record (1974), Record / C-Record (1986), Ergopower (1992)",
+   "url": "https://en.wikipedia.org/wiki/Campagnolo"
+  },
+  "vs-avanti": {
+   "kind": "revendeur",
+   "ref": "Velosaloon – groupe Campagnolo Avanti Exa-Drive 8v (1996), dérailleur RD-11AV chape courte",
+   "url": "https://www.velosaloon.com/products/campagnolo-avanti-exa-drive-8-speed-group-set-from-1996"
+  },
+  "dg-esp9": {
+   "kind": "communaute",
+   "ref": "Disraeli Gears – SRAM ESP 9.0 (1996-1997) : 8 vitesses, 1:1, pignon max 32",
+   "url": "https://www.disraeligears.co.uk/site/sram_esp_90_1st_style_derailleur.html"
   }
  },
  "gammes": [
@@ -1649,6 +1679,216 @@
    "brand": "Wheeltop",
    "generation": "EDS TX",
    "gamme": "EDS (électronique sans fil)",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace 7401 (7v)",
+   "gamme": "Dura-Ace",
+   "status": "a_valider",
+   "year": 1987,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Dura-Ace 7402 (8v)",
+   "gamme": "Dura-Ace",
+   "status": "a_valider",
+   "year": 1988,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Shimano 600 EX 6208 (6v)",
+   "gamme": "600",
+   "status": "a_valider",
+   "year": 1986,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "600 Ultegra Tricolor 6400 (7v)",
+   "gamme": "600",
+   "status": "a_valider",
+   "year": 1988,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "600 Ultegra 6402 (8v)",
+   "gamme": "600",
+   "status": "a_valider",
+   "year": 1992,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 1050 (6/7v)",
+   "gamme": "105",
+   "status": "a_valider",
+   "year": 1987,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "105 SC 1055 (7/8v)",
+   "gamme": "105",
+   "status": "a_valider",
+   "year": 1990,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "RX100 A550 (7v)",
+   "gamme": "RX100",
+   "status": "a_valider",
+   "year": 1990,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "RX100 A551 (8v)",
+   "gamme": "RX100",
+   "status": "a_valider",
+   "year": 1994,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Exage 500EX A500 (7v)",
+   "gamme": "Exage",
+   "status": "a_valider",
+   "year": 1990,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "RSX A410 (7v)",
+   "gamme": "RSX",
+   "status": "a_valider",
+   "year": 1995,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "RSX A416 (8v)",
+   "gamme": "RSX",
+   "status": "a_valider",
+   "year": 1999,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore XT M735 (7v)",
+   "gamme": "XT",
+   "status": "a_valider",
+   "year": 1990,
+   "src": "resto-mtb"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore XT M737 (8v)",
+   "gamme": "XT",
+   "status": "a_valider",
+   "year": 1994,
+   "src": "resto-mtb"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore XT M739 (8v)",
+   "gamme": "XT",
+   "status": "a_valider",
+   "year": 1996,
+   "src": "resto-mtb"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XTR M900 (8v)",
+   "gamme": "XTR",
+   "status": "a_valider",
+   "year": 1992,
+   "src": "resto-mtb"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore LX M550 (7v)",
+   "gamme": "Deore LX",
+   "status": "a_valider",
+   "year": 1990,
+   "src": "wiki-sh-groups"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore LX M560 (7v)",
+   "gamme": "Deore LX",
+   "status": "a_valider",
+   "year": 1993,
+   "src": "resto-mtb"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore LX M565 (8v)",
+   "gamme": "Deore LX",
+   "status": "a_valider",
+   "year": 1995,
+   "src": "resto-mtb"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore LX M567 (8v)",
+   "gamme": "Deore LX",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore LX M570 (9v)",
+   "gamme": "Deore LX",
+   "status": "a_valider",
+   "year": 1999,
+   "src": "resto-mtb"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Super Record (friction)",
+   "gamme": "Super Record",
+   "status": "a_valider",
+   "year": 1974,
+   "src": "co-sr"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "C-Record / Record (1986)",
+   "gamme": "Record",
+   "status": "a_valider",
+   "year": 1986,
+   "src": "campa-wiki"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Chorus 8",
+   "gamme": "Chorus",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Athena 8",
+   "gamme": "Athena",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Avanti 8 (Exa-Drive)",
+   "gamme": "Avanti",
+   "status": "a_valider",
+   "year": 1996,
+   "src": "vs-avanti"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "ESP 9.0 (8v)",
+   "gamme": "ESP",
+   "year": 1996,
+   "src": "dg-esp9",
    "status": "a_valider"
   }
  ]

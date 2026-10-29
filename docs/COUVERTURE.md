@@ -2,15 +2,15 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **710 pièces**, dont 48 validées par une page constructeur et **662 à valider**.
-- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 244, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
+- **737 pièces**, dont 48 validées par une page constructeur et **689 à valider**.
+- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 271, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
 | Atom | 1 |
 | Avid | 2 |
 | Box | 2 |
-| Campagnolo | 51 |
+| Campagnolo | 56 |
 | DNP | 2 |
 | Dia-Compe | 3 |
 | Formula | 3 |
@@ -25,9 +25,9 @@
 | Regina | 3 |
 | SENSAH | 10 |
 | SR Suntour | 3 |
-| SRAM | 92 |
+| SRAM | 93 |
 | Sachs | 4 |
-| Shimano | 417 |
+| Shimano | 438 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -42,11 +42,15 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (189)
+## Dérailleur arrière (216)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Box Three Prime 9 (wide) | Box | vtt | à valider | totalCapacity |
+| RD-11AV | Campagnolo | route | à valider | maxCog, totalCapacity |
+| RD-31AT | Campagnolo | route | à valider | totalCapacity |
+| RD-31CH | Campagnolo | route | à valider | totalCapacity |
+| C-Record (dérailleur arrière) | Campagnolo | route | à valider | maxCog, totalCapacity |
 | RD Centaur 11 (D) | Campagnolo | route | à valider |  |
 | RD Chorus 11 (2015+) chape moyenne | Campagnolo | route | à valider |  |
 | RD Chorus 11 (2015+) chape courte | Campagnolo | route | à valider |  |
@@ -54,6 +58,7 @@
 | RD Ekar 13v | Campagnolo | gravel | à valider |  |
 | Nuovo Record / Super Record | Campagnolo | route | à valider | speeds, maxCog, totalCapacity |
 | RD Record 12 chape moyenne | Campagnolo | route | à valider |  |
+| Super Record (dérailleur arrière) | Campagnolo | route | à valider | maxCog, totalCapacity |
 | RD Veloce 10v chape moyenne | Campagnolo | route | à valider |  |
 | RD Veloce 10v chape courte | Campagnolo | route | à valider | maxCog |
 | Duopar Eco | Huret | autre | à valider | speeds, maxCog, totalCapacity |
@@ -84,6 +89,8 @@
 | RD Empire Pro 12v | SENSAH | route | à valider | totalCapacity |
 | RD SRX | SENSAH | gravel | à valider | totalCapacity |
 | RD XRX 12v | SENSAH | vtt | à valider | totalCapacity |
+| RD-1050 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-1055 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-2300 | Shimano | route | à valider |  |
 | RD-2400-SS | Shimano | route | à valider | totalCapacity |
 | RD-3300 | Shimano | route | à valider | maxCog, totalCapacity |
@@ -107,6 +114,9 @@
 | RD-5800-SS | Shimano | route | à valider |  |
 | RD-6200 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6207 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-6208 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-6400 | Shimano | route | à valider | totalCapacity |
+| RD-6402 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6600-GS | Shimano | route | à valider |  |
 | RD-6600-SS | Shimano | route | à valider |  |
 | RD-6700-A-SS | Shimano | route | à valider | totalCapacity |
@@ -117,12 +127,19 @@
 | RD-6870-GS | Shimano | route | à valider | totalCapacity |
 | RD-6870-SS | Shimano | route | à valider | totalCapacity |
 | RD-7400 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-7401 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-7402 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-7700-SS | Shimano | route | à valider |  |
 | RD-7800-SS | Shimano | route | à valider |  |
 | RD-7900-GS | Shimano | route | à valider | maxCog |
 | RD-7900-SS | Shimano | route | à valider |  |
 | RD-9000-SS | Shimano | route | à valider |  |
 | RD-A070 | Shimano | route | à valider | mount |
+| RD-A410 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-A416 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-A500 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-A550 | Shimano | route | à valider | maxCog, totalCapacity |
+| RD-A551 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD Altus C10 (7v) | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M2000-SGS | Shimano | vtt | à valider |  |
 | RD-M310 | Shimano | vtt | à valider |  |
@@ -133,6 +150,11 @@
 | RD-M410 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M510 | Shimano | vtt | à valider | maxCog |
 | RD-M5100-SGS | Shimano | vtt | à valider |  |
+| RD-M550 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M560 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M565 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M567 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M570 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M591-SGS | Shimano | vtt | validé |  |
 | RD-M592-SGS | Shimano | vtt | à valider |  |
 | RD-M6000-GS | Shimano | vtt | à valider |  |
@@ -143,6 +165,9 @@
 | RD-M700 | Shimano | vtt | à valider | speeds, maxCog, totalCapacity |
 | RD-M7000-10-SGS | Shimano | vtt | à valider |  |
 | RD-M730 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M735 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M737 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M739 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M772-SGS | Shimano | vtt | à valider |  |
 | RD-M780-GS | Shimano | vtt | à valider |  |
 | RD-M786-GS | Shimano | vtt | à valider | maxCog |
@@ -152,6 +177,7 @@
 | RD-M8100-GS | Shimano | vtt | validé |  |
 | RD-M8100-SGS | Shimano | vtt | à valider |  |
 | RD-M8120-SGS | Shimano | vtt | à valider |  |
+| RD-M900 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M9000-GS | Shimano | vtt | à valider |  |
 | RD-M9000-SGS | Shimano | vtt | à valider |  |
 | RD-M9100-GS | Shimano | vtt | à valider |  |
@@ -199,6 +225,7 @@
 | RD Apex XPLR eTap AXS D1 | SRAM | gravel | validé |  |
 | RD Apex XPLR 12v (mécanique) | SRAM | gravel | à valider |  |
 | RD Eagle 90 T-Type | SRAM | vtt | à valider | totalCapacity |
+| ESP 9.0 | SRAM | vtt | à valider |  |
 | RD Force 10v WiFLi | SRAM | route | à valider |  |
 | RD Force eTap AXS (MAX 36T) | SRAM | route | à valider | totalCapacity |
 | RD Force XPLR eTap AXS D2 | SRAM | gravel | à valider |  |
