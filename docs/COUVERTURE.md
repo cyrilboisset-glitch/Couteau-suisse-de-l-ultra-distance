@@ -2,7 +2,7 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **676 pièces**, dont 33 validées par une page constructeur et **643 à valider**.
+- **710 pièces**, dont 48 validées par une page constructeur et **662 à valider**.
 - Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 244, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 92 |
 | Sachs | 4 |
-| Shimano | 383 |
+| Shimano | 417 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -42,7 +42,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (183)
+## Dérailleur arrière (189)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -123,11 +123,14 @@
 | RD-7900-SS | Shimano | route | à valider |  |
 | RD-9000-SS | Shimano | route | à valider |  |
 | RD-A070 | Shimano | route | à valider | mount |
+| RD Altus C10 (7v) | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M2000-SGS | Shimano | vtt | à valider |  |
 | RD-M310 | Shimano | vtt | à valider |  |
 | RD-M3100-SGS | Shimano | vtt | à valider |  |
+| RD-M360-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M370 | Shimano | vtt | à valider |  |
 | RD-M4000-SGS | Shimano | vtt | à valider |  |
+| RD-M410 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M510 | Shimano | vtt | à valider | maxCog |
 | RD-M5100-SGS | Shimano | vtt | à valider |  |
 | RD-M591-SGS | Shimano | vtt | validé |  |
@@ -155,6 +158,7 @@
 | RD-M9100-SGS | Shimano | vtt | à valider |  |
 | RD-M952 | Shimano | vtt | à valider | totalCapacity |
 | RD-M980-GS | Shimano | vtt | à valider |  |
+| RD-MC30 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-R2000-GS | Shimano | route | à valider |  |
 | RD-R2000-SS | Shimano | route | à valider |  |
 | RD-R3000-GS | Shimano | route | à valider |  |
@@ -184,7 +188,9 @@
 | RD-RX827 | Shimano | gravel | à valider | totalCapacity |
 | RD-T4000-SGS | Shimano | autre | à valider |  |
 | RD-TX35 | Shimano | vtt | à valider |  |
+| RD-TX800-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-TY300 | Shimano | vtt | à valider |  |
+| RD-TY500-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
 | Prestige | Simplex | autre | à valider | speeds, totalCapacity |
 | SX410 | Simplex | autre | à valider | speeds, maxCog, totalCapacity |
 | RD Apex 1 11v | SRAM | gravel | à valider | totalCapacity |
@@ -230,7 +236,7 @@
 | EDS OX2.0 dérailleur 93 mm | Wheeltop | vtt | à valider |  |
 | EDS TX dérailleur | Wheeltop | route | à valider | totalCapacity |
 
-## Manette / levier de vitesses (102)
+## Manette / levier de vitesses (123)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -280,9 +286,12 @@
 | Leviers Team Pro 2x11 | SENSAH | route | à valider |  |
 | Manette XRX 12v | SENSAH | vtt | à valider |  |
 | SL-7400 | Shimano | route | à valider |  |
+| SL-FT55-7R | Shimano | vtt | à valider |  |
+| SL-M310-7R | Shimano | vtt | validé |  |
 | SL-M3100-L (2 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-L (3 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-R | Shimano | vtt | à valider |  |
+| SL-M315-7R | Shimano | vtt | validé |  |
 | SL-M370-R | Shimano | vtt | à valider |  |
 | SL-M4100 | Shimano | vtt | à valider |  |
 | SL-M5100-R | Shimano | vtt | à valider |  |
@@ -298,8 +307,18 @@
 | SL-M8000-R | Shimano | vtt | à valider |  |
 | SL-M8100-R | Shimano | vtt | validé |  |
 | SL-M9000-R | Shimano | vtt | à valider |  |
+| SL-MC37 | Shimano | vtt | à valider |  |
+| SL-RS35-7R | Shimano | vtt | validé |  |
+| SL-RS36-7R | Shimano | vtt | validé |  |
+| SL-RS45-7R | Shimano | vtt | validé |  |
+| SL-RS47-7R | Shimano | vtt | validé |  |
+| SL-RV200-7R | Shimano | vtt | validé |  |
+| SL-RV300-7R | Shimano | vtt | validé |  |
 | SL-RV400-7R | Shimano | vtt | à valider |  |
+| SL-TX30-7R | Shimano | vtt | à valider |  |
 | SL-TX50 (7v) | Shimano | vtt | à valider |  |
+| SL-TZ20-7R | Shimano | vtt | à valider |  |
+| SL-TZ500-7R | Shimano | vtt | à valider |  |
 | ST-2400 | Shimano | route | à valider |  |
 | ST-3400 | Shimano | route | à valider |  |
 | ST-3500 | Shimano | route | à valider |  |
@@ -315,6 +334,14 @@
 | ST-7800 | Shimano | route | à valider |  |
 | ST-7900 | Shimano | route | à valider |  |
 | ST-EF41 (3x7) | Shimano | vtt | à valider |  |
+| ST-EF500-7R2A | Shimano | vtt | à valider |  |
+| ST-EF500-7R4A | Shimano | vtt | à valider |  |
+| ST-EF505-7R | Shimano | vtt | à valider |  |
+| ST-EF510-7R2A | Shimano | vtt | à valider |  |
+| ST-EF510-7R4A | Shimano | vtt | à valider |  |
+| ST-EF515-7R | Shimano | vtt | à valider |  |
+| ST-EF65-7R2 | Shimano | vtt | à valider |  |
+| ST-EF65-7R4 | Shimano | vtt | à valider |  |
 | ST-R2000 | Shimano | route | à valider |  |
 | ST-R3000 | Shimano | route | à valider |  |
 | ST-R7000 | Shimano | route | à valider |  |
@@ -352,7 +379,7 @@
 | BL-T4000 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
-## Cassette / roue libre (154)
+## Cassette / roue libre (161)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -403,6 +430,9 @@
 | CS-HG200-9 11-32 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-34 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-36 | Shimano | vtt | à valider |  |
+| CS-HG210-7 12-28 | Shimano | vtt | validé |  |
+| CS-HG210-7 12-32 | Shimano | vtt | validé |  |
+| CS-HG400-7 11-28 | Shimano | vtt | validé |  |
 | CS-HG400-9 11-28 | Shimano | vtt | à valider |  |
 | CS-HG400-9 11-32 | Shimano | vtt | à valider |  |
 | CS-HG400-9 11-34 | Shimano | vtt | à valider |  |
@@ -456,10 +486,14 @@
 | CS-R8100 11-34 | Shimano | route | à valider |  |
 | CS-R9200 11-30 | Shimano | route | à valider |  |
 | CS-R9200 11-34 | Shimano | route | à valider |  |
+| MF-HG37 13-28 | Shimano | vtt | validé | freewheelThread |
 | MF-TZ21 14-28 | Shimano | vtt | à valider | freewheelThread |
+| MF-TZ31 14-34 | Shimano | vtt | validé | freewheelThread |
 | MF-TZ500 14-28 | Shimano | vtt | à valider | freewheelThread |
 | MF-TZ500 14-34 | Shimano | vtt | à valider | freewheelThread |
 | MF-TZ500-6 14-28 | Shimano | autre | à valider | freewheelThread |
+| MF-TZ510-7 14-28 | Shimano | vtt | validé | freewheelThread |
+| MF-TZ510-7 14-34 | Shimano | vtt | validé | freewheelThread |
 | MF-Z012 14-28 | Shimano | autre | à valider |  |
 | PG-1030 11-32 | SRAM | vtt | à valider |  |
 | PG-1050 11-32 | SRAM | route | à valider |  |

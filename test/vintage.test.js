@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { loadData } from '../scripts/data-node.js';
 import { checkPair, findReplacements, LEVEL } from '../src/index.js';
 import { analyzeProject } from '../src/project.js';
+import { searchParts } from '../src/search.js';
 
 const { parts, kb } = loadData();
 const P = (id) => {
@@ -100,5 +101,17 @@ describe('pédaliers à plateaux rivetés', () => {
     const ring = { id: 'r', type: 'chainring', brand: 'test', ref: 'plateau 104', attrs: { ringInterface: 'bcd', bcd: 104, bolts: 4 }, sources: [{ kind: 'physique' }] };
     const r = checkPair(P('shimano-fc-ty301-42-34-24'), ring, kb);
     assert.equal(r.level, LEVEL.INCOMPATIBLE);
+  });
+});
+
+describe('7 vitesses : Altus, Alivio, STX (tableau Shimano C-439)', () => {
+  test('manette Altus SL-M310-7R + dérailleur Tourney TY300 : compatibles', () => {
+    assert.ok(checkPair(P('shimano-sl-m310-7r'), P('shimano-rd-ty300'), kb).level <= LEVEL.KNOWN);
+  });
+  test('manette STX SL-MC37 + dérailleur Alivio RD-M410 (7/8v) : compatibles', () => {
+    assert.ok(checkPair(P('shimano-sl-mc37'), P('shimano-rd-m410'), kb).level <= LEVEL.KNOWN);
+  });
+  test('recherche « altus 7v », « stx », « alivio 7v »', () => {
+    for (const q of ['altus 7v', 'stx', 'alivio 7v']) assert.ok(searchParts(q, parts).results.length, q);
   });
 });

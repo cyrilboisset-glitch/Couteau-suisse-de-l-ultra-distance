@@ -1,0 +1,901 @@
+{
+ "_meta": {
+  "description": "Shimano 7 vitesses : gamme actuelle d'après le tableau officiel (Altus M310/M315, Acera M360, Tourney, EZ-Fire, cassettes, roues libres) et anciens groupes STX, Alivio, Altus C10 (sources communautaires, à valider)."
+ },
+ "sources": {
+  "pi-C439": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-433 / C-439 – transmission arrière 7 vitesses (VTT) : manettes, dérailleurs, cassettes corps M et S, roues libres, chaînes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-433"
+  },
+  "ebay-rdmc30": {
+   "kind": "communaute",
+   "ref": "Annonce eBay – dérailleur Shimano STX RD-MC30, 1993, chape moyenne, 7 vitesses",
+   "url": "https://www.ebay.de/itm/156612191235"
+  },
+  "rb-slmc37": {
+   "kind": "communaute",
+   "ref": "RetroBike – manettes STX 7v SL-MC37, présentes dans les groupes Alivio, STX et STX-RC (catalogue 1997)",
+   "url": "https://retrobike.co.uk/threads/stx-shifters-a-quick-q.233709"
+  },
+  "rb-stx": {
+   "kind": "communaute",
+   "ref": "RetroBike – STX et STX RC : STX lancé en 1993 (7/8v), arrêtés fin 1999",
+   "url": "https://www.retrobike.co.uk/threads/stx-and-stx-rc.144383/page-4"
+  },
+  "sigma-rdm410": {
+   "kind": "revendeur",
+   "ref": "Sigma Sports – Shimano Alivio RD-M410, 7 et 8 vitesses, chape SGS",
+   "url": "https://www.sigmasport.co.uk/item/Shimano/RDM410-Alivio-Rear-Derailleur/DIE6"
+  },
+  "bikeride-c10": {
+   "kind": "communaute",
+   "ref": "Forum BikeRide – dérailleur arrière Altus C10 (7v) cassé, pièce introuvable",
+   "url": "https://forums.bikeride.com/thread-2046-post-11497.html"
+  },
+  "bc-slm315": {
+   "kind": "revendeur",
+   "ref": "bike-components – Shimano SL-M315 manette 2/3/7/8 vitesses",
+   "url": "https://bike-components.de/en/Shimano/SL-M315-Shifter-w-clamp-2-3-7-8-Speed-p79041"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-sl-m310-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M310-7R",
+   "aliases": [
+    "sl m310 7r"
+   ],
+   "name": "Altus SL-M310 manette droite 7v",
+   "discipline": "vtt",
+   "generation": "Altus M310 (7/8v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-m315-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M315-7R",
+   "aliases": [
+    "sl m315 7r"
+   ],
+   "name": "Altus SL-M315 Rapidfire Plus manette droite 7v",
+   "discipline": "vtt",
+   "generation": "Altus M315 (7/8v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439",
+    "bc-slm315"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-rs47-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-RS47-7R",
+   "aliases": [
+    "sl rs47 7r"
+   ],
+   "name": "Revoshift SL-RS47 poignée droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "poignee_tournante"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-rs45-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-RS45-7R",
+   "aliases": [
+    "sl rs45 7r"
+   ],
+   "name": "Revoshift SL-RS45 poignée droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "poignee_tournante"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-rs36-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-RS36-7R",
+   "aliases": [
+    "sl rs36 7r"
+   ],
+   "name": "Revoshift SL-RS36 poignée droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "poignee_tournante"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-rs35-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-RS35-7R",
+   "aliases": [
+    "sl rs35 7r"
+   ],
+   "name": "Revoshift SL-RS35 poignée droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "poignee_tournante"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-rv300-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-RV300-7R",
+   "aliases": [
+    "sl rv300 7r"
+   ],
+   "name": "Revoshift SL-RV300 poignée droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "poignee_tournante"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-rv200-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-RV200-7R",
+   "aliases": [
+    "sl rv200 7r"
+   ],
+   "name": "Revoshift SL-RV200 poignée droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "poignee_tournante"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-sl-ft55-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-FT55-7R",
+   "aliases": [
+    "sl ft55 7r"
+   ],
+   "name": "Tourney SL-FT55 manette droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Forme de la manette non indiquée par Shimano dans le tableau de compatibilité."
+  },
+  {
+   "id": "shimano-sl-tx30-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-TX30-7R",
+   "aliases": [
+    "sl tx30 7r"
+   ],
+   "name": "Tourney SL-TX30 manette droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney TX (6/7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Forme de la manette non indiquée par Shimano dans le tableau de compatibilité."
+  },
+  {
+   "id": "shimano-sl-tz500-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-TZ500-7R",
+   "aliases": [
+    "sl tz500 7r"
+   ],
+   "name": "Tourney SL-TZ500 manette droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Forme de la manette non indiquée par Shimano dans le tableau de compatibilité."
+  },
+  {
+   "id": "shimano-sl-tz20-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-TZ20-7R",
+   "aliases": [
+    "sl tz20 7r"
+   ],
+   "name": "Tourney SL-TZ20 manette droite 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Forme de la manette non indiquée par Shimano dans le tableau de compatibilité."
+  },
+  {
+   "id": "shimano-st-ef65-7r4",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF65-7R4",
+   "aliases": [
+    "st ef65 7r4"
+   ],
+   "name": "Shimano EF65 manette + levier 4 doigts 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-st-ef65-7r2",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF65-7R2",
+   "aliases": [
+    "st ef65 7r2"
+   ],
+   "name": "Shimano EF65 manette + levier 2 doigts 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-st-ef500-7r4a",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF500-7R4A",
+   "aliases": [
+    "st ef500 7r4a"
+   ],
+   "name": "Shimano EF500 manette + levier 4 doigts 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-st-ef500-7r2a",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF500-7R2A",
+   "aliases": [
+    "st ef500 7r2a"
+   ],
+   "name": "Shimano EF500 manette + levier 2 doigts 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-st-ef510-7r4a",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF510-7R4A",
+   "aliases": [
+    "st ef510 7r4a"
+   ],
+   "name": "Shimano EF510 manette + levier 4 doigts 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-st-ef510-7r2a",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF510-7R2A",
+   "aliases": [
+    "st ef510 7r2a"
+   ],
+   "name": "Shimano EF510 manette + levier 2 doigts 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-st-ef505-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF505-7R",
+   "aliases": [
+    "st ef505 7r"
+   ],
+   "name": "Shimano EF505 manette + levier 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-st-ef515-7r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "ST-EF515-7R",
+   "aliases": [
+    "st ef515 7r"
+   ],
+   "name": "Shimano EF515 manette + levier 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus EZ-Fire (7v)",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier de frein intégré : type de frein (V-brake ou hydraulique) non renseigné, vérifier sur la pièce."
+  },
+  {
+   "id": "shimano-rd-m360-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M360-SGS",
+   "aliases": [
+    "rd m360 sgs"
+   ],
+   "name": "Acera M360 dérailleur arrière 7/8v",
+   "discipline": "vtt",
+   "generation": "Acera (7/8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "maxFrontChainrings": 3,
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 34,
+    "cageLength": "SGS"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : 7 et 8 vitesses, plus grand pignon de 28 à 34 dents. Capacité non indiquée dans le tableau."
+  },
+  {
+   "id": "shimano-rd-tx800-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-TX800-SGS",
+   "aliases": [
+    "rd tx800 sgs"
+   ],
+   "name": "Tourney TX800 dérailleur arrière 7/8v",
+   "discipline": "vtt",
+   "generation": "Tourney TX (7/8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "maxFrontChainrings": 3,
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 34,
+    "cageLength": "SGS"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : 7 et 8 vitesses, plus grand pignon de 28 à 34 dents. Capacité non indiquée dans le tableau."
+  },
+  {
+   "id": "shimano-rd-ty500-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-TY500-SGS",
+   "aliases": [
+    "rd ty500 sgs"
+   ],
+   "name": "Tourney TY500 dérailleur arrière 6/7v",
+   "discipline": "vtt",
+   "generation": "Tourney (6/7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "maxFrontChainrings": 3,
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "SGS"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plus grand pignon et capacité non indiqués dans le tableau Shimano : à compléter. Avec une cassette sur corps 8/9/10v : version à fixation directe uniquement (Shimano)."
+  },
+  {
+   "id": "shimano-cs-hg210-7-12-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG210-7 12-28",
+   "aliases": [
+    "cs hg210 7 12 28"
+   ],
+   "name": "Cassette CS-HG210-7 12-28 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus (7v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 7,
+    "minCog": 12,
+    "maxCog": 28,
+    "pitch": "hg-7",
+    "freehub": "hg_8_9_10"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide",
+   "notes": "Prévue par Shimano pour le corps 8/9/10v (cannelures M)."
+  },
+  {
+   "id": "shimano-cs-hg210-7-12-32",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG210-7 12-32",
+   "aliases": [
+    "cs hg210 7 12 32"
+   ],
+   "name": "Cassette CS-HG210-7 12-32 7v",
+   "discipline": "vtt",
+   "generation": "Tourney / Altus (7v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 7,
+    "minCog": 12,
+    "maxCog": 32,
+    "pitch": "hg-7",
+    "freehub": "hg_8_9_10"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide",
+   "notes": "Prévue par Shimano pour le corps 8/9/10v (cannelures M)."
+  },
+  {
+   "id": "shimano-cs-hg400-7-11-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-HG400-7 11-28",
+   "aliases": [
+    "cs hg400 7 11 28"
+   ],
+   "name": "Cassette CS-HG400-7 11-28 7v",
+   "discipline": "vtt",
+   "generation": "Alivio (7v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 7,
+    "minCog": 11,
+    "maxCog": 28,
+    "pitch": "hg-7",
+    "freehub": "hg_8_9_10"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide",
+   "notes": "Prévue par Shimano pour le corps 8/9/10v (cannelures M)."
+  },
+  {
+   "id": "shimano-mf-hg37-13-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-HG37 13-28",
+   "aliases": [
+    "mf hg37 13 28"
+   ],
+   "name": "Roue libre MF-HG37 13-28 7v",
+   "discipline": "vtt",
+   "generation": "Roues libres 7v",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 7,
+    "minCog": 13,
+    "maxCog": 28,
+    "pitch": "hg-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide",
+   "notes": "Roue libre à visser : moyeux à visser uniquement."
+  },
+  {
+   "id": "shimano-mf-tz510-7-14-28",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-TZ510-7 14-28",
+   "aliases": [
+    "mf tz510 7 14 28"
+   ],
+   "name": "Roue libre MF-TZ510-7 14-28 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 7,
+    "minCog": 14,
+    "maxCog": 28,
+    "pitch": "hg-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide",
+   "notes": "Roue libre à visser : moyeux à visser uniquement."
+  },
+  {
+   "id": "shimano-mf-tz510-7-14-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-TZ510-7 14-34",
+   "aliases": [
+    "mf tz510 7 14 34"
+   ],
+   "name": "Roue libre MF-TZ510-7 14-34 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 7,
+    "minCog": 14,
+    "maxCog": 34,
+    "pitch": "hg-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide",
+   "notes": "Roue libre à visser : moyeux à visser uniquement."
+  },
+  {
+   "id": "shimano-mf-tz31-14-34",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "MF-TZ31 14-34",
+   "aliases": [
+    "mf tz31 14 34"
+   ],
+   "name": "Roue libre MF-TZ31 14-34 7v",
+   "discipline": "vtt",
+   "generation": "Tourney (7v)",
+   "attrs": {
+    "kind": "roue_libre",
+    "speeds": 7,
+    "minCog": 14,
+    "maxCog": 34,
+    "pitch": "hg-7"
+   },
+   "src": [
+    "pi-C439"
+   ],
+   "confidence": "moyenne",
+   "status": "valide",
+   "notes": "Roue libre à visser : moyeux à visser uniquement."
+  },
+  {
+   "id": "shimano-rd-mc30",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-MC30",
+   "aliases": [
+    "rd mc30",
+    "stx",
+    "stx 7v"
+   ],
+   "name": "STX dérailleur arrière 7v chape moyenne (1993)",
+   "discipline": "vtt",
+   "generation": "STX (7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "GS"
+   },
+   "src": [
+    "ebay-rdmc30",
+    "rb-stx"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Source : annonce et forum (pas de document Shimano). Plus grand pignon et capacité inconnus : à compléter."
+  },
+  {
+   "id": "shimano-sl-mc37",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-MC37",
+   "aliases": [
+    "sl mc37",
+    "stx manette",
+    "alivio 7v"
+   ],
+   "name": "STX / Alivio manettes Rapidfire 7v",
+   "discipline": "vtt",
+   "generation": "STX (7v)",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "rb-slmc37"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Source : forum (catalogue Shimano 1997 cité). Utilisées sur les groupes Alivio, STX et STX-RC."
+  },
+  {
+   "id": "shimano-rd-m410",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M410",
+   "aliases": [
+    "rd m410",
+    "alivio m410",
+    "alivio 7v"
+   ],
+   "name": "Alivio M410 dérailleur arrière 7/8v",
+   "discipline": "vtt",
+   "generation": "Alivio (7/8v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "sigma-rdm410"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Prévu pour 7 et 8 vitesses. Plus grand pignon et capacité non trouvés : à compléter."
+  },
+  {
+   "id": "shimano-rd-altus-c10",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD Altus C10 (7v)",
+   "aliases": [
+    "altus c10",
+    "rd ct10",
+    "rd at10",
+    "altus 7v"
+   ],
+   "name": "Altus C10 dérailleur arrière 7v",
+   "discipline": "vtt",
+   "generation": "Altus C10 (7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7"
+   },
+   "src": [
+    "bikeride-c10"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Références vues en annonces : RD-CT10 (chape moyenne) et RD-AT10 (chape longue). Remplacement : tout dérailleur Shimano 7/8v (même tirage), en vérifiant la patte et la capacité."
+  }
+ ]
+}
