@@ -2,8 +2,8 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **1233 pièces**, dont 65 validées par une page constructeur et **1168 à valider**.
-- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 285, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
+- **1238 pièces**, dont 65 validées par une page constructeur et **1173 à valider**.
+- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 288, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 104 |
 | Sachs | 4 |
-| Shimano | 915 |
+| Shimano | 920 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -42,7 +42,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (294)
+## Dérailleur arrière (299)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -136,6 +136,7 @@
 | RD-6800-SS | Shimano | route | à valider |  |
 | RD-6870-GS | Shimano | route | à valider | totalCapacity |
 | RD-6870-SS | Shimano | route | à valider | totalCapacity |
+| RD-7200 | Shimano | route | à valider | speeds, maxCog, totalCapacity |
 | RD-7400 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-7401 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-7402 | Shimano | route | à valider | maxCog, totalCapacity |
@@ -152,6 +153,8 @@
 | RD-A550 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-A551 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD Altus C10 (7v) | Shimano | vtt | à valider | maxCog, totalCapacity |
+| Crane (D501) | Shimano | route | à valider | speeds, maxCog, totalCapacity |
+| Crane GS (D511) | Shimano | route | à valider | speeds, maxCog, totalCapacity |
 | RD-FT35-A-SS | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-FT55-A-SS | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M2000-SGS | Shimano | vtt | à valider |  |
@@ -260,6 +263,8 @@
 | RD-T670-A | Shimano | vtt | à valider | totalCapacity |
 | RD-T780 | Shimano | vtt | à valider | totalCapacity |
 | RD-T8000 | Shimano | vtt | à valider | totalCapacity |
+| Titlist (D601) | Shimano | route | à valider | speeds, maxCog, totalCapacity |
+| Titlist GS (D611) | Shimano | route | à valider | speeds, maxCog, totalCapacity |
 | RD-TX35 | Shimano | vtt | à valider |  |
 | RD-TX800-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-TY200-GS | Shimano | vtt | à valider | maxCog, totalCapacity |

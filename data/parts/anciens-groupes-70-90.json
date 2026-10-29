@@ -92,6 +92,21 @@
    "kind": "communaute",
    "ref": "Disraeli Gears – SRAM ESP 9.0 (1996-1997) : 8 vitesses, 1:1, pignon max 32",
    "url": "https://www.disraeligears.co.uk/site/sram_esp_90_1st_style_derailleur.html"
+  },
+  "dg-dura-story": {
+   "kind": "communaute",
+   "ref": "Disraeli Gears – Shimano, l'histoire Dura-Ace : Crane (D501, 1971, restylé 1973), Crane GS (D511), premier Dura-Ace 1973",
+   "url": "https://www.disraeligears.co.uk/site/shimano_derailleurs_-_the_dura-ace_story.html"
+  },
+  "dg-1975": {
+   "kind": "communaute",
+   "ref": "Disraeli Gears – catalogue « A Complete Line of Shimano » 1975 : Titlist (D601) et Titlist GS (D611)",
+   "url": "https://www.disraeligears.co.uk/site/a_complete_line_of_shimano_1975.html"
+  },
+  "dg-shimano": {
+   "kind": "communaute",
+   "ref": "Disraeli Gears – dérailleurs Shimano : Dura-Ace EX 7200 (1978)",
+   "url": "https://www.disraeligears.co.uk/site/shimano_derailleurs.html"
   }
  },
  "parts": [
@@ -858,6 +873,129 @@
    "confidence": "basse",
    "status": "a_valider",
    "notes": "Plus grand pignon et capacité non trouvés dans une source fiable : à compléter."
+  },
+  {
+   "id": "shimano-rd-crane",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "Crane (D501)",
+   "aliases": [
+    "crane",
+    "d501",
+    "shimano crane"
+   ],
+   "name": "Shimano Crane dérailleur arrière (1971)",
+   "discipline": "route",
+   "generation": "Crane (années 1970)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": [
+    "dg-dura-story"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Dérailleur à friction (avant l'indexation SIS de 1984) : fonctionne avec toute manette à friction. Capacité et pignon max non trouvés : à compléter."
+  },
+  {
+   "id": "shimano-rd-crane-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "Crane GS (D511)",
+   "aliases": [
+    "crane gs",
+    "d511"
+   ],
+   "name": "Shimano Crane GS dérailleur arrière chape longue",
+   "discipline": "route",
+   "generation": "Crane (années 1970)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": [
+    "dg-dura-story"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Dérailleur à friction (avant l'indexation SIS de 1984) : fonctionne avec toute manette à friction. Capacité et pignon max non trouvés : à compléter."
+  },
+  {
+   "id": "shimano-rd-titlist",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "Titlist (D601)",
+   "aliases": [
+    "titlist",
+    "d601"
+   ],
+   "name": "Shimano Titlist dérailleur arrière (1971)",
+   "discipline": "route",
+   "generation": "Titlist (années 1970)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": [
+    "dg-1975"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Dérailleur à friction (avant l'indexation SIS de 1984) : fonctionne avec toute manette à friction. Capacité et pignon max non trouvés : à compléter."
+  },
+  {
+   "id": "shimano-rd-titlist-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "Titlist GS (D611)",
+   "aliases": [
+    "titlist gs",
+    "d611"
+   ],
+   "name": "Shimano Titlist GS dérailleur arrière chape longue",
+   "discipline": "route",
+   "generation": "Titlist (années 1970)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": [
+    "dg-1975"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Dérailleur à friction (avant l'indexation SIS de 1984) : fonctionne avec toute manette à friction. Capacité et pignon max non trouvés : à compléter."
+  },
+  {
+   "id": "shimano-rd-7200",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-7200",
+   "aliases": [
+    "rd 7200",
+    "dura ace ex",
+    "7200"
+   ],
+   "name": "Shimano Dura-Ace EX RD-7200 dérailleur arrière (1978)",
+   "discipline": "route",
+   "generation": "Dura-Ace EX 7200 (1978)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "family": "friction"
+   },
+   "src": [
+    "dg-shimano",
+    "wiki-sh-groups"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Dérailleur à friction (avant l'indexation SIS de 1984) : fonctionne avec toute manette à friction. Capacité et pignon max non trouvés : à compléter."
   }
  ]
 }
