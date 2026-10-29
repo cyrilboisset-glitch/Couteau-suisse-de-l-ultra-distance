@@ -75,3 +75,16 @@ describe('Freins Shimano relevés (C-186, C-462, C-736)', () => {
     assert.equal(P('shimano-br-tx805').attrs.cablePull, 'long');
   });
 });
+
+describe('Toutes les pièces compatibles', () => {
+  test('dérailleur XT M8100 SGS : manettes 12v, cassettes 10-51, chaînes 12v ; rien d\'incompatible', async () => {
+    const { findCompatible } = await import('../src/compat.js');
+    const groups = findCompatible(P('shimano-rd-m8100-sgs'), parts, { kb });
+    const types = Object.fromEntries(groups.map((g) => [g.type, g.items]));
+    assert.ok(types.shifter?.some((x) => x.part.id === 'shimano-sl-m8100-r'));
+    assert.ok(types.cassette?.some((x) => x.part.attrs.maxCog === 51));
+    assert.ok(groups.every((g) => g.items.every((x) => x.result.level <= LEVEL.KNOWN)));
+    assert.ok(!types.shifter.some((x) => x.part.attrs.speeds === 11 && x.part.attrs.family === 'shimano-vtt-11'));
+    assert.ok(types.cassette.every((x) => x.part.attrs.speeds === 12 && x.part.attrs.minCog >= 10), 'cassettes 12v, pas de 9 dents');
+  });
+});

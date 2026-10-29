@@ -1,5 +1,5 @@
 // Interface : pièce cassée → remplacements classés ; « sous la main » ; « mon vélo ».
-import { createKnowledge, findReplacements, checkAvailable, isSafetyPart, EMERGENCY_STEPS, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
+import { createKnowledge, findReplacements, findCompatible, checkAvailable, isSafetyPart, EMERGENCY_STEPS, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
 import { searchParts } from './src/search.js';
 import { tr, t, trName, setLang, getLang, detectLang, LANGS } from './src/i18n/index.js';
 import { createProjetView } from './projet.js';
@@ -390,7 +390,8 @@ const VIEWS = {
     if (!broken) { location.hash = '#/'; return; }
     const results = findReplacements(broken, state.parts, { kb: state.kb, bike: bikeParts(), includeIncompatible: true });
     view.innerHTML = `${partSummary(broken, {
-      actions: `<div class="btn-row two"><a class="btn ghost" href="#/">‹ ${t('Autre pièce')}</a>
+      actions: `<div class="btn-row"><a class="btn" href="#/compat/${encodeURIComponent(broken.id)}">🔗 ${t('Toutes les pièces compatibles')}</a></div>
+        <div class="btn-row two"><a class="btn ghost" href="#/">‹ ${t('Autre pièce')}</a>
         <button class="btn ghost" type="button" id="to-dispo">${t('J\'ai ça sous la main')}</button></div>`,
     })}${bikeNote(broken)}<h2>${t('Remplacements ({0} possibles)', results.filter((r) => r.result.level < LEVEL.INCOMPATIBLE).length)}</h2><div id="res"></div>`;
     view.querySelector('#to-dispo').addEventListener('click', () => {
@@ -442,6 +443,31 @@ const VIEWS = {
       el.insertAdjacentHTML('beforebegin', `<h2>${t('Verdict')}</h2>${bikeNote(broken)}`);
       resultsSection(res, el, { 1: true, 2: true, 3: true, 4: true });
     }
+  },
+
+  compat(id) {
+    const part = state.byId.get(id);
+    if (!part) { location.hash = '#/'; return; }
+    const showDegraded = store.get('compatDegraded', false);
+    const groups = findCompatible(part, state.parts, { kb: state.kb, maxLevel: showDegraded ? LEVEL.DEGRADED : LEVEL.KNOWN });
+    const total = groups.reduce((n, g) => n + g.items.length, 0);
+    const row = ({ part: p, result: r }) => `<li><a class="row" href="#/piece/${encodeURIComponent(p.id)}">
+        <span class="main"><span class="ref">${LEVEL_INFO[r.level].emoji} ${esc(partTitle(p))}</span>
+        <span class="sub">${nm(p.name ?? '')} · ${esc(partSub(p))}${r.toValidate ? ` · <span class="warn-txt">${t('à valider')}</span>` : ''}</span>
+        ${r.conditions.length ? `<span class="sub">❓ ${r.conditions.map(x).join(' · ')}</span>` : ''}</span>
+        <span class="act">›</span></a></li>`;
+    view.innerHTML = `${partSummary(part, { actions: `<div class="btn-row"><a class="btn ghost" href="#/piece/${encodeURIComponent(part.id)}">‹ ${t('Remplacements')}</a></div>` })}
+      <h2>${t('Pièces compatibles ({0})', total)}</h2>
+      <p class="muted small">${t('Pièces d\'autres types vérifiées une à une avec les règles de compatibilité : ✅ officiel constructeur, 🟢 compatible connu.')}</p>
+      <label class="accept"><input type="checkbox" id="show-degraded"${showDegraded ? ' checked' : ''}> ${t('Afficher aussi les solutions 🟠 dépannage')}</label>
+      ${groups.length ? groups.map((g, i) => `<details class="compat-group"${i === 0 ? ' open' : ''}>
+        <summary><strong>${esc(typeLabel(g.type))}</strong> <span class="count">${g.items.length}</span></summary>
+        <ul class="list">${g.items.map(row).join('')}</ul></details>`).join('')
+        : `<p class="empty">${t('Aucune pièce d\'un autre type n\'a pu être vérifiée comme compatible (données manquantes ou aucune règle applicable).')}</p>`}`;
+    view.querySelector('#show-degraded').addEventListener('change', (e) => {
+      store.set('compatDegraded', e.target.checked);
+      VIEWS.compat(id);
+    });
   },
 
   conditions() {
@@ -543,7 +569,7 @@ function updateCount() {
 
 function route() {
   const [, name = '', arg, ...rest] = location.hash.split('/');
-  const tab = name === 'piece' || name === '' || name === 'parcourir' ? 'casse' : name;
+  const tab = ['piece', 'compat', '', 'parcourir'].includes(name) ? 'casse' : name;
   for (const a of document.querySelectorAll('.tab')) {
     if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
@@ -553,6 +579,7 @@ function route() {
   // Conditions à accepter avant tout usage (lisibles à tout moment).
   if (name !== 'conditions' && store.get('termsAccepted', 0) !== TERMS_VERSION) VIEWS.gate();
   else if (name === 'piece') VIEWS.piece(decodeURIComponent(arg ?? ''));
+  else if (name === 'compat') VIEWS.compat(decodeURIComponent(arg ?? ''));
   else if (name === 'projet') VIEWS.projet(arg ? decodeURIComponent(arg) : null);
   else if (name === 'parcourir') VIEWS.parcourir([arg, ...rest].filter((s) => s !== undefined && s !== ''));
   else (VIEWS[tab] ?? VIEWS.casse)();

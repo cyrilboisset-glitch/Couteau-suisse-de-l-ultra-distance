@@ -5,3 +5,4 @@ export { RULES, checkPair, aggregate, isSafetyPart, EMERGENCY_STEPS } from './en
 export { checkReplacement, findReplacements, checkAvailable, deriveNeighbors } from './engine/replacement.js';
 export { analyzeProject, SLOTS, REMOVE, slotOf, chainLength, groupConfig } from './project.js';
 export { searchParts, parseCriteria } from './search.js';
+export { findCompatible } from './compat.js';
