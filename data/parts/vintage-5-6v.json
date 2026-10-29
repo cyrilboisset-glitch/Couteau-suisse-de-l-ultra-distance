@@ -1285,11 +1285,13 @@
    "aliases": [
     "rd m700",
     "deore tete de cerf",
-    "deer head"
+    "deer head",
+    "deore xt m700",
+    "premier xt"
    ],
-   "name": "Shimano Deore RD-M700 « tête de cerf », chape longue",
+   "name": "Shimano Deore XT RD-M700 « tête de cerf », chape longue",
    "discipline": "vtt",
-   "generation": "Deore M700",
+   "generation": "Deore XT M700 (1983)",
    "attrs": {
     "system": "mecanique",
     "mount": "standard",

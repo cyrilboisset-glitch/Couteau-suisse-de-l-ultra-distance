@@ -808,6 +808,56 @@
    "confidence": "moyenne",
    "status": "a_valider",
    "notes": "Tirage SRAM 1:1 : uniquement avec une manette SRAM 1:1 (Grip Shift ESP). Capacité 38 dents = valeur conseillée par le manuel SRAM 1997."
+  },
+  {
+   "id": "shimano-rd-m732",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M732",
+   "aliases": [
+    "rd m732"
+   ],
+   "name": "Deore XT M732 dérailleur arrière 7v (1989)",
+   "discipline": "vtt",
+   "generation": "Deore XT M732 (7v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "resto-mtb"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Plus grand pignon et capacité non trouvés dans une source fiable : à compléter."
+  },
+  {
+   "id": "shimano-rd-m750",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M750",
+   "aliases": [
+    "rd m750"
+   ],
+   "name": "Deore XT M750 dérailleur arrière 9v (1999)",
+   "discipline": "vtt",
+   "generation": "Deore XT M750 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "resto-mtb"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Plus grand pignon et capacité non trouvés dans une source fiable : à compléter."
   }
  ]
 }

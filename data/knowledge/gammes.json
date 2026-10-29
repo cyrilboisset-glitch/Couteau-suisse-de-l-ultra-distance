@@ -1485,9 +1485,11 @@
   },
   {
    "brand": "Shimano",
-   "generation": "Deore M700",
-   "gamme": "Deore",
-   "status": "a_valider"
+   "generation": "Deore XT M700 (1983)",
+   "gamme": "XT",
+   "status": "a_valider",
+   "year": 1983,
+   "src": "wiki-sh-groups"
   },
   {
    "brand": "SunTour",
@@ -1889,6 +1891,34 @@
    "gamme": "ESP",
    "year": 1996,
    "src": "dg-esp9",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore XT M732 (7v)",
+   "gamme": "XT",
+   "year": 1989,
+   "src": "resto-mtb",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "Deore XT M750 (9v)",
+   "gamme": "XT",
+   "year": 1999,
+   "src": "resto-mtb",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XT M8200 (12v)",
+   "gamme": "XT",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Shimano",
+   "generation": "XT LinkGlide M8130 (11v)",
+   "gamme": "XT",
    "status": "a_valider"
   }
  ]

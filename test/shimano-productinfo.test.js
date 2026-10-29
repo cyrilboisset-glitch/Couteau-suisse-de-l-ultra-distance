@@ -40,3 +40,15 @@ describe('Shimano productinfo', () => {
     assert.equal(P('shimano-rd-r2000-gs').attrs.maxCog3x, 32);
   });
 });
+
+describe('Lignée Deore XT', () => {
+  test('toutes les générations, du M700 (1983) au M8200 (12v)', () => {
+    const gens = new Set(parts.filter((p) => p.brand === 'Shimano').map((p) => p.generation));
+    for (const g of ['Deore XT M700 (1983)', 'Deore XT M730 (7v)', 'Deore XT M732 (7v)', 'Deore XT M735 (7v)', 'Deore XT M737 (8v)',
+      'Deore XT M739 (8v)', 'Deore XT M750 (9v)', 'XT M760 (9v)', 'XT M770 (9v)', 'XT M780 (10v)', 'XT M8000 (11v)',
+      'XT M8100 (12v)', 'XT M8200 (12v)', 'XT LinkGlide M8130 (11v)']) assert.ok(gens.has(g), g);
+  });
+  test('manette XT M8200 + dérailleur XT M8100 : compatibles (même tirage 12v)', () => {
+    assert.ok(checkPair(P('shimano-sl-m8200-r'), P('shimano-rd-m8100-sgs'), kb).level <= LEVEL.KNOWN);
+  });
+});

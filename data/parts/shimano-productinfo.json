@@ -30,6 +30,11 @@
    "kind": "officiel",
    "ref": "Shimano productinfo C-736 – huile SHIMANO LOW VISCOSITY réservée à BL/BR-M9200, M9220, M8200, M8220, M6200, M6220, MT620, MT600",
    "url": "https://productinfo.shimano.com/en/compatibility/C-736"
+  },
+  "pi-C433": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-433 – transmission arrière VTT 9 à 12v (XT M8200, LinkGlide M8130, RD-M771)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-433"
   }
  },
  "parts": [
@@ -570,7 +575,7 @@
    ],
    "name": "Deore XT M8200 étrier 2 pistons",
    "discipline": "vtt",
-   "generation": "XT M8200",
+   "generation": "XT M8200 (12v)",
    "attrs": {
     "brakeType": "disque",
     "brakeActuation": "hydraulique",
@@ -741,7 +746,7 @@
    ],
    "name": "Deore XT M8200 levier de frein",
    "discipline": "vtt",
-   "generation": "XT M8200",
+   "generation": "XT M8200 (12v)",
    "attrs": {
     "brakeActuation": "hydraulique",
     "fluid": "mineral",
@@ -960,6 +965,240 @@
    ],
    "confidence": "haute",
    "status": "valide"
+  },
+  {
+   "id": "shimano-sl-m8200-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M8200-R",
+   "aliases": [
+    "sl m8200 r"
+   ],
+   "name": "Deore XT M8200 manette droite 12v",
+   "discipline": "vtt",
+   "generation": "XT M8200 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "side": "arriere",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-sl-m8210-r",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M8210-R",
+   "aliases": [
+    "sl m8210 r"
+   ],
+   "name": "Deore XT M8210 manette droite 12v",
+   "discipline": "vtt",
+   "generation": "XT M8200 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "side": "arriere",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m8200-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M8200-SGS",
+   "aliases": [
+    "rd m8200 sgs"
+   ],
+   "name": "Deore XT M8200 1x12 chape longue",
+   "discipline": "vtt",
+   "generation": "XT M8200 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "mount": "standard",
+    "maxCog": 51,
+    "minCog": 10,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : cassettes 10-51 (M9100 à M6100, M8200). Capacité non indiquée dans le tableau."
+  },
+  {
+   "id": "shimano-rd-m8200-gs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M8200-GS",
+   "aliases": [
+    "rd m8200 gs"
+   ],
+   "name": "Deore XT M8200 1x12 chape moyenne (9-45)",
+   "discipline": "vtt",
+   "generation": "XT M8200 (12v)",
+   "attrs": {
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "mount": "standard",
+    "maxCog": 45,
+    "minCog": 9,
+    "cageLength": "GS",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : uniquement avec les cassettes 9-45 (CS-M8200-12, CS-M9200-12) ; réglage de butée différent, voir la notice. Pas pour VAE."
+  },
+  {
+   "id": "shimano-cs-m8200-9-45",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M8200-12 9-45",
+   "aliases": [
+    "cs m8200 12 9 45"
+   ],
+   "name": "Deore XT M8200 12v 9-45",
+   "discipline": "vtt",
+   "generation": "XT M8200 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 9,
+    "maxCog": 45,
+    "freehub": "microspline",
+    "pitch": "shimano-12"
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Pignon de 9 dents : moyeu Micro Spline compatible 9T requis (ex. FH-M8210-B). Pas pour VAE. Étagement non trouvé."
+  },
+  {
+   "id": "shimano-cs-m8200-10-51",
+   "type": "cassette",
+   "brand": "Shimano",
+   "ref": "CS-M8200-12 10-51",
+   "aliases": [
+    "cs m8200 12 10 51"
+   ],
+   "name": "Deore XT M8200 12v 10-51",
+   "discipline": "vtt",
+   "generation": "XT M8200 (12v)",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "freehub": "microspline",
+    "pitch": "shimano-12"
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Étagement non trouvé."
+  },
+  {
+   "id": "shimano-sl-m8130-r11",
+   "type": "shifter",
+   "brand": "Shimano",
+   "ref": "SL-M8130-R11",
+   "aliases": [
+    "sl m8130 r11"
+   ],
+   "name": "Deore XT LinkGlide M8130 manette droite 11v",
+   "discipline": "vtt",
+   "generation": "XT LinkGlide M8130 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "side": "arriere",
+    "form": "gachette_vtt"
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-rd-m8130-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M8130-SGS",
+   "aliases": [
+    "rd m8130 sgs"
+   ],
+   "name": "Deore XT LinkGlide M8130 1x11",
+   "discipline": "vtt",
+   "generation": "XT LinkGlide M8130 (11v)",
+   "attrs": {
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "mount": "standard",
+    "maxCog": 50,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : LinkGlide 11v (cassettes CS-LG700/600/400-11 11-50), même tirage que CUES 11v. Capacité non indiquée."
+  },
+  {
+   "id": "shimano-rd-m771-sgs",
+   "type": "rear_derailleur",
+   "brand": "Shimano",
+   "ref": "RD-M771-SGS",
+   "aliases": [
+    "rd m771 sgs"
+   ],
+   "name": "Deore XT M771 dérailleur arrière 9v chape longue",
+   "discipline": "vtt",
+   "generation": "XT M770 (9v)",
+   "attrs": {
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "mount": "standard",
+    "maxCog": 34,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : plus grand pignon de 28 à 34 dents. Capacité non indiquée dans le tableau."
   }
  ]
 }

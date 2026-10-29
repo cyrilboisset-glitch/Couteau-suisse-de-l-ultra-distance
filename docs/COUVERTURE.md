@@ -2,8 +2,8 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **737 pièces**, dont 48 validées par une page constructeur et **689 à valider**.
-- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 271, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
+- **748 pièces**, dont 48 validées par une page constructeur et **700 à valider**.
+- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 275, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 93 |
 | Sachs | 4 |
-| Shimano | 438 |
+| Shimano | 449 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -42,7 +42,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (216)
+## Dérailleur arrière (222)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -165,9 +165,12 @@
 | RD-M700 | Shimano | vtt | à valider | speeds, maxCog, totalCapacity |
 | RD-M7000-10-SGS | Shimano | vtt | à valider |  |
 | RD-M730 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M732 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M735 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M737 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M739 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M750 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M771-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M772-SGS | Shimano | vtt | à valider |  |
 | RD-M780-GS | Shimano | vtt | à valider |  |
 | RD-M786-GS | Shimano | vtt | à valider | maxCog |
@@ -177,6 +180,9 @@
 | RD-M8100-GS | Shimano | vtt | validé |  |
 | RD-M8100-SGS | Shimano | vtt | à valider |  |
 | RD-M8120-SGS | Shimano | vtt | à valider |  |
+| RD-M8130-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M8200-GS | Shimano | vtt | à valider | totalCapacity |
+| RD-M8200-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M900 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M9000-GS | Shimano | vtt | à valider |  |
 | RD-M9000-SGS | Shimano | vtt | à valider |  |
@@ -263,7 +269,7 @@
 | EDS OX2.0 dérailleur 93 mm | Wheeltop | vtt | à valider |  |
 | EDS TX dérailleur | Wheeltop | route | à valider | totalCapacity |
 
-## Manette / levier de vitesses (123)
+## Manette / levier de vitesses (126)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -333,6 +339,9 @@
 | SL-M770-L | Shimano | vtt | à valider |  |
 | SL-M8000-R | Shimano | vtt | à valider |  |
 | SL-M8100-R | Shimano | vtt | validé |  |
+| SL-M8130-R11 | Shimano | vtt | à valider |  |
+| SL-M8200-R | Shimano | vtt | à valider |  |
+| SL-M8210-R | Shimano | vtt | à valider |  |
 | SL-M9000-R | Shimano | vtt | à valider |  |
 | SL-MC37 | Shimano | vtt | à valider |  |
 | SL-RS35-7R | Shimano | vtt | validé |  |
@@ -406,7 +415,7 @@
 | BL-T4000 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
-## Cassette / roue libre (161)
+## Cassette / roue libre (163)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -498,6 +507,8 @@
 | CS-M8000 11-46 | Shimano | vtt | à valider |  |
 | CS-M8100 10-45 | Shimano | vtt | à valider |  |
 | CS-M8100 10-51 | Shimano | vtt | à valider |  |
+| CS-M8200-12 10-51 | Shimano | vtt | à valider |  |
+| CS-M8200-12 9-45 | Shimano | vtt | à valider |  |
 | CS-R7000 11-28 | Shimano | route | à valider |  |
 | CS-R7000 11-30 | Shimano | route | à valider |  |
 | CS-R7000 11-32 | Shimano | route | à valider |  |
