@@ -28,7 +28,10 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
+      # Le SDK Android est déjà installé sur les machines GitHub (ANDROID_HOME) ;
+      # Gradle télécharge seul la plateforme manquante.
+      - name: SDK Android
+        run: echo "sdk.dir=$ANDROID_HOME" > android/local.properties
 
       - name: Dépendances
         run: npm ci
