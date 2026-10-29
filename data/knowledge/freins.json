@@ -17,6 +17,11 @@
    "kind": "communaute",
    "ref": "MTBR – Formula Cura : en cas de panne, une autre huile minérale (Shimano, Magura) plutôt que rester bloqué ; purge complète ensuite",
    "url": "https://www.mtbr.com/posts/13732089"
+  },
+  "pi-C736": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-736 – huile SHIMANO LOW VISCOSITY réservée à BL/BR-M9200, M9220, M8200, M8220, M6200, M6220, MT620, MT805, MT600 ; ne pas utiliser d’autres huiles que celles spécifiées",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-736"
   }
  },
  "fluidFits": [
@@ -79,6 +84,16 @@
    "src": "mtbr-cura-oil",
    "confidence": "basse",
    "status": "a_valider"
+  },
+  {
+   "leverFluid": "shimano_mineral",
+   "caliperFluid": "shimano_low_viscosity",
+   "level": "incompatible",
+   "message": "Huile minérale Shimano standard et huile Shimano LOW VISCOSITY : Shimano interdit d'utiliser une autre huile que celle spécifiée.",
+   "limitation": "Risque de mauvais fonctionnement du frein. Levier et étrier doivent utiliser la même huile.",
+   "src": "pi-C736",
+   "confidence": "haute",
+   "status": "valide"
   }
  ],
  "brakeMountAdapters": [

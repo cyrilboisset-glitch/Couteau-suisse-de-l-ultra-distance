@@ -357,6 +357,16 @@
    "kind": "revendeur",
    "ref": "Performance Bike – leviers Sora 3500 pour transmission 9v",
    "url": "https://www.performancebike.com/shimano-sora-fd3500-front-derailleur-3-x-9-speed-efd3500bsm-p/p1278435"
+  },
+  "pi-C254": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-254 / C-255 / C-256 / C-648 – dérailleurs arrière route ↔ cassettes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-254"
+  },
+  "pi-C455": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-455 – dérailleurs avant route ↔ pédaliers (FD-9000 non compatible avec un grand plateau de 46 dents)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-455"
   }
  },
  "parts": [
@@ -386,7 +396,8 @@
    },
    "src": [
     "shimano-rd9000ss",
-    "sigma-rd9000"
+    "sigma-rd9000",
+    "pi-C254"
    ],
    "confidence": "haute",
    "status": "a_valider"
@@ -414,7 +425,10 @@
     "cageLength": "SS",
     "maxFrontChainrings": 2
    },
-   "src": "pb-rd6800ss",
+   "src": [
+    "pb-rd6800ss",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -441,7 +455,10 @@
     "cageLength": "GS",
     "maxFrontChainrings": 2
    },
-   "src": "pb-rd6800gs",
+   "src": [
+    "pb-rd6800gs",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -471,11 +488,12 @@
    },
    "src": [
     "atc-rd5800ss",
-    "geartrade-rd-5800"
+    "geartrade-rd-5800",
+    "pi-C254"
    ],
    "confidence": "basse",
    "status": "a_valider",
-   "notes": "Pignon max et capacité contradictoires selon les sources : non renseignés (lire l'étiquette du dérailleur)."
+   "notes": "Plages officielles Shimano (C-255) : cassettes 11-23 à 14-28."
   },
   {
    "id": "shimano-rd-5700-gs",
@@ -2419,11 +2437,12 @@
     "mount": "braze_on"
    },
    "src": [
-    "shimano-fd-9000-f"
+    "shimano-fd-9000-f",
+    "pi-C455"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Capacité non publiée dans la source (champ vide)."
+   "notes": "Capacité non publiée dans la source (champ vide). Shimano (C-455) : non compatible avec un grand plateau de 46 dents."
   },
   {
    "id": "shimano-rd-4601-gs",
@@ -2445,14 +2464,17 @@
     "family": "shimano-route-10",
     "maxCog": 32,
     "cageLength": "GS",
-    "maxFrontChainrings": 2
+    "maxFrontChainrings": 3,
+    "maxCog2x": 32,
+    "maxCog3x": 30
    },
    "src": [
-    "tf-rd-4601-gs"
+    "tf-rd-4601-gs",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
-   "notes": "Capacité totale non trouvée (champ vide)."
+   "notes": "Capacité totale non trouvée (champ vide). Shimano (C-256) : jusqu'à 11-32 en double, 12-30 en triple."
   },
   {
    "id": "shimano-fd-4600-f",

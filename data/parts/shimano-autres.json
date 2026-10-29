@@ -117,6 +117,21 @@
    "kind": "revendeur",
    "ref": "Mantel – CN-M8100 HG+ 12v : VTT / route / gravel",
    "url": "https://www.mantel.com/be-en/shimano-xt-cn-m8100-12-speed-chain"
+  },
+  "pi-C461": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-461 – compatibilité étriers ↔ disques (type de plaquette étroit / large, diamètres, notes résine seulement)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-461"
+  },
+  "pi-C192": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-192 – gamme de plaquettes et étriers compatibles (formes B, G/J, K/L, D/H/N/P)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-192"
+  },
+  "pi-C499": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-499 – systèmes hydrauliques route / gravel (leviers, durites, étriers flat mount / post mount)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-499"
   }
  },
  "parts": [
@@ -677,12 +692,16 @@
     "fluidSpec": "shimano_mineral",
     "hydraulicSystem": "shimano-route-hydro",
     "mount": "flat_mount",
-    "padShape": "shimano-L"
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
    },
    "src": [
     "rose-r8070",
     "sh-l05a",
-    "sh-mineral"
+    "sh-mineral",
+    "pi-C461",
+    "pi-C192",
+    "pi-C499"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
@@ -705,12 +724,16 @@
     "fluidSpec": "shimano_mineral",
     "hydraulicSystem": "shimano-route-hydro",
     "mount": "flat_mount",
-    "padShape": "shimano-L"
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
    },
    "src": [
     "veloplus-r7170",
     "sh-l05a",
-    "sh-mineral"
+    "sh-mineral",
+    "pi-C461",
+    "pi-C192",
+    "pi-C499"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
@@ -733,12 +756,16 @@
     "fluidSpec": "shimano_mineral",
     "hydraulicSystem": "shimano-route-hydro",
     "mount": "flat_mount",
-    "padShape": "shimano-L"
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
    },
    "src": [
     "wheeler-rx820",
     "sh-l05a",
-    "sh-mineral"
+    "sh-mineral",
+    "pi-C461",
+    "pi-C192",
+    "pi-C499"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
@@ -761,12 +788,15 @@
     "fluidSpec": "shimano_mineral",
     "hydraulicSystem": "shimano-vtt-hydro",
     "mount": "post_mount",
-    "padShape": "shimano-G"
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
    },
    "src": [
     "wwc-m8100-br",
     "halfords-g05a",
-    "sh-mineral"
+    "sh-mineral",
+    "pi-C461",
+    "pi-C192"
    ],
    "confidence": "moyenne",
    "status": "a_valider",

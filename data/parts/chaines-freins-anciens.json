@@ -147,6 +147,11 @@
    "kind": "officiel",
    "ref": "Shimano – BR-5800 : portée 51 mm, pneu 28C max, jante 19-28 mm",
    "url": "https://bike.shimano.com/en-EU/product/component/105-5800/BR-5800.html"
+  },
+  "pi-C461": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-461 – compatibilité étriers ↔ disques (type de plaquette étroit / large, diamètres, notes résine seulement)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-461"
   }
  },
  "parts": [
@@ -781,12 +786,14 @@
     "fluid": "mineral",
     "fluidSpec": "shimano_mineral",
     "mount": "post_mount",
-    "padShape": "shimano-B"
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
    },
    "src": [
     "westbrook-b01s",
     "rose-b05s",
-    "biketart-bleedkit"
+    "biketart-bleedkit",
+    "pi-C461"
    ],
    "confidence": "basse",
    "notes": "Système hydraulique (maître-cylindre) non renseigné par la source : à vérifier avant d’associer un levier.",

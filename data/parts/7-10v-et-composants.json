@@ -372,6 +372,21 @@
    "kind": "communaute",
    "ref": "Singletrack – la TRP Spyre utilise la plaquette générique B01 (Shimano M525/M515)",
    "url": "https://singletrackworld.com/forum/bike-forum/pads-for-trp-sypres/"
+  },
+  "pi-C461": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-461 – compatibilité étriers ↔ disques (type de plaquette étroit / large, diamètres, notes résine seulement)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-461"
+  },
+  "pi-C192": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-192 – gamme de plaquettes et étriers compatibles (formes B, G/J, K/L, D/H/N/P)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-192"
+  },
+  "pi-C254": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-254 / C-255 / C-256 / C-648 – dérailleurs arrière route ↔ cassettes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-254"
   }
  },
  "parts": [
@@ -402,7 +417,8 @@
    },
    "src": [
     "vp-4700ss",
-    "hf-4700"
+    "hf-4700",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider"
@@ -434,7 +450,8 @@
    },
    "src": [
     "hf-4700",
-    "bc-4700"
+    "bc-4700",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
@@ -543,9 +560,14 @@
     "totalCapacity": 43,
     "maxFrontDiff": 20,
     "cageLength": "GS",
-    "maxFrontChainrings": 3
+    "maxFrontChainrings": 3,
+    "maxCog2x": 34,
+    "maxCog3x": 32
    },
-   "src": "atc-r3000",
+   "src": [
+    "atc-r3000",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -571,7 +593,10 @@
     "cageLength": "SS",
     "maxFrontChainrings": 2
    },
-   "src": "hf-r3000ss",
+   "src": [
+    "hf-r3000ss",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -791,7 +816,10 @@
     "cageLength": "GS",
     "maxFrontChainrings": 2
    },
-   "src": "mec-5800",
+   "src": [
+    "mec-5800",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2573,11 +2601,14 @@
     "fluidSpec": "shimano_mineral",
     "hydraulicSystem": "shimano-mt200",
     "mount": "post_mount",
-    "padShape": "shimano-B"
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
    },
    "src": [
     "rose-mt200",
-    "sh-mineral"
+    "sh-mineral",
+    "pi-C461",
+    "pi-C192"
    ],
    "confidence": "moyenne",
    "status": "a_valider",
@@ -2644,9 +2675,13 @@
    "attrs": {
     "mount": "six_trous",
     "diameter": 160,
-    "padCompat": "resine_seulement"
+    "padCompat": "resine_seulement",
+    "rotorTrack": "large"
    },
-   "src": "tf-rt56",
+   "src": [
+    "tf-rt56",
+    "pi-C461"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2664,9 +2699,13 @@
    "attrs": {
     "mount": "six_trous",
     "diameter": 180,
-    "padCompat": "resine_seulement"
+    "padCompat": "resine_seulement",
+    "rotorTrack": "large"
    },
-   "src": "tf-rt56",
+   "src": [
+    "tf-rt56",
+    "pi-C461"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2683,9 +2722,13 @@
    "generation": "",
    "attrs": {
     "mount": "centerlock",
-    "diameter": 160
+    "diameter": 160,
+    "rotorTrack": "etroite"
    },
-   "src": "vp-rt70",
+   "src": [
+    "vp-rt70",
+    "pi-C461"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2702,9 +2745,13 @@
    "generation": "",
    "attrs": {
     "mount": "centerlock",
-    "diameter": 140
+    "diameter": 140,
+    "rotorTrack": "etroite"
    },
-   "src": "vp-rt70",
+   "src": [
+    "vp-rt70",
+    "pi-C461"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },

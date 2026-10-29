@@ -280,7 +280,33 @@ export const diametreMax = {
   },
 };
 
-export const FREINS_RULES = [diametreMax, porteeEtrier, 
+const PI_ROTORS = { kind: 'officiel', ref: 'Shimano productinfo C-461 – disques à piste étroite (2 pièces) incompatibles avec les étriers pour disque à piste large (interférence) ; disques à piste large réservés aux plaquettes résine', url: 'https://productinfo.shimano.com/en/compatibility/C-461' };
+
+export const pisteDisque = {
+  id: 'freins.piste_disque',
+  label: 'Largeur de piste du disque ↔ étrier',
+  between: [['brake_caliper', 'rotor']],
+  absolute: true,
+  confidence: 'haute',
+  source: PI_ROTORS,
+  evaluate(cal, rotor) {
+    // Donnée propre à certains constructeurs : sans elle, la règle ne s'applique pas.
+    const c = cal.attrs?.rotorTrack;
+    const r = rotor.attrs?.rotorTrack;
+    if (!c || !r) return null;
+    if (c === 'large' && r === 'etroite') {
+      return incompatible(this, 'Disque à piste étroite dans un étrier prévu pour disque à piste large : interférence.');
+    }
+    if (c === 'etroite' && r === 'large') {
+      return ok(this, 'Disque à piste large accepté par cet étrier (plaquettes résine seulement).', {
+        condition: 'Plaquettes résine uniquement avec ce disque.',
+      });
+    }
+    return ok(this, `Piste de disque ${r} prévue pour cet étrier.`);
+  },
+};
+
+export const FREINS_RULES = [diametreMax, porteeEtrier, pisteDisque, 
   hydrauliqueMecanique, fluide, systemeHydraulique, tirageCable,
   disqueJanteCadre, freinRoue, etrierDisque, formePlaquette, plaquetteDisque, fixationDisque,
 ];

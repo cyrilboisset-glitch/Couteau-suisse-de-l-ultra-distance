@@ -117,6 +117,11 @@
    "kind": "revendeur",
    "ref": "Velomine – BR-R2000 avant/arrière : Short Reach Caliper (39-49 mm)",
    "url": "https://velomine.com/products/shimano-claris-br-r2000-rear-brake-caliper"
+  },
+  "pi-C254": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-254 / C-255 / C-256 / C-648 – dérailleurs arrière route ↔ cassettes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-254"
   }
  },
  "parts": [
@@ -146,7 +151,10 @@
     "cageLength": "SS",
     "maxFrontChainrings": 2
    },
-   "src": "shimano-rd-r2000-ss",
+   "src": [
+    "shimano-rd-r2000-ss",
+    "pi-C254"
+   ],
    "confidence": "haute",
    "status": "a_valider"
   },
@@ -172,15 +180,19 @@
     "maxCog": 34,
     "minCog": 11,
     "totalCapacity": 43,
-    "cageLength": "GS"
+    "cageLength": "GS",
+    "maxCog2x": 34,
+    "maxCog3x": 32,
+    "maxFrontChainrings": 3
    },
    "src": [
     "shimano-rd-r2000-gs",
-    "mec-r2000gs"
+    "mec-r2000gs",
+    "pi-C254"
    ],
    "confidence": "haute",
    "status": "a_valider",
-   "notes": "Écart avant max et usage en triple non confirmés par une source lisible : à vérifier."
+   "notes": "Écart avant max non confirmé par une source lisible : à vérifier. Shimano (C-258) : jusqu'à 11-34 en double, 11-32 en triple."
   },
   {
    "id": "shimano-st-r2000",

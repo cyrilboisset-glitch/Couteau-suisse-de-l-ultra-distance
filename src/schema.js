@@ -38,6 +38,8 @@ export const ENUMS = Object.freeze({
   axleType: ['serrage_rapide', 'axe_traversant', 'ecrous', 'autre'],
   padCompound: ['resine', 'metal', 'semi_metal'],
   rotorPadCompat: ['resine_seulement', 'resine_et_metal'],
+  // Largeur de piste de freinage (Shimano C-461) : étroite = disques 2 pièces RT70/RT81/RT99… ; large = RT56/RT26/RT54…
+  rotorTrack: ['etroite', 'large'],
   confidence: ['haute', 'moyenne', 'basse'],
   // officiel : doc / tableau / fiche constructeur. physique : conséquence
   // directe d'un principe mécanique. communaute : retour terrain non officiel.
@@ -138,6 +140,7 @@ export const PART_TYPES = Object.freeze({
       padShape: a('string', 'Forme / référence de plaquette ou patin'),
       reachMin: a('number', 'Portée mini (étrier sur jante)', { unit: 'mm' }),
       reachMax: a('number', 'Portée maxi (étrier sur jante)', { unit: 'mm' }),
+      rotorTrack: a('enum', 'Étrier pour piste de disque étroite ou large', { enum: 'rotorTrack' }),
     },
   },
   rotor: {
@@ -147,6 +150,7 @@ export const PART_TYPES = Object.freeze({
       diameter: a('int', 'Diamètre', { unit: 'mm', required: true }),
       thickness: a('number', 'Épaisseur', { unit: 'mm' }),
       padCompat: a('enum', 'Plaquettes admises', { enum: 'rotorPadCompat' }),
+      rotorTrack: a('enum', 'Piste de freinage étroite ou large', { enum: 'rotorTrack' }),
     },
   },
   brake_pads: {

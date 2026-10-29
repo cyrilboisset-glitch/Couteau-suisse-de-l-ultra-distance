@@ -171,6 +171,11 @@
    "kind": "revendeur",
    "ref": "Velonova – RD-M8120 SGS : pignon max 45T, min 10T, capacité totale 45T",
    "url": "https://www.velonova.lt/en/shimano-deore-xt-rd-m8120-front-double-sgs-rear-derailleur-11-speed"
+  },
+  "pi-C254": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-254 / C-255 / C-256 / C-648 – dérailleurs arrière route ↔ cassettes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-254"
   }
  },
  "parts": [
@@ -198,7 +203,10 @@
     "mount": "standard",
     "maxFrontChainrings": 2
    },
-   "src": "velonova-r8000-ss",
+   "src": [
+    "velonova-r8000-ss",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -229,7 +237,8 @@
    },
    "src": [
     "sh-r8000-gs",
-    "biketart-r8000"
+    "biketart-r8000",
+    "pi-C254"
    ],
    "confidence": "haute",
    "status": "valide"
@@ -254,7 +263,10 @@
     "mount": "standard",
     "maxFrontChainrings": 2
    },
-   "src": "atc-r7000",
+   "src": [
+    "atc-r7000",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -281,7 +293,10 @@
     "mount": "standard",
     "maxFrontChainrings": 2
    },
-   "src": "atc-r7000",
+   "src": [
+    "atc-r7000",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -307,7 +322,8 @@
    },
    "src": [
     "rose-grx11",
-    "shimano-rdrx810"
+    "shimano-rdrx810",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider"
@@ -336,7 +352,8 @@
     "rose-grx11",
     "velonova-rx812",
     "mv-rdrx812",
-    "veloplus-rdrx812"
+    "veloplus-rdrx812",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider"
@@ -444,7 +461,8 @@
    },
    "src": [
     "rose-r7100",
-    "cahaba-r7100"
+    "cahaba-r7100",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider"
@@ -471,7 +489,10 @@
     "mount": "standard",
     "maxFrontChainrings": 2
    },
-   "src": "sh-rx820",
+   "src": [
+    "sh-rx820",
+    "pi-C254"
+   ],
    "confidence": "haute",
    "status": "valide"
   },
@@ -496,7 +517,10 @@
     "mount": "standard",
     "maxFrontChainrings": 1
    },
-   "src": "sh-rx822-gs",
+   "src": [
+    "sh-rx822-gs",
+    "pi-C254"
+   ],
    "confidence": "haute",
    "status": "valide"
   },
@@ -520,7 +544,10 @@
     "mount": "standard",
     "maxFrontChainrings": 1
    },
-   "src": "halfords-rx822-sgs",
+   "src": [
+    "halfords-rx822-sgs",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -550,7 +577,8 @@
    "src": [
     "sh-r9250",
     "pushys-r9250",
-    "velonova-r9250"
+    "velonova-r9250",
+    "pi-C254"
    ],
    "confidence": "haute",
    "status": "a_valider"
@@ -579,7 +607,8 @@
    },
    "src": [
     "sh-r8150",
-    "playtri-r8150"
+    "playtri-r8150",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider"
@@ -607,7 +636,10 @@
     "mount": "standard",
     "maxFrontChainrings": 2
    },
-   "src": "decathlon-r7150",
+   "src": [
+    "decathlon-r7150",
+    "pi-C254"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -633,7 +665,8 @@
    },
    "src": [
     "sh-rx815",
-    "halfords-rx815"
+    "halfords-rx815",
+    "pi-C254"
    ],
    "confidence": "haute",
    "status": "valide"
@@ -659,7 +692,8 @@
    },
    "src": [
     "halfords-rx815",
-    "biketart-rd-rx817"
+    "biketart-rd-rx817",
+    "pi-C254"
    ],
    "confidence": "moyenne",
    "status": "a_valider"

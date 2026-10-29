@@ -373,6 +373,11 @@
    "kind": "officiel",
    "ref": "Wheeltop – groupes électroniques sans fil EDS TX / OX / GeX programmables de 3 à 14 vitesses",
    "url": "https://wheeltop.com/blogs/news/universal-electronic-groupsets-in-2026-which-systems-truly-fit-any-bike-frame"
+  },
+  "pi-C731": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-731 – compatibilité corps FREEHUB / cassettes : MICRO SPLINE, HG L2, HG L (route 11/12v), HG M (10/9/8/7v, VTT 11v), HG S (7v)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-731"
   }
  },
  "families": [
@@ -1936,10 +1941,12 @@
    "message": "Cassette sur cannelures HG standard montée sur corps HG route 11v.",
    "src": [
     "shimano-freehub-guide",
-    "sram-road-map-2024"
+    "sram-road-map-2024",
+    "pi-C731"
    ],
    "confidence": "haute",
-   "status": "valide"
+   "status": "valide",
+   "limitation": "Cassettes route 10v CS-7900 / 7800 / 6700 / 6600 / 5700 / 5600 : entretoise de 1,0 mm en plus de celle de 1,85 mm (Shimano)."
   },
   {
    "cassette": "hg_12_route",
@@ -1948,7 +1955,8 @@
    "message": "Cassette Shimano route 12v sur corps HG route 11v.",
    "src": [
     "shimano-freehub-guide",
-    "shimano-hgl2"
+    "shimano-hgl2",
+    "pi-C731"
    ],
    "confidence": "haute",
    "status": "valide"
@@ -1958,7 +1966,10 @@
    "body": "hg_l2",
    "level": "officiel",
    "message": "Cassette Shimano route 12v sur corps HG L2.",
-   "src": "shimano-hgl2",
+   "src": [
+    "shimano-hgl2",
+    "pi-C731"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1967,7 +1978,10 @@
    "body": "hg_l2",
    "level": "incompatible",
    "message": "Corps HG L2 réservé aux cassettes Shimano route 12v.",
-   "src": "shimano-hgl2",
+   "src": [
+    "shimano-hgl2",
+    "pi-C731"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1976,7 +1990,10 @@
    "body": "hg_l2",
    "level": "incompatible",
    "message": "Corps HG L2 réservé aux cassettes Shimano route 12v.",
-   "src": "shimano-hgl2",
+   "src": [
+    "shimano-hgl2",
+    "pi-C731"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -1986,7 +2003,9 @@
    "spacerMm": 1.85,
    "level": "officiel",
    "message": "Cassette XD sur corps XDR avec entretoise.",
-   "src": "sram-xd-xdr",
+   "src": [
+    "sram-xd-xdr"
+   ],
    "confidence": "haute",
    "status": "valide"
   },
@@ -1995,7 +2014,9 @@
    "body": "xd",
    "level": "incompatible",
    "message": "Une cassette XDR ne se monte que sur un corps XDR.",
-   "src": "sram-xd-xdr",
+   "src": [
+    "sram-xd-xdr"
+   ],
    "confidence": "haute",
    "status": "valide"
   },
@@ -2007,7 +2028,9 @@
    "extraParts": [
     "Adaptateur N3W pour cassettes Campagnolo 10/11/12v"
    ],
-   "src": "campa-n3w",
+   "src": [
+    "campa-n3w"
+   ],
    "confidence": "moyenne",
    "status": "a_valider"
   },
@@ -2019,10 +2042,12 @@
    "message": "Cassette Shimano 7v sur corps 8/9/10v.",
    "src": [
     "sheldon-cassette-bodies",
-    "sjs-jtek-7"
+    "sjs-jtek-7",
+    "pi-C731"
    ],
    "confidence": "moyenne",
-   "status": "a_valider"
+   "status": "a_valider",
+   "limitation": "Selon Shimano, seules les CS-HG210-7 et CS-HG400-7 sont prévues pour ce corps ; les CS-HG41-7, HG200-7 et HG20-7 demandent le corps court 7v (montage avec entretoise : pratique d'atelier, non officielle)."
   },
   {
    "cassette": "hg_8_9_10",
@@ -2031,7 +2056,8 @@
    "message": "Cassette 8/9/10v sur corps 7v : corps trop court.",
    "src": [
     "cyclechat-7-8-freehub",
-    "sheldon-cassette-bodies"
+    "sheldon-cassette-bodies",
+    "pi-C731"
    ],
    "confidence": "moyenne",
    "status": "a_valider"

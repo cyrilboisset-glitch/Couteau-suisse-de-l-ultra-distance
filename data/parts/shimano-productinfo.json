@@ -1,0 +1,965 @@
+{
+ "_meta": {
+  "description": "Shimano – pièces relevées dans les tableaux officiels productinfo.shimano.com (dérailleurs route, étriers, leviers LOW VISCOSITY, plaquettes). Valeur absente = non indiquée par Shimano : à compléter."
+ },
+ "defaults": {
+  "brand": "Shimano"
+ },
+ "sources": {
+  "pi-C254": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-254 – C-254 / C-255 / C-256 / C-648 – dérailleurs arrière route ↔ cassettes",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-254"
+  },
+  "pi-C461": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-461 – compatibilité étriers ↔ disques (type de plaquette étroit / large, diamètres, notes résine seulement)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-461"
+  },
+  "pi-C192": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-192 – gamme de plaquettes et étriers compatibles (formes B, G/J, K/L, D/H/N/P)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-192"
+  },
+  "pi-C499": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-499 – systèmes hydrauliques route / gravel (leviers, durites, étriers flat mount / post mount)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-499"
+  },
+  "pi-C736": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-736 – huile SHIMANO LOW VISCOSITY réservée à BL/BR-M9200, M9220, M8200, M8220, M6200, M6220, MT620, MT600",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-736"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-rd-r9100",
+   "type": "rear_derailleur",
+   "ref": "RD-R9100",
+   "aliases": [
+    "r9100"
+   ],
+   "name": "Dura-Ace R9100 11v",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100 (11v)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 30,
+    "minCog": 11,
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-r9150",
+   "type": "rear_derailleur",
+   "ref": "RD-R9150",
+   "aliases": [
+    "r9150"
+   ],
+   "name": "Dura-Ace Di2 R9150 11v",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100 (11v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 30,
+    "minCog": 11,
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-r8050-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-R8050-SS",
+   "aliases": [
+    "r8050 ss"
+   ],
+   "name": "Ultegra Di2 R8050 chape courte",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 30,
+    "minCog": 11,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-r8050-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-R8050-GS",
+   "aliases": [
+    "r8050 gs"
+   ],
+   "name": "Ultegra Di2 R8050 chape moyenne",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 34,
+    "minCog": 11,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-6870-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-6870-SS",
+   "aliases": [
+    "6870 ss"
+   ],
+   "name": "Ultegra Di2 6870 chape courte",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 28,
+    "minCog": 11,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-6870-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-6870-GS",
+   "aliases": [
+    "6870 gs"
+   ],
+   "name": "Ultegra Di2 6870 chape moyenne",
+   "discipline": "route",
+   "generation": "Ultegra 6800 (11v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 32,
+    "minCog": 11,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-rx800-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-RX800-GS",
+   "aliases": [
+    "rx800 gs"
+   ],
+   "name": "GRX RX800 11v 2x",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "maxCog": 34,
+    "minCog": 11,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-rx805",
+   "type": "rear_derailleur",
+   "ref": "RD-RX805",
+   "aliases": [
+    "rx805"
+   ],
+   "name": "GRX Di2 RX805 11v 2x",
+   "discipline": "gravel",
+   "generation": "GRX RX800 (11v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 11,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-11",
+    "maxCog": 34,
+    "minCog": 11,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-rx825",
+   "type": "rear_derailleur",
+   "ref": "RD-RX825",
+   "aliases": [
+    "rx825"
+   ],
+   "name": "GRX Di2 RX825 12v 2x",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-12",
+    "maxCog": 36,
+    "minCog": 11,
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-rd-rx827",
+   "type": "rear_derailleur",
+   "ref": "RD-RX827",
+   "aliases": [
+    "rx827"
+   ],
+   "name": "GRX Di2 RX827 12v 1x",
+   "discipline": "gravel",
+   "generation": "GRX RX820 (12v Di2)",
+   "attrs": {
+    "mount": "standard",
+    "speeds": 12,
+    "system": "electronique",
+    "protocol": "di2",
+    "family": "shimano-di2-12",
+    "maxCog": 51,
+    "minCog": 10,
+    "cageLength": "SGS",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "pi-C254"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité totale absente des tableaux Shimano productinfo : à compléter."
+  },
+  {
+   "id": "shimano-br-m6100",
+   "type": "brake_caliper",
+   "ref": "BR-M6100",
+   "aliases": [
+    "br m6100"
+   ],
+   "name": "Deore M6100 étrier 2 pistons",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Post mount selon Shimano (C-499)."
+  },
+  {
+   "id": "shimano-br-m7100",
+   "type": "brake_caliper",
+   "ref": "BR-M7100",
+   "aliases": [
+    "br m7100"
+   ],
+   "name": "SLX M7100 étrier 2 pistons",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m8120",
+   "type": "brake_caliper",
+   "ref": "BR-M8120",
+   "aliases": [
+    "br m8120"
+   ],
+   "name": "Deore XT M8120 étrier 4 pistons",
+   "discipline": "vtt",
+   "generation": "XT M8100 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes 4 pistons D, H, N ou P (N montées d'origine). Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m7120",
+   "type": "brake_caliper",
+   "ref": "BR-M7120",
+   "aliases": [
+    "br m7120"
+   ],
+   "name": "SLX M7120 étrier 4 pistons",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes 4 pistons D, H, N ou P. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m6120",
+   "type": "brake_caliper",
+   "ref": "BR-M6120",
+   "aliases": [
+    "br m6120"
+   ],
+   "name": "Deore M6120 étrier 4 pistons",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes 4 pistons D. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt520",
+   "type": "brake_caliper",
+   "ref": "BR-MT520",
+   "aliases": [
+    "br mt520"
+   ],
+   "name": "MT520 étrier 4 pistons",
+   "discipline": "vtt",
+   "generation": "MT520",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes 4 pistons D. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt420",
+   "type": "brake_caliper",
+   "ref": "BR-MT420",
+   "aliases": [
+    "br mt420"
+   ],
+   "name": "MT420 étrier 4 pistons",
+   "discipline": "vtt",
+   "generation": "MT420",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes 4 pistons D. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt400",
+   "type": "brake_caliper",
+   "ref": "BR-MT400",
+   "aliases": [
+    "br mt400"
+   ],
+   "name": "MT400 étrier 2 pistons",
+   "discipline": "vtt",
+   "generation": "MT400",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes résine uniquement. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt410",
+   "type": "brake_caliper",
+   "ref": "BR-MT410",
+   "aliases": [
+    "br mt410"
+   ],
+   "name": "MT410 étrier 2 pistons",
+   "discipline": "vtt",
+   "generation": "MT410",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Plaquettes résine uniquement. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m8200",
+   "type": "brake_caliper",
+   "ref": "BR-M8200",
+   "aliases": [
+    "br m8200"
+   ],
+   "name": "Deore XT M8200 étrier 2 pistons",
+   "discipline": "vtt",
+   "generation": "XT M8200",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m6200",
+   "type": "brake_caliper",
+   "ref": "BR-M6200",
+   "aliases": [
+    "br m6200"
+   ],
+   "name": "Deore M6200 étrier 2 pistons",
+   "discipline": "vtt",
+   "generation": "Deore M6200",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Pas de disque 140 mm. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m9200",
+   "type": "brake_caliper",
+   "ref": "BR-M9200",
+   "aliases": [
+    "br m9200"
+   ],
+   "name": "XTR M9200 étrier 2 pistons",
+   "discipline": "vtt",
+   "generation": "XTR M9200",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Plaquettes K. Pas de disque 220 ou 203 mm. Fixation post mount non indiquée dans les tableaux productinfo (standard des étriers VTT Shimano) : à confirmer."
+  },
+  {
+   "id": "shimano-br-r9270",
+   "type": "brake_caliper",
+   "ref": "BR-R9270",
+   "aliases": [
+    "br r9270"
+   ],
+   "name": "Dura-Ace R9270 étrier flat mount",
+   "discipline": "route",
+   "generation": "Dura-Ace R9200 (12v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-r7070",
+   "type": "brake_caliper",
+   "ref": "BR-R7070",
+   "aliases": [
+    "br r7070"
+   ],
+   "name": "105 R7070 étrier flat mount",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rx400",
+   "type": "brake_caliper",
+   "ref": "BR-RX400",
+   "aliases": [
+    "br rx400"
+   ],
+   "name": "GRX RX400 étrier flat mount",
+   "discipline": "gravel",
+   "generation": "GRX RX400 (10v)",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C192",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m8200",
+   "type": "brake_lever",
+   "ref": "BL-M8200",
+   "aliases": [
+    "bl m8200"
+   ],
+   "name": "Deore XT M8200 levier de frein",
+   "discipline": "vtt",
+   "generation": "XT M8200",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard)."
+  },
+  {
+   "id": "shimano-bl-m6200",
+   "type": "brake_lever",
+   "ref": "BL-M6200",
+   "aliases": [
+    "bl m6200"
+   ],
+   "name": "Deore M6200 levier de frein",
+   "discipline": "vtt",
+   "generation": "Deore M6200",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard)."
+  },
+  {
+   "id": "shimano-bl-m9200",
+   "type": "brake_lever",
+   "ref": "BL-M9200",
+   "aliases": [
+    "bl m9200"
+   ],
+   "name": "XTR M9200 levier de frein",
+   "discipline": "vtt",
+   "generation": "XTR M9200",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard)."
+  },
+  {
+   "id": "shimano-bp-k05s-rx",
+   "type": "brake_pads",
+   "ref": "K05S-RX",
+   "aliases": [
+    "k05s rx"
+   ],
+   "name": "Plaquettes K résine",
+   "discipline": "route",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-k04s-mx",
+   "type": "brake_pads",
+   "ref": "K04S-MX",
+   "aliases": [
+    "k04s mx"
+   ],
+   "name": "Plaquettes K métalliques",
+   "discipline": "route",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-d03s-rx",
+   "type": "brake_pads",
+   "ref": "D03S-RX",
+   "aliases": [
+    "d03s rx"
+   ],
+   "name": "Plaquettes 4 pistons D résine",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-d02s-mx",
+   "type": "brake_pads",
+   "ref": "D02S-MX",
+   "aliases": [
+    "d02s mx"
+   ],
+   "name": "Plaquettes 4 pistons D métalliques",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-n03a-rf",
+   "type": "brake_pads",
+   "ref": "N03A-RF",
+   "aliases": [
+    "n03a rf"
+   ],
+   "name": "Plaquettes 4 pistons N résine à ailettes",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-n04c-mf",
+   "type": "brake_pads",
+   "ref": "N04C-MF",
+   "aliases": [
+    "n04c mf"
+   ],
+   "name": "Plaquettes 4 pistons N métalliques à ailettes",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-g04s-mx",
+   "type": "brake_pads",
+   "ref": "G04S-MX",
+   "aliases": [
+    "g04s mx"
+   ],
+   "name": "Plaquettes G métalliques",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-b03s-rx",
+   "type": "brake_pads",
+   "ref": "B03S-RX",
+   "aliases": [
+    "b03s rx"
+   ],
+   "name": "Plaquettes B résine",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-B",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  }
+ ]
+}

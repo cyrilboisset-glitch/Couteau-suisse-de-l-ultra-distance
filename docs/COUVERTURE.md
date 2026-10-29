@@ -2,8 +2,8 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **640 pièces**, dont 25 validées par une page constructeur et **615 à valider**.
-- Base de connaissances : fluidFits : 6, brakeMountAdapters : 1, gammes : 244, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
+- **676 pièces**, dont 33 validées par une page constructeur et **643 à valider**.
+- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 244, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 92 |
 | Sachs | 4 |
-| Shimano | 347 |
+| Shimano | 383 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -42,7 +42,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (173)
+## Dérailleur arrière (183)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -114,6 +114,8 @@
 | RD-6700-SS | Shimano | route | à valider |  |
 | RD-6800-GS | Shimano | route | à valider |  |
 | RD-6800-SS | Shimano | route | à valider |  |
+| RD-6870-GS | Shimano | route | à valider | totalCapacity |
+| RD-6870-SS | Shimano | route | à valider | totalCapacity |
 | RD-7400 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-7700-SS | Shimano | route | à valider |  |
 | RD-7800-SS | Shimano | route | à valider |  |
@@ -163,8 +165,14 @@
 | RD-R7150 | Shimano | route | à valider |  |
 | RD-R8000-GS | Shimano | route | validé |  |
 | RD-R8000-SS | Shimano | route | à valider |  |
+| RD-R8050-GS | Shimano | route | à valider | totalCapacity |
+| RD-R8050-SS | Shimano | route | à valider | totalCapacity |
 | RD-R8150 | Shimano | route | à valider |  |
+| RD-R9100 | Shimano | route | à valider | totalCapacity |
+| RD-R9150 | Shimano | route | à valider | totalCapacity |
 | RD-R9250 | Shimano | route | à valider |  |
+| RD-RX800-GS | Shimano | gravel | à valider | totalCapacity |
+| RD-RX805 | Shimano | gravel | à valider | totalCapacity |
 | RD-RX810 | Shimano | gravel | à valider |  |
 | RD-RX812 | Shimano | gravel | à valider |  |
 | RD-RX815 | Shimano | gravel | validé |  |
@@ -172,6 +180,8 @@
 | RD-RX820 | Shimano | gravel | validé |  |
 | RD-RX822-GS | Shimano | gravel | validé |  |
 | RD-RX822-SGS | Shimano | gravel | à valider |  |
+| RD-RX825 | Shimano | gravel | à valider | totalCapacity |
+| RD-RX827 | Shimano | gravel | à valider | totalCapacity |
 | RD-T4000-SGS | Shimano | autre | à valider |  |
 | RD-TX35 | Shimano | vtt | à valider |  |
 | RD-TY300 | Shimano | vtt | à valider |  |
@@ -327,13 +337,16 @@
 | EDS TX leviers (câble) | Wheeltop | route | à valider |  |
 | EDS TX leviers (hydraulique) | Wheeltop | route | à valider |  |
 
-## Levier de frein (7)
+## Levier de frein (10)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Levier Tech 3 | Hope | vtt | à valider |  |
 | BL-4700 | Shimano | route | à valider |  |
+| BL-M6200 | Shimano | vtt | à valider |  |
 | BL-M8100 | Shimano | vtt | à valider |  |
+| BL-M8200 | Shimano | vtt | à valider |  |
+| BL-M9200 | Shimano | vtt | à valider |  |
 | BL-MT201 | Shimano | vtt | à valider |  |
 | BL-R780 | Shimano | route | à valider |  |
 | BL-T4000 | Shimano | vtt | à valider |  |
@@ -571,7 +584,7 @@
 | FD-TZ500 (28,6) | Shimano | vtt | à valider |  |
 | EDS TX dérailleur avant | Wheeltop | route | à valider | mount |
 
-## Étrier / frein (54)
+## Étrier / frein (69)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -610,16 +623,31 @@
 | BR-M422 | Shimano | vtt | à valider |  |
 | BR-M445 | Shimano | vtt | à valider |  |
 | BR-M590 | Shimano | vtt | à valider |  |
+| BR-M6100 | Shimano | vtt | à valider |  |
+| BR-M6120 | Shimano | vtt | à valider |  |
 | BR-M615 | Shimano | vtt | à valider |  |
+| BR-M6200 | Shimano | vtt | à valider |  |
+| BR-M7100 | Shimano | vtt | à valider |  |
+| BR-M7120 | Shimano | vtt | à valider |  |
 | BR-M785 | Shimano | vtt | à valider |  |
 | BR-M8100 | Shimano | vtt | à valider |  |
+| BR-M8120 | Shimano | vtt | à valider |  |
+| BR-M8200 | Shimano | vtt | à valider |  |
+| BR-M9200 | Shimano | vtt | à valider |  |
 | BR-MT200 | Shimano | vtt | à valider |  |
+| BR-MT400 | Shimano | vtt | à valider |  |
+| BR-MT410 | Shimano | vtt | à valider |  |
+| BR-MT420 | Shimano | vtt | à valider |  |
+| BR-MT520 | Shimano | vtt | à valider |  |
 | BR-R2000 | Shimano | route | à valider |  |
 | BR-R650 | Shimano | route | à valider |  |
 | BR-R7000 | Shimano | route | à valider |  |
+| BR-R7070 | Shimano | route | à valider |  |
 | BR-R7170 | Shimano | route | à valider |  |
 | BR-R8000 | Shimano | route | à valider |  |
 | BR-R8070 | Shimano | route | à valider |  |
+| BR-R9270 | Shimano | route | à valider |  |
+| BR-RX400 | Shimano | gravel | à valider |  |
 | BR-RX820 | Shimano | gravel | à valider |  |
 | BR-T4000 | Shimano | vtt | à valider |  |
 | Étrier Force AXS E1 flat mount | SRAM | route | à valider |  |
@@ -630,7 +658,7 @@
 | Vainqueur 999 / 750 | Weinmann | route | à valider | cablePull |
 | RA7800 flat mount | Wheeltop | gravel | à valider |  |
 
-## Plaquettes / patins (12)
+## Plaquettes / patins (20)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -638,11 +666,19 @@
 | Plaquettes 7.P | Magura | vtt | à valider |  |
 | Plaquettes 9.P | Magura | vtt | à valider |  |
 | B01S | Shimano | vtt | à valider |  |
+| B03S-RX | Shimano | vtt | validé |  |
 | B05S | Shimano | vtt | à valider |  |
+| D02S-MX | Shimano | vtt | validé |  |
+| D03S-RX | Shimano | vtt | validé |  |
 | G01S | Shimano | vtt | à valider |  |
+| G04S-MX | Shimano | vtt | validé |  |
 | G05A-RX | Shimano | vtt | à valider |  |
 | J04C | Shimano | vtt | à valider |  |
+| K04S-MX | Shimano | route | validé |  |
+| K05S-RX | Shimano | route | validé |  |
 | L05A-RF | Shimano | route | validé |  |
+| N03A-RF | Shimano | vtt | validé |  |
+| N04C-MF | Shimano | vtt | validé |  |
 | M70T4 | Shimano | vtt | à valider |  |
 | R50T2 | Shimano | route | à valider |  |
 | R55C4 | Shimano | route | à valider |  |
