@@ -63,3 +63,15 @@ describe('Transmission Shimano relevée dans C-433 / C-454', () => {
     assert.equal(P('shimano-rd-m3000-sgs').attrs.maxCog, 36);
   });
 });
+
+describe('Freins Shimano relevés (C-186, C-462, C-736)', () => {
+  test('levier XTR M9100 + étrier XTR M9120 4 pistons : compatibles', () => {
+    assert.ok(checkPair(P('shimano-bl-m9100'), P('shimano-br-m9120'), kb).level <= LEVEL.KNOWN);
+  });
+  test('levier LOW VISCOSITY M9220 + étrier XTR M9100 (minéral standard) : incompatible', () => {
+    assert.equal(checkPair(P('shimano-bl-m9220'), P('shimano-br-m9100'), kb).level, LEVEL.INCOMPATIBLE);
+  });
+  test('étrier mécanique BR-TX805 avec levier route (tirage court) : incompatible', () => {
+    assert.equal(P('shimano-br-tx805').attrs.cablePull, 'long');
+  });
+});

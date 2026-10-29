@@ -183,12 +183,19 @@ export function searchParts(query, parts, { limit = 30 } = {}) {
   const criteria = parseCriteria(query);
   const keys = Object.keys(criteria).filter((k) => k !== 'text' && criteria[k] !== undefined);
   const relaxed = [];
+  const prefix = /^(rd|fd|sl|st|cs|cn|br|bl|fc|bb|bp|bs|mf|sm)[-\s]?\d/i.test(query.trim())
+    ? `${query.trim().slice(0, 2).toUpperCase()}-` : null;
+  const digits = (query.match(/\d{3,}/) ?? [null])[0];
 
   const run = (active) => {
     const out = [];
     for (const part of parts) {
       if (!active.every((k) => matches(part, k, criteria))) continue;
-      const score = criteria.text ? textScore(criteria.text, part) : 0.5;
+      let score = criteria.text ? textScore(criteria.text, part) : 0.5;
+      // Préfixe Shimano tapé (rd, fd, br…) : à correspondance approchée, la pièce du bon type passe devant.
+      if (score > 0 && prefix && String(part.ref).toUpperCase().startsWith(prefix)) score += 0.05;
+      // Le numéro de série tapé (« 8000 ») se retrouve tel quel dans la référence : légèrement devant.
+      if (score > 0 && digits && String(part.ref).includes(digits)) score += 0.02;
       if (score > 0) out.push({ part, score });
     }
     return out;

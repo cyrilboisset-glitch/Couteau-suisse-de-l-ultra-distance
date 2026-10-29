@@ -20,8 +20,9 @@ describe('normalisation et distance', () => {
 describe('recherche par référence, tolérante aux fautes', () => {
   test('« RD-R8000-GS » exact', () => assert.equal(first('RD-R8000-GS'), 'shimano-rd-r8000-gs'));
   test('« r8000 gs »', () => assert.equal(first('r8000 gs'), 'shimano-rd-r8000-gs'));
-  test('« rd8000 » remonte les R8000', () => {
-    assert.ok(ids('rd8000').slice(0, 3).every((id) => /r8000/.test(id)));
+  test('« rd8000 » remonte les R8000, puis des dérailleurs « 8000 »', () => {
+    assert.ok(ids('rd8000').slice(0, 2).every((id) => /rd-r8000/.test(id)));
+    assert.ok(ids('rd8000').slice(0, 5).every((id) => /8000/.test(id)));
   });
   test('faute de frappe « rx821 sgs » → RX822-SGS', () => assert.equal(first('rx822 sgs'), 'shimano-rd-rx822-sgs'));
   test('faute « m8100 sgss »', () => assert.ok(ids('m8100 sgss').includes('shimano-rd-m8100-sgs')));

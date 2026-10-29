@@ -1,0 +1,3014 @@
+{
+ "_meta": {
+  "description": "Shimano – freins relevés dans les tableaux officiels productinfo (C-186, C-462, C-736, C-499, C-192, C-461) : étriers hydrauliques et mécaniques, leviers hydrauliques, plaquettes."
+ },
+ "defaults": {
+  "brand": "Shimano"
+ },
+ "sources": {
+  "pi-C186": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-186 – durites hydrauliques : leviers et étriers hydrauliques VTT, trekking, urbain",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-186"
+  },
+  "pi-C462": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-462 – freins à disque mécaniques : fixation et levier recommandé (BR-M375, TX805, R317, CX77, RS305)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-462"
+  },
+  "pi-C736": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-736 – huile SHIMANO LOW VISCOSITY : modèles dédiés",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-736"
+  },
+  "pi-C499": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-499 – systèmes hydrauliques route / gravel (flat mount / post mount)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-499"
+  },
+  "pi-C192": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-192 – gamme de plaquettes et étriers compatibles (formes B, G/J, K/L, D/H/N/P)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-192"
+  },
+  "pi-C461": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-461 – compatibilité étriers ↔ disques (piste étroite / large)",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-461"
+  }
+ },
+ "parts": [
+  {
+   "id": "shimano-br-cx77",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-CX77",
+   "aliases": [
+    "br cx77"
+   ],
+   "name": "Shimano CX77 étrier de frein à disque mécanique",
+   "discipline": "vtt",
+   "generation": "Shimano CX77",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "post_mount",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C461",
+    "pi-C462"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : fixation avant International / post mount selon l'adaptateur."
+  },
+  {
+   "id": "shimano-br-m3050",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M3050",
+   "aliases": [
+    "br m3050"
+   ],
+   "name": "Acera M3000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Acera M3000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m365",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M365",
+   "aliases": [
+    "br m365"
+   ],
+   "name": "Shimano M365 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano M365",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m375",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M375",
+   "aliases": [
+    "br m375"
+   ],
+   "name": "Shimano M375 étrier de frein à disque mécanique",
+   "discipline": "vtt",
+   "generation": "Shimano M375",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "long",
+    "mount": "post_mount",
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C192",
+    "pi-C461",
+    "pi-C462"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : fixation avant International / post mount selon l'adaptateur."
+  },
+  {
+   "id": "shimano-br-m4050",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M4050",
+   "aliases": [
+    "br m4050"
+   ],
+   "name": "Alivio M4000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Alivio M4000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m446",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M446",
+   "aliases": [
+    "br m446"
+   ],
+   "name": "Shimano M446 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano M446",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m6000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M6000",
+   "aliases": [
+    "br m6000"
+   ],
+   "name": "Deore M6000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Deore M6000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m6220",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M6220",
+   "aliases": [
+    "br m6220"
+   ],
+   "name": "Deore M6200 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Deore M6200",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m640",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M640",
+   "aliases": [
+    "br m640"
+   ],
+   "name": "Zee M640 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Zee M640",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m7000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M7000",
+   "aliases": [
+    "br m7000"
+   ],
+   "name": "SLX M7000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "SLX M7000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m7110",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M7110",
+   "aliases": [
+    "br m7110"
+   ],
+   "name": "SLX M7100 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "SLX M7100",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m8000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M8000",
+   "aliases": [
+    "br m8000"
+   ],
+   "name": "XT M8000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XT M8000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m8020",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M8020",
+   "aliases": [
+    "br m8020"
+   ],
+   "name": "XT M8000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XT M8000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m8110",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M8110",
+   "aliases": [
+    "br m8110"
+   ],
+   "name": "XT M8100 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XT M8100",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m820",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M820",
+   "aliases": [
+    "br m820"
+   ],
+   "name": "Saint M820 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Saint M820",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m8220",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M8220",
+   "aliases": [
+    "br m8220"
+   ],
+   "name": "XT M8200 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XT M8200",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m9000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M9000",
+   "aliases": [
+    "br m9000"
+   ],
+   "name": "XTR M9000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m9020",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M9020",
+   "aliases": [
+    "br m9020"
+   ],
+   "name": "XTR M9000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m9100",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M9100",
+   "aliases": [
+    "br m9100"
+   ],
+   "name": "XTR M9100 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9100",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m9110",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M9110",
+   "aliases": [
+    "br m9110"
+   ],
+   "name": "XTR M9100 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9100",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m9120",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M9120",
+   "aliases": [
+    "br m9120"
+   ],
+   "name": "XTR M9100 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9100",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-m9220",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-M9220",
+   "aliases": [
+    "br m9220"
+   ],
+   "name": "XTR M9200 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9200",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt500",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-MT500",
+   "aliases": [
+    "br mt500"
+   ],
+   "name": "MT500 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "MT500",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt600",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-MT600",
+   "aliases": [
+    "br mt600"
+   ],
+   "name": "MT600 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "MT600",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt620",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-MT620",
+   "aliases": [
+    "br mt620"
+   ],
+   "name": "MT620 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "MT620",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-mt805",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-MT805",
+   "aliases": [
+    "br mt805"
+   ],
+   "name": "MT805 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "MT805",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard). Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-r317",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-R317",
+   "aliases": [
+    "br r317"
+   ],
+   "name": "Shimano R317 étrier de frein à disque mécanique",
+   "discipline": "route",
+   "generation": "Shimano R317",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C192",
+    "pi-C461",
+    "pi-C462"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : fixation avant International / post mount selon l'adaptateur."
+  },
+  {
+   "id": "shimano-br-r785",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-R785",
+   "aliases": [
+    "br r785"
+   ],
+   "name": "Shimano R785 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "Shimano R785",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "post_mount",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-r8170",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-R8170",
+   "aliases": [
+    "br r8170"
+   ],
+   "name": "Ultegra R8100 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "Ultegra R8100",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-r9170",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-R9170",
+   "aliases": [
+    "br r9170"
+   ],
+   "name": "Dura-Ace R9100 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rs305",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RS305",
+   "aliases": [
+    "br rs305"
+   ],
+   "name": "Shimano RS305 étrier de frein à disque mécanique",
+   "discipline": "route",
+   "generation": "Shimano RS305",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "court",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C192",
+    "pi-C461",
+    "pi-C462"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rs405",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RS405",
+   "aliases": [
+    "br rs405"
+   ],
+   "name": "Shimano RS405 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "Shimano RS405",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-rs505",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RS505",
+   "aliases": [
+    "br rs505"
+   ],
+   "name": "Shimano RS505 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "Shimano RS505",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rs785",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RS785",
+   "aliases": [
+    "br rs785"
+   ],
+   "name": "Shimano RS785 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "Shimano RS785",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rs805",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RS805",
+   "aliases": [
+    "br rs805"
+   ],
+   "name": "Shimano RS805 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "Shimano RS805",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rx410",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RX410",
+   "aliases": [
+    "br rx410"
+   ],
+   "name": "GRX RX400 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX400",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rx810",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RX810",
+   "aliases": [
+    "br rx810"
+   ],
+   "name": "GRX RX800 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX800",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-rx820-le",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-RX820-LE",
+   "aliases": [
+    "br rx820 le"
+   ],
+   "name": "GRX RX800 étrier de frein à disque hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX800",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro",
+    "mount": "flat_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461",
+    "pi-C499"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-br-s700",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-S700",
+   "aliases": [
+    "br s700"
+   ],
+   "name": "Shimano S700 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano S700",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-s7000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-S7000",
+   "aliases": [
+    "br s7000"
+   ],
+   "name": "Shimano S7000 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano S7000",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-t675",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-T675",
+   "aliases": [
+    "br t675"
+   ],
+   "name": "Shimano T675 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano T675",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-tx805",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-TX805",
+   "aliases": [
+    "br tx805"
+   ],
+   "name": "Shimano TX805 étrier de frein à disque mécanique",
+   "discipline": "vtt",
+   "generation": "Shimano TX805",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "mecanique",
+    "cablePull": "long",
+    "mount": "post_mount",
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C192",
+    "pi-C461",
+    "pi-C462"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano : fixation avant International / post mount selon l'adaptateur."
+  },
+  {
+   "id": "shimano-br-u5000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-U5000",
+   "aliases": [
+    "br u5000"
+   ],
+   "name": "Metrea étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Metrea",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-u6030",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-U6030",
+   "aliases": [
+    "br u6030"
+   ],
+   "name": "CUES étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "CUES",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-u8000",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-U8000",
+   "aliases": [
+    "br u8000"
+   ],
+   "name": "Shimano U étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano U",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-G",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-u8010",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-U8010",
+   "aliases": [
+    "br u8010"
+   ],
+   "name": "Shimano U étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano U",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-L",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-u8020",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-U8020",
+   "aliases": [
+    "br u8020"
+   ],
+   "name": "Shimano U étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano U",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-D",
+    "rotorTrack": "etroite"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-br-ur300",
+   "type": "brake_caliper",
+   "brand": "Shimano",
+   "ref": "BR-UR300",
+   "aliases": [
+    "br ur300"
+   ],
+   "name": "Shimano UR300 étrier de frein à disque hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano UR300",
+   "attrs": {
+    "brakeType": "disque",
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro",
+    "mount": "post_mount",
+    "padShape": "shimano-B",
+    "rotorTrack": "large"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C192",
+    "pi-C461"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Fixation post mount non indiquée par Shimano dans ces tableaux (standard des étriers VTT) : à confirmer."
+  },
+  {
+   "id": "shimano-bl-m315",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M315",
+   "aliases": [
+    "bl m315"
+   ],
+   "name": "Shimano M315 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano M315",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m365",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M365",
+   "aliases": [
+    "bl m365"
+   ],
+   "name": "Shimano M365 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano M365",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m4100",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M4100",
+   "aliases": [
+    "bl m4100"
+   ],
+   "name": "Deore M4100 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Deore M4100",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m4100-abs",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M4100-ABS",
+   "aliases": [
+    "bl m4100 abs"
+   ],
+   "name": "Deore M4100 levier de frein hydraulique (ABS)",
+   "discipline": "vtt",
+   "generation": "Deore M4100",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m6000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M6000",
+   "aliases": [
+    "bl m6000"
+   ],
+   "name": "Deore M6000 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Deore M6000",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m6100",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M6100",
+   "aliases": [
+    "bl m6100"
+   ],
+   "name": "Deore M6100 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Deore M6100",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m640",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M640",
+   "aliases": [
+    "bl m640"
+   ],
+   "name": "Zee M640 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Zee M640",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m7000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M7000",
+   "aliases": [
+    "bl m7000"
+   ],
+   "name": "SLX M7000 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "SLX M7000",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m7100",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M7100",
+   "aliases": [
+    "bl m7100"
+   ],
+   "name": "SLX M7100 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "SLX M7100",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m8000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M8000",
+   "aliases": [
+    "bl m8000"
+   ],
+   "name": "XT M8000 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "XT M8000",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m820",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M820",
+   "aliases": [
+    "bl m820"
+   ],
+   "name": "Saint M820 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Saint M820",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m9000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M9000",
+   "aliases": [
+    "bl m9000"
+   ],
+   "name": "XTR M9000 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9000",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m9020",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M9020",
+   "aliases": [
+    "bl m9020"
+   ],
+   "name": "XTR M9000 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9000",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m9100",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M9100",
+   "aliases": [
+    "bl m9100"
+   ],
+   "name": "XTR M9100 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9100",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m9120",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M9120",
+   "aliases": [
+    "bl m9120"
+   ],
+   "name": "XTR M9100 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9100",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-m9220",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-M9220",
+   "aliases": [
+    "bl m9220"
+   ],
+   "name": "XTR M9200 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "XTR M9200",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard)."
+  },
+  {
+   "id": "shimano-bl-mt200",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT200",
+   "aliases": [
+    "bl mt200"
+   ],
+   "name": "MT200 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT200",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt200-abs",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT200-ABS",
+   "aliases": [
+    "bl mt200 abs"
+   ],
+   "name": "MT200 levier de frein hydraulique (ABS)",
+   "discipline": "vtt",
+   "generation": "MT200",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt220",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT220",
+   "aliases": [
+    "bl mt220"
+   ],
+   "name": "MT220 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT220",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt220-abs",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT220-ABS",
+   "aliases": [
+    "bl mt220 abs"
+   ],
+   "name": "MT220 levier de frein hydraulique (ABS)",
+   "discipline": "vtt",
+   "generation": "MT220",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt221",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT221",
+   "aliases": [
+    "bl mt221"
+   ],
+   "name": "MT221 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT221",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt400",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT400",
+   "aliases": [
+    "bl mt400"
+   ],
+   "name": "MT400 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT400",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt401",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT401",
+   "aliases": [
+    "bl mt401"
+   ],
+   "name": "MT401 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT401",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt401-3a",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT401-3A",
+   "aliases": [
+    "bl mt401 3a"
+   ],
+   "name": "MT401 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT401",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt402-3a",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT402-3A",
+   "aliases": [
+    "bl mt402 3a"
+   ],
+   "name": "MT402 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT402",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt402-abs",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT402-ABS",
+   "aliases": [
+    "bl mt402 abs"
+   ],
+   "name": "MT402 levier de frein hydraulique (ABS)",
+   "discipline": "vtt",
+   "generation": "MT402",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt420",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT420",
+   "aliases": [
+    "bl mt420"
+   ],
+   "name": "MT420 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT420",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt420-3a",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT420-3A",
+   "aliases": [
+    "bl mt420 3a"
+   ],
+   "name": "MT420 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT420",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt420-3a-abs",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT420-3A-ABS",
+   "aliases": [
+    "bl mt420 3a abs"
+   ],
+   "name": "MT420 levier de frein hydraulique (ABS)",
+   "discipline": "vtt",
+   "generation": "MT420",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt500",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT500",
+   "aliases": [
+    "bl mt500"
+   ],
+   "name": "MT500 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT500",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt501",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT501",
+   "aliases": [
+    "bl mt501"
+   ],
+   "name": "MT501 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT501",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-mt620",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-MT620",
+   "aliases": [
+    "bl mt620"
+   ],
+   "name": "MT620 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "MT620",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_low_viscosity",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186",
+    "pi-C736"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Huile SHIMANO LOW VISCOSITY uniquement (ne pas mélanger avec l'huile minérale standard)."
+  },
+  {
+   "id": "shimano-bl-rs600",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-RS600",
+   "aliases": [
+    "bl rs600"
+   ],
+   "name": "Shimano RS600 levier de frein hydraulique",
+   "discipline": "route",
+   "generation": "Shimano RS600",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier hydraulique pour cintre plat ou levier secondaire (voir la notice)."
+  },
+  {
+   "id": "shimano-bl-rs717",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-RS717",
+   "aliases": [
+    "bl rs717"
+   ],
+   "name": "Shimano RS717 levier de frein hydraulique",
+   "discipline": "route",
+   "generation": "Shimano RS717",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier hydraulique pour cintre plat ou levier secondaire (voir la notice)."
+  },
+  {
+   "id": "shimano-bl-rx600",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-RX600",
+   "aliases": [
+    "bl rx600"
+   ],
+   "name": "GRX RX600 levier de frein hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX600",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier hydraulique pour cintre plat ou levier secondaire (voir la notice)."
+  },
+  {
+   "id": "shimano-bl-rx610",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-RX610",
+   "aliases": [
+    "bl rx610"
+   ],
+   "name": "GRX RX600 levier de frein hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX600",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier hydraulique pour cintre plat ou levier secondaire (voir la notice)."
+  },
+  {
+   "id": "shimano-bl-rx810",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-RX810",
+   "aliases": [
+    "bl rx810"
+   ],
+   "name": "GRX RX800 levier de frein hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX800",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier hydraulique pour cintre plat ou levier secondaire (voir la notice)."
+  },
+  {
+   "id": "shimano-bl-rx820",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-RX820",
+   "aliases": [
+    "bl rx820"
+   ],
+   "name": "GRX RX800 levier de frein hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX800",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier hydraulique pour cintre plat ou levier secondaire (voir la notice)."
+  },
+  {
+   "id": "shimano-bl-rx825",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-RX825",
+   "aliases": [
+    "bl rx825"
+   ],
+   "name": "GRX RX800 levier de frein hydraulique",
+   "discipline": "route",
+   "generation": "GRX RX800",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-route-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Levier hydraulique pour cintre plat ou levier secondaire (voir la notice)."
+  },
+  {
+   "id": "shimano-bl-s700",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-S700",
+   "aliases": [
+    "bl s700"
+   ],
+   "name": "Shimano S700 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano S700",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-s7000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-S7000",
+   "aliases": [
+    "bl s7000"
+   ],
+   "name": "Shimano S7000 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano S7000",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-t445",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-T445",
+   "aliases": [
+    "bl t445"
+   ],
+   "name": "Shimano T445 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano T445",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-t6000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-T6000",
+   "aliases": [
+    "bl t6000"
+   ],
+   "name": "Shimano T6000 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano T6000",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-t675",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-T675",
+   "aliases": [
+    "bl t675"
+   ],
+   "name": "Shimano T675 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano T675",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-t8100",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-T8100",
+   "aliases": [
+    "bl t8100"
+   ],
+   "name": "Shimano T8100 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano T8100",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-u4030-l",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-U4030-L",
+   "aliases": [
+    "bl u4030 l"
+   ],
+   "name": "CUES levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "CUES",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-u5000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-U5000",
+   "aliases": [
+    "bl u5000"
+   ],
+   "name": "Metrea levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Metrea",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-u5010",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-U5010",
+   "aliases": [
+    "bl u5010"
+   ],
+   "name": "Metrea levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Metrea",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-u6030-l",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-U6030-L",
+   "aliases": [
+    "bl u6030 l"
+   ],
+   "name": "CUES levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "CUES",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-u8000",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-U8000",
+   "aliases": [
+    "bl u8000"
+   ],
+   "name": "Shimano U levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano U",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-u8000-abs",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-U8000-ABS",
+   "aliases": [
+    "bl u8000 abs"
+   ],
+   "name": "Shimano U levier de frein hydraulique (ABS)",
+   "discipline": "vtt",
+   "generation": "Shimano U",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bl-ur405",
+   "type": "brake_lever",
+   "brand": "Shimano",
+   "ref": "BL-UR405",
+   "aliases": [
+    "bl ur405"
+   ],
+   "name": "Shimano UR405 levier de frein hydraulique",
+   "discipline": "vtt",
+   "generation": "Shimano UR405",
+   "attrs": {
+    "brakeActuation": "hydraulique",
+    "fluid": "mineral",
+    "fluidSpec": "shimano_mineral",
+    "hydraulicSystem": "shimano-vtt-hydro"
+   },
+   "src": [
+    "pi-C186"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "shimano-bp-b05s-rx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-B05S-RX",
+   "aliases": [
+    "b05s rx",
+    "bp b05s rx"
+   ],
+   "name": "Plaquettes Shimano BP-B05S-RX (résine)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-B",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-g03a-rx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-G03A-RX",
+   "aliases": [
+    "g03a rx",
+    "bp g03a rx"
+   ],
+   "name": "Plaquettes Shimano BP-G03A-RX (résine)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-g03s-rx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-G03S-RX",
+   "aliases": [
+    "g03s rx",
+    "bp g03s rx"
+   ],
+   "name": "Plaquettes Shimano BP-G03S-RX (résine)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-g05s-rx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-G05S-RX",
+   "aliases": [
+    "g05s rx",
+    "bp g05s rx"
+   ],
+   "name": "Plaquettes Shimano BP-G05S-RX (résine)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-h03a-rf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-H03A-RF",
+   "aliases": [
+    "h03a rf",
+    "bp h03a rf"
+   ],
+   "name": "Plaquettes Shimano BP-H03A-RF (résine, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-h03c-mf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-H03C-MF",
+   "aliases": [
+    "h03c mf",
+    "bp h03c mf"
+   ],
+   "name": "Plaquettes Shimano BP-H03C-MF (métal, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-j03a-rf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-J03A-RF",
+   "aliases": [
+    "j03a rf",
+    "bp j03a rf"
+   ],
+   "name": "Plaquettes Shimano BP-J03A-RF (résine, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-j04c-mf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-J04C-MF",
+   "aliases": [
+    "j04c mf",
+    "bp j04c mf"
+   ],
+   "name": "Plaquettes Shimano BP-J04C-MF (métal, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-j05a-rf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-J05A-RF",
+   "aliases": [
+    "j05a rf",
+    "bp j05a rf"
+   ],
+   "name": "Plaquettes Shimano BP-J05A-RF (résine, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-G",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-k03s-rx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-K03S-RX",
+   "aliases": [
+    "k03s rx",
+    "bp k03s rx"
+   ],
+   "name": "Plaquettes Shimano BP-K03S-RX (résine)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-k03ti-rx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-K03Ti-RX",
+   "aliases": [
+    "k03ti rx",
+    "bp k03ti rx"
+   ],
+   "name": "Plaquettes Shimano BP-K03Ti-RX (résine, titane)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-k04ti-mx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-K04Ti-MX",
+   "aliases": [
+    "k04ti mx",
+    "bp k04ti mx"
+   ],
+   "name": "Plaquettes Shimano BP-K04Ti-MX (métal, titane)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-k05ti-rx",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-K05Ti-RX",
+   "aliases": [
+    "k05ti rx",
+    "bp k05ti rx"
+   ],
+   "name": "Plaquettes Shimano BP-K05Ti-RX (résine, titane)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-l03a-rf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-L03A-RF",
+   "aliases": [
+    "l03a rf",
+    "bp l03a rf"
+   ],
+   "name": "Plaquettes Shimano BP-L03A-RF (résine, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-l04c-mf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-L04C-MF",
+   "aliases": [
+    "l04c mf",
+    "bp l04c mf"
+   ],
+   "name": "Plaquettes Shimano BP-L04C-MF (métal, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-L",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-p03a-rf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-P03A-RF",
+   "aliases": [
+    "p03a rf",
+    "bp p03a rf"
+   ],
+   "name": "Plaquettes Shimano BP-P03A-RF (résine, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "resine"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  },
+  {
+   "id": "shimano-bp-p04c-mf",
+   "type": "brake_pads",
+   "brand": "Shimano",
+   "ref": "BP-P04C-MF",
+   "aliases": [
+    "p04c mf",
+    "bp p04c mf"
+   ],
+   "name": "Plaquettes Shimano BP-P04C-MF (métal, ailettes)",
+   "discipline": "vtt",
+   "generation": "",
+   "attrs": {
+    "shape": "shimano-D",
+    "compound": "metal"
+   },
+   "src": [
+    "pi-C192"
+   ],
+   "confidence": "haute",
+   "status": "valide"
+  }
+ ]
+}

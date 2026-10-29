@@ -2,7 +2,7 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **967 pièces**, dont 48 validées par une page constructeur et **919 à valider**.
+- **1084 pièces**, dont 65 validées par une page constructeur et **1019 à valider**.
 - Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 275, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 93 |
 | Sachs | 4 |
-| Shimano | 668 |
+| Shimano | 785 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -561,19 +561,71 @@
 | EDS TX leviers (câble) | Wheeltop | route | à valider |  |
 | EDS TX leviers (hydraulique) | Wheeltop | route | à valider |  |
 
-## Levier de frein (10)
+## Levier de frein (62)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
 | Levier Tech 3 | Hope | vtt | à valider |  |
 | BL-4700 | Shimano | route | à valider |  |
+| BL-M315 | Shimano | vtt | à valider |  |
+| BL-M365 | Shimano | vtt | à valider |  |
+| BL-M4100 | Shimano | vtt | à valider |  |
+| BL-M4100-ABS | Shimano | vtt | à valider |  |
+| BL-M6000 | Shimano | vtt | à valider |  |
+| BL-M6100 | Shimano | vtt | à valider |  |
 | BL-M6200 | Shimano | vtt | à valider |  |
+| BL-M640 | Shimano | vtt | à valider |  |
+| BL-M7000 | Shimano | vtt | à valider |  |
+| BL-M7100 | Shimano | vtt | à valider |  |
+| BL-M8000 | Shimano | vtt | à valider |  |
 | BL-M8100 | Shimano | vtt | à valider |  |
+| BL-M820 | Shimano | vtt | à valider |  |
 | BL-M8200 | Shimano | vtt | à valider |  |
+| BL-M9000 | Shimano | vtt | à valider |  |
+| BL-M9020 | Shimano | vtt | à valider |  |
+| BL-M9100 | Shimano | vtt | à valider |  |
+| BL-M9120 | Shimano | vtt | à valider |  |
 | BL-M9200 | Shimano | vtt | à valider |  |
+| BL-M9220 | Shimano | vtt | à valider |  |
+| BL-MT200 | Shimano | vtt | à valider |  |
+| BL-MT200-ABS | Shimano | vtt | à valider |  |
 | BL-MT201 | Shimano | vtt | à valider |  |
+| BL-MT220 | Shimano | vtt | à valider |  |
+| BL-MT220-ABS | Shimano | vtt | à valider |  |
+| BL-MT221 | Shimano | vtt | à valider |  |
+| BL-MT400 | Shimano | vtt | à valider |  |
+| BL-MT401 | Shimano | vtt | à valider |  |
+| BL-MT401-3A | Shimano | vtt | à valider |  |
+| BL-MT402-3A | Shimano | vtt | à valider |  |
+| BL-MT402-ABS | Shimano | vtt | à valider |  |
+| BL-MT420 | Shimano | vtt | à valider |  |
+| BL-MT420-3A | Shimano | vtt | à valider |  |
+| BL-MT420-3A-ABS | Shimano | vtt | à valider |  |
+| BL-MT500 | Shimano | vtt | à valider |  |
+| BL-MT501 | Shimano | vtt | à valider |  |
+| BL-MT620 | Shimano | vtt | à valider |  |
 | BL-R780 | Shimano | route | à valider |  |
+| BL-RS600 | Shimano | route | à valider |  |
+| BL-RS717 | Shimano | route | à valider |  |
+| BL-RX600 | Shimano | route | à valider |  |
+| BL-RX610 | Shimano | route | à valider |  |
+| BL-RX810 | Shimano | route | à valider |  |
+| BL-RX820 | Shimano | route | à valider |  |
+| BL-RX825 | Shimano | route | à valider |  |
+| BL-S700 | Shimano | vtt | à valider |  |
+| BL-S7000 | Shimano | vtt | à valider |  |
 | BL-T4000 | Shimano | vtt | à valider |  |
+| BL-T445 | Shimano | vtt | à valider |  |
+| BL-T6000 | Shimano | vtt | à valider |  |
+| BL-T675 | Shimano | vtt | à valider |  |
+| BL-T8100 | Shimano | vtt | à valider |  |
+| BL-U4030-L | Shimano | vtt | à valider |  |
+| BL-U5000 | Shimano | vtt | à valider |  |
+| BL-U5010 | Shimano | vtt | à valider |  |
+| BL-U6030-L | Shimano | vtt | à valider |  |
+| BL-U8000 | Shimano | vtt | à valider |  |
+| BL-U8000-ABS | Shimano | vtt | à valider |  |
+| BL-UR405 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
 ## Cassette / roue libre (202)
@@ -875,7 +927,7 @@
 | FD-TZ500 (28,6) | Shimano | vtt | à valider |  |
 | EDS TX dérailleur avant | Wheeltop | route | à valider | mount |
 
-## Étrier / frein (69)
+## Étrier / frein (117)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -909,38 +961,86 @@
 | BR-7900 | Shimano | route | à valider |  |
 | BR-9000 | Shimano | route | à valider |  |
 | BR-CX50 | Shimano | gravel | à valider |  |
+| BR-CX77 | Shimano | vtt | à valider |  |
+| BR-M3050 | Shimano | vtt | à valider |  |
 | BR-M315 | Shimano | vtt | à valider |  |
+| BR-M365 | Shimano | vtt | à valider |  |
+| BR-M375 | Shimano | vtt | à valider |  |
 | BR-M395 | Shimano | vtt | à valider |  |
+| BR-M4050 | Shimano | vtt | à valider |  |
 | BR-M422 | Shimano | vtt | à valider |  |
 | BR-M445 | Shimano | vtt | à valider |  |
+| BR-M446 | Shimano | vtt | à valider |  |
 | BR-M590 | Shimano | vtt | à valider |  |
+| BR-M6000 | Shimano | vtt | à valider |  |
 | BR-M6100 | Shimano | vtt | à valider |  |
 | BR-M6120 | Shimano | vtt | à valider |  |
 | BR-M615 | Shimano | vtt | à valider |  |
 | BR-M6200 | Shimano | vtt | à valider |  |
+| BR-M6220 | Shimano | vtt | à valider |  |
+| BR-M640 | Shimano | vtt | à valider |  |
+| BR-M7000 | Shimano | vtt | à valider |  |
 | BR-M7100 | Shimano | vtt | à valider |  |
+| BR-M7110 | Shimano | vtt | à valider |  |
 | BR-M7120 | Shimano | vtt | à valider |  |
 | BR-M785 | Shimano | vtt | à valider |  |
+| BR-M8000 | Shimano | vtt | à valider |  |
+| BR-M8020 | Shimano | vtt | à valider |  |
 | BR-M8100 | Shimano | vtt | à valider |  |
+| BR-M8110 | Shimano | vtt | à valider |  |
 | BR-M8120 | Shimano | vtt | à valider |  |
+| BR-M820 | Shimano | vtt | à valider |  |
 | BR-M8200 | Shimano | vtt | à valider |  |
+| BR-M8220 | Shimano | vtt | à valider |  |
+| BR-M9000 | Shimano | vtt | à valider |  |
+| BR-M9020 | Shimano | vtt | à valider |  |
+| BR-M9100 | Shimano | vtt | à valider |  |
+| BR-M9110 | Shimano | vtt | à valider |  |
+| BR-M9120 | Shimano | vtt | à valider |  |
 | BR-M9200 | Shimano | vtt | à valider |  |
+| BR-M9220 | Shimano | vtt | à valider |  |
 | BR-MT200 | Shimano | vtt | à valider |  |
 | BR-MT400 | Shimano | vtt | à valider |  |
 | BR-MT410 | Shimano | vtt | à valider |  |
 | BR-MT420 | Shimano | vtt | à valider |  |
+| BR-MT500 | Shimano | vtt | à valider |  |
 | BR-MT520 | Shimano | vtt | à valider |  |
+| BR-MT600 | Shimano | vtt | à valider |  |
+| BR-MT620 | Shimano | vtt | à valider |  |
+| BR-MT805 | Shimano | vtt | à valider |  |
 | BR-R2000 | Shimano | route | à valider |  |
+| BR-R317 | Shimano | route | à valider |  |
 | BR-R650 | Shimano | route | à valider |  |
 | BR-R7000 | Shimano | route | à valider |  |
 | BR-R7070 | Shimano | route | à valider |  |
 | BR-R7170 | Shimano | route | à valider |  |
+| BR-R785 | Shimano | route | à valider |  |
 | BR-R8000 | Shimano | route | à valider |  |
 | BR-R8070 | Shimano | route | à valider |  |
+| BR-R8170 | Shimano | route | à valider |  |
+| BR-R9170 | Shimano | route | à valider |  |
 | BR-R9270 | Shimano | route | à valider |  |
+| BR-RS305 | Shimano | route | à valider |  |
+| BR-RS405 | Shimano | route | à valider |  |
+| BR-RS505 | Shimano | route | à valider |  |
+| BR-RS785 | Shimano | route | à valider |  |
+| BR-RS805 | Shimano | route | à valider |  |
 | BR-RX400 | Shimano | gravel | à valider |  |
+| BR-RX410 | Shimano | route | à valider |  |
+| BR-RX810 | Shimano | route | à valider |  |
 | BR-RX820 | Shimano | gravel | à valider |  |
+| BR-RX820-LE | Shimano | route | à valider |  |
+| BR-S700 | Shimano | vtt | à valider |  |
+| BR-S7000 | Shimano | vtt | à valider |  |
 | BR-T4000 | Shimano | vtt | à valider |  |
+| BR-T675 | Shimano | vtt | à valider |  |
+| BR-TX805 | Shimano | vtt | à valider |  |
+| BR-U5000 | Shimano | vtt | à valider |  |
+| BR-U6030 | Shimano | vtt | à valider |  |
+| BR-U8000 | Shimano | vtt | à valider |  |
+| BR-U8010 | Shimano | vtt | à valider |  |
+| BR-U8020 | Shimano | vtt | à valider |  |
+| BR-UR300 | Shimano | vtt | à valider |  |
 | Étrier Force AXS E1 flat mount | SRAM | route | à valider |  |
 | Étrier Rival AXS flat mount | SRAM | route | à valider |  |
 | R559 | Tektro | route | à valider |  |
@@ -949,7 +1049,7 @@
 | Vainqueur 999 / 750 | Weinmann | route | à valider | cablePull |
 | RA7800 flat mount | Wheeltop | gravel | à valider |  |
 
-## Plaquettes / patins (20)
+## Plaquettes / patins (37)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -959,17 +1059,34 @@
 | B01S | Shimano | vtt | à valider |  |
 | B03S-RX | Shimano | vtt | validé |  |
 | B05S | Shimano | vtt | à valider |  |
+| BP-B05S-RX | Shimano | vtt | validé |  |
 | D02S-MX | Shimano | vtt | validé |  |
 | D03S-RX | Shimano | vtt | validé |  |
 | G01S | Shimano | vtt | à valider |  |
+| BP-G03A-RX | Shimano | vtt | validé |  |
+| BP-G03S-RX | Shimano | vtt | validé |  |
 | G04S-MX | Shimano | vtt | validé |  |
 | G05A-RX | Shimano | vtt | à valider |  |
+| BP-G05S-RX | Shimano | vtt | validé |  |
+| BP-H03A-RF | Shimano | vtt | validé |  |
+| BP-H03C-MF | Shimano | vtt | validé |  |
+| BP-J03A-RF | Shimano | vtt | validé |  |
 | J04C | Shimano | vtt | à valider |  |
+| BP-J04C-MF | Shimano | vtt | validé |  |
+| BP-J05A-RF | Shimano | vtt | validé |  |
+| BP-K03S-RX | Shimano | vtt | validé |  |
+| BP-K03Ti-RX | Shimano | vtt | validé |  |
 | K04S-MX | Shimano | route | validé |  |
+| BP-K04Ti-MX | Shimano | vtt | validé |  |
 | K05S-RX | Shimano | route | validé |  |
+| BP-K05Ti-RX | Shimano | vtt | validé |  |
+| BP-L03A-RF | Shimano | vtt | validé |  |
+| BP-L04C-MF | Shimano | vtt | validé |  |
 | L05A-RF | Shimano | route | validé |  |
 | N03A-RF | Shimano | vtt | validé |  |
 | N04C-MF | Shimano | vtt | validé |  |
+| BP-P03A-RF | Shimano | vtt | validé |  |
+| BP-P04C-MF | Shimano | vtt | validé |  |
 | M70T4 | Shimano | vtt | à valider |  |
 | R50T2 | Shimano | route | à valider |  |
 | R55C4 | Shimano | route | à valider |  |
