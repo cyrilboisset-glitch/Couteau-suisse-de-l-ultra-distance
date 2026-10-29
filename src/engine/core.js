@@ -9,6 +9,25 @@ import { partLabel } from './finding.js';
 
 export const RULES = [...TRANSMISSION_RULES, ...FREINS_RULES, ...PEDALIER_RULES, ...ROUES_RULES];
 
+// Organes de sécurité : en freinage, seules les solutions officielles ou connues sont proposées.
+export const SAFETY_TYPES = new Set(['brake_lever', 'brake_caliper', 'rotor', 'brake_pads']);
+export const isSafetyPart = (p) => SAFETY_TYPES.has(p?.type);
+const isBrakeRule = (rule) => rule.id.startsWith('freins.') || rule.between.flat().some((t) => SAFETY_TYPES.has(t));
+
+/** Un dépannage sur le freinage devient un refus : on ne bricole pas un frein. */
+function brakeSafety(f) {
+  if (f.level !== LEVEL.DEGRADED) return f;
+  return {
+    ...f,
+    level: LEVEL.INCOMPATIBLE,
+    absolute: false,
+    toValidate: true,
+    safety: true,
+  };
+}
+
+export const BRAKE_SAFETY_NOTE = 'Sécurité freinage : les solutions de dépannage sont refusées sur les freins (seules les compatibilités officielles ou connues sont proposées).';
+
 const CONFIDENCE_RANK = { haute: 3, moyenne: 2, basse: 1 };
 const uniq = (xs) => [...new Set(xs.filter(Boolean))];
 
@@ -22,7 +41,9 @@ export function evaluatePair(a, b, kb = EMPTY_KNOWLEDGE) {
       else if (a.type === tb && b.type === ta) args = [b, a];
       if (!args) continue;
       const out = rule.evaluate(args[0], args[1], kb);
-      for (const f of [out].flat()) if (f) findings.push({ ...f, against: partLabel(b) });
+      for (const f of [out].flat()) {
+        if (f) findings.push({ ...(isBrakeRule(rule) ? brakeSafety(f) : f), against: partLabel(b) });
+      }
       break;
     }
   }
@@ -62,7 +83,8 @@ export function aggregate(findings, parts = []) {
     info: LEVEL_INFO[level],
     absolute: findings.some((f) => f.absolute),
     findings: sorted,
-    reasons: uniq(decisive.map((f) => f.message)),
+    reasons: uniq([decisive.some((f) => f.safety) && BRAKE_SAFETY_NOTE, ...decisive.map((f) => f.message)]),
+    safety: findings.some((f) => f.safety) || parts.some(isSafetyPart),
     conditions: uniq(findings.map((f) => f.condition)),
     limitations: uniq(findings.map((f) => f.limitation)),
     adjustments: uniq(findings.flatMap((f) => f.adjustments)),

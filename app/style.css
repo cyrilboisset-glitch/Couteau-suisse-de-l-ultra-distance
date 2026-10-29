@@ -438,3 +438,25 @@ textarea { min-height: 100px; font-family: ui-monospace, monospace; font-size: .
 /* Type de vélo du projet */
 .bike-type .chip-btn { min-height: 52px; padding: 8px 16px; font-size: 1rem; }
 .bike-type .chip-btn[aria-pressed="true"] { animation: pop .35s var(--spring); }
+
+/* --- Sécurité et mentions ------------------------------------------------- */
+.safety {
+  display: flex; gap: 8px; align-items: flex-start;
+  background: var(--l4-bg); color: var(--fg); border-left: 5px solid var(--l4);
+  border-radius: var(--radius); padding: 8px 12px; margin: 8px 0; font-size: .88rem; font-weight: 600;
+}
+.chip.warn.strong { font-weight: 700; border: 1px solid var(--l3); }
+.notice { display: inline-block; margin: 6px 0; font-size: .9rem; font-weight: 600; color: var(--accent); }
+.gate-points { padding-left: 0; list-style: none; display: grid; gap: 8px; margin: 12px 0; }
+.gate-points li { background: var(--card-2); border-radius: var(--radius); padding: 10px 12px; }
+.accept { display: flex; gap: 10px; align-items: center; margin: 14px 0 4px; font-weight: 600; min-height: var(--tap); }
+.accept input { width: 22px; height: 22px; accent-color: var(--accent); flex: none; }
+.btn:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+.terms h3 { font-size: 1rem; margin: 14px 0 4px; }
+.terms p { margin: 0 0 6px; font-size: .9rem; line-height: 1.5; }
+.foot {
+  max-width: 760px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-right, 0px)) 28px max(16px, env(safe-area-inset-left, 0px));
+  color: var(--muted); font-size: .78rem; line-height: 1.45; text-align: center;
+}
+.foot p { margin: 4px 0; }
+.foot a { color: inherit; }

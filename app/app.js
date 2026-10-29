@@ -1,9 +1,10 @@
 // Interface : pièce cassée → remplacements classés ; « sous la main » ; « mon vélo ».
-import { createKnowledge, findReplacements, checkAvailable, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
+import { createKnowledge, findReplacements, checkAvailable, isSafetyPart, LEVEL, LEVEL_INFO, PART_TYPES } from './src/index.js';
 import { searchParts } from './src/search.js';
 import { tr, t, trName, setLang, getLang, detectLang, LANGS } from './src/i18n/index.js';
 import { createProjetView } from './projet.js';
 import { createParcourirView } from './parcourir.js';
+import { TERMS_VERSION, gateHtml, conditionsHtml, footerHtml, safetyBanner } from './legal.js';
 
 const CATALOGUE_URL = './catalogue.json';
 const view = document.getElementById('view');
@@ -16,6 +17,7 @@ const state = {
   dispoBroken: null, // id de la pièce cassée en mode « sous la main »
   dispo: [],         // ids des pièces disponibles
   showLevels: { 1: true, 2: true, 3: true, 4: false },
+  meta: null,        // date et taille de la base
 };
 
 // --- Stockage local (confort seulement : l'appli marche sans) ---------------
@@ -85,6 +87,13 @@ function sourcesHtml(sources) {
   if (!sources?.length) return `<p class="muted small">${t('Aucune source.')}</p>`;
   return `<ul>${sources.map((s) => `<li class="small">${esc(s.ref ?? s.kind)} <span class="muted">(${x(s.kind)})</span>${s.url ? ` – <a href="${esc(s.url)}" target="_blank" rel="noopener">${t('lien')}</a>` : ''}</li>`).join('')}</ul>`;
 }
+
+/** Lien direct vers la première source constructeur de la pièce. */
+const noticeLink = (p) => {
+  const s = p.sources?.find((src) => src.kind === 'officiel' && src.url);
+  return s ? `<a class="notice" href="${esc(s.url)}" target="_blank" rel="noopener">📄 ${t('Notice / tableau du fabricant')}</a>` : '';
+};
+const unverifiedChip = (p) => (p.status !== 'valide' ? `<span class="chip warn strong">⚠ ${t('non vérifié')}</span>` : '');
 
 const bikeParts = () => state.bike.map((id) => state.byId.get(id)).filter(Boolean);
 
@@ -163,6 +172,7 @@ langMenu.addEventListener('click', (e) => {
   openLangMenu(false);
   applyStaticText();
   if (state.parts.length) route();
+  else renderFooter();
   toast(LANGS.find((l) => l.code === getLang()).label);
 });
 document.addEventListener('click', (e) => {
@@ -225,12 +235,14 @@ function resultCard({ part, result: r }, i = 0) {
   const info = LEVEL_INFO[r.level];
   const incompatible = r.level === LEVEL.INCOMPATIBLE;
   const tags = [DISCIPLINE[part.discipline] && t(DISCIPLINE[part.discipline]), trName(part.generation)].filter(Boolean).map((tag) => `<span class="chip">${esc(tag)}</span>`);
-  if (r.toValidate) tags.push(`<span class="chip warn">${t('à valider')}</span>`);
+  if (part.status !== 'valide') tags.push(unverifiedChip(part));
+  else if (r.toValidate) tags.push(`<span class="chip warn">${t('à valider')}</span>`);
   if (r.absolute) tags.push(`<span class="chip warn">${t('exclusion absolue')}</span>`);
   const reasons = incompatible || r.level === LEVEL.DEGRADED ? r.reasons : [];
   const findings = r.findings.map((f) => `<p class="finding">${LEVEL_INFO[f.level].emoji} ${x(f.message)}${f.source?.url ? ` <a href="${esc(f.source.url)}" target="_blank" rel="noopener">${t('source')}</a>` : f.source?.ref ? ` <span class="muted">(${x(f.source.ref)})</span>` : ''}</p>`).join('');
   return `<article class="card ${levelClass(r.level)}" style="--i:${i}">
     <span class="badge ${levelClass(r.level)}">${info.emoji} ${x(info.label)}</span>
+    ${r.safety || isSafetyPart(part) ? safetyBanner() : ''}
     <h3>${esc(partTitle(part))}</h3>
     <p class="muted small">${nm(part.name ?? '')}</p>
     <div class="chips">${tags.join('')}</div>
@@ -242,6 +254,7 @@ function resultCard({ part, result: r }, i = 0) {
     ${incompatible ? '' : block(t('Outils'), r.tools)}
     ${incompatible ? '' : block(t('À prévoir en plus'), r.extraParts)}
     ${block(t('Données manquantes'), r.missing)}
+    ${noticeLink(part)}
     <details><summary>${t('Détail des vérifications et sources')}</summary>
       ${findings}
       ${r.notes.map((n) => `<p class="finding muted">${x(n)}</p>`).join('')}
@@ -299,8 +312,10 @@ function partSummary(part, { actions = '' } = {}) {
     <p class="muted small">${t('{0} cassé(e)', esc(typeLabel(part.type)))}</p>
     <h2>${esc(partTitle(part))}</h2>
     <p class="muted small">${nm(part.name ?? '')} · ${esc(partSub(part))}</p>
-    ${part.status !== 'valide' ? `<span class="chip warn">${t('données à valider')}</span>` : ''}
+    ${unverifiedChip(part)}
+    ${isSafetyPart(part) ? safetyBanner() : ''}
     ${part.notes ? `<p class="note">${x(part.notes)}</p>` : ''}
+    ${noticeLink(part)}
     <details><summary>${t('Caractéristiques et sources')}</summary><dl>${attrs}</dl>${sourcesHtml(part.sources)}</details>
     ${actions}
   </section>`;
@@ -391,6 +406,21 @@ const VIEWS = {
     }
   },
 
+  conditions() {
+    view.innerHTML = conditionsHtml();
+  },
+
+  gate() {
+    view.innerHTML = gateHtml();
+    const box = view.querySelector('#accept-box');
+    const btn = view.querySelector('#accept-btn');
+    box.addEventListener('change', () => { btn.disabled = !box.checked; });
+    btn.addEventListener('click', () => {
+      store.set('termsAccepted', TERMS_VERSION);
+      route();
+    });
+  },
+
   velo() {
     const parts = bikeParts();
     view.innerHTML = `<h2>${t('Mon vélo')}</h2>
@@ -428,7 +458,7 @@ const VIEWS = {
   },
 };
 
-const ctx = { state, view, esc, x, nm, fmt, searchBox, partTitle, partSub, typeLabel, store, segHtml, stagger, animateIn, toast };
+const ctx = { state, view, esc, x, nm, fmt, searchBox, partTitle, partSub, typeLabel, store, segHtml, stagger, animateIn, toast, safetyBanner, isSafetyPart };
 let parcourirView = null;
 VIEWS.parcourir = (segments) => {
   parcourirView ??= createParcourirView(ctx);
@@ -440,6 +470,10 @@ VIEWS.projet = (id) => {
   projetView ??= createProjetView(ctx);
   projetView(id);
 };
+
+function renderFooter() {
+  document.getElementById('foot').innerHTML = footerHtml(state.meta);
+}
 
 function updateCount() {
   document.getElementById('bike-count').textContent = state.bike.length ? String(state.bike.length) : '';
@@ -453,7 +487,10 @@ function route() {
     else a.removeAttribute('aria-current');
   }
   moveInk();
-  if (name === 'piece') VIEWS.piece(decodeURIComponent(arg ?? ''));
+  renderFooter();
+  // Conditions à accepter avant tout usage (lisibles à tout moment).
+  if (name !== 'conditions' && store.get('termsAccepted', 0) !== TERMS_VERSION) VIEWS.gate();
+  else if (name === 'piece') VIEWS.piece(decodeURIComponent(arg ?? ''));
   else if (name === 'projet') VIEWS.projet(arg ? decodeURIComponent(arg) : null);
   else if (name === 'parcourir') VIEWS.parcourir([arg, ...rest].filter((s) => s !== undefined && s !== ''));
   else (VIEWS[tab] ?? VIEWS.casse)();
@@ -470,7 +507,8 @@ async function init() {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       data = await res.json();
     }
-    const { parts, knowledge } = data;
+    const { parts, knowledge, meta = null } = data;
+    state.meta = meta;
     state.parts = parts;
     state.byId = new Map(parts.map((p) => [p.id, p]));
     state.kb = createKnowledge(knowledge);

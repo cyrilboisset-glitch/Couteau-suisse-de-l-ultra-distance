@@ -74,7 +74,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1);
   }
   mkdirSync(new URL('../dist/', import.meta.url), { recursive: true });
-  writeFileSync(new URL('../dist/catalogue.json', import.meta.url), JSON.stringify({ parts: data.parts, knowledge: data.knowledgeRaw }));
+  writeFileSync(new URL('../dist/catalogue.json', import.meta.url), JSON.stringify({ meta: { date: new Date().toISOString().slice(0, 10), parts: data.parts.length }, parts: data.parts, knowledge: data.knowledgeRaw }));
   writeFileSync(new URL('../docs/COUVERTURE.md', import.meta.url), coverage(report, data.knowledgeRaw));
   console.log(`${data.parts.length} pièces, OK`);
 }

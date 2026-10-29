@@ -106,9 +106,9 @@ describe('freins', () => {
     const r = checkPair(P('sram-st-axs-route'), P('shimano-br-r8070'), kb);
     assert.equal(r.absolute, true);
   });
-  test('levier route Shimano + étrier VTT Shimano : dépannage à valider (même huile, systèmes différents)', () => {
+  test('levier route Shimano + étrier VTT Shimano : refusé par sécurité, à valider (même huile, systèmes différents)', () => {
     const r = checkPair(P('shimano-st-r8020'), P('shimano-br-m8100'), kb);
-    assert.equal(r.level, LEVEL.DEGRADED);
+    assert.equal(r.level, LEVEL.INCOMPATIBLE);
     assert.equal(r.toValidate, true);
   });
   test('plaquettes L05A dans un étrier GRX ; G05A refusées dans un étrier route', () => {

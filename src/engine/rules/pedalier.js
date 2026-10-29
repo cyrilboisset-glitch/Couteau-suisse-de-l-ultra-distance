@@ -39,7 +39,7 @@ export const coqueCadre = {
     if (g) return g.finding;
     if (bb.attrs.shell === 'sans_filetage') {
       return degraded(this, `Boîtier sans filetage dans une coque ${frame.attrs.bbShell} : tenu par serrage, sans utiliser le filetage.`, {
-        limitation: 'Solution de dépannage pour un filetage abîmé ou inconnu ; largeur de coque garantie : celle du boîtier (souvent 68 mm).',
+        limitation: 'Solution de dépannage pour un filetage abîmé ou inconnu ; largeur de coque à respecter : celle du boîtier (souvent 68 mm).',
         adjustments: ['Serrer les deux coupelles l\'une contre l\'autre au couple indiqué', 'Vérifier le serrage après quelques heures'],
         absolute: false,
         source: { kind: 'revendeur', ref: 'SJS Cycles – boîtier YST sans filetage 68 mm pour cadres au filetage abîmé (axe carré JIS)', url: 'https://sjscycles.co.uk/bottom-brackets/110-yst-threadless-68-mm-sealed-bearing-bottom-bracket-for-frames-with-damaged-threads' },

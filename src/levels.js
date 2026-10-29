@@ -8,7 +8,7 @@ export const LEVEL = Object.freeze({
 });
 
 export const LEVEL_INFO = Object.freeze({
-  [LEVEL.OFFICIAL]: { key: 'officiel', emoji: '✅', label: '100 % – compatibilité officielle constructeur', color: '#2da44e' },
+  [LEVEL.OFFICIAL]: { key: 'officiel', emoji: '✅', label: 'Compatibilité officielle constructeur', color: '#2da44e' },
   [LEVEL.KNOWN]: { key: 'connu', emoji: '🟢', label: 'Compatible connu (hors doc officielle)', color: '#7ccf4f' },
   [LEVEL.DEGRADED]: { key: 'depannage', emoji: '🟠', label: 'DÉPANNAGE – mode dégradé', color: '#f08c00' },
   [LEVEL.INCOMPATIBLE]: { key: 'incompatible', emoji: '❌', label: 'Incompatible', color: '#d1242f' },

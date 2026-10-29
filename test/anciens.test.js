@@ -59,9 +59,10 @@ describe('freins anciens', () => {
     const r = checkPair(P('shimano-bl-t4000'), P('avid-bb7-road'), kb);
     assert.equal(r.absolute, true);
   });
-  test('étrier Magura (Royal Blood) avec levier Shimano (minéral Shimano) : dépannage d\'urgence seulement', () => {
+  test('étrier Magura (Royal Blood) avec levier Shimano (minéral Shimano) : dépannage refusé par sécurité', () => {
     const r = checkPair(P('shimano-bl-m8100'), P('magura-mt4'), kb);
-    assert.equal(r.level, LEVEL.DEGRADED);
+    assert.equal(r.level, LEVEL.INCOMPATIBLE);
+    assert.equal(r.absolute, false);
     assert.ok(r.findings.some((f) => f.rule === 'freins.fluide' && /purger/i.test(f.limitation ?? '')));
   });
   test('V-brake Deore M590 + patins M70T4 : compatibles', () => {
@@ -92,9 +93,9 @@ describe('ajouts : manettes avant, Campagnolo 9v, autres marques, 7v', () => {
   test('levier Hope (DOT) + étrier Formula Cura (minéral) : exclusion absolue', () => {
     assert.equal(checkPair(P('hope-tech3-lever'), P('formula-cura'), kb).absolute, true);
   });
-  test('levier Shimano minéral + étrier Formula Cura : dépannage d\'urgence (huiles minérales différentes)', () => {
+  test('levier Shimano minéral + étrier Formula Cura : dépannage refusé par sécurité (huiles minérales différentes)', () => {
     const r = checkPair(P('shimano-bl-m8100'), P('formula-cura'), kb);
-    assert.ok(r.findings.some((f) => f.rule === 'freins.fluide' && f.level === LEVEL.DEGRADED));
+    assert.ok(r.findings.some((f) => f.rule === 'freins.fluide' && f.level === LEVEL.INCOMPATIBLE && f.safety));
   });
   test('7v : manette Revoshift + cassette HG200-7 : compatible', () => {
     assert.ok(checkPair(P('shimano-sl-rv400-7r'), P('shimano-cs-hg200-7-12-28'), kb).level <= LEVEL.KNOWN);

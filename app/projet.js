@@ -47,7 +47,7 @@ function mainDiscipline(parts) {
 const uid = () => `p${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
 
 export function createProjetView(ctx) {
-  const { state, view, esc, x, nm, fmt, searchBox, partTitle, partSub, store, stagger, toast } = ctx;
+  const { state, view, esc, x, nm, fmt, searchBox, partTitle, partSub, store, stagger, toast, safetyBanner, isSafetyPart } = ctx;
   const bikeType = (proj) => BIKE_TYPES.find((b) => b.id === proj.discipline);
 
   /** Liste des groupes, rangés par discipline ; celle du vélo d'abord. */
@@ -173,7 +173,8 @@ export function createProjetView(ctx) {
     const done = new Set(proj.done ?? []);
     const shop = r.shopping.map((it) => ({ key: it.part.id, html: `${esc(partTitle(it.part))} (${nm(it.part.name ?? '')})` }))
       .concat(r.extras.map((e) => ({ key: `x:${e}`, html: x(e) })));
-    const shopHtml = `<section class="summary"><h2>${t('Liste de courses')}</h2>
+    const brakeWork = r.shopping.some((it) => isSafetyPart(it.part)) || r.slots.some((s) => s.status !== 'ok' && s.status !== 'absent' && (isSafetyPart(s.before) || isSafetyPart(s.after)));
+    const shopHtml = `<section class="summary"><h2>${t('Liste de courses')}</h2>${brakeWork ? safetyBanner() : ''}
       <ul class="checklist" id="shop">${shop.map((it) => `<li><label><input type="checkbox" data-done="${esc(it.key)}"${done.has(it.key) ? ' checked' : ''}> ${it.html}</label></li>`).join('')}</ul>
       ${r.works.length ? `<div class="block"><h4>${t('Travaux et réglages')}</h4><ul>${r.works.map((w) => `<li>${x(w)}</li>`).join('')}</ul></div>` : ''}
       ${r.tools.length ? `<div class="block"><h4>${t('Outils')}</h4><ul>${r.tools.map((w) => `<li>${x(w)}</li>`).join('')}</ul></div>` : ''}

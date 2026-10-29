@@ -59,10 +59,12 @@ describe('freins : compatibles et croisements', () => {
   test('levier route + étrier VTT, croisement documenté : 100 %', () => {
     assert.equal(checkPair(P.shifterRoute11Hydro, P.caliperMineralPostVtt, kb).level, LEVEL.OFFICIAL);
   });
-  test('même fluide, systèmes différents non documentés : dépannage à valider', () => {
+  test('même fluide, systèmes différents non documentés : refusé par sécurité, à valider', () => {
     const r = checkPair(P.shifterRoute11Hydro, P.caliperMineralFlatOther, kb);
-    assert.equal(r.level, LEVEL.DEGRADED);
+    assert.equal(r.level, LEVEL.INCOMPATIBLE);
     assert.equal(r.toValidate, true);
+    assert.equal(r.absolute, false);
+    assert.match(r.reasons[0], /Sécurité freinage/);
   });
   test('étrier post mount sur cadre IS : adaptateur', () => {
     const frameIs = P.part('frame', 'FR-IS', { brakeMount: 'is' });
@@ -79,9 +81,19 @@ describe('freins : compatibles et croisements', () => {
     assert.equal(r.level, LEVEL.KNOWN);
     assert.ok(r.extraParts.length);
   });
-  test('plaquettes métal sur disque « résine seulement » : dépannage', () => {
-    assert.equal(checkPair(P.padsAMetal, P.rotorCenterlock, kb).level, LEVEL.DEGRADED);
+  test('plaquettes métal sur disque « résine seulement » : refusé par sécurité', () => {
+    assert.equal(checkPair(P.padsAMetal, P.rotorCenterlock, kb).level, LEVEL.INCOMPATIBLE);
     assert.equal(checkPair(P.padsA, P.rotorCenterlock, kb).level, LEVEL.OFFICIAL);
+  });
+});
+
+describe('sécurité freinage', () => {
+  test('aucun résultat 🟠 dépannage sur une paire de freinage', () => {
+    for (const [a, b] of [[P.shifterRoute11Hydro, P.caliperMineralFlatOther], [P.padsAMetal, P.rotorCenterlock]]) {
+      const r = checkPair(a, b, kb);
+      assert.ok(r.findings.every((f) => f.level !== LEVEL.DEGRADED));
+      assert.equal(r.safety, true);
+    }
   });
 });
 
