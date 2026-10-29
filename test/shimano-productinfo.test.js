@@ -52,3 +52,14 @@ describe('Lignée Deore XT', () => {
     assert.ok(checkPair(P('shimano-sl-m8200-r'), P('shimano-rd-m8100-sgs'), kb).level <= LEVEL.KNOWN);
   });
 });
+
+describe('Transmission Shimano relevée dans C-433 / C-454', () => {
+  test('CUES : manette U6000 11v + dérailleur U6000 : compatibles ; avec un dérailleur XT 11v Hyperglide : non', () => {
+    assert.ok(checkPair(P('shimano-sl-u6000-11r'), P('shimano-rd-u6000'), kb).level <= LEVEL.KNOWN);
+    assert.equal(checkPair(P('shimano-sl-u6000-11r'), P('shimano-rd-m8000-sgs'), kb).level, LEVEL.INCOMPATIBLE);
+  });
+  test('plages officielles reprises (RD-R9100-SS : 25 à 30 dents ; RD-M3000-SGS : 32 à 36)', () => {
+    assert.equal(P('shimano-rd-r9100-ss').attrs.maxCog, 30);
+    assert.equal(P('shimano-rd-m3000-sgs').attrs.maxCog, 36);
+  });
+});

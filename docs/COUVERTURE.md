@@ -2,7 +2,7 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **748 pièces**, dont 48 validées par une page constructeur et **700 à valider**.
+- **967 pièces**, dont 48 validées par une page constructeur et **919 à valider**.
 - Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 275, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
@@ -27,7 +27,7 @@
 | SR Suntour | 3 |
 | SRAM | 93 |
 | Sachs | 4 |
-| Shimano | 449 |
+| Shimano | 668 |
 | Simplex | 3 |
 | Stronglight | 2 |
 | Sugino | 2 |
@@ -42,7 +42,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (222)
+## Dérailleur arrière (275)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -102,6 +102,7 @@
 | RD-4500-GS | Shimano | route | à valider |  |
 | RD-4500-SS | Shimano | route | à valider |  |
 | RD-4601-GS | Shimano | route | à valider | totalCapacity |
+| RD-4601-SS | Shimano | route | à valider | totalCapacity |
 | RD-4700-GS | Shimano | route | à valider |  |
 | RD-4700-SS | Shimano | route | à valider |  |
 | RD-5500-GS | Shimano | route | à valider |  |
@@ -119,6 +120,7 @@
 | RD-6402 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-6600-GS | Shimano | route | à valider |  |
 | RD-6600-SS | Shimano | route | à valider |  |
+| RD-6700-A-GS | Shimano | route | à valider | totalCapacity |
 | RD-6700-A-SS | Shimano | route | à valider | totalCapacity |
 | RD-6700-GS | Shimano | route | à valider | maxCog |
 | RD-6700-SS | Shimano | route | à valider |  |
@@ -134,6 +136,7 @@
 | RD-7900-GS | Shimano | route | à valider | maxCog |
 | RD-7900-SS | Shimano | route | à valider |  |
 | RD-9000-SS | Shimano | route | à valider |  |
+| RD-A050 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-A070 | Shimano | route | à valider | mount |
 | RD-A410 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-A416 | Shimano | route | à valider | maxCog, totalCapacity |
@@ -141,15 +144,24 @@
 | RD-A550 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD-A551 | Shimano | route | à valider | maxCog, totalCapacity |
 | RD Altus C10 (7v) | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-FT35-A-SS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-FT55-A-SS | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M2000-SGS | Shimano | vtt | à valider |  |
+| RD-M3000-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M3020-8 | Shimano | vtt | à valider | totalCapacity |
 | RD-M310 | Shimano | vtt | à valider |  |
+| RD-M310-S | Shimano | vtt | à valider | totalCapacity |
 | RD-M3100-SGS | Shimano | vtt | à valider |  |
 | RD-M360-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M370 | Shimano | vtt | à valider |  |
 | RD-M4000-SGS | Shimano | vtt | à valider |  |
 | RD-M410 | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M4120-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M510 | Shimano | vtt | à valider | maxCog |
 | RD-M5100-SGS | Shimano | vtt | à valider |  |
+| RD-M5120-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M5130 | Shimano | vtt | à valider | totalCapacity |
+| RD-M5130-GS | Shimano | vtt | à valider | totalCapacity |
 | RD-M550 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M560 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M565 | Shimano | vtt | à valider | maxCog, totalCapacity |
@@ -160,10 +172,17 @@
 | RD-M6000-GS | Shimano | vtt | à valider |  |
 | RD-M6000-SGS | Shimano | vtt | à valider |  |
 | RD-M6100 | Shimano | vtt | à valider |  |
+| RD-M6200-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M640 | Shimano | vtt | à valider | totalCapacity |
 | RD-M650 | Shimano | vtt | à valider | totalCapacity |
 | RD-M670-SGS | Shimano | vtt | à valider |  |
 | RD-M700 | Shimano | vtt | à valider | speeds, maxCog, totalCapacity |
 | RD-M7000-10-SGS | Shimano | vtt | à valider |  |
+| RD-M7000-11-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M7100-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M7120-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M7200-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-M7230-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M730 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M732 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M735 | Shimano | vtt | à valider | maxCog, totalCapacity |
@@ -171,6 +190,7 @@
 | RD-M739 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M750 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M771-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M772-GS | Shimano | vtt | à valider | totalCapacity |
 | RD-M772-SGS | Shimano | vtt | à valider |  |
 | RD-M780-GS | Shimano | vtt | à valider |  |
 | RD-M786-GS | Shimano | vtt | à valider | maxCog |
@@ -181,13 +201,16 @@
 | RD-M8100-SGS | Shimano | vtt | à valider |  |
 | RD-M8120-SGS | Shimano | vtt | à valider |  |
 | RD-M8130-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M820 | Shimano | vtt | à valider | totalCapacity |
 | RD-M8200-GS | Shimano | vtt | à valider | totalCapacity |
 | RD-M8200-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-M8230-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-M900 | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M9000-GS | Shimano | vtt | à valider |  |
 | RD-M9000-SGS | Shimano | vtt | à valider |  |
 | RD-M9100-GS | Shimano | vtt | à valider |  |
 | RD-M9100-SGS | Shimano | vtt | à valider |  |
+| RD-M9120-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-M952 | Shimano | vtt | à valider | totalCapacity |
 | RD-M980-GS | Shimano | vtt | à valider |  |
 | RD-MC30 | Shimano | vtt | à valider | maxCog, totalCapacity |
@@ -195,6 +218,8 @@
 | RD-R2000-SS | Shimano | route | à valider |  |
 | RD-R3000-GS | Shimano | route | à valider |  |
 | RD-R3000-SS | Shimano | route | à valider |  |
+| RD-R350-10-SS | Shimano | route | à valider | totalCapacity |
+| RD-R350-GS | Shimano | route | à valider | totalCapacity |
 | RD-R7000-GS | Shimano | route | à valider |  |
 | RD-R7000-SS | Shimano | route | à valider |  |
 | RD-R7100 | Shimano | route | à valider |  |
@@ -205,8 +230,11 @@
 | RD-R8050-SS | Shimano | route | à valider | totalCapacity |
 | RD-R8150 | Shimano | route | à valider |  |
 | RD-R9100 | Shimano | route | à valider | totalCapacity |
+| RD-R9100-SS | Shimano | route | à valider | totalCapacity |
 | RD-R9150 | Shimano | route | à valider | totalCapacity |
 | RD-R9250 | Shimano | route | à valider |  |
+| RD-RX400 | Shimano | gravel | à valider | totalCapacity |
+| RD-RX717-SGS | Shimano | gravel | à valider | maxCog, totalCapacity |
 | RD-RX800-GS | Shimano | gravel | à valider | totalCapacity |
 | RD-RX805 | Shimano | gravel | à valider | totalCapacity |
 | RD-RX810 | Shimano | gravel | à valider |  |
@@ -218,11 +246,36 @@
 | RD-RX822-SGS | Shimano | gravel | à valider |  |
 | RD-RX825 | Shimano | gravel | à valider | totalCapacity |
 | RD-RX827 | Shimano | gravel | à valider | totalCapacity |
+| RD-T3000-SGS | Shimano | vtt | à valider | totalCapacity |
 | RD-T4000-SGS | Shimano | autre | à valider |  |
+| RD-T6000 | Shimano | vtt | à valider | totalCapacity |
+| RD-T670-A | Shimano | vtt | à valider | totalCapacity |
+| RD-T780 | Shimano | vtt | à valider | totalCapacity |
+| RD-T8000 | Shimano | vtt | à valider | totalCapacity |
 | RD-TX35 | Shimano | vtt | à valider |  |
 | RD-TX800-SGS | Shimano | vtt | à valider | totalCapacity |
+| RD-TY200-GS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-TY200-SS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-TY21-B-GS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-TY21-B-SS | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-TY300 | Shimano | vtt | à valider |  |
+| RD-TY300-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
 | RD-TY500-SGS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-TZ50-GS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-TZ500-GS | Shimano | vtt | à valider | maxCog, totalCapacity |
+| RD-U2000 | Shimano | vtt | à valider | totalCapacity |
+| RD-U3020 | Shimano | vtt | à valider | totalCapacity |
+| RD-U4000 | Shimano | vtt | à valider | totalCapacity |
+| RD-U4010 | Shimano | vtt | à valider | totalCapacity |
+| RD-U4020 | Shimano | vtt | à valider | totalCapacity |
+| RD-U5000-SS | Shimano | route | à valider | totalCapacity |
+| RD-U6000 | Shimano | vtt | à valider | totalCapacity |
+| RD-U6020-10 | Shimano | vtt | à valider | totalCapacity |
+| RD-U6020-11 | Shimano | vtt | à valider | totalCapacity |
+| RD-U6050 | Shimano | vtt | à valider | totalCapacity |
+| RD-U6070 | Shimano | vtt | à valider | totalCapacity |
+| RD-U8000 | Shimano | vtt | à valider | totalCapacity |
+| RD-U8020 | Shimano | vtt | à valider | totalCapacity |
 | Prestige | Simplex | autre | à valider | speeds, totalCapacity |
 | SX410 | Simplex | autre | à valider | speeds, maxCog, totalCapacity |
 | RD Apex 1 11v | SRAM | gravel | à valider | totalCapacity |
@@ -269,7 +322,7 @@
 | EDS OX2.0 dérailleur 93 mm | Wheeltop | vtt | à valider |  |
 | EDS TX dérailleur | Wheeltop | route | à valider | totalCapacity |
 
-## Manette / levier de vitesses (126)
+## Manette / levier de vitesses (234)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -318,48 +371,113 @@
 | Leviers SRX 1x11 | SENSAH | gravel | à valider |  |
 | Leviers Team Pro 2x11 | SENSAH | route | à valider |  |
 | Manette XRX 12v | SENSAH | vtt | à valider |  |
+| SL-2400 | Shimano | route | à valider |  |
+| SL-3500 | Shimano | route | à valider |  |
+| SL-4600 | Shimano | route | à valider |  |
+| SL-4700 | Shimano | route | à valider |  |
 | SL-7400 | Shimano | route | à valider |  |
+| SL-A050-7R | Shimano | route | à valider |  |
+| SL-BSR1 | Shimano | route | à valider |  |
 | SL-FT55-7R | Shimano | vtt | à valider |  |
+| SL-M2000-R | Shimano | vtt | à valider |  |
+| SL-M2010-9R | Shimano | vtt | à valider |  |
+| SL-M3000-R | Shimano | vtt | à valider |  |
 | SL-M310-7R | Shimano | vtt | validé |  |
+| SL-M310-8R | Shimano | vtt | à valider |  |
 | SL-M3100-L (2 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-L (3 plateaux) | Shimano | vtt | à valider |  |
 | SL-M3100-R | Shimano | vtt | à valider |  |
 | SL-M315-7R | Shimano | vtt | validé |  |
+| SL-M315-8R | Shimano | vtt | à valider |  |
+| SL-M360-R | Shimano | vtt | à valider |  |
 | SL-M370-R | Shimano | vtt | à valider |  |
+| SL-M4000-R | Shimano | vtt | à valider |  |
 | SL-M4100 | Shimano | vtt | à valider |  |
+| SL-M4100-R | Shimano | vtt | à valider |  |
 | SL-M5100-R | Shimano | vtt | à valider |  |
+| SL-M5130-R10 | Shimano | vtt | à valider |  |
 | SL-M590-L | Shimano | vtt | à valider |  |
 | SL-M590-R | Shimano | vtt | à valider |  |
 | SL-M6000-L | Shimano | vtt | à valider |  |
 | SL-M6000-R | Shimano | vtt | à valider |  |
+| SL-M610-R | Shimano | vtt | à valider |  |
+| SL-M6100-R | Shimano | vtt | à valider |  |
+| SL-M6200-R | Shimano | vtt | à valider |  |
+| SL-M6210-R | Shimano | vtt | à valider |  |
+| SL-M6230-R11 | Shimano | vtt | à valider |  |
+| SL-M640-R | Shimano | vtt | à valider |  |
 | SL-M670-L | Shimano | vtt | à valider |  |
 | SL-M7000-10-R | Shimano | vtt | à valider |  |
 | SL-M7000-L | Shimano | vtt | à valider |  |
 | SL-M7000-11-R | Shimano | vtt | à valider |  |
+| SL-M7100-R | Shimano | vtt | à valider |  |
 | SL-M770-L | Shimano | vtt | à valider |  |
 | SL-M8000-R | Shimano | vtt | à valider |  |
 | SL-M8100-R | Shimano | vtt | validé |  |
 | SL-M8130-R11 | Shimano | vtt | à valider |  |
+| SL-M820-R | Shimano | vtt | à valider |  |
 | SL-M8200-R | Shimano | vtt | à valider |  |
 | SL-M8210-R | Shimano | vtt | à valider |  |
+| SL-M8230-R11 | Shimano | vtt | à valider |  |
 | SL-M9000-R | Shimano | vtt | à valider |  |
+| SL-M9100-R | Shimano | vtt | à valider |  |
 | SL-MC37 | Shimano | vtt | à valider |  |
+| SL-R2000 | Shimano | route | à valider |  |
+| SL-R3000 | Shimano | route | à valider |  |
+| SL-R780 | Shimano | route | à valider |  |
+| SL-RS34-6R | Shimano | route | à valider |  |
+| SL-RS35-6R | Shimano | route | à valider |  |
 | SL-RS35-7R | Shimano | vtt | validé |  |
+| SL-RS36-6R | Shimano | route | à valider |  |
 | SL-RS36-7R | Shimano | vtt | validé |  |
+| SL-RS45-6R | Shimano | route | à valider |  |
 | SL-RS45-7R | Shimano | vtt | validé |  |
+| SL-RS45-8R | Shimano | route | à valider |  |
 | SL-RS47-7R | Shimano | vtt | validé |  |
+| SL-RS47-8R | Shimano | route | à valider |  |
+| SL-RS700 | Shimano | route | à valider |  |
+| SL-RV200-6R | Shimano | vtt | à valider |  |
 | SL-RV200-7R | Shimano | vtt | validé |  |
+| SL-RV300-6R | Shimano | vtt | à valider |  |
 | SL-RV300-7R | Shimano | vtt | validé |  |
+| SL-RV400-6R | Shimano | vtt | à valider |  |
 | SL-RV400-7R | Shimano | vtt | à valider |  |
+| SL-RV400-8R | Shimano | vtt | à valider |  |
+| SL-SY20A | Shimano | route | à valider |  |
+| SL-T6000-R | Shimano | vtt | à valider |  |
+| SL-T610-R | Shimano | vtt | à valider |  |
+| SL-T670-R | Shimano | vtt | à valider |  |
+| SL-T8000-R | Shimano | vtt | à valider |  |
+| SL-TX30-6R | Shimano | vtt | à valider |  |
 | SL-TX30-7R | Shimano | vtt | à valider |  |
+| SL-TX50-6R | Shimano | vtt | à valider |  |
 | SL-TX50 (7v) | Shimano | vtt | à valider |  |
+| SL-TX50-7R | Shimano | vtt | à valider |  |
+| SL-TZ20-6R | Shimano | vtt | à valider |  |
 | SL-TZ20-7R | Shimano | vtt | à valider |  |
+| SL-TZ500-6R | Shimano | vtt | à valider |  |
 | SL-TZ500-7R | Shimano | vtt | à valider |  |
+| SL-U4000-9R | Shimano | vtt | à valider |  |
+| SL-U4001-9R | Shimano | vtt | à valider |  |
+| SL-U4010-9R | Shimano | vtt | à valider |  |
+| SL-U4011-9R | Shimano | vtt | à valider |  |
+| SL-U4050-9R | Shimano | vtt | à valider |  |
+| SL-U5000 | Shimano | route | à valider |  |
+| SL-U6000-10R | Shimano | vtt | à valider |  |
+| SL-U6000-11R | Shimano | vtt | à valider |  |
+| SL-U6001-10R | Shimano | vtt | à valider |  |
+| SL-U6001-11R | Shimano | vtt | à valider |  |
+| SL-U6050-10R | Shimano | vtt | à valider |  |
+| SL-U6050-11R | Shimano | vtt | à valider |  |
+| SL-U8000-11R | Shimano | vtt | à valider |  |
+| ST-2300 | Shimano | route | à valider |  |
 | ST-2400 | Shimano | route | à valider |  |
 | ST-3400 | Shimano | route | à valider |  |
 | ST-3500 | Shimano | route | à valider |  |
 | ST-4600 | Shimano | route | à valider |  |
 | ST-4700 | Shimano | route | à valider |  |
+| ST-4720 | Shimano | route | à valider |  |
+| ST-4725 | Shimano | route | à valider |  |
 | ST-5600 | Shimano | route | à valider |  |
 | ST-5700 | Shimano | route | à valider |  |
 | ST-5800 | Shimano | route | à valider |  |
@@ -369,23 +487,66 @@
 | ST-7700 | Shimano | route | à valider |  |
 | ST-7800 | Shimano | route | à valider |  |
 | ST-7900 | Shimano | route | à valider |  |
+| ST-9000 | Shimano | route | à valider |  |
+| ST-9001 | Shimano | route | à valider |  |
+| ST-A070 | Shimano | route | à valider |  |
+| ST-EF41-6R | Shimano | vtt | à valider |  |
 | ST-EF41 (3x7) | Shimano | vtt | à valider |  |
+| ST-EF41-7R | Shimano | vtt | à valider |  |
 | ST-EF500-7R2A | Shimano | vtt | à valider |  |
 | ST-EF500-7R4A | Shimano | vtt | à valider |  |
+| ST-EF500-8R2A | Shimano | vtt | à valider |  |
+| ST-EF500-8R4A | Shimano | vtt | à valider |  |
 | ST-EF505-7R | Shimano | vtt | à valider |  |
+| ST-EF505-8R | Shimano | vtt | à valider |  |
+| ST-EF505-9R | Shimano | vtt | à valider |  |
 | ST-EF510-7R2A | Shimano | vtt | à valider |  |
 | ST-EF510-7R4A | Shimano | vtt | à valider |  |
+| ST-EF510-8R2A | Shimano | vtt | à valider |  |
+| ST-EF510-8R4A | Shimano | vtt | à valider |  |
+| ST-EF510-9R2A | Shimano | vtt | à valider |  |
 | ST-EF515-7R | Shimano | vtt | à valider |  |
+| ST-EF515-8R | Shimano | vtt | à valider |  |
 | ST-EF65-7R2 | Shimano | vtt | à valider |  |
 | ST-EF65-7R4 | Shimano | vtt | à valider |  |
+| ST-EF65-8R2 | Shimano | vtt | à valider |  |
+| ST-EF65-8R4 | Shimano | vtt | à valider |  |
+| ST-EF65-9R2 | Shimano | vtt | à valider |  |
+| ST-EF65-9R4 | Shimano | vtt | à valider |  |
+| ST-M3050-R | Shimano | vtt | à valider |  |
+| ST-M310-8R2 | Shimano | vtt | à valider |  |
+| ST-M4000-R | Shimano | vtt | à valider |  |
+| ST-M4050-R | Shimano | vtt | à valider |  |
 | ST-R2000 | Shimano | route | à valider |  |
+| ST-R240 | Shimano | route | à valider |  |
 | ST-R3000 | Shimano | route | à valider |  |
+| ST-R350 | Shimano | route | à valider |  |
 | ST-R7000 | Shimano | route | à valider |  |
+| ST-R7020 | Shimano | route | à valider |  |
+| ST-R7025 | Shimano | route | à valider |  |
 | ST-R7120 | Shimano | route | à valider |  |
+| ST-R8000 | Shimano | route | à valider |  |
 | ST-R8020 | Shimano | route | à valider |  |
+| ST-R8025 | Shimano | route | à valider |  |
 | ST-R8050 | Shimano | route | à valider |  |
+| ST-R9100 | Shimano | route | à valider |  |
+| ST-R9120 | Shimano | route | à valider |  |
+| ST-RS200 | Shimano | route | à valider |  |
+| ST-RS405 | Shimano | route | à valider |  |
+| ST-RS505 | Shimano | route | à valider |  |
+| ST-RS685 | Shimano | route | à valider |  |
+| ST-RX400 | Shimano | gravel | à valider |  |
+| ST-RX600 | Shimano | gravel | à valider |  |
 | ST-RX610 | Shimano | gravel | à valider |  |
 | ST-RX820 | Shimano | gravel | à valider |  |
+| ST-T3000-R | Shimano | vtt | à valider |  |
+| ST-T4000-R | Shimano | vtt | à valider |  |
+| ST-TX800-8R | Shimano | vtt | à valider |  |
+| ST-U2030-R | Shimano | vtt | à valider |  |
+| ST-U3030-10R | Shimano | vtt | à valider |  |
+| ST-U3030-9R | Shimano | vtt | à valider |  |
+| ST-U4030-R | Shimano | vtt | à valider |  |
+| ST-U5060 | Shimano | route | à valider |  |
 | Retrofriction | Simplex | route | à valider |  |
 | Poignée NX 11v | SRAM | vtt | à valider |  |
 | Gâchette Eagle S200 12v | SRAM | vtt | à valider |  |
@@ -415,7 +576,7 @@
 | BL-T4000 | Shimano | vtt | à valider |  |
 | ST-RX810 gauche 1x (frein seul) | Shimano | gravel | à valider |  |
 
-## Cassette / roue libre (163)
+## Cassette / roue libre (202)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -466,9 +627,17 @@
 | CS-HG200-9 11-32 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-34 | Shimano | vtt | à valider |  |
 | CS-HG200-9 11-36 | Shimano | vtt | à valider |  |
+| CS-HG201-9 11-32 | Shimano | vtt | à valider |  |
+| CS-HG201-9 11-34 | Shimano | vtt | à valider |  |
+| CS-HG201-9 11-36 | Shimano | vtt | à valider |  |
 | CS-HG210-7 12-28 | Shimano | vtt | validé |  |
 | CS-HG210-7 12-32 | Shimano | vtt | validé |  |
+| CS-HG300-8 11-45 | Shimano | vtt | à valider |  |
+| CS-HG31-8 11-30 | Shimano | vtt | à valider |  |
+| CS-HG31-8 11-34 | Shimano | vtt | à valider |  |
 | CS-HG400-7 11-28 | Shimano | vtt | validé |  |
+| CS-HG400-8 11-40 | Shimano | vtt | à valider |  |
+| CS-HG400-8 11-45 | Shimano | vtt | à valider |  |
 | CS-HG400-9 11-28 | Shimano | vtt | à valider |  |
 | CS-HG400-9 11-32 | Shimano | vtt | à valider |  |
 | CS-HG400-9 11-34 | Shimano | vtt | à valider |  |
@@ -491,12 +660,36 @@
 | CS-HG500-10 11-32 | Shimano | route | à valider |  |
 | CS-HG500-10 11-34 | Shimano | route | à valider |  |
 | CS-HG500-10 12-28 | Shimano | route | à valider |  |
+| CS-HG51-8 11-28 | Shimano | vtt | à valider |  |
+| CS-HG51-8 11-30 | Shimano | vtt | à valider |  |
 | CS-HG700-11 11-34 | Shimano | route | à valider |  |
 | CS-HG800-11 11-34 | Shimano | route | à valider |  |
+| CS-HG81-10 11-32 | Shimano | vtt | à valider |  |
+| CS-HG81-10 11-36 | Shimano | vtt | à valider |  |
+| CS-LG300-10 11-39 | Shimano | vtt | à valider |  |
+| CS-LG300-10 11-48 | Shimano | vtt | à valider |  |
+| CS-LG300-9 11-36 | Shimano | vtt | à valider |  |
+| CS-LG300-9 11-41 | Shimano | vtt | à valider |  |
+| CS-LG400-10 11-39 | Shimano | vtt | à valider |  |
+| CS-LG400-10 11-43 | Shimano | vtt | à valider |  |
+| CS-LG400-10 11-48 | Shimano | vtt | à valider |  |
+| CS-LG400-11 11-45 | Shimano | vtt | à valider |  |
+| CS-LG400-11 11-50 | Shimano | vtt | à valider |  |
+| CS-LG400-9 11-36 | Shimano | vtt | à valider |  |
+| CS-LG400-9 11-41 | Shimano | vtt | à valider |  |
+| CS-LG600-10 11-43 | Shimano | vtt | à valider |  |
+| CS-LG600-11 11-50 | Shimano | vtt | à valider |  |
+| CS-LG700-11 11-45 | Shimano | vtt | à valider |  |
+| CS-LG700-11 11-50 | Shimano | vtt | à valider |  |
 | CS-M4100-10 11-42 | Shimano | vtt | à valider | freehub |
+| CS-M5100-11 11-42 | Shimano | vtt | à valider |  |
 | CS-M5100 11-51 | Shimano | vtt | à valider | freehub |
 | CS-M6100 10-51 | Shimano | vtt | à valider |  |
+| CS-M6200-12 10-51 | Shimano | vtt | à valider |  |
+| CS-M7000-11 11-40 | Shimano | vtt | à valider |  |
 | CS-M7100 10-51 | Shimano | vtt | à valider |  |
+| CS-M7100-12 10-45 | Shimano | vtt | à valider |  |
+| CS-M7200-12 10-51 | Shimano | vtt | à valider |  |
 | CS-M770 11-32 | Shimano | vtt | à valider |  |
 | CS-M770 11-34 | Shimano | vtt | à valider |  |
 | CS-M771-10 11-32 | Shimano | vtt | à valider |  |
@@ -509,6 +702,13 @@
 | CS-M8100 10-51 | Shimano | vtt | à valider |  |
 | CS-M8200-12 10-51 | Shimano | vtt | à valider |  |
 | CS-M8200-12 9-45 | Shimano | vtt | à valider |  |
+| CS-M9001 11-40 | Shimano | vtt | à valider |  |
+| CS-M9100-12 10-45 | Shimano | vtt | à valider |  |
+| CS-M9100-12 10-51 | Shimano | vtt | à valider |  |
+| CS-M9101-12 10-45 | Shimano | vtt | à valider |  |
+| CS-M9101-12 10-51 | Shimano | vtt | à valider |  |
+| CS-M9200-12 10-51 | Shimano | vtt | à valider |  |
+| CS-M9200-12 9-45 | Shimano | vtt | à valider |  |
 | CS-R7000 11-28 | Shimano | route | à valider |  |
 | CS-R7000 11-30 | Shimano | route | à valider |  |
 | CS-R7000 11-32 | Shimano | route | à valider |  |
@@ -583,7 +783,7 @@
 | Perfect 5v | SunTour | autre | à valider | minCog, maxCog, freewheelThread |
 | Ultra-6 | SunTour | route | à valider | minCog, maxCog, freewheelThread |
 
-## Chaîne (33)
+## Chaîne (52)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -600,18 +800,37 @@
 | Z8.1 | KMC | autre | à valider |  |
 | Z8.3 | KMC | autre | à valider |  |
 | Extra Oro (chaîne) | Regina | route | à valider |  |
+| CN-4601 | Shimano | route | à valider |  |
+| CN-5600 | Shimano | route | à valider |  |
+| CN-5701 | Shimano | route | à valider |  |
 | CN-6110 (Uniglide) | Shimano | route | à valider |  |
+| CN-6600 | Shimano | route | à valider |  |
 | CN-6701 | Shimano | route | à valider |  |
+| CN-7701 | Shimano | route | à valider |  |
+| CN-7801 | Shimano | route | à valider |  |
 | CN-HG40 | Shimano | vtt | à valider |  |
+| CN-HG50 | Shimano | vtt | à valider |  |
 | CN-HG53 | Shimano | vtt | à valider |  |
 | CN-HG54 | Shimano | autre | à valider |  |
 | CN-HG601-11 | Shimano | route | à valider |  |
 | CN-HG701-11 | Shimano | route | à valider |  |
 | CN-HG71 | Shimano | autre | à valider |  |
+| CN-HG73 | Shimano | vtt | à valider |  |
+| CN-HG74 | Shimano | vtt | à valider |  |
+| CN-HG75 | Shimano | vtt | à valider |  |
 | CN-HG901-11 | Shimano | route | à valider |  |
+| CN-HG91 | Shimano | vtt | à valider |  |
 | CN-HG93 | Shimano | autre | à valider |  |
+| CN-HG94 | Shimano | vtt | à valider |  |
 | CN-HG95 | Shimano | autre | à valider |  |
+| CN-LG500 | Shimano | vtt | à valider |  |
+| CN-M6100 | Shimano | vtt | à valider |  |
+| CN-M7100 | Shimano | vtt | à valider |  |
 | CN-M8100 | Shimano | vtt | à valider |  |
+| CN-M9100 | Shimano | vtt | à valider |  |
+| CN-M980 | Shimano | vtt | à valider |  |
+| CN-M981 | Shimano | vtt | à valider |  |
+| CN-UG51 | Shimano | vtt | à valider |  |
 | Chaîne Eagle 12v (GX / NX / SX / X01 / XX1) | SRAM | vtt | validé |  |
 | Chaîne Flattop 12v (RED / Force / Rival / Apex) | SRAM | route | validé |  |
 | Chaîne T-Type (Eagle Transmission) | SRAM | vtt | validé |  |

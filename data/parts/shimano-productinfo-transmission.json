@@ -1,0 +1,5572 @@
+{
+ "_meta": {
+  "description": "Shimano – transmission arrière relevée automatiquement dans les schémas officiels productinfo C-433 (VTT, trekking, CUES) et C-454 (route, gravel) : vitesses, tirage (famille) et plages de plus grand pignon. Capacité et étagement absents des tableaux : signalés, jamais inventés."
+ },
+ "defaults": {
+  "brand": "Shimano"
+ },
+ "sources": {
+  "pi-C454": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-454 – compatibilité transmission arrière route / gravel (manettes, dérailleurs avec plages de pignons, cassettes, chaînes), 7 à 12 vitesses",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-454"
+  },
+  "pi-C433": {
+   "kind": "officiel",
+   "ref": "Shimano productinfo C-433 – compatibilité transmission arrière VTT / trekking / CUES (manettes, dérailleurs avec plages de pignons, cassettes, chaînes), 6 à 12 vitesses",
+   "url": "https://productinfo.shimano.com/en/compatibility/C-433"
+  }
+ },
+ "parts": [
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-4601",
+   "type": "chain",
+   "ref": "CN-4601",
+   "aliases": [
+    "cn 4601"
+   ],
+   "name": "Chaîne Shimano CN-4601 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "105 5600 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-5600",
+   "type": "chain",
+   "ref": "CN-5600",
+   "aliases": [
+    "cn 5600"
+   ],
+   "name": "Chaîne Shimano CN-5600 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "105 5700 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-5701",
+   "type": "chain",
+   "ref": "CN-5701",
+   "aliases": [
+    "cn 5701"
+   ],
+   "name": "Chaîne Shimano CN-5701 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Ultegra 6600 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-6600",
+   "type": "chain",
+   "ref": "CN-6600",
+   "aliases": [
+    "cn 6600"
+   ],
+   "name": "Chaîne Shimano CN-6600 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace 7700 (9v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 9 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-7701",
+   "type": "chain",
+   "ref": "CN-7701",
+   "aliases": [
+    "cn 7701"
+   ],
+   "name": "Chaîne Shimano CN-7701 9v",
+   "attrs": {
+    "speeds": 9,
+    "flattop": false
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace 7800 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-7801",
+   "type": "chain",
+   "ref": "CN-7801",
+   "aliases": [
+    "cn 7801"
+   ],
+   "name": "Chaîne Shimano CN-7801 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "8v",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 8 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-hg50",
+   "type": "chain",
+   "ref": "CN-HG50",
+   "aliases": [
+    "cn hg50"
+   ],
+   "name": "Chaîne Shimano CN-HG50 8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "9v",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 9 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-hg73",
+   "type": "chain",
+   "ref": "CN-HG73",
+   "aliases": [
+    "cn hg73"
+   ],
+   "name": "Chaîne Shimano CN-HG73 9v",
+   "attrs": {
+    "speeds": 9,
+    "flattop": false
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "10v",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-hg74",
+   "type": "chain",
+   "ref": "CN-HG74",
+   "aliases": [
+    "cn hg74"
+   ],
+   "name": "Chaîne Shimano CN-HG74 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "10v",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-hg75",
+   "type": "chain",
+   "ref": "CN-HG75",
+   "aliases": [
+    "cn hg75"
+   ],
+   "name": "Chaîne Shimano CN-HG75 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "8v",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 8 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-hg91",
+   "type": "chain",
+   "ref": "CN-HG91",
+   "aliases": [
+    "cn hg91"
+   ],
+   "name": "Chaîne Shimano CN-HG91 8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "10v",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-hg94",
+   "type": "chain",
+   "ref": "CN-HG94",
+   "aliases": [
+    "cn hg94"
+   ],
+   "name": "Chaîne Shimano CN-HG94 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 11 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-lg500",
+   "type": "chain",
+   "ref": "CN-LG500",
+   "aliases": [
+    "cn lg500"
+   ],
+   "name": "Chaîne Shimano CN-LG500 11v",
+   "attrs": {
+    "speeds": 11,
+    "flattop": false,
+    "chainType": "shimano-linkglide"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 12 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-m6100",
+   "type": "chain",
+   "ref": "CN-M6100",
+   "aliases": [
+    "cn m6100"
+   ],
+   "name": "Chaîne Shimano CN-M6100 12v",
+   "attrs": {
+    "speeds": 12,
+    "flattop": false,
+    "chainType": "shimano-hg-12"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 12 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-m7100",
+   "type": "chain",
+   "ref": "CN-M7100",
+   "aliases": [
+    "cn m7100"
+   ],
+   "name": "Chaîne Shimano CN-M7100 12v",
+   "attrs": {
+    "speeds": 12,
+    "flattop": false,
+    "chainType": "shimano-hg-12"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 12 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-m9100",
+   "type": "chain",
+   "ref": "CN-M9100",
+   "aliases": [
+    "cn m9100"
+   ],
+   "name": "Chaîne Shimano CN-M9100 12v",
+   "attrs": {
+    "speeds": 12,
+    "flattop": false,
+    "chainType": "shimano-hg-12"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M980 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-m980",
+   "type": "chain",
+   "ref": "CN-M980",
+   "aliases": [
+    "cn m980"
+   ],
+   "name": "Chaîne Shimano CN-M980 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M980 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 10 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-m981",
+   "type": "chain",
+   "ref": "CN-M981",
+   "aliases": [
+    "cn m981"
+   ],
+   "name": "Chaîne Shimano CN-M981 10v",
+   "attrs": {
+    "speeds": 10,
+    "flattop": false,
+    "chainType": "shimano-hg-10"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES UG51 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Shimano la liste avec les transmissions 8 vitesses (tableau de compatibilité).",
+   "id": "shimano-cn-ug51",
+   "type": "chain",
+   "ref": "CN-UG51",
+   "aliases": [
+    "cn ug51"
+   ],
+   "name": "Chaîne Shimano CN-UG51 8v",
+   "attrs": {
+    "speeds": 8,
+    "flattop": false
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg201-9-11-32",
+   "type": "cassette",
+   "ref": "CS-HG201-9 11-32",
+   "aliases": [
+    "hg201-9 11-32",
+    "cs-hg201-9"
+   ],
+   "name": "Cassette CS-HG201-9 9v 11-32",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg201-9-11-34",
+   "type": "cassette",
+   "ref": "CS-HG201-9 11-34",
+   "aliases": [
+    "hg201-9 11-34",
+    "cs-hg201-9"
+   ],
+   "name": "Cassette CS-HG201-9 9v 11-34",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg201-9-11-36",
+   "type": "cassette",
+   "ref": "CS-HG201-9 11-36",
+   "aliases": [
+    "hg201-9 11-36",
+    "cs-hg201-9"
+   ],
+   "name": "Cassette CS-HG201-9 9v 11-36",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "hg-9",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg300-8-11-45",
+   "type": "cassette",
+   "ref": "CS-HG300-8 11-45",
+   "aliases": [
+    "hg300-8 11-45",
+    "cs-hg300-8"
+   ],
+   "name": "Cassette CS-HG300-8 8v 11-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 45,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg31-8-11-30",
+   "type": "cassette",
+   "ref": "CS-HG31-8 11-30",
+   "aliases": [
+    "hg31-8 11-30",
+    "cs-hg31-8"
+   ],
+   "name": "Cassette CS-HG31-8 8v 11-30",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 30,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg31-8-11-34",
+   "type": "cassette",
+   "ref": "CS-HG31-8 11-34",
+   "aliases": [
+    "hg31-8 11-34",
+    "cs-hg31-8"
+   ],
+   "name": "Cassette CS-HG31-8 8v 11-34",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 34,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg400-8-11-40",
+   "type": "cassette",
+   "ref": "CS-HG400-8 11-40",
+   "aliases": [
+    "hg400-8 11-40",
+    "cs-hg400-8"
+   ],
+   "name": "Cassette CS-HG400-8 8v 11-40",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 40,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg400-8-11-45",
+   "type": "cassette",
+   "ref": "CS-HG400-8 11-45",
+   "aliases": [
+    "hg400-8 11-45",
+    "cs-hg400-8"
+   ],
+   "name": "Cassette CS-HG400-8 8v 11-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 45,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg51-8-11-28",
+   "type": "cassette",
+   "ref": "CS-HG51-8 11-28",
+   "aliases": [
+    "hg51-8 11-28",
+    "cs-hg51-8"
+   ],
+   "name": "Cassette CS-HG51-8 8v 11-28",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 28,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg51-8-11-30",
+   "type": "cassette",
+   "ref": "CS-HG51-8 11-30",
+   "aliases": [
+    "hg51-8 11-30",
+    "cs-hg51-8"
+   ],
+   "name": "Cassette CS-HG51-8 8v 11-30",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 8,
+    "minCog": 11,
+    "maxCog": 30,
+    "pitch": "hg-8",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg81-10-11-32",
+   "type": "cassette",
+   "ref": "CS-HG81-10 11-32",
+   "aliases": [
+    "hg81-10 11-32",
+    "cs-hg81-10"
+   ],
+   "name": "Cassette CS-HG81-10 10v 11-32",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 32,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "HG (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-hg81-10-11-36",
+   "type": "cassette",
+   "ref": "CS-HG81-10 11-36",
+   "aliases": [
+    "hg81-10 11-36",
+    "cs-hg81-10"
+   ],
+   "name": "Cassette CS-HG81-10 10v 11-36",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "hg-10",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg300-10-11-39",
+   "type": "cassette",
+   "ref": "CS-LG300-10 11-39",
+   "aliases": [
+    "lg300-10 11-39",
+    "cs-lg300-10"
+   ],
+   "name": "Cassette CS-LG300-10 10v 11-39",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 39,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg300-10-11-48",
+   "type": "cassette",
+   "ref": "CS-LG300-10 11-48",
+   "aliases": [
+    "lg300-10 11-48",
+    "cs-lg300-10"
+   ],
+   "name": "Cassette CS-LG300-10 10v 11-48",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 48,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (9v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg300-9-11-36",
+   "type": "cassette",
+   "ref": "CS-LG300-9 11-36",
+   "aliases": [
+    "lg300-9 11-36",
+    "cs-lg300-9"
+   ],
+   "name": "Cassette CS-LG300-9 9v 11-36",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (9v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg300-9-11-41",
+   "type": "cassette",
+   "ref": "CS-LG300-9 11-41",
+   "aliases": [
+    "lg300-9 11-41",
+    "cs-lg300-9"
+   ],
+   "name": "Cassette CS-LG300-9 9v 11-41",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 41,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg400-10-11-39",
+   "type": "cassette",
+   "ref": "CS-LG400-10 11-39",
+   "aliases": [
+    "lg400-10 11-39",
+    "cs-lg400-10"
+   ],
+   "name": "Cassette CS-LG400-10 10v 11-39",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 39,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg400-10-11-43",
+   "type": "cassette",
+   "ref": "CS-LG400-10 11-43",
+   "aliases": [
+    "lg400-10 11-43",
+    "cs-lg400-10"
+   ],
+   "name": "Cassette CS-LG400-10 10v 11-43",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 43,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg400-10-11-48",
+   "type": "cassette",
+   "ref": "CS-LG400-10 11-48",
+   "aliases": [
+    "lg400-10 11-48",
+    "cs-lg400-10"
+   ],
+   "name": "Cassette CS-LG400-10 10v 11-48",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 48,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg400-11-11-45",
+   "type": "cassette",
+   "ref": "CS-LG400-11 11-45",
+   "aliases": [
+    "lg400-11 11-45",
+    "cs-lg400-11"
+   ],
+   "name": "Cassette CS-LG400-11 11v 11-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 45,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg400-11-11-50",
+   "type": "cassette",
+   "ref": "CS-LG400-11 11-50",
+   "aliases": [
+    "lg400-11 11-50",
+    "cs-lg400-11"
+   ],
+   "name": "Cassette CS-LG400-11 11v 11-50",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 50,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (9v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg400-9-11-36",
+   "type": "cassette",
+   "ref": "CS-LG400-9 11-36",
+   "aliases": [
+    "lg400-9 11-36",
+    "cs-lg400-9"
+   ],
+   "name": "Cassette CS-LG400-9 9v 11-36",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 36,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (9v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg400-9-11-41",
+   "type": "cassette",
+   "ref": "CS-LG400-9 11-41",
+   "aliases": [
+    "lg400-9 11-41",
+    "cs-lg400-9"
+   ],
+   "name": "Cassette CS-LG400-9 9v 11-41",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 9,
+    "minCog": 11,
+    "maxCog": 41,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg600-10-11-43",
+   "type": "cassette",
+   "ref": "CS-LG600-10 11-43",
+   "aliases": [
+    "lg600-10 11-43",
+    "cs-lg600-10"
+   ],
+   "name": "Cassette CS-LG600-10 10v 11-43",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 10,
+    "minCog": 11,
+    "maxCog": 43,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg600-11-11-50",
+   "type": "cassette",
+   "ref": "CS-LG600-11 11-50",
+   "aliases": [
+    "lg600-11 11-50",
+    "cs-lg600-11"
+   ],
+   "name": "Cassette CS-LG600-11 11v 11-50",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 50,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg700-11-11-45",
+   "type": "cassette",
+   "ref": "CS-LG700-11 11-45",
+   "aliases": [
+    "lg700-11 11-45",
+    "cs-lg700-11"
+   ],
+   "name": "Cassette CS-LG700-11 11v 11-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 45,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "LinkGlide (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-lg700-11-11-50",
+   "type": "cassette",
+   "ref": "CS-LG700-11 11-50",
+   "aliases": [
+    "lg700-11 11-50",
+    "cs-lg700-11"
+   ],
+   "name": "Cassette CS-LG700-11 11v 11-50",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 50,
+    "pitch": "shimano-linkglide",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m5100-11-11-42",
+   "type": "cassette",
+   "ref": "CS-M5100-11 11-42",
+   "aliases": [
+    "m5100-11 11-42",
+    "cs-m5100-11"
+   ],
+   "name": "Cassette CS-M5100-11 11v 11-42",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 42,
+    "pitch": "hg-11",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6200 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m6200-12-10-51",
+   "type": "cassette",
+   "ref": "CS-M6200-12 10-51",
+   "aliases": [
+    "m6200-12 10-51",
+    "cs-m6200-12"
+   ],
+   "name": "Cassette CS-M6200-12 12v 10-51",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m7000-11-11-40",
+   "type": "cassette",
+   "ref": "CS-M7000-11 11-40",
+   "aliases": [
+    "m7000-11 11-40",
+    "cs-m7000-11"
+   ],
+   "name": "Cassette CS-M7000-11 11v 11-40",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 40,
+    "pitch": "hg-11",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m7100-12-10-45",
+   "type": "cassette",
+   "ref": "CS-M7100-12 10-45",
+   "aliases": [
+    "m7100-12 10-45",
+    "cs-m7100-12"
+   ],
+   "name": "Cassette CS-M7100-12 12v 10-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 45,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7200 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m7200-12-10-51",
+   "type": "cassette",
+   "ref": "CS-M7200-12 10-51",
+   "aliases": [
+    "m7200-12 10-51",
+    "cs-m7200-12"
+   ],
+   "name": "Cassette CS-M7200-12 12v 10-51",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9000 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m9001-11-40",
+   "type": "cassette",
+   "ref": "CS-M9001 11-40",
+   "aliases": [
+    "m9001 11-40",
+    "cs-m9001"
+   ],
+   "name": "Cassette CS-M9001 11v 11-40",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 11,
+    "minCog": 11,
+    "maxCog": 40,
+    "pitch": "hg-11",
+    "freehub": "hg_8_9_10"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m9100-12-10-45",
+   "type": "cassette",
+   "ref": "CS-M9100-12 10-45",
+   "aliases": [
+    "m9100-12 10-45",
+    "cs-m9100-12"
+   ],
+   "name": "Cassette CS-M9100-12 12v 10-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 45,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m9100-12-10-51",
+   "type": "cassette",
+   "ref": "CS-M9100-12 10-51",
+   "aliases": [
+    "m9100-12 10-51",
+    "cs-m9100-12"
+   ],
+   "name": "Cassette CS-M9100-12 12v 10-51",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m9101-12-10-45",
+   "type": "cassette",
+   "ref": "CS-M9101-12 10-45",
+   "aliases": [
+    "m9101-12 10-45",
+    "cs-m9101-12"
+   ],
+   "name": "Cassette CS-M9101-12 12v 10-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 45,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m9101-12-10-51",
+   "type": "cassette",
+   "ref": "CS-M9101-12 10-51",
+   "aliases": [
+    "m9101-12 10-51",
+    "cs-m9101-12"
+   ],
+   "name": "Cassette CS-M9101-12 12v 10-51",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9200 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m9200-12-9-45",
+   "type": "cassette",
+   "ref": "CS-M9200-12 9-45",
+   "aliases": [
+    "m9200-12 9-45",
+    "cs-m9200-12"
+   ],
+   "name": "Cassette CS-M9200-12 12v 9-45",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 9,
+    "maxCog": 45,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Pignon de 9 dents : moyeu Micro Spline compatible 9T requis. Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9200 (12v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-cs-m9200-12-10-51",
+   "type": "cassette",
+   "ref": "CS-M9200-12 10-51",
+   "aliases": [
+    "m9200-12 10-51",
+    "cs-m9200-12"
+   ],
+   "name": "Cassette CS-M9200-12 12v 10-51",
+   "attrs": {
+    "kind": "cassette",
+    "speeds": 12,
+    "minCog": 10,
+    "maxCog": 51,
+    "pitch": "shimano-12",
+    "freehub": "microspline"
+   },
+   "notes": "Étagement non indiqué dans les tableaux Shimano."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-4601-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-4601-SS",
+   "aliases": [
+    "rd 4601 ss"
+   ],
+   "name": "Tiagra RD-4601-SS dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 30,
+    "minLowCog": 25,
+    "cageLength": "SS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Ultegra 6700 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-6700-a-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-6700-A-GS",
+   "aliases": [
+    "rd 6700 a gs"
+   ],
+   "name": "Ultegra RD-6700-A-GS dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 30,
+    "minLowCog": 23,
+    "cageLength": "GS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney A050 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-a050",
+   "type": "rear_derailleur",
+   "ref": "RD-A050",
+   "aliases": [
+    "rd a050"
+   ],
+   "name": "Tourney RD-A050 dérailleur arrière 8v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney FT35 (7v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-ft35-a-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-FT35-A-SS",
+   "aliases": [
+    "rd ft35 a ss"
+   ],
+   "name": "Tourney RD-FT35-A-SS dérailleur arrière 7v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "SS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney FT55 (7v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-ft55-a-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-FT55-A-SS",
+   "aliases": [
+    "rd ft55 a ss"
+   ],
+   "name": "Tourney RD-FT55-A-SS dérailleur arrière 7v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "SS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Acera M3000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m3000-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M3000-SGS",
+   "aliases": [
+    "rd m3000 sgs"
+   ],
+   "name": "Acera RD-M3000-SGS dérailleur arrière 9v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 36,
+    "minLowCog": 32,
+    "cageLength": "SGS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Acera M3000 (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m3020-8",
+   "type": "rear_derailleur",
+   "ref": "RD-M3020-8",
+   "aliases": [
+    "rd m3020 8"
+   ],
+   "name": "Acera RD-M3020-8 dérailleur arrière 8v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 40,
+    "minLowCog": 30
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m310-s",
+   "type": "rear_derailleur",
+   "ref": "RD-M310-S",
+   "aliases": [
+    "rd m310 s"
+   ],
+   "name": "Altus RD-M310-S dérailleur arrière 8v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-8",
+    "maxCog": 34,
+    "minLowCog": 28
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M4100 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m4120-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M4120-SGS",
+   "aliases": [
+    "rd m4120 sgs"
+   ],
+   "name": "Deore RD-M4120-SGS dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-vtt-11",
+    "maxCog": 42,
+    "minLowCog": 42,
+    "cageLength": "SGS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M5100 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m5120-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M5120-SGS",
+   "aliases": [
+    "rd m5120 sgs"
+   ],
+   "name": "Deore RD-M5120-SGS dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-vtt-11",
+    "maxCog": 46,
+    "minLowCog": 42,
+    "cageLength": "SGS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore LinkGlide M5130 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m5130",
+   "type": "rear_derailleur",
+   "ref": "RD-M5130",
+   "aliases": [
+    "rd m5130"
+   ],
+   "name": "Deore LinkGlide RD-M5130 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-cues",
+    "maxCog": 43,
+    "minLowCog": 43
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore LinkGlide M5130 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m5130-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-M5130-GS",
+   "aliases": [
+    "rd m5130 gs"
+   ],
+   "name": "Deore LinkGlide RD-M5130-GS dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-cues",
+    "maxCog": 43,
+    "minLowCog": 43,
+    "cageLength": "GS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6200 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m6200-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M6200-SGS",
+   "aliases": [
+    "rd m6200 sgs"
+   ],
+   "name": "Deore RD-M6200-SGS dérailleur arrière 12v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "shimano-vtt-12",
+    "cageLength": "SGS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Zee M640 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m640",
+   "type": "rear_derailleur",
+   "ref": "RD-M640",
+   "aliases": [
+    "rd m640"
+   ],
+   "name": "Zee RD-M640 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 28,
+    "minLowCog": 23
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7000 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m7000-11-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M7000-11-SGS",
+   "aliases": [
+    "rd m7000 11 sgs"
+   ],
+   "name": "SLX RD-M7000-11-SGS dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-vtt-11",
+    "maxCog": 36,
+    "minLowCog": 32,
+    "cageLength": "SGS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m7100-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M7100-SGS",
+   "aliases": [
+    "rd m7100 sgs"
+   ],
+   "name": "SLX RD-M7100-SGS dérailleur arrière 12v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "shimano-vtt-12",
+    "cageLength": "SGS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m7120-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M7120-SGS",
+   "aliases": [
+    "rd m7120 sgs"
+   ],
+   "name": "SLX RD-M7120-SGS dérailleur arrière 12v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "shimano-vtt-12",
+    "cageLength": "SGS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7200 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m7200-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M7200-SGS",
+   "aliases": [
+    "rd m7200 sgs"
+   ],
+   "name": "SLX RD-M7200-SGS dérailleur arrière 12v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "shimano-vtt-12",
+    "cageLength": "SGS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX LinkGlide M7230 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m7230-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M7230-SGS",
+   "aliases": [
+    "rd m7230 sgs"
+   ],
+   "name": "SLX LinkGlide RD-M7230-SGS dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-cues",
+    "maxCog": 50,
+    "minLowCog": 50,
+    "cageLength": "SGS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT M770 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m772-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-M772-GS",
+   "aliases": [
+    "rd m772 gs"
+   ],
+   "name": "XT RD-M772-GS dérailleur arrière 9v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 36,
+    "minLowCog": 32,
+    "cageLength": "GS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Saint M820 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m820",
+   "type": "rear_derailleur",
+   "ref": "RD-M820",
+   "aliases": [
+    "rd m820"
+   ],
+   "name": "Saint RD-M820 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 28,
+    "minLowCog": 23
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT LinkGlide M8230 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m8230-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M8230-SGS",
+   "aliases": [
+    "rd m8230 sgs"
+   ],
+   "name": "XT LinkGlide RD-M8230-SGS dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-cues",
+    "maxCog": 50,
+    "minLowCog": 50,
+    "cageLength": "SGS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-m9120-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-M9120-SGS",
+   "aliases": [
+    "rd m9120 sgs"
+   ],
+   "name": "XTR RD-M9120-SGS dérailleur arrière 12v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "shimano-vtt-12",
+    "cageLength": "SGS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-r350-10-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-R350-10-SS",
+   "aliases": [
+    "rd r350 10 ss"
+   ],
+   "name": "Shimano RD-R350-10-SS dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-route-10",
+    "maxCog": 34,
+    "minLowCog": 30,
+    "cageLength": "SS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano (9v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-r350-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-R350-GS",
+   "aliases": [
+    "rd r350 gs"
+   ],
+   "name": "Shimano RD-R350-GS dérailleur arrière 9v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 32,
+    "minLowCog": 25,
+    "cageLength": "GS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-r9100-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-R9100-SS",
+   "aliases": [
+    "rd r9100 ss"
+   ],
+   "name": "Dura-Ace RD-R9100-SS dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-route-11",
+    "maxCog": 30,
+    "minLowCog": 25,
+    "cageLength": "SS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX400 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-rx400",
+   "type": "rear_derailleur",
+   "ref": "RD-RX400",
+   "aliases": [
+    "rd rx400"
+   ],
+   "name": "GRX RD-RX400 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-4700",
+    "maxCog": 36,
+    "minLowCog": 32
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX710 (12v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-rx717-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-RX717-SGS",
+   "aliases": [
+    "rd rx717 sgs"
+   ],
+   "name": "GRX RD-RX717-SGS dérailleur arrière 12v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "shimano-route-12",
+    "cageLength": "SGS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T3000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-t3000-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-T3000-SGS",
+   "aliases": [
+    "rd t3000 sgs"
+   ],
+   "name": "Deore (trekking) RD-T3000-SGS dérailleur arrière 9v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-9",
+    "maxCog": 34,
+    "minLowCog": 28,
+    "cageLength": "SGS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T6000 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-t6000",
+   "type": "rear_derailleur",
+   "ref": "RD-T6000",
+   "aliases": [
+    "rd t6000"
+   ],
+   "name": "Deore (trekking) RD-T6000 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "minLowCog": 32
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T670 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-t670-a",
+   "type": "rear_derailleur",
+   "ref": "RD-T670-A",
+   "aliases": [
+    "rd t670 a"
+   ],
+   "name": "Deore (trekking) RD-T670-A dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 34,
+    "minLowCog": 28
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T780 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-t780",
+   "type": "rear_derailleur",
+   "ref": "RD-T780",
+   "aliases": [
+    "rd t780"
+   ],
+   "name": "Deore (trekking) RD-T780 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 34,
+    "minLowCog": 28
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T8000 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-t8000",
+   "type": "rear_derailleur",
+   "ref": "RD-T8000",
+   "aliases": [
+    "rd t8000"
+   ],
+   "name": "Deore (trekking) RD-T8000 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-vtt-10",
+    "maxCog": 36,
+    "minLowCog": 32
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY200 (7v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-ty200-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-TY200-GS",
+   "aliases": [
+    "rd ty200 gs"
+   ],
+   "name": "Tourney RD-TY200-GS dérailleur arrière 7v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "GS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY200 (7v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-ty200-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-TY200-SS",
+   "aliases": [
+    "rd ty200 ss"
+   ],
+   "name": "Tourney RD-TY200-SS dérailleur arrière 7v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "SS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY21 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-ty21-b-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-TY21-B-GS",
+   "aliases": [
+    "rd ty21 b gs"
+   ],
+   "name": "Tourney RD-TY21-B-GS dérailleur arrière 6v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 6,
+    "family": "shimano-6",
+    "cageLength": "GS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY21 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-ty21-b-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-TY21-B-SS",
+   "aliases": [
+    "rd ty21 b ss"
+   ],
+   "name": "Tourney RD-TY21-B-SS dérailleur arrière 6v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 6,
+    "family": "shimano-6",
+    "cageLength": "SS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TY300 (7v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-ty300-sgs",
+   "type": "rear_derailleur",
+   "ref": "RD-TY300-SGS",
+   "aliases": [
+    "rd ty300 sgs"
+   ],
+   "name": "Tourney RD-TY300-SGS dérailleur arrière 7v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 7,
+    "family": "shimano-7",
+    "cageLength": "SGS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TZ50 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-tz50-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-TZ50-GS",
+   "aliases": [
+    "rd tz50 gs"
+   ],
+   "name": "Tourney RD-TZ50-GS dérailleur arrière 6v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 6,
+    "family": "shimano-6",
+    "cageLength": "GS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TZ500 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-tz500-gs",
+   "type": "rear_derailleur",
+   "ref": "RD-TZ500-GS",
+   "aliases": [
+    "rd tz500 gs"
+   ],
+   "name": "Tourney RD-TZ500-GS dérailleur arrière 6v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 6,
+    "family": "shimano-6",
+    "cageLength": "GS"
+   },
+   "notes": "Plus grand pignon et capacité non indiqués dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U2000 (8v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u2000",
+   "type": "rear_derailleur",
+   "ref": "RD-U2000",
+   "aliases": [
+    "rd u2000"
+   ],
+   "name": "CUES RD-U2000 dérailleur arrière 8v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 8,
+    "family": "shimano-cues",
+    "maxCog": 45,
+    "minLowCog": 45
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U3020 (9v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u3020",
+   "type": "rear_derailleur",
+   "ref": "RD-U3020",
+   "aliases": [
+    "rd u3020"
+   ],
+   "name": "CUES RD-U3020 dérailleur arrière 9v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-cues",
+    "maxCog": 36,
+    "minLowCog": 36
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4000 (9v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u4000",
+   "type": "rear_derailleur",
+   "ref": "RD-U4000",
+   "aliases": [
+    "rd u4000"
+   ],
+   "name": "CUES RD-U4000 dérailleur arrière 9v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-cues",
+    "maxCog": 46,
+    "minLowCog": 41
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4010 (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u4010",
+   "type": "rear_derailleur",
+   "ref": "RD-U4010",
+   "aliases": [
+    "rd u4010"
+   ],
+   "name": "CUES RD-U4010 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-cues",
+    "maxCog": 39,
+    "minLowCog": 36
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4020 (9v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u4020",
+   "type": "rear_derailleur",
+   "ref": "RD-U4020",
+   "aliases": [
+    "rd u4020"
+   ],
+   "name": "CUES RD-U4020 dérailleur arrière 9v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "shimano-cues",
+    "maxCog": 36,
+    "minLowCog": 36
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Metrea U5000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u5000-ss",
+   "type": "rear_derailleur",
+   "ref": "RD-U5000-SS",
+   "aliases": [
+    "rd u5000 ss"
+   ],
+   "name": "Metrea RD-U5000-SS dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-route-11",
+    "maxCog": 32,
+    "minLowCog": 28,
+    "cageLength": "SS"
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6000 (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u6000",
+   "type": "rear_derailleur",
+   "ref": "RD-U6000",
+   "aliases": [
+    "rd u6000"
+   ],
+   "name": "CUES RD-U6000 dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-cues",
+    "maxCog": 50,
+    "minLowCog": 48
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6020 (10v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u6020-10",
+   "type": "rear_derailleur",
+   "ref": "RD-U6020-10",
+   "aliases": [
+    "rd u6020 10"
+   ],
+   "name": "CUES RD-U6020-10 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-cues",
+    "maxCog": 39,
+    "minLowCog": 39
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6020 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u6020-11",
+   "type": "rear_derailleur",
+   "ref": "RD-U6020-11",
+   "aliases": [
+    "rd u6020 11"
+   ],
+   "name": "CUES RD-U6020-11 dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-cues",
+    "maxCog": 45,
+    "minLowCog": 45
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6050 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u6050",
+   "type": "rear_derailleur",
+   "ref": "RD-U6050",
+   "aliases": [
+    "rd u6050"
+   ],
+   "name": "CUES RD-U6050 dérailleur arrière 10v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "shimano-cues",
+    "maxCog": 43,
+    "minLowCog": 43
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6070 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u6070",
+   "type": "rear_derailleur",
+   "ref": "RD-U6070",
+   "aliases": [
+    "rd u6070"
+   ],
+   "name": "CUES RD-U6070 dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-cues",
+    "maxCog": 50,
+    "minLowCog": 50
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U8000 (11v)",
+   "src": [
+    "pi-C433",
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u8000",
+   "type": "rear_derailleur",
+   "ref": "RD-U8000",
+   "aliases": [
+    "rd u8000"
+   ],
+   "name": "CUES RD-U8000 dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-cues",
+    "maxCog": 50,
+    "minLowCog": 50
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U8020 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-rd-u8020",
+   "type": "rear_derailleur",
+   "ref": "RD-U8020",
+   "aliases": [
+    "rd u8020"
+   ],
+   "name": "CUES RD-U8020 dérailleur arrière 11v",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "shimano-cues",
+    "maxCog": 45,
+    "minLowCog": 45
+   },
+   "notes": "Capacité totale non indiquée dans les tableaux Shimano : à compléter."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Claris 2400 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-2400",
+   "type": "shifter",
+   "ref": "SL-2400",
+   "aliases": [
+    "sl 2400"
+   ],
+   "name": "Claris SL-2400 leviers 8v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Sora 3500 (9v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-3500",
+   "type": "shifter",
+   "ref": "SL-3500",
+   "aliases": [
+    "sl 3500"
+   ],
+   "name": "Sora SL-3500 leviers 9v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4600 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-4600",
+   "type": "shifter",
+   "ref": "SL-4600",
+   "aliases": [
+    "sl 4600"
+   ],
+   "name": "Tiagra SL-4600 leviers 10v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-4700",
+   "type": "shifter",
+   "ref": "SL-4700",
+   "aliases": [
+    "sl 4700"
+   ],
+   "name": "Tiagra SL-4700 leviers 10v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney A050 (7v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-a050-7r",
+   "type": "shifter",
+   "ref": "SL-A050-7R",
+   "aliases": [
+    "sl a050 7r"
+   ],
+   "name": "Tourney SL-A050-7R manette droite 7v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-bsr1",
+   "type": "shifter",
+   "ref": "SL-BSR1",
+   "aliases": [
+    "sl bsr1"
+   ],
+   "name": "Shimano SL-BSR1 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M2000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m2000-r",
+   "type": "shifter",
+   "ref": "SL-M2000-R",
+   "aliases": [
+    "sl m2000 r"
+   ],
+   "name": "Altus SL-M2000-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M2000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m2010-9r",
+   "type": "shifter",
+   "ref": "SL-M2010-9R",
+   "aliases": [
+    "sl m2010 9r"
+   ],
+   "name": "Altus SL-M2010-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Acera M3000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m3000-r",
+   "type": "shifter",
+   "ref": "SL-M3000-R",
+   "aliases": [
+    "sl m3000 r"
+   ],
+   "name": "Acera SL-M3000-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m310-8r",
+   "type": "shifter",
+   "ref": "SL-M310-8R",
+   "aliases": [
+    "sl m310 8r"
+   ],
+   "name": "Altus SL-M310-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m315-8r",
+   "type": "shifter",
+   "ref": "SL-M315-8R",
+   "aliases": [
+    "sl m315 8r"
+   ],
+   "name": "Altus SL-M315-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Acera M360 (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m360-r",
+   "type": "shifter",
+   "ref": "SL-M360-R",
+   "aliases": [
+    "sl m360 r"
+   ],
+   "name": "Acera SL-M360-R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m4000-r",
+   "type": "shifter",
+   "ref": "SL-M4000-R",
+   "aliases": [
+    "sl m4000 r"
+   ],
+   "name": "Alivio SL-M4000-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M4100 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m4100-r",
+   "type": "shifter",
+   "ref": "SL-M4100-R",
+   "aliases": [
+    "sl m4100 r",
+    "sl-m4100-ir"
+   ],
+   "name": "Deore SL-M4100-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore LinkGlide M5130 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m5130-r10",
+   "type": "shifter",
+   "ref": "SL-M5130-R10",
+   "aliases": [
+    "sl m5130 r10"
+   ],
+   "name": "Deore LinkGlide SL-M5130-R10 manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M610 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m610-r",
+   "type": "shifter",
+   "ref": "SL-M610-R",
+   "aliases": [
+    "sl m610 r",
+    "sl-m610-ir"
+   ],
+   "name": "Deore SL-M610-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6100 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m6100-r",
+   "type": "shifter",
+   "ref": "SL-M6100-R",
+   "aliases": [
+    "sl m6100 r",
+    "sl-m6100-ir"
+   ],
+   "name": "Deore SL-M6100-R manette droite 12v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6200 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m6200-r",
+   "type": "shifter",
+   "ref": "SL-M6200-R",
+   "aliases": [
+    "sl m6200 r",
+    "sl-m6200-ir"
+   ],
+   "name": "Deore SL-M6200-R manette droite 12v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore M6200 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m6210-r",
+   "type": "shifter",
+   "ref": "SL-M6210-R",
+   "aliases": [
+    "sl m6210 r",
+    "sl-m6210-ir"
+   ],
+   "name": "Deore SL-M6210-R manette droite 12v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore LinkGlide M6230 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m6230-r11",
+   "type": "shifter",
+   "ref": "SL-M6230-R11",
+   "aliases": [
+    "sl m6230 r11",
+    "sl-m6230-ir11"
+   ],
+   "name": "Deore LinkGlide SL-M6230-R11 manette droite 11v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Zee M640 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m640-r",
+   "type": "shifter",
+   "ref": "SL-M640-R",
+   "aliases": [
+    "sl m640 r"
+   ],
+   "name": "Zee SL-M640-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "SLX M7100 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m7100-r",
+   "type": "shifter",
+   "ref": "SL-M7100-R",
+   "aliases": [
+    "sl m7100 r",
+    "sl-m7100-ir"
+   ],
+   "name": "SLX SL-M7100-R manette droite 12v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Saint M820 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m820-r",
+   "type": "shifter",
+   "ref": "SL-M820-R",
+   "aliases": [
+    "sl m820 r",
+    "sl-m820-b-ir"
+   ],
+   "name": "Saint SL-M820-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XT LinkGlide M8230 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m8230-r11",
+   "type": "shifter",
+   "ref": "SL-M8230-R11",
+   "aliases": [
+    "sl m8230 r11",
+    "sl-m8230-ir11"
+   ],
+   "name": "XT LinkGlide SL-M8230-R11 manette droite 11v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "XTR M9100 (12v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-m9100-r",
+   "type": "shifter",
+   "ref": "SL-M9100-R",
+   "aliases": [
+    "sl m9100 r",
+    "sl-m9100-ir"
+   ],
+   "name": "XTR SL-M9100-R manette droite 12v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 12,
+    "system": "mecanique",
+    "family": "shimano-vtt-12",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Claris R2000 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-r2000",
+   "type": "shifter",
+   "ref": "SL-R2000",
+   "aliases": [
+    "sl r2000"
+   ],
+   "name": "Claris SL-R2000 leviers 8v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Sora R3000 (9v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-r3000",
+   "type": "shifter",
+   "ref": "SL-R3000",
+   "aliases": [
+    "sl r3000"
+   ],
+   "name": "Sora SL-R3000 leviers 9v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-r780",
+   "type": "shifter",
+   "ref": "SL-R780",
+   "aliases": [
+    "sl r780"
+   ],
+   "name": "Shimano SL-R780 leviers 10v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-route-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney Revoshift (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rs34-6r",
+   "type": "shifter",
+   "ref": "SL-RS34-6R",
+   "aliases": [
+    "sl rs34 6r"
+   ],
+   "name": "Tourney Revoshift SL-RS34-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney Revoshift (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rs35-6r",
+   "type": "shifter",
+   "ref": "SL-RS35-6R",
+   "aliases": [
+    "sl rs35 6r"
+   ],
+   "name": "Tourney Revoshift SL-RS35-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney Revoshift (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rs36-6r",
+   "type": "shifter",
+   "ref": "SL-RS36-6R",
+   "aliases": [
+    "sl rs36 6r"
+   ],
+   "name": "Tourney Revoshift SL-RS36-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney Revoshift (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rs45-6r",
+   "type": "shifter",
+   "ref": "SL-RS45-6R",
+   "aliases": [
+    "sl rs45 6r"
+   ],
+   "name": "Tourney Revoshift SL-RS45-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney Revoshift (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rs45-8r",
+   "type": "shifter",
+   "ref": "SL-RS45-8R",
+   "aliases": [
+    "sl rs45 8r"
+   ],
+   "name": "Tourney Revoshift SL-RS45-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney Revoshift (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rs47-8r",
+   "type": "shifter",
+   "ref": "SL-RS47-8R",
+   "aliases": [
+    "sl rs47 8r"
+   ],
+   "name": "Tourney Revoshift SL-RS47-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS700 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rs700",
+   "type": "shifter",
+   "ref": "SL-RS700",
+   "aliases": [
+    "sl rs700"
+   ],
+   "name": "Shimano RS SL-RS700 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney Revoshift (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rv200-6r",
+   "type": "shifter",
+   "ref": "SL-RV200-6R",
+   "aliases": [
+    "sl rv200 6r"
+   ],
+   "name": "Tourney Revoshift SL-RV200-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney Revoshift (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rv300-6r",
+   "type": "shifter",
+   "ref": "SL-RV300-6R",
+   "aliases": [
+    "sl rv300 6r"
+   ],
+   "name": "Tourney Revoshift SL-RV300-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney Revoshift (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rv400-6r",
+   "type": "shifter",
+   "ref": "SL-RV400-6R",
+   "aliases": [
+    "sl rv400 6r"
+   ],
+   "name": "Tourney Revoshift SL-RV400-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney Revoshift (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-rv400-8r",
+   "type": "shifter",
+   "ref": "SL-RV400-8R",
+   "aliases": [
+    "sl rv400 8r"
+   ],
+   "name": "Tourney Revoshift SL-RV400-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "poignee_tournante"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-sy20a",
+   "type": "shifter",
+   "ref": "SL-SY20A",
+   "aliases": [
+    "sl sy20a"
+   ],
+   "name": "Shimano SL-SY20A leviers 8v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T6000 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-t6000-r",
+   "type": "shifter",
+   "ref": "SL-T6000-R",
+   "aliases": [
+    "sl t6000 r"
+   ],
+   "name": "Deore (trekking) SL-T6000-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T610 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-t610-r",
+   "type": "shifter",
+   "ref": "SL-T610-R",
+   "aliases": [
+    "sl t610 r"
+   ],
+   "name": "Deore (trekking) SL-T610-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T670 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-t670-r",
+   "type": "shifter",
+   "ref": "SL-T670-R",
+   "aliases": [
+    "sl t670 r"
+   ],
+   "name": "Deore (trekking) SL-T670-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T8000 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-t8000-r",
+   "type": "shifter",
+   "ref": "SL-T8000-R",
+   "aliases": [
+    "sl t8000 r"
+   ],
+   "name": "Deore (trekking) SL-T8000-R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-vtt-10",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TX30 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-tx30-6r",
+   "type": "shifter",
+   "ref": "SL-TX30-6R",
+   "aliases": [
+    "sl tx30 6r"
+   ],
+   "name": "Tourney SL-TX30-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TX50 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-tx50-6r",
+   "type": "shifter",
+   "ref": "SL-TX50-6R",
+   "aliases": [
+    "sl tx50 6r"
+   ],
+   "name": "Tourney SL-TX50-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TX50 (7v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-tx50-7r",
+   "type": "shifter",
+   "ref": "SL-TX50-7R",
+   "aliases": [
+    "sl tx50 7r"
+   ],
+   "name": "Tourney SL-TX50-7R manette droite 7v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TZ20 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-tz20-6r",
+   "type": "shifter",
+   "ref": "SL-TZ20-6R",
+   "aliases": [
+    "sl tz20 6r"
+   ],
+   "name": "Tourney SL-TZ20-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TZ500 (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-tz500-6r",
+   "type": "shifter",
+   "ref": "SL-TZ500-6R",
+   "aliases": [
+    "sl tz500 6r"
+   ],
+   "name": "Tourney SL-TZ500-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u4000-9r",
+   "type": "shifter",
+   "ref": "SL-U4000-9R",
+   "aliases": [
+    "sl u4000 9r"
+   ],
+   "name": "CUES SL-U4000-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4001 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u4001-9r",
+   "type": "shifter",
+   "ref": "SL-U4001-9R",
+   "aliases": [
+    "sl u4001 9r"
+   ],
+   "name": "CUES SL-U4001-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4010 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u4010-9r",
+   "type": "shifter",
+   "ref": "SL-U4010-9R",
+   "aliases": [
+    "sl u4010 9r"
+   ],
+   "name": "CUES SL-U4010-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4011 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u4011-9r",
+   "type": "shifter",
+   "ref": "SL-U4011-9R",
+   "aliases": [
+    "sl u4011 9r"
+   ],
+   "name": "CUES SL-U4011-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4050 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u4050-9r",
+   "type": "shifter",
+   "ref": "SL-U4050-9R",
+   "aliases": [
+    "sl u4050 9r"
+   ],
+   "name": "CUES SL-U4050-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Metrea U5000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u5000",
+   "type": "shifter",
+   "ref": "SL-U5000",
+   "aliases": [
+    "sl u5000"
+   ],
+   "name": "Metrea SL-U5000 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6000 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u6000-10r",
+   "type": "shifter",
+   "ref": "SL-U6000-10R",
+   "aliases": [
+    "sl u6000 10r"
+   ],
+   "name": "CUES SL-U6000-10R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6000 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u6000-11r",
+   "type": "shifter",
+   "ref": "SL-U6000-11R",
+   "aliases": [
+    "sl u6000 11r"
+   ],
+   "name": "CUES SL-U6000-11R manette droite 11v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6001 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u6001-10r",
+   "type": "shifter",
+   "ref": "SL-U6001-10R",
+   "aliases": [
+    "sl u6001 10r"
+   ],
+   "name": "CUES SL-U6001-10R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6001 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u6001-11r",
+   "type": "shifter",
+   "ref": "SL-U6001-11R",
+   "aliases": [
+    "sl u6001 11r"
+   ],
+   "name": "CUES SL-U6001-11R manette droite 11v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6050 (10v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u6050-10r",
+   "type": "shifter",
+   "ref": "SL-U6050-10R",
+   "aliases": [
+    "sl u6050 10r"
+   ],
+   "name": "CUES SL-U6050-10R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U6050 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u6050-11r",
+   "type": "shifter",
+   "ref": "SL-U6050-11R",
+   "aliases": [
+    "sl u6050 11r"
+   ],
+   "name": "CUES SL-U6050-11R manette droite 11v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U8000 (11v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-sl-u8000-11r",
+   "type": "shifter",
+   "ref": "SL-U8000-11R",
+   "aliases": [
+    "sl u8000 11r",
+    "sl-u8000-11ir"
+   ],
+   "name": "CUES SL-U8000-11R manette droite 11v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-cues",
+    "form": "gachette_vtt"
+   }
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Claris 2300 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-2300",
+   "type": "shifter",
+   "ref": "ST-2300",
+   "aliases": [
+    "st 2300"
+   ],
+   "name": "Claris ST-2300 leviers 8v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-4720",
+   "type": "shifter",
+   "ref": "ST-4720",
+   "aliases": [
+    "st 4720"
+   ],
+   "name": "Tiagra ST-4720 leviers 10v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tiagra 4700 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-4725",
+   "type": "shifter",
+   "ref": "ST-4725",
+   "aliases": [
+    "st 4725"
+   ],
+   "name": "Tiagra ST-4725 leviers 10v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-9000",
+   "type": "shifter",
+   "ref": "ST-9000",
+   "aliases": [
+    "st 9000"
+   ],
+   "name": "Dura-Ace ST-9000 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace 9000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-9001",
+   "type": "shifter",
+   "ref": "ST-9001",
+   "aliases": [
+    "st 9001"
+   ],
+   "name": "Dura-Ace ST-9001 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Tourney A070 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-a070",
+   "type": "shifter",
+   "ref": "ST-A070",
+   "aliases": [
+    "st a070"
+   ],
+   "name": "Tourney ST-A070 leviers 8v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (6v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef41-6r",
+   "type": "shifter",
+   "ref": "ST-EF41-6R",
+   "aliases": [
+    "st ef41 6r"
+   ],
+   "name": "EZ-Fire ST-EF41-6R manette droite 6v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 6,
+    "system": "mecanique",
+    "family": "shimano-6",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (7v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef41-7r",
+   "type": "shifter",
+   "ref": "ST-EF41-7R",
+   "aliases": [
+    "st ef41 7r"
+   ],
+   "name": "EZ-Fire ST-EF41-7R manette droite 7v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 7,
+    "system": "mecanique",
+    "family": "shimano-7",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef500-8r2a",
+   "type": "shifter",
+   "ref": "ST-EF500-8R2A",
+   "aliases": [
+    "st ef500 8r2a"
+   ],
+   "name": "EZ-Fire ST-EF500-8R2A manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef500-8r4a",
+   "type": "shifter",
+   "ref": "ST-EF500-8R4A",
+   "aliases": [
+    "st ef500 8r4a"
+   ],
+   "name": "EZ-Fire ST-EF500-8R4A manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef505-8r",
+   "type": "shifter",
+   "ref": "ST-EF505-8R",
+   "aliases": [
+    "st ef505 8r"
+   ],
+   "name": "EZ-Fire ST-EF505-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef505-9r",
+   "type": "shifter",
+   "ref": "ST-EF505-9R",
+   "aliases": [
+    "st ef505 9r"
+   ],
+   "name": "EZ-Fire ST-EF505-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef510-8r2a",
+   "type": "shifter",
+   "ref": "ST-EF510-8R2A",
+   "aliases": [
+    "st ef510 8r2a"
+   ],
+   "name": "EZ-Fire ST-EF510-8R2A manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef510-8r4a",
+   "type": "shifter",
+   "ref": "ST-EF510-8R4A",
+   "aliases": [
+    "st ef510 8r4a"
+   ],
+   "name": "EZ-Fire ST-EF510-8R4A manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef510-9r2a",
+   "type": "shifter",
+   "ref": "ST-EF510-9R2A",
+   "aliases": [
+    "st ef510 9r2a"
+   ],
+   "name": "EZ-Fire ST-EF510-9R2A manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef515-8r",
+   "type": "shifter",
+   "ref": "ST-EF515-8R",
+   "aliases": [
+    "st ef515 8r"
+   ],
+   "name": "EZ-Fire ST-EF515-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef65-8r2",
+   "type": "shifter",
+   "ref": "ST-EF65-8R2",
+   "aliases": [
+    "st ef65 8r2"
+   ],
+   "name": "EZ-Fire ST-EF65-8R2 manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef65-8r4",
+   "type": "shifter",
+   "ref": "ST-EF65-8R4",
+   "aliases": [
+    "st ef65 8r4"
+   ],
+   "name": "EZ-Fire ST-EF65-8R4 manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef65-9r2",
+   "type": "shifter",
+   "ref": "ST-EF65-9R2",
+   "aliases": [
+    "st ef65 9r2"
+   ],
+   "name": "EZ-Fire ST-EF65-9R2 manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "EZ-Fire (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-ef65-9r4",
+   "type": "shifter",
+   "ref": "ST-EF65-9R4",
+   "aliases": [
+    "st ef65 9r4"
+   ],
+   "name": "EZ-Fire ST-EF65-9R4 manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Acera M3000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-m3050-r",
+   "type": "shifter",
+   "ref": "ST-M3050-R",
+   "aliases": [
+    "st m3050 r"
+   ],
+   "name": "Acera ST-M3050-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Altus M310 (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-m310-8r2",
+   "type": "shifter",
+   "ref": "ST-M310-8R2",
+   "aliases": [
+    "st m310 8r2"
+   ],
+   "name": "Altus ST-M310-8R2 manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-m4000-r",
+   "type": "shifter",
+   "ref": "ST-M4000-R",
+   "aliases": [
+    "st m4000 r"
+   ],
+   "name": "Alivio ST-M4000-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Alivio M4000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-m4050-r",
+   "type": "shifter",
+   "ref": "ST-M4050-R",
+   "aliases": [
+    "st m4050 r"
+   ],
+   "name": "Alivio ST-M4050-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r240",
+   "type": "shifter",
+   "ref": "ST-R240",
+   "aliases": [
+    "st r240"
+   ],
+   "name": "Shimano ST-R240 leviers 8v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano (9v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r350",
+   "type": "shifter",
+   "ref": "ST-R350",
+   "aliases": [
+    "st r350"
+   ],
+   "name": "Shimano ST-R350 leviers 9v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r7020",
+   "type": "shifter",
+   "ref": "ST-R7020",
+   "aliases": [
+    "st r7020"
+   ],
+   "name": "105 ST-R7020 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "105 R7000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r7025",
+   "type": "shifter",
+   "ref": "ST-R7025",
+   "aliases": [
+    "st r7025"
+   ],
+   "name": "105 ST-R7025 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r8000",
+   "type": "shifter",
+   "ref": "ST-R8000",
+   "aliases": [
+    "st r8000"
+   ],
+   "name": "Ultegra ST-R8000 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Ultegra R8000 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r8025",
+   "type": "shifter",
+   "ref": "ST-R8025",
+   "aliases": [
+    "st r8025"
+   ],
+   "name": "Ultegra ST-R8025 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r9100",
+   "type": "shifter",
+   "ref": "ST-R9100",
+   "aliases": [
+    "st r9100"
+   ],
+   "name": "Dura-Ace ST-R9100 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Dura-Ace R9100 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-r9120",
+   "type": "shifter",
+   "ref": "ST-R9120",
+   "aliases": [
+    "st r9120"
+   ],
+   "name": "Dura-Ace ST-R9120 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS200 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-rs200",
+   "type": "shifter",
+   "ref": "ST-RS200",
+   "aliases": [
+    "st rs200"
+   ],
+   "name": "Shimano RS ST-RS200 leviers 8v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS400 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-rs405",
+   "type": "shifter",
+   "ref": "ST-RS405",
+   "aliases": [
+    "st rs405"
+   ],
+   "name": "Shimano RS ST-RS405 leviers 10v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS500 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-rs505",
+   "type": "shifter",
+   "ref": "ST-RS505",
+   "aliases": [
+    "st rs505"
+   ],
+   "name": "Shimano RS ST-RS505 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Shimano RS RS680 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-rs685",
+   "type": "shifter",
+   "ref": "ST-RS685",
+   "aliases": [
+    "st rs685"
+   ],
+   "name": "Shimano RS ST-RS685 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX400 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-rx400",
+   "type": "shifter",
+   "ref": "ST-RX400",
+   "aliases": [
+    "st rx400"
+   ],
+   "name": "GRX ST-RX400 leviers 10v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-4700",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "gravel",
+   "generation": "GRX RX600 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-rx600",
+   "type": "shifter",
+   "ref": "ST-RX600",
+   "aliases": [
+    "st rx600"
+   ],
+   "name": "GRX ST-RX600 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T3000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-t3000-r",
+   "type": "shifter",
+   "ref": "ST-T3000-R",
+   "aliases": [
+    "st t3000 r"
+   ],
+   "name": "Deore (trekking) ST-T3000-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Deore (trekking) T4000 (9v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-t4000-r",
+   "type": "shifter",
+   "ref": "ST-T4000-R",
+   "aliases": [
+    "st t4000 r"
+   ],
+   "name": "Deore (trekking) ST-T4000-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-9",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "Tourney TX800 (8v)",
+   "src": [
+    "pi-C433"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-tx800-8r",
+   "type": "shifter",
+   "ref": "ST-TX800-8R",
+   "aliases": [
+    "st tx800 8r"
+   ],
+   "name": "Tourney ST-TX800-8R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-8",
+    "form": "gachette_vtt"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U2030 (8v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-u2030-r",
+   "type": "shifter",
+   "ref": "ST-U2030-R",
+   "aliases": [
+    "st u2030 r"
+   ],
+   "name": "CUES ST-U2030-R manette droite 8v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 8,
+    "system": "mecanique",
+    "family": "shimano-cues"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U3030 (10v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-u3030-10r",
+   "type": "shifter",
+   "ref": "ST-U3030-10R",
+   "aliases": [
+    "st u3030 10r"
+   ],
+   "name": "CUES ST-U3030-10R manette droite 10v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 10,
+    "system": "mecanique",
+    "family": "shimano-cues"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U3030 (9v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-u3030-9r",
+   "type": "shifter",
+   "ref": "ST-U3030-9R",
+   "aliases": [
+    "st u3030 9r"
+   ],
+   "name": "CUES ST-U3030-9R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-cues"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "vtt",
+   "generation": "CUES U4030 (9v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-u4030-r",
+   "type": "shifter",
+   "ref": "ST-U4030-R",
+   "aliases": [
+    "st u4030 r"
+   ],
+   "name": "CUES ST-U4030-R manette droite 9v",
+   "attrs": {
+    "side": "arriere",
+    "speeds": 9,
+    "system": "mecanique",
+    "family": "shimano-cues"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  },
+  {
+   "brand": "Shimano",
+   "discipline": "route",
+   "generation": "Metrea U5060 (11v)",
+   "src": [
+    "pi-C454"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "id": "shimano-st-u5060",
+   "type": "shifter",
+   "ref": "ST-U5060",
+   "aliases": [
+    "st u5060"
+   ],
+   "name": "Metrea ST-U5060 leviers 11v",
+   "attrs": {
+    "side": "les_deux",
+    "speeds": 11,
+    "system": "mecanique",
+    "family": "shimano-route-11",
+    "form": "levier_route"
+   },
+   "notes": "Frein intégré : type et caractéristiques non renseignés par le tableau de transmission, vérifier sur la pièce."
+  }
+ ]
+}
