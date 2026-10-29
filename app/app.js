@@ -6,6 +6,7 @@ import { createProjetView } from './projet.js';
 import { createParcourirView } from './parcourir.js';
 import { crankSvg, faviconHref } from './logo.js';
 import { openVault } from './vault.js';
+import { guideHtml } from './guides.js';
 import { TERMS_VERSION, gateHtml, conditionsHtml, footerHtml, safetyBanner, expeditionHtml, expeditionBanner, EXPEDITION_HOURS, EXPEDITION_WORD } from './legal.js';
 
 const CATALOGUE_URL = './catalogue.json';
@@ -59,6 +60,12 @@ const themeBtn = document.getElementById('theme');
 function applyTheme(theme) {
   if (theme) document.documentElement.dataset.theme = theme;
   else delete document.documentElement.dataset.theme;
+  // Appli Android : icônes de la barre d'état claires sur fond sombre, et inversement.
+  const bars = window.Capacitor?.Plugins?.SystemBars;
+  if (bars) {
+    const dark = theme ? theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    bars.setStyle({ style: dark ? 'DARK' : 'LIGHT' }).catch(() => {});
+  }
 }
 themeBtn.addEventListener('click', () => {
   const dark = document.documentElement.dataset.theme
@@ -273,6 +280,7 @@ function resultCard({ part, result: r }, i = 0) {
     ${incompatible ? '' : block(t('À prévoir en plus'), r.extraParts)}
     ${block(t('Données manquantes'), r.missing)}
     ${noticeLink(part)}
+    ${incompatible ? '' : guideHtml(part, esc)}
     <details><summary>${t('Détail des vérifications et sources')}</summary>
       ${findings}
       ${r.notes.map((n) => `<p class="finding muted">${x(n)}</p>`).join('')}
@@ -334,6 +342,7 @@ function partSummary(part, { actions = '' } = {}) {
     ${isSafetyPart(part) ? safetyBanner() : ''}
     ${part.notes ? `<p class="note">${x(part.notes)}</p>` : ''}
     ${noticeLink(part)}
+    ${guideHtml(part, esc)}
     <details><summary>${t('Caractéristiques et sources')}</summary><dl>${attrs}</dl>${sourcesHtml(part.sources)}</details>
     ${actions}
   </section>`;
