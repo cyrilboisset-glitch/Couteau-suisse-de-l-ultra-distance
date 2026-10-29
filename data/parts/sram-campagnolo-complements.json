@@ -1,0 +1,599 @@
+{
+ "_meta": {
+  "description": "SRAM et Campagnolo : dérailleurs complétés lors de la passe complète (sources : SRAM, revendeurs, presse). Valeurs manquantes signalées."
+ },
+ "sources": {
+  "mb-x4": {
+   "kind": "revendeur",
+   "ref": "Modern Bike – SRAM X4 7/8/9v chape longue : 1:1, 34 dents max, capacité 45",
+   "url": "https://www.modernbike.com/sram-x4-7-8-9-speed-rear-derailleur-long-cage"
+  },
+  "sram-x7-9": {
+   "kind": "officiel",
+   "ref": "SRAM – X7 rear derailleur 9v : tirage 1:1, 36 dents max",
+   "url": "https://www.sram.com/en/sram/models/rd-x7-a1"
+  },
+  "cc-red22": {
+   "kind": "revendeur",
+   "ref": "Competitive Cyclist – SRAM Red 22 : chape courte 28 dents, moyenne (WiFLi) 32 dents",
+   "url": "https://www.competitivecyclist.com/sram-red-22-rear-derailleur"
+  },
+  "sf-force22": {
+   "kind": "revendeur",
+   "ref": "Sport Factory – SRAM Force 22 chape courte 28 dents max",
+   "url": "https://sportfactoryproshop.com/sram-force-22-rear-derailleur-short-cage/"
+  },
+  "excel-force22": {
+   "kind": "revendeur",
+   "ref": "Excel Sports – SRAM Force 22 : courte 28 dents / 33 de capacité, moyenne 32 dents / 37",
+   "url": "https://www.excelsports.com/sram-force-22-11-speed-rear-derailleur"
+  },
+  "cn-sram-road": {
+   "kind": "presse",
+   "ref": "Cyclingnews – groupes route SRAM : Rival 1 chape courte ou longue (36 ou 42 dents), Force 1",
+   "url": "https://www.cyclingnews.com/features/sram-road-groupsets/"
+  },
+  "lost-x01e": {
+   "kind": "revendeur",
+   "ref": "The Lost Co – SRAM X01 Eagle : 52 dents max, capacité 42",
+   "url": "https://thelostco.com/products/sram-x01-eagle-derailleur-52t"
+  },
+  "nw-apexeagle": {
+   "kind": "revendeur",
+   "ref": "Northwest Bicycle – SRAM Apex Eagle 12v chape longue, 52 dents max, capacité 42",
+   "url": "https://northwestbicycle.com/products/sram-apex-eagle-rear-derailleur-12-speed-long-cage-52t-max-black-d1"
+  },
+  "amz-s200": {
+   "kind": "revendeur",
+   "ref": "Amazon – SRAM S200 Eagle : chape longue, 52 dents max, cassettes 10-50 et 10-52, capacité 42",
+   "url": "https://www.amazon.com/SRAM-Eagle-Derailleur-12-Speed-Black/dp/B0GZ89Q7G8"
+  },
+  "bm-eagle70": {
+   "kind": "revendeur",
+   "ref": "Bikeman – SRAM Eagle 70 T-Type : 52 dents max, capacité 42, cadre UDH obligatoire",
+   "url": "https://www.bikeman.com/RD0167.html"
+  },
+  "velo-campa11": {
+   "kind": "presse",
+   "ref": "Velo – capacité des dérailleurs Campagnolo 11v : 29 dents max en chape courte ; Potenza et versions 2018 Chorus / Record / Super Record en chape moyenne : 32 dents",
+   "url": "https://velo.outsideonline.com/road/road-gear/technical-faq-hill-gradients-campagnolo-derailleur-capacity-it-bands/"
+  },
+  "sprockets-rec10": {
+   "kind": "revendeur",
+   "ref": "Sprockets – Campagnolo Record 10v chape courte : jusqu'à 13-26",
+   "url": "https://sprockets.uk.com/products/campagnolo-record-rear-derailleur-10-speed-short-cage-carbon"
+  },
+  "tc-rec10": {
+   "kind": "revendeur",
+   "ref": "TotalCycling – Campagnolo Record 10v : chape courte 26 dents, moyenne 29 dents",
+   "url": "https://www.totalcycling.com/en/us/Campagnolo-Record-10-Speed-Rear-Derailleur/m-18976.aspx"
+  },
+  "b24-sr12": {
+   "kind": "revendeur",
+   "ref": "Bike24 – Campagnolo Super Record 2x12 : 34 dents max (11-29, 11-32, 11-34)",
+   "url": "https://www.bike24.com/p2355748.html"
+  }
+ },
+ "parts": [
+  {
+   "id": "sram-rd-x4-9",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X4 9v chape longue",
+   "aliases": [
+    "rd x4 9v chape longue"
+   ],
+   "name": "SRAM X4 dérailleur arrière 7/8/9v chape longue",
+   "discipline": "vtt",
+   "generation": "X4 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sram-1-1",
+    "maxCog": 34,
+    "totalCapacity": 45,
+    "cageLength": "long",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "mb-x4"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Tirage SRAM 1:1 : uniquement avec une manette SRAM 1:1 (7, 8 ou 9 vitesses)."
+  },
+  {
+   "id": "sram-rd-x7-9-long",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X7 9v chape longue",
+   "aliases": [
+    "rd x7 9v chape longue"
+   ],
+   "name": "SRAM X7 dérailleur arrière 9v chape longue",
+   "discipline": "vtt",
+   "generation": "X7 (9v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 9,
+    "family": "sram-1-1",
+    "maxCog": 36,
+    "cageLength": "long",
+    "maxFrontChainrings": 3
+   },
+   "src": [
+    "sram-x7-9"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Tirage SRAM 1:1. Capacité non trouvée."
+  },
+  {
+   "id": "sram-rd-red22-ss",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Red 22 chape courte",
+   "aliases": [
+    "rd red 22 chape courte"
+   ],
+   "name": "SRAM Red 22 dérailleur arrière 11v chape courte",
+   "discipline": "route",
+   "generation": "Red 22 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 28,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2,
+    "totalCapacity": 33
+   },
+   "src": [
+    "cc-red22"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-red22-wifli",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Red 22 chape moyenne",
+   "aliases": [
+    "rd red 22 chape moyenne"
+   ],
+   "name": "SRAM Red 22 dérailleur arrière 11v chape moyenne",
+   "discipline": "route",
+   "generation": "Red 22 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 32,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "cc-red22"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-force22-ss",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Force 22 chape courte",
+   "aliases": [
+    "rd force 22 chape courte"
+   ],
+   "name": "SRAM Force 22 dérailleur arrière 11v chape courte",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 28,
+    "totalCapacity": 33,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "excel-force22",
+    "sf-force22"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-force22-wifli",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Force 22 chape moyenne",
+   "aliases": [
+    "rd force 22 chape moyenne"
+   ],
+   "name": "SRAM Force 22 dérailleur arrière 11v chape moyenne",
+   "discipline": "route",
+   "generation": "Force 22 / Rival 22 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 32,
+    "totalCapacity": 37,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "excel-force22"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-rival1-long",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Rival 1 chape longue",
+   "aliases": [
+    "rd rival 1 chape longue"
+   ],
+   "name": "SRAM Rival 1 dérailleur arrière 11v chape longue",
+   "discipline": "gravel",
+   "generation": "Apex 1 / Rival 1 / Force 1 (11v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "sram-route-11",
+    "maxCog": 42,
+    "cageLength": "long",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "cn-sram-road"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Chape courte : 36 dents max. Valeurs d'après la presse : à confirmer sur la fiche SRAM."
+  },
+  {
+   "id": "sram-rd-x01-eagle",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD X01 Eagle",
+   "aliases": [
+    "rd x01 eagle"
+   ],
+   "name": "SRAM X01 Eagle dérailleur arrière 12v",
+   "discipline": "vtt",
+   "generation": "X01 Eagle (12v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "sram-eagle-meca",
+    "maxCog": 52,
+    "minCog": 10,
+    "totalCapacity": 42,
+    "cageLength": "long",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "lost-x01e"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-apex-eagle",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Apex Eagle",
+   "aliases": [
+    "rd apex eagle"
+   ],
+   "name": "SRAM Apex Eagle dérailleur arrière 12v (gravel)",
+   "discipline": "gravel",
+   "generation": "Apex Eagle (12v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "sram-eagle-meca",
+    "maxCog": 52,
+    "minCog": 10,
+    "totalCapacity": 42,
+    "cageLength": "long",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "nw-apexeagle"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-s200-eagle",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD S200 Eagle",
+   "aliases": [
+    "rd s200 eagle"
+   ],
+   "name": "SRAM S200 Eagle dérailleur arrière 12v",
+   "discipline": "vtt",
+   "generation": "S200 Eagle (12v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "sram-eagle-meca",
+    "maxCog": 52,
+    "minCog": 10,
+    "totalCapacity": 42,
+    "cageLength": "long",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "amz-s200"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider"
+  },
+  {
+   "id": "sram-rd-eagle70-t-type",
+   "type": "rear_derailleur",
+   "brand": "SRAM",
+   "ref": "RD Eagle 70 T-Type",
+   "aliases": [
+    "rd eagle 70 t-type"
+   ],
+   "name": "SRAM Eagle 70 Transmission dérailleur arrière 12v",
+   "discipline": "vtt",
+   "generation": "Eagle 70 T-Type (12v)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "udh_direct",
+    "speeds": 12,
+    "family": "sram-t-type-meca",
+    "maxCog": 52,
+    "minCog": 10,
+    "totalCapacity": 42,
+    "cageLength": "long",
+    "maxFrontChainrings": 1
+   },
+   "src": [
+    "bm-eagle70"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Montage direct sur cadre UDH obligatoire (pas de patte)."
+  },
+  {
+   "id": "campagnolo-rd-record-11-ss",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Record 11 chape courte",
+   "aliases": [
+    "rd record 11 chape courte"
+   ],
+   "name": "Campagnolo Record 11 dérailleur arrière chape courte",
+   "discipline": "route",
+   "generation": "Record 11 (2015+)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11",
+    "maxCog": 29,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "velo-campa11"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Capacité non trouvée."
+  },
+  {
+   "id": "campagnolo-rd-super-record-11-ss",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Super Record 11 chape courte",
+   "aliases": [
+    "rd super record 11 chape courte"
+   ],
+   "name": "Campagnolo Super Record 11 dérailleur arrière chape courte",
+   "discipline": "route",
+   "generation": "Super Record 11 (2015+)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11",
+    "maxCog": 29,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "velo-campa11"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Capacité non trouvée."
+  },
+  {
+   "id": "campagnolo-rd-record-11-gs",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Record 11 chape moyenne",
+   "aliases": [
+    "rd record 11 chape moyenne"
+   ],
+   "name": "Campagnolo Record 11 dérailleur arrière chape moyenne",
+   "discipline": "route",
+   "generation": "Record 11 (2015+)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11",
+    "maxCog": 32,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "velo-campa11"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Chape moyenne 32 dents : versions 2018 et après (parallélogramme modifié)."
+  },
+  {
+   "id": "campagnolo-rd-super-record-11-gs",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Super Record 11 chape moyenne",
+   "aliases": [
+    "rd super record 11 chape moyenne"
+   ],
+   "name": "Campagnolo Super Record 11 dérailleur arrière chape moyenne",
+   "discipline": "route",
+   "generation": "Super Record 11 (2015+)",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11",
+    "maxCog": 32,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "velo-campa11"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Chape moyenne 32 dents : versions 2018 et après (parallélogramme modifié)."
+  },
+  {
+   "id": "campagnolo-rd-potenza-11-gs",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Potenza 11 chape moyenne",
+   "aliases": [
+    "rd potenza 11 chape moyenne"
+   ],
+   "name": "Campagnolo Potenza 11 dérailleur arrière chape moyenne",
+   "discipline": "route",
+   "generation": "Potenza 11",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 11,
+    "family": "campagnolo-11",
+    "maxCog": 32,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "velo-campa11"
+   ],
+   "confidence": "basse",
+   "status": "a_valider",
+   "notes": "Capacité non trouvée."
+  },
+  {
+   "id": "campagnolo-rd-record-10-ss",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Record 10 chape courte",
+   "aliases": [
+    "rd record 10 chape courte"
+   ],
+   "name": "Campagnolo Record 10v dérailleur arrière chape courte",
+   "discipline": "route",
+   "generation": "Record 10",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "campagnolo-10",
+    "maxCog": 26,
+    "cageLength": "SS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tc-rec10",
+    "sprockets-rec10"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité non trouvée."
+  },
+  {
+   "id": "campagnolo-rd-record-10-gs",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Record 10 chape moyenne",
+   "aliases": [
+    "rd record 10 chape moyenne"
+   ],
+   "name": "Campagnolo Record 10v dérailleur arrière chape moyenne",
+   "discipline": "route",
+   "generation": "Record 10",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 10,
+    "family": "campagnolo-10",
+    "maxCog": 29,
+    "cageLength": "GS",
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "tc-rec10"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Capacité non trouvée."
+  },
+  {
+   "id": "campagnolo-rd-super-record-12",
+   "type": "rear_derailleur",
+   "brand": "Campagnolo",
+   "ref": "RD Super Record 12",
+   "aliases": [
+    "rd super record 12"
+   ],
+   "name": "Campagnolo Super Record 12 dérailleur arrière (mécanique)",
+   "discipline": "route",
+   "generation": "Super Record 12",
+   "attrs": {
+    "system": "mecanique",
+    "mount": "standard",
+    "speeds": 12,
+    "family": "campagnolo-12",
+    "maxCog": 34,
+    "minCog": 11,
+    "maxFrontChainrings": 2
+   },
+   "src": [
+    "b24-sr12"
+   ],
+   "confidence": "moyenne",
+   "status": "a_valider",
+   "notes": "Cassettes 11-29, 11-32 et 11-34. Capacité non trouvée."
+  }
+ ]
+}

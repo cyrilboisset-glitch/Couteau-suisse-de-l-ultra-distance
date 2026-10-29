@@ -2,15 +2,15 @@
 
 > Généré par `node scripts/build-data.js` — ne pas éditer à la main.
 
-- **1214 pièces**, dont 65 validées par une page constructeur et **1149 à valider**.
-- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 275, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
+- **1233 pièces**, dont 65 validées par une page constructeur et **1168 à valider**.
+- Base de connaissances : fluidFits : 7, brakeMountAdapters : 1, gammes : 285, spindleFits : 0, chainLength : 1, recommendations : 7, families : 58, actuation : 66, freehubFits : 14, pitchFits : 4.
 
 | Marque | Pièces |
 |---|---|
 | Atom | 1 |
 | Avid | 2 |
 | Box | 2 |
-| Campagnolo | 56 |
+| Campagnolo | 64 |
 | DNP | 2 |
 | Dia-Compe | 3 |
 | Formula | 3 |
@@ -25,7 +25,7 @@
 | Regina | 3 |
 | SENSAH | 10 |
 | SR Suntour | 3 |
-| SRAM | 93 |
+| SRAM | 104 |
 | Sachs | 4 |
 | Shimano | 915 |
 | Simplex | 3 |
@@ -42,7 +42,7 @@
 | YST | 1 |
 | microSHIFT | 9 |
 
-## Dérailleur arrière (275)
+## Dérailleur arrière (294)
 
 | Réf. | Marque | Discipline | Statut | Champs manquants |
 |---|---|---|---|---|
@@ -56,9 +56,17 @@
 | RD Chorus 11 (2015+) chape courte | Campagnolo | route | à valider |  |
 | RD Chorus 12 | Campagnolo | route | à valider |  |
 | RD Ekar 13v | Campagnolo | gravel | à valider |  |
+| RD Potenza 11 chape moyenne | Campagnolo | route | à valider | totalCapacity |
+| RD Record 10 chape moyenne | Campagnolo | route | à valider | totalCapacity |
+| RD Record 10 chape courte | Campagnolo | route | à valider | totalCapacity |
+| RD Record 11 chape moyenne | Campagnolo | route | à valider | totalCapacity |
+| RD Record 11 chape courte | Campagnolo | route | à valider | totalCapacity |
 | Nuovo Record / Super Record | Campagnolo | route | à valider | speeds, maxCog, totalCapacity |
 | RD Record 12 chape moyenne | Campagnolo | route | à valider |  |
 | Super Record (dérailleur arrière) | Campagnolo | route | à valider | maxCog, totalCapacity |
+| RD Super Record 11 chape moyenne | Campagnolo | route | à valider | totalCapacity |
+| RD Super Record 11 chape courte | Campagnolo | route | à valider | totalCapacity |
+| RD Super Record 12 | Campagnolo | route | à valider | totalCapacity |
 | RD Veloce 10v chape moyenne | Campagnolo | route | à valider |  |
 | RD Veloce 10v chape courte | Campagnolo | route | à valider | maxCog |
 | Duopar Eco | Huret | autre | à valider | speeds, maxCog, totalCapacity |
@@ -281,13 +289,17 @@
 | RD Apex 1 11v | SRAM | gravel | à valider | totalCapacity |
 | RD Apex 10v chape courte | SRAM | route | à valider |  |
 | RD Apex 10v WiFLi | SRAM | route | à valider |  |
+| RD Apex Eagle | SRAM | gravel | à valider |  |
 | RD Apex XPLR eTap AXS D1 | SRAM | gravel | validé |  |
 | RD Apex XPLR 12v (mécanique) | SRAM | gravel | à valider |  |
 | RD Eagle 90 T-Type | SRAM | vtt | à valider | totalCapacity |
+| RD Eagle 70 T-Type | SRAM | vtt | à valider |  |
 | ESP 9.0 | SRAM | vtt | à valider |  |
 | RD Force 10v WiFLi | SRAM | route | à valider |  |
 | RD Force eTap AXS (MAX 36T) | SRAM | route | à valider | totalCapacity |
 | RD Force XPLR eTap AXS D2 | SRAM | gravel | à valider |  |
+| RD Force 22 chape courte | SRAM | route | à valider |  |
+| RD Force 22 chape moyenne | SRAM | route | à valider |  |
 | RD GX 2x11 | SRAM | vtt | à valider | totalCapacity |
 | RD GX Eagle | SRAM | vtt | à valider |  |
 | RD GX Eagle AXS T-Type | SRAM | vtt | à valider | totalCapacity |
@@ -299,16 +311,23 @@
 | RD RED eTap AXS (MAX 33T) | SRAM | route | validé | totalCapacity |
 | RD RED eTap AXS (MAX 36T) | SRAM | route | validé |  |
 | RD RED XPLR eTap AXS E1 | SRAM | gravel | à valider | totalCapacity |
+| RD Red 22 chape courte | SRAM | route | à valider |  |
+| RD Red 22 chape moyenne | SRAM | route | à valider | totalCapacity |
 | RD Rival 22 chape courte | SRAM | route | à valider |  |
 | RD Rival 22 WiFLi | SRAM | route | à valider |  |
 | RD-RIV-E-D1 | SRAM | route | validé | totalCapacity |
+| RD Rival 1 chape longue | SRAM | gravel | à valider | totalCapacity |
+| RD S200 Eagle | SRAM | vtt | à valider |  |
 | RD X0 10v | SRAM | vtt | à valider | totalCapacity |
 | RD X01 11v | SRAM | vtt | à valider |  |
+| RD X01 Eagle | SRAM | vtt | à valider |  |
+| RD X4 9v chape longue | SRAM | vtt | à valider |  |
 | RD X5 10v chape longue | SRAM | vtt | à valider |  |
 | RD X5 10v chape moyenne | SRAM | vtt | à valider |  |
 | RD X5 9v chape moyenne | SRAM | vtt | à valider | totalCapacity |
 | RD X7 10v | SRAM | vtt | à valider | maxCog, totalCapacity |
 | RD X7 9v | SRAM | vtt | à valider |  |
+| RD X7 9v chape longue | SRAM | vtt | à valider | totalCapacity |
 | RD X9 10v | SRAM | vtt | à valider | totalCapacity |
 | RD X9 9v chape moyenne | SRAM | vtt | à valider | maxCog, totalCapacity |
 | Cyclone GT | SunTour | route | à valider | speeds |

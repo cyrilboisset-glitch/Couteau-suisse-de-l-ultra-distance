@@ -1920,6 +1920,66 @@
    "generation": "XT LinkGlide M8130 (11v)",
    "gamme": "XT",
    "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "X4 (9v)",
+   "gamme": "X4",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Red 22 (11v)",
+   "gamme": "Red",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Apex Eagle (12v)",
+   "gamme": "Apex Eagle",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "S200 Eagle (12v)",
+   "gamme": "S200 Eagle",
+   "status": "a_valider"
+  },
+  {
+   "brand": "SRAM",
+   "generation": "Eagle 70 T-Type (12v)",
+   "gamme": "Eagle 70 T-Type",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Record 11 (2015+)",
+   "gamme": "Record",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Super Record 11 (2015+)",
+   "gamme": "Super Record",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Potenza 11",
+   "gamme": "Potenza",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Record 10",
+   "gamme": "Record",
+   "status": "a_valider"
+  },
+  {
+   "brand": "Campagnolo",
+   "generation": "Super Record 12",
+   "gamme": "Super Record",
+   "status": "a_valider"
   }
  ]
 }
