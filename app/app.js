@@ -4,6 +4,7 @@ import { searchParts } from './src/search.js';
 import { tr, t, trName, setLang, getLang, detectLang, LANGS } from './src/i18n/index.js';
 import { createProjetView } from './projet.js';
 import { createParcourirView } from './parcourir.js';
+import { crankSvg, faviconHref } from './logo.js';
 import { TERMS_VERSION, gateHtml, conditionsHtml, footerHtml, safetyBanner, expeditionHtml, expeditionBanner, EXPEDITION_HOURS, EXPEDITION_WORD } from './legal.js';
 
 const CATALOGUE_URL = './catalogue.json';
@@ -39,6 +40,11 @@ const store = {
     try { localStorage.setItem(key, JSON.stringify(value)); } catch { store.persistent = false; }
   },
 };
+
+// --- Logo : pédalier dessiné (en-tête, chargement, icône d'onglet) ----------
+document.querySelector('.logo').innerHTML = crankSvg({ teeth: 20 });
+document.querySelector('.loading .spinner')?.insertAdjacentHTML('afterbegin', crankSvg({ teeth: 24, spin: false }));
+document.getElementById('favicon').href = faviconHref();
 
 // --- Mode baroudeur ----------------------------------------------------------
 /** Fin du mode baroudeur (horodatage) s'il est actif, sinon null. */
@@ -340,21 +346,32 @@ const bikeNote = (broken) => {
 };
 
 const segHtml = (active) => `<div class="seg" role="tablist" aria-label="${t('Mode de recherche')}">
-    <a class="seg-btn" href="#/"${active === 'ref' ? ' aria-current="page"' : ''}>🔎 ${t('Par référence')}</a>
-    <a class="seg-btn" href="#/parcourir"${active === 'tree' ? ' aria-current="page"' : ''}>🗂️ ${t('Parcourir')}</a>
+    <a class="seg-btn" href="#/"${active === 'ref' ? ' aria-current="page"' : ''}><svg class="seg-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg> ${t('Par référence')}</a>
+    <a class="seg-btn" href="#/parcourir"${active === 'tree' ? ' aria-current="page"' : ''}><svg class="seg-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="5" rx="1.2"/><rect x="14" y="10" width="7" height="5" rx="1.2"/><rect x="14" y="17" width="7" height="4" rx="1.2"/><path d="M6.5 8v10.5H14M6.5 12.5H14"/></svg> ${t('Parcourir')}</a>
   </div>`;
 
 // --- Vues -----------------------------------------------------------------
 const VIEWS = {
   casse() {
-    view.innerHTML = `${segHtml('ref')}<h2>${t('Quelle pièce est cassée ?')}</h2><div id="sb"></div>`;
+    view.innerHTML = `<section class="hero">
+        <div class="hero-art">${crankSvg({ teeth: 34, spin: false })}</div>
+        <div class="hero-text"><h2>${t('Quelle pièce est cassée ?')}</h2>
+          <p class="muted small">${t('{0} pièces · 5 langues · hors ligne', state.parts.length)}</p></div>
+      </section>${segHtml('ref')}<div id="sb"></div>`;
     const input = searchBox(view.querySelector('#sb'), {
       placeholder: t('Référence : r8000 gs, rx812…'),
       hint: t('Ou par critères : « dérailleur arrière 11v route chape longue », « cassette 11-34 », « chaîne 12v ».'),
       onPick: (p) => { location.hash = `#/piece/${encodeURIComponent(p.id)}`; },
       initial: store.get('lastQuery', ''),
     });
-    input.addEventListener('input', () => store.set('lastQuery', input.value));
+    // Chaque frappe fait avancer le pédalier d'un cran.
+    const crank = view.querySelector('.hero-art .crank');
+    let turn = 0;
+    input.addEventListener('input', () => {
+      store.set('lastQuery', input.value);
+      turn += 24;
+      crank?.style.setProperty('rotate', `${turn}deg`);
+    });
     input.focus();
   },
 
