@@ -1,7 +1,8 @@
 // Interface « Vent et températures » : GPX → sens de la boucle, températures, tenue.
 import {
-  parseGpx, writeGpx, buildTrack, sampleTrack, stepFor, compass, compassShort, fetchForecast,
-  analyseDirection, reverseSamples, compareDirections, clothing, SAME_WIND,
+  parseGpx, writeGpx, buildTrack, sampleTrack, smoothEle, stepFor, compass, compassShort, fetchForecast,
+  analyseDirection, powerTimes, reverseSamples, compareDirections, clothing, SAME_WIND,
+  BIKES, riderModel,
 } from './src/index.js';
 
 const $ = (id) => document.getElementById(id);
@@ -37,9 +38,23 @@ const towards = (d) => (/^[eo]/.test(compass(d)) ? `l'${compass(d)}` : `le ${com
 const tailClass = (x) => (x >= SAME_WIND ? 'tail-pos' : x <= -SAME_WIND ? 'tail-neg' : '');
 const tailWord = (x) => (x >= SAME_WIND ? 'dans le dos' : x <= -SAME_WIND ? 'de face' : 'neutre');
 
+// --- Icônes (trait) ---------------------------------------------------------------
+const ICONS = {
+  compass: '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/>',
+  thermo: '<path d="M14 14.8V5a2 2 0 1 0-4 0v9.8a4 4 0 1 0 4 0Z"/><path d="M12 9v7"/>',
+  shirt: '<path d="M8 3 3.5 5.5 5 10l2-.8V21h10V9.2l2 .8 1.5-4.5L16 3c-.6 1.6-2.1 2.5-4 2.5S8.6 4.6 8 3Z"/>',
+  download: '<path d="M12 4v11m0 0-4-4m4 4 4-4"/><path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/>',
+  rain: '<path d="M7 15a4 4 0 1 1 .8-7.9A5.5 5.5 0 0 1 18.5 9 3 3 0 0 1 18 15H7Z"/><path d="m9 18-1 2m5-2-1 2m5-2-1 2"/>',
+  alert: '<path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4m0 3v.01"/>',
+  file: '<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z"/><path d="M14 3v5h5"/>',
+};
+const icon = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
+const head = (n, title) => `<div class="card-head"><span class="badge-i">${icon(n)}</span><h2>${title}</h2></div>`;
+
 // --- État ----------------------------------------------------------------------
 let gpx = null;
 let track = null;
+const EMPTY = $('results').innerHTML;
 
 function defaultStart() {
   const d = new Date();
@@ -49,7 +64,40 @@ function defaultStart() {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`;
 }
 $('start').value = defaultStart();
-$('speed').value = store.get('speed') ?? '25';
+
+// --- Cycliste : mode de calcul et réglages mémorisés ------------------------------
+$('bike').innerHTML = Object.entries(BIKES).map(([k, b]) => `<option value="${k}">${esc(b.label)}</option>`).join('');
+const FIELDS = ['speed', 'weight', 'bike-kg', 'ftp', 'intensity', 'bike', 'pauses', 'cda', 'crr'];
+for (const id of FIELDS) {
+  const v = store.get(id);
+  if (v != null) $(id).value = v;
+  $(id).addEventListener('change', () => store.set(id, $(id).value));
+}
+let mode = store.get('mode') ?? 'power';
+function setMode(m) {
+  mode = m;
+  store.set('mode', m);
+  for (const b of document.querySelectorAll('.seg button')) b.setAttribute('aria-checked', String(b.dataset.mode === m));
+  $('mode-power').hidden = m !== 'power';
+  $('mode-speed').hidden = m !== 'speed';
+}
+setMode(mode);
+for (const b of document.querySelectorAll('.seg button')) b.addEventListener('click', () => setMode(b.dataset.mode));
+
+const num = (id) => ($(id).value.trim() === '' ? null : Number($(id).value));
+/** Modèle du cycliste à partir des champs, ou message d'erreur. */
+function readRider() {
+  const riderKg = num('weight');
+  const ftp = num('ftp');
+  const intensity = num('intensity');
+  if (!(riderKg >= 30 && riderKg <= 200)) return 'Poids du cycliste entre 30 et 200 kg.';
+  if (!(ftp >= 50 && ftp <= 600)) return 'FTP entre 50 et 600 W.';
+  if (!(intensity >= 30 && intensity <= 110)) return 'Allure entre 30 et 110 % de la FTP.';
+  return riderModel({
+    riderKg, ftp, intensity: intensity / 100, bikeKg: num('bike-kg') ?? 12, bike: $('bike').value,
+    pauseMinPerH: num('pauses') ?? 0, cda: num('cda') ?? undefined, crr: num('crr') ?? undefined,
+  });
+}
 
 function status(msg, kind = '') {
   $('status').textContent = msg;
@@ -59,13 +107,14 @@ function status(msg, kind = '') {
 // --- Import GPX ----------------------------------------------------------------
 async function loadFile(file) {
   if (!file) return;
-  $('results').innerHTML = '';
+  $('results').innerHTML = EMPTY;
   try {
     gpx = parseGpx(await file.text());
     track = buildTrack(gpx.points);
     if (track.lengthKm < 1) throw new Error('Parcours trop court.');
     gpx.name ||= file.name.replace(/\.gpx$/i, '');
-    $('drop-text').textContent = `📄 ${file.name}`;
+    $('drop-text').textContent = file.name;
+    $('drop').querySelector('.drop-ico').innerHTML = icon('file');
     $('drop').classList.add('loaded');
     renderRoute();
     $('go').disabled = false;
@@ -91,17 +140,19 @@ drop.addEventListener('drop', (e) => {
 
 function renderRoute() {
   $('route').innerHTML = `
+    <p class="route-name">${esc(gpx.name)}</p>
+    ${track.isLoop ? '<span class="pill ok">Boucle</span>' : `<span class="pill no">Pas une boucle · arrivée à ${r1(track.startEndGapKm)} km du départ</span>`}
     <ul class="facts">
-      <li><b>${esc(gpx.name)}</b></li>
-      <li><b>${r1(track.lengthKm)}</b> km</li>
-      ${track.gainM == null ? '<li>altitude absente du GPX : celle du modèle météo sera utilisée</li>' : `<li><b>${r0(track.gainM)}</b> m D+</li>`}
-      <li>${track.isLoop ? '<span class="pill ok">Boucle</span>' : `<span class="pill no">Pas une boucle (arrivée à ${r1(track.startEndGapKm)} km du départ)</span>`}</li>
+      <li>Distance<b>${r1(track.lengthKm)} km</b></li>
+      <li>Dénivelé +<b>${track.gainM == null ? '–' : `${r0(track.gainM)} m`}</b></li>
+      <li>Dénivelé −<b>${track.lossM == null ? '–' : `${r0(track.lossM)} m`}</b></li>
     </ul>
-    ${mapSvg(sampleTrack(track, stepFor(track.lengthKm, 200, 0.2)), null)}`;
+    ${track.hasEle ? '' : '<p class="hint">Altitude absente du GPX : celle du modèle météo sera utilisée.</p>'}
+    <div class="chart-box" style="margin-top:12px">${mapSvg(sampleTrack(track, stepFor(track.lengthKm, 200, 0.2)), null)}</div>`;
 }
 
 // --- Carte (projection simple, suffisante à l'échelle d'une sortie) -------------
-const TAIL_COLORS = [[-12, 'var(--l4)'], [-SAME_WIND, 'var(--l3)'], [SAME_WIND, 'var(--muted)'], [12, 'var(--l2)'], [Infinity, 'var(--l1)']];
+const TAIL_COLORS = [[-12, 'var(--l4)'], [-SAME_WIND, 'var(--l3)'], [SAME_WIND, 'var(--faint)'], [12, 'var(--l2)'], [Infinity, 'var(--l1)']];
 const tailColor = (x) => TAIL_COLORS.find(([max]) => x < max)[1];
 
 function project(pts, W, H, pad) {
@@ -132,18 +183,18 @@ function mapSvg(pts, rows, wind) {
     for (const f of [0.1, 0.35, 0.6, 0.85]) {
       const r = rows[Math.round(f * (rows.length - 1))];
       const [x, y] = P(r);
-      body += `<path d="M-7,6 L0,-8 L7,6 Z" transform="translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${r0(r.heading)})" fill="var(--fg)" stroke="var(--card)" stroke-width="1.5"/>`;
+      body += `<path d="M-7,6 L0,-8 L7,6 Z" transform="translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${r0(r.heading)})" fill="var(--fg)" stroke="var(--surface)" stroke-width="1.5"/>`;
     }
   } else {
     body += `<polyline points="${line}" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>`;
   }
   const [sx, sy] = P(rows ? rows[0] : pts[0]);
-  body += `<circle class="start" cx="${sx.toFixed(1)}" cy="${sy.toFixed(1)}" r="7" stroke="var(--card)" stroke-width="2.5"/>`;
+  body += `<circle class="start" cx="${sx.toFixed(1)}" cy="${sy.toFixed(1)}" r="7" stroke="var(--surface)" stroke-width="2.5"/>`;
   body += `<text x="${(sx + 11).toFixed(1)}" y="${(sy + 4).toFixed(1)}" class="lbl">Départ</text>`;
   // Nord et vent dominant (flèche vers où souffle le vent).
   body += '<g transform="translate(572,28)"><path d="M0,-14 L5,4 L0,0 L-5,4 Z" fill="var(--muted)"/><text x="0" y="18" text-anchor="middle">N</text></g>';
   if (wind) {
-    body += `<g transform="translate(36,36)"><circle r="24" fill="var(--card-2)" stroke="var(--border)"/>
+    body += `<g transform="translate(36,36)"><circle r="24" fill="var(--surface)" stroke="var(--border)"/>
       <path d="M0,-16 L0,12 M-6,6 L0,13 L6,6" transform="rotate(${r0(wind.wd)})" stroke="var(--accent)" stroke-width="3" fill="none" stroke-linecap="round"/>
       <text y="44" text-anchor="middle">${r0(wind.ws)} km/h</text></g>`;
   }
@@ -175,7 +226,7 @@ function profileSvg(rows) {
   const tStep = t1 - t0 > 20 ? 10 : 5;
   for (let t = Math.ceil(t0 / tStep) * tStep; t <= t1; t += tStep) {
     g += `<line class="axis" x1="${m.l}" x2="${W - m.r}" y1="${YT(t).toFixed(1)}" y2="${YT(t).toFixed(1)}" stroke-dasharray="2 4"/>`;
-    g += `<text x="${W - m.r + 4}" y="${(YT(t) + 4).toFixed(1)}" fill="var(--accent-2)">${t}°</text>`;
+    g += `<text x="${W - m.r + 4}" y="${(YT(t) + 4).toFixed(1)}" fill="var(--hot)">${t}°</text>`;
   }
   g += `<path class="ele" d="${path((r) => YE(r.ele ?? 0))}L${X(L).toFixed(1)},${H - m.b}L${m.l},${H - m.b}Z"/>`;
   g += `<path class="t-felt" d="${path((r) => YT(r.felt))}"/>`;
@@ -207,13 +258,31 @@ function bindProfile(rows) {
 // --- Analyse ---------------------------------------------------------------------
 $('go').addEventListener('click', run);
 
+// Durée sans vent (pour savoir sur quelle période demander la météo).
+function calmDuration(fine, startMs, rider) {
+  const flat = (x) => [x, x];
+  const calm = { times: [startMs - 3600e3, startMs + 60 * 86400e3], temp: flat(15), app: flat(15), ws: flat(0), wd: flat(0), gust: flat(0), pop: flat(0), rain: flat(0) };
+  const { rows } = powerTimes(fine, fine.map(() => calm), startMs, rider, fine);
+  return rows[rows.length - 1].time - startMs;
+}
+
 async function run() {
   const startMs = new Date($('start').value).getTime();
-  const speed = Number($('speed').value);
   if (!Number.isFinite(startMs)) return status('Indiquer la date et l\'heure de départ.', 'err');
-  if (!(speed >= 5 && speed <= 60)) return status('Vitesse moyenne entre 5 et 60 km/h.', 'err');
-  store.set('speed', String(speed));
-  const durationMs = (track.lengthKm / speed) * 3600e3;
+  let pace;
+  let durationMs;
+  let fine = null;
+  if (mode === 'speed') {
+    pace = Number($('speed').value);
+    if (!(pace >= 5 && pace <= 60)) return status('Vitesse moyenne entre 5 et 60 km/h.', 'err');
+    durationMs = (track.lengthKm / pace) * 3600e3;
+  } else {
+    pace = readRider();
+    if (typeof pace === 'string') return status(pace, 'err');
+    fine = smoothEle(sampleTrack(track, Math.max(0.1, track.lengthKm / 4000)));
+    // Marge : le vent de face peut rallonger la sortie.
+    durationMs = calmDuration(fine, startMs, pace) * 1.3;
+  }
   multiDay = new Date(startMs).toDateString() !== new Date(startMs + durationMs).toDateString();
 
   $('go').disabled = true;
@@ -222,11 +291,21 @@ async function run() {
   try {
     const fwd = sampleTrack(track, stepFor(track.lengthKm));
     const series = await fetchForecast(fwd, startMs, startMs + durationMs);
-    // Sans altitude dans le GPX, on prend celle du modèle (pour le profil).
-    fwd.forEach((s, k) => { if (s.ele == null) s.ele = series[k].elevation; });
+    // Sans altitude dans le GPX, on prend celle du modèle (pour le profil et les pentes).
+    if (!track.hasEle) {
+      fwd.forEach((s, k) => { s.ele = series[k].elevation; });
+      if (fine) {
+        const L = track.lengthKm;
+        fine.forEach((f) => {
+          const x = (f.km / L) * (fwd.length - 1);
+          const i = Math.min(fwd.length - 2, Math.floor(x));
+          f.ele = fwd[i].ele + (fwd[i + 1].ele - fwd[i].ele) * (x - i);
+        });
+      }
+    }
     const rev = reverseSamples(fwd);
-    const a = analyseDirection(fwd, series, startMs, speed);
-    const b = analyseDirection(rev, [...series].reverse(), startMs, speed);
+    const a = analyseDirection(fwd, series, startMs, pace, fine ?? undefined);
+    const b = analyseDirection(rev, [...series].reverse(), startMs, pace, fine ? reverseSamples(fine) : undefined);
     render({ a, b, cmp: compareDirections(a, b) });
     status('');
   } catch (e) {
@@ -236,6 +315,8 @@ async function run() {
     $('go').classList.remove('busy');
   }
 }
+
+const hm = (s) => `${Math.floor(s / 3600)} h ${String(Math.round((s % 3600) / 60)).padStart(2, '0')}`;
 
 function render({ a, b, cmp }) {
   const best = cmp.best === 'forward' ? a : b;
@@ -254,12 +335,12 @@ function render({ a, b, cmp }) {
 
   const c = clothing(best);
   const extra = c.extra.length
-    ? `<h3>En plus pour le moment le plus froid — ${deg(best.feltMin.felt)} ressentis</h3>
-       <p class="readout">${where(best.feltMin)}</p>
-       <ul class="outfit">${c.extra.map((i) => `<li class="add">+ ${esc(i)}</li>`).join('')}</ul>`
+    ? `<h3>À ajouter pour le moment le plus froid · ${deg(best.feltMin.felt)} ressentis</h3>
+       <p class="where-line">${where(best.feltMin)}</p>
+       <ul class="outfit">${c.extra.map((i) => `<li class="add">${esc(i)}</li>`).join('')}</ul>`
     : '';
   const startTip = c.start !== c.warm
-    ? `<p>Au départ (${deg(best.rows[0].felt)} ressentis) : partir avec la tenue « ${c.start.label} », puis enlever des couches.</p>`
+    ? `<p class="advice">Au départ (<b>${deg(best.rows[0].felt)}</b> ressentis) : partir avec la tenue « ${c.start.label} », puis enlever des couches.</p>`
     : '';
 
   const dirRow = (r, label, isBest) => `<tr class="${isBest ? 'best' : ''}"><td>${label}</td>
@@ -275,42 +356,57 @@ function render({ a, b, cmp }) {
     <td>${r0(r.ws)} ${compassShort(r.wd)}</td>
     <td class="${tailClass(r.tail)}">${signed(r.tail)}</td><td>${r0(r.pop)} %</td></tr>`).join('');
 
+  const total = (best.endMs - best.startMs) / 1000;
   $('results').innerHTML = `
-    <section class="card ${cls}">
-      <h2>🧭 Sens de la boucle</h2>
+    <section class="card verdict-card ${cls}">
+      <p class="eyebrow">Sens de la boucle</p>
       <p class="verdict">${title}</p>
       <p class="verdict-sub">${why}</p>
-      <p>Départ vers <b>${towards(first.heading)}</b>, arrivée prévue à <b>${hour(best.endMs)}</b>.</p>
-      ${track.isLoop ? '' : '<p class="status err">Ce parcours n\'est pas une boucle : le sens inverse part de l\'autre extrémité.</p>'}
-      ${mapSvg(best.rows, best.rows, mid)}
-      <div class="keys">
-        <span><i style="background:var(--l1)"></i>vent dans le dos</span>
-        <span><i style="background:var(--muted)"></i>travers / faible</span>
-        <span><i style="background:var(--l4)"></i>vent de face</span>
-        <span>▲ sens de marche · flèche ronde : vent à mi-parcours</span>
+      <div class="kpis">
+        <div class="kpi"><div class="k">Vent, dernier tiers</div><div class="v ${tailClass(best.tailEnd)}">${signed(best.tailEnd)}</div><div class="s">${tailWord(best.tailEnd)}</div></div>
+        <div class="kpi"><div class="k">Départ vers</div><div class="v">${compassShort(first.heading)}</div><div class="s">${towards(first.heading)}</div></div>
+        <div class="kpi"><div class="k">Arrivée prévue</div><div class="v">${hour(best.endMs)}</div><div class="s">${hm(total)} au total</div></div>
+        <div class="kpi"><div class="k">${best.avgWatts ? 'Sur le vélo' : 'Vitesse moyenne'}</div><div class="v">${best.avgWatts ? hm(best.movingS) : `${r1(best.lengthKm / (total / 3600))} km/h`}</div><div class="s">${best.avgWatts ? `${r0(best.avgWatts)} W de moyenne` : 'pauses comprises'}</div></div>
       </div>
-      <div class="tbl-wrap"><table>
-        <thead><tr><th>Vent moyen</th><th>1er tiers</th><th>Dernier tiers</th><th>Total</th><th>Arrivée</th></tr></thead>
-        <tbody>${dirRow(a, 'Sens du GPX', !reverse)}${dirRow(b, 'Sens inverse', reverse)}</tbody>
-      </table></div>
-      ${reverse ? '<button id="dl" class="secondary" type="button">⬇️ Télécharger le GPX dans ce sens</button>' : ''}
+      ${track.isLoop ? '' : `<p class="notice">${icon('alert')}<span>Ce parcours n'est pas une boucle : le sens inverse part de l'autre extrémité.</span></p>`}
+      <div class="two">
+        <div>
+          <h3 style="margin-top:0">Vent le long du parcours</h3>
+          <div class="chart-box">${mapSvg(best.rows, best.rows, mid)}</div>
+          <div class="keys">
+            <span><i style="background:var(--l1)"></i>Dans le dos</span>
+            <span><i style="background:var(--faint)"></i>Travers ou faible</span>
+            <span><i style="background:var(--l4)"></i>De face</span>
+            <span>▲ Sens de marche</span>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Comparaison des deux sens</h3>
+          <div class="tbl-wrap"><table>
+            <thead><tr><th>Vent moyen</th><th>1er tiers</th><th>Dernier tiers</th><th>Total</th><th>Arrivée</th></tr></thead>
+            <tbody>${dirRow(a, 'Sens du GPX', !reverse)}${dirRow(b, 'Sens inverse', reverse)}</tbody>
+          </table></div>
+          ${reverse ? `<button id="dl" class="secondary" type="button">${icon('download')}Télécharger le GPX dans ce sens</button>` : ''}
+        </div>
+      </div>
     </section>
 
     <section class="card">
-      <h2>🌡️ Températures au passage</h2>
-      <div class="stats">
-        <div class="stat"><div class="k">Mini</div><div class="big cold">${deg(best.tempMin.temp)}</div><div class="where">${where(best.tempMin)}</div></div>
-        <div class="stat"><div class="k">Maxi</div><div class="big hot">${deg(best.tempMax.temp)}</div><div class="where">${where(best.tempMax)}</div></div>
-        <div class="stat"><div class="k">Ressenti mini</div><div class="big cold">${deg(best.feltMin.felt)}</div><div class="where">vitesse + vent relatif</div></div>
-        <div class="stat"><div class="k">Pluie / rafales</div><div class="big">${r0(best.popMax)} %</div><div class="where">rafales jusqu'à ${r0(best.gustMax.gust)} km/h</div></div>
+      ${head('thermo', 'Températures au passage')}
+      <div class="kpis" style="margin-top:0">
+        <div class="kpi"><div class="k">Minimum</div><div class="v cold">${deg(best.tempMin.temp)}</div><div class="s">${where(best.tempMin)}</div></div>
+        <div class="kpi"><div class="k">Maximum</div><div class="v hot">${deg(best.tempMax.temp)}</div><div class="s">${where(best.tempMax)}</div></div>
+        <div class="kpi"><div class="k">Ressenti minimum</div><div class="v cold">${deg(best.feltMin.felt)}</div><div class="s">vitesse et vent relatif</div></div>
+        <div class="kpi"><div class="k">Risque de pluie</div><div class="v">${r0(best.popMax)} %</div><div class="s">rafales ${r0(best.gustMax.gust)} km/h</div></div>
       </div>
-      ${profileSvg(best.rows)}
+      <h3>Altitude et température</h3>
+      <div class="chart-box">${profileSvg(best.rows)}</div>
       <div class="keys">
-        <span><i style="background:var(--accent-2)"></i>température de l'air</span>
-        <span><i style="background:#2f6fd6"></i>ressenti à vélo</span>
-        <span><i style="background:color-mix(in srgb, var(--muted) 40%, transparent)"></i>altitude</span>
+        <span><i style="background:var(--hot)"></i>Température de l'air</span>
+        <span><i style="background:var(--cold)"></i>Ressenti à vélo</span>
+        <span><i style="background:var(--ele)"></i>Altitude</span>
       </div>
-      <p class="readout" id="readout">Toucher le profil pour voir le détail d'un point.</p>
+      <p class="readout" id="readout">Survoler ou toucher le profil pour le détail d'un point.</p>
       <details><summary>Détail point par point</summary>
         <div class="tbl-wrap"><table>
           <thead><tr><th>km</th><th>Heure</th><th>Alt.</th><th>Air</th><th>Ressenti</th><th>Vent</th><th>Axe</th><th>Pluie</th></tr></thead>
@@ -320,13 +416,13 @@ function render({ a, b, cmp }) {
     </section>
 
     <section class="card">
-      <h2>🧥 Comment s'habiller</h2>
-      <h3>Tenue de base — ${deg(best.feltMax.felt)} au plus chaud (${c.warm.label})</h3>
+      ${head('shirt', 'Tenue conseillée')}
+      <h3 style="margin-top:0">Tenue de base · ${deg(best.feltMax.felt)} au plus chaud</h3>
       <ul class="outfit">${c.warm.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
       ${extra}
       ${startTip}
-      ${c.layers ? '<p>Gros écart de température sur la sortie : privilégier des couches faciles à enlever et à ranger (manchettes, jambières, gilet).</p>' : ''}
-      ${c.rain ? `<p>☔ <b>${esc(c.rain)}</b></p>` : ''}
+      ${c.layers ? '<p class="advice">Écart de température important : privilégier des couches faciles à enlever et à ranger (manchettes, jambières, gilet).</p>' : ''}
+      ${c.rain ? `<p class="notice info">${icon('rain')}<span>${esc(c.rain)}</span></p>` : ''}
     </section>`;
 
   bindProfile(best.rows);
