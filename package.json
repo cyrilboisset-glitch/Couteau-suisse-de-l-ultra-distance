@@ -1,19 +1,26 @@
 {
   "name": "groupset-compatibility-toolbox",
   "version": "0.1.0",
-  "description": "Compatibilité de pièces vélo en cas de casse, 100 % hors ligne (PWA).",
+  "description": "Compatibilité de pièces vélo en cas de casse, hors ligne (web et Android).",
   "type": "module",
   "private": true,
   "scripts": {
     "test": "node --test",
     "schema-doc": "node scripts/schema-doc.js",
     "build": "node scripts/i18n.js build && node scripts/build-data.js && node scripts/build-www.js && node scripts/build-single.js",
-    "start": "npm run build && node scripts/serve.js"
+    "start": "npm run build && node scripts/serve.js",
+    "build:mobile": "npm run build && node scripts/build-mobile.js && npx cap sync android",
+    "icons": "node scripts/build-icons.js"
   },
   "engines": {
     "node": ">=20"
   },
   "devDependencies": {
+    "@capacitor/cli": "8.5.3",
     "esbuild": "^0.24.2"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.3",
+    "@capacitor/core": "8.5.3"
   }
 }

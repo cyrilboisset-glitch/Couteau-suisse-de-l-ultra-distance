@@ -5,6 +5,7 @@ import { tr, t, trName, setLang, getLang, detectLang, LANGS } from './src/i18n/i
 import { createProjetView } from './projet.js';
 import { createParcourirView } from './parcourir.js';
 import { crankSvg, faviconHref } from './logo.js';
+import { openVault } from './vault.js';
 import { TERMS_VERSION, gateHtml, conditionsHtml, footerHtml, safetyBanner, expeditionHtml, expeditionBanner, EXPEDITION_HOURS, EXPEDITION_WORD } from './legal.js';
 
 const CATALOGUE_URL = './catalogue.json';
@@ -557,6 +558,8 @@ async function init() {
   try {
     // Version fichier unique : catalogue intégré à la page. Sinon, fichier à côté.
     let data = window.__CATALOGUE__;
+    // Version mobile : base chiffrée, ouverte en mémoire.
+    if (!data && window.__CATALOGUE_ENC__) data = await openVault(window.__CATALOGUE_ENC__);
     if (!data) {
       const res = await fetch(CATALOGUE_URL);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);

@@ -1,7 +1,7 @@
 <svg width="512" height="512" style="color:#fff" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0" stop-color="#0f7d73"/><stop offset="1" stop-color="#0a4f4a"/></linearGradient></defs>
-  <rect width="64" height="64" fill="url(#bg)"/><g transform="translate(5.5 5.5) scale(.83)"><defs><mask id="crank-0-m"><rect width="64" height="64" fill="#fff"/>
+  <rect width="64" height="64" fill="url(#bg)"/><g transform="translate(6.940000000000001 6.940000000000001) scale(0.83)"><defs><mask id="crank-0-m"><rect width="64" height="64" fill="#fff"/>
     <circle cx="46.29" cy="24.11" r="1.25" fill="#000"/><circle cx="31.25" cy="46.42" r="1.25" fill="#000"/><circle cx="9.71" cy="31.89" r="1.25" fill="#000"/><circle cx="24.11" cy="9.71" r="1.25" fill="#000"/>
     <circle cx="28" cy="28" r="2.6" fill="#000"/>
     <circle cx="49.92" cy="49.92" r="1.6" fill="#000"/>

@@ -1,0 +1,10 @@
+{
+  "appId": "com.groupsettoolbox.app",
+  "appName": "Groupset Compatibility Toolbox",
+  "webDir": "dist/mobile",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}
